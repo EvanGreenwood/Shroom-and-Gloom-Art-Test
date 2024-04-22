@@ -611,8 +611,9 @@ MonoBehaviour:
   - name: Wall Thorns
     wallPrefabs:
     - {fileID: 717079983591251126, guid: 1c9cc17696a50154985091ca956b6bb9, type: 3}
+    zOffset: 0
     spacing: 0.5
-    width: 5
+    width: 5.5
     verticalLoopLength: 5
     verticalLoopIncrement: 2
     minMaxAngle:
@@ -626,8 +627,9 @@ MonoBehaviour:
   - name: Thorns Base
     wallPrefabs:
     - {fileID: 717079983591251126, guid: e8dfdb4b844a34d4a98d85cd3968b570, type: 3}
+    zOffset: 0.1
     spacing: 1
-    width: 3.5
+    width: 3.2
     verticalLoopLength: 3
     verticalLoopIncrement: 1
     minMaxAngle:

@@ -8,10 +8,11 @@ using UnityEngine;
 public class TunnelGenerator : MonoBehaviour
 {
     [System.Serializable]
-    public class TunnelWallElement
+    public class TunnelWallData
     {
         public string name;
         public SpriteRenderer[] wallPrefabs;
+        public float zOffset = 0;
         public float spacing = 0.5f;
         public float width = 1.5f;
         public int verticalLoopLength = 4;
@@ -22,7 +23,8 @@ public class TunnelGenerator : MonoBehaviour
         public bool randomFlipY = true;
     }
     //
-    [SerializeField] private TunnelWallElement[] wallElements;
+    //
+    [SerializeField] private TunnelWallData[] wallElements;
     [SerializeField] private Transform _destination;
     void Start()
     {
@@ -39,35 +41,35 @@ public class TunnelGenerator : MonoBehaviour
         float dist = diff.magnitude;
         Quaternion rotation = Quaternion.LookRotation(direction, Vector3.up);
         //
-        foreach (TunnelWallElement wallElement in wallElements)
+        foreach (TunnelWallData wallData in wallElements)
         {
             int index = 0;
-            float distanceGenerated = 0;
+            float distanceGenerated = wallData.zOffset;
             while (distanceGenerated < dist)
             {
-                distanceGenerated += wallElement.spacing;
-                SpriteRenderer wall = Instantiate(wallElement.wallPrefabs[Random.Range(0, wallElement.wallPrefabs.Length)], transform.position + direction * distanceGenerated - perpendicular * wallElement.width, rotation);
-                index = (index + wallElement.verticalLoopIncrement) % (wallElement.verticalLoopLength + 1);
-                float m = index / (float)wallElement.verticalLoopLength;
-                wall.transform.position = wall.transform.position.PlusY(wallElement.minMaxPosition.GetValue(m));
-                wall.transform.Rotate(  0,0, wallElement.minMaxAngle.GetValue(m) + (Random.value * 2 - 1) * wallElement.randomRotation);
+                distanceGenerated += wallData.spacing;
+                SpriteRenderer wall = Instantiate(wallData.wallPrefabs[Random.Range(0, wallData.wallPrefabs.Length)], transform.position + direction * distanceGenerated - perpendicular * wallData.width, rotation);
+                index = (index + wallData.verticalLoopIncrement) % (wallData.verticalLoopLength + 1);
+                float m = index / (float)wallData.verticalLoopLength;
+                wall.transform.position = wall.transform.position.PlusY(wallData.minMaxPosition.GetValue(m));
+                wall.transform.Rotate(  0,0, wallData.minMaxAngle.GetValue(m) + (Random.value * 2 - 1) * wallData.randomRotation);
                 //
-                if (wallElement.randomFlipY)   wall.flipY = Random.value > 0.5f;
+                if (wallData.randomFlipY)   wall.flipY = Random.value > 0.5f;
             }
             //
             index = 0;
-            distanceGenerated = 0.15f;
+            distanceGenerated = wallData.zOffset;
             while (distanceGenerated < dist)
             {
-                distanceGenerated += wallElement.spacing;
-                SpriteRenderer wall = Instantiate(wallElement.wallPrefabs[Random.Range(0, wallElement.wallPrefabs.Length)], transform.position + direction * distanceGenerated + perpendicular * wallElement.width, rotation);
-                index = (index + wallElement.verticalLoopIncrement) % (wallElement.verticalLoopLength + 1);
-                float m = index / (float)wallElement.verticalLoopLength;
-                wall.transform.position = wall.transform.position.PlusY(wallElement.minMaxPosition.GetValue(m));
-                wall.transform.Rotate(0, 0, wallElement.minMaxAngle.GetValue(   m) * -1 + (Random.value * 2 - 1) * wallElement.randomRotation);
+                distanceGenerated += wallData.spacing;
+                SpriteRenderer wall = Instantiate(wallData.wallPrefabs[Random.Range(0, wallData.wallPrefabs.Length)], transform.position + direction * distanceGenerated + perpendicular * wallData.width, rotation);
+                index = (index + wallData.verticalLoopIncrement) % (wallData.verticalLoopLength + 1);
+                float m = index / (float)wallData.verticalLoopLength;
+                wall.transform.position = wall.transform.position.PlusY(wallData.minMaxPosition.GetValue(m));
+                wall.transform.Rotate(0, 0, wallData.minMaxAngle.GetValue(   m) * -1 + (Random.value * 2 - 1) * wallData.randomRotation);
                 //
                 wall.flipX = true;
-                if (wallElement.randomFlipY) wall.flipY = Random.value > 0.5f;
+                if (wallData.randomFlipY) wall.flipY = Random.value > 0.5f;
             }
         }
     }
