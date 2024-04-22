@@ -54,6 +54,7 @@ public class TunnelGenerator : MonoBehaviour
                 wall.transform.position = wall.transform.position.PlusY(wallData.minMaxPosition.GetValue(m));
                 wall.transform.Rotate(  0,0, wallData.minMaxAngle.GetValue(m) + (Random.value * 2 - 1) * wallData.randomRotation);
                 //
+                wall.flipX = true;
                 if (wallData.randomFlipY)   wall.flipY = Random.value > 0.5f;
             }
             //
@@ -68,7 +69,7 @@ public class TunnelGenerator : MonoBehaviour
                 wall.transform.position = wall.transform.position.PlusY(wallData.minMaxPosition.GetValue(m));
                 wall.transform.Rotate(0, 0, wallData.minMaxAngle.GetValue(   m) * -1 + (Random.value * 2 - 1) * wallData.randomRotation);
                 //
-                wall.flipX = true;
+              
                 if (wallData.randomFlipY) wall.flipY = Random.value > 0.5f;
             }
         }
