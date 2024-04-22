@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Enemy Cutout Fog
-  m_Shader: {fileID: 4800000, guid: 9db3257123e1d2d439ff1f22c92cb3b6, type: 3}
+  m_Name: Enemy Fog WaterColor
+  m_Shader: {fileID: 4800000, guid: 9f280664b048a9841b219798768fa1d6, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -31,6 +31,10 @@ Material:
         m_Texture: {fileID: 2800000, guid: 9993a1a42987ac94eb11c9570c676311, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _WaterColor:
+        m_Texture: {fileID: 2800000, guid: dcc11b79ead256146ab34fea74546795, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _texcoord:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -39,10 +43,13 @@ Material:
     m_Floats:
     - _Cutoff: 0.6
     - _FogOffset: 2
+    - _NoiseAmount: 2
     - _NoiseDist: 0.4
     - _NoiseFrequency: 0.5
-    - _NoiseScale: 4
+    - _NoiseScale: 0.2
     - _ScreenSpaceScale: 24
+    - _WaterColorScale: 2
+    - _WaterColorScrollSpeed: 0.04
     - _XScaleScreenSpace: 2
     - _YScaleScreenSpace: 90
     - __dirty: 0
