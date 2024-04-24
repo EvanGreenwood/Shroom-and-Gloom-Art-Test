@@ -60,17 +60,27 @@ public class TunnelGenerator : MonoBehaviour
     [SerializeField] private TunnelCeilingData[] ceilingElements;
     [SerializeField] private Transform _destination;
     [SerializeField] private Gradient _colorGradient;
+    //
+    public Vector3 TunnelForward => _forward;
+    private Vector3 _forward;
+    private Line3 _tunnelLine;
     void Start()
     {
         Generate();
     }
 
+    public Vector3 GetClosestPoint(Vector3 point)
+    {
+        return MathUtils.ProjectPointOnRay( _tunnelLine.ToRay(),  point);
+    }
     //
     public void Generate()
     {
 
         Vector3 diff = _destination.position - transform.position;
         Vector3 direction = diff.normalized;
+        _forward = direction;
+        _tunnelLine = new Line3(transform.position, _destination.position);
         Vector3 perpendicular = new Vector3(-direction.z, 0, direction.x);
         float dist = diff.magnitude;
         Quaternion rotation = Quaternion.LookRotation(direction, Vector3.up);
