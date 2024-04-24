@@ -62,9 +62,8 @@ public class PropCoward : MonoBehaviour
               //  Debug.Log("dot! " + dot);
                 //
 
-                if (dot > 0.9f)
-                {
-                     Debug.Log("REtreat! left ");
+                if (dot > _triggerThreshold)
+                { 
                     _retreating = true;
                 }
             }
@@ -72,9 +71,8 @@ public class PropCoward : MonoBehaviour
             {
                 float dot = Vector3.Dot((_cameraTransform.position - transform.position).WithY(0).normalized, -transform.right.WithY(0).normalized);
                // Debug.Log("dot! " + dot);
-                if (dot > 0.9f)
-                {
-                    Debug.Log("REtreat! right ");
+                if (dot > _triggerThreshold)
+                {     
                     _retreating = true;
                 }
             }

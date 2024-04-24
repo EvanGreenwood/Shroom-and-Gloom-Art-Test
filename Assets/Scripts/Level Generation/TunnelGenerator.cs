@@ -1,10 +1,8 @@
 
 using Framework;
- 
-using System.CodeDom.Compiler;
+  
 using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
+using System.Collections.Generic; 
 using UnityEngine;
 
 public class TunnelGenerator : MonoBehaviour
@@ -61,6 +59,12 @@ public class TunnelGenerator : MonoBehaviour
     [SerializeField] private Transform _destination;
     [SerializeField] private Gradient _colorGradient;
     //
+    [SerializeField] private float _baseTunnelWidth = 1f;
+    [SerializeField] private float _lumpyWidth = 0.5f;
+    [SerializeField] private float _clearingWidth = 1f;
+     private float _clearingDepth = 2.33f;
+    private float _tunnelLength = 1;
+    //
     public Vector3 TunnelForward => _forward;
     private Vector3 _forward;
     private Line3 _tunnelLine;
@@ -74,26 +78,38 @@ public class TunnelGenerator : MonoBehaviour
         return MathUtils.ProjectPointOnRay( _tunnelLine.ToRay(),  point);
     }
     //
+    public float GetTunnelWidth(Vector3 position)
+    {
+        return GetTunnelWidth((GetClosestPoint(position) - transform.position).magnitude / _tunnelLength) ;
+
+    }
+    public float GetTunnelWidth(float proportion)
+    {
+        float proximityToMiddle = Mathf.Abs(0.5f - proportion) * _tunnelLength;
+        float clearingM = Mathf.Clamp01(_clearingDepth - proximityToMiddle) / _clearingDepth;
+        return _baseTunnelWidth + (1 + Mathf.Sin(proportion * _tunnelLength * 0.66f)) /2f * _lumpyWidth + clearingM * _clearingWidth;
+    }
     public void Generate()
     {
 
         Vector3 diff = _destination.position - transform.position;
+        _tunnelLength = diff.magnitude;
         Vector3 direction = diff.normalized;
         _forward = direction;
         _tunnelLine = new Line3(transform.position, _destination.position);
         Vector3 perpendicular = new Vector3(-direction.z, 0, direction.x);
-        float dist = diff.magnitude;
+         
         Quaternion rotation = Quaternion.LookRotation(direction, Vector3.up);
         //
         foreach (TunnelWallData wallData in wallElements)
         {
             int index = 0;
             float distanceGenerated = wallData.zOffset;
-            while (distanceGenerated < dist)
+            while (distanceGenerated < _tunnelLength)
             {
                 distanceGenerated += wallData.spacing;
-                float distanceM = distanceGenerated / dist;
-                SpriteRenderer wall = Instantiate(wallData.wallPrefabs[Random.Range(0, wallData.wallPrefabs.Length)], transform.position + direction * distanceGenerated - perpendicular * wallData.width, rotation, transform);
+                float distanceM = distanceGenerated / _tunnelLength;
+                SpriteRenderer wall = Instantiate(wallData.wallPrefabs[Random.Range(0, wallData.wallPrefabs.Length)], transform.position + direction * distanceGenerated - perpendicular * (GetTunnelWidth (distanceGenerated / _tunnelLength) + wallData.width), rotation, transform);
                 index = (index + wallData.verticalLoopIncrement) % (wallData.verticalLoopLength + 1);
                 float indexM = index / (float)wallData.verticalLoopLength;
                 wall.transform.position = wall.transform.position.PlusY(wallData.minMaxPosition.GetValue(indexM));
@@ -111,11 +127,11 @@ public class TunnelGenerator : MonoBehaviour
             //
             index = 0;
             distanceGenerated = wallData.zOffset;
-            while (distanceGenerated < dist)
+            while (distanceGenerated < _tunnelLength)
             {
                 distanceGenerated += wallData.spacing;
-                float distanceM = distanceGenerated / dist;
-                SpriteRenderer wall = Instantiate(wallData.wallPrefabs[Random.Range(0, wallData.wallPrefabs.Length)], transform.position + direction * distanceGenerated + perpendicular * wallData.width, rotation, transform);
+                float distanceM = distanceGenerated / _tunnelLength;
+                SpriteRenderer wall = Instantiate(wallData.wallPrefabs[Random.Range(0, wallData.wallPrefabs.Length)], transform.position + direction * distanceGenerated + perpendicular * (GetTunnelWidth(distanceGenerated / _tunnelLength) + wallData.width), rotation, transform);
                 index = (index + wallData.verticalLoopIncrement) % (wallData.verticalLoopLength + 1);
                 float indexM = index / (float)wallData.verticalLoopLength;
                 wall.transform.position = wall.transform.position.PlusY(wallData.minMaxPosition.GetValue(indexM));
@@ -134,10 +150,10 @@ public class TunnelGenerator : MonoBehaviour
         foreach (TunnelFloorData floorData in floorElements)
         {
             float distanceGenerated = floorData.zOffset;
-            while (distanceGenerated < dist)
+            while (distanceGenerated < _tunnelLength)
             {
                 distanceGenerated += floorData.spacing;
-                float distanceM = distanceGenerated / dist;
+                float distanceM = distanceGenerated / _tunnelLength;
                 SpriteRenderer floor = Instantiate(floorData.floorPrefabs[Random.Range(0, floorData.floorPrefabs.Length)], transform.position + direction * distanceGenerated + perpendicular * (Random.value * 2 - 1) * floorData.randomXPosition, rotation, transform);
                
                 floor.transform.position = floor.transform.position.PlusY(floorData.minMaxPosition.ChooseRandom());
@@ -152,10 +168,10 @@ public class TunnelGenerator : MonoBehaviour
         foreach (TunnelCeilingData ceilingData in ceilingElements)
         {
             float distanceGenerated = ceilingData.zOffset;
-            while (distanceGenerated < dist)
+            while (distanceGenerated < _tunnelLength)
             {
                 distanceGenerated += ceilingData.spacing;
-                float distanceM = distanceGenerated / dist;
+                float distanceM = distanceGenerated / _tunnelLength;
                 SpriteRenderer floor = Instantiate(ceilingData.ceilingPrefabs[Random.Range(0, ceilingData.ceilingPrefabs.Length)], transform.position + Vector3.up * ceilingData.height + direction * distanceGenerated + perpendicular * (Random.value * 2 - 1) * ceilingData.randomXPosition, rotation, transform);
 
                 floor.transform.position = floor.transform.position.PlusY(ceilingData.minMaxPosition.ChooseRandom());
