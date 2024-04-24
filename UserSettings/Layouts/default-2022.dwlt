@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 2048
     height: 1236.8
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Game
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -121,7 +121,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 100}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 98
+  controlID: 5071
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -146,7 +146,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 27
+  controlID: 5072
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -768,14 +768,14 @@ MonoBehaviour:
   m_OverrideSceneCullingMask: 6917529027641081856
   m_SceneIsLit: 1
   m_SceneLighting: 1
-  m_2DMode: 1
+  m_2DMode: 0
   m_isRotationLocked: 0
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0, y: 0, z: 0}
+    m_Target: {x: 1.5202004, y: -0.006577334, z: 0.5852052}
     speed: 2
-    m_Value: {x: -3.4639175, y: -3.0431979, z: -3.1791992}
+    m_Value: {x: 1.5202004, y: -0.006577334, z: 0.5852052}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -785,9 +785,9 @@ MonoBehaviour:
   m_DoValidateTrueMetals: 0
   m_SceneViewState:
     m_AlwaysRefresh: 0
-    showFog: 1
-    showSkybox: 1
-    showFlares: 1
+    showFog: 0
+    showSkybox: 0
+    showFlares: 0
     showImageEffects: 1
     showParticleSystems: 1
     showVisualEffectGraphs: 1
@@ -803,17 +803,17 @@ MonoBehaviour:
       m_Size: {x: 0, y: 0}
     yGrid:
       m_Fade:
-        m_Target: 0
+        m_Target: 1
         speed: 2
-        m_Value: 0
+        m_Value: 1
       m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
       m_Pivot: {x: 0, y: 0, z: 0}
       m_Size: {x: 1, y: 1}
     zGrid:
       m_Fade:
-        m_Target: 1
+        m_Target: 0
         speed: 2
-        m_Value: 1
+        m_Value: 0
       m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
       m_Pivot: {x: 0, y: 0, z: 0}
       m_Size: {x: 1, y: 1}
@@ -821,17 +821,17 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0, y: 0, z: 0, w: 1}
+    m_Target: {x: -0.5679124, y: 0.054848965, z: -0.038240287, w: -0.8205792}
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 10
+    m_Target: 3.1932638
     speed: 2
-    m_Value: 3.2567668
+    m_Value: 3.1932638
   m_Ortho:
-    m_Target: 1
+    m_Target: 0
     speed: 2
-    m_Value: 1
+    m_Value: 0
   m_CameraSettings:
     m_Speed: 1
     m_SpeedNormalized: 0.5
@@ -992,7 +992,7 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -1129506
+  m_LastSelectedObjectID: -7280
 --- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1030,9 +1030,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: fafaffff
+      m_SelectedIDs: d451ffffce51ffffc851ffffc251ffffbc51ffffb651ffffb051ffffaa51ffffa451ffff9e51ffff9851ffff9251ffff8c51ffff8651ffff8051ffff7a51ffff7451ffff6e51ffff6851ffff6251ffff5c51ffff5651ffff5051ffff4a51ffff4451ffff3e51ffff3851ffff3251ffff2c51ffff2651ffff2051ffff1a51ffff1451ffff0e51ffff0851ffff0251fffffc50fffff650fffff050ffffea50ffffe450ffffde50ffffd850ffffd250ffffcc50ffffc650ffffc050ffffba50ffffb450ffffae50ffffa850ffffa250ffff9c50ffff9650ffff9050ffff8a50ffff8450ffff7e50ffff7850ffff7250ffff6c50ffff6650ffff6050ffff5a50ffff5450ffff4e50ffff4850ffff4250ffff3c50ffff3650ffff3050ffff2a50ffff2450ffff1e50ffff1850ffff1250ffff0c50ffff0650ffff0050fffffa4ffffff44fffffee4fffffe84fffffe24fffffdc4fffffd64fffffd04fffffca4fffffc44fffffbe4fffffb84fffffb24fffffac4fffffa64fffffa04fffff9a4fffff944fffff8e4fffff884fffff824fffff7c4fffff764fffff704fffff6a4fffff644fffff5e4fffff584fffff524fffff4c4fffff464fffff404fffff3a4fffff344fffff2e4fffff284fffff224fffff1c4fffff164fffff104fffff0a4fffff044ffffffe4efffff84efffff24effffec4effffe64effffe04effffda4effffd44effffce4effffc84effffc24effffbc4effffb64effffb04effffaa4effffa44effff9e4effff984effff924effff8c4effff864effff804effff7a4effff744effff6e4effff684effff624effff5c4effff564effff504effff4a4effff444effff3e4effff384effff324effff2c4effff264effff204effff1a4effff144effff0e4effff084effff024efffffc4dfffff64dfffff04dffffea4dffffe44dffffde4dffffd84dffffd24dffffcc4dffffc64dffffc04dffffba4dffffb44dffffae4dffffa84dffffa24dffff9c4dffff964dffff904dffff8a4dffff844dffff7e4dffff784dffff724dffff6c4dffff664dffff604dffff5a4dffff544dffff4e4dffff484dffff424dffff3c4dffff364dffff304dffff2a4dffff244dffff1e4dffff184dffff124dffff0c4dffff064dffff004dfffffa4cfffff44cffffee4cffffe84cffffe24cffffdc4cffffd64cffffd04cffffca4cffffc44cffffbe4cffffb84cffffb24cffffac4cffffa64cffffa04cffff9a4cffff944cffff8e4cffff884cffff824cffff7c4cffff764cffff704cffff6a4cffff644cffff5e4cffff584cffff524cffff4c4cffff464cffff404cffff3a4cffff344cffff2e4cffff284cffff224cffff1c4cffff164cffff104cffff0a4cffff044cfffffe4bfffff84bfffff24bffffec4bffffe64bffffe04bffffda4bffffd44bffffce4bffffc84bffffc24bffffbc4bffffb64bffffb04bffffaa4bffffa44bffff9e4bffff984bffff924bffff8c4bffff864bffff804bffff7a4bffff744bffff6e4bffff684bffff624bffff5c4bffff564bffff504bffff4a4bffff444bffff3e4bffff384bffff324bffff2c4bffff264bffff204bffff1a4bffff144bffff0e4bffff084bffff024bfffffc4afffff64afffff04affffea4affffe44affffde4affffd84affffd24affffcc4affffc64affffc04affffba4affffb44affffae4affffa84affffa24affff9c4affff964affff904affff8a4affff844affff7e4affff784affff724affff6c4affff664affff604affff5a4affff544affff4e4affff484affff424affff3c4affff364affff304affff2a4affff244affff1e4affff184affff124affff0c4affff064affff004afffffa49fffff449ffffee49ffffe849ffffe249ffffdc49ffffd649ffffd049ffffca49ffffc449ffffbe49ffffb849ffffb249ffffac49ffffa649ffffa049ffff9a49ffff
+      m_LastClickedID: -46694
+      m_ExpandedIDs: eefaffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1100,7 +1100,8 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SkipHidden: 0
     m_SearchArea: 1
-    m_Folders: []
+    m_Folders:
+    - Assets/Art/Environment/rocks
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -1109,15 +1110,15 @@ MonoBehaviour:
   m_StartGridSize: 16
   m_LastFolders: []
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\EvanL\Documents\Unity Projects\Shroom And Gloom New
-    Art Test
+  m_LastProjectPath: C:\Users\EvanL\Documents\Unity Projects\Shroom And Gloom Art
+    Test
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 34370400
     m_LastClickedID: 276276
-    m_ExpandedIDs: 
+    m_ExpandedIDs: ffffffff00000000346b0000926b0000d06b0000dc6b0000e66b0000bc6c0000fa6c0000fc6c0000fe6c00001a6d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1142,10 +1143,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_AssetTreeState:
-    scrollPos: {x: 0, y: 0}
+    scrollPos: {x: 0, y: 152.19995}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff42260000
+    m_ExpandedIDs: ffffffff00000000346b0000926b0000d06b0000dc6b0000e66b0000bc6c0000fa6c0000fc6c0000fe6c00001a6d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

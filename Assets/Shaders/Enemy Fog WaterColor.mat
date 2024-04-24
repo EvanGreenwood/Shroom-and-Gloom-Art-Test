@@ -43,10 +43,10 @@ Material:
     m_Floats:
     - _Cutoff: 0.6
     - _FogOffset: 2
-    - _NoiseAmount: 2
+    - _NoiseAmount: 0.3
     - _NoiseDist: 0.4
     - _NoiseFrequency: 0.5
-    - _NoiseScale: 0.2
+    - _NoiseScale: 1.6
     - _ScreenSpaceScale: 24
     - _WaterColorScale: 2
     - _WaterColorScrollSpeed: 0.04
