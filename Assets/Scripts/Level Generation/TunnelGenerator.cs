@@ -60,17 +60,27 @@ public class TunnelGenerator : MonoBehaviour
     [SerializeField] private TunnelCeilingData[] ceilingElements;
     [SerializeField] private Transform _destination;
     [SerializeField] private Gradient _colorGradient;
+    //
+    public Vector3 TunnelForward => _forward;
+    private Vector3 _forward;
+    private Line3 _tunnelLine;
     void Start()
     {
         Generate();
     }
 
+    public Vector3 GetClosestPoint(Vector3 point)
+    {
+        return MathUtils.ProjectPointOnRay( _tunnelLine.ToRay(),  point);
+    }
     //
     public void Generate()
     {
 
         Vector3 diff = _destination.position - transform.position;
         Vector3 direction = diff.normalized;
+        _forward = direction;
+        _tunnelLine = new Line3(transform.position, _destination.position);
         Vector3 perpendicular = new Vector3(-direction.z, 0, direction.x);
         float dist = diff.magnitude;
         Quaternion rotation = Quaternion.LookRotation(direction, Vector3.up);
@@ -83,7 +93,7 @@ public class TunnelGenerator : MonoBehaviour
             {
                 distanceGenerated += wallData.spacing;
                 float distanceM = distanceGenerated / dist;
-                SpriteRenderer wall = Instantiate(wallData.wallPrefabs[Random.Range(0, wallData.wallPrefabs.Length)], transform.position + direction * distanceGenerated - perpendicular * wallData.width, rotation);
+                SpriteRenderer wall = Instantiate(wallData.wallPrefabs[Random.Range(0, wallData.wallPrefabs.Length)], transform.position + direction * distanceGenerated - perpendicular * wallData.width, rotation, transform);
                 index = (index + wallData.verticalLoopIncrement) % (wallData.verticalLoopLength + 1);
                 float indexM = index / (float)wallData.verticalLoopLength;
                 wall.transform.position = wall.transform.position.PlusY(wallData.minMaxPosition.GetValue(indexM));
@@ -92,6 +102,11 @@ public class TunnelGenerator : MonoBehaviour
                 wall.color = _colorGradient.Evaluate(distanceM);
                 wall.flipX = true;
                 if (wallData.randomFlipY) wall.flipY = Random.value > 0.5f;
+                //
+                if (wall.TryGetComponent(out PropCoward propCoward))
+                {
+                    propCoward.Setup(false);
+                }
             }
             //
             index = 0;
@@ -100,7 +115,7 @@ public class TunnelGenerator : MonoBehaviour
             {
                 distanceGenerated += wallData.spacing;
                 float distanceM = distanceGenerated / dist;
-                SpriteRenderer wall = Instantiate(wallData.wallPrefabs[Random.Range(0, wallData.wallPrefabs.Length)], transform.position + direction * distanceGenerated + perpendicular * wallData.width, rotation);
+                SpriteRenderer wall = Instantiate(wallData.wallPrefabs[Random.Range(0, wallData.wallPrefabs.Length)], transform.position + direction * distanceGenerated + perpendicular * wallData.width, rotation, transform);
                 index = (index + wallData.verticalLoopIncrement) % (wallData.verticalLoopLength + 1);
                 float indexM = index / (float)wallData.verticalLoopLength;
                 wall.transform.position = wall.transform.position.PlusY(wallData.minMaxPosition.GetValue(indexM));
@@ -108,6 +123,11 @@ public class TunnelGenerator : MonoBehaviour
                 //
                 wall.color = _colorGradient.Evaluate(distanceM);
                 if (wallData.randomFlipY) wall.flipY = Random.value > 0.5f;
+                //
+                if (wall.TryGetComponent(out PropCoward propCoward))
+                {
+                    propCoward.Setup(true);
+                }
             }
         }
         //
@@ -118,7 +138,7 @@ public class TunnelGenerator : MonoBehaviour
             {
                 distanceGenerated += floorData.spacing;
                 float distanceM = distanceGenerated / dist;
-                SpriteRenderer floor = Instantiate(floorData.floorPrefabs[Random.Range(0, floorData.floorPrefabs.Length)], transform.position + direction * distanceGenerated + perpendicular * (Random.value * 2 - 1) * floorData.randomXPosition, rotation);
+                SpriteRenderer floor = Instantiate(floorData.floorPrefabs[Random.Range(0, floorData.floorPrefabs.Length)], transform.position + direction * distanceGenerated + perpendicular * (Random.value * 2 - 1) * floorData.randomXPosition, rotation, transform);
                
                 floor.transform.position = floor.transform.position.PlusY(floorData.minMaxPosition.ChooseRandom());
                 floor.transform.Rotate(floorData.xRotation, 0, floorData.minMaxAngle.ChooseRandom( )  );
@@ -136,7 +156,7 @@ public class TunnelGenerator : MonoBehaviour
             {
                 distanceGenerated += ceilingData.spacing;
                 float distanceM = distanceGenerated / dist;
-                SpriteRenderer floor = Instantiate(ceilingData.ceilingPrefabs[Random.Range(0, ceilingData.ceilingPrefabs.Length)], transform.position + Vector3.up * ceilingData.height + direction * distanceGenerated + perpendicular * (Random.value * 2 - 1) * ceilingData.randomXPosition, rotation);
+                SpriteRenderer floor = Instantiate(ceilingData.ceilingPrefabs[Random.Range(0, ceilingData.ceilingPrefabs.Length)], transform.position + Vector3.up * ceilingData.height + direction * distanceGenerated + perpendicular * (Random.value * 2 - 1) * ceilingData.randomXPosition, rotation, transform);
 
                 floor.transform.position = floor.transform.position.PlusY(ceilingData.minMaxPosition.ChooseRandom());
                 floor.transform.Rotate(ceilingData.xRotation, 0, ceilingData.minMaxAngle.ChooseRandom());

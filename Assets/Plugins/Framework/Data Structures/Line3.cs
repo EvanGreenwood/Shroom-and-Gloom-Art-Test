@@ -119,5 +119,12 @@ namespace Framework
             projectionLength = Mathf.Clamp(Vector3.Dot(point - _start, line_direction), 0f, line_length);            
             return _start + line_direction * projectionLength;
         }
+        public Vector3 GetClosestPointOnInfiniteLine(Vector3 point)
+        {
+            Vector3 line_direction = _end - _start; 
+            line_direction.Normalize();
+            float project_length =  Vector3.Dot(point - _start, line_direction) ;
+            return _start + line_direction * project_length;
+        }
     }
 }
