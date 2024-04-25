@@ -2,8 +2,10 @@
 using Framework;
   
 using System.Collections;
-using System.Collections.Generic; 
+using System.Collections.Generic;
+ 
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class TunnelGenerator : MonoBehaviour
 {
@@ -58,6 +60,7 @@ public class TunnelGenerator : MonoBehaviour
     [SerializeField] private TunnelCeilingData[] ceilingElements;
     [SerializeField] private Transform _destination;
     [SerializeField] private Gradient _colorGradient;
+    [SerializeField] private AnimationCurve _ySlopeCurve;
     //
     [SerializeField] private float _baseTunnelWidth = 1f;
     [SerializeField] private float _lumpyWidth = 0.5f;
@@ -67,15 +70,35 @@ public class TunnelGenerator : MonoBehaviour
     //
     public Vector3 TunnelForward => _forward;
     private Vector3 _forward;
-    private Line3 _tunnelLine;
+    private Line3 _tunnelLine; 
     void Start()
     {
-        Generate();
+        Generate(); 
     }
 
     public Vector3 GetClosestPoint(Vector3 point)
     {
         return MathUtils.ProjectPointOnRay( _tunnelLine.ToRay(),  point);
+    }
+    public float GetTunnelYHeight(Vector3 point)
+    {
+        return GetTunnelYHeight((GetClosestPoint(point) - transform.position).magnitude / _tunnelLength);
+    }
+    public float GetTunnelProportion(Vector3 point)
+    {
+        return (GetClosestPoint(point) - transform.position).magnitude / _tunnelLength;
+    }
+    public float GetTunnelYHeight(float proportion)
+    {
+        return Mathf.Lerp(_tunnelLine.Start.y, _tunnelLine.End.y, _ySlopeCurve.Evaluate(proportion));        
+    }
+    //
+    public void GetTunnelPosittionAndDirection(float proportion, out Vector3 postion, out Vector3 direction)
+    {
+      //  Debug.Log("proportion " + proportion);
+        postion = _tunnelLine.EvaluateUnclamped(proportion).WithY(GetTunnelYHeight(proportion));
+        Vector3 forwardPosition = _tunnelLine.EvaluateUnclamped(proportion + 0.033f).WithY(GetTunnelYHeight(proportion + 0.02f));
+        direction =  (forwardPosition - postion).normalized;
     }
     //
     public float GetTunnelWidth(Vector3 position)
@@ -109,7 +132,12 @@ public class TunnelGenerator : MonoBehaviour
             {
                 distanceGenerated += wallData.spacing;
                 float distanceM = distanceGenerated / _tunnelLength;
-                SpriteRenderer wall = Instantiate(wallData.wallPrefabs[Random.Range(0, wallData.wallPrefabs.Length)], transform.position + direction * distanceGenerated - perpendicular * (GetTunnelWidth (distanceGenerated / _tunnelLength) + wallData.width), rotation, transform);
+
+                //
+                GetTunnelPosittionAndDirection(distanceM, out Vector3 currentPosition, out Vector3 currentDirection);
+                Quaternion currentRotation = Quaternion.LookRotation(currentDirection, Vector3.up);
+                //
+                SpriteRenderer wall = Instantiate(wallData.wallPrefabs[Random.Range(0, wallData.wallPrefabs.Length)], currentPosition - perpendicular * (GetTunnelWidth (distanceGenerated / _tunnelLength) + wallData.width), currentRotation, transform);
                 index = (index + wallData.verticalLoopIncrement) % (wallData.verticalLoopLength + 1);
                 float indexM = index / (float)wallData.verticalLoopLength;
                 wall.transform.position = wall.transform.position.PlusY(wallData.minMaxPosition.GetValue(indexM));
@@ -131,7 +159,11 @@ public class TunnelGenerator : MonoBehaviour
             {
                 distanceGenerated += wallData.spacing;
                 float distanceM = distanceGenerated / _tunnelLength;
-                SpriteRenderer wall = Instantiate(wallData.wallPrefabs[Random.Range(0, wallData.wallPrefabs.Length)], transform.position + direction * distanceGenerated + perpendicular * (GetTunnelWidth(distanceGenerated / _tunnelLength) + wallData.width), rotation, transform);
+                //
+                GetTunnelPosittionAndDirection(distanceM, out Vector3 currentPosition, out Vector3 currentDirection);
+                Quaternion currentRotation = Quaternion.LookRotation(currentDirection, Vector3.up);
+                // 
+                SpriteRenderer wall = Instantiate(wallData.wallPrefabs[Random.Range(0, wallData.wallPrefabs.Length)],  currentPosition + perpendicular * (GetTunnelWidth(distanceGenerated / _tunnelLength) + wallData.width), currentRotation, transform);
                 index = (index + wallData.verticalLoopIncrement) % (wallData.verticalLoopLength + 1);
                 float indexM = index / (float)wallData.verticalLoopLength;
                 wall.transform.position = wall.transform.position.PlusY(wallData.minMaxPosition.GetValue(indexM));
@@ -154,7 +186,11 @@ public class TunnelGenerator : MonoBehaviour
             {
                 distanceGenerated += floorData.spacing;
                 float distanceM = distanceGenerated / _tunnelLength;
-                SpriteRenderer floor = Instantiate(floorData.floorPrefabs[Random.Range(0, floorData.floorPrefabs.Length)], transform.position + direction * distanceGenerated + perpendicular * (Random.value * 2 - 1) * floorData.randomXPosition, rotation, transform);
+                //
+                GetTunnelPosittionAndDirection(distanceM, out Vector3 currentPosition, out Vector3 currentDirection);
+                Quaternion currentRotation = Quaternion.LookRotation(currentDirection, Vector3.up);
+                // 
+                SpriteRenderer floor = Instantiate(floorData.floorPrefabs[Random.Range(0, floorData.floorPrefabs.Length)], currentPosition + perpendicular * (Random.value * 2 - 1) * floorData.randomXPosition, currentRotation, transform);
                
                 floor.transform.position = floor.transform.position.PlusY(floorData.minMaxPosition.ChooseRandom());
                 floor.transform.Rotate(floorData.xRotation, 0, floorData.minMaxAngle.ChooseRandom( )  );
@@ -172,7 +208,11 @@ public class TunnelGenerator : MonoBehaviour
             {
                 distanceGenerated += ceilingData.spacing;
                 float distanceM = distanceGenerated / _tunnelLength;
-                SpriteRenderer floor = Instantiate(ceilingData.ceilingPrefabs[Random.Range(0, ceilingData.ceilingPrefabs.Length)], transform.position + Vector3.up * ceilingData.height + direction * distanceGenerated + perpendicular * (Random.value * 2 - 1) * ceilingData.randomXPosition, rotation, transform);
+                //
+                GetTunnelPosittionAndDirection(distanceM, out Vector3 currentPosition, out Vector3 currentDirection);
+                Quaternion currentRotation = Quaternion.LookRotation(currentDirection, Vector3.up);
+                // 
+                SpriteRenderer floor = Instantiate(ceilingData.ceilingPrefabs[Random.Range(0, ceilingData.ceilingPrefabs.Length)], currentPosition + Vector3.up * ceilingData.height  + perpendicular * (Random.value * 2 - 1) * ceilingData.randomXPosition, currentRotation, transform);
 
                 floor.transform.position = floor.transform.position.PlusY(ceilingData.minMaxPosition.ChooseRandom());
                 floor.transform.Rotate(ceilingData.xRotation, 0, ceilingData.minMaxAngle.ChooseRandom());
@@ -182,5 +222,22 @@ public class TunnelGenerator : MonoBehaviour
                 if (ceilingData.randomFlipX) floor.flipX = Random.value > 0.5f;
             }
         }
+    }
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.green;
+        Gizmos.DrawLine(transform.position , _destination.position  );
+        //
+        Vector3 diff = _destination.position - transform.position;
+        
+        Vector3 direction = diff.normalized;
+       
+        Vector3 perpendicular = new Vector3(-direction.z, 0, direction.x);
+
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawLine(_destination.position, _destination.position + perpendicular - direction);
+        Gizmos.DrawLine(_destination.position, _destination.position - perpendicular - direction);
+        //
+        //DrawingUtils.DrawLine(transform.position + Vector3.up, _destination.position + Vector3.up, Color.green);
     }
 }

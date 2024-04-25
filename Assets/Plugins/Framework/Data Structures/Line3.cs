@@ -1,4 +1,5 @@
 ﻿using System;
+using Unity.VisualScripting;
 using UnityEngine;
 
 namespace Framework
@@ -50,6 +51,10 @@ namespace Framework
         /// Half the length of the line segment (distance between point A and B).
         /// </summary>
         public float HalfLength => (_end - _start).magnitude * 0.5f;
+
+        public Vector3 Evaluate(float proportion) => Vector3.Lerp(_start, _end, proportion);
+
+        public Vector3 EvaluateUnclamped(float proportion) =>  _start * (1- proportion) +  _end * proportion ;
 
         /// <summary>
         /// A line that start at the origin and is aligned with the positive Y axis. Has a length of one.
