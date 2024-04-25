@@ -61,6 +61,7 @@ public class TunnelGenerator : MonoBehaviour
     [SerializeField] private Transform _destination;
     [SerializeField] private Gradient _colorGradient;
     [SerializeField] private AnimationCurve _ySlopeCurve;
+    [SerializeField] private AnimationCurve _sidewaysCurve;
     //
     [SerializeField] private float _baseTunnelWidth = 1f;
     [SerializeField] private float _lumpyWidth = 0.5f;
@@ -92,12 +93,16 @@ public class TunnelGenerator : MonoBehaviour
     {
         return Mathf.Lerp(_tunnelLine.Start.y, _tunnelLine.End.y, _ySlopeCurve.Evaluate(proportion));        
     }
+    public Vector3 GetTunnelSidewaysOffset(float proportion)
+    {
+        return _sidewaysCurve.Evaluate(proportion) * _tunnelLine.PerpendicularHorizontal;  ;
+    }
     //
     public void GetTunnelPosittionAndDirection(float proportion, out Vector3 postion, out Vector3 direction)
     {
       //  Debug.Log("proportion " + proportion);
-        postion = _tunnelLine.EvaluateUnclamped(proportion).WithY(GetTunnelYHeight(proportion));
-        Vector3 forwardPosition = _tunnelLine.EvaluateUnclamped(proportion + 0.033f).WithY(GetTunnelYHeight(proportion + 0.02f));
+        postion = _tunnelLine.EvaluateUnclamped(proportion).WithY(GetTunnelYHeight(proportion)) + GetTunnelSidewaysOffset(proportion);
+        Vector3 forwardPosition = _tunnelLine.EvaluateUnclamped(proportion + 0.033f).WithY(GetTunnelYHeight(proportion + 0.02f)) + GetTunnelSidewaysOffset(proportion + 0.033f);
         direction =  (forwardPosition - postion).normalized;
     }
     //

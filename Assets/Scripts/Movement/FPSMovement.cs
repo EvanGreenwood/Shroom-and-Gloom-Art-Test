@@ -26,6 +26,8 @@ public class FPSMovement : MonoBehaviour
     void Start()
     {
         transform.position = transform.position.WithY(_headHeight);
+        //
+        if (_tunnel == null) _tunnel = FindAnyObjectByType<TunnelGenerator>();
     }
     public void SwitchTunnel(TunnelGenerator newTunnel)
     {
@@ -42,9 +44,12 @@ public class FPSMovement : MonoBehaviour
             }
             else
             {
-              
-                transform.Translate(_tunnel.TunnelForward * Time.deltaTime * _speed, Space.World);
-                transform.position = Vector3.Lerp(transform.position, _tunnel.GetClosestPoint(transform.position), Time.deltaTime * 3).WithY(_tunnel.GetTunnelYHeight(transform.position)  );
+                _tunnel.GetTunnelPosittionAndDirection(_tunnel.GetTunnelProportion(transform.position), out Vector3 currentPosition, out Vector3 currentDirection);
+                //
+                transform.Translate(currentDirection * Time.deltaTime * _speed, Space.World);
+                // 
+                //
+                transform.position = Vector3.Lerp(transform.position, currentPosition + currentDirection * Time.deltaTime * _speed, Time.deltaTime * 3) ;
             }
             _bobCounter += Time.deltaTime * _speed;
             // 
@@ -58,8 +63,12 @@ public class FPSMovement : MonoBehaviour
             }
             else
             {
-                transform.Translate(_tunnel.TunnelForward * Time.deltaTime * -_speed, Space.World);
-                transform.position = Vector3.Lerp(transform.position, _tunnel.GetClosestPoint(transform.position), Time.deltaTime * 3).WithY(_tunnel.GetTunnelYHeight(transform.position) );
+                //
+                _tunnel.GetTunnelPosittionAndDirection(_tunnel.GetTunnelProportion(transform.position), out Vector3 currentPosition, out Vector3 currentDirection);
+                //
+                transform.Translate(currentDirection * Time.deltaTime * -_speed, Space.World); 
+                //
+                transform.position = Vector3.Lerp(transform.position, currentPosition - currentDirection * Time.deltaTime * _speed, Time.deltaTime * 3) ;
             }
             _bobCounter -= Time.deltaTime * _speed;
             _headCamera.transform.localPosition = _headCamera.transform.localPosition.WithY(Mathf.Lerp(_headCamera.transform.localPosition.y, _headHeight + Mathf.Sin(_bobCounter / _bobRate * Mathf.PI  ) * _bobHeight, Time.deltaTime * 12));
@@ -86,7 +95,7 @@ public class FPSMovement : MonoBehaviour
             Vector3 forwardEulers =  Quaternion.LookRotation(Vector3.forward).eulerAngles;
             _tunnelFacingEulers = new Vector3(Mathf.LerpAngle(_tunnelFacingEulers.x, forwardEulers.x, Time.deltaTime * 5), Mathf.LerpAngle(_tunnelFacingEulers.y, forwardEulers.y, Time.deltaTime * 4), Mathf.LerpAngle(_tunnelFacingEulers.z, forwardEulers.z, Time.deltaTime * 5));
         }
-        transform.localEulerAngles = new Vector3(_tunnelFacingEulers.x + ((Input.mousePosition.y - Screen.height / 2f) / Screen.height / -2f) * maxXAngle + baseXAngle, ((Input.mousePosition.x - Screen.width / 2f) / Screen.width / 2f) * maxYAngle + _tunnelFacingEulers.y, 0);
+        _headCamera.transform.localEulerAngles = new Vector3(_tunnelFacingEulers.x + ((Input.mousePosition.y - Screen.height / 2f) / Screen.height / -2f) * maxXAngle + baseXAngle, ((Input.mousePosition.x - Screen.width / 2f) / Screen.width / 2f) * maxYAngle + _tunnelFacingEulers.y, 0);
 
     }
 }

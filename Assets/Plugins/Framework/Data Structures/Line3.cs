@@ -37,6 +37,7 @@ namespace Framework
         /// </summary>
         public Vector3 Direction => (_end - _start).normalized;
 
+        public Vector3 PerpendicularHorizontal => new Vector3(-Direction.z, 0, Direction.x);
         /// <summary>
         /// The length of the line segment (distance between point A and B).
         /// </summary>
