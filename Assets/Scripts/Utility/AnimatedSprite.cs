@@ -7,6 +7,7 @@ public class AnimatedSprite : MonoBehaviour
 {
     [SerializeField] private Sprite[] _sprites;
     private SpriteRenderer _spriteRenderer;
+    
     //
     private int _frame = 0;
     private float _counter = 0;
