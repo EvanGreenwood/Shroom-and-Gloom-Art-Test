@@ -750,7 +750,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  _baseTunnelWidth: 1
+  _baseTunnelWidth: 2
   _lumpyWidth: 0.5
   _clearingWidth: 1
 --- !u!4 &1551529200
