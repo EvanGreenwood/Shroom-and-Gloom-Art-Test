@@ -21,6 +21,7 @@ public class FPSMovement : MonoBehaviour
     //
     [SerializeField] private TunnelGenerator _tunnel;
     private Vector3 _tunnelFacingEulers = Vector3.zero;
+    private float _currentSpeed = 5;
     //
     
     void Start()
@@ -28,6 +29,8 @@ public class FPSMovement : MonoBehaviour
         transform.position = transform.position.WithY(_headHeight);
         //
         if (_tunnel == null) _tunnel = FindAnyObjectByType<TunnelGenerator>();
+        //
+        _currentSpeed = _speed;
     }
     public void SwitchTunnel(TunnelGenerator newTunnel)
     {
@@ -36,17 +39,25 @@ public class FPSMovement : MonoBehaviour
 
     void Update()
     {
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            _currentSpeed = Mathf.MoveTowards(_currentSpeed, _speed * 1.8f, Time.deltaTime * _speed * 0.6f);
+        }
+        else
+        {
+            _currentSpeed = Mathf.MoveTowards(_currentSpeed, _speed  , Time.deltaTime * _speed);
+        }
         if (Input.GetKey(KeyCode.W))
         {
             if (_tunnel == null)
             {
-                transform.Translate(transform.forward * Time.deltaTime * _speed);
+                transform.Translate(transform.forward * Time.deltaTime * _currentSpeed);
             }
             else
             {
                 _tunnel.GetTunnelPosittionAndDirection(_tunnel.GetTunnelProportion(transform.position), out Vector3 currentPosition, out Vector3 currentDirection);
                 //
-                transform.Translate(currentDirection * Time.deltaTime * _speed, Space.World);
+                transform.Translate(currentDirection * Time.deltaTime * _currentSpeed, Space.World);
                 // 
                 //
                 transform.position = Vector3.Lerp(transform.position, currentPosition + currentDirection * Time.deltaTime * _speed, Time.deltaTime * 3) ;
@@ -59,14 +70,14 @@ public class FPSMovement : MonoBehaviour
         {
             if (_tunnel == null)
             {
-                transform.Translate(transform.forward * Time.deltaTime * -_speed);
+                transform.Translate(transform.forward * Time.deltaTime * -_currentSpeed);
             }
             else
             {
                 //
                 _tunnel.GetTunnelPosittionAndDirection(_tunnel.GetTunnelProportion(transform.position), out Vector3 currentPosition, out Vector3 currentDirection);
                 //
-                transform.Translate(currentDirection * Time.deltaTime * -_speed, Space.World); 
+                transform.Translate(currentDirection * Time.deltaTime * -_currentSpeed, Space.World); 
                 //
                 transform.position = Vector3.Lerp(transform.position, currentPosition - currentDirection * Time.deltaTime * _speed, Time.deltaTime * 3) ;
             }
