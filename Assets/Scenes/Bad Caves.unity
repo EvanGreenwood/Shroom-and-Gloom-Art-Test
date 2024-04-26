@@ -935,7 +935,8 @@ MonoBehaviour:
   ceilingElements:
   - name: Ceiling
     ceilingPrefabs:
-    - {fileID: 717079983591251126, guid: 2832df8ee9a104c518c231259296af54, type: 3}
+    - {fileID: 717079983591251126, guid: 27bacbf4aeb5d44ac9799a0cc6ead2d1, type: 3}
+    - {fileID: 717079983591251126, guid: 0e7499d4e7bc84f359fc4525db7054d9, type: 3}
     height: 4
     zOffset: 0.02
     spacing: 0.5
@@ -944,6 +945,22 @@ MonoBehaviour:
       _min: -0.5
       _max: 0.5
     xRotation: -45
+    minMaxPosition:
+      _min: -0.03
+      _max: 0.03
+    randomFlipX: 1
+  - name: Stalagtites
+    ceilingPrefabs:
+    - {fileID: 717079983591251126, guid: 2832df8ee9a104c518c231259296af54, type: 3}
+    - {fileID: 717079983591251126, guid: b40fb7650720d4555ab821e23919b6c9, type: 3}
+    height: 4
+    zOffset: 0.02
+    spacing: 0.3
+    randomXPosition: 4
+    minMaxAngle:
+      _min: 0
+      _max: 0.5
+    xRotation: 0
     minMaxPosition:
       _min: -0.03
       _max: 0.03
