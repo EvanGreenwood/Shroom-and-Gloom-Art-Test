@@ -228,8 +228,11 @@ public class TunnelGenerator : MonoBehaviour
             }
         }
     }
+    [SerializeField] private bool _debug;
     private void OnDrawGizmos()
     {
+        if(!_debug)
+            return;
         Gizmos.color = Color.green;
         Gizmos.DrawLine(transform.position , _destination.position  );
         //
