@@ -239,7 +239,8 @@ public class TunnelGenerator : MonoBehaviour
                         {
                             if (surroundData.angleRange.Contains(currentAngleIncrement))
                             {
-                                SpriteRenderer surroundLump = Instantiate(surroundData.surroundPrefabs[Random.Range(0, surroundData.surroundPrefabs.Length)], currentPosition + currentDirection* 0.0001f * currentAngleIncrement + Vector3.up * surroundData.centerHeight + MathUtils.GetPointOnUnitCircleXY(currentAngleIncrement + 180, currentRotation) * (GetTunnelWidth(distanceM) + surroundData.radiusOffset), currentRotation, transform);
+                                Vector3 circleOffset = MathUtils.GetPointOnUnitCircleXY(currentAngleIncrement + 180, currentRotation);
+                                SpriteRenderer surroundLump = Instantiate(surroundData.surroundPrefabs[Random.Range(0, surroundData.surroundPrefabs.Length)], currentPosition + currentDirection* 0.0001f * currentAngleIncrement + Vector3.up * surroundData.centerHeight + circleOffset *  surroundData.radiusOffset + circleOffset.MultiplyY(0.5f) * GetTunnelWidth(distanceM), currentRotation, transform);
                                 surroundLump.transform.Rotate(0, 0, -currentAngleIncrement + 90);
                                 surroundLump.color = _colorGradient.Evaluate(distanceM);
                                 //
@@ -266,7 +267,8 @@ public class TunnelGenerator : MonoBehaviour
                         {
                             if (surroundData.angleRange.Contains(currentAngleIncrement))
                             {
-                                SpriteRenderer surroundLump = Instantiate(surroundData.surroundPrefabs[Random.Range(0, surroundData.surroundPrefabs.Length)], currentPosition + currentDirection * 0.0001f * currentAngleIncrement + Vector3.up * surroundData.centerHeight + MathUtils.GetPointOnUnitCircleXY(currentAngleIncrement + 180, currentRotation) * (GetTunnelWidth(distanceM) + surroundData.radiusOffset), currentRotation, transform);
+                                Vector3 circleOffset = MathUtils.GetPointOnUnitCircleXY(currentAngleIncrement + 180, currentRotation);
+                                SpriteRenderer surroundLump = Instantiate(surroundData.surroundPrefabs[Random.Range(0, surroundData.surroundPrefabs.Length)], currentPosition + currentDirection * 0.0001f * currentAngleIncrement + Vector3.up * surroundData.centerHeight + circleOffset * surroundData.radiusOffset + circleOffset.MultiplyY(0.5f) * GetTunnelWidth(distanceM), currentRotation, transform);
                                 surroundLump.transform.Rotate(0, 0, -currentAngleIncrement + 90 + surroundData.randomRotation * (-1 + Random.value * 2));
                                 surroundLump.color = _colorGradient.Evaluate(distanceM);
                                 //
@@ -278,7 +280,30 @@ public class TunnelGenerator : MonoBehaviour
                         currentAngleIncrement -= 360;
                         index++;
                         break;
+                    case TunnelSurroundData.SurroundPattern.SpiralStaggered:
+                    case TunnelSurroundData.SurroundPattern.Spiral:
 
+                        if (!surroundData.angleRange.Contains(currentAngleIncrement))
+                        {
+                            currentAngleIncrement += surroundData.angleIncrement;
+                        }
+                        else
+                        {
+                            Vector3 circleOffset = MathUtils.GetPointOnUnitCircleXY(currentAngleIncrement + (surroundData.pattern == TunnelSurroundData.SurroundPattern.SpiralStaggered ? surroundData.angleIncrement /2 : 0) + 180, currentRotation);
+                            SpriteRenderer surroundLump = Instantiate(surroundData.surroundPrefabs[Random.Range(0, surroundData.surroundPrefabs.Length)], currentPosition + currentDirection * 0.0001f * currentAngleIncrement + Vector3.up * surroundData.centerHeight + circleOffset * surroundData.radiusOffset + circleOffset.MultiplyY(0.5f) * GetTunnelWidth(distanceM), currentRotation, transform);
+                            surroundLump.transform.Rotate(0, 0, -currentAngleIncrement + 90 + surroundData.randomRotation * (-1 + Random.value * 2));
+                            surroundLump.color = _colorGradient.Evaluate(distanceM);
+                            //
+                            if (surroundData.randomFlipX) surroundLump.flipX = Random.value > 0.5f;
+                            if (surroundData.randomFlipY) surroundLump.flipY = Random.value > 0.5f;
+                            //
+                        }
+                        currentAngleIncrement += surroundData.angleIncrement;
+                        if (currentAngleIncrement > 360) currentAngleIncrement -= 360;
+                        if (currentAngleIncrement < 0) currentAngleIncrement += 360;
+                        //
+                        index++;
+                        break;
                 }
             }
         }
