@@ -653,7 +653,14 @@ namespace Framework
         {
             return Quaternion.LookRotation(normal) * new Vector3(Mathf.Sin(angle * Mathf.Deg2Rad), 0, Mathf.Cos(angle * Mathf.Deg2Rad));
         }
-
+        public static Vector3 GetPointOnUnitCircle(float angle, Quaternion normal)
+        {
+            return normal * new Vector3(Mathf.Sin(angle * Mathf.Deg2Rad), 0, Mathf.Cos(angle * Mathf.Deg2Rad));
+        }
+        public static Vector3 GetPointOnUnitCircleXY(float angle, Quaternion normal)
+        {
+            return normal * new Vector3(Mathf.Sin(angle * Mathf.Deg2Rad), Mathf.Cos(angle * Mathf.Deg2Rad), 0);
+        }
         public static Vector3 GetEulerDirection(Vector3 eulerAngles)
         {
             eulerAngles *= Mathf.Deg2Rad;

@@ -1072,6 +1072,246 @@ MonoBehaviour:
   _fpsMovement: {fileID: 655301710}
   _tunnel1: {fileID: 1392419565}
   _tunnel2: {fileID: 970142070}
+--- !u!1 &825302862
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 825302864}
+  - component: {fileID: 825302863}
+  m_Layer: 0
+  m_Name: Tunnel (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &825302863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 825302862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f743e6c0a9ec45e4abb4374dc99d4a09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wallElements:
+  - name: Wall Thorns
+    wallPrefabs:
+    - {fileID: 717079983591251126, guid: 2fadf5ce0ef2c9f4893132f5f32d3387, type: 3}
+    zOffset: 0
+    spacing: 0.2
+    width: 1
+    verticalLoopLength: 5
+    verticalLoopIncrement: 2
+    minMaxAngle:
+      _min: -10
+      _max: 10
+    minMaxPosition:
+      _min: 1
+      _max: 2
+    randomRotation: 5
+    randomFlipY: 1
+  surroundElements: []
+  floorElements:
+  - name: Floor
+    floorPrefabs:
+    - {fileID: 717079983591251126, guid: a1e8ce5975fcce44d977754df999f3f9, type: 3}
+    zOffset: 0.08
+    spacing: 0.5
+    randomXPosition: 0.5
+    minMaxAngle:
+      _min: -1
+      _max: 1
+    xRotation: 0
+    minMaxPosition:
+      _min: -0.05
+      _max: 0.05
+    randomFlipX: 1
+  ceilingElements:
+  - name: Ceiling
+    ceilingPrefabs:
+    - {fileID: 717079983591251126, guid: 92bea43dd56732f47873721fda19fca4, type: 3}
+    height: 4
+    zOffset: 0.02
+    spacing: 0.5
+    randomXPosition: 1.4
+    minMaxAngle:
+      _min: -0.5
+      _max: 0.5
+    xRotation: 0
+    minMaxPosition:
+      _min: -0.03
+      _max: 0.03
+    randomFlipX: 1
+  _destination: {fileID: 1498460031}
+  _colorGradient:
+    serializedVersion: 2
+    key0: {r: 0.6981132, g: 0.535298, b: 0.50448555, a: 1}
+    key1: {r: 0.59716547, g: 0.7132075, b: 0.44541824, a: 1}
+    key2: {r: 0.5397144, g: 0.7290569, b: 0.51479673, a: 0}
+    key3: {r: 0.5882353, g: 0.77254903, b: 0.7137255, a: 0}
+    key4: {r: 0.5882164, g: 0.7735849, b: 0.71179545, a: 0}
+    key5: {r: 0.5150943, g: 0.735849, b: 0.54452825, a: 0}
+    key6: {r: 0.6747628, g: 0.7433963, b: 0.5091563, a: 0}
+    key7: {r: 0.69803923, g: 0.5372549, b: 0.5058824, a: 0}
+    ctime0: 7828
+    ctime1: 22330
+    ctime2: 27389
+    ctime3: 31772
+    ctime4: 33604
+    ctime5: 37508
+    ctime6: 42687
+    ctime7: 53285
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_ColorSpace: -1
+    m_NumColorKeys: 8
+    m_NumAlphaKeys: 2
+  _ySlopeCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0.0022572102
+      outSlope: 0.0022572102
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.10359369
+      value: 0.00023383275
+      inSlope: 0.003398362
+      outSlope: 0.003398362
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.119341046
+    - serializedVersion: 3
+      time: 0.40461358
+      value: 0.49593857
+      inSlope: -0.011748202
+      outSlope: -0.011748202
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.14077926
+    - serializedVersion: 3
+      time: 0.59627515
+      value: 0.49482068
+      inSlope: -0.010673329
+      outSlope: -0.010673329
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.19391015
+    - serializedVersion: 3
+      time: 0.90218717
+      value: 0.99793416
+      inSlope: 0.012348449
+      outSlope: 0.012348449
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 1
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0.02112031
+      outSlope: 0.02112031
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  _sidewaysCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: -0.0003954512
+      value: -0.00028119795
+      inSlope: 0.00043191956
+      outSlope: 0.00043191956
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.3246074
+    - serializedVersion: 3
+      time: 0.2594687
+      value: 0.32345402
+      inSlope: 0.00181374
+      outSlope: 0.00181374
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.22513789
+    - serializedVersion: 3
+      time: 0.69749814
+      value: -0.22332543
+      inSlope: 0.0017330066
+      outSlope: 0.0017330066
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.20012432
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.92046
+      value: -0.000050597824
+      inSlope: -0.027862348
+      outSlope: -0.027862348
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.80027926
+    - serializedVersion: 3
+      time: 0.9996046
+      value: -0.00028119795
+      inSlope: -0.004851665
+      outSlope: -0.004851665
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.23839074
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  _baseTunnelWidth: 1
+  _lumpyWidth: 0.5
+  _clearingWidth: 2.7
+  _debug: 0
+--- !u!4 &825302864
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 825302862}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 22, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1498460031}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &959034231
 GameObject:
   m_ObjectHideFlags: 0
@@ -1134,6 +1374,7 @@ MonoBehaviour:
       _max: 0.3
     randomRotation: 10
     randomFlipY: 0
+  surroundElements: []
   floorElements:
   - name: Floor
     floorPrefabs:
@@ -1211,6 +1452,7 @@ MonoBehaviour:
   _baseTunnelWidth: 1
   _lumpyWidth: 0.5
   _clearingWidth: 1
+  _debug: 0
 --- !u!4 &959034233
 Transform:
   m_ObjectHideFlags: 0
@@ -1273,6 +1515,7 @@ MonoBehaviour:
       _max: 2
     randomRotation: 5
     randomFlipY: 1
+  surroundElements: []
   floorElements:
   - name: Floor
     floorPrefabs:
@@ -1458,6 +1701,7 @@ MonoBehaviour:
   _baseTunnelWidth: 1
   _lumpyWidth: 0.5
   _clearingWidth: 4
+  _debug: 1
 --- !u!4 &970142071
 Transform:
   m_ObjectHideFlags: 0
@@ -1521,7 +1765,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1265775186
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1551,6 +1795,7 @@ MonoBehaviour:
       _max: 2.5
     randomRotation: 3
     randomFlipY: 1
+  surroundElements: []
   floorElements:
   - name: Floor
     floorPrefabs:
@@ -1718,6 +1963,7 @@ MonoBehaviour:
   _baseTunnelWidth: 1
   _lumpyWidth: 0.5
   _clearingWidth: 2.7
+  _debug: 0
 --- !u!4 &1265775187
 Transform:
   m_ObjectHideFlags: 0
@@ -1953,23 +2199,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f743e6c0a9ec45e4abb4374dc99d4a09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wallElements:
-  - name: Wall Thorns
-    wallPrefabs:
-    - {fileID: 717079983591251126, guid: 2fadf5ce0ef2c9f4893132f5f32d3387, type: 3}
+  wallElements: []
+  surroundElements:
+  - name: Lumps
+    surroundPrefabs:
+    - {fileID: 717079983591251126, guid: 5733ac82e1b479f4d8b85f35ef1eb7f4, type: 3}
+    - {fileID: 717079983591251126, guid: 223c8e3df2bfbbb4a89d265c8dfe632e, type: 3}
     zOffset: 0
-    spacing: 0.2
-    width: 1
-    verticalLoopLength: 5
-    verticalLoopIncrement: 2
-    minMaxAngle:
-      _min: -10
-      _max: 10
-    minMaxPosition:
-      _min: 1
-      _max: 2
-    randomRotation: 5
+    spacing: 0.5
+    radiusOffset: 2
+    centerHeight: 1.4
+    pattern: 4
+    angleRange:
+      _min: 46
+      _max: 314
+    angleIncrement: 45
+    randomRotation: 7
     randomFlipY: 1
+    randomFlipX: 0
+  - name: Rocks
+    surroundPrefabs:
+    - {fileID: 717079983591251126, guid: ad2cdd5d47cdf714799f08ac75aa1d51, type: 3}
+    zOffset: 0.25
+    spacing: 0.5
+    radiusOffset: 1.8
+    centerHeight: 1.4
+    pattern: 1
+    angleRange:
+      _min: 60
+      _max: 300
+    angleIncrement: 45
+    randomRotation: 7
+    randomFlipY: 1
+    randomFlipX: 0
   floorElements:
   - name: Floor
     floorPrefabs:
@@ -1985,22 +2247,7 @@ MonoBehaviour:
       _min: -0.05
       _max: 0.05
     randomFlipX: 1
-  ceilingElements:
-  - name: Ceiling
-    ceilingPrefabs:
-    - {fileID: 717079983591251126, guid: 92bea43dd56732f47873721fda19fca4, type: 3}
-    height: 4
-    zOffset: 0.02
-    spacing: 0.5
-    randomXPosition: 1.4
-    minMaxAngle:
-      _min: -0.5
-      _max: 0.5
-    xRotation: 0
-    minMaxPosition:
-      _min: -0.03
-      _max: 0.03
-    randomFlipX: 1
+  ceilingElements: []
   _destination: {fileID: 537470454}
   _colorGradient:
     serializedVersion: 2
@@ -2146,6 +2393,7 @@ MonoBehaviour:
   _baseTunnelWidth: 1
   _lumpyWidth: 0.5
   _clearingWidth: 2.7
+  _debug: 1
 --- !u!4 &1392419566
 Transform:
   m_ObjectHideFlags: 0
@@ -2178,7 +2426,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1404780146
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2224,6 +2472,7 @@ MonoBehaviour:
       _max: 0
     randomRotation: 13
     randomFlipY: 0
+  surroundElements: []
   floorElements:
   - name: Floor
     floorPrefabs:
@@ -2337,6 +2586,7 @@ MonoBehaviour:
   _baseTunnelWidth: 1
   _lumpyWidth: 0.5
   _clearingWidth: 2.7
+  _debug: 0
 --- !u!4 &1404780147
 Transform:
   m_ObjectHideFlags: 0
@@ -2383,6 +2633,37 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1265775187}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1498460030
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1498460031}
+  m_Layer: 0
+  m_Name: Tunnel Destination
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1498460031
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1498460030}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -9, y: -5, z: 15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 825302864}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1500226136
 GameObject:
@@ -2555,7 +2836,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1633758376
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2585,6 +2866,7 @@ MonoBehaviour:
       _max: 2.5
     randomRotation: 13
     randomFlipY: 0
+  surroundElements: []
   floorElements:
   - name: Floor
     floorPrefabs:
@@ -2680,6 +2962,7 @@ MonoBehaviour:
   _baseTunnelWidth: 1
   _lumpyWidth: 0.5
   _clearingWidth: 2.7
+  _debug: 0
 --- !u!4 &1633758377
 Transform:
   m_ObjectHideFlags: 0
@@ -2896,6 +3179,7 @@ SceneRoots:
   - {fileID: 655301711}
   - {fileID: 6823202743071783813}
   - {fileID: 1392419566}
+  - {fileID: 825302864}
   - {fileID: 970142071}
   - {fileID: 1265775187}
   - {fileID: 1633758377}

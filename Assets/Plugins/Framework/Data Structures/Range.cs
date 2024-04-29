@@ -303,7 +303,10 @@ namespace Framework
         {
             return value >= _min && value <= _max;
         }
-
+        public bool Contains(float value)
+        {
+            return value >= _min && value <= _max;
+        }
         /// <summary>
         /// Clamps a float to the range's bounds.
         /// </summary>
