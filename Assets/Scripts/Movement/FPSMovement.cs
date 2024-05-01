@@ -55,7 +55,7 @@ public class FPSMovement : MonoBehaviour
             }
             else
             {
-                _tunnel.GetTunnelPosittionAndDirection(_tunnel.GetTunnelProportion(transform.position), out Vector3 currentPosition, out Vector3 currentDirection);
+                _tunnel.GetTunnelPositionAndDirection(_tunnel.GetTunnelProportion(transform.position), out Vector3 currentPosition, out Vector3 currentDirection);
                 //
                 transform.Translate(currentDirection * Time.deltaTime * _currentSpeed, Space.World);
                 // 
@@ -75,7 +75,7 @@ public class FPSMovement : MonoBehaviour
             else
             {
                 //
-                _tunnel.GetTunnelPosittionAndDirection(_tunnel.GetTunnelProportion(transform.position), out Vector3 currentPosition, out Vector3 currentDirection);
+                _tunnel.GetTunnelPositionAndDirection(_tunnel.GetTunnelProportion(transform.position), out Vector3 currentPosition, out Vector3 currentDirection);
                 //
                 transform.Translate(currentDirection * Time.deltaTime * -_currentSpeed, Space.World); 
                 //
@@ -97,7 +97,7 @@ public class FPSMovement : MonoBehaviour
         //
         if (_tunnel != null)
         {
-            _tunnel.GetTunnelPosittionAndDirection(_tunnel.GetTunnelProportion(transform.position), out Vector3 currentPosition, out Vector3 currentDirection);
+            _tunnel.GetTunnelPositionAndDirection(_tunnel.GetTunnelProportion(transform.position), out Vector3 currentPosition, out Vector3 currentDirection);
             Vector3 forwardEulers =  Quaternion.LookRotation(currentDirection, Vector3.up) .eulerAngles; 
             _tunnelFacingEulers = new Vector3(Mathf.LerpAngle(_tunnelFacingEulers.x, forwardEulers.x, Time.deltaTime * 5), Mathf.LerpAngle(_tunnelFacingEulers.y, forwardEulers.y, Time.deltaTime * 4), Mathf.LerpAngle(_tunnelFacingEulers.z, forwardEulers.z, Time.deltaTime * 5));
         }

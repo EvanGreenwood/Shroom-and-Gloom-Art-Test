@@ -81,7 +81,6 @@ namespace Framework
         {
             _start = start;
             _end = end;
-
         }
 
         public Line3(Vector3 origin, Vector3 direction, float distance)

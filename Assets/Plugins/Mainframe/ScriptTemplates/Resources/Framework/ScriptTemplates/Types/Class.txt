@@ -1,0 +1,6 @@
+#region Usings
+using UnityEngine;
+using Framework;
+#endregion
+
+public class #SCRIPTNAME# {}

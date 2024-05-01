@@ -1,0 +1,10 @@
+#region Usings
+using Framework;
+using UnityEngine;
+#endregion
+
+[MenuCreate("#SCRIPTNAME#", 0)]
+public class #SCRIPTNAME#: ScriptableObject
+{
+    
+}
