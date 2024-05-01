@@ -1,0 +1,27 @@
+#region Usings
+using UnityEngine;
+using UnityEditor;
+using Framework;
+#endregion
+
+public class #SCRIPTNAME# : EditorWindow
+{
+    const string WINDOW_TITLE = "#SCRIPTNAME#";
+    const string MENU_ITEM = "Tools/" + WINDOW_TITLE;
+
+    void OnEnable() {}
+    void OnDisable() {}
+
+    // Open Window
+    //----------------------------------------------------------------------------------------------------
+    [MenuItem(MENU_ITEM)]
+    public static void OpenWindow()
+    {
+        #SCRIPTNAME# window = GetWindow<#SCRIPTNAME#>(false, WINDOW_TITLE, true);
+        window.Show();
+    }
+
+    // GUI
+    //----------------------------------------------------------------------------------------------------
+    void OnGUI() {}
+}

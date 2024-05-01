@@ -580,70 +580,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f743e6c0a9ec45e4abb4374dc99d4a09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wallElements:
-  - name: Wall Thorns
-    wallPrefabs:
-    - {fileID: 1508189691331659514, guid: 58503cf409f035144b23039e7efe5466, type: 3}
-    zOffset: 0
-    spacing: 2
-    width: 4
-    verticalLoopLength: 5
-    verticalLoopIncrement: 2
-    minMaxAngle:
-      _min: 0
-      _max: 0
-    minMaxPosition:
-      _min: 2
-      _max: 3
-    randomRotation: 0
-    randomFlipY: 0
-  - name: Thorns Base
-    wallPrefabs:
-    - {fileID: 717079983591251126, guid: 239ca69b503789f4097c61f9e63c3318, type: 3}
-    zOffset: 0.1
-    spacing: 0.5
-    width: 3
-    verticalLoopLength: 3
-    verticalLoopIncrement: 1
-    minMaxAngle:
-      _min: -15
-      _max: 30
-    minMaxPosition:
-      _min: -2
-      _max: -1
-    randomRotation: 90
-    randomFlipY: 0
-  floorElements:
-  - name: Floor
-    floorPrefabs:
-    - {fileID: -8373903463449722979, guid: 26d96b879b500654a952b8ee6bc0661b, type: 3}
-    zOffset: 0.08
-    spacing: 0.5
-    randomXPosition: 0.5
-    minMaxAngle:
-      _min: -1
-      _max: 1
-    xRotation: 0
-    minMaxPosition:
-      _min: -0.05
-      _max: 0.05
-    randomFlipX: 1
-  ceilingElements:
-  - name: Ceiling
-    ceilingPrefabs:
-    - {fileID: 717079983591251126, guid: 58a3e2b112178c84aafe4bc29a0c0083, type: 3}
-    height: 4
-    zOffset: 0.02
-    spacing: 0.5
-    randomXPosition: 1.4
-    minMaxAngle:
-      _min: -0.5
-      _max: 0.5
-    xRotation: -45
-    minMaxPosition:
-      _min: -0.03
-      _max: 0.03
-    randomFlipX: 1
   _destination: {fileID: 524875272}
   _colorGradient:
     serializedVersion: 2
@@ -750,9 +686,76 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  _baseTunnelWidth: 2
+  _baseTunnelWidth: 2.5
   _lumpyWidth: 0.5
   _clearingWidth: 1
+  wallElements:
+  - name: Wall Thorns
+    wallPrefabs:
+    - {fileID: 1508189691331659514, guid: 58503cf409f035144b23039e7efe5466, type: 3}
+    zOffset: 0
+    spacing: 2
+    width: 4
+    verticalLoopLength: 5
+    verticalLoopIncrement: 2
+    minMaxAngle:
+      _min: 0
+      _max: 0
+    minMaxPosition:
+      _min: 2
+      _max: 3
+    randomRotation: 0
+    randomFlipY: 0
+  - name: Thorns Base
+    wallPrefabs:
+    - {fileID: 717079983591251126, guid: 239ca69b503789f4097c61f9e63c3318, type: 3}
+    zOffset: 0.1
+    spacing: 0.5
+    width: 3
+    verticalLoopLength: 3
+    verticalLoopIncrement: 1
+    minMaxAngle:
+      _min: -15
+      _max: 30
+    minMaxPosition:
+      _min: -2
+      _max: -1
+    randomRotation: 90
+    randomFlipY: 0
+  surroundElements: []
+  floorElements:
+  - name: Floor
+    floorPrefabs:
+    - {fileID: -8373903463449722979, guid: 26d96b879b500654a952b8ee6bc0661b, type: 3}
+    - {fileID: -8373903463449722979, guid: 3bc46b9c25834724f891dc0013a88674, type: 3}
+    zOffset: 0.08
+    spacing: 0.5
+    randomXPosition: 0.5
+    minMaxAngle:
+      _min: -1
+      _max: 1
+    xRotation: 0
+    minMaxPosition:
+      _min: -0.05
+      _max: 0.05
+    randomFlipX: 1
+  ceilingElements:
+  - name: Ceiling
+    ceilingPrefabs:
+    - {fileID: 717079983591251126, guid: 58a3e2b112178c84aafe4bc29a0c0083, type: 3}
+    height: 4
+    zOffset: 0.02
+    spacing: 0.5
+    randomXPosition: 1.4
+    minMaxAngle:
+      _min: -0.5
+      _max: 0.5
+    xRotation: -45
+    minMaxPosition:
+      _min: -0.03
+      _max: 0.03
+    randomFlipX: 1
+  _drawGizmos: 0
 --- !u!4 &1551529200
 Transform:
   m_ObjectHideFlags: 0

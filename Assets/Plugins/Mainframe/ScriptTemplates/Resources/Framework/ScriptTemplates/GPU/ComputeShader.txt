@@ -1,0 +1,18 @@
+#pragma kernel step
+#define NUM_THREADS 8
+
+RWTexture2D<float4> writeTex;
+
+[numthreads(NUM_THREADS, NUM_THREADS, 1)]
+void step(uint3 id : SV_DispatchThreadID)
+{
+   float4 baseColor = float4(id.x & id.y, (id.x & 15) / 15.0, (id.y & 15) / 15.0, 1.0);
+   float4 color = writeTex[id.xy];
+   
+   color.r += 0.01f;
+   color.g += 0.005f;
+   color.b += 0.008f;
+   color = frac(color);
+
+   writeTex[id.xy] = float4(color) + baseColor * 0.5f;
+}

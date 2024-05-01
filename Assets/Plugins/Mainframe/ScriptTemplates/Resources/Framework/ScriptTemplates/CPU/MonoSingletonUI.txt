@@ -1,0 +1,12 @@
+#region Usings
+using UnityEngine;
+using Framework;
+#endregion
+
+public class #SCRIPTNAME#: MonoSingletonUI<#SCRIPTNAME#>
+{
+    // MonoBehaviour
+    //----------------------------------------------------------------------------------------------------
+    void Awake() {}
+    void Update() {}
+}
