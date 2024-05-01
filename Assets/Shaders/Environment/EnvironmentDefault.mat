@@ -12,6 +12,7 @@ Material:
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
+  - _LIT_ON
   - _NOISYFOG_ON
   m_InvalidKeywords: []
   m_LightmapFlags: 0
@@ -32,6 +33,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Matcap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _Normal:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -47,6 +52,8 @@ Material:
     m_Ints: []
     m_Floats:
     - _Cutoff: 0.6
+    - _DisplayNormals: 0
+    - _Lit: 1
     - _NoiseDist: 0.4
     - _NoiseFrequency: 0.5
     - _NoiseScale: 4
