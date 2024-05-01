@@ -7,12 +7,11 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Sprite Cutout Fog
-  m_Shader: {fileID: 4800000, guid: e867afa9bad2d8543a5e6bb95a5f0181, type: 3}
+  m_Name: Sprite DustParticle
+  m_Shader: {fileID: 4800000, guid: 9c4796eca7cb3a542853dcef784139e1, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords:
-  - _NOISYFOG_ON
+  m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
@@ -42,7 +41,6 @@ Material:
     - _NoiseDist: 0.4
     - _NoiseFrequency: 0.5
     - _NoiseScale: 4
-    - _NoisyFog: 1
     - _ScreenSpaceScale: 24
     - _XScaleScreenSpace: 2
     - _YScaleScreenSpace: 90
