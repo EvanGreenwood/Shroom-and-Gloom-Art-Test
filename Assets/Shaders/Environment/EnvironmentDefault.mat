@@ -11,7 +11,8 @@ Material:
   m_Shader: {fileID: 4800000, guid: e867afa9bad2d8543a5e6bb95a5f0181, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
+  m_ValidKeywords:
+  - _NOISYFOG_ON
   m_InvalidKeywords: []
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
@@ -23,7 +24,15 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _Height:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Normal:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -43,8 +52,10 @@ Material:
     - _NoiseScale: 4
     - _NoisyFog: 1
     - _ScreenSpaceScale: 24
+    - _Shininess: 0.1
     - _XScaleScreenSpace: 2
     - _YScaleScreenSpace: 90
     - __dirty: 0
-    m_Colors: []
+    m_Colors:
+    - _SpecularColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 1}
   m_BuildTextureStacks: []
