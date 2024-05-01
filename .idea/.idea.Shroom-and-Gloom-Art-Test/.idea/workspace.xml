@@ -6,7 +6,40 @@
   <component name="ChangeListManager">
     <list default="true" id="825655da-4771-4664-b01a-9bffcaa881d5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Shroom-and-Gloom-Art-Test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Shroom-and-Gloom-Art-Test/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Sprite Cutout Fog.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/Sprite Cutout Fog.shader" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Easing OutCirc ShaderFunction.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Easing OutCirc ShaderFunction.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Enemy Cutout Fog.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Enemy Cutout Fog.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Enemy Cutout Fog.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Enemy Cutout Fog.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Enemy Fog WaterColor.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Enemy Fog WaterColor.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Enemy Fog WaterColor.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Enemy Fog WaterColor.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/ScreenNoise.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/ScreenNoise.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Sprite Cutout Fog Glow Green.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Sprite Cutout Fog Glow Green.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Sprite Cutout Fog.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Sprite Cutout Fog.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Sprite Cutout Fog.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Sprite Cutout Fog.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Sprite Cutout.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Sprite Cutout.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Sprite Cutout.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Sprite Cutout.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Sprite Default.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Sprite Default.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Sprite Default.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Sprite Default.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Sprite DustParticle.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Sprite DustParticle.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Sprite Fog Shading.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Sprite Fog Shading.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Sprite Fog Shading.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Sprite Fog Shading.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Sprite With SS Wobble UV.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Sprite With SS Wobble UV.shader.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,6 +129,7 @@
       <workItem from="1714447886234" duration="23000" />
       <workItem from="1714567642273" duration="600000" />
       <workItem from="1714571417574" duration="1000" />
+      <workItem from="1714584562762" duration="638000" />
     </task>
     <servers />
   </component>
