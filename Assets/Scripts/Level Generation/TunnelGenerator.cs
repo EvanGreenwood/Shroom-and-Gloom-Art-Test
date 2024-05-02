@@ -9,6 +9,9 @@
 using System;
 using Framework;
 using Mainframe;
+using System.Collections;
+using System.Collections.Generic;
+using Unity.EditorCoroutines.Editor;
 using UnityEngine;
 using Random = UnityEngine.Random;
 #endregion
@@ -91,6 +94,10 @@ public class TunnelGenerator : MonoBehaviour
     [SerializeField] private Transform _destination;
     [SerializeField] private Gradient _colorGradient;
 
+    [Header("Particles")] 
+    [SerializeField] private ParticleSystem _particles;
+    [SerializeField] private float _particleSpawnDistance = 1f;
+
     [Header("Slope")]
     [SerializeField] private AnimationCurve _ySlopeCurve;
     [SerializeField] private AnimationCurve _sidewaysCurve;
@@ -105,6 +112,8 @@ public class TunnelGenerator : MonoBehaviour
     [SerializeField] private TunnelSurroundData[] surroundElements;
     [SerializeField] private TunnelFloorData[] floorElements;
     [SerializeField] private TunnelCeilingData[] ceilingElements;
+
+    private List<Transform> _generatedElements;
 
     [SerializeField] private bool _drawGizmos;
 
@@ -176,7 +185,20 @@ public class TunnelGenerator : MonoBehaviour
     SpriteRenderer SpawnTunnelElement(SpriteRenderer prefab, Vector3 position, Quaternion rotation)
     {
         SpriteRenderer element = Instantiate(prefab, position, rotation, transform);
+        element.gameObject.hideFlags = HideFlags.DontSaveInEditor | HideFlags.DontSave;
+        _generatedElements.Add(element.transform);
+        
+        //Help with z fighting.
         element.transform.position += _forward * RNG.Float(-0.01f, 0.01f);
+        return element;
+    }
+    
+    ParticleSystem SpawnParticleSystem(ParticleSystem system, Vector3 position, Quaternion rotation)
+    {
+        ParticleSystem element = Instantiate(system, position, rotation, transform);
+        element.gameObject.hideFlags = HideFlags.DontSaveInEditor | HideFlags.DontSave;
+        _generatedElements.Add(element.transform);
+        
         return element;
     }
 
@@ -184,6 +206,32 @@ public class TunnelGenerator : MonoBehaviour
     //----------------------------------------------------------------------------------------------------
     public void Generate()
     {
+        if (_generatedElements == null)
+        {
+            _generatedElements = new List<Transform>();
+        }
+        else
+        {
+            foreach (Transform element in _generatedElements)
+            {
+                if (Application.isPlaying)
+                {
+                    Destroy(element.gameObject);
+                }
+                else
+                {
+                    EditorCoroutineUtility.StartCoroutine(DestroyNextFrameBecauseUnity(), this);
+                    IEnumerator DestroyNextFrameBecauseUnity()
+                    {
+                        yield return null;
+                        DestroyImmediate(element.gameObject);
+                    }
+                }
+            }
+            _generatedElements.Clear();
+        }
+        
+        
         Vector3 diff = _destination.position - transform.position;
         _tunnelLength = diff.magnitude;
 
@@ -199,6 +247,7 @@ public class TunnelGenerator : MonoBehaviour
         SpawnSurrounds();
         SpawnFloors();
         SpawnCeilings();
+        SpawnParticles();
     }
 
     // Walls
@@ -402,6 +451,47 @@ public class TunnelGenerator : MonoBehaviour
             }
         }
     }
+    
+    // Particles
+    //----------------------------------------------------------------------------------------------------
+    private void SpawnParticles()
+    {
+        if (_particles == null)
+        {
+            Debug.LogError("[TunnelGenerator] Missing particles prefab!");
+            return;
+        }
+        Vector3 perpendicular;
+        foreach(TunnelFloorData floorData in floorElements)
+        {
+            float distanceGenerated = floorData.zOffset;
+            while(distanceGenerated < _tunnelLength)
+            {
+                float distanceM = distanceGenerated / _tunnelLength;
+                //
+                GetTunnelPositionAndDirection(distanceM, out Vector3 currentPosition, out Vector3 currentDirection, out Quaternion currentRotation, out perpendicular);
+
+                // 
+                Vector3 spawnPos = currentPosition + perpendicular * (Random.value * 2 - 1) * floorData.randomXPosition;
+                ParticleSystem particles = SpawnParticleSystem(_particles, spawnPos, currentRotation);
+
+                //floor.transform.position = floor.transform.position.PlusY(floorData.minMaxPosition.ChooseRandom());
+                //floor.transform.Rotate(floorData.xRotation, 0, floorData.minMaxAngle.ChooseRandom());
+                //
+                
+                Color particleColor = _colorGradient.Evaluate(distanceM);
+                var main = particles.main;
+                main.startColor = new ParticleSystem.MinMaxGradient(particleColor);
+                var colorOverLifetime = particles.colorOverLifetime;
+                ParticleSystem.MinMaxGradient gradient = colorOverLifetime.color;
+                gradient.colorMax = particleColor;
+                gradient.colorMin = particleColor;
+                colorOverLifetime.color = gradient;
+                
+                distanceGenerated += _particleSpawnDistance;
+            }
+        }
+    }
 
     // Ceilings
     //----------------------------------------------------------------------------------------------------
@@ -433,7 +523,15 @@ public class TunnelGenerator : MonoBehaviour
 
     // MonoBehaviour
     //----------------------------------------------------------------------------------------------------
-    private void Start() {Generate();}
+    private void Start()
+    {
+        Generate();
+    }
+
+    private void OnValidate()
+    {
+        Generate();
+    }
 
     private void OnDrawGizmos()
     {

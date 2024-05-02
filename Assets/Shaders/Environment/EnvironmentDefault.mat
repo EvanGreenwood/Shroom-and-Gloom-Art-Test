@@ -13,7 +13,6 @@ Material:
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
   - _LIT_ON
-  - _NOISYFOG_ON
   m_InvalidKeywords: []
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
@@ -57,7 +56,7 @@ Material:
     - _NoiseDist: 0.4
     - _NoiseFrequency: 0.5
     - _NoiseScale: 4
-    - _NoisyFog: 1
+    - _NoisyFog: 0
     - _ScreenSpaceScale: 24
     - _Shininess: 0.1
     - _XScaleScreenSpace: 2

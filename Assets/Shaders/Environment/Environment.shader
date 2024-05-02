@@ -37,8 +37,8 @@ Shader "SNG/Environment"
 			float3 worldPos;
 		};
 
-		uniform float4 ShroomLightColors[10];
 		uniform float4 ShroomLightInnerRadiusAndIntensity[10];
+		uniform float4 ShroomLightColors[10];
 		uniform sampler2D _MainTex;
 		uniform float4 _MainTex_ST;
 		uniform float4 FogColor;
@@ -155,20 +155,20 @@ Shader "SNG/Environment"
 			float4 lerpResult13 = lerp( ( tex2DNode1 * i.vertexColor ) , ( temp_output_2_0_g64 * temp_output_2_0_g64 ) , ( ( 1.0 - ( temp_output_2_0_g63 * temp_output_2_0_g63 ) ) + staticSwitch169 ));
 			float2 uv_Normal = i.uv_texcoord * _Normal_ST.xy + _Normal_ST.zw;
 			float3 tex2DNode178 = UnpackNormal( tex2D( _Normal, uv_Normal ) );
-			float3 newWorldNormal6_g25 = (WorldNormalVector( i , tex2DNode178 ));
-			float3 worldToViewDir69_g25 = mul( UNITY_MATRIX_V, float4( newWorldNormal6_g25, 0 ) ).xyz;
-			float4 temp_output_10_0_g25 = lerpResult13;
+			float3 newWorldNormal6_g65 = (WorldNormalVector( i , tex2DNode178 ));
+			float3 worldToViewDir69_g65 = mul( UNITY_MATRIX_V, float4( newWorldNormal6_g65, 0 ) ).xyz;
+			float4 temp_output_10_0_g65 = lerpResult13;
 			int ShroomLightIndex192 = 0;
 			float3 temp_output_226_0 = (ShroomLightPositions[ShroomLightIndex192]).xyz;
 			float3 ase_worldPos = i.worldPos;
 			float3 normalizeResult209 = normalize( ( temp_output_226_0 - ase_worldPos ) );
-			float3 normalizeResult5_g25 = normalize( newWorldNormal6_g25 );
-			float dotResult15_g25 = dot( normalizeResult209 , normalizeResult5_g25 );
-			float4 lerpResult60_g25 = lerp( ( tex2D( _Matcap, ( 0.5 + ( 0.5 * (worldToViewDir69_g25).xy ) ) ) * temp_output_10_0_g25 ) , ( temp_output_10_0_g25 * dotResult15_g25 ) , (0.0 + (dotResult15_g25 - -1.0) * (1.0 - 0.0) / (1.0 - -1.0)));
+			float3 normalizeResult5_g65 = normalize( newWorldNormal6_g65 );
+			float dotResult15_g65 = dot( normalizeResult209 , normalizeResult5_g65 );
+			float4 lerpResult60_g65 = lerp( ( tex2D( _Matcap, ( 0.5 + ( 0.5 * (worldToViewDir69_g65).xy ) ) ) * temp_output_10_0_g65 ) , ( temp_output_10_0_g65 * dotResult15_g65 ) , (0.0 + (dotResult15_g65 - -1.0) * (1.0 - 0.0) / (1.0 - -1.0)));
 			#ifdef _DISPLAYNORMALS_ON
 				float4 staticSwitch265 = float4( tex2DNode178 , 0.0 );
 			#else
-				float4 staticSwitch265 = lerpResult60_g25;
+				float4 staticSwitch265 = lerpResult60_g65;
 			#endif
 			#ifdef _LIT_ON
 				float4 staticSwitch264 = staticSwitch265;
@@ -234,10 +234,10 @@ Node;AmplifyShaderEditor.RangedFloatNode;170;-1728,656;Inherit;False;Constant;_F
 Node;AmplifyShaderEditor.SamplerNode;1;-2416,-1104;Inherit;True;Property;_MainTex;MainTex;3;1;[PerRendererData];Create;True;0;0;0;False;0;False;-1;None;None;True;0;False;white;Auto;False;Object;-1;Auto;Texture2D;8;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;6;FLOAT;0;False;7;SAMPLERSTATE;;False;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.VertexColorNode;2;-2112,-816;Inherit;False;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.OneMinusNode;51;-1408,-64;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0
-Node;AmplifyShaderEditor.ColorNode;14;-1744,-240;Inherit;False;Global;FogColor;FogColor;2;0;Create;True;0;0;0;False;0;False;0.1887822,0.1643645,0.509434,1;0.0260324,0.08210218,0.08490568,1;True;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
-Node;AmplifyShaderEditor.StaticSwitch;169;-1568,672;Inherit;False;Property;_NoisyFog;NoisyFog;4;0;Create;True;0;0;0;False;0;False;0;1;1;True;;Toggle;2;Key0;Key1;Create;True;True;All;9;1;FLOAT;0;False;0;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;4;FLOAT;0;False;5;FLOAT;0;False;6;FLOAT;0;False;7;FLOAT;0;False;8;FLOAT;0;False;1;FLOAT;0
+Node;AmplifyShaderEditor.ColorNode;14;-1744,-240;Inherit;False;Global;FogColor;FogColor;2;0;Create;True;0;0;0;False;0;False;0.1887822,0.1643645,0.509434,1;0.04705882,0.2470588,0.2666667,1;True;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.ComponentMaskNode;226;-480,-752;Inherit;False;True;True;True;False;1;0;FLOAT4;0,0,0,0;False;1;FLOAT3;0
 Node;AmplifyShaderEditor.WorldPosInputsNode;207;-432,-640;Inherit;False;0;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3
+Node;AmplifyShaderEditor.StaticSwitch;169;-1568,672;Inherit;False;Property;_NoisyFog;NoisyFog;4;0;Create;True;0;0;0;False;0;False;0;1;1;True;;Toggle;2;Key0;Key1;Create;True;True;All;9;1;FLOAT;0;False;0;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;4;FLOAT;0;False;5;FLOAT;0;False;6;FLOAT;0;False;7;FLOAT;0;False;8;FLOAT;0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.FunctionNode;36;-1408,-192;Inherit;False;Square;-1;;64;fea980a1f68019543b2cd91d506986e8;0;1;2;COLOR;0,0,0,0;False;1;COLOR;0
 Node;AmplifyShaderEditor.SimpleAddOpNode;63;-1216,0;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.SimpleMultiplyOpNode;3;-1776,-912;Inherit;False;2;2;0;COLOR;0,0,0,0;False;1;COLOR;0,0,0,0;False;1;COLOR;0
@@ -245,7 +245,7 @@ Node;AmplifyShaderEditor.SimpleSubtractOpNode;208;-192,-832;Inherit;False;2;0;FL
 Node;AmplifyShaderEditor.LerpOp;13;-1184,-256;Inherit;False;3;0;COLOR;0,0,0,0;False;1;COLOR;0,0,0,0;False;2;FLOAT;0;False;1;COLOR;0
 Node;AmplifyShaderEditor.NormalizeNode;209;0,-736;Inherit;False;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0
 Node;AmplifyShaderEditor.SamplerNode;178;-96,-272;Inherit;True;Property;_Normal;Normal;5;1;[Normal];Create;True;0;0;0;False;0;False;178;None;None;True;0;False;bump;Auto;True;Object;-1;Auto;Texture2D;8;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;6;FLOAT;0;False;7;SAMPLERSTATE;;False;5;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
-Node;AmplifyShaderEditor.FunctionNode;263;256,-416;Inherit;False;ShroomLightModel;1;;25;9ba531354399e4286b6b6809cf677f13;0;3;21;FLOAT3;0,0,0;False;10;COLOR;0.5754717,0.5754717,0.5754717,1;False;7;FLOAT3;0,0,0;False;1;COLOR;17
+Node;AmplifyShaderEditor.FunctionNode;263;256,-416;Inherit;False;ShroomLightModel;1;;65;9ba531354399e4286b6b6809cf677f13;0;3;21;FLOAT3;0,0,0;False;10;COLOR;0.5754717,0.5754717,0.5754717,1;False;7;FLOAT3;0,0,0;False;1;COLOR;17
 Node;AmplifyShaderEditor.RegisterLocalVarNode;45;-2112,-912;Inherit;False;MainTexAlpha;-1;True;1;0;FLOAT;0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.StaticSwitch;265;400,-256;Inherit;False;Property;_DisplayNormals;Display Normals;7;0;Create;True;0;0;0;False;0;False;0;0;0;True;;Toggle;2;Key0;Key1;Create;True;True;All;9;1;COLOR;0,0,0,0;False;0;COLOR;0,0,0,0;False;2;COLOR;0,0,0,0;False;3;COLOR;0,0,0,0;False;4;COLOR;0,0,0,0;False;5;COLOR;0,0,0,0;False;6;COLOR;0,0,0,0;False;7;COLOR;0,0,0,0;False;8;COLOR;0,0,0,0;False;1;COLOR;0
 Node;AmplifyShaderEditor.GlobalArrayNode;185;-944,-432;Inherit;False;ShroomLightInnerRadiusAndIntensity;0;10;2;False;False;0;1;True;Object;-1;4;0;INT;0;False;2;INT;0;False;1;INT;0;False;3;INT;0;False;1;FLOAT4;0
@@ -257,7 +257,7 @@ Node;AmplifyShaderEditor.ColorNode;202;-208,-1264;Inherit;False;Constant;_Indire
 Node;AmplifyShaderEditor.RangedFloatNode;203;32,-1232;Inherit;False;Constant;_Attenuation;Attenuation;5;0;Create;True;0;0;0;False;0;False;1;0;0;0;0;1;FLOAT;0
 Node;AmplifyShaderEditor.DistanceOpNode;221;-192,-560;Inherit;False;2;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.GetLocalVarNode;46;640,48;Inherit;False;45;MainTexAlpha;1;0;OBJECT;;False;1;FLOAT;0
-Node;AmplifyShaderEditor.StaticSwitch;264;592,-112;Inherit;False;Property;_Lit;Lit;6;0;Create;True;0;0;0;False;0;False;0;1;0;True;;Toggle;2;Key0;Key1;Create;True;True;All;9;1;COLOR;0,0,0,0;False;0;COLOR;0,0,0,0;False;2;COLOR;0,0,0,0;False;3;COLOR;0,0,0,0;False;4;COLOR;0,0,0,0;False;5;COLOR;0,0,0,0;False;6;COLOR;0,0,0,0;False;7;COLOR;0,0,0,0;False;8;COLOR;0,0,0,0;False;1;COLOR;0
+Node;AmplifyShaderEditor.StaticSwitch;264;592,-112;Inherit;False;Property;_Lit;Lit;6;0;Create;True;0;0;0;False;0;False;0;1;1;True;;Toggle;2;Key0;Key1;Create;True;True;All;9;1;COLOR;0,0,0,0;False;0;COLOR;0,0,0,0;False;2;COLOR;0,0,0,0;False;3;COLOR;0,0,0,0;False;4;COLOR;0,0,0,0;False;5;COLOR;0,0,0,0;False;6;COLOR;0,0,0,0;False;7;COLOR;0,0,0,0;False;8;COLOR;0,0,0,0;False;1;COLOR;0
 Node;AmplifyShaderEditor.StandardSurfaceOutputNode;0;864,-304;Float;False;True;-1;2;ASEMaterialInspector;0;0;Unlit;SNG/Environment;False;False;False;False;True;False;True;True;True;False;False;False;False;False;True;False;False;False;False;False;False;Off;1;False;;1;False;;False;0;False;;0;False;;False;0;Masked;0.6;True;False;0;False;TransparentCutout;;AlphaTest;All;12;all;True;True;True;True;0;False;;False;0;False;;255;False;;255;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;False;2;15;10;25;False;0.5;False;0;5;False;;10;False;;0;0;False;;0;False;;0;False;;0;False;;0;False;0;0,0,0,0;VertexOffset;True;False;Cylindrical;False;True;Relative;0;;0;-1;-1;-1;0;False;0;0;False;;-1;0;False;;0;0;0;False;0.1;False;;0;False;;False;16;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;3;FLOAT;0;False;4;FLOAT;0;False;6;FLOAT3;0,0,0;False;7;FLOAT3;0,0,0;False;8;FLOAT;0;False;9;FLOAT;0;False;10;FLOAT;0;False;13;FLOAT3;0,0,0;False;11;FLOAT3;0,0,0;False;12;FLOAT3;0,0,0;False;16;FLOAT4;0,0,0,0;False;14;FLOAT4;0,0,0,0;False;15;FLOAT3;0,0,0;False;0
 WireConnection;30;0;28;0
 WireConnection;30;1;29;0
@@ -296,9 +296,9 @@ WireConnection;135;0;142;0
 WireConnection;135;1;137;0
 WireConnection;135;2;172;0
 WireConnection;51;0;35;0
+WireConnection;226;0;182;0
 WireConnection;169;1;170;0
 WireConnection;169;0;135;0
-WireConnection;226;0;182;0
 WireConnection;36;2;14;0
 WireConnection;63;0;51;0
 WireConnection;63;1;169;0
@@ -328,4 +328,4 @@ WireConnection;264;0;265;0
 WireConnection;0;2;264;0
 WireConnection;0;10;46;0
 ASEEND*/
-//CHKSM=F02A110F219E83A66D2A5768A44730A07D0B93A4
+//CHKSM=979AEC389FBACD4C115DA7DCD5137871514B340D
