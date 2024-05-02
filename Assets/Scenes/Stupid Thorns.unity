@@ -991,6 +991,8 @@ MonoBehaviour:
     m_ColorSpace: -1
     m_NumColorKeys: 5
     m_NumAlphaKeys: 2
+  _particles: {fileID: 2402285776899386762, guid: 8e61f67cd760b423db14eb998271668d, type: 3}
+  _particleSpawnDistance: 5
   _ySlopeCurve:
     serializedVersion: 2
     m_Curve: []

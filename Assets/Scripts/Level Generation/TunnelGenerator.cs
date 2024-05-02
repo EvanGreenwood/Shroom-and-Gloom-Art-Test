@@ -214,6 +214,11 @@ public class TunnelGenerator : MonoBehaviour
         {
             foreach (Transform element in _generatedElements)
             {
+                if (element == null)
+                {
+                    //Happens when going between editor and play mode. Object already destroyed. list will be cleared.
+                    continue;
+                }
                 if (Application.isPlaying)
                 {
                     Destroy(element.gameObject);
@@ -473,13 +478,18 @@ public class TunnelGenerator : MonoBehaviour
 
                 // 
                 Vector3 spawnPos = currentPosition + perpendicular * (Random.value * 2 - 1) * floorData.randomXPosition;
+                
+                Color particleColor = _colorGradient.Evaluate(distanceM);
+                
+                //Need to set the particle color on prefab, because prewarm spawns particles before we can set it in instance.
+                var prefabMain = _particles.main;
+                prefabMain.startColor = particleColor;
+                
                 ParticleSystem particles = SpawnParticleSystem(_particles, spawnPos, currentRotation);
 
                 //floor.transform.position = floor.transform.position.PlusY(floorData.minMaxPosition.ChooseRandom());
                 //floor.transform.Rotate(floorData.xRotation, 0, floorData.minMaxAngle.ChooseRandom());
-                //
                 
-                Color particleColor = _colorGradient.Evaluate(distanceM);
                 var main = particles.main;
                 main.startColor = new ParticleSystem.MinMaxGradient(particleColor);
                 var colorOverLifetime = particles.colorOverLifetime;
