@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 78b2425a2284af743826c689403a4924, type: 3}
-  m_Name: Easing OutCirc ShaderFunction
+  m_Name: EasingOutCirc
   m_EditorClassIdentifier: 
   m_functionInfo: "// Made with Amplify Shader Editor v1.9.3.3\n// Available at the
     Unity Asset Store - http://u3d.as/y3X \n/*ASEBEGIN\nVersion=19303\nNode;AmplifyShaderEditor.FunctionInput;1;-432,-32;Inherit;False;;4;0;True;1;0;FLOAT4;0,0,0,0;False;1;FLOAT4;0\nNode;AmplifyShaderEditor.SimpleSubtractOpNode;5;-224,16;Inherit;False;2;0;FLOAT4;0,0,0,0;False;1;FLOAT;0;False;1;FLOAT4;0\nNode;AmplifyShaderEditor.RangedFloatNode;4;-416,80;Inherit;False;Constant;_1;1;0;0;Create;True;0;0;0;False;0;False;1;0;0;0;0;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionNode;6;-48,0;Inherit;False;Square;-1;;1;fea980a1f68019543b2cd91d506986e8;0;1;2;FLOAT4;0,0,0,0;False;1;FLOAT4;0\nNode;AmplifyShaderEditor.OneMinusNode;3;128,-48;Inherit;False;1;0;FLOAT4;0,0,0,0;False;1;FLOAT4;0\nNode;AmplifyShaderEditor.SqrtOpNode;2;288,-80;Inherit;False;1;0;FLOAT4;0,0,0,0;False;1;FLOAT4;0\nNode;AmplifyShaderEditor.FunctionOutput;0;432,-112;Inherit;False;True;-1;Output;0;False;1;0;FLOAT4;0,0,0,0;False;1;FLOAT4;0\nWireConnection;5;0;1;0\nWireConnection;5;1;4;0\nWireConnection;6;2;5;0\nWireConnection;3;0;6;0\nWireConnection;2;0;3;0\nWireConnection;0;0;2;0\nASEEND*/\n//CHKSM=F8EB9CA7D562975C1835AD11DF819ED0352905F0"
