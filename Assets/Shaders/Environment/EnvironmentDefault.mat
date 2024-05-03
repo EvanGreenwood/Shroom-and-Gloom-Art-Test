@@ -62,7 +62,8 @@ Material:
     - _NoiseFrequency: 0.5
     - _NoiseScale: 4
     - _NoisyFog: 0
-    - _RampOffset: -0.61
+    - _NormalMip: 1.86
+    - _RampOffset: -0.23
     - _ScreenSpaceScale: 24
     - _Shininess: 0.1
     - _UseFog: 0
@@ -72,4 +73,5 @@ Material:
     - __dirty: 0
     m_Colors:
     - _SpecularColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 1}
+    - _TerminatorLineColor: {r: 0, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []
