@@ -6,14 +6,20 @@
   <component name="ChangeListManager">
     <list default="true" id="825655da-4771-4664-b01a-9bffcaa881d5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Shroom-and-Gloom-Art-Test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Shroom-and-Gloom-Art-Test/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Floors/Dungeon_Floor_1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Environment/Floors/Dungeon_Floor_1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Floors/Dungeon_Floor_2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Environment/Floors/Dungeon_Floor_2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Mines/ground_heightmap.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Environment/Mines/ground_heightmap.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Mines/ground_heightmap.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Environment/Mines/ground_heightmap.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Mines/mine_wall_heightmap.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Environment/Mines/mine_wall_heightmap.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Test Tunnel/Ceiling Test.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Environment/Test Tunnel/Ceiling Test.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Ramps/RampFlat.ramp.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Ramps/RampFlat.ramp.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Art/particles/Dust/DustParticles.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/particles/Dust/DustParticles.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Bad Caves.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Bad Caves.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Bad Mines.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Bad Mines.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Ben Wooden.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Ben Wooden.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Multiple Tunnels.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Multiple Tunnels.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Stupid Thorns.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Stupid Thorns.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level Generation/TunnelGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Level Generation/TunnelGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Lighting/ShroomLightingService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Lighting/ShroomLightingService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WorldColors.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/WorldColors.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Environment/Environment.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/Environment/Environment.shader" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Environment/EnvironmentDefault.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/Environment/EnvironmentDefault.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Functions/ShroomLightModel.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/Functions/ShroomLightModel.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,6 +112,7 @@
       <workItem from="1714567642273" duration="600000" />
       <workItem from="1714571417574" duration="1000" />
       <workItem from="1714584562762" duration="14530000" />
+      <workItem from="1714844653202" duration="3122000" />
     </task>
     <servers />
   </component>

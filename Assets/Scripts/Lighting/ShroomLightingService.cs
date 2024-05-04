@@ -9,10 +9,10 @@ public class ShroomLightingService : MonoService
 {
     private List<ShroomLight> _lights = new List<ShroomLight>();
     private static readonly int ShroomLightPositionsGlobalId = Shader.PropertyToID("ShroomLightPositions");
-    private static readonly int ShroomLightInnerRadiusAndIntensityGlobalId = Shader.PropertyToID("ShroomLightInnerRadiusAndIntensity");
+    private static readonly int ShroomLightRadiusAndIntensityGlobalId = Shader.PropertyToID("ShroomLightRadiusAndIntensity");
     private static readonly int ShroomLightColorsGlobalId = Shader.PropertyToID("ShroomLightColors");
 
-    public const int MAX_LIGHT_COUNT = 10;
+    public const int MAX_LIGHT_COUNT = 5;
     
     public void RegisterLight(ShroomLight light)
     {
@@ -46,14 +46,23 @@ public class ShroomLightingService : MonoService
             //Debug.Log(pos);
             positions.Add(pos);
 
-            //Encode values in vec to save shader keywords
+            //Encode values in vec to save shader keywords. TODO: could use w for something
             radiusAndIntensity.Add(new Vector4(shroomLight.InnerRadius, shroomLight.OuterRadius, shroomLight.Intensity, 0));
             colors.Add(new Vector4(shroomLight.Color.r, shroomLight.Color.g, shroomLight.Color.b, shroomLight.Color.a));
         }
 
+        //Global arrays must always be the same size.
+        //So we have empty values
+        while (_lights.Count < MAX_LIGHT_COUNT)
+        {
+            positions.Add(Vector4.zero);
+            radiusAndIntensity.Add(Vector4.zero);
+            colors.Add(Color.white);
+        }
+
         //Set light parameters
         Shader.SetGlobalVectorArray(ShroomLightPositionsGlobalId, positions);
-        Shader.SetGlobalVectorArray(ShroomLightInnerRadiusAndIntensityGlobalId, radiusAndIntensity);
+        Shader.SetGlobalVectorArray(ShroomLightRadiusAndIntensityGlobalId, radiusAndIntensity);
         Shader.SetGlobalVectorArray(ShroomLightColorsGlobalId, colors);
     }
 }

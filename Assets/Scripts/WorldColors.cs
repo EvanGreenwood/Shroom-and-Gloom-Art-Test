@@ -11,10 +11,7 @@ public class WorldColors : MonoBehaviour
     
     void Start()
     {
-        Shader.SetGlobalColor("FogColor", _fogColor);
-        Shader.SetGlobalFloat("FogStart", _fogStart);
-        Shader.SetGlobalFloat("FogDistance", _fogDistance);
-        Shader.SetGlobalColor("ShadowsColor", _shadowsColor);
+        SetColors();
     }
 
     //  
@@ -29,6 +26,7 @@ public class WorldColors : MonoBehaviour
         Shader.SetGlobalFloat("FogStart", _fogStart);
         Shader.SetGlobalFloat("FogDistance", _fogDistance);
         Shader.SetGlobalColor("ShadowsColor", _shadowsColor);
+        Camera.main.backgroundColor = _fogColor;
     }
 
     private void OnValidate()
