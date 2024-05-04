@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1400878947339728258}
   - component: {fileID: 717079983591251126}
   m_Layer: 0
-  m_Name: Ceiling Wooden
+  m_Name: Wall LumpRock 4 Ben
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 17973c941d9e9471e8ab8b328c96af30, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 63fabc32f92fe4f30bdd38775589d4fa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

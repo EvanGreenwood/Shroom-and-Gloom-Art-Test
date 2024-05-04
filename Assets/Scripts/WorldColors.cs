@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class WorldColors : MonoBehaviour
 {
-     [SerializeField] private Color _fogColor = Color.white;
+    [SerializeField] private Color _fogColor = Color.white;
     [SerializeField] private float _fogStart = 1.5f;
     [SerializeField] private float _fogDistance = 30;
     [SerializeField] private Color _shadowsColor = Color.blue;
+    
     void Start()
     {
         Shader.SetGlobalColor("FogColor", _fogColor);
@@ -20,7 +21,6 @@ public class WorldColors : MonoBehaviour
     void Update()
     {
         SetColors();
-
     }
 
     private void SetColors()
