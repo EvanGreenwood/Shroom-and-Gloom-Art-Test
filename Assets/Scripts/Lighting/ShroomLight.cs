@@ -15,11 +15,21 @@ public class ShroomLight : MonoBehaviour
    private Service<ShroomLightingService> _lightService;
    public void OnEnable()
    {
+      if (!_lightService.Exists)
+      {
+         Debug.LogWarning("[ShroomLight] Shroom light exists in a scene or prefab without access " +
+            "to the LightingService. Not a problem, but wont do anything.");
+         return;
+      }
       _lightService.Value.RegisterLight(this);
    }
 
    public void OnDisable()
    {
+      if (!_lightService.Exists)
+      {
+         return;
+      }
       _lightService.Value.UnRegisterLight(this);
    }
 

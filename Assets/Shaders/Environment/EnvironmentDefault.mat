@@ -63,7 +63,7 @@ Material:
     - _NoiseScale: 4
     - _NoisyFog: 0
     - _NormalMip: 1.86
-    - _RampOffset: -0.23
+    - _RampOffset: -0.26
     - _ScreenSpaceScale: 24
     - _Shininess: 0.1
     - _UseFog: 0

@@ -229,7 +229,12 @@ public class TunnelGenerator : MonoBehaviour
                     IEnumerator DestroyNextFrameBecauseUnity()
                     {
                         yield return null;
-                        DestroyImmediate(element.gameObject);
+                        
+                        //May happen on play. Ok.
+                        if (element != null)
+                        {
+                            DestroyImmediate(element.gameObject);
+                        }
                     }
                 }
             }
