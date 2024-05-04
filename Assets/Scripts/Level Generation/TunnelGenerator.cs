@@ -468,7 +468,7 @@ public class TunnelGenerator : MonoBehaviour
     {
         if (_particles == null)
         {
-            Debug.LogError("[TunnelGenerator] Missing particles prefab!");
+            Debug.LogWarning("[TunnelGenerator] Missing particles prefab!");
             return;
         }
         Vector3 perpendicular;

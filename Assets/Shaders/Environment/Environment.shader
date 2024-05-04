@@ -27,7 +27,7 @@ Shader "SNG/Environment"
 		#pragma shader_feature_local _DISPLAYNORMALS_ON
 		#pragma shader_feature_local _USEFOG_ON
 		#pragma shader_feature_local _NOISYFOG_ON
-		#pragma surface surf Unlit keepalpha noshadow noambient nolightmap  nodynlightmap nodirlightmap vertex:vertexDataFunc 
+		#pragma surface surf Unlit keepalpha noshadow noambient nolightmap  nodynlightmap nodirlightmap nofog vertex:vertexDataFunc 
 		struct Input
 		{
 			float2 uv_texcoord;
@@ -39,6 +39,7 @@ Shader "SNG/Environment"
 			INTERNAL_DATA
 		};
 
+		uniform float4 ShroomLightRadiusAndIntensity[10];
 		uniform float4 ShroomLightColors[10];
 		uniform sampler2D _MainTex;
 		uniform float4 _MainTex_ST;
@@ -51,7 +52,6 @@ Shader "SNG/Environment"
 		uniform float4 _Normal_ST;
 		uniform float _NormalMip;
 		uniform float _RampOffset;
-		uniform float4 ShroomLightRadiusAndIntensity[10];
 		uniform float _Cutoff = 0.6;
 
 
@@ -101,46 +101,48 @@ Shader "SNG/Environment"
 		void surf( Input i , inout SurfaceOutput o )
 		{
 			o.Normal = float3(0,0,1);
-			int temp_output_17_0_g72 = 2;
+			int temp_output_17_0_g81 = 2;
+			float4 break129_g82 = ShroomLightRadiusAndIntensity[temp_output_17_0_g81];
+			float Intensity132_g82 = break129_g82.z;
 			float2 uv_MainTex = i.uv_texcoord * _MainTex_ST.xy + _MainTex_ST.zw;
 			float4 tex2DNode1 = tex2D( _MainTex, uv_MainTex );
 			float4 temp_output_3_0 = ( tex2DNode1 * i.vertexColor );
-			float4 temp_output_2_0_g64 = FogColor;
+			float4 temp_output_2_0_g68 = FogColor;
 			float cameraDepthFade30 = (( i.eyeDepth -_ProjectionParams.y - FogStart ) / FogDistance);
-			float temp_output_2_0_g21 = ( saturate( cameraDepthFade30 ) - 1.0 );
-			float temp_output_41_0 = sqrt( ( 1.0 - ( temp_output_2_0_g21 * temp_output_2_0_g21 ) ) );
-			float temp_output_2_0_g63 = ( 1.0 - temp_output_41_0 );
+			float temp_output_2_0_g63 = ( saturate( cameraDepthFade30 ) - 1.0 );
+			float temp_output_41_0 = sqrt( ( 1.0 - ( temp_output_2_0_g63 * temp_output_2_0_g63 ) ) );
+			float temp_output_2_0_g67 = ( 1.0 - temp_output_41_0 );
 			float4 ase_screenPos = float4( i.screenPos.xyz , i.screenPos.w + 0.00000000001 );
-			float temp_output_21_0_g62 = 0.5;
-			float2 appendResult18_g62 = (float2(( ( _SinTime.y + ase_screenPos.x ) * temp_output_21_0_g62 ) , ( ( _SinTime.x + ase_screenPos.y ) * temp_output_21_0_g62 )));
-			float simplePerlin2D14_g62 = snoise( appendResult18_g62*2.0 );
-			simplePerlin2D14_g62 = simplePerlin2D14_g62*0.5 + 0.5;
-			float2 appendResult13_g62 = (float2(( temp_output_21_0_g62 * ( _SinTime.y + ase_screenPos.x ) ) , ( temp_output_21_0_g62 * ( ase_screenPos.y + _SinTime.x ) )));
-			float simplePerlin2D15_g62 = snoise( appendResult13_g62*2.0 );
-			simplePerlin2D15_g62 = simplePerlin2D15_g62*0.5 + 0.5;
-			float2 appendResult5_g62 = (float2(simplePerlin2D14_g62 , simplePerlin2D15_g62));
-			float simplePerlin2D1_g62 = snoise( appendResult5_g62*0.1 );
-			simplePerlin2D1_g62 = simplePerlin2D1_g62*0.5 + 0.5;
-			float temp_output_21_0_g59 = 0.125;
-			float2 appendResult18_g59 = (float2(( ( _SinTime.y + ase_screenPos.x ) * temp_output_21_0_g59 ) , ( ( _SinTime.x + ase_screenPos.y ) * temp_output_21_0_g59 )));
-			float simplePerlin2D14_g59 = snoise( appendResult18_g59*2.0 );
-			simplePerlin2D14_g59 = simplePerlin2D14_g59*0.5 + 0.5;
-			float2 appendResult13_g59 = (float2(( temp_output_21_0_g59 * ( _SinTime.y + ase_screenPos.x ) ) , ( temp_output_21_0_g59 * ( ase_screenPos.y + _SinTime.x ) )));
-			float simplePerlin2D15_g59 = snoise( appendResult13_g59*2.0 );
-			simplePerlin2D15_g59 = simplePerlin2D15_g59*0.5 + 0.5;
-			float2 appendResult5_g59 = (float2(simplePerlin2D14_g59 , simplePerlin2D15_g59));
-			float simplePerlin2D1_g59 = snoise( appendResult5_g59*0.2 );
-			simplePerlin2D1_g59 = simplePerlin2D1_g59*0.5 + 0.5;
-			float temp_output_21_0_g60 = 0.15;
-			float2 appendResult18_g60 = (float2(( ( _SinTime.y + ase_screenPos.x ) * temp_output_21_0_g60 ) , ( ( _SinTime.x + ase_screenPos.y ) * temp_output_21_0_g60 )));
-			float simplePerlin2D14_g60 = snoise( appendResult18_g60*2.0 );
-			simplePerlin2D14_g60 = simplePerlin2D14_g60*0.5 + 0.5;
-			float2 appendResult13_g60 = (float2(( temp_output_21_0_g60 * ( _SinTime.y + ase_screenPos.x ) ) , ( temp_output_21_0_g60 * ( ase_screenPos.y + _SinTime.x ) )));
-			float simplePerlin2D15_g60 = snoise( appendResult13_g60*2.0 );
-			simplePerlin2D15_g60 = simplePerlin2D15_g60*0.5 + 0.5;
-			float2 appendResult5_g60 = (float2(simplePerlin2D14_g60 , simplePerlin2D15_g60));
-			float simplePerlin2D1_g60 = snoise( appendResult5_g60*0.5 );
-			simplePerlin2D1_g60 = simplePerlin2D1_g60*0.5 + 0.5;
+			float temp_output_21_0_g66 = 0.5;
+			float2 appendResult18_g66 = (float2(( ( _SinTime.y + ase_screenPos.x ) * temp_output_21_0_g66 ) , ( ( _SinTime.x + ase_screenPos.y ) * temp_output_21_0_g66 )));
+			float simplePerlin2D14_g66 = snoise( appendResult18_g66*2.0 );
+			simplePerlin2D14_g66 = simplePerlin2D14_g66*0.5 + 0.5;
+			float2 appendResult13_g66 = (float2(( temp_output_21_0_g66 * ( _SinTime.y + ase_screenPos.x ) ) , ( temp_output_21_0_g66 * ( ase_screenPos.y + _SinTime.x ) )));
+			float simplePerlin2D15_g66 = snoise( appendResult13_g66*2.0 );
+			simplePerlin2D15_g66 = simplePerlin2D15_g66*0.5 + 0.5;
+			float2 appendResult5_g66 = (float2(simplePerlin2D14_g66 , simplePerlin2D15_g66));
+			float simplePerlin2D1_g66 = snoise( appendResult5_g66*0.1 );
+			simplePerlin2D1_g66 = simplePerlin2D1_g66*0.5 + 0.5;
+			float temp_output_21_0_g64 = 0.125;
+			float2 appendResult18_g64 = (float2(( ( _SinTime.y + ase_screenPos.x ) * temp_output_21_0_g64 ) , ( ( _SinTime.x + ase_screenPos.y ) * temp_output_21_0_g64 )));
+			float simplePerlin2D14_g64 = snoise( appendResult18_g64*2.0 );
+			simplePerlin2D14_g64 = simplePerlin2D14_g64*0.5 + 0.5;
+			float2 appendResult13_g64 = (float2(( temp_output_21_0_g64 * ( _SinTime.y + ase_screenPos.x ) ) , ( temp_output_21_0_g64 * ( ase_screenPos.y + _SinTime.x ) )));
+			float simplePerlin2D15_g64 = snoise( appendResult13_g64*2.0 );
+			simplePerlin2D15_g64 = simplePerlin2D15_g64*0.5 + 0.5;
+			float2 appendResult5_g64 = (float2(simplePerlin2D14_g64 , simplePerlin2D15_g64));
+			float simplePerlin2D1_g64 = snoise( appendResult5_g64*0.2 );
+			simplePerlin2D1_g64 = simplePerlin2D1_g64*0.5 + 0.5;
+			float temp_output_21_0_g65 = 0.15;
+			float2 appendResult18_g65 = (float2(( ( _SinTime.y + ase_screenPos.x ) * temp_output_21_0_g65 ) , ( ( _SinTime.x + ase_screenPos.y ) * temp_output_21_0_g65 )));
+			float simplePerlin2D14_g65 = snoise( appendResult18_g65*2.0 );
+			simplePerlin2D14_g65 = simplePerlin2D14_g65*0.5 + 0.5;
+			float2 appendResult13_g65 = (float2(( temp_output_21_0_g65 * ( _SinTime.y + ase_screenPos.x ) ) , ( temp_output_21_0_g65 * ( ase_screenPos.y + _SinTime.x ) )));
+			float simplePerlin2D15_g65 = snoise( appendResult13_g65*2.0 );
+			simplePerlin2D15_g65 = simplePerlin2D15_g65*0.5 + 0.5;
+			float2 appendResult5_g65 = (float2(simplePerlin2D14_g65 , simplePerlin2D15_g65));
+			float simplePerlin2D1_g65 = snoise( appendResult5_g65*0.5 );
+			simplePerlin2D1_g65 = simplePerlin2D1_g65*0.5 + 0.5;
 			float temp_output_21_0_g61 = 0.2;
 			float2 appendResult18_g61 = (float2(( ( _SinTime.y + ase_screenPos.x ) * temp_output_21_0_g61 ) , ( ( _SinTime.x + ase_screenPos.y ) * temp_output_21_0_g61 )));
 			float simplePerlin2D14_g61 = snoise( appendResult18_g61*2.0 );
@@ -152,52 +154,53 @@ Shader "SNG/Environment"
 			float simplePerlin2D1_g61 = snoise( appendResult5_g61*1.0 );
 			simplePerlin2D1_g61 = simplePerlin2D1_g61*0.5 + 0.5;
 			float Depth134 = temp_output_41_0;
-			float lerpResult135 = lerp( ( 1.0 * ( ( ( ( simplePerlin2D1_g62 + simplePerlin2D1_g59 + simplePerlin2D1_g60 + simplePerlin2D1_g61 ) / 4.0 ) - 0.5 ) * ( 1.0 - Depth134 ) ) ) , 0.0 , ( Depth134 + 1.0 ));
+			float lerpResult135 = lerp( ( 1.0 * ( ( ( ( simplePerlin2D1_g66 + simplePerlin2D1_g64 + simplePerlin2D1_g65 + simplePerlin2D1_g61 ) / 4.0 ) - 0.5 ) * ( 1.0 - Depth134 ) ) ) , 0.0 , ( Depth134 + 1.0 ));
 			#ifdef _NOISYFOG_ON
 				float staticSwitch169 = lerpResult135;
 			#else
 				float staticSwitch169 = 0.0;
 			#endif
-			float4 lerpResult13 = lerp( temp_output_3_0 , ( temp_output_2_0_g64 * temp_output_2_0_g64 ) , ( ( 1.0 - ( temp_output_2_0_g63 * temp_output_2_0_g63 ) ) + staticSwitch169 ));
+			float4 lerpResult13 = lerp( temp_output_3_0 , ( temp_output_2_0_g68 * temp_output_2_0_g68 ) , ( ( 1.0 - ( temp_output_2_0_g67 * temp_output_2_0_g67 ) ) + staticSwitch169 ));
 			#ifdef _USEFOG_ON
 				float4 staticSwitch280 = lerpResult13;
 			#else
 				float4 staticSwitch280 = temp_output_3_0;
 			#endif
 			float4 Diffuse350 = staticSwitch280;
-			float3 temp_output_4_0_g72 = (ShroomLightPositions[temp_output_17_0_g72]).xyz;
+			float3 temp_output_4_0_g81 = (ShroomLightPositions[temp_output_17_0_g81]).xyz;
 			float3 ase_worldPos = i.worldPos;
-			float3 normalizeResult8_g72 = normalize( ( temp_output_4_0_g72 - ase_worldPos ) );
+			float3 normalizeResult8_g81 = normalize( ( temp_output_4_0_g81 - ase_worldPos ) );
 			float2 uv_Normal = i.uv_texcoord * _Normal_ST.xy + _Normal_ST.zw;
 			float3 NormalSample347 = UnpackNormal( tex2Dlod( _Normal, float4( uv_Normal, 0, _NormalMip) ) );
-			float3 normalizeResult5_g73 = normalize( (WorldNormalVector( i , NormalSample347 )) );
-			float dotResult15_g73 = dot( normalizeResult8_g72 , normalizeResult5_g73 );
-			float4 break129_g73 = ShroomLightRadiusAndIntensity[temp_output_17_0_g72];
-			float InnerRadius130_g73 = break129_g73.x;
-			float OuterRadius131_g73 = break129_g73.y;
-			float2 appendResult106_g73 = (float2(( (0.0 + (dotResult15_g73 - -1.0) * (1.0 - 0.0) / (1.0 - -1.0)) + ( _RampOffset + ( 1.0 - (0.0 + (distance( ase_worldPos , temp_output_4_0_g72 ) - InnerRadius130_g73) * (1.0 - 0.0) / (OuterRadius131_g73 - InnerRadius130_g73)) ) ) ) , 0.5));
-			int temp_output_17_0_g70 = 1;
-			float3 temp_output_4_0_g70 = (ShroomLightPositions[temp_output_17_0_g70]).xyz;
-			float3 normalizeResult8_g70 = normalize( ( temp_output_4_0_g70 - ase_worldPos ) );
-			float3 normalizeResult5_g71 = normalize( (WorldNormalVector( i , NormalSample347 )) );
-			float dotResult15_g71 = dot( normalizeResult8_g70 , normalizeResult5_g71 );
-			float4 break129_g71 = ShroomLightRadiusAndIntensity[temp_output_17_0_g70];
-			float InnerRadius130_g71 = break129_g71.x;
-			float OuterRadius131_g71 = break129_g71.y;
-			float2 appendResult106_g71 = (float2(( (0.0 + (dotResult15_g71 - -1.0) * (1.0 - 0.0) / (1.0 - -1.0)) + ( _RampOffset + ( 1.0 - (0.0 + (distance( ase_worldPos , temp_output_4_0_g70 ) - InnerRadius130_g71) * (1.0 - 0.0) / (OuterRadius131_g71 - InnerRadius130_g71)) ) ) ) , 0.5));
-			int temp_output_17_0_g68 = 0;
-			float3 temp_output_4_0_g68 = (ShroomLightPositions[temp_output_17_0_g68]).xyz;
-			float3 normalizeResult8_g68 = normalize( ( temp_output_4_0_g68 - ase_worldPos ) );
-			float3 normalizeResult5_g69 = normalize( (WorldNormalVector( i , NormalSample347 )) );
-			float dotResult15_g69 = dot( normalizeResult8_g68 , normalizeResult5_g69 );
-			float4 break129_g69 = ShroomLightRadiusAndIntensity[temp_output_17_0_g68];
-			float InnerRadius130_g69 = break129_g69.x;
-			float OuterRadius131_g69 = break129_g69.y;
-			float2 appendResult106_g69 = (float2(( (0.0 + (dotResult15_g69 - -1.0) * (1.0 - 0.0) / (1.0 - -1.0)) + ( _RampOffset + ( 1.0 - (0.0 + (distance( ase_worldPos , temp_output_4_0_g68 ) - InnerRadius130_g69) * (1.0 - 0.0) / (OuterRadius131_g69 - InnerRadius130_g69)) ) ) ) , 0.5));
+			float3 normalizeResult5_g82 = normalize( (WorldNormalVector( i , NormalSample347 )) );
+			float dotResult15_g82 = dot( normalizeResult8_g81 , normalizeResult5_g82 );
+			float InnerRadius130_g82 = break129_g82.x;
+			float OuterRadius131_g82 = break129_g82.y;
+			float2 appendResult106_g82 = (float2(( (0.0 + (dotResult15_g82 - -1.0) * (1.0 - 0.0) / (1.0 - -1.0)) + ( _RampOffset + ( 1.0 - (0.0 + (distance( ase_worldPos , temp_output_4_0_g81 ) - InnerRadius130_g82) * (1.0 - 0.0) / (OuterRadius131_g82 - InnerRadius130_g82)) ) ) ) , 0.5));
+			int temp_output_17_0_g79 = 1;
+			float4 break129_g80 = ShroomLightRadiusAndIntensity[temp_output_17_0_g79];
+			float Intensity132_g80 = break129_g80.z;
+			float3 temp_output_4_0_g79 = (ShroomLightPositions[temp_output_17_0_g79]).xyz;
+			float3 normalizeResult8_g79 = normalize( ( temp_output_4_0_g79 - ase_worldPos ) );
+			float3 normalizeResult5_g80 = normalize( (WorldNormalVector( i , NormalSample347 )) );
+			float dotResult15_g80 = dot( normalizeResult8_g79 , normalizeResult5_g80 );
+			float InnerRadius130_g80 = break129_g80.x;
+			float OuterRadius131_g80 = break129_g80.y;
+			float2 appendResult106_g80 = (float2(( (0.0 + (dotResult15_g80 - -1.0) * (1.0 - 0.0) / (1.0 - -1.0)) + ( _RampOffset + ( 1.0 - (0.0 + (distance( ase_worldPos , temp_output_4_0_g79 ) - InnerRadius130_g80) * (1.0 - 0.0) / (OuterRadius131_g80 - InnerRadius130_g80)) ) ) ) , 0.5));
+			int temp_output_17_0_g75 = 0;
+			float4 break129_g76 = ShroomLightRadiusAndIntensity[temp_output_17_0_g75];
+			float Intensity132_g76 = break129_g76.z;
+			float3 temp_output_4_0_g75 = (ShroomLightPositions[temp_output_17_0_g75]).xyz;
+			float3 normalizeResult8_g75 = normalize( ( temp_output_4_0_g75 - ase_worldPos ) );
+			float3 normalizeResult5_g76 = normalize( (WorldNormalVector( i , NormalSample347 )) );
+			float dotResult15_g76 = dot( normalizeResult8_g75 , normalizeResult5_g76 );
+			float InnerRadius130_g76 = break129_g76.x;
+			float OuterRadius131_g76 = break129_g76.y;
+			float2 appendResult106_g76 = (float2(( (0.0 + (dotResult15_g76 - -1.0) * (1.0 - 0.0) / (1.0 - -1.0)) + ( _RampOffset + ( 1.0 - (0.0 + (distance( ase_worldPos , temp_output_4_0_g75 ) - InnerRadius130_g76) * (1.0 - 0.0) / (OuterRadius131_g76 - InnerRadius130_g76)) ) ) ) , 0.5));
 			#ifdef _DISPLAYNORMALS_ON
 				float4 staticSwitch265 = float4( NormalSample347 , 0.0 );
 			#else
-				float4 staticSwitch265 = ( ( ( ShroomLightColors[temp_output_17_0_g72] * Diffuse350 ) * tex2D( _Ramp, appendResult106_g73 ) ) + ( ( ( ShroomLightColors[temp_output_17_0_g70] * Diffuse350 ) * tex2D( _Ramp, appendResult106_g71 ) ) + ( ( ShroomLightColors[temp_output_17_0_g68] * Diffuse350 ) * tex2D( _Ramp, appendResult106_g69 ) ) ) );
+				float4 staticSwitch265 = ( ( ( Intensity132_g82 * ( ShroomLightColors[temp_output_17_0_g81] * Diffuse350 ) ) * tex2D( _Ramp, appendResult106_g82 ) ) + ( ( ( Intensity132_g80 * ( ShroomLightColors[temp_output_17_0_g79] * Diffuse350 ) ) * tex2D( _Ramp, appendResult106_g80 ) ) + ( ( Intensity132_g76 * ( ShroomLightColors[temp_output_17_0_g75] * Diffuse350 ) ) * tex2D( _Ramp, appendResult106_g76 ) ) ) );
 			#endif
 			o.Emission = staticSwitch265.rgb;
 			o.Alpha = 1;
@@ -226,10 +229,10 @@ Node;AmplifyShaderEditor.RangedFloatNode;162;-5808,1056;Inherit;False;Constant;_
 Node;AmplifyShaderEditor.RangedFloatNode;163;-5808,1264;Inherit;False;Constant;_Float8;Float 0;2;0;Create;True;0;0;0;False;0;False;0.125;0;0;0;0;1;FLOAT;0
 Node;AmplifyShaderEditor.RangedFloatNode;164;-5792,1456;Inherit;False;Constant;_Float9;Float 0;2;0;Create;True;0;0;0;False;0;False;0.15;0;0;0;0;1;FLOAT;0
 Node;AmplifyShaderEditor.FunctionNode;159;-5600,1648;Inherit;False;ScreenNoise;-1;;61;15abc497825ad4e13a038a4649c4a8a1;0;2;21;FLOAT;0.1;False;20;FLOAT;1;False;1;FLOAT;0
-Node;AmplifyShaderEditor.FunctionNode;41;-4288,432;Inherit;False;EasingOutCirc;-1;;20;181ee7db325895443a774b654a9b8500;0;1;1;FLOAT;0;False;1;FLOAT;0
-Node;AmplifyShaderEditor.FunctionNode;155;-5568,1296;Inherit;False;ScreenNoise;-1;;59;15abc497825ad4e13a038a4649c4a8a1;0;2;21;FLOAT;0.1;False;20;FLOAT;1;False;1;FLOAT;0
-Node;AmplifyShaderEditor.FunctionNode;157;-5584,1472;Inherit;False;ScreenNoise;-1;;60;15abc497825ad4e13a038a4649c4a8a1;0;2;21;FLOAT;0.1;False;20;FLOAT;1;False;1;FLOAT;0
-Node;AmplifyShaderEditor.FunctionNode;151;-5568,1136;Inherit;False;ScreenNoise;-1;;62;15abc497825ad4e13a038a4649c4a8a1;0;2;21;FLOAT;0.1;False;20;FLOAT;1;False;1;FLOAT;0
+Node;AmplifyShaderEditor.FunctionNode;41;-4288,432;Inherit;False;EasingOutCirc;-1;;62;181ee7db325895443a774b654a9b8500;0;1;1;FLOAT;0;False;1;FLOAT;0
+Node;AmplifyShaderEditor.FunctionNode;155;-5568,1296;Inherit;False;ScreenNoise;-1;;64;15abc497825ad4e13a038a4649c4a8a1;0;2;21;FLOAT;0.1;False;20;FLOAT;1;False;1;FLOAT;0
+Node;AmplifyShaderEditor.FunctionNode;157;-5584,1472;Inherit;False;ScreenNoise;-1;;65;15abc497825ad4e13a038a4649c4a8a1;0;2;21;FLOAT;0.1;False;20;FLOAT;1;False;1;FLOAT;0
+Node;AmplifyShaderEditor.FunctionNode;151;-5568,1136;Inherit;False;ScreenNoise;-1;;66;15abc497825ad4e13a038a4649c4a8a1;0;2;21;FLOAT;0.1;False;20;FLOAT;1;False;1;FLOAT;0
 Node;AmplifyShaderEditor.RegisterLocalVarNode;134;-3824,528;Inherit;False;Depth;-1;True;1;0;FLOAT;0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.SimpleAddOpNode;128;-5072,1120;Inherit;False;4;4;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.RangedFloatNode;130;-5104,1312;Inherit;False;Constant;_Float16;Float 16;2;0;Create;True;0;0;0;False;0;False;4;0;0;0;0;1;FLOAT;0
@@ -247,23 +250,23 @@ Node;AmplifyShaderEditor.SimpleAddOpNode;172;-4128,1584;Inherit;False;2;2;0;FLOA
 Node;AmplifyShaderEditor.RangedFloatNode;137;-4288,1424;Inherit;False;Constant;_Float19;Float 19;2;0;Create;True;0;0;0;False;0;False;0;0;0;0;0;1;FLOAT;0
 Node;AmplifyShaderEditor.SimpleMultiplyOpNode;142;-4368,1232;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.CommentaryNode;50;-4880,-704;Inherit;False;868;563;Comment;4;1;45;3;2;Tex And Vertex Color;1,1,1,1;0;0
-Node;AmplifyShaderEditor.FunctionNode;35;-3824,432;Inherit;False;Square;-1;;63;fea980a1f68019543b2cd91d506986e8;0;1;2;FLOAT;0;False;1;FLOAT;0
+Node;AmplifyShaderEditor.FunctionNode;35;-3824,432;Inherit;False;Square;-1;;67;fea980a1f68019543b2cd91d506986e8;0;1;2;FLOAT;0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.LerpOp;135;-4080,1360;Inherit;False;3;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.RangedFloatNode;170;-4032,1216;Inherit;False;Constant;_Float12;Float 12;3;0;Create;True;0;0;0;False;0;False;0;0;0;0;0;1;FLOAT;0
 Node;AmplifyShaderEditor.OneMinusNode;51;-3680,432;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0
-Node;AmplifyShaderEditor.ColorNode;14;-4016,256;Inherit;False;Global;FogColor;FogColor;2;0;Create;True;0;0;0;False;0;False;0.1887822,0.1643645,0.509434,1;0,0,0,1;True;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
+Node;AmplifyShaderEditor.ColorNode;14;-4016,256;Inherit;False;Global;FogColor;FogColor;2;0;Create;True;0;0;0;False;0;False;0.1887822,0.1643645,0.509434,1;0.04705882,0.2470588,0.2666667,1;True;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.StaticSwitch;169;-3872,1232;Inherit;False;Property;_NoisyFog;NoisyFog;6;0;Create;True;0;0;0;False;0;False;0;1;1;True;;Toggle;2;Key0;Key1;Create;True;True;All;9;1;FLOAT;0;False;0;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;4;FLOAT;0;False;5;FLOAT;0;False;6;FLOAT;0;False;7;FLOAT;0;False;8;FLOAT;0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.SamplerNode;1;-4800,-640;Inherit;True;Property;_MainTex;MainTex;5;1;[PerRendererData];Create;True;0;0;0;False;0;False;-1;None;None;True;0;False;white;Auto;False;Object;-1;Auto;Texture2D;8;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;6;FLOAT;0;False;7;SAMPLERSTATE;;False;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.VertexColorNode;2;-4496,-352;Inherit;False;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.CommentaryNode;329;-2768,1408;Inherit;False;976.0073;302.9471;Comment;3;347;178;306;Mip Smoothed Normal Sample;1,1,1,1;0;0
-Node;AmplifyShaderEditor.FunctionNode;36;-3680,304;Inherit;False;Square;-1;;64;fea980a1f68019543b2cd91d506986e8;0;1;2;COLOR;0,0,0,0;False;1;COLOR;0
+Node;AmplifyShaderEditor.FunctionNode;36;-3680,304;Inherit;False;Square;-1;;68;fea980a1f68019543b2cd91d506986e8;0;1;2;COLOR;0,0,0,0;False;1;COLOR;0
 Node;AmplifyShaderEditor.SimpleAddOpNode;63;-3488,496;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.SimpleMultiplyOpNode;3;-4160,-448;Inherit;False;2;2;0;COLOR;0,0,0,0;False;1;COLOR;0,0,0,0;False;1;COLOR;0
 Node;AmplifyShaderEditor.LerpOp;13;-3456,240;Inherit;False;3;0;COLOR;0,0,0,0;False;1;COLOR;0,0,0,0;False;2;FLOAT;0;False;1;COLOR;0
 Node;AmplifyShaderEditor.RangedFloatNode;306;-2720,1536;Inherit;False;Property;_NormalMip;NormalMip;7;0;Create;True;0;0;0;False;0;False;0;2;0;9;0;1;FLOAT;0
 Node;AmplifyShaderEditor.SamplerNode;178;-2416,1456;Inherit;True;Property;_Normal;Normal;9;1;[Normal];Create;True;0;0;0;False;0;False;178;None;None;True;0;False;bump;Auto;True;Object;-1;MipLevel;Texture2D;8;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;6;FLOAT;0;False;7;SAMPLERSTATE;;False;5;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.StaticSwitch;280;-2608,304;Inherit;False;Property;_UseFog;Use Fog;8;0;Create;True;0;0;0;False;0;False;0;1;1;True;;Toggle;2;Key0;Key1;Create;True;True;All;9;1;COLOR;0,0,0,0;False;0;COLOR;0,0,0,0;False;2;COLOR;0,0,0,0;False;3;COLOR;0,0,0,0;False;4;COLOR;0,0,0,0;False;5;COLOR;0,0,0,0;False;6;COLOR;0,0,0,0;False;7;COLOR;0,0,0,0;False;8;COLOR;0,0,0,0;False;1;COLOR;0
-Node;AmplifyShaderEditor.CommentaryNode;328;-2032,-1616;Inherit;False;2093.142;999.1426;Shroom Lights;14;349;351;353;345;354;355;356;357;358;359;360;361;362;363;;1,1,1,1;0;0
+Node;AmplifyShaderEditor.CommentaryNode;328;-2032,-1616;Inherit;False;2093.142;999.1426;Shroom Lights;11;349;351;353;354;355;356;358;359;360;361;363;;1,1,1,1;0;0
 Node;AmplifyShaderEditor.RegisterLocalVarNode;350;-2336,320;Inherit;False;Diffuse;-1;True;1;0;COLOR;0,0,0,0;False;1;COLOR;0
 Node;AmplifyShaderEditor.RegisterLocalVarNode;347;-2016,1488;Inherit;False;NormalSample;-1;True;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0
 Node;AmplifyShaderEditor.GetLocalVarNode;351;-1312,-704;Inherit;False;350;Diffuse;1;0;OBJECT;;False;1;COLOR;0
@@ -272,19 +275,19 @@ Node;AmplifyShaderEditor.IntNode;353;-1312,-864;Inherit;False;Constant;_LightInd
 Node;AmplifyShaderEditor.GetLocalVarNode;354;-864,-912;Inherit;False;350;Diffuse;1;0;OBJECT;;False;1;COLOR;0
 Node;AmplifyShaderEditor.GetLocalVarNode;355;-896,-992;Inherit;False;347;NormalSample;1;0;OBJECT;;False;1;FLOAT3;0
 Node;AmplifyShaderEditor.IntNode;356;-864,-1072;Inherit;False;Constant;_LightIndex1;LightIndex0;9;0;Create;True;0;0;0;False;0;False;1;0;False;0;1;INT;0
-Node;AmplifyShaderEditor.FunctionNode;345;-1056,-832;Inherit;False;SingleLightSample;1;;68;484ad8942c0a84b6fa71c3cc3a86f242;0;3;17;INT;0;False;15;FLOAT3;0,0,0;False;16;COLOR;1,1,1,1;False;1;COLOR;0
-Node;AmplifyShaderEditor.FunctionNode;357;-608,-1040;Inherit;False;SingleLightSample;1;;70;484ad8942c0a84b6fa71c3cc3a86f242;0;3;17;INT;0;False;15;FLOAT3;0,0,0;False;16;COLOR;1,1,1,1;False;1;COLOR;0
 Node;AmplifyShaderEditor.GetLocalVarNode;359;-864,-1152;Inherit;False;350;Diffuse;1;0;OBJECT;;False;1;COLOR;0
 Node;AmplifyShaderEditor.GetLocalVarNode;360;-896,-1232;Inherit;False;347;NormalSample;1;0;OBJECT;;False;1;FLOAT3;0
 Node;AmplifyShaderEditor.IntNode;361;-864,-1312;Inherit;False;Constant;_LightIndex2;LightIndex0;9;0;Create;True;0;0;0;False;0;False;2;0;False;0;1;INT;0
-Node;AmplifyShaderEditor.FunctionNode;362;-608,-1280;Inherit;False;SingleLightSample;1;;72;484ad8942c0a84b6fa71c3cc3a86f242;0;3;17;INT;0;False;15;FLOAT3;0,0,0;False;16;COLOR;1,1,1,1;False;1;COLOR;0
+Node;AmplifyShaderEditor.FunctionNode;364;-1056,-832;Inherit;False;SingleLightSample;1;;75;484ad8942c0a84b6fa71c3cc3a86f242;0;3;17;INT;0;False;15;FLOAT3;0,0,0;False;16;COLOR;1,1,1,1;False;1;COLOR;0
+Node;AmplifyShaderEditor.FunctionNode;366;-608,-1040;Inherit;False;SingleLightSample;1;;79;484ad8942c0a84b6fa71c3cc3a86f242;0;3;17;INT;0;False;15;FLOAT3;0,0,0;False;16;COLOR;1,1,1,1;False;1;COLOR;0
 Node;AmplifyShaderEditor.SimpleAddOpNode;358;-371.1859,-805.1718;Inherit;False;2;2;0;COLOR;0,0,0,0;False;1;COLOR;0,0,0,0;False;1;COLOR;0
+Node;AmplifyShaderEditor.FunctionNode;365;-608,-1280;Inherit;False;SingleLightSample;1;;81;484ad8942c0a84b6fa71c3cc3a86f242;0;3;17;INT;0;False;15;FLOAT3;0,0,0;False;16;COLOR;1,1,1,1;False;1;COLOR;0
 Node;AmplifyShaderEditor.GetLocalVarNode;352;224,-224;Inherit;False;347;NormalSample;1;0;OBJECT;;False;1;FLOAT3;0
 Node;AmplifyShaderEditor.RegisterLocalVarNode;45;-4496,-448;Inherit;False;MainTexAlpha;-1;True;1;0;FLOAT;0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.SimpleAddOpNode;363;-240,-1008;Inherit;False;2;2;0;COLOR;0,0,0,0;False;1;COLOR;0,0,0,0;False;1;COLOR;0
 Node;AmplifyShaderEditor.GetLocalVarNode;46;640,48;Inherit;False;45;MainTexAlpha;1;0;OBJECT;;False;1;FLOAT;0
 Node;AmplifyShaderEditor.StaticSwitch;265;480,-272;Inherit;False;Property;_DisplayNormals;Display Normals;10;0;Create;True;0;0;0;False;0;False;0;0;0;True;;Toggle;2;Key0;Key1;Create;True;True;All;9;1;COLOR;0,0,0,0;False;0;COLOR;0,0,0,0;False;2;COLOR;0,0,0,0;False;3;COLOR;0,0,0,0;False;4;COLOR;0,0,0,0;False;5;COLOR;0,0,0,0;False;6;COLOR;0,0,0,0;False;7;COLOR;0,0,0,0;False;8;COLOR;0,0,0,0;False;1;COLOR;0
-Node;AmplifyShaderEditor.StandardSurfaceOutputNode;0;864,-304;Float;False;True;-1;2;ASEMaterialInspector;0;0;Unlit;SNG/Environment;False;False;False;False;True;False;True;True;True;False;False;False;False;False;True;False;False;False;False;False;False;Off;1;False;;1;False;;False;0;False;;0;False;;False;0;Masked;0.6;True;False;0;False;TransparentCutout;;AlphaTest;All;12;all;True;True;True;True;0;False;;False;0;False;;255;False;;255;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;False;2;15;10;25;False;0.5;False;0;5;False;;10;False;;0;0;False;;0;False;;0;False;;0;False;;0;False;0;0,0,0,0;VertexOffset;True;False;Cylindrical;False;True;Relative;0;;0;-1;-1;-1;0;False;0;0;False;;-1;0;False;;0;0;0;False;0.1;False;;0;False;;False;16;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;3;FLOAT;0;False;4;FLOAT;0;False;6;FLOAT3;0,0,0;False;7;FLOAT3;0,0,0;False;8;FLOAT;0;False;9;FLOAT;0;False;10;FLOAT;0;False;13;FLOAT3;0,0,0;False;11;FLOAT3;0,0,0;False;12;FLOAT3;0,0,0;False;16;FLOAT4;0,0,0,0;False;14;FLOAT4;0,0,0,0;False;15;FLOAT3;0,0,0;False;0
+Node;AmplifyShaderEditor.StandardSurfaceOutputNode;0;864,-304;Float;False;True;-1;2;ASEMaterialInspector;0;0;Unlit;SNG/Environment;False;False;False;False;True;False;True;True;True;True;False;False;False;False;True;False;False;False;False;False;False;Off;1;False;;1;False;;False;0;False;;0;False;;False;0;Masked;0.6;True;False;0;False;TransparentCutout;;AlphaTest;All;12;all;True;True;True;True;0;False;;False;0;False;;255;False;;255;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;False;2;15;10;25;False;0.5;False;0;5;False;;10;False;;0;0;False;;0;False;;0;False;;0;False;;0;False;0;0,0,0,0;VertexOffset;True;False;Cylindrical;False;True;Relative;0;;0;-1;-1;-1;0;False;0;0;False;;-1;0;False;;0;0;0;False;0.1;False;;0;False;;False;16;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;3;FLOAT;0;False;4;FLOAT;0;False;6;FLOAT3;0,0,0;False;7;FLOAT3;0,0,0;False;8;FLOAT;0;False;9;FLOAT;0;False;10;FLOAT;0;False;13;FLOAT3;0,0,0;False;11;FLOAT3;0,0,0;False;12;FLOAT3;0,0,0;False;16;FLOAT4;0,0,0,0;False;14;FLOAT4;0,0,0,0;False;15;FLOAT3;0,0,0;False;0
 WireConnection;30;0;28;0
 WireConnection;30;1;29;0
 WireConnection;37;0;30;0
@@ -334,23 +337,23 @@ WireConnection;280;1;3;0
 WireConnection;280;0;13;0
 WireConnection;350;0;280;0
 WireConnection;347;0;178;0
-WireConnection;345;17;353;0
-WireConnection;345;15;349;0
-WireConnection;345;16;351;0
-WireConnection;357;17;356;0
-WireConnection;357;15;355;0
-WireConnection;357;16;354;0
-WireConnection;362;17;361;0
-WireConnection;362;15;360;0
-WireConnection;362;16;359;0
-WireConnection;358;0;357;0
-WireConnection;358;1;345;0
+WireConnection;364;17;353;0
+WireConnection;364;15;349;0
+WireConnection;364;16;351;0
+WireConnection;366;17;356;0
+WireConnection;366;15;355;0
+WireConnection;366;16;354;0
+WireConnection;358;0;366;0
+WireConnection;358;1;364;0
+WireConnection;365;17;361;0
+WireConnection;365;15;360;0
+WireConnection;365;16;359;0
 WireConnection;45;0;1;4
-WireConnection;363;0;362;0
+WireConnection;363;0;365;0
 WireConnection;363;1;358;0
 WireConnection;265;1;363;0
 WireConnection;265;0;352;0
 WireConnection;0;2;265;0
 WireConnection;0;10;46;0
 ASEEND*/
-//CHKSM=03A523F139C33EC33465857AD29A6236F2BEF00C
+//CHKSM=6979BB8265744BB5A622420EEECEBD5F234B8B5C

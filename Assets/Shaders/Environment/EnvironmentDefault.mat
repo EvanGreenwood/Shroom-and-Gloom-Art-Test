@@ -11,7 +11,8 @@ Material:
   m_Shader: {fileID: 4800000, guid: e867afa9bad2d8543a5e6bb95a5f0181, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
+  m_ValidKeywords:
+  - _USEFOG_ON
   m_InvalidKeywords:
   - _LIT_ON
   - _USEMATCAP_ON
@@ -66,7 +67,7 @@ Material:
     - _RampOffset: -0.5
     - _ScreenSpaceScale: 24
     - _Shininess: 0.1
-    - _UseFog: 0
+    - _UseFog: 1
     - _UseMatcap: 1
     - _XScaleScreenSpace: 2
     - _YScaleScreenSpace: 90
