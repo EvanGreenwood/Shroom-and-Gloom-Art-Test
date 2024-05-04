@@ -11,6 +11,7 @@ public class ShroomLightingService : MonoService
     private static readonly int ShroomLightPositionsGlobalId = Shader.PropertyToID("ShroomLightPositions");
     private static readonly int ShroomLightRadiusAndIntensityGlobalId = Shader.PropertyToID("ShroomLightRadiusAndIntensity");
     private static readonly int ShroomLightColorsGlobalId = Shader.PropertyToID("ShroomLightColors");
+    private static readonly int ShroomLightArraySizeGlobalId = Shader.PropertyToID("_ShroomLightArraySize");
 
     public const int MAX_LIGHT_COUNT = 5;
     
@@ -53,7 +54,7 @@ public class ShroomLightingService : MonoService
 
         //Global arrays must always be the same size.
         //So we have empty values
-        while (_lights.Count < MAX_LIGHT_COUNT)
+        while (positions.Count < MAX_LIGHT_COUNT)
         {
             positions.Add(Vector4.zero);
             radiusAndIntensity.Add(Vector4.zero);
@@ -61,6 +62,7 @@ public class ShroomLightingService : MonoService
         }
 
         //Set light parameters
+        Shader.SetGlobalInt(ShroomLightArraySizeGlobalId, MAX_LIGHT_COUNT);
         Shader.SetGlobalVectorArray(ShroomLightPositionsGlobalId, positions);
         Shader.SetGlobalVectorArray(ShroomLightRadiusAndIntensityGlobalId, radiusAndIntensity);
         Shader.SetGlobalVectorArray(ShroomLightColorsGlobalId, colors);

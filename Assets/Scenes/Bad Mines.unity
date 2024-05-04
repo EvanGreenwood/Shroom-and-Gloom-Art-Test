@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 0}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: 12f7b1f8dde014920a9d74d88969f0f4, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -210,13 +210,37 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1788053498998766857, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 1788053498998766857, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.622
+      objectReference: {fileID: 0}
+    - target: {fileID: 2336201325850330426, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
+      propertyPath: Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2336201325850330426, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
+      propertyPath: Color.g
+      value: 0.505315
+      objectReference: {fileID: 0}
+    - target: {fileID: 2336201325850330426, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
+      propertyPath: Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2336201325850330426, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2336201325850330426, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
       propertyPath: InnerRadius
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2336201325850330426, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
       propertyPath: OuterRadius
-      value: 10
+      value: 2.64
       objectReference: {fileID: 0}
     - target: {fileID: 3020264992416293518, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
       propertyPath: m_Name
@@ -274,19 +298,208 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5379408003306743614, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6754491647642625121, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
+      propertyPath: m_Name
+      value: ShroomLight1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6754491647642625121, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6754491647642625121, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7377003652321274274, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.17
+      objectReference: {fileID: 0}
     - target: {fileID: 7377003652321274274, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.26
+      value: 2.21
       objectReference: {fileID: 0}
     - target: {fileID: 7377003652321274274, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.81
+      value: 9.73
+      objectReference: {fileID: 0}
+    - target: {fileID: 8772918921911475724, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
+      propertyPath: m_Range
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8772918921911475724, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8772918921911475724, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8772918921911475724, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8772918921911475724, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
+      propertyPath: m_Lightmapping
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8772918921911475724, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
+      propertyPath: m_Shadows.m_Type
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 6296673201421198218, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
+--- !u!1 &598455448
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 598455449}
+  - component: {fileID: 598455450}
+  m_Layer: 0
+  m_Name: ShroomLight3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &598455449
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 598455448}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.091, y: 3.608, z: 14.589}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &598455450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 598455448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 564411645f46841fda907f5a1ad9e14e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OuterRadius: 5.21
+  InnerRadius: 0
+  Intensity: 1
+  Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &836844057
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 836844058}
+  - component: {fileID: 836844059}
+  m_Layer: 0
+  m_Name: ShroomLight2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &836844058
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 836844057}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.091, y: 0.61, z: 4.14}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &836844059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 836844057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 564411645f46841fda907f5a1ad9e14e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OuterRadius: 10
+  InnerRadius: 0
+  Intensity: 1
+  Color: {r: 0.6792453, g: 0.06728373, b: 0.06728373, a: 1}
+--- !u!1 &1478998013
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1478998015}
+  - component: {fileID: 1478998014}
+  m_Layer: 0
+  m_Name: ShroomLight1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1478998014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1478998013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 564411645f46841fda907f5a1ad9e14e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OuterRadius: 2.64
+  InnerRadius: 0
+  Intensity: 1
+  Color: {r: 1, g: 0.505315, b: 0, a: 1}
+--- !u!4 &1478998015
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1478998013}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.17, y: 2.21, z: 7.7299995}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1551529198
 GameObject:
   m_ObjectHideFlags: 0
@@ -570,8 +783,11 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 5024598757371713799}
   - {fileID: 14348015}
   - {fileID: 1551529200}
   - {fileID: 524875272}
+  - {fileID: 836844058}
+  - {fileID: 598455449}
+  - {fileID: 1478998015}
   - {fileID: 525790713}
-  - {fileID: 5024598757371713799}
