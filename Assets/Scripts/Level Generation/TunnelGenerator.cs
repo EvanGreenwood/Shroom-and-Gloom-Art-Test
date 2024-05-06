@@ -48,11 +48,6 @@ public class TunnelGenerator : MonoBehaviour
         public FloatRange minMaxPosition = new FloatRange(0.6f, 2.6f);
         public float randomRotation = 5f;
         public bool randomFlipY = true;
-        
-        [Header("Flats")]
-        public SpriteRenderer flatWallPrefab;
-        public float flatSpacing = 1;
-        public float flatOffset = 1;
     }
     //
     [Serializable]
@@ -92,11 +87,6 @@ public class TunnelGenerator : MonoBehaviour
         public float xRotation = 0;
         public FloatRange minMaxPosition = new FloatRange(-0.05f, 0.05f);
         public bool randomFlipX = true;
-        
-        [Header("Flats")]
-        public SpriteRenderer flatFloorPrefab;
-        [FormerlySerializedAs("flatYOffset")] public float flatOffset = -1;
-        [FormerlySerializedAs("floatSpacing")] public float flatSpacing = 1f;
     }
     //
     [Serializable]
@@ -112,11 +102,6 @@ public class TunnelGenerator : MonoBehaviour
         public float xRotation = 0;
         public FloatRange minMaxPosition = new FloatRange(-0.05f, 0.05f);
         public bool randomFlipX = true;
-        
-        [Header("Flats")]
-        public SpriteRenderer flatCeilingPrefab;
-        public float flatSpacing = 1;
-        public float flatOffset = 1;
     }
 #endregion
 
@@ -134,9 +119,22 @@ public class TunnelGenerator : MonoBehaviour
 
     [Header("Elements")]
     [SerializeField] private TunnelWallData[] wallElements;
+    public SpriteRenderer flatWallPrefab;
+    public float flatWallSpacing = 1;
+    public float flatWallOffset = 1;
+    
     [SerializeField] private TunnelSurroundData[] surroundElements;
+    
     [SerializeField] private TunnelFloorData[] floorElements;
+    public SpriteRenderer flatFloorPrefab;
+    public float flatFloorOffset = -1;
+    public float flatFloorSpacing = 1f;
+    
+    
     [SerializeField] private TunnelCeilingData[] ceilingElements;
+    public SpriteRenderer flatCeilingPrefab;
+    public float flatCeilingSpacing = 1;
+    public float flatCeilingOffset = 1;
 
     private SplineContainer _tunnelSpline;
     
@@ -243,8 +241,8 @@ public class TunnelGenerator : MonoBehaviour
         foreach (var wallData in wallElements)
         {
             wallData.spacing = Mathf.Max(0.1f,  wallData.spacing);
-            wallData.flatSpacing = Mathf.Max(0.1f,  wallData.flatSpacing);
         }
+        flatWallSpacing = Mathf.Max(0.1f,  flatWallSpacing);
         
         foreach (var surroundData in surroundElements)
         {
@@ -254,14 +252,14 @@ public class TunnelGenerator : MonoBehaviour
         foreach (var floorData in floorElements)
         {
             floorData.spacing = Mathf.Max(0.1f,  floorData.spacing);
-            floorData.flatSpacing = Mathf.Max(0.1f,  floorData.flatSpacing);
         }
+        flatFloorSpacing = Mathf.Max(0.1f,  flatFloorSpacing);
         
         foreach (var ceilingData in ceilingElements)
         {
             ceilingData.spacing = Mathf.Max(0.1f,  ceilingData.spacing);
-            ceilingData.flatSpacing = Mathf.Max(0.1f,  ceilingData.flatSpacing);
         }
+        flatCeilingSpacing = Mathf.Max(0.1f,  flatCeilingSpacing);
     }
 
     [Button("Toggle Generated Selectable")]
@@ -385,8 +383,50 @@ public class TunnelGenerator : MonoBehaviour
                 }
             }
         }
-        
-        //TODO: generate flats for walls
+
+        GenerateWallFlats(TunnelSide.Left);
+        GenerateWallFlats(TunnelSide.Right);
+
+        void GenerateWallFlats(TunnelSide side)
+        {
+            float sign = 1;
+            if (side == TunnelSide.Right)
+            {
+                sign = -1;
+            }
+            
+            //Spawn flats
+            if (flatWallPrefab == null)
+            {
+                Debug.LogWarning($"[TunnelGenerator] {gameObject.name}; Flat wall element missing, skipping.", gameObject);
+                return;
+            }
+            
+            float dist = 0;
+            GetTunnelPositionAndDirection(dist, out Vector3 lastPosition, 
+                out Vector3 forwardDir, out Quaternion rot, out Vector3 upDir, out perpendicular);
+            lastPosition += perpendicular * flatWallOffset * sign;
+            while(dist < 1)
+            {
+                _tunnelSpline.Spline.GetPointAtLinearDistance(dist, flatWallSpacing, out dist);
+
+                //
+                GetTunnelPositionAndDirection(dist, out Vector3 currentPosition, out Vector3 currentDirection, out Quaternion currentRotation, out Vector3 up, out perpendicular);
+
+                // 
+                Vector3 spawnPos = (currentPosition) + perpendicular * flatWallOffset * sign;
+                Vector3 forward = (lastPosition - spawnPos).normalized;
+                SpriteRenderer flatWall = SpawnTunnelElement(flatWallPrefab, spawnPos, currentRotation, forward);
+                
+                flatWall.transform.localRotation *= Quaternion.Euler(0, 90,90);
+                
+                flatWall.color = _colorGradient.Evaluate(dist);
+                
+                // Floor flat planes need to be aligned exactly to avoid clipping with large tunnel height change 
+                // So we need to rotate them towards the last plane, rather than just sample the current curve.
+                lastPosition = spawnPos;
+            }
+        }
     }
 
     // Surrounds
@@ -524,39 +564,39 @@ public class TunnelGenerator : MonoBehaviour
                 floor.flipX = true;
                 if(floorData.randomFlipX) floor.flipX = Random.value > 0.5f;
             }
-            
-            //Spawn flats
-            if (floorData.flatFloorPrefab == null)
-            {
-                Debug.LogWarning($"[TunnelGenerator] {gameObject.name}; Flat floor element missing, skipping.", gameObject);
-                continue;
-            }
-            
-            distanceM = floorData.zOffset/_tunnelLength;
-            GetTunnelPositionAndDirection(distanceM, out Vector3 lastPosition, 
-                out Vector3 forwardDir, out Quaternion rot, out Vector3 upDir, out perpendicular);
-            lastPosition += upDir * floorData.flatOffset;
+        }
+        
+        //Spawn flats
+        if (flatFloorPrefab == null)
+        {
+            Debug.LogWarning($"[TunnelGenerator] {gameObject.name}; Flat floor element missing, skipping.", gameObject);
+            return;
+        }
+
+        float dist = 0;
+        GetTunnelPositionAndDirection(dist, out Vector3 lastPosition, 
+            out Vector3 forwardDir, out Quaternion rot, out Vector3 upDir, out perpendicular);
+        lastPosition += upDir * flatFloorOffset;
           
-            while(distanceM < 1)
-            {
-                _tunnelSpline.Spline.GetPointAtLinearDistance(distanceM, floorData.flatSpacing, out distanceM);
+        while(dist < 1)
+        {
+            _tunnelSpline.Spline.GetPointAtLinearDistance(dist, flatFloorSpacing, out dist);
 
-                //
-                GetTunnelPositionAndDirection(distanceM, out Vector3 currentPosition, out Vector3 currentDirection, out Quaternion currentRotation, out Vector3 up, out perpendicular);
+            //
+            GetTunnelPositionAndDirection(dist, out Vector3 currentPosition, out Vector3 currentDirection, out Quaternion currentRotation, out Vector3 up, out perpendicular);
 
-                // 
-                Vector3 spawnPos = (currentPosition) + up * floorData.flatOffset;
-                SpriteRenderer flatFloor = SpawnTunnelElement(floorData.flatFloorPrefab, spawnPos, currentRotation, currentDirection);
+            // 
+            Vector3 spawnPos = (currentPosition) + up * flatFloorOffset;
+            Vector3 forward = (lastPosition - spawnPos).normalized;
+            SpriteRenderer flatFloor = SpawnTunnelElement(flatFloorPrefab, spawnPos, currentRotation, forward);
                 
-                flatFloor.transform.forward = (lastPosition - spawnPos).normalized;
-                flatFloor.transform.localRotation *= Quaternion.Euler(-90, 0,0);
+            flatFloor.transform.localRotation *= Quaternion.Euler(90, 0,0);
                 
-                flatFloor.color = _colorGradient.Evaluate(distanceM);
+            flatFloor.color = _colorGradient.Evaluate(dist);
                 
-                // Floor flat planes need to be aligned exactly to avoid clipping with large tunnel height change 
-                // So we need to rotate them towards the last plane, rather than just sample the current curve.
-                lastPosition = spawnPos;
-            }
+            // Floor flat planes need to be aligned exactly to avoid clipping with large tunnel height change 
+            // So we need to rotate them towards the last plane, rather than just sample the current curve.
+            lastPosition = spawnPos;
         }
     }
     
@@ -587,7 +627,36 @@ public class TunnelGenerator : MonoBehaviour
             }
         }
         
-        //TODO: generate flats for ceilings
+        //Spawn flats
+        if (flatCeilingPrefab == null)
+        {
+            Debug.LogWarning($"[TunnelGenerator] {gameObject.name}; Flat ceiling element missing, skipping.", gameObject);
+            return;
+        }
+        float dist = 0;
+        GetTunnelPositionAndDirection(dist, out Vector3 lastPosition, 
+            out Vector3 forwardDir, out Quaternion rot, out Vector3 upDir, out perpendicular);
+        lastPosition += upDir * flatCeilingOffset;
+        while(dist < 1)
+        {
+            _tunnelSpline.Spline.GetPointAtLinearDistance(dist, flatCeilingSpacing, out dist);
+
+            //
+            GetTunnelPositionAndDirection(dist, out Vector3 currentPosition, out Vector3 currentDirection, out Quaternion currentRotation, out Vector3 up, out perpendicular);
+
+            // 
+            Vector3 spawnPos = (currentPosition) + up * flatCeilingOffset;
+            Vector3 forward = (lastPosition - spawnPos).normalized;
+            SpriteRenderer flatCeiling = SpawnTunnelElement(flatCeilingPrefab, spawnPos, currentRotation, forward);
+                
+            flatCeiling.transform.localRotation *= Quaternion.Euler(90, 0,0);
+                
+            flatCeiling.color = _colorGradient.Evaluate(dist);
+                
+            // Floor flat planes need to be aligned exactly to avoid clipping with large tunnel height change 
+            // So we need to rotate them towards the last plane, rather than just sample the current curve.
+            lastPosition = spawnPos;
+        }
     }
     
     

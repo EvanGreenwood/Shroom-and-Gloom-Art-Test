@@ -8,16 +8,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Shroom-and-Gloom-Art-Test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Shroom-and-Gloom-Art-Test/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Floors/Flats/FlatFloor.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Environment/Floors/Flats/FlatFloor.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Art/particles/Dust/DustParticles.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/particles/Dust/DustParticles.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SystemsAndServices/MainGameServiceStack.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/SystemsAndServices/MainGameServiceStack.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/World/Ceiling Test.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/World/Ceiling Test.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SpookyCavern.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SpookyCavern.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SplineTunnelTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SplineTunnelTest.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level Generation/TunnelGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Level Generation/TunnelGenerator.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/FPSMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/FPSMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Environment/Environment.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/Environment/Environment.shader" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Environment/EnvironmentDefault.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/Environment/EnvironmentDefault.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,26 +37,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Attach to Unity Editor.Attach to Unity Editor.executor&quot;: &quot;Debug&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Attach to Unity Editor.Attach to Unity Editor.executor": "Debug",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "spline-tunnels",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;/Users/RH-Ross-MBP/Library/Application Support/JetBrains/Rider2023.3/resharper-host/DecompilerCache&quot;,
-      &quot;/Users/RH-Ross-MBP/Library/Application Support/JetBrains/Rider2023.3/resharper-host/SourcesCache&quot;,
-      &quot;/Users/RH-Ross-MBP/.local/share/Symbols/src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "/Users/RH-Ross-MBP/Library/Application Support/JetBrains/Rider2023.3/resharper-host/DecompilerCache",
+      "/Users/RH-Ross-MBP/Library/Application Support/JetBrains/Rider2023.3/resharper-host/SourcesCache",
+      "/Users/RH-Ross-MBP/.local/share/Symbols/src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/2022.3.25f1/Unity.app/Contents/MacOS/Unity" />
@@ -114,7 +107,7 @@
       <workItem from="1714567642273" duration="600000" />
       <workItem from="1714571417574" duration="1000" />
       <workItem from="1714584562762" duration="14530000" />
-      <workItem from="1714844653202" duration="34252000" />
+      <workItem from="1714844653202" duration="37536000" />
     </task>
     <servers />
   </component>
@@ -131,78 +124,78 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/Movement/FPSMovement.cs</url>
-          <line>32</line>
+          <line>31</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Movement/FPSMovement.cs" initialLine="32" containingFunctionPresentation="Method 'Start'">
             <startOffsets>
-              <option value="955" />
+              <option value="903" />
             </startOffsets>
             <endOffsets>
-              <option value="1076" />
+              <option value="1024" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/Movement/FPSMovement.cs</url>
-          <line>37</line>
+          <line>36</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Movement/FPSMovement.cs" initialLine="37" containingFunctionPresentation="Method 'Start'">
             <startOffsets>
-              <option value="1229" />
+              <option value="1177" />
             </startOffsets>
             <endOffsets>
-              <option value="1278" />
+              <option value="1226" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/Movement/FPSMovement.cs</url>
-          <line>44</line>
+          <line>43</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Movement/FPSMovement.cs" initialLine="44" containingFunctionPresentation="Method 'Start'">
             <startOffsets>
-              <option value="1529" />
+              <option value="1477" />
             </startOffsets>
             <endOffsets>
-              <option value="1558" />
+              <option value="1506" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/Movement/FPSMovement.cs</url>
-          <line>48</line>
+          <line>47</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Movement/FPSMovement.cs" initialLine="48" containingFunctionPresentation="Method 'Start'">
             <startOffsets>
-              <option value="1617" />
+              <option value="1565" />
             </startOffsets>
             <endOffsets>
-              <option value="1644" />
+              <option value="1592" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/Movement/FPSMovement.cs</url>
-          <line>41</line>
+          <line>40</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Movement/FPSMovement.cs" initialLine="41" containingFunctionPresentation="Method 'Start'">
             <startOffsets>
-              <option value="1411" />
+              <option value="1359" />
             </startOffsets>
             <endOffsets>
-              <option value="1442" />
+              <option value="1390" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/Movement/FPSMovement.cs</url>
-          <line>55</line>
+          <line>54</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Movement/FPSMovement.cs" initialLine="55" containingFunctionPresentation="Method 'SwitchTunnel'">
             <startOffsets>
-              <option value="1774" />
+              <option value="1722" />
             </startOffsets>
             <endOffsets>
-              <option value="1794" />
+              <option value="1742" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="8" />

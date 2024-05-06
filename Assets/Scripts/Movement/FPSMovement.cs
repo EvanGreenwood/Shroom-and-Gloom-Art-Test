@@ -13,7 +13,6 @@ public class FPSMovement : MonoBehaviour
     [SerializeField] private float _headHeight = 1.6f;
     //
     [SerializeField] private float maxXAngle = 35;
-    [SerializeField] private float baseXAngle = -5;
     //
     [SerializeField] private float maxYAngle = 35;
     //
@@ -97,15 +96,14 @@ public class FPSMovement : MonoBehaviour
         if (_tunnel != null)
         {
             _tunnel.GetClosestPositionAndDirection(transform.position, out Vector3 currentPosition, out Vector3 currentDirection, out Vector3 currentUp);
-            Vector3 forwardEulers =  Quaternion.LookRotation(currentDirection, Vector3.up) .eulerAngles; 
+            Vector3 forwardEulers =  Quaternion.LookRotation(transform.forward, currentUp).eulerAngles; 
             _tunnelFacingEulers = new Vector3(Mathf.LerpAngle(_tunnelFacingEulers.x, forwardEulers.x, Time.deltaTime * 5), Mathf.LerpAngle(_tunnelFacingEulers.y, forwardEulers.y, Time.deltaTime * 4), Mathf.LerpAngle(_tunnelFacingEulers.z, forwardEulers.z, Time.deltaTime * 5));
         }
         else
         {
-            Vector3 forwardEulers =  Quaternion.LookRotation(Vector3.forward).eulerAngles;
+            Vector3 forwardEulers =  Quaternion.LookRotation(transform.forward).eulerAngles;
             _tunnelFacingEulers = new Vector3(Mathf.LerpAngle(_tunnelFacingEulers.x, forwardEulers.x, Time.deltaTime * 5), Mathf.LerpAngle(_tunnelFacingEulers.y, forwardEulers.y, Time.deltaTime * 4), Mathf.LerpAngle(_tunnelFacingEulers.z, forwardEulers.z, Time.deltaTime * 5));
         }
-        //_headCamera.transform.localEulerAngles = new Vector3(_tunnelFacingEulers.x + ((Input.mousePosition.y - Screen.height / 2f) / Screen.height / -2f) * maxXAngle + baseXAngle, ((Input.mousePosition.x - Screen.width / 2f) / Screen.width / 2f) * maxYAngle + _tunnelFacingEulers.y, 0);
-
+        _headCamera.transform.localEulerAngles = new Vector3(_tunnelFacingEulers.x + ((Input.mousePosition.y - Screen.height / 2f) / Screen.height / -2f) * maxXAngle, ((Input.mousePosition.x - Screen.width / 2f) / Screen.width / 2f) * maxYAngle, 0);
     }
 }

@@ -179,6 +179,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1053576327981276249, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
+      propertyPath: baseXAngle
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1788053498998766857, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
       propertyPath: m_LocalPosition.y
       value: -1.64
@@ -189,15 +193,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2336201325850330426, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
       propertyPath: Color.b
-      value: 0
+      value: 0.10323961
       objectReference: {fileID: 0}
     - target: {fileID: 2336201325850330426, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
       propertyPath: Color.g
-      value: 0.505315
+      value: 0.43281054
       objectReference: {fileID: 0}
     - target: {fileID: 2336201325850330426, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
       propertyPath: Color.r
-      value: 1
+      value: 0.754717
       objectReference: {fileID: 0}
     - target: {fileID: 2336201325850330426, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
       propertyPath: m_Enabled
@@ -411,9 +415,6 @@ MonoBehaviour:
       _max: 1
     randomRotation: 0
     randomFlipY: 0
-    flatWallPrefab: {fileID: 0}
-    flatSpacing: 1
-    flatOffset: 1
   - name: Rocks
     wallPrefabs:
     - {fileID: 717079983591251126, guid: 239ca69b503789f4097c61f9e63c3318, type: 3}
@@ -433,9 +434,9 @@ MonoBehaviour:
       _max: -1
     randomRotation: 90
     randomFlipY: 0
-    flatWallPrefab: {fileID: 0}
-    flatSpacing: 1
-    flatOffset: 1
+  flatWallPrefab: {fileID: 6315135170778095943, guid: 3422533d8785543c0bc4c752557808e0, type: 3}
+  flatWallSpacing: 4
+  flatWallOffset: 8
   surroundElements: []
   floorElements:
   - name: Floor
@@ -453,9 +454,9 @@ MonoBehaviour:
       _min: -0.05
       _max: 0.05
     randomFlipX: 1
-    flatFloorPrefab: {fileID: 6315135170778095943, guid: 1b84736bfc8e3498bb0f56612263e106, type: 3}
-    flatOffset: -10
-    flatSpacing: 3.5
+  flatFloorPrefab: {fileID: 6315135170778095943, guid: 1b84736bfc8e3498bb0f56612263e106, type: 3}
+  flatFloorOffset: -3
+  flatFloorSpacing: 5
   ceilingElements:
   - name: Ceiling
     ceilingPrefabs:
@@ -467,14 +468,14 @@ MonoBehaviour:
     minMaxAngle:
       _min: -0.5
       _max: 0.5
-    xRotation: 0
+    xRotation: -20
     minMaxPosition:
       _min: -0.03
       _max: 0.03
     randomFlipX: 1
-    flatCeilingPrefab: {fileID: 0}
-    flatSpacing: 1
-    flatOffset: 1
+  flatCeilingPrefab: {fileID: 6315135170778095943, guid: c5d39d8515fd7483685405c5e8044cc6, type: 3}
+  flatCeilingSpacing: 3
+  flatCeilingOffset: 6
   _drawGizmos: 1
   _generatedIsSelectable: 1
 --- !u!114 &1201610206
@@ -678,9 +679,6 @@ MonoBehaviour:
       _max: 3
     randomRotation: 0
     randomFlipY: 0
-    flatWallPrefab: {fileID: 0}
-    flatSpacing: 1
-    flatOffset: 1
   - name: Thorns Base
     wallPrefabs:
     - {fileID: 717079983591251126, guid: 239ca69b503789f4097c61f9e63c3318, type: 3}
@@ -700,9 +698,9 @@ MonoBehaviour:
       _max: -1
     randomRotation: 90
     randomFlipY: 0
-    flatWallPrefab: {fileID: 0}
-    flatSpacing: 1
-    flatOffset: 1
+  flatWallPrefab: {fileID: 0}
+  flatWallSpacing: 1
+  flatWallOffset: 1
   surroundElements: []
   floorElements:
   - name: Floor
@@ -720,9 +718,9 @@ MonoBehaviour:
       _min: -0.05
       _max: 0.05
     randomFlipX: 1
-    flatFloorPrefab: {fileID: 6315135170778095943, guid: 1b84736bfc8e3498bb0f56612263e106, type: 3}
-    flatOffset: -10
-    flatSpacing: 4.2
+  flatFloorPrefab: {fileID: 0}
+  flatFloorOffset: -1
+  flatFloorSpacing: 1
   ceilingElements:
   - name: Ceiling
     ceilingPrefabs:
@@ -739,9 +737,9 @@ MonoBehaviour:
       _min: -0.03
       _max: 0.03
     randomFlipX: 1
-    flatCeilingPrefab: {fileID: 0}
-    flatSpacing: 1
-    flatOffset: 1
+  flatCeilingPrefab: {fileID: 0}
+  flatCeilingSpacing: 1
+  flatCeilingOffset: 1
   _drawGizmos: 1
   _generatedIsSelectable: 1
 --- !u!4 &1551529200
