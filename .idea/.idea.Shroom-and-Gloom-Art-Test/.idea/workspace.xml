@@ -6,55 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="825655da-4771-4664-b01a-9bffcaa881d5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Shroom-and-Gloom-Art-Test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Shroom-and-Gloom-Art-Test/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Floors/Dungeon_Ceiling.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Floors/Dungeon_Ceiling.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Floors/Dungeon_Floor_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Floors/Dungeon_Floor_1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Floors/Dungeon_Floor_1.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Floors/Dungeon_Floor_1.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Floors/Dungeon_Floor_1_Heightmap.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Floors/Dungeon_Floor_1_Heightmap.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Floors/Dungeon_Floor_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Floors/Dungeon_Floor_2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Floors/Dungeon_Floor_2.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Floors/Dungeon_Floor_2.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Floors/Dungeon_Floor_Open.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Floors/Dungeon_Floor_Open.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Floors/Dungeon_Floor_Open.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Floors/Dungeon_Floor_Open.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Mines.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Mines/BlackGradient.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Mines/BlackGradient.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Mines/Ground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Mines/Ground.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Mines/Lumpy.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Mines/Lumpy.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Mines/MineCeiling.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Mines/MineCeiling.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Mines/MineWall.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Mines/MineWall.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Mines/TestProp 1.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Mines/TestProp 1.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Mines/TestProp.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Mines/TestProp.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Mines/TestProp.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Mines/TestProp.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Mines/VerticalHatching.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Mines/VerticalHatching.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Mines/ceiling_rocks_angry.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Mines/ceiling_rocks_angry.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Mines/ground_heightmap.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Mines/ground_heightmap.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Mines/mine_wall.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Mines/mine_wall.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Mines/mine_wall_heightmap.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Mines/mine_wall_heightmap.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/lumps/Ground_LumpRocks_4 Ben.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Environment/lumps/Ground_LumpRocks_4 Ben.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Bad Mines 1.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Bad Mines 1.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level Generation/TunnelElement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Level Generation/TunnelElement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/RandomSprite.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/RandomSprite.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Environment/EnvironmentDefault.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/Environment/EnvironmentDefault.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Floors/Flats/FlatFloor.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Environment/Floors/Flats/FlatFloor.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/particles/Dust/DustParticles.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/particles/Dust/DustParticles.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SplineTunnelTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SplineTunnelTest.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level Generation/TunnelGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Level Generation/TunnelGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/FPSMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/FPSMovement.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,9 +24,10 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Lighting/ShroomLightingService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/ServiceLocator/MonoService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/ServiceLocator/Service.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/RandomRotation.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/SpriteBank.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/VisibilityProbability.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/SceneViewShaderHelper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.splines@2.5.2/Runtime/SplineUtility.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5a41d6b7189842eca409fd0b1c3e3dcf17bf78/b1/7ffb7a67/Single.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e307bbb467104258887a104f6151f183469200/4c/d6c4c89c/CancellationTokenSource.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
@@ -85,7 +42,7 @@
     "Attach to Unity Editor.Attach to Unity Editor.executor": "Debug",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "spline-tunnels",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
@@ -94,9 +51,9 @@
   },
   "keyToStringList": {
     "rider.external.source.directories": [
-      "C:\\Users\\Junt\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
-      "C:\\Users\\Junt\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
-      "C:\\Users\\Junt\\AppData\\Local\\Symbols\\src"
+      "/Users/RH-Ross-MBP/Library/Application Support/JetBrains/Rider2023.3/resharper-host/DecompilerCache",
+      "/Users/RH-Ross-MBP/Library/Application Support/JetBrains/Rider2023.3/resharper-host/SourcesCache",
+      "/Users/RH-Ross-MBP/.local/share/Symbols/src"
     ]
   }
 }]]></component>
@@ -127,10 +84,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="47791">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="47791" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -150,7 +107,7 @@
       <workItem from="1714567642273" duration="600000" />
       <workItem from="1714571417574" duration="1000" />
       <workItem from="1714584562762" duration="14530000" />
-      <workItem from="1714844653202" duration="11504000" />
+      <workItem from="1714844653202" duration="37536000" />
     </task>
     <servers />
   </component>
@@ -158,13 +115,92 @@
     <option name="version" value="3" />
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
-  <component name="UnityProjectDiscoverer">
-    <option name="hasUnityReference" value="true" />
-    <option name="unityProject" value="true" />
-    <option name="unityProjectFolder" value="true" />
-  </component>
   <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Movement/FPSMovement.cs</url>
+          <line>31</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Movement/FPSMovement.cs" initialLine="32" containingFunctionPresentation="Method 'Start'">
+            <startOffsets>
+              <option value="903" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1024" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Movement/FPSMovement.cs</url>
+          <line>36</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Movement/FPSMovement.cs" initialLine="37" containingFunctionPresentation="Method 'Start'">
+            <startOffsets>
+              <option value="1177" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1226" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Movement/FPSMovement.cs</url>
+          <line>43</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Movement/FPSMovement.cs" initialLine="44" containingFunctionPresentation="Method 'Start'">
+            <startOffsets>
+              <option value="1477" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1506" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Movement/FPSMovement.cs</url>
+          <line>47</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Movement/FPSMovement.cs" initialLine="48" containingFunctionPresentation="Method 'Start'">
+            <startOffsets>
+              <option value="1565" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1592" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Movement/FPSMovement.cs</url>
+          <line>40</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Movement/FPSMovement.cs" initialLine="41" containingFunctionPresentation="Method 'Start'">
+            <startOffsets>
+              <option value="1359" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1390" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Movement/FPSMovement.cs</url>
+          <line>54</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Movement/FPSMovement.cs" initialLine="55" containingFunctionPresentation="Method 'SwitchTunnel'">
+            <startOffsets>
+              <option value="1722" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1742" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

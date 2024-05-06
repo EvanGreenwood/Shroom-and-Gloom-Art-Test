@@ -13,7 +13,6 @@ public class FPSMovement : MonoBehaviour
     [SerializeField] private float _headHeight = 1.6f;
     //
     [SerializeField] private float maxXAngle = 35;
-    [SerializeField] private float baseXAngle = -5;
     //
     [SerializeField] private float maxYAngle = 35;
     //
@@ -28,7 +27,26 @@ public class FPSMovement : MonoBehaviour
     {
         transform.position = transform.position.WithY(_headHeight);
         //
-        if (_tunnel == null) _tunnel = FindAnyObjectByType<TunnelGenerator>();
+        if (_tunnel == null)
+        {
+            TunnelGenerator[] generators = FindObjectsByType<TunnelGenerator>(FindObjectsInactive.Exclude, FindObjectsSortMode.None);
+
+            //find closest tunnel
+            float closestDistance = float.MaxValue;
+            TunnelGenerator closestGenerator = null;
+            foreach (TunnelGenerator generator in generators)
+            {
+                float distance = Vector3.Distance(generator.transform.position, transform.position);
+
+                if (distance < closestDistance)
+                {
+                    closestDistance = distance;
+                    closestGenerator = generator;
+                }
+             
+            }
+            _tunnel = closestGenerator;
+        }
         //
         _currentSpeed = _speed;
     }
@@ -47,66 +65,45 @@ public class FPSMovement : MonoBehaviour
         {
             _currentSpeed = Mathf.MoveTowards(_currentSpeed, _speed  , Time.deltaTime * _speed);
         }
-        if (Input.GetKey(KeyCode.W))
+
+        float moveDir = Input.GetKey(KeyCode.W) ? 1f : Input.GetKey(KeyCode.S) ? -1f: 0;
+        if (Mathf.Abs(moveDir) > 0)
         {
             if (_tunnel == null)
             {
-                transform.Translate(transform.forward * Time.deltaTime * _currentSpeed);
+                transform.Translate(transform.forward * Time.deltaTime * _currentSpeed * moveDir);
             }
             else
             {
-                _tunnel.GetTunnelPositionAndDirection(_tunnel.GetTunnelProportion(transform.position), out Vector3 currentPosition, out Vector3 currentDirection);
-                //
-                transform.Translate(currentDirection * Time.deltaTime * _currentSpeed, Space.World);
-                // 
-                //
-                transform.position = Vector3.Lerp(transform.position, currentPosition + currentDirection * Time.deltaTime * _speed, Time.deltaTime * 3) ;
+                _tunnel.GetClosestPositionAndDirection(transform.position, out Vector3 currentPosition, out Vector3 currentDirection, out Vector3 currentUp);
+                transform.forward = Vector3.RotateTowards(transform.forward, currentDirection, Time.deltaTime, 0);
+                currentDirection = moveDir * currentDirection;
+                Debug.DrawLine(currentPosition, currentPosition + currentDirection);
+                transform.position = Vector3.MoveTowards(transform.position, currentPosition + currentDirection, Time.deltaTime * _currentSpeed);
             }
-            _bobCounter += Time.deltaTime * _speed;
-            // 
-            _headCamera.transform.localPosition = _headCamera.transform.localPosition.WithY(Mathf.Lerp(_headCamera.transform.localPosition.y, _headHeight + Mathf.Sin(_bobCounter / _bobRate * Mathf.PI  ) * _bobHeight, Time.deltaTime * 12));
-        }
-        else if (Input.GetKey(KeyCode.S))
-        {
-            if (_tunnel == null)
-            {
-                transform.Translate(transform.forward * Time.deltaTime * -_currentSpeed);
-            }
-            else
-            {
-                //
-                _tunnel.GetTunnelPositionAndDirection(_tunnel.GetTunnelProportion(transform.position), out Vector3 currentPosition, out Vector3 currentDirection);
-                //
-                transform.Translate(currentDirection * Time.deltaTime * -_currentSpeed, Space.World); 
-                //
-                transform.position = Vector3.Lerp(transform.position, currentPosition - currentDirection * Time.deltaTime * _speed, Time.deltaTime * 3) ;
-            }
-            _bobCounter -= Time.deltaTime * _speed;
+            
+            //Moving bob
+            _bobCounter += Time.deltaTime * _speed * moveDir;
             _headCamera.transform.localPosition = _headCamera.transform.localPosition.WithY(Mathf.Lerp(_headCamera.transform.localPosition.y, _headHeight + Mathf.Sin(_bobCounter / _bobRate * Mathf.PI  ) * _bobHeight, Time.deltaTime * 12));
         }
         else
         {
+            //Reduce bob
             _bobCounter = Mathf.Lerp(_bobCounter, Mathf.Round(_bobCounter * _bobRate) / _bobRate, Time.deltaTime * 7);
-            //
-            if (_tunnel != null)
-            {
-              //  transform.position = Vector3.Lerp(transform.position, _tunnel.GetClosestPoint(transform.position), Time.deltaTime * 3).WithY(_tunnel.GetTunnelYHeight(transform.position)) ;
-            }
             _headCamera.transform.localPosition = _headCamera.transform.localPosition.WithY(Mathf.Lerp(_headCamera.transform.localPosition.y, _headHeight + Mathf.Sin(_bobCounter / _bobRate * Mathf.PI  ) * _bobHeight, Time.deltaTime * 8)) ;
         }
         //
         if (_tunnel != null)
         {
-            _tunnel.GetTunnelPositionAndDirection(_tunnel.GetTunnelProportion(transform.position), out Vector3 currentPosition, out Vector3 currentDirection);
-            Vector3 forwardEulers =  Quaternion.LookRotation(currentDirection, Vector3.up) .eulerAngles; 
+            _tunnel.GetClosestPositionAndDirection(transform.position, out Vector3 currentPosition, out Vector3 currentDirection, out Vector3 currentUp);
+            Vector3 forwardEulers =  Quaternion.LookRotation(transform.forward, currentUp).eulerAngles; 
             _tunnelFacingEulers = new Vector3(Mathf.LerpAngle(_tunnelFacingEulers.x, forwardEulers.x, Time.deltaTime * 5), Mathf.LerpAngle(_tunnelFacingEulers.y, forwardEulers.y, Time.deltaTime * 4), Mathf.LerpAngle(_tunnelFacingEulers.z, forwardEulers.z, Time.deltaTime * 5));
         }
         else
         {
-            Vector3 forwardEulers =  Quaternion.LookRotation(Vector3.forward).eulerAngles;
+            Vector3 forwardEulers =  Quaternion.LookRotation(transform.forward).eulerAngles;
             _tunnelFacingEulers = new Vector3(Mathf.LerpAngle(_tunnelFacingEulers.x, forwardEulers.x, Time.deltaTime * 5), Mathf.LerpAngle(_tunnelFacingEulers.y, forwardEulers.y, Time.deltaTime * 4), Mathf.LerpAngle(_tunnelFacingEulers.z, forwardEulers.z, Time.deltaTime * 5));
         }
-        _headCamera.transform.localEulerAngles = new Vector3(_tunnelFacingEulers.x + ((Input.mousePosition.y - Screen.height / 2f) / Screen.height / -2f) * maxXAngle + baseXAngle, ((Input.mousePosition.x - Screen.width / 2f) / Screen.width / 2f) * maxYAngle + _tunnelFacingEulers.y, 0);
-
+        _headCamera.transform.localEulerAngles = new Vector3(_tunnelFacingEulers.x + ((Input.mousePosition.y - Screen.height / 2f) / Screen.height / -2f) * maxXAngle, ((Input.mousePosition.x - Screen.width / 2f) / Screen.width / 2f) * maxYAngle, 0);
     }
 }
