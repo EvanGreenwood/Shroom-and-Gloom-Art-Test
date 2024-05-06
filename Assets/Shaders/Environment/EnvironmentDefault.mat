@@ -72,7 +72,7 @@ Material:
     - _UseMatcap: 1
     - _XScaleScreenSpace: 2
     - _YScaleScreenSpace: 90
-    - __dirty: 1
+    - __dirty: 0
     m_Colors:
     - _SpecularColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 1}
     - _TerminatorLineColor: {r: 0, g: 0, b: 0, a: 1}

@@ -1,27 +1,43 @@
 #region Usings
 using UnityEngine;
 using Framework;
+using Mainframe;
 #endregion
 
 public class TunnelElement : MonoBehaviour
 {
-    SpriteRenderer _sr;
-    bool _hasInit;
-    // Init
-    //----------------------------------------------------------------------------------------------------
-    public void Init()
-    {
-        _sr = GetComponent<SpriteRenderer>();
-        _hasInit = true;
-    }
+  SpriteRenderer _spriteRenderer;
+  SpriteRenderer[] _childRenderers;
+  bool _hasInit;
 
-    // MonoBehaviour
-    //----------------------------------------------------------------------------------------------------
-    void Awake()
+  public SpriteRenderer spriteRenderer => _spriteRenderer;
+
+  // Init
+  //----------------------------------------------------------------------------------------------------
+  public void Init()
+  {
+    _spriteRenderer = GetComponent<SpriteRenderer>();
+    _childRenderers = GetComponentsInChildren<SpriteRenderer>();
+    _hasInit = true;
+  }
+
+  // MonoBehaviour
+  //----------------------------------------------------------------------------------------------------
+  void Awake()
+  {
+    if(!_hasInit)
+      Init();
+  }
+
+  public void SetColor(Color color)
+  {
+    _spriteRenderer.color = color;
+    _childRenderers.Foreach(sr =>
     {
-        if(!_hasInit) 
-            Init();
-    }
-    
-    void Update() { }
+      if(sr.gameObject.activeInHierarchy)
+      {
+        sr.color = color;
+      }
+    });
+  }
 }
