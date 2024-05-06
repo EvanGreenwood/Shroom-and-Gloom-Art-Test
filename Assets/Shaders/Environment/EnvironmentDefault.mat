@@ -58,6 +58,7 @@ Material:
     m_Floats:
     - _Cutoff: 0.6
     - _DisplayNormals: 0
+    - _FogIntensityCoefficient: 0.227
     - _Lit: 1
     - _NoiseDist: 0.4
     - _NoiseFrequency: 0.5
@@ -71,7 +72,7 @@ Material:
     - _UseMatcap: 1
     - _XScaleScreenSpace: 2
     - _YScaleScreenSpace: 90
-    - __dirty: 0
+    - __dirty: 1
     m_Colors:
     - _SpecularColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 1}
     - _TerminatorLineColor: {r: 0, g: 0, b: 0, a: 1}
