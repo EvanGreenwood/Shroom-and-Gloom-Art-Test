@@ -768,6 +768,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &434009612
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1419105471367206200, guid: e5e792970a1a340ae925d0e4ff099437, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1419105471367206200, guid: e5e792970a1a340ae925d0e4ff099437, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1419105471367206200, guid: e5e792970a1a340ae925d0e4ff099437, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1419105471367206200, guid: e5e792970a1a340ae925d0e4ff099437, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1419105471367206200, guid: e5e792970a1a340ae925d0e4ff099437, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1419105471367206200, guid: e5e792970a1a340ae925d0e4ff099437, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1419105471367206200, guid: e5e792970a1a340ae925d0e4ff099437, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1419105471367206200, guid: e5e792970a1a340ae925d0e4ff099437, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1419105471367206200, guid: e5e792970a1a340ae925d0e4ff099437, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1419105471367206200, guid: e5e792970a1a340ae925d0e4ff099437, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6857227377587969113, guid: e5e792970a1a340ae925d0e4ff099437, type: 3}
+      propertyPath: m_Name
+      value: MainGameServiceStack
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e5e792970a1a340ae925d0e4ff099437, type: 3}
 --- !u!1 &486473228
 GameObject:
   m_ObjectHideFlags: 0
@@ -890,6 +947,8 @@ MonoBehaviour:
     m_ColorSpace: -1
     m_NumColorKeys: 8
     m_NumAlphaKeys: 2
+  _particles: {fileID: 0}
+  _particleSpawnDistance: 1
   _ySlopeCurve:
     serializedVersion: 2
     m_Curve:
@@ -1130,6 +1189,8 @@ MonoBehaviour:
     m_ColorSpace: -1
     m_NumColorKeys: 5
     m_NumAlphaKeys: 2
+  _particles: {fileID: 0}
+  _particleSpawnDistance: 1
   _ySlopeCurve:
     serializedVersion: 2
     m_Curve: []
@@ -1287,6 +1348,8 @@ MonoBehaviour:
     m_ColorSpace: -1
     m_NumColorKeys: 8
     m_NumAlphaKeys: 2
+  _particles: {fileID: 0}
+  _particleSpawnDistance: 1
   _ySlopeCurve:
     serializedVersion: 2
     m_Curve:
@@ -1567,6 +1630,8 @@ MonoBehaviour:
     m_ColorSpace: -1
     m_NumColorKeys: 8
     m_NumAlphaKeys: 2
+  _particles: {fileID: 0}
+  _particleSpawnDistance: 1
   _ySlopeCurve:
     serializedVersion: 2
     m_Curve:
@@ -1988,6 +2053,8 @@ MonoBehaviour:
     m_ColorSpace: -1
     m_NumColorKeys: 8
     m_NumAlphaKeys: 2
+  _particles: {fileID: 0}
+  _particleSpawnDistance: 1
   _ySlopeCurve:
     serializedVersion: 2
     m_Curve:
@@ -2106,9 +2173,9 @@ MonoBehaviour:
   surroundElements:
   - name: Lumps
     surroundPrefabs:
-    - {fileID: 717079983591251126, guid: 5733ac82e1b479f4d8b85f35ef1eb7f4, type: 3}
-    - {fileID: 717079983591251126, guid: 223c8e3df2bfbbb4a89d265c8dfe632e, type: 3}
-    - {fileID: 717079983591251126, guid: c1a4913026c72a944b75b6b42b0b709c, type: 3}
+    - {fileID: 717079983591251126, guid: dde57e21e6c354eec8aacabab5da9407, type: 3}
+    - {fileID: 717079983591251126, guid: 8bf6d4da7dbaf468fa9ccdb283aa9e40, type: 3}
+    - {fileID: 717079983591251126, guid: ae6fca2e20524476e8af244b76c1e882, type: 3}
     zOffset: 0
     spacing: 0.5
     radiusOffset: 2
@@ -2143,7 +2210,7 @@ MonoBehaviour:
   floorElements:
   - name: Floor
     floorPrefabs:
-    - {fileID: 717079983591251126, guid: a1e8ce5975fcce44d977754df999f3f9, type: 3}
+    - {fileID: 717079983591251126, guid: d30a5199178c74edea9e16ed711674da, type: 3}
     zOffset: 0.08
     spacing: 0.5
     randomXPosition: 0.5
@@ -2233,6 +2300,8 @@ MonoBehaviour:
     m_ColorSpace: -1
     m_NumColorKeys: 8
     m_NumAlphaKeys: 2
+  _particles: {fileID: 0}
+  _particleSpawnDistance: 1
   _ySlopeCurve:
     serializedVersion: 2
     m_Curve: []
@@ -2673,6 +2742,8 @@ MonoBehaviour:
     m_ColorSpace: -1
     m_NumColorKeys: 8
     m_NumAlphaKeys: 2
+  _particles: {fileID: 0}
+  _particleSpawnDistance: 1
   _ySlopeCurve:
     serializedVersion: 2
     m_Curve: []
@@ -3058,3 +3129,4 @@ SceneRoots:
   - {fileID: 1273125780}
   - {fileID: 1791465375}
   - {fileID: 1433974892}
+  - {fileID: 434009612}

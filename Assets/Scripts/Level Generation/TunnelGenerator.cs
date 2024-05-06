@@ -13,6 +13,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.EditorCoroutines.Editor;
 using UnityEngine;
+using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
 #endregion
 
@@ -65,8 +66,11 @@ public class TunnelGenerator : MonoBehaviour
     {
         public string name;
         public SpriteRenderer[] floorPrefabs;
+        public SpriteRenderer flatFloorPrefab;
+        public float flatYOffset = -1;
         public float zOffset = 0;
         public float spacing = 0.5f;
+        [FormerlySerializedAs("floatSpacing")] public float flatSpacing = 1f;
         public float randomXPosition = 1.5f;
         public FloatRange minMaxAngle = new FloatRange(-1, 1);
         public float xRotation = 0;
@@ -202,10 +206,42 @@ public class TunnelGenerator : MonoBehaviour
         return element;
     }
 
+    /// <summary>
+    /// Zero spacing values will cause an infinite loop and crash the project, so we need to ensure they are not zero.
+    /// </summary>
+    private void EnsureValidParameters()
+    {
+        _particleSpawnDistance = Mathf.Max(0.1f, _particleSpawnDistance);
+        _baseTunnelWidth = Mathf.Max(0.1f, _baseTunnelWidth);
+        _lumpyWidth = Mathf.Max(0.1f, _lumpyWidth);
+        _clearingWidth = Mathf.Max(0.1f, _clearingWidth);
+
+        foreach (var wallData in wallElements)
+        {
+            wallData.spacing = Mathf.Max(0.1f,  wallData.spacing);
+        }
+        
+        foreach (var surroundData in surroundElements)
+        {
+            surroundData.spacing = Mathf.Max(0.1f,  surroundData.spacing);
+        }
+        
+        foreach (var floorData in floorElements)
+        {
+            floorData.spacing = Mathf.Max(0.1f,  floorData.spacing);
+        }
+        
+        foreach (var ceilingData in ceilingElements)
+        {
+            ceilingData.spacing = Mathf.Max(0.1f,  ceilingData.spacing);
+        }
+    }
+
     // Generate
     //----------------------------------------------------------------------------------------------------
     public void Generate()
     {
+        EnsureValidParameters();
         if (_generatedElements == null)
         {
             _generatedElements = new List<Transform>();
@@ -229,7 +265,12 @@ public class TunnelGenerator : MonoBehaviour
                     IEnumerator DestroyNextFrameBecauseUnity()
                     {
                         yield return null;
-                        DestroyImmediate(element.gameObject);
+                        
+                        //May happen on play. Ok.
+                        if (element != null)
+                        {
+                            DestroyImmediate(element.gameObject);
+                        }
                     }
                 }
             }
@@ -246,8 +287,7 @@ public class TunnelGenerator : MonoBehaviour
 
         // Vector3 perpendicular = new Vector3(-direction.z, 0, direction.x);
         // Quaternion rotation = Quaternion.LookRotation(direction, Vector3.up);
-
-        //
+        
         SpawnWalls();
         SpawnSurrounds();
         SpawnFloors();
@@ -454,6 +494,51 @@ public class TunnelGenerator : MonoBehaviour
                 floor.flipX = true;
                 if(floorData.randomFlipX) floor.flipX = Random.value > 0.5f;
             }
+            
+            // Spawn flats
+            distanceGenerated = floorData.zOffset;
+
+            if (floorData.flatFloorPrefab == null)
+            {
+                Debug.LogWarning("[TunnelGenerator] Flat floor element missing, skipping.", gameObject);
+                continue;
+            }
+
+            float lastDistance = 0;
+            Vector3 lastPosition;
+            GetTunnelPositionAndDirection(lastDistance, out lastPosition, 
+                out Vector3 _, out Quaternion __, out Vector3 ___);
+            
+            while(distanceGenerated < _tunnelLength)
+            {
+                distanceGenerated += floorData.flatSpacing;
+                float distanceM = distanceGenerated / _tunnelLength;
+                //
+                GetTunnelPositionAndDirection(distanceM, out Vector3 currentPosition, out Vector3 currentDirection, out Quaternion currentRotation, out perpendicular);
+
+                // 
+                Vector3 spawnPos = (currentPosition) + Vector3.up * floorData.flatYOffset;
+                SpriteRenderer flatFloor = SpawnTunnelElement(floorData.flatFloorPrefab, spawnPos, currentRotation);
+                
+                if (lastDistance == 0)
+                {
+                    //First flat in tunnel
+                    flatFloor.transform.transform.Rotate(90, 0, 0);
+                }
+                else
+                {
+                    flatFloor.transform.forward = lastPosition - spawnPos;
+                    flatFloor.transform.localRotation *= Quaternion.Euler(90, 0,0);
+                }
+                
+                flatFloor.color = _colorGradient.Evaluate(distanceM);
+
+
+                // Floor flat planes need to be aligned exactly to avoid clipping with large tunnel height change 
+                // So we need to rotate them towards the last plane, rather than just sample the current curve.
+                lastDistance = distanceM;
+                lastPosition = spawnPos;
+            }
         }
     }
     
@@ -463,7 +548,7 @@ public class TunnelGenerator : MonoBehaviour
     {
         if (_particles == null)
         {
-            Debug.LogError("[TunnelGenerator] Missing particles prefab!");
+            Debug.LogWarning("[TunnelGenerator] Missing particles prefab!");
             return;
         }
         Vector3 perpendicular;

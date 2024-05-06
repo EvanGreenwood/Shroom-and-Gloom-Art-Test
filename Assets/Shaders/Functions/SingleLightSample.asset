@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b2425a2284af743826c689403a4924, type: 3}
+  m_Name: SingleLightSample
+  m_EditorClassIdentifier: 
+  m_functionInfo: "// Made with Amplify Shader Editor v1.9.3.3\n// Available at the
+    Unity Asset Store - http://u3d.as/y3X \n/*ASEBEGIN\nVersion=19303\nNode;AmplifyShaderEditor.GlobalArrayNode;3;-115.286,-177.571;Inherit;False;ShroomLightPositions;0;10;2;False;False;0;1;True;Object;-1;4;0;INT;0;False;2;INT;0;False;1;INT;0;False;3;INT;0;False;1;FLOAT4;0\nNode;AmplifyShaderEditor.ComponentMaskNode;4;108.714,-129.571;Inherit;False;True;True;True;False;1;0;FLOAT4;0,0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.WorldPosInputsNode;5;156.714,-17.57104;Inherit;False;0;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3\nNode;AmplifyShaderEditor.SimpleSubtractOpNode;6;396.714,-209.571;Inherit;False;2;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.NormalizeNode;8;588.714,-113.571;Inherit;False;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.DistanceOpNode;9;396.714,62.42896;Inherit;False;2;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.GlobalArrayNode;10;-3.286011,254.429;Inherit;False;ShroomLightRadiusAndIntensity;0;10;2;False;False;0;1;True;Object;-1;4;0;INT;0;False;2;INT;0;False;1;INT;0;False;3;INT;0;False;1;FLOAT4;0\nNode;AmplifyShaderEditor.GlobalArrayNode;12;-115.286,-1.571045;Inherit;False;ShroomLightColors;0;10;1;False;False;0;1;True;Object;-1;4;0;INT;0;False;2;INT;0;False;1;INT;0;False;3;INT;0;False;1;COLOR;0\nNode;AmplifyShaderEditor.RangedFloatNode;14;432,-32;Inherit;False;Property;_RampOffset;RampOffset;2;0;Create;True;0;0;0;False;0;False;0;-0.5;0;0;0;1;FLOAT;0\nNode;AmplifyShaderEditor.IntNode;1;-640,160;Inherit;False;Constant;_ShroomLightArraySize;ShroomLightArraySize;5;0;Create;True;0;0;0;False;0;False;10;0;False;0;1;INT;0\nNode;AmplifyShaderEditor.FunctionInput;17;-560,-192;Inherit;False;LightIndex;0;0;False;1;0;INT;0;False;1;INT;0\nNode;AmplifyShaderEditor.FunctionInput;16;16,592;Inherit;False;Diffuse;5;2;False;1;0;COLOR;1,1,1,1;False;1;COLOR;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;18;432,448;Inherit;False;2;2;0;COLOR;0,0,0,0;False;1;COLOR;0,0,0,0;False;1;COLOR;0\nNode;AmplifyShaderEditor.FunctionInput;15;432,608;Inherit;False;Normal;3;1;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionNode;19;876.714,398.429;Inherit;False;ShroomLightModel;0;;66;9ba531354399e4286b6b6809cf677f13;0;6;111;FLOAT;0;False;21;FLOAT3;0,0,0;False;133;FLOAT;0;False;128;FLOAT4;0,0,0,0;False;10;COLOR;0.5754717,0.5754717,0.5754717,1;False;7;FLOAT3;0,0,0;False;1;COLOR;17\nNode;AmplifyShaderEditor.FunctionOutput;0;1200,400;Inherit;True;True;-1;Output;0;False;1;0;COLOR;0,0,0,0;False;1;COLOR;0\nWireConnection;3;0;17;0\nWireConnection;3;1;1;0\nWireConnection;4;0;3;0\nWireConnection;6;0;4;0\nWireConnection;6;1;5;0\nWireConnection;8;0;6;0\nWireConnection;9;0;5;0\nWireConnection;9;1;4;0\nWireConnection;10;0;17;0\nWireConnection;10;1;1;0\nWireConnection;12;0;17;0\nWireConnection;12;1;1;0\nWireConnection;18;0;12;0\nWireConnection;18;1;16;0\nWireConnection;19;111;14;0\nWireConnection;19;21;8;0\nWireConnection;19;133;9;0\nWireConnection;19;128;10;0\nWireConnection;19;10;18;0\nWireConnection;19;7;15;0\nWireConnection;0;0;19;17\nASEEND*/\n//CHKSM=275FBCB99E7B10EAFA124DE90CEAA15EDEE58B0D"
+  m_functionName: 
+  m_description: 
+  m_additionalIncludes:
+    m_additionalIncludes: []
+    m_outsideIncludes: []
+  m_additionalPragmas:
+    m_additionalPragmas: []
+    m_outsidePragmas: []
+  m_additionalDirectives:
+    m_validData: 0
+    m_isDirty: 0
+    m_moduleName: ' Additional Directives'
+    m_independentModule: 1
+    m_customEdited: 0
+    m_additionalDirectives: []
+    m_shaderFunctionDirectives: []
+    m_nativeDirectives: []
+    m_nativeDirectivesIndex: -1
+    m_nativeDirectivesFoldout: 0
+    m_directivesSaveItems: []
+  m_nodeCategory: 3
+  m_headerStyle: 0
+  m_headerColor: {r: 1, g: 0.4, b: 0, a: 1}
+  m_customNodeCategory: 
+  m_previewPosition: 0
+  m_hidden: 0
+  m_url: 
