@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="825655da-4771-4664-b01a-9bffcaa881d5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Shroom-and-Gloom-Art-Test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Shroom-and-Gloom-Art-Test/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/FPSMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/FPSMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Mine/Prefabs/Mine_Ceiling.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Environment/Mine/Prefabs/Mine_Ceiling.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/S1 Mines.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/S1 Mines.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level Generation/TunnelGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Level Generation/TunnelGenerator.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +26,6 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/SceneViewShaderHelper.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.splines@2.5.2/Runtime/SplineUtility.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5a41d6b7189842eca409fd0b1c3e3dcf17bf78/b1/7ffb7a67/Single.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/92f8bbba597a4c848e8aa06f7ebfe3ad175800/de/82d83d2c/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e307bbb467104258887a104f6151f183469200/4c/d6c4c89c/CancellationTokenSource.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
@@ -106,7 +107,7 @@
       <workItem from="1714571417574" duration="1000" />
       <workItem from="1714584562762" duration="14530000" />
       <workItem from="1714844653202" duration="42474000" />
-      <workItem from="1715068932110" duration="11101000" />
+      <workItem from="1715068932110" duration="8853000" />
     </task>
     <servers />
   </component>
