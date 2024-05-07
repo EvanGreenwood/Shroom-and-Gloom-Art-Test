@@ -162,11 +162,17 @@ public class TunnelGenerator : MonoBehaviour
         SplineUtility.GetNearestPoint(_tunnelSpline.Spline, localPoint, out float3 nearest, out float t, 6, 6);
         return t;
     }
-    
-    public void GetClosestPositionAndDirection(Vector3 closestPoint, out Vector3 position, out Vector3 direction, out Vector3 up)
+
+    public Vector3 GetLookaheadPoint(float normalizedPosition, float distanceAhead)
+    {
+        _tunnelSpline.Spline.GetPointAtLinearDistance(normalizedPosition, distanceAhead, out float newT);
+        return _tunnelSpline.EvaluatePosition(newT);
+    }
+    public float GetClosestPositionAndDirection(Vector3 closestPoint, out Vector3 position, out Vector3 direction, out Vector3 up)
     {
         float t = GetNormDistanceFromPoint(closestPoint);
         GetTunnelPositionAndDirection(t, out position, out direction, out up);
+        return t;
     }
     
     public void GetTunnelPositionAndDirection(float t, out Vector3 position, out Vector3 direction, out Vector3 up)
