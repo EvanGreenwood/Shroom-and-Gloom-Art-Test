@@ -187,7 +187,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &330205821
 Transform:
   m_ObjectHideFlags: 0
@@ -218,7 +218,7 @@ MonoBehaviour:
   OuterRadius: 9
   InnerRadius: 0
   Intensity: 0.5
-  Color: {r: 0.9811321, g: 0.68266404, b: 0.46742615, a: 1}
+  Color: {r: 0.7830189, g: 0.7830189, b: 0.7830189, a: 1}
 --- !u!1001 &525790713
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -737,7 +737,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1445678667
 Transform:
   m_ObjectHideFlags: 0
@@ -768,7 +768,7 @@ MonoBehaviour:
   OuterRadius: 9
   InnerRadius: 0
   Intensity: 0.5
-  Color: {r: 0.9811321, g: 0.68266404, b: 0.46742615, a: 1}
+  Color: {r: 0.8584906, g: 0.8584906, b: 0.8584906, a: 1}
 --- !u!1 &1478998013
 GameObject:
   m_ObjectHideFlags: 0
@@ -849,22 +849,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _colorGradient:
     serializedVersion: 2
-    key0: {r: 0.9433962, g: 0.9433962, b: 0.9433962, a: 1}
-    key1: {r: 0.9433962, g: 0.9433962, b: 0.9433962, a: 1}
-    key2: {r: 0.9433962, g: 0.9433962, b: 0.9433962, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
+    key0: {r: 0.3301887, g: 0.3301887, b: 0.3301887, a: 1}
+    key1: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
+    key2: {r: 0.9607843, g: 0.6890584, b: 0.023529435, a: 0}
+    key3: {r: 0.15395391, g: 1, b: 0, a: 0}
+    key4: {r: 1, g: 0.9392036, b: 0.427451, a: 0}
+    key5: {r: 0.6814251, g: 0, b: 1, a: 0}
+    key6: {r: 1, g: 0, b: 0.5860157, a: 0}
+    key7: {r: 1, g: 0, b: 0, a: 0}
     ctime0: 0
     ctime1: 65535
-    ctime2: 52915
-    ctime3: 0
-    ctime4: 0
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
+    ctime2: 16384
+    ctime3: 65535
+    ctime4: 65535
+    ctime5: 49922
+    ctime6: 58018
+    ctime7: 65535
     atime0: 0
     atime1: 65535
     atime2: 0
@@ -879,7 +879,7 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   _particles: {fileID: 2402285776899386762, guid: 8e61f67cd760b423db14eb998271668d, type: 3}
   _particleSpawnDistance: 5
-  _baseTunnelWidth: 3
+  _baseTunnelWidth: 4
   _lumpyWidth: 0.5
   _clearingWidth: 1
   _clearingDepth: 2
@@ -889,18 +889,18 @@ MonoBehaviour:
     - {fileID: 1508189691331659514, guid: 58503cf409f035144b23039e7efe5466, type: 3}
     zOffset: 0
     spacing: 2
-    width: 0
+    width: 0.5
     heightOffset:
-      _min: 2
-      _max: 3
+      _min: 4
+      _max: 4
     verticalLoopLength: 5
     verticalLoopIncrement: 2
     minMaxAngle:
       _min: 0
       _max: 0
     minMaxPosition:
-      _min: 1
-      _max: 1
+      _min: -1
+      _max: 0.2
     randomRotation: 5
     randomFlipY: 1
   flatWallPrefab: {fileID: 6315135170778095943, guid: 3422533d8785543c0bc4c752557808e0, type: 3}
@@ -919,17 +919,17 @@ MonoBehaviour:
       _max: 1
     xRotation: 0
     minMaxPosition:
-      _min: -0.05
-      _max: 0.05
+      _min: 0
+      _max: 0
     randomFlipX: 1
   flatFloorPrefab: {fileID: 6315135170778095943, guid: 1b84736bfc8e3498bb0f56612263e106, type: 3}
-  flatFloorOffset: -4
+  flatFloorOffset: -2
   flatFloorSpacing: 1
   ceilingElements:
   - name: Ceiling
     ceilingPrefabs:
     - {fileID: -8373903463449722979, guid: 3187e059e3559af40bd0147434345f61, type: 3}
-    height: 4
+    height: 7.5
     zOffset: 0.02
     spacing: 1
     randomXPosition: 1
@@ -944,7 +944,7 @@ MonoBehaviour:
   - name: Ceiling2
     ceilingPrefabs:
     - {fileID: -8373903463449722979, guid: 982cddbb89e4ead4cb0ef88eed6105d5, type: 3}
-    height: 4
+    height: 7.5
     zOffset: 0.5
     spacing: 1
     randomXPosition: 1
@@ -1092,7 +1092,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1608638738
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1108,7 +1108,7 @@ MonoBehaviour:
   OuterRadius: 9
   InnerRadius: 0
   Intensity: 0.5
-  Color: {r: 0.98039216, g: 0.5273586, b: 0.4666666, a: 1}
+  Color: {r: 0.764151, g: 0.764151, b: 0.764151, a: 1}
 --- !u!4 &1608638739
 Transform:
   m_ObjectHideFlags: 0
