@@ -223,8 +223,9 @@ MonoBehaviour:
   _bobHeight: 0.07
   _bobRate: 0.5
   _headHeight: 1.6
-  maxXAngle: 45
-  maxYAngle: 35
+  angleOffset: {x: 0, y: -30}
+  maxXAngle: 80
+  maxYAngle: 70
   _headCamera: {fileID: 3577085838745663624}
   _tunnel: {fileID: 0}
 --- !u!114 &3257029863251455453

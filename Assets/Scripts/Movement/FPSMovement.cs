@@ -12,8 +12,8 @@ public class FPSMovement : MonoBehaviour
     private float _bobCounter = 0;
     [SerializeField] private float _headHeight = 1.6f;
     //
+    [SerializeField] private Vector2 angleOffset;
     [SerializeField] private float maxXAngle = 35;
-    //
     [SerializeField] private float maxYAngle = 35;
     //
     [SerializeField] private Camera _headCamera;
@@ -98,7 +98,7 @@ public class FPSMovement : MonoBehaviour
                 }
                 
                 _tunnel.GetClosestPositionAndDirection(transform.position, out Vector3 currentPosition, out Vector3 currentDirection, out Vector3 currentUp);
-                transform.forward = Vector3.RotateTowards(transform.forward, currentDirection, Time.deltaTime*0.5f, 0);
+                transform.forward = Vector3.RotateTowards(transform.forward, currentDirection, Time.deltaTime*0.25f, 0);
                 currentDirection = moveDir * currentDirection;
                 Debug.DrawLine(currentPosition, currentPosition + currentDirection);
                 transform.position = Vector3.MoveTowards(transform.position, currentPosition + currentDirection, Time.deltaTime * _currentSpeed);
@@ -114,18 +114,8 @@ public class FPSMovement : MonoBehaviour
             _bobCounter = Mathf.Lerp(_bobCounter, Mathf.Round(_bobCounter * _bobRate) / _bobRate, Time.deltaTime * 7);
             _headCamera.transform.localPosition = _headCamera.transform.localPosition.WithY(Mathf.Lerp(_headCamera.transform.localPosition.y, _headHeight + Mathf.Sin(_bobCounter / _bobRate * Mathf.PI  ) * _bobHeight, Time.deltaTime * 8)) ;
         }
-        //
-        if (_tunnel != null)
-        {
-            _tunnel.GetClosestPositionAndDirection(transform.position, out Vector3 currentPosition, out Vector3 currentDirection, out Vector3 currentUp);
-            Vector3 forwardEulers =  Quaternion.LookRotation(transform.forward, currentUp).eulerAngles; 
-            _tunnelFacingEulers = new Vector3(Mathf.LerpAngle(_tunnelFacingEulers.x, forwardEulers.x, Time.deltaTime * 5), Mathf.LerpAngle(_tunnelFacingEulers.y, forwardEulers.y, Time.deltaTime * 4), Mathf.LerpAngle(_tunnelFacingEulers.z, forwardEulers.z, Time.deltaTime * 5));
-        }
-        else
-        {
-            Vector3 forwardEulers =  Quaternion.LookRotation(transform.forward).eulerAngles;
-            _tunnelFacingEulers = new Vector3(Mathf.LerpAngle(_tunnelFacingEulers.x, forwardEulers.x, Time.deltaTime * 5), Mathf.LerpAngle(_tunnelFacingEulers.y, forwardEulers.y, Time.deltaTime * 4), Mathf.LerpAngle(_tunnelFacingEulers.z, forwardEulers.z, Time.deltaTime * 5));
-        }
-        _headCamera.transform.localEulerAngles = new Vector3(_tunnelFacingEulers.x + ((Input.mousePosition.y - Screen.height / 2f) / Screen.height / -2f) * maxXAngle, ((Input.mousePosition.x - Screen.width / 2f) / Screen.width / 2f) * maxYAngle, 0);
+        
+        //Camera movement
+        _headCamera.transform.localEulerAngles = new Vector3(((Input.mousePosition.y - Screen.height / 2f) / Screen.height / -2f) * maxXAngle, ((Input.mousePosition.x - Screen.width / 2f) / Screen.width / 2f) * maxYAngle, 0);
     }
 }
