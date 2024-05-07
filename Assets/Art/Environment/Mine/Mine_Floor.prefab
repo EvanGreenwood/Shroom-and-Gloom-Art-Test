@@ -117,9 +117,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _axis:
     _x:
-      _value: 0
+      _value: 1
     _y:
-      _value: 0
+      _value: 1
 --- !u!114 &3155166157038680450
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59146cfe761ff774490a9979c3ac8f68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _probability: 0.25
+  _probability: 0.12
 --- !u!1 &566723381455748101
 GameObject:
   m_ObjectHideFlags: 0
@@ -177,7 +177,7 @@ Transform:
   m_GameObject: {fileID: 566723381455748101}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.17920735, w: 0.9838113}
-  m_LocalPosition: {x: 3.15, y: -0.71, z: -0.04}
+  m_LocalPosition: {x: 2.91, y: -1.37, z: -0.04}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -264,7 +264,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _axis:
     _x:
-      _value: 0
+      _value: 1
     _y:
       _value: 0
 --- !u!114 &8985655118144471488
@@ -279,7 +279,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59146cfe761ff774490a9979c3ac8f68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _probability: 0.25
+  _probability: 0.1
 --- !u!1 &1791036971161692982
 GameObject:
   m_ObjectHideFlags: 0
@@ -397,9 +397,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _axis:
     _x:
-      _value: 0
+      _value: 1
     _y:
-      _value: 0
+      _value: 1
 --- !u!114 &9030788941831298367
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -427,7 +427,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59146cfe761ff774490a9979c3ac8f68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _probability: 0.25
+  _probability: 0.11
 --- !u!1 &2840582857619851835
 GameObject:
   m_ObjectHideFlags: 0
@@ -458,7 +458,7 @@ Transform:
   m_GameObject: {fileID: 2840582857619851835}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.009789599, w: 0.9999521}
-  m_LocalPosition: {x: -3.11, y: -0.91, z: -0.04}
+  m_LocalPosition: {x: -3.11, y: -1.22, z: -0.04}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -560,7 +560,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _axis:
     _x:
-      _value: 0
+      _value: 1
     _y:
       _value: 0
 --- !u!114 &6996612704156136805
@@ -575,7 +575,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59146cfe761ff774490a9979c3ac8f68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _probability: 0.25
+  _probability: 0.11
 --- !u!1 &3392264672225231181
 GameObject:
   m_ObjectHideFlags: 0
@@ -693,9 +693,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _axis:
     _x:
-      _value: 0
+      _value: 1
     _y:
-      _value: 0
+      _value: 1
 --- !u!114 &9037070018801477558
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -723,7 +723,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59146cfe761ff774490a9979c3ac8f68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _probability: 0.25
+  _probability: 0.08
 --- !u!1 &5332015314104257341
 GameObject:
   m_ObjectHideFlags: 0
@@ -841,9 +841,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _axis:
     _x:
-      _value: 0
+      _value: 1
     _y:
-      _value: 0
+      _value: 1
 --- !u!114 &3873926642459536122
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -871,7 +871,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59146cfe761ff774490a9979c3ac8f68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _probability: 0.25
+  _probability: 0.14
 --- !u!1 &5926910933683019699
 GameObject:
   m_ObjectHideFlags: 0
