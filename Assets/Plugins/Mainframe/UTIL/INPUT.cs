@@ -75,7 +75,7 @@ public static class INPUT
   public static KeyAction f { [MethodImpl(MethodImplOptions.AggressiveInlining)] get => _keys[Key.F]; }
   public static KeyAction g { [MethodImpl(MethodImplOptions.AggressiveInlining)] get => _keys[Key.G]; }
   public static KeyAction h { [MethodImpl(MethodImplOptions.AggressiveInlining)] get => _keys[Key.H]; }
-  public static KeyAction I { [MethodImpl(MethodImplOptions.AggressiveInlining)] get => _keys[Key.I]; }
+  public static KeyAction i { [MethodImpl(MethodImplOptions.AggressiveInlining)] get => _keys[Key.I]; }
   public static KeyAction j { [MethodImpl(MethodImplOptions.AggressiveInlining)] get => _keys[Key.J]; }
   public static KeyAction k { [MethodImpl(MethodImplOptions.AggressiveInlining)] get => _keys[Key.K]; }
   public static KeyAction l { [MethodImpl(MethodImplOptions.AggressiveInlining)] get => _keys[Key.L]; }
