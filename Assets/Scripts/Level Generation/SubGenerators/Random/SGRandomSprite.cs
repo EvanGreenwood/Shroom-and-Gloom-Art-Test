@@ -1,8 +1,10 @@
 #region Usings
-using EasyButtons;
 using UnityEngine;
 using Framework;
 using Mainframe;
+using NaughtyAttributes;
+using System;
+
 #endregion
 
 [RequireComponent(typeof(SpriteRenderer))]
@@ -10,8 +12,15 @@ public class RandomSprite : SubGenerator
 {
   [SerializeField] Sprite[] _sprites;
 
+  private SpriteRenderer _spriteRenderer;
   // MonoBehaviour
   //----------------------------------------------------------------------------------------------------
+
+  private void Awake()
+  {
+    _spriteRenderer = GetComponent<SpriteRenderer>();
+  }
+
   public override void Generate() 
   {
     if(_sprites.IsNullOrEmpty())
@@ -24,15 +33,12 @@ public class RandomSprite : SubGenerator
     gameObject.SetActive(true);
 
     ChooseRandom();
-    
-    Die();
   }
 
   [Button]
   void ChooseRandom()
   {
-    SpriteRenderer sr = GetComponent<SpriteRenderer>();
-    sr.sprite = _sprites.ChooseRandom();
+    _spriteRenderer.sprite = _sprites.ChooseRandom();
   }
   
   // Die
@@ -41,10 +47,5 @@ public class RandomSprite : SubGenerator
   {
     //dont destroy since we may want to undo.
     gameObject.SetActive(false);
-  }
-
-  protected override bool Flip(FlipMode flipMode)
-  {
-      return DefaultPosFlip(flipMode) || DefaultSpriteFlip(flipMode);
   }
 }

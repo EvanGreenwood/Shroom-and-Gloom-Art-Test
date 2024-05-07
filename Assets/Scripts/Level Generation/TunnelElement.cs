@@ -9,7 +9,6 @@ using System.Collections.Generic;
 
 public class TunnelElement : MonoBehaviour
 {
-  
   SpriteRenderer _spriteRenderer;
   SpriteRenderer[] _childRenderers;
   bool _hasInit;
@@ -45,6 +44,15 @@ public class TunnelElement : MonoBehaviour
         sr.color = color;
       }
     });
+  }
+
+  public void SubGenerate()
+  {
+    for (int i = 0; i < _generators.Count; i++)
+    {
+      SubGenerator generator = _generators[i];
+      generator.Generate();
+    }
   }
 
   public void RequestSubGeneratorFlip()
