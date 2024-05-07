@@ -113,10 +113,10 @@ TextureImporter:
       name: Touchy_sprite_sheet_0
       rect:
         serializedVersion: 2
-        x: 42
-        y: 1245
-        width: 416
-        height: 310
+        x: 0
+        y: 1200
+        width: 500
+        height: 400
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,10 +134,10 @@ TextureImporter:
       name: Touchy_sprite_sheet_1
       rect:
         serializedVersion: 2
-        x: 541
-        y: 1243
-        width: 416
-        height: 312
+        x: 500
+        y: 1200
+        width: 500
+        height: 400
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,10 +155,10 @@ TextureImporter:
       name: Touchy_sprite_sheet_2
       rect:
         serializedVersion: 2
-        x: 1041
-        y: 1245
-        width: 416
-        height: 312
+        x: 1000
+        y: 1200
+        width: 500
+        height: 400
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -176,10 +176,10 @@ TextureImporter:
       name: Touchy_sprite_sheet_3
       rect:
         serializedVersion: 2
-        x: 1542
-        y: 1245
-        width: 416
-        height: 310
+        x: 1500
+        y: 1200
+        width: 500
+        height: 400
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,10 +197,10 @@ TextureImporter:
       name: Touchy_sprite_sheet_4
       rect:
         serializedVersion: 2
-        x: 2041
-        y: 1243
-        width: 417
-        height: 312
+        x: 2000
+        y: 1200
+        width: 500
+        height: 400
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,10 +218,10 @@ TextureImporter:
       name: Touchy_sprite_sheet_5
       rect:
         serializedVersion: 2
-        x: 2541
-        y: 1245
-        width: 416
-        height: 310
+        x: 2500
+        y: 1200
+        width: 500
+        height: 400
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -239,10 +239,10 @@ TextureImporter:
       name: Touchy_sprite_sheet_6
       rect:
         serializedVersion: 2
-        x: 40
-        y: 845
-        width: 418
-        height: 310
+        x: 0
+        y: 800
+        width: 500
+        height: 400
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -260,10 +260,10 @@ TextureImporter:
       name: Touchy_sprite_sheet_7
       rect:
         serializedVersion: 2
-        x: 541
-        y: 843
-        width: 416
-        height: 312
+        x: 500
+        y: 800
+        width: 500
+        height: 400
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -281,10 +281,10 @@ TextureImporter:
       name: Touchy_sprite_sheet_8
       rect:
         serializedVersion: 2
-        x: 1041
-        y: 845
-        width: 416
-        height: 312
+        x: 1000
+        y: 800
+        width: 500
+        height: 400
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -302,10 +302,10 @@ TextureImporter:
       name: Touchy_sprite_sheet_10
       rect:
         serializedVersion: 2
-        x: 52
-        y: 445
-        width: 403
-        height: 310
+        x: 0
+        y: 0
+        width: 500
+        height: 400
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -323,10 +323,10 @@ TextureImporter:
       name: Touchy_sprite_sheet_12
       rect:
         serializedVersion: 2
-        x: 52
-        y: 45
-        width: 403
-        height: 310
+        x: 1000
+        y: 0
+        width: 500
+        height: 400
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -344,10 +344,10 @@ TextureImporter:
       name: Touchy_sprite_sheet_14
       rect:
         serializedVersion: 2
-        x: 552
-        y: 43
-        width: 404
-        height: 312
+        x: 2000
+        y: 0
+        width: 500
+        height: 400
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -365,10 +365,10 @@ TextureImporter:
       name: Touchy_sprite_sheet_15
       rect:
         serializedVersion: 2
-        x: 1044
-        y: 45
-        width: 411
-        height: 312
+        x: 2500
+        y: 0
+        width: 500
+        height: 400
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -383,13 +383,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Touchy_sprite_sheet_17
+      name: Touchy_sprite_sheet_9
       rect:
         serializedVersion: 2
-        x: 1552
-        y: 45
-        width: 403
-        height: 310
+        x: 0
+        y: 400
+        width: 500
+        height: 400
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -397,20 +397,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b1d7a0d72d66b64c8774d8413986f6f
-      internalID: -777236517
+      spriteID: 96bda58aca5a0b042aa846bc3b1e0e85
+      internalID: -989136944
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Touchy_sprite_sheet_18
+      name: Touchy_sprite_sheet_11
       rect:
         serializedVersion: 2
-        x: 2044
-        y: 43
-        width: 412
-        height: 312
+        x: 500
+        y: 0
+        width: 500
+        height: 400
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -418,20 +418,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 96ae84e5cfc877440b44c215a26a7dd5
-      internalID: -2027166133
+      spriteID: cc0c3839ebd9c974f95eda2c308f2984
+      internalID: 1591061614
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Touchy_sprite_sheet_20
+      name: Touchy_sprite_sheet_13
       rect:
         serializedVersion: 2
-        x: 2553
-        y: 45
-        width: 402
-        height: 310
+        x: 1500
+        y: 0
+        width: 500
+        height: 400
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -439,8 +439,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d7170f01f3eb96d46ab8a40685cb86d7
-      internalID: -159886544
+      spriteID: eead767c5a3119648bc293df659bacdc
+      internalID: 1039837827
       vertices: []
       indices: 
       edges: []
@@ -464,12 +464,7 @@ TextureImporter:
       Touchy_sprite_sheet_13: 1039837827
       Touchy_sprite_sheet_14: -244775534
       Touchy_sprite_sheet_15: 1850172269
-      Touchy_sprite_sheet_16: 488130488
-      Touchy_sprite_sheet_17: -777236517
-      Touchy_sprite_sheet_18: -2027166133
-      Touchy_sprite_sheet_19: -998236269
       Touchy_sprite_sheet_2: -856846519
-      Touchy_sprite_sheet_20: -159886544
       Touchy_sprite_sheet_3: 1321451990
       Touchy_sprite_sheet_4: 502681412
       Touchy_sprite_sheet_5: -855488302
