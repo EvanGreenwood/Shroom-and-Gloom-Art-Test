@@ -945,7 +945,7 @@ MonoBehaviour:
   flatCeilingSpacing: 1
   flatCeilingOffset: 6
   _drawGizmos: 0
-  _generatedIsSelectable: 0
+  _generatedIsSelectable: 1
 --- !u!4 &1551529200
 Transform:
   m_ObjectHideFlags: 0

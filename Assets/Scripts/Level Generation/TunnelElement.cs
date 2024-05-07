@@ -36,14 +36,23 @@ public class TunnelElement : MonoBehaviour
 
   public void SetColor(Color color)
   {
-    _spriteRenderer.color = color;
-    _childRenderers.Foreach(sr =>
+    if(!_hasInit)
+      Init();
+
+    if (_spriteRenderer)
     {
-      if(sr.gameObject.activeInHierarchy)
+      _spriteRenderer.color = color;
+    }
+
+    for (int i = 0; i < _childRenderers.Length; i++)
+    {
+      SpriteRenderer sr = _childRenderers[i];
+
+      if (sr && sr.gameObject.activeInHierarchy)
       {
         sr.color = color;
       }
-    });
+    }
   }
 
   public void SubGenerate()
