@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4552497125203086682}
   - component: {fileID: 156836411375331879}
   - component: {fileID: 5323524135897628100}
+  - component: {fileID: 8449704786400849566}
   m_Layer: 0
   m_Name: Chain_Anchored
   m_TagString: Untagged
@@ -152,13 +153,26 @@ MonoBehaviour:
   _anchor0: {fileID: 5966609459592326000}
   _anchor1: {fileID: 8206335787655888972}
   _nodeDensity: 2
-  _gravity: 20
-  _nodeMass: 1
+  _gravity: 30
+  _nodeMass: 1.5
   _drag: 20
   _stiffness: 1000
   _stretchLimits:
     _min: 1
     _max: 2
+--- !u!114 &8449704786400849566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1774361570267914464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59146cfe761ff774490a9979c3ac8f68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _probability: 0.5
 --- !u!1 &8443158520532896937
 GameObject:
   m_ObjectHideFlags: 0
