@@ -849,22 +849,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _colorGradient:
     serializedVersion: 2
-    key0: {r: 0.6981132, g: 0.535298, b: 0.50448555, a: 1}
-    key1: {r: 0.59716547, g: 0.7132075, b: 0.44541824, a: 1}
-    key2: {r: 0.5397144, g: 0.7290569, b: 0.51479673, a: 0}
-    key3: {r: 0.5882353, g: 0.77254903, b: 0.7137255, a: 0}
-    key4: {r: 0.5882164, g: 0.7735849, b: 0.71179545, a: 0}
-    key5: {r: 0.5150943, g: 0.735849, b: 0.54452825, a: 0}
-    key6: {r: 0.6747628, g: 0.7433963, b: 0.5091563, a: 0}
-    key7: {r: 0.69803923, g: 0.5372549, b: 0.5058824, a: 0}
-    ctime0: 7828
-    ctime1: 22330
-    ctime2: 27389
-    ctime3: 31772
-    ctime4: 33604
-    ctime5: 37508
-    ctime6: 42687
-    ctime7: 53285
+    key0: {r: 0.084905684, g: 0.084905684, b: 0.084905684, a: 1}
+    key1: {r: 0.8301887, g: 0.8301887, b: 0.8301887, a: 1}
+    key2: {r: 0, g: 0, b: 0, a: 0}
+    key3: {r: 0, g: 0, b: 0, a: 0}
+    key4: {r: 0, g: 0, b: 0, a: 0}
+    key5: {r: 0, g: 0, b: 0, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
+    key7: {r: 0, g: 0, b: 0, a: 0}
+    ctime0: 0
+    ctime1: 37951
+    ctime2: 0
+    ctime3: 0
+    ctime4: 0
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
     atime0: 0
     atime1: 65535
     atime2: 0
@@ -874,57 +874,38 @@ MonoBehaviour:
     atime6: 0
     atime7: 0
     m_Mode: 0
-    m_ColorSpace: -1
-    m_NumColorKeys: 8
+    m_ColorSpace: 0
+    m_NumColorKeys: 2
     m_NumAlphaKeys: 2
   _particles: {fileID: 2402285776899386762, guid: 8e61f67cd760b423db14eb998271668d, type: 3}
   _particleSpawnDistance: 5
-  _baseTunnelWidth: 2.5
+  _baseTunnelWidth: 3
   _lumpyWidth: 0.5
   _clearingWidth: 1
-  _clearingDepth: 2.33
+  _clearingDepth: 2
   wallElements:
-  - name: Wall Thorns
+  - name: Wall
     wallPrefabs:
     - {fileID: 1508189691331659514, guid: 58503cf409f035144b23039e7efe5466, type: 3}
     zOffset: 0
     spacing: 2
-    width: 2
+    width: 0
     heightOffset:
-      _min: 0
-      _max: 5
+      _min: 2
+      _max: 3
     verticalLoopLength: 5
     verticalLoopIncrement: 2
     minMaxAngle:
       _min: 0
       _max: 0
     minMaxPosition:
-      _min: 2
-      _max: 3
-    randomRotation: 0
-    randomFlipY: 0
-  - name: Thorns Base
-    wallPrefabs:
-    - {fileID: 717079983591251126, guid: 239ca69b503789f4097c61f9e63c3318, type: 3}
-    zOffset: 0.1
-    spacing: 0.5
-    width: 4
-    heightOffset:
-      _min: -3
-      _max: -1
-    verticalLoopLength: 3
-    verticalLoopIncrement: 1
-    minMaxAngle:
-      _min: -15
-      _max: 30
-    minMaxPosition:
-      _min: -2
-      _max: -1
-    randomRotation: 90
-    randomFlipY: 0
-  flatWallPrefab: {fileID: 0}
-  flatWallSpacing: 1
-  flatWallOffset: 1
+      _min: 1
+      _max: 1
+    randomRotation: 5
+    randomFlipY: 1
+  flatWallPrefab: {fileID: 6315135170778095943, guid: 3422533d8785543c0bc4c752557808e0, type: 3}
+  flatWallSpacing: 2
+  flatWallOffset: 5
   surroundElements: []
   floorElements:
   - name: Floor
@@ -941,28 +922,28 @@ MonoBehaviour:
       _min: -0.05
       _max: 0.05
     randomFlipX: 1
-  flatFloorPrefab: {fileID: 0}
-  flatFloorOffset: -1
+  flatFloorPrefab: {fileID: 6315135170778095943, guid: 1b84736bfc8e3498bb0f56612263e106, type: 3}
+  flatFloorOffset: -2
   flatFloorSpacing: 1
   ceilingElements:
   - name: Ceiling
     ceilingPrefabs:
-    - {fileID: 717079983591251126, guid: 827997e51db684e2487a09b866c40728, type: 3}
-    height: 5
+    - {fileID: -8373903463449722979, guid: 3187e059e3559af40bd0147434345f61, type: 3}
+    height: 4
     zOffset: 0.02
     spacing: 0.5
-    randomXPosition: 1.4
+    randomXPosition: 1
     minMaxAngle:
       _min: -0.5
       _max: 0.5
-    xRotation: -45
+    xRotation: 0
     minMaxPosition:
       _min: -0.03
       _max: 0.03
     randomFlipX: 1
-  flatCeilingPrefab: {fileID: 0}
+  flatCeilingPrefab: {fileID: 6315135170778095943, guid: c5d39d8515fd7483685405c5e8044cc6, type: 3}
   flatCeilingSpacing: 1
-  flatCeilingOffset: 1
+  flatCeilingOffset: 6
   _drawGizmos: 0
   _generatedIsSelectable: 0
 --- !u!4 &1551529200
@@ -1128,6 +1109,50 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2143665173
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2143665175}
+  - component: {fileID: 2143665174}
+  m_Layer: 0
+  m_Name: GameController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2143665174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2143665173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4e34cc4ca5076942ba6144685630652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &2143665175
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2143665173}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &5024598757371713799
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1189,6 +1214,7 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 2143665175}
   - {fileID: 5024598757371713799}
   - {fileID: 14348015}
   - {fileID: 1551529200}
