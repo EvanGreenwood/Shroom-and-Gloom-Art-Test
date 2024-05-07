@@ -5,8 +5,8 @@ GraphicsSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 15
   m_Deferred:
-    m_Mode: 1
-    m_Shader: {fileID: 69, guid: 0000000000000000f000000000000000, type: 0}
+    m_Mode: 2
+    m_Shader: {fileID: 4800000, guid: ed05d11e74b984aa3a82befc495ce811, type: 3}
   m_DeferredReflections:
     m_Mode: 1
     m_Shader: {fileID: 74, guid: 0000000000000000f000000000000000, type: 0}
@@ -48,7 +48,7 @@ GraphicsSettings:
     m_Tier: 2
     m_Settings:
       standardShaderQuality: 2
-      renderingPath: 1
+      renderingPath: 3
       hdrMode: 1
       realtimeGICPUUsage: 50
       useReflectionProbeBoxProjection: 1
@@ -65,7 +65,7 @@ GraphicsSettings:
     m_Tier: 1
     m_Settings:
       standardShaderQuality: 2
-      renderingPath: 1
+      renderingPath: 3
       hdrMode: 1
       realtimeGICPUUsage: 25
       useReflectionProbeBoxProjection: 1
@@ -82,7 +82,7 @@ GraphicsSettings:
     m_Tier: 0
     m_Settings:
       standardShaderQuality: 2
-      renderingPath: 1
+      renderingPath: 3
       hdrMode: 1
       realtimeGICPUUsage: 25
       useReflectionProbeBoxProjection: 1

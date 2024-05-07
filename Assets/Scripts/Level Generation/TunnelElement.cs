@@ -57,8 +57,16 @@ public class TunnelElement : MonoBehaviour
 
   public void SubGenerate()
   {
-    for (int i = 0; i < _generators.Count; i++)
+    for (int i = _generators.Count - 1; i >= 0; i--)
     {
+      SubGenerator sg = _generators[i];
+      if (sg == null)
+      {
+        _generators.RemoveAt(i);
+        i++;
+        continue;
+      }
+      
       SubGenerator generator = _generators[i];
       generator.Generate();
     }
@@ -66,8 +74,17 @@ public class TunnelElement : MonoBehaviour
 
   public void RequestSubGeneratorFlip()
   {
-    foreach (SubGenerator sg in _generators)
+    for (int i = _generators.Count - 1; i >= 0; i--)
     {
+      SubGenerator sg = _generators[i];
+
+      if (sg == null)
+      {
+        _generators.RemoveAt(i);
+        i++;
+        continue;
+      }
+      
       sg.RequestFlip();
     }
   }

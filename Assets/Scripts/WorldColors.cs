@@ -4,10 +4,17 @@ using UnityEngine;
 
 public class WorldColors : MonoBehaviour
 {
+    [Header("Fog")]
     [SerializeField] private Color _fogColor = Color.white;
     [SerializeField] private float _fogStart = 1.5f;
     [SerializeField] private float _fogDistance = 30;
+    
+    [Header("Shadows")]
     [SerializeField] private Color _shadowsColor = Color.blue;
+    
+    [Header("Ramp")]
+    [SerializeField] private Texture2D _rampTexture;
+   
     
     void Start()
     {
@@ -25,7 +32,11 @@ public class WorldColors : MonoBehaviour
         Shader.SetGlobalColor("FogColor", _fogColor);
         Shader.SetGlobalFloat("FogStart", _fogStart);
         Shader.SetGlobalFloat("FogDistance", _fogDistance);
+        
         Shader.SetGlobalColor("ShadowsColor", _shadowsColor);
+        
+        Shader.SetGlobalTexture("_Ramp", _rampTexture);
+ 
         Camera.main.backgroundColor = _fogColor;
     }
 
