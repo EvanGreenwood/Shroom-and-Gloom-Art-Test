@@ -1140,6 +1140,18 @@ PrefabInstance:
       propertyPath: _tunnel
       value: 
       objectReference: {fileID: 1392419565}
+    - target: {fileID: 2336201325850330426, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
+      propertyPath: Color.b
+      value: 0.5471698
+      objectReference: {fileID: 0}
+    - target: {fileID: 2336201325850330426, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
+      propertyPath: Color.g
+      value: 0.5471698
+      objectReference: {fileID: 0}
+    - target: {fileID: 2336201325850330426, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
+      propertyPath: Color.r
+      value: 0.5471698
+      objectReference: {fileID: 0}
     - target: {fileID: 3020264992416293518, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
       propertyPath: m_Name
       value: Player

@@ -223,6 +223,7 @@ MonoBehaviour:
   _bobHeight: 0.07
   _bobRate: 0.5
   _headHeight: 1.6
+  _directionLookaheadDistance: 6
   angleOffset: {x: 0, y: -30}
   maxXAngle: 80
   maxYAngle: 70

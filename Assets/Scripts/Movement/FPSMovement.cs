@@ -11,10 +11,12 @@ public class FPSMovement : MonoBehaviour
     [SerializeField] private float _bobRate = 0.5f;
     private float _bobCounter = 0;
     [SerializeField] private float _headHeight = 1.6f;
+    [SerializeField] private float _directionLookaheadDistance = 1;
     //
     [SerializeField] private Vector2 angleOffset;
     [SerializeField] private float maxXAngle = 35;
     [SerializeField] private float maxYAngle = 35;
+    
     //
     [SerializeField] private Camera _headCamera;
     //
@@ -96,9 +98,11 @@ public class FPSMovement : MonoBehaviour
                         FindNewTunnel();
                     }*/
                 }
-                
-                _tunnel.GetClosestPositionAndDirection(transform.position, out Vector3 currentPosition, out Vector3 currentDirection, out Vector3 currentUp);
-                transform.forward = Vector3.RotateTowards(transform.forward, currentDirection, Time.deltaTime*0.25f, 0);
+           
+                float t =_tunnel.GetClosestPositionAndDirection(transform.position, out Vector3 currentPosition, out Vector3 currentDirection, out Vector3 currentUp);
+                Vector3 lookaheadPoint = _tunnel.GetLookaheadPoint(t, _directionLookaheadDistance);
+                Vector3 towardsLookahead = (lookaheadPoint - currentPosition).normalized;
+                transform.forward = Vector3.RotateTowards(transform.forward, towardsLookahead, Time.deltaTime*0.25f, 0);
                 currentDirection = moveDir * currentDirection;
                 Debug.DrawLine(currentPosition, currentPosition + currentDirection);
                 transform.position = Vector3.MoveTowards(transform.position, currentPosition + currentDirection, Time.deltaTime * _currentSpeed);
