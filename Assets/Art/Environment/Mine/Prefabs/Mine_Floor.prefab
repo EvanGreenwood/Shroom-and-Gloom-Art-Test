@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 415818609285036757}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.21185753, w: 0.9773006}
-  m_LocalPosition: {x: 3.41, y: -0.37, z: 0.06}
+  m_LocalPosition: {x: 3.41, y: 0.97, z: 0.06}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -100,6 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e930c06d64c3dfa4fb091ff8a052ad94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FlipFlags: 0
   _sprites:
   - {fileID: 826127770, guid: b2938885e77088545a1099775323f9f2, type: 3}
   - {fileID: -1319816984, guid: b2938885e77088545a1099775323f9f2, type: 3}
@@ -115,11 +116,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed234be4642fbcc429e82a2f4799649a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FlipFlags: 0
   _axis:
     _x:
-      _value: 1
+      _value: 0
     _y:
-      _value: 1
+      _value: 0
 --- !u!114 &3155166157038680450
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -132,6 +134,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52063f0c791109049a6a18e56e7ae724, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FlipFlags: 0
   _angle:
     _min: -45
     _max: 45
@@ -176,13 +179,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 566723381455748101}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0.17920735, w: 0.9838113}
-  m_LocalPosition: {x: 2.91, y: -1.37, z: -0.04}
+  m_LocalRotation: {x: -0, y: -0, z: 0.21238358, w: 0.9771864}
+  m_LocalPosition: {x: 3.01, y: 0.69, z: 0.09}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3830261055745258344}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -20.647}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 24.524}
 --- !u!212 &7610573623603993217
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -247,6 +250,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e930c06d64c3dfa4fb091ff8a052ad94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FlipFlags: 0
   _sprites:
   - {fileID: -889555625, guid: b2938885e77088545a1099775323f9f2, type: 3}
   - {fileID: 1949190976, guid: b2938885e77088545a1099775323f9f2, type: 3}
@@ -262,9 +266,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed234be4642fbcc429e82a2f4799649a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FlipFlags: 0
   _axis:
     _x:
-      _value: 1
+      _value: 0
     _y:
       _value: 0
 --- !u!114 &8985655118144471488
@@ -310,7 +315,7 @@ Transform:
   m_GameObject: {fileID: 1791036971161692982}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.26376966, w: 0.9645857}
-  m_LocalPosition: {x: -3.21, y: -0.55, z: 0.06}
+  m_LocalPosition: {x: -3.89, y: 1.26, z: 0.06}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -380,6 +385,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e930c06d64c3dfa4fb091ff8a052ad94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FlipFlags: 0
   _sprites:
   - {fileID: 826127770, guid: b2938885e77088545a1099775323f9f2, type: 3}
   - {fileID: -1319816984, guid: b2938885e77088545a1099775323f9f2, type: 3}
@@ -395,11 +401,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed234be4642fbcc429e82a2f4799649a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FlipFlags: 0
   _axis:
     _x:
-      _value: 1
+      _value: 0
     _y:
-      _value: 1
+      _value: 0
 --- !u!114 &9030788941831298367
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -412,6 +419,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52063f0c791109049a6a18e56e7ae724, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FlipFlags: 0
   _angle:
     _min: -45
     _max: 45
@@ -457,13 +465,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2840582857619851835}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: 0.009789599, w: 0.9999521}
-  m_LocalPosition: {x: -3.11, y: -1.22, z: -0.04}
+  m_LocalRotation: {x: -0, y: -0, z: 0.26015648, w: 0.96556646}
+  m_LocalPosition: {x: -2.65, y: 0.58, z: 0.14}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3830261055745258344}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -20.647}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 30.159}
 --- !u!212 &7756876370301146539
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -528,6 +536,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e930c06d64c3dfa4fb091ff8a052ad94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FlipFlags: 0
   _sprites:
   - {fileID: -889555625, guid: b2938885e77088545a1099775323f9f2, type: 3}
   - {fileID: 1949190976, guid: b2938885e77088545a1099775323f9f2, type: 3}
@@ -543,6 +552,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52063f0c791109049a6a18e56e7ae724, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FlipFlags: 0
   _angle:
     _min: -5
     _max: 45
@@ -558,9 +568,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed234be4642fbcc429e82a2f4799649a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FlipFlags: 0
   _axis:
     _x:
-      _value: 1
+      _value: 0
     _y:
       _value: 0
 --- !u!114 &6996612704156136805
@@ -606,7 +617,7 @@ Transform:
   m_GameObject: {fileID: 3392264672225231181}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.21185753, w: 0.9773006}
-  m_LocalPosition: {x: 2.58, y: -1.06, z: 0.06}
+  m_LocalPosition: {x: 2.21, y: 0.2800001, z: 0.06}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -676,6 +687,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e930c06d64c3dfa4fb091ff8a052ad94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FlipFlags: 0
   _sprites:
   - {fileID: 826127770, guid: b2938885e77088545a1099775323f9f2, type: 3}
   - {fileID: -1319816984, guid: b2938885e77088545a1099775323f9f2, type: 3}
@@ -691,11 +703,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed234be4642fbcc429e82a2f4799649a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FlipFlags: 0
   _axis:
     _x:
-      _value: 1
+      _value: 0
     _y:
-      _value: 1
+      _value: 0
 --- !u!114 &9037070018801477558
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -708,6 +721,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52063f0c791109049a6a18e56e7ae724, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FlipFlags: 0
   _angle:
     _min: -45
     _max: 45
@@ -754,7 +768,7 @@ Transform:
   m_GameObject: {fileID: 5332015314104257341}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.29078892, w: 0.9567873}
-  m_LocalPosition: {x: -2.3, y: -1.24, z: 0.06}
+  m_LocalPosition: {x: -1.88, y: 0.1, z: 0.06}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -824,6 +838,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e930c06d64c3dfa4fb091ff8a052ad94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FlipFlags: 0
   _sprites:
   - {fileID: 826127770, guid: b2938885e77088545a1099775323f9f2, type: 3}
   - {fileID: -1319816984, guid: b2938885e77088545a1099775323f9f2, type: 3}
@@ -839,11 +854,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed234be4642fbcc429e82a2f4799649a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FlipFlags: 0
   _axis:
     _x:
-      _value: 1
+      _value: 0
     _y:
-      _value: 1
+      _value: 0
 --- !u!114 &3873926642459536122
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -856,6 +872,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52063f0c791109049a6a18e56e7ae724, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FlipFlags: 0
   _angle:
     _min: -45
     _max: 45
@@ -988,6 +1005,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e930c06d64c3dfa4fb091ff8a052ad94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FlipFlags: 0
   _sprites:
   - {fileID: 21300000, guid: c9c8beaaab601b5449855fe6ded5dfa6, type: 3}
   - {fileID: 21300000, guid: bcc4333e3668b014083b40b8493b403b, type: 3}
