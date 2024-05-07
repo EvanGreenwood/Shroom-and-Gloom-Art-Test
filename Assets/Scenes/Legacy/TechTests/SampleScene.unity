@@ -345,6 +345,9 @@ GameObject:
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
   - component: {fileID: 519420033}
+  - component: {fileID: 519420034}
+  - component: {fileID: 519420036}
+  - component: {fileID: 519420035}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -443,41 +446,49 @@ MonoBehaviour:
   _bobRate: 1
   _headHeight: 1.6
   maxXAngle: 35
-  baseXAngle: -5
   maxYAngle: 35
-  _headCamera: {fileID: 0}
-  _tunnel: {fileID: 0}
---- !u!1 &537470452
-GameObject:
+  _headCamera: {fileID: 519420031}
+  _tunnel: {fileID: 1392419565}
+--- !u!114 &519420034
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 537470454}
-  m_Layer: 0
-  m_Name: Tunnel Destination
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &537470454
-Transform:
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 096a733823e81485784ebd1193459c2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &519420035
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 537470452}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 23.4}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da4b15f4e031a40fe93d65b3303d73f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &519420036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 564411645f46841fda907f5a1ad9e14e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OuterRadius: 10
+  InnerRadius: 2
+  Intensity: 1
+  Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1073677972
 GameObject:
   m_ObjectHideFlags: 0
@@ -592,6 +603,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1392419566}
+  - component: {fileID: 1392419567}
   - component: {fileID: 1392419565}
   m_Layer: 0
   m_Name: Tunnel
@@ -612,7 +624,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f743e6c0a9ec45e4abb4374dc99d4a09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _destination: {fileID: 537470454}
   _colorGradient:
     serializedVersion: 2
     key0: {r: 1, g: 1, b: 1, a: 1}
@@ -645,28 +656,20 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   _particles: {fileID: 2402285776899386762, guid: 8e61f67cd760b423db14eb998271668d, type: 3}
   _particleSpawnDistance: 5
-  _ySlopeCurve:
-    serializedVersion: 2
-    m_Curve: []
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  _sidewaysCurve:
-    serializedVersion: 2
-    m_Curve: []
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
   _baseTunnelWidth: 1
   _lumpyWidth: 0.5
   _clearingWidth: 1
+  _clearingDepth: 2.33
   wallElements:
   - name: Wall Thorns
     wallPrefabs:
     - {fileID: 717079983591251126, guid: 1c9cc17696a50154985091ca956b6bb9, type: 3}
     zOffset: 0
     spacing: 0.5
-    width: 5.5
+    width: 3
+    heightOffset:
+      _min: 0
+      _max: 0.1
     verticalLoopLength: 5
     verticalLoopIncrement: 2
     minMaxAngle:
@@ -683,6 +686,9 @@ MonoBehaviour:
     zOffset: 0.1
     spacing: 1
     width: 3.2
+    heightOffset:
+      _min: 0
+      _max: 0.1
     verticalLoopLength: 3
     verticalLoopIncrement: 1
     minMaxAngle:
@@ -693,10 +699,20 @@ MonoBehaviour:
       _max: 0.3
     randomRotation: 10
     randomFlipY: 0
+  flatWallPrefab: {fileID: 0}
+  flatWallSpacing: 1
+  flatWallOffset: 1
   surroundElements: []
   floorElements: []
+  flatFloorPrefab: {fileID: 0}
+  flatFloorOffset: -1
+  flatFloorSpacing: 1
   ceilingElements: []
+  flatCeilingPrefab: {fileID: 0}
+  flatCeilingSpacing: 1
+  flatCeilingOffset: 1
   _drawGizmos: 0
+  _generatedIsSelectable: 0
 --- !u!4 &1392419566
 Transform:
   m_ObjectHideFlags: 0
@@ -712,6 +728,86 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1392419567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1392419564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dab5c7d4c32e743048dfca98e2d5914f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Spline:
+    m_EditModeType: 1
+    m_Knots: []
+    m_MetaData: []
+    m_Closed: 0
+    m_IntData:
+      m_Data: []
+    m_FloatData:
+      m_Data: []
+    m_Float4Data:
+      m_Data: []
+    m_ObjectData:
+      m_Data: []
+  m_Splines:
+  - m_EditModeType: 1
+    m_Knots:
+    - Position:
+        x: 0
+        y: 0
+        z: 0
+      TangentIn:
+        x: 0
+        y: 0
+        z: -1
+      TangentOut:
+        x: 0
+        y: 0
+        z: 1
+      Rotation:
+        value:
+          x: 0
+          y: 0
+          z: 0
+          w: 1
+    - Position:
+        x: 0
+        y: 0
+        z: 23.4
+      TangentIn:
+        x: 0
+        y: 0
+        z: -1
+      TangentOut:
+        x: 0
+        y: 0
+        z: 1
+      Rotation:
+        value:
+          x: 0
+          y: 0
+          z: 0
+          w: 1
+    m_MetaData:
+    - Mode: 2
+      Tension: 0.5
+    - Mode: 2
+      Tension: 0.5
+    m_Closed: 0
+    m_IntData:
+      m_Data: []
+    m_FloatData:
+      m_Data: []
+    m_Float4Data:
+      m_Data: []
+    m_ObjectData:
+      m_Data: []
+  m_Knots:
+    m_KnotsLink: []
 --- !u!1001 &6823202743071783813
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -776,7 +872,6 @@ SceneRoots:
   - {fileID: 519420032}
   - {fileID: 6823202743071783813}
   - {fileID: 1392419566}
-  - {fileID: 537470454}
   - {fileID: 20763650}
   - {fileID: 1073677976}
   - {fileID: 342873034}

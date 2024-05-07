@@ -344,6 +344,42 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1404780147}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &257580948
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 257580949}
+  m_Layer: 0
+  m_Name: OldTunnels
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &257580949
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 257580948}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 825302864}
+  - {fileID: 1265775187}
+  - {fileID: 1633758377}
+  - {fileID: 1404780147}
+  - {fileID: 959034233}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &274203387
 GameObject:
   m_ObjectHideFlags: 0
@@ -856,37 +892,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1633758377}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &537470452
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 537470454}
-  m_Layer: 0
-  m_Name: Tunnel Destination
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &537470454
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 537470452}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9, y: -5, z: 20}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1392419566}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &825302862
 GameObject:
   m_ObjectHideFlags: 0
@@ -897,6 +902,7 @@ GameObject:
   m_Component:
   - component: {fileID: 825302864}
   - component: {fileID: 825302863}
+  - component: {fileID: 825302865}
   m_Layer: 0
   m_Name: Tunnel (6)
   m_TagString: Untagged
@@ -916,7 +922,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f743e6c0a9ec45e4abb4374dc99d4a09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _destination: {fileID: 1498460031}
   _colorGradient:
     serializedVersion: 2
     key0: {r: 0.6981132, g: 0.535298, b: 0.50448555, a: 1}
@@ -949,120 +954,10 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   _particles: {fileID: 0}
   _particleSpawnDistance: 1
-  _ySlopeCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0.0022572102
-      outSlope: 0.0022572102
-      tangentMode: 34
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 0.10359369
-      value: 0.00023383275
-      inSlope: 0.003398362
-      outSlope: 0.003398362
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.119341046
-    - serializedVersion: 3
-      time: 0.40461358
-      value: 0.49593857
-      inSlope: -0.011748202
-      outSlope: -0.011748202
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.14077926
-    - serializedVersion: 3
-      time: 0.59627515
-      value: 0.49482068
-      inSlope: -0.010673329
-      outSlope: -0.010673329
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.19391015
-    - serializedVersion: 3
-      time: 0.90218717
-      value: 0.99793416
-      inSlope: 0.012348449
-      outSlope: 0.012348449
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 1
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0.02112031
-      outSlope: 0.02112031
-      tangentMode: 34
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  _sidewaysCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: -0.0003954512
-      value: -0.00028119795
-      inSlope: 0.00043191956
-      outSlope: 0.00043191956
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0.3246074
-    - serializedVersion: 3
-      time: 0.2594687
-      value: 0.32345402
-      inSlope: 0.00181374
-      outSlope: 0.00181374
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.22513789
-    - serializedVersion: 3
-      time: 0.69749814
-      value: -0.22332543
-      inSlope: 0.0017330066
-      outSlope: 0.0017330066
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.20012432
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 0.92046
-      value: -0.000050597824
-      inSlope: -0.027862348
-      outSlope: -0.027862348
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.80027926
-    - serializedVersion: 3
-      time: 0.9996046
-      value: -0.00028119795
-      inSlope: -0.004851665
-      outSlope: -0.004851665
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.23839074
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
   _baseTunnelWidth: 1
   _lumpyWidth: 0.5
   _clearingWidth: 2.7
+  _clearingDepth: 2.33
   wallElements:
   - name: Wall Thorns
     wallPrefabs:
@@ -1070,6 +965,9 @@ MonoBehaviour:
     zOffset: 0
     spacing: 0.2
     width: 1
+    heightOffset:
+      _min: 0
+      _max: 0.1
     verticalLoopLength: 5
     verticalLoopIncrement: 2
     minMaxAngle:
@@ -1080,6 +978,9 @@ MonoBehaviour:
       _max: 2
     randomRotation: 5
     randomFlipY: 1
+  flatWallPrefab: {fileID: 0}
+  flatWallSpacing: 1
+  flatWallOffset: 1
   surroundElements: []
   floorElements:
   - name: Floor
@@ -1096,6 +997,9 @@ MonoBehaviour:
       _min: -0.05
       _max: 0.05
     randomFlipX: 1
+  flatFloorPrefab: {fileID: 0}
+  flatFloorOffset: -1
+  flatFloorSpacing: 1
   ceilingElements:
   - name: Ceiling
     ceilingPrefabs:
@@ -1112,7 +1016,11 @@ MonoBehaviour:
       _min: -0.03
       _max: 0.03
     randomFlipX: 1
+  flatCeilingPrefab: {fileID: 0}
+  flatCeilingSpacing: 1
+  flatCeilingOffset: 1
   _drawGizmos: 0
+  _generatedIsSelectable: 0
 --- !u!4 &825302864
 Transform:
   m_ObjectHideFlags: 0
@@ -1121,14 +1029,54 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 825302862}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 22, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1498460031}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 257580949}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &825302865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 825302862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dab5c7d4c32e743048dfca98e2d5914f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Spline:
+    m_EditModeType: 1
+    m_Knots: []
+    m_MetaData: []
+    m_Closed: 0
+    m_IntData:
+      m_Data: []
+    m_FloatData:
+      m_Data: []
+    m_Float4Data:
+      m_Data: []
+    m_ObjectData:
+      m_Data: []
+  m_Splines:
+  - m_EditModeType: 1
+    m_Knots: []
+    m_MetaData: []
+    m_Closed: 0
+    m_IntData:
+      m_Data: []
+    m_FloatData:
+      m_Data: []
+    m_Float4Data:
+      m_Data: []
+    m_ObjectData:
+      m_Data: []
+  m_Knots:
+    m_KnotsLink: []
 --- !u!1 &959034231
 GameObject:
   m_ObjectHideFlags: 0
@@ -1139,6 +1087,7 @@ GameObject:
   m_Component:
   - component: {fileID: 959034233}
   - component: {fileID: 959034232}
+  - component: {fileID: 959034234}
   m_Layer: 0
   m_Name: Tunnel (1)
   m_TagString: Untagged
@@ -1158,7 +1107,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f743e6c0a9ec45e4abb4374dc99d4a09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _destination: {fileID: 1774164641}
   _colorGradient:
     serializedVersion: 2
     key0: {r: 0.6981132, g: 0.535298, b: 0.50448555, a: 1}
@@ -1191,21 +1139,10 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   _particles: {fileID: 0}
   _particleSpawnDistance: 1
-  _ySlopeCurve:
-    serializedVersion: 2
-    m_Curve: []
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  _sidewaysCurve:
-    serializedVersion: 2
-    m_Curve: []
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
   _baseTunnelWidth: 1
   _lumpyWidth: 0.5
   _clearingWidth: 1
+  _clearingDepth: 2.33
   wallElements:
   - name: Wall Thorns
     wallPrefabs:
@@ -1213,6 +1150,9 @@ MonoBehaviour:
     zOffset: 0
     spacing: 0.5
     width: 5
+    heightOffset:
+      _min: 0
+      _max: 0.1
     verticalLoopLength: 5
     verticalLoopIncrement: 2
     minMaxAngle:
@@ -1229,6 +1169,9 @@ MonoBehaviour:
     zOffset: 0.1
     spacing: 1
     width: 3.2
+    heightOffset:
+      _min: 0
+      _max: 0.1
     verticalLoopLength: 3
     verticalLoopIncrement: 1
     minMaxAngle:
@@ -1239,6 +1182,9 @@ MonoBehaviour:
       _max: 0.3
     randomRotation: 10
     randomFlipY: 0
+  flatWallPrefab: {fileID: 0}
+  flatWallSpacing: 1
+  flatWallOffset: 1
   surroundElements: []
   floorElements:
   - name: Floor
@@ -1255,6 +1201,9 @@ MonoBehaviour:
       _min: -0.05
       _max: 0.05
     randomFlipX: 1
+  flatFloorPrefab: {fileID: 0}
+  flatFloorOffset: -1
+  flatFloorSpacing: 1
   ceilingElements:
   - name: Ceiling
     ceilingPrefabs:
@@ -1271,7 +1220,11 @@ MonoBehaviour:
       _min: -0.03
       _max: 0.03
     randomFlipX: 1
+  flatCeilingPrefab: {fileID: 0}
+  flatCeilingSpacing: 1
+  flatCeilingOffset: 1
   _drawGizmos: 0
+  _generatedIsSelectable: 0
 --- !u!4 &959034233
 Transform:
   m_ObjectHideFlags: 0
@@ -1280,14 +1233,54 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 959034231}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 3, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1774164641}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 257580949}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &959034234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 959034231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dab5c7d4c32e743048dfca98e2d5914f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Spline:
+    m_EditModeType: 1
+    m_Knots: []
+    m_MetaData: []
+    m_Closed: 0
+    m_IntData:
+      m_Data: []
+    m_FloatData:
+      m_Data: []
+    m_Float4Data:
+      m_Data: []
+    m_ObjectData:
+      m_Data: []
+  m_Splines:
+  - m_EditModeType: 1
+    m_Knots: []
+    m_MetaData: []
+    m_Closed: 0
+    m_IntData:
+      m_Data: []
+    m_FloatData:
+      m_Data: []
+    m_Float4Data:
+      m_Data: []
+    m_ObjectData:
+      m_Data: []
+  m_Knots:
+    m_KnotsLink: []
 --- !u!1 &970142069
 GameObject:
   m_ObjectHideFlags: 0
@@ -1297,9 +1290,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 970142071}
+  - component: {fileID: 970142072}
   - component: {fileID: 970142070}
   m_Layer: 0
-  m_Name: Tunnel (5)
+  m_Name: Tunnel2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1317,7 +1311,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f743e6c0a9ec45e4abb4374dc99d4a09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _destination: {fileID: 1158250313}
   _colorGradient:
     serializedVersion: 2
     key0: {r: 0.6981132, g: 0.535298, b: 0.50448555, a: 1}
@@ -1350,136 +1343,20 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   _particles: {fileID: 0}
   _particleSpawnDistance: 1
-  _ySlopeCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0.022322131
-      outSlope: 0.022322131
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0.31192017
-    - serializedVersion: 3
-      time: 0.1766485
-      value: -0.0076217502
-      inSlope: -0.053499464
-      outSlope: -0.053499464
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.1081997
-    - serializedVersion: 3
-      time: 0.384241
-      value: -0.2936522
-      inSlope: -0.6624522
-      outSlope: -0.6624522
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.5514416
-    - serializedVersion: 3
-      time: 0.58818763
-      value: -0.30788502
-      inSlope: 0.38006353
-      outSlope: 0.38006353
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.3128165
-    - serializedVersion: 3
-      time: 0.8616677
-      value: 0.7636446
-      inSlope: 3.6297104
-      outSlope: 3.6297104
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0.44205347
-      outSlope: 0.44205347
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.78319275
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  _sidewaysCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: -0.0003954512
-      value: -0.00028119795
-      inSlope: -0.0016227877
-      outSlope: -0.0016227877
-      tangentMode: 34
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 0.06443757
-      value: -0.00038640818
-      inSlope: -0.041843105
-      outSlope: -0.041843105
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.24401179
-    - serializedVersion: 3
-      time: 0.2777436
-      value: 2.4847345
-      inSlope: 0.032429907
-      outSlope: 0.032429907
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 1
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 0.74834627
-      value: -1.1701366
-      inSlope: -1.5390154
-      outSlope: -1.5390154
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.42379868
-    - serializedVersion: 3
-      time: 0.9013934
-      value: -0.0051849885
-      inSlope: 0.039449234
-      outSlope: 0.039449234
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 1
-    - serializedVersion: 3
-      time: 0.9996046
-      value: -0.00028119795
-      inSlope: 0.049931087
-      outSlope: 0.049931087
-      tangentMode: 34
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
   _baseTunnelWidth: 1
   _lumpyWidth: 0.5
   _clearingWidth: 4
+  _clearingDepth: 2.33
   wallElements:
   - name: Wall Thorns
     wallPrefabs:
     - {fileID: 717079983591251126, guid: 2fadf5ce0ef2c9f4893132f5f32d3387, type: 3}
     zOffset: 0
     spacing: 0.2
-    width: 1
+    width: 0.5
+    heightOffset:
+      _min: 2
+      _max: 2
     verticalLoopLength: 5
     verticalLoopIncrement: 2
     minMaxAngle:
@@ -1490,6 +1367,9 @@ MonoBehaviour:
       _max: 2
     randomRotation: 5
     randomFlipY: 1
+  flatWallPrefab: {fileID: 0}
+  flatWallSpacing: 1
+  flatWallOffset: 1
   surroundElements: []
   floorElements:
   - name: Floor
@@ -1506,6 +1386,9 @@ MonoBehaviour:
       _min: -0.05
       _max: 0.05
     randomFlipX: 1
+  flatFloorPrefab: {fileID: 0}
+  flatFloorOffset: -1
+  flatFloorSpacing: 1
   ceilingElements:
   - name: Ceiling
     ceilingPrefabs:
@@ -1522,7 +1405,11 @@ MonoBehaviour:
       _min: -0.03
       _max: 0.03
     randomFlipX: 1
+  flatCeilingPrefab: {fileID: 0}
+  flatCeilingSpacing: 1
+  flatCeilingOffset: 1
   _drawGizmos: 0
+  _generatedIsSelectable: 0
 --- !u!4 &970142071
 Transform:
   m_ObjectHideFlags: 0
@@ -1532,44 +1419,92 @@ Transform:
   m_GameObject: {fileID: 970142069}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12, y: -5, z: 20}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1158250313}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1158250312
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1158250313}
-  m_Layer: 0
-  m_Name: Tunnel Destination
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1158250313
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1158250312}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -18, y: -5, z: 28}
+  m_LocalPosition: {x: -11.63, y: -5, z: 20.012}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 970142071}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &970142072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 970142069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dab5c7d4c32e743048dfca98e2d5914f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Spline:
+    m_EditModeType: 1
+    m_Knots: []
+    m_MetaData: []
+    m_Closed: 0
+    m_IntData:
+      m_Data: []
+    m_FloatData:
+      m_Data: []
+    m_Float4Data:
+      m_Data: []
+    m_ObjectData:
+      m_Data: []
+  m_Splines:
+  - m_EditModeType: 1
+    m_Knots:
+    - Position:
+        x: 0
+        y: 0
+        z: 0
+      TangentIn:
+        x: 0
+        y: 0
+        z: -7.511545
+      TangentOut:
+        x: 0
+        y: 0
+        z: 7.511545
+      Rotation:
+        value:
+          x: 0.1728748
+          y: -0.031141555
+          z: -0.0500664
+          w: 0.9831775
+    - Position:
+        x: 0
+        y: -6.2
+        z: 28.8
+      TangentIn:
+        x: 0
+        y: 0
+        z: -16.406437
+      TangentOut:
+        x: 0
+        y: 0
+        z: 16.406437
+      Rotation:
+        value:
+          x: 0
+          y: -0.24654073
+          z: -0
+          w: 0.9691324
+    m_MetaData:
+    - Mode: 2
+      Tension: 0.5
+    - Mode: 2
+      Tension: 0.5
+    m_Closed: 0
+    m_IntData:
+      m_Data: []
+    m_FloatData:
+      m_Data: []
+    m_Float4Data:
+      m_Data: []
+    m_ObjectData:
+      m_Data: []
+  m_Knots:
+    m_KnotsLink: []
 --- !u!1 &1265775185
 GameObject:
   m_ObjectHideFlags: 0
@@ -1580,6 +1515,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1265775187}
   - component: {fileID: 1265775186}
+  - component: {fileID: 1265775188}
   m_Layer: 0
   m_Name: Tunnel (4)
   m_TagString: Untagged
@@ -1599,7 +1535,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f743e6c0a9ec45e4abb4374dc99d4a09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _destination: {fileID: 1433276461}
   _colorGradient:
     serializedVersion: 2
     key0: {r: 0.6981132, g: 0.535298, b: 0.50448555, a: 1}
@@ -1632,111 +1567,10 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   _particles: {fileID: 0}
   _particleSpawnDistance: 1
-  _ySlopeCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0.0022572102
-      outSlope: 0.0022572102
-      tangentMode: 34
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 0.10359369
-      value: 0.00023383275
-      inSlope: 0.003398362
-      outSlope: 0.003398362
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.119341046
-    - serializedVersion: 3
-      time: 0.40461358
-      value: 0.49593857
-      inSlope: -0.011748202
-      outSlope: -0.011748202
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.14077926
-    - serializedVersion: 3
-      time: 0.59627515
-      value: 0.49482068
-      inSlope: -0.010673329
-      outSlope: -0.010673329
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.19391015
-    - serializedVersion: 3
-      time: 0.90218717
-      value: 0.99793416
-      inSlope: 0.012348449
-      outSlope: 0.012348449
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 1
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0.02112031
-      outSlope: 0.02112031
-      tangentMode: 34
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  _sidewaysCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: -0.0003954512
-      value: -0.00028119795
-      inSlope: 0.00043191956
-      outSlope: 0.00043191956
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0.3246074
-    - serializedVersion: 3
-      time: 0.2594687
-      value: 0.32345402
-      inSlope: 0.00181374
-      outSlope: 0.00181374
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.22513789
-    - serializedVersion: 3
-      time: 0.69749814
-      value: -0.22332543
-      inSlope: 0.0017330066
-      outSlope: 0.0017330066
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.20012432
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 0.9996046
-      value: -0.00028119795
-      inSlope: -0.004851665
-      outSlope: -0.004851665
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.23839074
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
   _baseTunnelWidth: 1
   _lumpyWidth: 0.5
   _clearingWidth: 2.7
+  _clearingDepth: 2.33
   wallElements:
   - name: Wall Thorns
     wallPrefabs:
@@ -1744,6 +1578,9 @@ MonoBehaviour:
     zOffset: 0
     spacing: 0.3333
     width: 1
+    heightOffset:
+      _min: 0
+      _max: 0.1
     verticalLoopLength: 5
     verticalLoopIncrement: 2
     minMaxAngle:
@@ -1754,6 +1591,9 @@ MonoBehaviour:
       _max: 2.5
     randomRotation: 3
     randomFlipY: 1
+  flatWallPrefab: {fileID: 0}
+  flatWallSpacing: 1
+  flatWallOffset: 1
   surroundElements: []
   floorElements:
   - name: Floor
@@ -1770,6 +1610,9 @@ MonoBehaviour:
       _min: -0.05
       _max: 0.05
     randomFlipX: 1
+  flatFloorPrefab: {fileID: 0}
+  flatFloorOffset: -1
+  flatFloorSpacing: 1
   ceilingElements:
   - name: Ceiling
     ceilingPrefabs:
@@ -1786,7 +1629,11 @@ MonoBehaviour:
       _min: -0.03
       _max: 0.03
     randomFlipX: 1
+  flatCeilingPrefab: {fileID: 0}
+  flatCeilingSpacing: 1
+  flatCeilingOffset: 1
   _drawGizmos: 0
+  _generatedIsSelectable: 0
 --- !u!4 &1265775187
 Transform:
   m_ObjectHideFlags: 0
@@ -1795,14 +1642,54 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1265775185}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -23, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1433276461}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 257580949}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1265775188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1265775185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dab5c7d4c32e743048dfca98e2d5914f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Spline:
+    m_EditModeType: 1
+    m_Knots: []
+    m_MetaData: []
+    m_Closed: 0
+    m_IntData:
+      m_Data: []
+    m_FloatData:
+      m_Data: []
+    m_Float4Data:
+      m_Data: []
+    m_ObjectData:
+      m_Data: []
+  m_Splines:
+  - m_EditModeType: 1
+    m_Knots: []
+    m_MetaData: []
+    m_Closed: 0
+    m_IntData:
+      m_Data: []
+    m_FloatData:
+      m_Data: []
+    m_Float4Data:
+      m_Data: []
+    m_ObjectData:
+      m_Data: []
+  m_Knots:
+    m_KnotsLink: []
 --- !u!1 &1273125778
 GameObject:
   m_ObjectHideFlags: 0
@@ -2002,9 +1889,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1392419566}
+  - component: {fileID: 1392419567}
   - component: {fileID: 1392419565}
   m_Layer: 0
-  m_Name: Tunnel
+  m_Name: Tunnel1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2022,7 +1910,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f743e6c0a9ec45e4abb4374dc99d4a09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _destination: {fileID: 537470454}
   _colorGradient:
     serializedVersion: 2
     key0: {r: 0.6981132, g: 0.535298, b: 0.50448555, a: 1}
@@ -2055,121 +1942,14 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   _particles: {fileID: 0}
   _particleSpawnDistance: 1
-  _ySlopeCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0.0022572102
-      outSlope: 0.0022572102
-      tangentMode: 34
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 0.10359369
-      value: 0.00023383275
-      inSlope: 0.003398362
-      outSlope: 0.003398362
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.119341046
-    - serializedVersion: 3
-      time: 0.40461358
-      value: 0.49593857
-      inSlope: -0.011748202
-      outSlope: -0.011748202
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.14077926
-    - serializedVersion: 3
-      time: 0.59627515
-      value: 0.49482068
-      inSlope: -0.010673329
-      outSlope: -0.010673329
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.19391015
-    - serializedVersion: 3
-      time: 0.90218717
-      value: 0.99793416
-      inSlope: 0.012348449
-      outSlope: 0.012348449
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 1
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0.02112031
-      outSlope: 0.02112031
-      tangentMode: 34
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  _sidewaysCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: -0.0003954512
-      value: -0.00028119795
-      inSlope: 0.00043191956
-      outSlope: 0.00043191956
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0.3246074
-    - serializedVersion: 3
-      time: 0.2594687
-      value: 0.32345402
-      inSlope: 0.00181374
-      outSlope: 0.00181374
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.22513789
-    - serializedVersion: 3
-      time: 0.69749814
-      value: -0.22332543
-      inSlope: 0.0017330066
-      outSlope: 0.0017330066
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.20012432
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 0.92046
-      value: -0.000050597824
-      inSlope: -0.027862348
-      outSlope: -0.027862348
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.80027926
-    - serializedVersion: 3
-      time: 0.9996046
-      value: -0.00028119795
-      inSlope: -0.004851665
-      outSlope: -0.004851665
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.23839074
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  _baseTunnelWidth: 1
+  _baseTunnelWidth: 1.25
   _lumpyWidth: 0.5
   _clearingWidth: 2.7
+  _clearingDepth: 3
   wallElements: []
+  flatWallPrefab: {fileID: 0}
+  flatWallSpacing: 1
+  flatWallOffset: 1
   surroundElements:
   - name: Lumps
     surroundPrefabs:
@@ -2222,8 +2002,15 @@ MonoBehaviour:
       _min: -0.05
       _max: 0.05
     randomFlipX: 1
+  flatFloorPrefab: {fileID: 0}
+  flatFloorOffset: -1
+  flatFloorSpacing: 1
   ceilingElements: []
+  flatCeilingPrefab: {fileID: 0}
+  flatCeilingSpacing: 1
+  flatCeilingOffset: 1
   _drawGizmos: 0
+  _generatedIsSelectable: 0
 --- !u!4 &1392419566
 Transform:
   m_ObjectHideFlags: 0
@@ -2236,10 +2023,89 @@ Transform:
   m_LocalPosition: {x: -3, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 537470454}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1392419567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1392419564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dab5c7d4c32e743048dfca98e2d5914f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Spline:
+    m_EditModeType: 1
+    m_Knots: []
+    m_MetaData: []
+    m_Closed: 0
+    m_IntData:
+      m_Data: []
+    m_FloatData:
+      m_Data: []
+    m_Float4Data:
+      m_Data: []
+    m_ObjectData:
+      m_Data: []
+  m_Splines:
+  - m_EditModeType: 1
+    m_Knots:
+    - Position:
+        x: 0
+        y: 0
+        z: 0
+      TangentIn:
+        x: 0
+        y: 0
+        z: -6.3561645
+      TangentOut:
+        x: 0
+        y: 0
+        z: 6.3561645
+      Rotation:
+        value:
+          x: 0.03029754
+          y: -0.108241
+          z: 0.0073855515
+          w: 0.9936354
+    - Position:
+        x: -8.63
+        y: -5
+        z: 20
+      TangentIn:
+        x: 0
+        y: 0
+        z: -8.218664
+      TangentOut:
+        x: 0
+        y: 0
+        z: 8.218664
+      Rotation:
+        value:
+          x: 0.1003536
+          y: -0.06754966
+          z: -0.019111775
+          w: 0.9924721
+    m_MetaData:
+    - Mode: 2
+      Tension: 0.5
+    - Mode: 2
+      Tension: 0.5
+    m_Closed: 0
+    m_IntData:
+      m_Data: []
+    m_FloatData:
+      m_Data: []
+    m_Float4Data:
+      m_Data: []
+    m_ObjectData:
+      m_Data: []
+  m_Knots:
+    m_KnotsLink: []
 --- !u!1 &1404780145
 GameObject:
   m_ObjectHideFlags: 0
@@ -2250,6 +2116,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1404780147}
   - component: {fileID: 1404780146}
+  - component: {fileID: 1404780148}
   m_Layer: 0
   m_Name: Tunnel (3)
   m_TagString: Untagged
@@ -2269,7 +2136,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f743e6c0a9ec45e4abb4374dc99d4a09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _destination: {fileID: 100361391}
   _colorGradient:
     serializedVersion: 2
     key0: {r: 0.6981132, g: 0.535298, b: 0.50448555, a: 1}
@@ -2302,57 +2168,10 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   _particles: {fileID: 0}
   _particleSpawnDistance: 1
-  _ySlopeCurve:
-    serializedVersion: 2
-    m_Curve: []
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  _sidewaysCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: -0.0003954512
-      value: -0.00028119795
-      inSlope: 0.00043191956
-      outSlope: 0.00043191956
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0.3246074
-    - serializedVersion: 3
-      time: 0.2594687
-      value: 0.32345402
-      inSlope: 0.00181374
-      outSlope: 0.00181374
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.22513789
-    - serializedVersion: 3
-      time: 0.69749814
-      value: -0.22332543
-      inSlope: 0.0017330066
-      outSlope: 0.0017330066
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.20012432
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 0.9996046
-      value: -0.00028119795
-      inSlope: -0.004851665
-      outSlope: -0.004851665
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.23839074
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
   _baseTunnelWidth: 1
   _lumpyWidth: 0.5
   _clearingWidth: 2.7
+  _clearingDepth: 2.33
   wallElements:
   - name: Wall Thorns
     wallPrefabs:
@@ -2360,6 +2179,9 @@ MonoBehaviour:
     zOffset: 0
     spacing: 0.3333
     width: 2
+    heightOffset:
+      _min: 0
+      _max: 0.1
     verticalLoopLength: 5
     verticalLoopIncrement: 2
     minMaxAngle:
@@ -2376,6 +2198,9 @@ MonoBehaviour:
     zOffset: 0.01
     spacing: 0.5
     width: 2.5
+    heightOffset:
+      _min: 0
+      _max: 0.1
     verticalLoopLength: 5
     verticalLoopIncrement: 2
     minMaxAngle:
@@ -2386,6 +2211,9 @@ MonoBehaviour:
       _max: 0
     randomRotation: 13
     randomFlipY: 0
+  flatWallPrefab: {fileID: 0}
+  flatWallSpacing: 1
+  flatWallOffset: 1
   surroundElements: []
   floorElements:
   - name: Floor
@@ -2402,6 +2230,9 @@ MonoBehaviour:
       _min: -0.05
       _max: 0.05
     randomFlipX: 1
+  flatFloorPrefab: {fileID: 0}
+  flatFloorOffset: -1
+  flatFloorSpacing: 1
   ceilingElements:
   - name: Ceiling
     ceilingPrefabs:
@@ -2418,7 +2249,11 @@ MonoBehaviour:
       _min: -0.03
       _max: 0.03
     randomFlipX: 1
+  flatCeilingPrefab: {fileID: 0}
+  flatCeilingSpacing: 1
+  flatCeilingOffset: 1
   _drawGizmos: 0
+  _generatedIsSelectable: 0
 --- !u!4 &1404780147
 Transform:
   m_ObjectHideFlags: 0
@@ -2427,14 +2262,54 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1404780145}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 5, y: 0, z: 2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 100361391}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 257580949}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1404780148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1404780145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dab5c7d4c32e743048dfca98e2d5914f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Spline:
+    m_EditModeType: 1
+    m_Knots: []
+    m_MetaData: []
+    m_Closed: 0
+    m_IntData:
+      m_Data: []
+    m_FloatData:
+      m_Data: []
+    m_Float4Data:
+      m_Data: []
+    m_ObjectData:
+      m_Data: []
+  m_Splines:
+  - m_EditModeType: 1
+    m_Knots: []
+    m_MetaData: []
+    m_Closed: 0
+    m_IntData:
+      m_Data: []
+    m_FloatData:
+      m_Data: []
+    m_Float4Data:
+      m_Data: []
+    m_ObjectData:
+      m_Data: []
+  m_Knots:
+    m_KnotsLink: []
 --- !u!1 &1433276460
 GameObject:
   m_ObjectHideFlags: 0
@@ -2492,43 +2367,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2906988584762988222, guid: adfe8b68d54fa4b2a953138a2b53f48d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.932
+      value: -8.499
       objectReference: {fileID: 0}
     - target: {fileID: 2906988584762988222, guid: adfe8b68d54fa4b2a953138a2b53f48d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.316
+      value: -1.669
       objectReference: {fileID: 0}
     - target: {fileID: 2906988584762988222, guid: adfe8b68d54fa4b2a953138a2b53f48d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10.821
+      value: 11.988
       objectReference: {fileID: 0}
     - target: {fileID: 2906988584762988222, guid: adfe8b68d54fa4b2a953138a2b53f48d, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9763321
+      value: 0.96953887
       objectReference: {fileID: 0}
     - target: {fileID: 2906988584762988222, guid: adfe8b68d54fa4b2a953138a2b53f48d, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.0046395077
+      value: 0.11587872
       objectReference: {fileID: 0}
     - target: {fileID: 2906988584762988222, guid: adfe8b68d54fa4b2a953138a2b53f48d, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.21520014
+      value: -0.21169375
       objectReference: {fileID: 0}
     - target: {fileID: 2906988584762988222, guid: adfe8b68d54fa4b2a953138a2b53f48d, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.021048773
+      value: 0.041860428
       objectReference: {fileID: 0}
     - target: {fileID: 2906988584762988222, guid: adfe8b68d54fa4b2a953138a2b53f48d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: 14.029
       objectReference: {fileID: 0}
     - target: {fileID: 2906988584762988222, guid: adfe8b68d54fa4b2a953138a2b53f48d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -24.86
+      value: -24.4
       objectReference: {fileID: 0}
     - target: {fileID: 2906988584762988222, guid: adfe8b68d54fa4b2a953138a2b53f48d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -2.47
+      value: 1.897
       objectReference: {fileID: 0}
     - target: {fileID: 2934818724176984467, guid: adfe8b68d54fa4b2a953138a2b53f48d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2692,6 +2567,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1633758377}
   - component: {fileID: 1633758376}
+  - component: {fileID: 1633758378}
   m_Layer: 0
   m_Name: Tunnel (2)
   m_TagString: Untagged
@@ -2711,7 +2587,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f743e6c0a9ec45e4abb4374dc99d4a09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _destination: {fileID: 486473229}
   _colorGradient:
     serializedVersion: 2
     key0: {r: 0.6981132, g: 0.535298, b: 0.50448555, a: 1}
@@ -2744,39 +2619,10 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   _particles: {fileID: 0}
   _particleSpawnDistance: 1
-  _ySlopeCurve:
-    serializedVersion: 2
-    m_Curve: []
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  _sidewaysCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: -0.0003954512
-      value: -0.00028119795
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 34
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 0.9996046
-      value: -0.00028119795
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 34
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
   _baseTunnelWidth: 1
   _lumpyWidth: 0.5
   _clearingWidth: 2.7
+  _clearingDepth: 2.33
   wallElements:
   - name: Wall Thorns
     wallPrefabs:
@@ -2784,6 +2630,9 @@ MonoBehaviour:
     zOffset: 0
     spacing: 0.3333
     width: 2
+    heightOffset:
+      _min: 0
+      _max: 0.1
     verticalLoopLength: 5
     verticalLoopIncrement: 2
     minMaxAngle:
@@ -2794,6 +2643,9 @@ MonoBehaviour:
       _max: 2.5
     randomRotation: 13
     randomFlipY: 0
+  flatWallPrefab: {fileID: 0}
+  flatWallSpacing: 1
+  flatWallOffset: 1
   surroundElements: []
   floorElements:
   - name: Floor
@@ -2810,6 +2662,9 @@ MonoBehaviour:
       _min: -0.05
       _max: 0.05
     randomFlipX: 1
+  flatFloorPrefab: {fileID: 0}
+  flatFloorOffset: -1
+  flatFloorSpacing: 1
   ceilingElements:
   - name: Ceiling
     ceilingPrefabs:
@@ -2826,7 +2681,11 @@ MonoBehaviour:
       _min: -0.03
       _max: 0.03
     randomFlipX: 1
+  flatCeilingPrefab: {fileID: 0}
+  flatCeilingSpacing: 1
+  flatCeilingOffset: 1
   _drawGizmos: 0
+  _generatedIsSelectable: 0
 --- !u!4 &1633758377
 Transform:
   m_ObjectHideFlags: 0
@@ -2835,14 +2694,54 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1633758375}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -32, y: -5, z: 15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 486473229}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 257580949}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1633758378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1633758375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dab5c7d4c32e743048dfca98e2d5914f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Spline:
+    m_EditModeType: 1
+    m_Knots: []
+    m_MetaData: []
+    m_Closed: 0
+    m_IntData:
+      m_Data: []
+    m_FloatData:
+      m_Data: []
+    m_Float4Data:
+      m_Data: []
+    m_ObjectData:
+      m_Data: []
+  m_Splines:
+  - m_EditModeType: 1
+    m_Knots: []
+    m_MetaData: []
+    m_Closed: 0
+    m_IntData:
+      m_Data: []
+    m_FloatData:
+      m_Data: []
+    m_Float4Data:
+      m_Data: []
+    m_ObjectData:
+      m_Data: []
+  m_Knots:
+    m_KnotsLink: []
 --- !u!1 &1774164640
 GameObject:
   m_ObjectHideFlags: 0
@@ -3109,15 +3008,12 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 434009612}
   - {fileID: 846687522224407855}
   - {fileID: 6823202743071783813}
+  - {fileID: 257580949}
   - {fileID: 1392419566}
-  - {fileID: 825302864}
   - {fileID: 970142071}
-  - {fileID: 1265775187}
-  - {fileID: 1633758377}
-  - {fileID: 1404780147}
-  - {fileID: 959034233}
   - {fileID: 1500226138}
   - {fileID: 330198598}
   - {fileID: 1294973855}
@@ -3129,4 +3025,3 @@ SceneRoots:
   - {fileID: 1273125780}
   - {fileID: 1791465375}
   - {fileID: 1433974892}
-  - {fileID: 434009612}

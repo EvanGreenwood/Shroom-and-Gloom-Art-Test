@@ -224,7 +224,6 @@ MonoBehaviour:
   _bobRate: 0.5
   _headHeight: 1.6
   maxXAngle: 45
-  baseXAngle: -5
   maxYAngle: 35
   _headCamera: {fileID: 3577085838745663624}
   _tunnel: {fileID: 0}
@@ -394,7 +393,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 564411645f46841fda907f5a1ad9e14e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OuterRadius: 10
-  InnerRadius: 2
+  OuterRadius: 9
+  InnerRadius: 0
   Intensity: 1
-  Color: {r: 1, g: 1, b: 1, a: 1}
+  Color: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 1}

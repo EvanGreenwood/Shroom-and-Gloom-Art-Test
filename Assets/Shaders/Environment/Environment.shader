@@ -104,9 +104,9 @@ Shader "SNG/Environment"
 		void surf( Input i , inout SurfaceOutput o )
 		{
 			o.Normal = float3(0,0,1);
-			int temp_output_17_0_g81 = 2;
-			float4 break129_g82 = ShroomLightRadiusAndIntensity[temp_output_17_0_g81];
-			float Intensity132_g82 = break129_g82.z;
+			int temp_output_17_0_g75 = 0;
+			float4 break129_g76 = ShroomLightRadiusAndIntensity[temp_output_17_0_g75];
+			float Intensity132_g76 = break129_g76.z;
 			float2 uv_MainTex = i.uv_texcoord * _MainTex_ST.xy + _MainTex_ST.zw;
 			float4 tex2DNode1 = tex2D( _MainTex, uv_MainTex );
 			float4 temp_output_3_0 = ( tex2DNode1 * i.vertexColor );
@@ -175,40 +175,21 @@ Shader "SNG/Environment"
 				float4 staticSwitch370 = staticSwitch280;
 			#endif
 			float4 Diffuse350 = staticSwitch370;
-			float3 temp_output_4_0_g81 = (ShroomLightPositions[temp_output_17_0_g81]).xyz;
+			float3 temp_output_4_0_g75 = (ShroomLightPositions[temp_output_17_0_g75]).xyz;
 			float3 ase_worldPos = i.worldPos;
-			float3 normalizeResult8_g81 = normalize( ( temp_output_4_0_g81 - ase_worldPos ) );
+			float3 normalizeResult8_g75 = normalize( ( temp_output_4_0_g75 - ase_worldPos ) );
 			float2 uv_Normal = i.uv_texcoord * _Normal_ST.xy + _Normal_ST.zw;
 			float3 NormalSample347 = UnpackNormal( tex2Dlod( _Normal, float4( uv_Normal, 0, _NormalMip) ) );
-			float3 normalizeResult5_g82 = normalize( (WorldNormalVector( i , NormalSample347 )) );
-			float dotResult15_g82 = dot( normalizeResult8_g81 , normalizeResult5_g82 );
-			float InnerRadius130_g82 = break129_g82.x;
-			float OuterRadius131_g82 = break129_g82.y;
-			float2 appendResult106_g82 = (float2(( (0.0 + (dotResult15_g82 - -1.0) * (1.0 - 0.0) / (1.0 - -1.0)) + ( _RampOffset + ( 1.0 - (0.0 + (distance( ase_worldPos , temp_output_4_0_g81 ) - InnerRadius130_g82) * (1.0 - 0.0) / (OuterRadius131_g82 - InnerRadius130_g82)) ) ) ) , 0.5));
-			int temp_output_17_0_g79 = 1;
-			float4 break129_g80 = ShroomLightRadiusAndIntensity[temp_output_17_0_g79];
-			float Intensity132_g80 = break129_g80.z;
-			float3 temp_output_4_0_g79 = (ShroomLightPositions[temp_output_17_0_g79]).xyz;
-			float3 normalizeResult8_g79 = normalize( ( temp_output_4_0_g79 - ase_worldPos ) );
-			float3 normalizeResult5_g80 = normalize( (WorldNormalVector( i , NormalSample347 )) );
-			float dotResult15_g80 = dot( normalizeResult8_g79 , normalizeResult5_g80 );
-			float InnerRadius130_g80 = break129_g80.x;
-			float OuterRadius131_g80 = break129_g80.y;
-			float2 appendResult106_g80 = (float2(( (0.0 + (dotResult15_g80 - -1.0) * (1.0 - 0.0) / (1.0 - -1.0)) + ( _RampOffset + ( 1.0 - (0.0 + (distance( ase_worldPos , temp_output_4_0_g79 ) - InnerRadius130_g80) * (1.0 - 0.0) / (OuterRadius131_g80 - InnerRadius130_g80)) ) ) ) , 0.5));
-			int temp_output_17_0_g75 = 0;
-			float4 break129_g76 = ShroomLightRadiusAndIntensity[temp_output_17_0_g75];
-			float Intensity132_g76 = break129_g76.z;
-			float3 temp_output_4_0_g75 = (ShroomLightPositions[temp_output_17_0_g75]).xyz;
-			float3 normalizeResult8_g75 = normalize( ( temp_output_4_0_g75 - ase_worldPos ) );
 			float3 normalizeResult5_g76 = normalize( (WorldNormalVector( i , NormalSample347 )) );
 			float dotResult15_g76 = dot( normalizeResult8_g75 , normalizeResult5_g76 );
 			float InnerRadius130_g76 = break129_g76.x;
 			float OuterRadius131_g76 = break129_g76.y;
 			float2 appendResult106_g76 = (float2(( (0.0 + (dotResult15_g76 - -1.0) * (1.0 - 0.0) / (1.0 - -1.0)) + ( _RampOffset + ( 1.0 - (0.0 + (distance( ase_worldPos , temp_output_4_0_g75 ) - InnerRadius130_g76) * (1.0 - 0.0) / (OuterRadius131_g76 - InnerRadius130_g76)) ) ) ) , 0.5));
+			float4 temp_output_364_0 = ( ( Intensity132_g76 * ( ShroomLightColors[temp_output_17_0_g75] * Diffuse350 ) ) * tex2D( _Ramp, appendResult106_g76 ) );
 			#ifdef _DISPLAYNORMALS_ON
 				float4 staticSwitch265 = float4( NormalSample347 , 0.0 );
 			#else
-				float4 staticSwitch265 = ( ( ( Intensity132_g82 * ( ShroomLightColors[temp_output_17_0_g81] * Diffuse350 ) ) * tex2D( _Ramp, appendResult106_g82 ) ) + ( ( ( Intensity132_g80 * ( ShroomLightColors[temp_output_17_0_g79] * Diffuse350 ) ) * tex2D( _Ramp, appendResult106_g80 ) ) + ( ( Intensity132_g76 * ( ShroomLightColors[temp_output_17_0_g75] * Diffuse350 ) ) * tex2D( _Ramp, appendResult106_g76 ) ) ) );
+				float4 staticSwitch265 = temp_output_364_0;
 			#endif
 			o.Emission = staticSwitch265.rgb;
 			o.Alpha = 1;
@@ -223,8 +204,8 @@ Shader "SNG/Environment"
 /*ASEBEGIN
 Version=19303
 Node;AmplifyShaderEditor.CommentaryNode;52;-4992,192;Inherit;False;1726.913;467.74;Applies fog based on camera depth;15;134;37;41;368;367;28;30;36;14;13;63;51;35;42;29;Apply Fog;1,1,1,1;0;0
-Node;AmplifyShaderEditor.RangedFloatNode;29;-4976,512;Inherit;False;Global;FogStart;FogStart;2;0;Create;True;0;0;0;False;0;False;1.5;3;0;0;0;1;FLOAT;0
-Node;AmplifyShaderEditor.RangedFloatNode;28;-4976,432;Inherit;False;Global;FogDistance;FogDistance;2;0;Create;True;0;0;0;False;0;False;20;20;0;0;0;1;FLOAT;0
+Node;AmplifyShaderEditor.RangedFloatNode;29;-4976,512;Inherit;False;Global;FogStart;FogStart;2;0;Create;True;0;0;0;False;0;False;1.5;0;0;0;0;1;FLOAT;0
+Node;AmplifyShaderEditor.RangedFloatNode;28;-4976,432;Inherit;False;Global;FogDistance;FogDistance;2;0;Create;True;0;0;0;False;0;False;20;0;0;0;0;1;FLOAT;0
 Node;AmplifyShaderEditor.CameraDepthFade;30;-4720,448;Inherit;False;3;2;FLOAT3;0,0,0;False;0;FLOAT;1;False;1;FLOAT;0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.RangedFloatNode;367;-4752,576;Inherit;False;Property;_FogIntensityCoefficient;FogIntensityCoefficient;5;0;Create;True;0;0;0;False;0;False;1;20;0;1;0;1;FLOAT;0
 Node;AmplifyShaderEditor.CommentaryNode;173;-5856,1008;Inherit;False;2228;819; Attempt to add some dynamisim to fog. Not good enough;29;156;158;160;152;162;163;164;165;155;157;159;151;128;130;129;62;136;61;138;64;140;65;171;137;142;172;135;170;169;Noisy Fog (needs work bad atm);1,1,1,1;0;0
@@ -266,7 +247,7 @@ Node;AmplifyShaderEditor.RangedFloatNode;170;-4032,1216;Inherit;False;Constant;_
 Node;AmplifyShaderEditor.OneMinusNode;51;-3680,432;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.SamplerNode;1;-4800,-640;Inherit;True;Property;_MainTex;MainTex;6;1;[PerRendererData];Create;True;0;0;0;False;0;False;-1;None;None;True;0;False;white;Auto;False;Object;-1;Auto;Texture2D;8;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;6;FLOAT;0;False;7;SAMPLERSTATE;;False;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.VertexColorNode;2;-4496,-352;Inherit;False;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
-Node;AmplifyShaderEditor.ColorNode;14;-4720,240;Inherit;False;Global;FogColor;FogColor;2;0;Create;True;0;0;0;False;0;False;0.1887822,0.1643645,0.509434,1;0,0,0,1;True;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
+Node;AmplifyShaderEditor.ColorNode;14;-4720,240;Inherit;False;Global;FogColor;FogColor;2;0;Create;True;0;0;0;False;0;False;0.1887822,0.1643645,0.509434,1;0,0,0,0;True;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.StaticSwitch;169;-3872,1232;Inherit;False;Property;_NoisyFog;NoisyFog;7;0;Create;True;0;0;0;False;0;False;0;1;1;True;;Toggle;2;Key0;Key1;Create;True;True;All;9;1;FLOAT;0;False;0;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;4;FLOAT;0;False;5;FLOAT;0;False;6;FLOAT;0;False;7;FLOAT;0;False;8;FLOAT;0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.SimpleAddOpNode;63;-3488,496;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.SimpleMultiplyOpNode;3;-4160,-448;Inherit;False;2;2;0;COLOR;0,0,0,0;False;1;COLOR;0,0,0,0;False;1;COLOR;0
@@ -283,19 +264,19 @@ Node;AmplifyShaderEditor.RegisterLocalVarNode;350;-2336,160;Inherit;False;Diffus
 Node;AmplifyShaderEditor.GetLocalVarNode;351;-1312,-704;Inherit;False;350;Diffuse;1;0;OBJECT;;False;1;COLOR;0
 Node;AmplifyShaderEditor.GetLocalVarNode;349;-1344,-784;Inherit;False;347;NormalSample;1;0;OBJECT;;False;1;FLOAT3;0
 Node;AmplifyShaderEditor.IntNode;353;-1312,-864;Inherit;False;Constant;_LightIndex0;LightIndex0;9;0;Create;True;0;0;0;False;0;False;0;0;False;0;1;INT;0
+Node;AmplifyShaderEditor.FunctionNode;364;-1056,-832;Inherit;False;SingleLightSample;1;;75;484ad8942c0a84b6fa71c3cc3a86f242;0;3;17;INT;0;False;15;FLOAT3;0,0,0;False;16;COLOR;1,1,1,1;False;1;COLOR;0
+Node;AmplifyShaderEditor.RegisterLocalVarNode;45;-4496,-448;Inherit;False;MainTexAlpha;-1;True;1;0;FLOAT;0;False;1;FLOAT;0
+Node;AmplifyShaderEditor.GetLocalVarNode;352;192,-240;Inherit;False;347;NormalSample;1;0;OBJECT;;False;1;FLOAT3;0
 Node;AmplifyShaderEditor.GetLocalVarNode;354;-864,-912;Inherit;False;350;Diffuse;1;0;OBJECT;;False;1;COLOR;0
 Node;AmplifyShaderEditor.GetLocalVarNode;355;-896,-992;Inherit;False;347;NormalSample;1;0;OBJECT;;False;1;FLOAT3;0
 Node;AmplifyShaderEditor.IntNode;356;-864,-1072;Inherit;False;Constant;_LightIndex1;LightIndex0;9;0;Create;True;0;0;0;False;0;False;1;0;False;0;1;INT;0
 Node;AmplifyShaderEditor.GetLocalVarNode;359;-864,-1152;Inherit;False;350;Diffuse;1;0;OBJECT;;False;1;COLOR;0
 Node;AmplifyShaderEditor.GetLocalVarNode;360;-896,-1232;Inherit;False;347;NormalSample;1;0;OBJECT;;False;1;FLOAT3;0
 Node;AmplifyShaderEditor.IntNode;361;-864,-1312;Inherit;False;Constant;_LightIndex2;LightIndex0;9;0;Create;True;0;0;0;False;0;False;2;0;False;0;1;INT;0
-Node;AmplifyShaderEditor.FunctionNode;364;-1056,-832;Inherit;False;SingleLightSample;1;;75;484ad8942c0a84b6fa71c3cc3a86f242;0;3;17;INT;0;False;15;FLOAT3;0,0,0;False;16;COLOR;1,1,1,1;False;1;COLOR;0
 Node;AmplifyShaderEditor.FunctionNode;366;-608,-1040;Inherit;False;SingleLightSample;1;;79;484ad8942c0a84b6fa71c3cc3a86f242;0;3;17;INT;0;False;15;FLOAT3;0,0,0;False;16;COLOR;1,1,1,1;False;1;COLOR;0
 Node;AmplifyShaderEditor.SimpleAddOpNode;358;-371.1859,-805.1718;Inherit;False;2;2;0;COLOR;0,0,0,0;False;1;COLOR;0,0,0,0;False;1;COLOR;0
 Node;AmplifyShaderEditor.FunctionNode;365;-608,-1280;Inherit;False;SingleLightSample;1;;81;484ad8942c0a84b6fa71c3cc3a86f242;0;3;17;INT;0;False;15;FLOAT3;0,0,0;False;16;COLOR;1,1,1,1;False;1;COLOR;0
-Node;AmplifyShaderEditor.RegisterLocalVarNode;45;-4496,-448;Inherit;False;MainTexAlpha;-1;True;1;0;FLOAT;0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.SimpleAddOpNode;363;-240,-1008;Inherit;False;2;2;0;COLOR;0,0,0,0;False;1;COLOR;0,0,0,0;False;1;COLOR;0
-Node;AmplifyShaderEditor.GetLocalVarNode;352;192,-240;Inherit;False;347;NormalSample;1;0;OBJECT;;False;1;FLOAT3;0
 Node;AmplifyShaderEditor.StaticSwitch;265;480,-272;Inherit;False;Property;_DisplayNormals;Display Normals;11;0;Create;True;0;0;0;False;0;False;0;0;0;True;;Toggle;2;Key0;Key1;Create;True;True;All;9;1;COLOR;0,0,0,0;False;0;COLOR;0,0,0,0;False;2;COLOR;0,0,0,0;False;3;COLOR;0,0,0,0;False;4;COLOR;0,0,0,0;False;5;COLOR;0,0,0,0;False;6;COLOR;0,0,0,0;False;7;COLOR;0,0,0,0;False;8;COLOR;0,0,0,0;False;1;COLOR;0
 Node;AmplifyShaderEditor.GetLocalVarNode;46;544,-32;Inherit;False;45;MainTexAlpha;1;0;OBJECT;;False;1;FLOAT;0
 Node;AmplifyShaderEditor.StandardSurfaceOutputNode;0;864,-304;Float;False;True;-1;2;ASEMaterialInspector;0;0;Unlit;SNG/Environment;False;False;False;False;True;False;True;True;True;True;False;False;False;False;True;False;False;False;False;False;False;Off;1;False;;1;False;;False;0;False;;0;False;;False;0;Masked;0.6;True;False;0;False;TransparentCutout;;AlphaTest;All;12;all;True;True;True;True;0;False;;False;0;False;;255;False;;255;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;False;2;15;10;25;False;0.5;False;0;5;False;;10;False;;0;0;False;;0;False;;0;False;;0;False;;0;False;0;0,0,0,0;VertexOffset;True;False;Cylindrical;False;True;Relative;0;;0;-1;-1;-1;0;False;0;0;False;;-1;0;False;;0;0;0;False;0.1;False;;0;False;;False;16;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;3;FLOAT;0;False;4;FLOAT;0;False;6;FLOAT3;0,0,0;False;7;FLOAT3;0,0,0;False;8;FLOAT;0;False;9;FLOAT;0;False;10;FLOAT;0;False;13;FLOAT3;0,0,0;False;11;FLOAT3;0,0,0;False;12;FLOAT3;0,0,0;False;16;FLOAT4;0,0,0,0;False;14;FLOAT4;0,0,0,0;False;15;FLOAT3;0,0,0;False;0
@@ -355,6 +336,7 @@ WireConnection;350;0;370;0
 WireConnection;364;17;353;0
 WireConnection;364;15;349;0
 WireConnection;364;16;351;0
+WireConnection;45;0;1;4
 WireConnection;366;17;356;0
 WireConnection;366;15;355;0
 WireConnection;366;16;354;0
@@ -363,12 +345,11 @@ WireConnection;358;1;364;0
 WireConnection;365;17;361;0
 WireConnection;365;15;360;0
 WireConnection;365;16;359;0
-WireConnection;45;0;1;4
 WireConnection;363;0;365;0
 WireConnection;363;1;358;0
-WireConnection;265;1;363;0
+WireConnection;265;1;364;0
 WireConnection;265;0;352;0
 WireConnection;0;2;265;0
 WireConnection;0;10;46;0
 ASEEND*/
-//CHKSM=8CC3DEEE651BACB512EBB2C6282347ED0C52FEDE
+//CHKSM=FE4ED2CC2CC83D2F80DA782F5E3FD6A20B278547

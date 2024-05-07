@@ -171,37 +171,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &524875271
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 524875272}
-  m_Layer: 0
-  m_Name: Tunnel Destination
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &524875272
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 524875271}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 5, z: 25}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &525790713
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -220,15 +189,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2336201325850330426, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
       propertyPath: Color.b
-      value: 0
+      value: 0.3584906
       objectReference: {fileID: 0}
     - target: {fileID: 2336201325850330426, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
       propertyPath: Color.g
-      value: 0.505315
+      value: 0.3584906
       objectReference: {fileID: 0}
     - target: {fileID: 2336201325850330426, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
       propertyPath: Color.r
-      value: 1
+      value: 0.3584906
       objectReference: {fileID: 0}
     - target: {fileID: 2336201325850330426, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
       propertyPath: m_Enabled
@@ -240,7 +209,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2336201325850330426, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
       propertyPath: OuterRadius
-      value: 2.64
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 3020264992416293518, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
       propertyPath: m_Name
@@ -312,19 +281,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6754491647642625121, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7377003652321274274, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.17
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7377003652321274274, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.21
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7377003652321274274, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 9.73
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8772918921911475724, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
       propertyPath: m_Range
@@ -372,7 +341,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &598455449
 Transform:
   m_ObjectHideFlags: 0
@@ -588,7 +557,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &836844058
 Transform:
   m_ObjectHideFlags: 0
@@ -720,7 +689,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1478998014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -761,6 +730,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1551529200}
+  - component: {fileID: 1551529201}
   - component: {fileID: 1551529199}
   m_Layer: 0
   m_Name: Tunnel
@@ -781,7 +751,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f743e6c0a9ec45e4abb4374dc99d4a09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _destination: {fileID: 524875272}
   _colorGradient:
     serializedVersion: 2
     key0: {r: 0.6981132, g: 0.535298, b: 0.50448555, a: 1}
@@ -814,91 +783,20 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   _particles: {fileID: 2402285776899386762, guid: 8e61f67cd760b423db14eb998271668d, type: 3}
   _particleSpawnDistance: 5
-  _ySlopeCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: -0.011111101
-      value: -0.0047169924
-      inSlope: 0.2954484
-      outSlope: 0.2954484
-      tangentMode: 34
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 0.44468272
-      value: 0.12994656
-      inSlope: 1.7291417
-      outSlope: 1.7291417
-      tangentMode: 34
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 0.5917135
-      value: 0.59498066
-      inSlope: 2.0774164
-      outSlope: 2.0774164
-      tangentMode: 34
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0.99199784
-      outSlope: 0.99199784
-      tangentMode: 34
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  _sidewaysCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: -0.016666666
-      value: -0.003144741
-      inSlope: 0.15766515
-      outSlope: 0.15766515
-      tangentMode: 34
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 0.59189695
-      value: 0.09280453
-      inSlope: -0.051005624
-      outSlope: -0.051005624
-      tangentMode: 34
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 0.9916667
-      value: -0.011006236
-      inSlope: -0.2596764
-      outSlope: -0.2596764
-      tangentMode: 34
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
   _baseTunnelWidth: 2.5
   _lumpyWidth: 0.5
   _clearingWidth: 1
+  _clearingDepth: 2.33
   wallElements:
   - name: Wall Thorns
     wallPrefabs:
     - {fileID: 1508189691331659514, guid: 58503cf409f035144b23039e7efe5466, type: 3}
     zOffset: 0
     spacing: 2
-    width: 4
+    width: 2
+    heightOffset:
+      _min: 0
+      _max: 5
     verticalLoopLength: 5
     verticalLoopIncrement: 2
     minMaxAngle:
@@ -914,7 +812,10 @@ MonoBehaviour:
     - {fileID: 717079983591251126, guid: 239ca69b503789f4097c61f9e63c3318, type: 3}
     zOffset: 0.1
     spacing: 0.5
-    width: 3
+    width: 4
+    heightOffset:
+      _min: -3
+      _max: -1
     verticalLoopLength: 3
     verticalLoopIncrement: 1
     minMaxAngle:
@@ -925,17 +826,16 @@ MonoBehaviour:
       _max: -1
     randomRotation: 90
     randomFlipY: 0
+  flatWallPrefab: {fileID: 0}
+  flatWallSpacing: 1
+  flatWallOffset: 1
   surroundElements: []
   floorElements:
   - name: Floor
     floorPrefabs:
     - {fileID: -8373903463449722979, guid: 26d96b879b500654a952b8ee6bc0661b, type: 3}
-    - {fileID: -8373903463449722979, guid: 3bc46b9c25834724f891dc0013a88674, type: 3}
-    flatFloorPrefab: {fileID: 0}
-    flatYOffset: -1
     zOffset: 0.08
     spacing: 0.5
-    flatSpacing: 1
     randomXPosition: 0.5
     minMaxAngle:
       _min: -1
@@ -945,6 +845,9 @@ MonoBehaviour:
       _min: -0.05
       _max: 0.05
     randomFlipX: 1
+  flatFloorPrefab: {fileID: 0}
+  flatFloorOffset: -1
+  flatFloorSpacing: 1
   ceilingElements:
   - name: Ceiling
     ceilingPrefabs:
@@ -961,7 +864,11 @@ MonoBehaviour:
       _min: -0.03
       _max: 0.03
     randomFlipX: 1
+  flatCeilingPrefab: {fileID: 0}
+  flatCeilingSpacing: 1
+  flatCeilingOffset: 1
   _drawGizmos: 0
+  _generatedIsSelectable: 0
 --- !u!4 &1551529200
 Transform:
   m_ObjectHideFlags: 0
@@ -977,6 +884,86 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1551529201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1551529198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dab5c7d4c32e743048dfca98e2d5914f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Spline:
+    m_EditModeType: 1
+    m_Knots: []
+    m_MetaData: []
+    m_Closed: 0
+    m_IntData:
+      m_Data: []
+    m_FloatData:
+      m_Data: []
+    m_Float4Data:
+      m_Data: []
+    m_ObjectData:
+      m_Data: []
+  m_Splines:
+  - m_EditModeType: 1
+    m_Knots:
+    - Position:
+        x: 0
+        y: 0
+        z: 0
+      TangentIn:
+        x: 0
+        y: 0
+        z: -1
+      TangentOut:
+        x: 0
+        y: 0
+        z: 1
+      Rotation:
+        value:
+          x: 0
+          y: 0
+          z: 0
+          w: 1
+    - Position:
+        x: 0
+        y: 5
+        z: 25
+      TangentIn:
+        x: 0
+        y: 0
+        z: -1
+      TangentOut:
+        x: 0
+        y: 0
+        z: 1
+      Rotation:
+        value:
+          x: 0
+          y: 0
+          z: 0
+          w: 1
+    m_MetaData:
+    - Mode: 2
+      Tension: 0.5
+    - Mode: 2
+      Tension: 0.5
+    m_Closed: 0
+    m_IntData:
+      m_Data: []
+    m_FloatData:
+      m_Data: []
+    m_Float4Data:
+      m_Data: []
+    m_ObjectData:
+      m_Data: []
+  m_Knots:
+    m_KnotsLink: []
 --- !u!1001 &5024598757371713799
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1041,7 +1028,6 @@ SceneRoots:
   - {fileID: 5024598757371713799}
   - {fileID: 14348015}
   - {fileID: 1551529200}
-  - {fileID: 524875272}
   - {fileID: 836844058}
   - {fileID: 598455449}
   - {fileID: 1478998015}

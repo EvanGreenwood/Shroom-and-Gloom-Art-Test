@@ -29,26 +29,32 @@ public class FPSMovement : MonoBehaviour
         //
         if (_tunnel == null)
         {
-            TunnelGenerator[] generators = FindObjectsByType<TunnelGenerator>(FindObjectsInactive.Exclude, FindObjectsSortMode.None);
-
-            //find closest tunnel
-            float closestDistance = float.MaxValue;
-            TunnelGenerator closestGenerator = null;
-            foreach (TunnelGenerator generator in generators)
-            {
-                float distance = Vector3.Distance(generator.transform.position, transform.position);
-
-                if (distance < closestDistance)
-                {
-                    closestDistance = distance;
-                    closestGenerator = generator;
-                }
-             
-            }
-            _tunnel = closestGenerator;
+            FindNewTunnel();
         }
         //
         _currentSpeed = _speed;
+    }
+
+    private void FindNewTunnel()
+    {
+        //Slow and bad
+        TunnelGenerator[] generators = FindObjectsByType<TunnelGenerator>(FindObjectsInactive.Exclude, FindObjectsSortMode.None);
+
+        //find closest tunnel
+        float closestDistance = float.MaxValue;
+        TunnelGenerator closestGenerator = null;
+        foreach (TunnelGenerator generator in generators)
+        {
+            float distance = Vector3.Distance(generator.transform.position, transform.position);
+
+            if (distance < closestDistance)
+            {
+                closestDistance = distance;
+                closestGenerator = generator;
+            }
+             
+        }
+        _tunnel = closestGenerator;
     }
     public void SwitchTunnel(TunnelGenerator newTunnel)
     {
@@ -75,8 +81,24 @@ public class FPSMovement : MonoBehaviour
             }
             else
             {
+                if (moveDir > 0)
+                {
+                    if (_tunnel.GetNormDistanceFromPoint(transform.position) > 0.99f)
+                    {
+                        FindNewTunnel();
+                    }
+                }
+                else if (moveDir < 0)
+                {
+                    //TODO: RN, can not go back to a previous tunnel. Does not work, closest tunnel is still current.
+                    /*if (_tunnel.GetNormDistanceFromPoint(transform.position) < 0.1f)
+                    {
+                        FindNewTunnel();
+                    }*/
+                }
+                
                 _tunnel.GetClosestPositionAndDirection(transform.position, out Vector3 currentPosition, out Vector3 currentDirection, out Vector3 currentUp);
-                transform.forward = Vector3.RotateTowards(transform.forward, currentDirection, Time.deltaTime, 0);
+                transform.forward = Vector3.RotateTowards(transform.forward, currentDirection, Time.deltaTime*0.5f, 0);
                 currentDirection = moveDir * currentDirection;
                 Debug.DrawLine(currentPosition, currentPosition + currentDirection);
                 transform.position = Vector3.MoveTowards(transform.position, currentPosition + currentDirection, Time.deltaTime * _currentSpeed);

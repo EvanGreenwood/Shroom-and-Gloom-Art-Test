@@ -23,6 +23,7 @@ using UnityEngine.UIElements;
 using Random = UnityEngine.Random;
 #endregion
 
+[RequireComponent(typeof(SplineContainer))]
 public class TunnelGenerator : MonoBehaviour
 {
 #region Tunnel Data
@@ -156,7 +157,7 @@ public class TunnelGenerator : MonoBehaviour
     public float GetNormDistanceFromPoint(Vector3 worldPoint)
     {
         Vector3 localPoint = transform.InverseTransformPoint(worldPoint);
-        SplineUtility.GetNearestPoint(_tunnelSpline.Spline, localPoint, out float3 nearest, out float t, 4, 4);
+        SplineUtility.GetNearestPoint(_tunnelSpline.Spline, localPoint, out float3 nearest, out float t, 6, 6);
         return t;
     }
     
@@ -363,7 +364,7 @@ public class TunnelGenerator : MonoBehaviour
                     
                     wall.transform.position += (perpendicular * wallData.minMaxPosition.GetValue(indexM)) * sign;
                     wall.transform.position += up * wallData.heightOffset.GetValue(indexM);
-                    Debug.DrawLine(currentPosition, currentPosition + perpendicular, Color.red, 30);
+                    //Debug.DrawLine(currentPosition, currentPosition + perpendicular, Color.red, 30);
                 
                     wall.transform.Rotate(0, 0, wallData.minMaxAngle.GetValue(indexM) * sign + (Random.value * 2 - 1) * wallData.randomRotation);
                     //
@@ -378,7 +379,7 @@ public class TunnelGenerator : MonoBehaviour
                     //
                     if(wall.TryGetComponent(out PropCoward propCoward))
                     {
-                        propCoward.Setup(true);
+                        propCoward.Setup(side == TunnelSide.Left);
                     }
                 }
             }
