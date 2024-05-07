@@ -6,6 +6,7 @@
 //----------------------------------------------------------------------------------------------------
 
 #region Usings
+
 using System;
 using Framework;
 using Mainframe;
@@ -213,17 +214,31 @@ public class TunnelGenerator : MonoBehaviour
         {
             element = sprite.AddComponent<TunnelElement>();
         }
-
-        if (tryFlipSubGenerators)
+        
+        if (Application.isPlaying)
         {
-            StartCoroutine(TryFlipSubElementsWhenReady(element));
-            IEnumerator TryFlipSubElementsWhenReady(TunnelElement e)
+            StartCoroutine(SetupSubGenerators(element, tryFlipSubGenerators));
+        }
+        else
+        {
+            EditorCoroutineUtility.StartCoroutine(SetupSubGenerators(element, tryFlipSubGenerators), this);
+        }
+        IEnumerator SetupSubGenerators(TunnelElement e, bool flip)
+        {
+            //Give time for TunnelElement and sub generators to run awake, onenable, start
+            yield return null;
+            
+            e.SubGenerate();
+
+            yield return null;
+
+            if (flip)
             {
-                //Give time for TunnelElement and sub generators to run awake, onenable, start
-                yield return null;
+                //all sub generators must implement a flip, since walls are flipped.
                 e.RequestSubGeneratorFlip();
             }
         }
+        
         
         _generatedElements.Add(sprite.transform);
         
@@ -742,12 +757,18 @@ public class TunnelGenerator : MonoBehaviour
     {
         _tunnelSpline = GetComponent<SplineContainer>();
     }
-
-    private void OnValidate()
-    {
+    
+    
+#if UNITY_EDITOR
+    // Lame hack to get around unity being lame and spamming errors:
+    // https://forum.unity.com/threads/sendmessage-cannot-be-called-during-awake-checkconsistency-or-onvalidate-can-we-suppress.537265/
+    void OnValidate() { UnityEditor.EditorApplication.delayCall += _OnValidate; }
+    void _OnValidate() {
+        if (this == null) return;
         _tunnelSpline = GetComponent<SplineContainer>();
         Generate();
     }
+#endif
 
     private void OnDrawGizmos()
     {

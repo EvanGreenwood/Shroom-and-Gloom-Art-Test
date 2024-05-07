@@ -1,7 +1,7 @@
 #region Usings
-using EasyButtons;
 using UnityEngine;
 using Framework;
+using NaughtyAttributes;
 using Unity.Mathematics;
 
 #endregion
@@ -21,9 +21,4 @@ public class SGRandomRotation : SubGenerator
 
   [Button]
   void Rotate() {transform.Rotate(0f, 0f, _angle.ChooseRandom());}
-
-  protected override bool Flip(FlipMode flipMode)
-  {
-    return DefaultPosFlip(flipMode) || DefaultSpriteFlip(flipMode);
-  }
 }

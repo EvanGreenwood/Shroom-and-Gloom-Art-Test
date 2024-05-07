@@ -97,6 +97,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e930c06d64c3dfa4fb091ff8a052ad94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FlipFlags: 0
   _sprites:
   - {fileID: 2130094210, guid: b2938885e77088545a1099775323f9f2, type: 3}
   - {fileID: 2043757662, guid: b2938885e77088545a1099775323f9f2, type: 3}
@@ -111,6 +112,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2021462911936241951}
+  - component: {fileID: 5677864315043632065}
   m_Layer: 0
   m_Name: Planks
   m_TagString: Untagged
@@ -144,6 +146,19 @@ Transform:
   - {fileID: 1350618575898874649}
   m_Father: {fileID: 1110561506290194631}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!114 &5677864315043632065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 322752130916986310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1b0b73477cb842198c55c179c4c3477, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FlipFlags: 72
 --- !u!1 &1311447498807312635
 GameObject:
   m_ObjectHideFlags: 0
@@ -327,6 +342,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e930c06d64c3dfa4fb091ff8a052ad94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FlipFlags: 0
   _sprites:
   - {fileID: 2130094210, guid: b2938885e77088545a1099775323f9f2, type: 3}
   - {fileID: 2043757662, guid: b2938885e77088545a1099775323f9f2, type: 3}
@@ -358,6 +374,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52063f0c791109049a6a18e56e7ae724, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FlipFlags: 0
   _angle:
     _min: -25
     _max: 25
@@ -460,6 +477,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e930c06d64c3dfa4fb091ff8a052ad94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FlipFlags: 72
   _sprites:
   - {fileID: 826127770, guid: b2938885e77088545a1099775323f9f2, type: 3}
   - {fileID: -1319816984, guid: b2938885e77088545a1099775323f9f2, type: 3}
@@ -475,6 +493,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed234be4642fbcc429e82a2f4799649a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FlipFlags: 0
   _axis:
     _x:
       _value: 1
@@ -492,6 +511,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52063f0c791109049a6a18e56e7ae724, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FlipFlags: 0
   _angle:
     _min: -45
     _max: 45
@@ -592,6 +612,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e930c06d64c3dfa4fb091ff8a052ad94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FlipFlags: 0
   _sprites:
   - {fileID: 2130094210, guid: b2938885e77088545a1099775323f9f2, type: 3}
   - {fileID: 2043757662, guid: b2938885e77088545a1099775323f9f2, type: 3}
@@ -696,6 +717,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e930c06d64c3dfa4fb091ff8a052ad94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FlipFlags: 0
   _sprites:
   - {fileID: 2130094210, guid: b2938885e77088545a1099775323f9f2, type: 3}
   - {fileID: 2043757662, guid: b2938885e77088545a1099775323f9f2, type: 3}
@@ -727,6 +749,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52063f0c791109049a6a18e56e7ae724, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FlipFlags: 0
   _angle:
     _min: -25
     _max: 25
@@ -842,6 +865,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e930c06d64c3dfa4fb091ff8a052ad94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FlipFlags: 72
   _sprites:
   - {fileID: 1530658447, guid: b2938885e77088545a1099775323f9f2, type: 3}
   - {fileID: -1372925077, guid: b2938885e77088545a1099775323f9f2, type: 3}
@@ -857,6 +881,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52063f0c791109049a6a18e56e7ae724, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FlipFlags: 0
   _angle:
     _min: -25
     _max: 25
@@ -959,6 +984,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e930c06d64c3dfa4fb091ff8a052ad94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FlipFlags: 72
   _sprites:
   - {fileID: 826127770, guid: b2938885e77088545a1099775323f9f2, type: 3}
   - {fileID: -1319816984, guid: b2938885e77088545a1099775323f9f2, type: 3}
@@ -974,6 +1000,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed234be4642fbcc429e82a2f4799649a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FlipFlags: 0
   _axis:
     _x:
       _value: 1
@@ -991,6 +1018,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52063f0c791109049a6a18e56e7ae724, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FlipFlags: 0
   _angle:
     _min: -45
     _max: 45
@@ -1091,6 +1119,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e930c06d64c3dfa4fb091ff8a052ad94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FlipFlags: 0
   _sprites:
   - {fileID: 2130094210, guid: b2938885e77088545a1099775323f9f2, type: 3}
   - {fileID: 2043757662, guid: b2938885e77088545a1099775323f9f2, type: 3}
@@ -1277,6 +1306,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e930c06d64c3dfa4fb091ff8a052ad94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FlipFlags: 0
   _sprites:
   - {fileID: 2130094210, guid: b2938885e77088545a1099775323f9f2, type: 3}
   - {fileID: 2043757662, guid: b2938885e77088545a1099775323f9f2, type: 3}
@@ -1568,6 +1598,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e930c06d64c3dfa4fb091ff8a052ad94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FlipFlags: 72
   _sprites:
   - {fileID: 1530658447, guid: b2938885e77088545a1099775323f9f2, type: 3}
   - {fileID: -1372925077, guid: b2938885e77088545a1099775323f9f2, type: 3}
@@ -1583,6 +1614,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52063f0c791109049a6a18e56e7ae724, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FlipFlags: 0
   _angle:
     _min: -25
     _max: 25
@@ -1683,6 +1715,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e930c06d64c3dfa4fb091ff8a052ad94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FlipFlags: 0
   _sprites:
   - {fileID: 2130094210, guid: b2938885e77088545a1099775323f9f2, type: 3}
   - {fileID: 2043757662, guid: b2938885e77088545a1099775323f9f2, type: 3}
@@ -1787,6 +1820,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e930c06d64c3dfa4fb091ff8a052ad94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FlipFlags: 72
   _sprites:
   - {fileID: 826127770, guid: b2938885e77088545a1099775323f9f2, type: 3}
   - {fileID: -1319816984, guid: b2938885e77088545a1099775323f9f2, type: 3}
@@ -1802,6 +1836,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed234be4642fbcc429e82a2f4799649a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FlipFlags: 0
   _axis:
     _x:
       _value: 1
@@ -1819,6 +1854,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52063f0c791109049a6a18e56e7ae724, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FlipFlags: 0
   _angle:
     _min: -45
     _max: 45
@@ -1919,6 +1955,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e930c06d64c3dfa4fb091ff8a052ad94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FlipFlags: 0
   _sprites:
   - {fileID: 2130094210, guid: b2938885e77088545a1099775323f9f2, type: 3}
   - {fileID: 2043757662, guid: b2938885e77088545a1099775323f9f2, type: 3}

@@ -1,8 +1,8 @@
 #region Usings
-using EasyButtons;
 using UnityEngine;
 using Framework;
 using Mainframe;
+using NaughtyAttributes;
 using System;
 
 #endregion
@@ -40,10 +40,5 @@ public class SGRandomFlipSprite : SubGenerator
   {
     if(_axis.x && RNG.Probability(0.5f)) _spriteRenderer.flipX = !_spriteRenderer.flipX;
     if(_axis.y && RNG.Probability(0.5f)) _spriteRenderer.flipY = !_spriteRenderer.flipY;
-  }
-
-  protected override bool Flip(FlipMode flipMode)
-  {
-    return DefaultPosFlip(flipMode);
   }
 }
