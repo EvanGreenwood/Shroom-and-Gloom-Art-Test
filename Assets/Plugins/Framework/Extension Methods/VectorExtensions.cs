@@ -501,6 +501,32 @@ namespace Framework
         {
             return new Vector2(vector.x, y);
         }
+        
+        
+        public static Vector2 FlipX(this Vector2 vector)
+        {
+            return new Vector2(-vector.x, vector.y);
+        }
+        
+        public static Vector2 FlipY(this Vector2 vector)
+        {
+            return new Vector2(vector.x, -vector.y);
+        }
+        
+        public static Vector3 FlipX(this Vector3 vector)
+        {
+            return new Vector3(-vector.x, vector.y, vector.z);
+        }
+        
+        public static Vector3 FlipY(this Vector3 vector)
+        {
+            return new Vector3(vector.x, -vector.y, vector.z);
+        }
+        
+        public static Vector3 FlipZ(this Vector3 vector)
+        {
+            return new Vector3(vector.x, vector.y, -vector.z);
+        }
 
         public static Vector3 MultiplyX(this Vector3 vector, float value)
         {

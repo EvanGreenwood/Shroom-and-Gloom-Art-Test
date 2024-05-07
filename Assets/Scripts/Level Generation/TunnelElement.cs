@@ -2,14 +2,19 @@
 using UnityEngine;
 using Framework;
 using Mainframe;
+using System;
+using System.Collections.Generic;
+
 #endregion
 
 public class TunnelElement : MonoBehaviour
 {
+  
   SpriteRenderer _spriteRenderer;
   SpriteRenderer[] _childRenderers;
   bool _hasInit;
 
+  private List<SubGenerator> _generators = new List<SubGenerator>();
   public SpriteRenderer spriteRenderer => _spriteRenderer;
 
   // Init
@@ -17,6 +22,7 @@ public class TunnelElement : MonoBehaviour
   public void Init()
   {
     _spriteRenderer = GetComponent<SpriteRenderer>();
+    _childRenderers = GetComponentsInChildren<SpriteRenderer>();
     _childRenderers = GetComponentsInChildren<SpriteRenderer>();
     _hasInit = true;
   }
@@ -39,5 +45,23 @@ public class TunnelElement : MonoBehaviour
         sr.color = color;
       }
     });
+  }
+
+  public void RequestSubGeneratorFlip()
+  {
+    foreach (SubGenerator sg in _generators)
+    {
+      sg.RequestFlip();
+    }
+  }
+
+  public void SubscribeGenerator(SubGenerator toAdd)
+  {
+    _generators.Add(toAdd);
+  }
+
+  public void UnSubscribeGenerator(SubGenerator toRemove)
+  {
+    _generators.Remove(toRemove);
   }
 }

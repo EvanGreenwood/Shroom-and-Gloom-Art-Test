@@ -6,19 +6,22 @@ using Mainframe;
 #endregion
 
 [RequireComponent(typeof(SpriteRenderer))]
-public class RandomSprite : MonoBehaviour
+public class RandomSprite : SubGenerator
 {
   [SerializeField] Sprite[] _sprites;
 
   // MonoBehaviour
   //----------------------------------------------------------------------------------------------------
-  void Awake()
+  public override void Generate() 
   {
     if(_sprites.IsNullOrEmpty())
     {
       Die();
       return;
     }
+    
+    //reset in case we have already run this.
+    gameObject.SetActive(true);
 
     ChooseRandom();
     
@@ -36,7 +39,12 @@ public class RandomSprite : MonoBehaviour
   //----------------------------------------------------------------------------------------------------
   void Die()
   {
-    Destroy(this);
+    //dont destroy since we may want to undo.
+    gameObject.SetActive(false);
   }
 
+  protected override bool Flip(FlipMode flipMode)
+  {
+      return DefaultPosFlip(flipMode) || DefaultSpriteFlip(flipMode);
+  }
 }
