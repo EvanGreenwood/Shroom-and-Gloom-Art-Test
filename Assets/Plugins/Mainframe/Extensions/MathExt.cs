@@ -51,12 +51,12 @@ public static partial class MathExt
 
   // FloorToInt
   //----------------------------------------------------------------------------------------------------
-  [MethodImpl(MethodImplOptions.AggressiveInlining)] public static float FloorToInt(this float x) => math.floor(x);
-  [MethodImpl(MethodImplOptions.AggressiveInlining)] public static double FloorToInt(this double x) => math.floor(x);
-  [MethodImpl(MethodImplOptions.AggressiveInlining)] public static float2 FloorToInt(this float2 v) => math.floor(v);
-  [MethodImpl(MethodImplOptions.AggressiveInlining)] public static float3 FloorToInt(this float3 v) => math.floor(v);
-  [MethodImpl(MethodImplOptions.AggressiveInlining)] public static Vector2 FloorToInt(this Vector2 v) => math.floor(v);
-  [MethodImpl(MethodImplOptions.AggressiveInlining)] public static Vector3 FloorToInt(this Vector3 v) => math.floor(v);
+  [MethodImpl(MethodImplOptions.AggressiveInlining)] public static int FloorToInt(this float x) => (int)math.floor(x);
+  [MethodImpl(MethodImplOptions.AggressiveInlining)] public static int FloorToInt(this double x) => (int)math.floor(x);
+  [MethodImpl(MethodImplOptions.AggressiveInlining)] public static int3 FloorToInt(this float3 v) => math.floor(v)._int3();
+  [MethodImpl(MethodImplOptions.AggressiveInlining)] public static int2 FloorToInt(this float2 v) => math.floor(v)._int2();
+  [MethodImpl(MethodImplOptions.AggressiveInlining)] public static Vector2Int FloorToInt(this Vector2 v) => math.floor(v)._Vec2i();
+  [MethodImpl(MethodImplOptions.AggressiveInlining)] public static Vector3Int FloorToInt(this Vector3 v) => math.floor(v)._Vec3i();
 
   // Clamp
   //----------------------------------------------------------------------------------------------------

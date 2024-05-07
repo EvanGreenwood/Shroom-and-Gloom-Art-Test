@@ -5,8 +5,15 @@ using Framework;
 
 public class CameraValidator : MonoBehaviour
 {
-    // MonoBehaviour
-    //----------------------------------------------------------------------------------------------------
-    void Awake() {}
-    void Update() {}
+  [SerializeField] Camera _camera;
+  [SerializeField] Transform _tunnelDestination;
+  
+  // MonoBehaviour
+  //----------------------------------------------------------------------------------------------------
+  void Awake() { }
+  void Update()
+  {
+    float endDst = Vector3.Distance(transform.position, _tunnelDestination.position);
+    
+  }
 }
