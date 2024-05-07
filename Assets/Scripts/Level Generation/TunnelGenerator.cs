@@ -199,7 +199,7 @@ public class TunnelGenerator : MonoBehaviour
 
     // Spawn Tunnel Element
     //----------------------------------------------------------------------------------------------------
-    SpriteRenderer SpawnTunnelElement(SpriteRenderer prefab, Vector3 position, Quaternion rotation, Vector3 forward, bool tryFlipSubGenerators)
+    SpriteRenderer SpawnTunnelElement(SpriteRenderer prefab, Vector3 position, Quaternion rotation, Vector3 forward, bool tryFlipSubGenerators, float normalizedDistance)
     {
         SpriteRenderer sprite = Instantiate(prefab, position, rotation, transform);
         
@@ -214,6 +214,8 @@ public class TunnelGenerator : MonoBehaviour
         {
             element = sprite.AddComponent<TunnelElement>();
         }
+        
+        element.SetColor(_colorGradient.Evaluate(normalizedDistance));
         
         if (Application.isPlaying)
         {
@@ -393,7 +395,7 @@ public class TunnelGenerator : MonoBehaviour
                         out Quaternion currentRotation, out Vector3 up, out perpendicular);
                     // 
                     Vector3 spawnPos = currentPosition + sign * (perpendicular * (GetTunnelWidth(distanceGenerated / _tunnelLength) + wallData.width));
-                    SpriteRenderer wall = SpawnTunnelElement(wallData.wallPrefabs.ChooseRandom(), spawnPos, currentRotation, currentDirection, flip);
+                    SpriteRenderer wall = SpawnTunnelElement(wallData.wallPrefabs.ChooseRandom(), spawnPos, currentRotation, currentDirection, flip, distanceM);
 
                     index = (index + wallData.verticalLoopIncrement) % (wallData.verticalLoopLength + 1);
                     float indexM = index / (float)wallData.verticalLoopLength;
@@ -453,7 +455,7 @@ public class TunnelGenerator : MonoBehaviour
                 // 
                 Vector3 spawnPos = (currentPosition) + perpendicular * flatWallOffset * sign;
                 Vector3 forward = (lastPosition - spawnPos).normalized;
-                SpriteRenderer flatWall = SpawnTunnelElement(flatWallPrefab, spawnPos, currentRotation, forward, false);
+                SpriteRenderer flatWall = SpawnTunnelElement(flatWallPrefab, spawnPos, currentRotation, forward, false, dist);
                 
                 flatWall.transform.localRotation *= Quaternion.Euler(0, 90,90);
                 
@@ -498,7 +500,7 @@ public class TunnelGenerator : MonoBehaviour
 
                                 SpriteRenderer surroundLump = SpawnTunnelElement(surroundData.surroundPrefabs.ChooseRandom(),
                                                                                  spawnPos,
-                                                                                 currentRotation, currentDirection, false);
+                                                                                 currentRotation, currentDirection, false, distanceM);
                                 
                                 surroundLump.transform.Rotate(0, 0, -currentAngleIncrement + 90);
                                 surroundLump.color = _colorGradient.Evaluate(distanceM);
@@ -532,7 +534,7 @@ public class TunnelGenerator : MonoBehaviour
                                                  + circleOffset.MultiplyY(0.5f) * GetTunnelWidth(distanceM);
 
                                 SpriteRenderer surroundLump = SpawnTunnelElement(surroundData.surroundPrefabs.ChooseRandom(), spawnPos,
-                                                                                 currentRotation, currentDirection, circleOffset.x>0);
+                                                                                 currentRotation, currentDirection, circleOffset.x>0, distanceM);
                                 surroundLump.transform.Rotate(0, 0, -currentAngleIncrement + 90 + surroundData.randomRotation * (-1 + Random.value * 2));
                                 surroundLump.color = _colorGradient.Evaluate(distanceM);
                                 //
@@ -557,7 +559,7 @@ public class TunnelGenerator : MonoBehaviour
                             Vector3 spawnPos = currentPosition + currentDirection * 0.0001f * currentAngleIncrement
                                              + up * surroundData.centerHeight + circleOffset * surroundData.radiusOffset
                                              + circleOffset.MultiplyY(0.5f) * GetTunnelWidth(distanceM);
-                            SpriteRenderer surroundLump = SpawnTunnelElement(surroundData.surroundPrefabs.ChooseRandom(), spawnPos, currentRotation, currentDirection, circleOffset.x>0);
+                            SpriteRenderer surroundLump = SpawnTunnelElement(surroundData.surroundPrefabs.ChooseRandom(), spawnPos, currentRotation, currentDirection, circleOffset.x>0, distanceM);
                             surroundLump.transform.Rotate(0, 0, -currentAngleIncrement + 90 + surroundData.randomRotation * (-1 + Random.value * 2));
                             surroundLump.color = _colorGradient.Evaluate(distanceM);
                             //
@@ -596,7 +598,7 @@ public class TunnelGenerator : MonoBehaviour
 
                 // 
                 Vector3 spawnPos = currentPosition + perpendicular * (Random.value * 2 - 1) * floorData.randomXPosition;
-                SpriteRenderer floor = SpawnTunnelElement(floorData.floorPrefabs.ChooseRandom(), spawnPos, currentRotation, currentDirection, flip);
+                SpriteRenderer floor = SpawnTunnelElement(floorData.floorPrefabs.ChooseRandom(), spawnPos, currentRotation, currentDirection, flip, distanceM);
 
                 floor.transform.position += perpendicular * floorData.minMaxPosition.ChooseRandom();
                 floor.transform.Rotate(floorData.xRotation, 0, floorData.minMaxAngle.ChooseRandom());
@@ -628,7 +630,7 @@ public class TunnelGenerator : MonoBehaviour
             // 
             Vector3 spawnPos = (currentPosition) + up * flatFloorOffset;
             Vector3 forward = (lastPosition - spawnPos).normalized;
-            SpriteRenderer flatFloor = SpawnTunnelElement(flatFloorPrefab, spawnPos, currentRotation, forward, false);
+            SpriteRenderer flatFloor = SpawnTunnelElement(flatFloorPrefab, spawnPos, currentRotation, forward, false, dist);
                 
             flatFloor.transform.localRotation *= Quaternion.Euler(90, 0,0);
                 
@@ -658,7 +660,7 @@ public class TunnelGenerator : MonoBehaviour
                 GetTunnelPositionAndDirection(distanceM, out Vector3 currentPosition, out Vector3 currentDirection, out Quaternion currentRotation, out Vector3 up, out perpendicular);
                 // 
                 Vector3 spawnPos = currentPosition + up * ceilingData.height + perpendicular * (Random.value * 2 - 1) * ceilingData.randomXPosition;
-                SpriteRenderer floor = SpawnTunnelElement(ceilingData.ceilingPrefabs.ChooseRandom(), spawnPos, currentRotation, currentDirection, flip);
+                SpriteRenderer floor = SpawnTunnelElement(ceilingData.ceilingPrefabs.ChooseRandom(), spawnPos, currentRotation, currentDirection, flip, distanceM);
 
                 floor.transform.position += perpendicular * ceilingData.minMaxPosition.ChooseRandom();
                 floor.transform.Rotate(ceilingData.xRotation, 0, ceilingData.minMaxAngle.ChooseRandom());
@@ -688,7 +690,7 @@ public class TunnelGenerator : MonoBehaviour
             // 
             Vector3 spawnPos = (currentPosition) + up * flatCeilingOffset;
             Vector3 forward = (lastPosition - spawnPos).normalized;
-            SpriteRenderer flatCeiling = SpawnTunnelElement(flatCeilingPrefab, spawnPos, currentRotation, forward, false);
+            SpriteRenderer flatCeiling = SpawnTunnelElement(flatCeilingPrefab, spawnPos, currentRotation, forward, false, dist);
                 
             flatCeiling.transform.localRotation *= Quaternion.Euler(90, 0,0);
                 
