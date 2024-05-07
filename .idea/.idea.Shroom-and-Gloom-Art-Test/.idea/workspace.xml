@@ -6,67 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="825655da-4771-4664-b01a-9bffcaa881d5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Shroom-and-Gloom-Art-Test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Shroom-and-Gloom-Art-Test/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Mine/Mine_Wall.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Environment/Mine/Mine_Wall.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/EasyButtons.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/EasyButtons/Editor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/EasyButtons/Editor/Button.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/EasyButtons/Editor/Button.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/EasyButtons/Editor/ButtonWithParams.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/EasyButtons/Editor/ButtonWithParams.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/EasyButtons/Editor/ButtonWithParamsAsync.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/EasyButtons/Editor/ButtonWithParamsAsync.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/EasyButtons/Editor/ButtonWithoutParams.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/EasyButtons/Editor/ButtonWithoutParams.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/EasyButtons/Editor/ButtonWithoutParamsAsync.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/EasyButtons/Editor/ButtonWithoutParamsAsync.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/EasyButtons/Editor/ButtonsDrawer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/EasyButtons/Editor/ButtonsDrawer.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/EasyButtons/Editor/EasyButtons.Editor.asmdef" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/EasyButtons/Editor/EasyButtons.Editor.asmdef.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/EasyButtons/Editor/NoScriptFieldEditor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/EasyButtons/Editor/NoScriptFieldEditor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/EasyButtons/Editor/NonSerializedError.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/EasyButtons/Editor/NonSerializedError.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/EasyButtons/Editor/ObjectEditor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/EasyButtons/Editor/ObjectEditor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/EasyButtons/Editor/Utils.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/EasyButtons/Editor/Utils/DefaultValuesUtility.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/EasyButtons/Editor/Utils/DefaultValuesUtility.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/EasyButtons/Editor/Utils/DrawUtility.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/EasyButtons/Editor/Utils/DrawUtility.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/EasyButtons/Editor/Utils/EnumExtensions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/EasyButtons/Editor/Utils/EnumExtensions.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/EasyButtons/Editor/Utils/ScriptableObjectCache.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/EasyButtons/Editor/Utils/ScriptableObjectCache.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/EasyButtons/Editor/Utils/StringExtensions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/EasyButtons/Editor/Utils/StringExtensions.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/EasyButtons/Editor/Utils/TypeExtensions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/EasyButtons/Editor/Utils/TypeExtensions.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/EasyButtons/Runtime.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/EasyButtons/Runtime/ButtonAttribute.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/EasyButtons/Runtime/ButtonAttribute.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/EasyButtons/Runtime/EasyButtons.asmdef" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/EasyButtons/Runtime/EasyButtons.asmdef.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/EasyButtons/Samples.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/EasyButtons/Samples/ButtonsExample.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/EasyButtons/Samples/ButtonsExample/ButtonsExample.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/EasyButtons/Samples/ButtonsExample/ButtonsExample.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/EasyButtons/Samples/CustomEditorButtonsExample.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/EasyButtons/Samples/CustomEditorButtonsExample/CustomEditorButtonsExample.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/EasyButtons/Samples/CustomEditorButtonsExample/CustomEditorButtonsExample.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/EasyButtons/Samples/CustomEditorButtonsExample/Editor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/EasyButtons/Samples/CustomEditorButtonsExample/Editor/CustomEditorButtonsExampleEditor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/EasyButtons/Samples/CustomEditorButtonsExample/Editor/CustomEditorButtonsExampleEditor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/EasyButtons/Samples/ScriptableObjectExample.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/EasyButtons/Samples/ScriptableObjectExample/ScriptableObjectExample.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/EasyButtons/Samples/ScriptableObjectExample/ScriptableObjectExample.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/EasyButtons/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/EasyButtons/package.json.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level Generation/SubGenerators/Random/SGRandomFlipSprite.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Level Generation/SubGenerators/Random/SGRandomFlipSprite.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level Generation/SubGenerators/Random/SGRandomRotation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Level Generation/SubGenerators/Random/SGRandomRotation.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level Generation/SubGenerators/Random/SGRandomSprite.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Level Generation/SubGenerators/Random/SGRandomSprite.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level Generation/SubGenerators/SubGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Level Generation/SubGenerators/SubGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level Generation/TunnelElement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Level Generation/TunnelElement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Mine/Prefabs/Mine_Ceiling.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Environment/Mine/Prefabs/Mine_Ceiling.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/S1 Mines.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/S1 Mines.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level Generation/TunnelGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Level Generation/TunnelGenerator.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -142,10 +83,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="57864">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="57864" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
