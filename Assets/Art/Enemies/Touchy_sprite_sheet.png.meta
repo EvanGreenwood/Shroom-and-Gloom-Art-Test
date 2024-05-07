@@ -43,11 +43,11 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
-  spritePivot: {x: 0.5, y: 0.9}
+  spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 256
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 0
@@ -108,7 +108,343 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Touchy_sprite_sheet_0
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 1245
+        width: 416
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d2787cf2d4d48d46a8bb708892f390b
+      internalID: -1270705747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Touchy_sprite_sheet_1
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 1243
+        width: 416
+        height: 312
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d041377767112a047a9617db9b3dfd65
+      internalID: -1124420387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Touchy_sprite_sheet_2
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 1245
+        width: 416
+        height: 312
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f133d8c64b5d25340abb56b6657704a6
+      internalID: -856846519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Touchy_sprite_sheet_3
+      rect:
+        serializedVersion: 2
+        x: 1542
+        y: 1245
+        width: 416
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d1cfbba85e73bd4b815bc460bb16ec6
+      internalID: 1321451990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Touchy_sprite_sheet_4
+      rect:
+        serializedVersion: 2
+        x: 2041
+        y: 1243
+        width: 417
+        height: 312
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3eaa943d14659c54e9b4a66c498163d9
+      internalID: 502681412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Touchy_sprite_sheet_5
+      rect:
+        serializedVersion: 2
+        x: 2541
+        y: 1245
+        width: 416
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9668943a3c1af2418c3a16b7e8df91b
+      internalID: -855488302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Touchy_sprite_sheet_6
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 845
+        width: 418
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bedcb06b03817244bae6655a9338b536
+      internalID: 544106913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Touchy_sprite_sheet_7
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 843
+        width: 416
+        height: 312
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8358a449da036bb4989c476f8c29134d
+      internalID: 533706576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Touchy_sprite_sheet_8
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 845
+        width: 416
+        height: 312
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a5b07d2eaf57b44fba4c3520b8d7d93
+      internalID: 70680712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Touchy_sprite_sheet_10
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 445
+        width: 403
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cb3f45298fad814e86c350e1047b26d
+      internalID: -974516429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Touchy_sprite_sheet_12
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 45
+        width: 403
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a8bb3ee62019b545af60056c7eb3e7a
+      internalID: -1536891885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Touchy_sprite_sheet_14
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 43
+        width: 404
+        height: 312
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d46037247a1e3d4d9383c14f97956f4
+      internalID: -244775534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Touchy_sprite_sheet_15
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 45
+        width: 411
+        height: 312
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9b3574e77be662479a048e504023796
+      internalID: 1850172269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Touchy_sprite_sheet_17
+      rect:
+        serializedVersion: 2
+        x: 1552
+        y: 45
+        width: 403
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b1d7a0d72d66b64c8774d8413986f6f
+      internalID: -777236517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Touchy_sprite_sheet_18
+      rect:
+        serializedVersion: 2
+        x: 2044
+        y: 43
+        width: 412
+        height: 312
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96ae84e5cfc877440b44c215a26a7dd5
+      internalID: -2027166133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Touchy_sprite_sheet_20
+      rect:
+        serializedVersion: 2
+        x: 2553
+        y: 45
+        width: 402
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7170f01f3eb96d46ab8a40685cb86d7
+      internalID: -159886544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +455,28 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Touchy_sprite_sheet_0: -1270705747
+      Touchy_sprite_sheet_1: -1124420387
+      Touchy_sprite_sheet_10: -974516429
+      Touchy_sprite_sheet_11: 1591061614
+      Touchy_sprite_sheet_12: -1536891885
+      Touchy_sprite_sheet_13: 1039837827
+      Touchy_sprite_sheet_14: -244775534
+      Touchy_sprite_sheet_15: 1850172269
+      Touchy_sprite_sheet_16: 488130488
+      Touchy_sprite_sheet_17: -777236517
+      Touchy_sprite_sheet_18: -2027166133
+      Touchy_sprite_sheet_19: -998236269
+      Touchy_sprite_sheet_2: -856846519
+      Touchy_sprite_sheet_20: -159886544
+      Touchy_sprite_sheet_3: 1321451990
+      Touchy_sprite_sheet_4: 502681412
+      Touchy_sprite_sheet_5: -855488302
+      Touchy_sprite_sheet_6: 544106913
+      Touchy_sprite_sheet_7: 533706576
+      Touchy_sprite_sheet_8: 70680712
+      Touchy_sprite_sheet_9: -989136944
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
