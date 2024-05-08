@@ -867,6 +867,9 @@ MonoBehaviour:
   surroundElements:
   - name: Lumps
     surroundPrefabs:
+    - {fileID: 717079983591251126, guid: b122cb429a7bb40cb931c9f0bddee1aa, type: 3}
+    - {fileID: 717079983591251126, guid: 039de9e0764d14bb4812bff4c58cd8ec, type: 3}
+    - {fileID: 717079983591251126, guid: 3604b86102e1a4ab786f280d835dfc71, type: 3}
     - {fileID: 717079983591251126, guid: dde57e21e6c354eec8aacabab5da9407, type: 3}
     - {fileID: 717079983591251126, guid: 8bf6d4da7dbaf468fa9ccdb283aa9e40, type: 3}
     - {fileID: 717079983591251126, guid: ae6fca2e20524476e8af244b76c1e882, type: 3}
@@ -890,7 +893,7 @@ MonoBehaviour:
     - {fileID: 717079983591251126, guid: 17d8aa9ad3f2d4c4094ad5e1a7578d18, type: 3}
     - {fileID: 717079983591251126, guid: 19e1f43468499744fb59b8f98d508af8, type: 3}
     zOffset: 0.3
-    spacing: 0.25
+    spacing: 10
     radiusOffset: 1.7
     centerHeight: 1.7
     pattern: 2
