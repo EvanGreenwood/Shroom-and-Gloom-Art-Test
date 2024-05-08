@@ -1123,7 +1123,7 @@ MonoBehaviour:
   _fogColor: {r: 0.047058824, g: 0.24705882, b: 0.26666668, a: 1}
   _fogStart: 3
   _fogDistance: 20
-  _shadowsColor: {r: 0.27206117, g: 0.5320754, b: 0.41371897, a: 1}
+  _shadowsColor: {r: 0.3404948, g: 0.27058825, b: 0.53333336, a: 1}
   _rampTexture: {fileID: 0}
 --- !u!4 &1500226138
 Transform:
@@ -1152,6 +1152,46 @@ PrefabInstance:
       propertyPath: _tunnel
       value: 
       objectReference: {fileID: 1392419565}
+    - target: {fileID: 1220127152409290909, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
+      propertyPath: m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1220127152409290909, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1220127152409290909, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1220127152409290909, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1220127152409290909, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
+      propertyPath: m_DrawHalo
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1220127152409290909, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
+      propertyPath: m_Intensity
+      value: 1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1220127152409290909, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
+      propertyPath: m_CookieSize
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1220127152409290909, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
+      propertyPath: m_Shadows.m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1220127152409290909, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
+      propertyPath: m_BounceIntensity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1220127152409290909, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
+      propertyPath: m_Shadows.m_Strength
+      value: 0.31
+      objectReference: {fileID: 0}
     - target: {fileID: 2336201325850330426, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
       propertyPath: Color.b
       value: 0.5471698
@@ -1163,6 +1203,10 @@ PrefabInstance:
     - target: {fileID: 2336201325850330426, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
       propertyPath: Color.r
       value: 0.5471698
+      objectReference: {fileID: 0}
+    - target: {fileID: 2336201325850330426, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
+      propertyPath: Intensity
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3020264992416293518, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
       propertyPath: m_Name
@@ -1215,6 +1259,10 @@ PrefabInstance:
     - target: {fileID: 4287536555734979045, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6754491647642625121, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
