@@ -595,9 +595,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6773670263765807802, guid: e5e792970a1a340ae925d0e4ff099437, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6857227377587969113, guid: e5e792970a1a340ae925d0e4ff099437, type: 3}
       propertyPath: m_Name
       value: MainGameServiceStack
+      objectReference: {fileID: 0}
+    - target: {fileID: 6864621587623184198, guid: e5e792970a1a340ae925d0e4ff099437, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -887,21 +895,21 @@ MonoBehaviour:
     randomFlipX: 0
   - name: Fronds
     surroundPrefabs:
-    - {fileID: 717079983591251126, guid: 96dd40d30bcfc82448cd8aa84fc68cbf, type: 3}
-    - {fileID: 717079983591251126, guid: c4c24c7ddee851a468a0cc764008ba1b, type: 3}
-    - {fileID: 717079983591251126, guid: 77c4068d922ccad4289351f999900fb6, type: 3}
-    - {fileID: 717079983591251126, guid: 17d8aa9ad3f2d4c4094ad5e1a7578d18, type: 3}
-    - {fileID: 717079983591251126, guid: 19e1f43468499744fb59b8f98d508af8, type: 3}
+    - {fileID: 717079983591251126, guid: eabd18e107e8c4a9593b4acb9bed0c61, type: 3}
+    - {fileID: 717079983591251126, guid: f473276211eaa4a0d934ad01a9362aac, type: 3}
+    - {fileID: 717079983591251126, guid: a4c0f475ee3734eeeb0a4f7ea144db60, type: 3}
+    - {fileID: 717079983591251126, guid: 6f7001e6b0753493d9e8ef6911710f29, type: 3}
+    - {fileID: 717079983591251126, guid: 557273227691a4aa2b7d7af7282daaa0, type: 3}
     zOffset: 0.3
-    spacing: 10
-    radiusOffset: 1.7
+    spacing: 0.3
+    radiusOffset: 2.5
     centerHeight: 1.7
     pattern: 2
     angleRange:
       _min: 35
       _max: 325
     angleIncrement: 22.5
-    randomRotation: 2
+    randomRotation: 22.5
     randomFlipY: 1
     randomFlipX: 0
   floorElements:
@@ -1116,6 +1124,7 @@ MonoBehaviour:
   _fogStart: 3
   _fogDistance: 20
   _shadowsColor: {r: 0.27206117, g: 0.5320754, b: 0.41371897, a: 1}
+  _rampTexture: {fileID: 0}
 --- !u!4 &1500226138
 Transform:
   m_ObjectHideFlags: 0
