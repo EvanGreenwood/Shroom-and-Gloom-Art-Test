@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59146cfe761ff774490a9979c3ac8f68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _probability: 0.2
+  _probability: 0.1
 --- !u!114 &8904218251722351973
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -231,7 +231,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59146cfe761ff774490a9979c3ac8f68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _probability: 0.2
+  _probability: 0.1
 --- !u!114 &1480933807364025906
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -642,34 +642,17 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 8449704786400849566, guid: 7c3e95cb565cc0245897ea9b6464a76b, type: 3}
+      propertyPath: _probability
+      value: 0.05
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1774361570267914464, guid: 7c3e95cb565cc0245897ea9b6464a76b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 836520648783989299}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c3e95cb565cc0245897ea9b6464a76b, type: 3}
 --- !u!4 &5775298595050835756 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4552497125203086682, guid: 7c3e95cb565cc0245897ea9b6464a76b, type: 3}
   m_PrefabInstance: {fileID: 8000718932667712118}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &8617513679531451030 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1774361570267914464, guid: 7c3e95cb565cc0245897ea9b6464a76b, type: 3}
-  m_PrefabInstance: {fileID: 8000718932667712118}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &836520648783989299
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8617513679531451030}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59146cfe761ff774490a9979c3ac8f68, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _probability: 0.5
