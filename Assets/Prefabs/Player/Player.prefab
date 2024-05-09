@@ -187,9 +187,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a83cb751f854594a8824eccf58b5c8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _tunnel: {fileID: 0}
-  _directionLookaheadDistance: 5
   _volume: {fileID: 5190621771042991310}
+  _smoothTime: 0.15
 --- !u!1 &3020264992416293518
 GameObject:
   m_ObjectHideFlags: 0
@@ -415,7 +414,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 2
+  m_Intensity: 0.5
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
