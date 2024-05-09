@@ -230,6 +230,13 @@ public class TunnelGenerator : MonoBehaviour
 
         element.SetColor(_colorGradient.Evaluate(normalizedDistance));
 
+        TunnelContext context = new TunnelContext()
+        {
+            DistanceElementIsAt = normalizedDistance * _tunnelLength,
+            TunnelLength = _tunnelLength
+        };
+        element.SetTunnelContext(context);
+        
         if(Application.isPlaying)
         {
             StartCoroutine(SetupSubGenerators(element, tryFlipSubGenerators));

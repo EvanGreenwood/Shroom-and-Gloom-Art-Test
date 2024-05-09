@@ -722,11 +722,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1b49d550daca8c4ca7e1dbf2c030825, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _fogColor: {r: 0.50980395, g: 0, b: 0.45143235, a: 1}
+  _fogColor: {r: 0.26210395, g: 0.5849056, b: 0.5383213, a: 1}
   _fogStart: 3
   _fogDistance: 20
   _shadowsColor: {r: 0.3404948, g: 0.27058825, b: 0.53333336, a: 1}
-  _rampTexture: {fileID: 0}
+  _rampTexture: {fileID: 7506314328700112305, guid: 00571a093eeef44bdbed4c9363bc364d, type: 3}
 --- !u!4 &1500226138
 Transform:
   m_ObjectHideFlags: 0
@@ -997,6 +997,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1220127152409290909, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1220127152409290909, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1220127152409290909, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
+      propertyPath: m_Color.r
+      value: 0.8822017
+      objectReference: {fileID: 0}
     - target: {fileID: 1485947979047088979, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
       propertyPath: _tunnel
       value: 
@@ -1004,6 +1016,18 @@ PrefabInstance:
     - target: {fileID: 3020264992416293518, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 3577085838745663624, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0.5383213
+      objectReference: {fileID: 0}
+    - target: {fileID: 3577085838745663624, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0.5849056
+      objectReference: {fileID: 0}
+    - target: {fileID: 3577085838745663624, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0.26210395
       objectReference: {fileID: 0}
     - target: {fileID: 4287536555734979045, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
       propertyPath: m_LocalPosition.x
