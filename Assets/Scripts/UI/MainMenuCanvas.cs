@@ -5,12 +5,9 @@ using Mainframe;
 
 public class MainMenuCanvas: CanvasSingleton<MainMenuCanvas>
 {
-    // Init
-    //----------------------------------------------------------------------------------------------------
-    public void Init() {}
-    
-    // MonoBehaviour
-    //----------------------------------------------------------------------------------------------------
-    void Awake() {}
-    void Update() {}
+    void Update()
+    {
+        if(INPUT.leftMouse.down)
+            SCENE.LoadScene(2);
+    }
 }

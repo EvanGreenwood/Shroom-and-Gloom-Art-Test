@@ -262,7 +262,7 @@ MonoBehaviour:
     value: 0
   bleedAmount:
     overrideState: 1
-    value: 2
+    value: 1
   noiseResGlobal:
     overrideState: 0
     value: 1
@@ -277,13 +277,13 @@ MonoBehaviour:
     value: 1
   filmGrainAmount:
     overrideState: 1
-    value: 0.005
+    value: 0.002
   signalNoiseOn:
     overrideState: 1
     value: 1
   signalNoiseAmount:
     overrideState: 1
-    value: 0.234
+    value: 0.15
   signalNoisePower:
     overrideState: 1
     value: 0.83
@@ -379,10 +379,10 @@ MonoBehaviour:
     value: 0.1
   feedbackAmount:
     overrideState: 1
-    value: 3
+    value: 2
   feedbackFade:
     overrideState: 1
-    value: 0.82
+    value: 0.55
   feedbackColor:
     overrideState: 0
     value: {r: 1, g: 0.5, b: 0, a: 1}

@@ -17,7 +17,7 @@ public class SpriteBillboard : MonoBehaviour
     void Update()
     {
         Vector3 dir = (SceneUtils.MainCamera.transform.position - transform.position).normalized;
-        transform.rotation = Quaternion.LookRotation(dir, Vector3.up);
+        transform.rotation = Quaternion.LookRotation(-dir, Vector3.up);
 
         if(!_cameraFade)
             return;

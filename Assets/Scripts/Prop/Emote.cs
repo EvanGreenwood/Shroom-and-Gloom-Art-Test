@@ -11,6 +11,11 @@ public class Emote : MonoBehaviour
     int _numLoop = 0;
     // Init
     //----------------------------------------------------------------------------------------------------
+    public void Init(Color color)
+    {
+        _sr = GetComponent<SpriteRenderer>();
+        _sr.color = color;
+    }
     void Awake()
     {
         _startScale = transform.localScale;

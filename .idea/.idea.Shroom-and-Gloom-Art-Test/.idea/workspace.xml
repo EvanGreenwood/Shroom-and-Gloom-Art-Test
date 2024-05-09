@@ -6,9 +6,34 @@
   <component name="ChangeListManager">
     <list default="true" id="825655da-4771-4664-b01a-9bffcaa881d5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Shroom-and-Gloom-Art-Test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Shroom-and-Gloom-Art-Test/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Effects/Flare/Flare.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Effects/Flare/Flare.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/TestBench/Test/MeshRendererTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/TestBench/Test/MeshRendererTest.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/TestBench/Test/Rat.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/TestBench/Test/Rat.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/TestBench/Test/RatEmote.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/TestBench/Test/RatEmote.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/TestBench/Test/RatEmote.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/TestBench/Test/RatEmote.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/TestBench/Test/RatEmote.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/TestBench/Test/RatEmote.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Art/TestBench/Test/Test_PPV.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/TestBench/Test/Test_PPV.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/S0 Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/S0 Menu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/S7 Portal.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/S7 Portal.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/TestBench/Test/Test_PPV_DOF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/TestBench/Test/Test_PPV_DOF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/creatures/rat_sprite_sheet.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/creatures/rat_sprite_sheet.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/MainMixer.mixer" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/MainMixer.mixer.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Rat_Disturbed.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Rat_Disturbed.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Rat_Disturbed.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Rat_Disturbed.ogg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Rat_Flee.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Rat_Flee.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Rat_Flee.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Rat_Flee.ogg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/S0 Menu.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/S0 Menu.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Effects/SpriteBillboard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Effects/SpriteBillboard.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Prop/Emote.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Prop/Emote.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Prop/PropActor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Prop/PropActor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/MainMenuCanvas.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/MainMenuCanvas.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/FreeCamera.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/FreeCamera.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +99,7 @@
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="$PROJECT_DIR$/../_builds/00/Shroom And Gloom New Art Test.exe" />
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../_builds/00\Shroom And Gloom New Art Test.exe" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="D:\.work\.unity\shroom-and-gloom\_builds\00" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -136,7 +161,7 @@
       <workItem from="1715189384608" duration="1515000" />
       <workItem from="1715225641342" duration="423000" />
       <workItem from="1715256227569" duration="2000" />
-      <workItem from="1715256238751" duration="139000" />
+      <workItem from="1715256238751" duration="4423000" />
     </task>
     <servers />
   </component>

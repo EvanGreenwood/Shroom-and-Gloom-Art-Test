@@ -4,7 +4,7 @@ using Mainframe;
 using UnityEngine;
 #endregion
 
-namespace MathBad
+namespace Mainframe
 {
 public class FreeCamera : MonoBehaviour
 {
