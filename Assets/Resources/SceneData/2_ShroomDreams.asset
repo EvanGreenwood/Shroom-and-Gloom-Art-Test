@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Shroom Dreams
   description: Don't follow the light...
-  onSceneLoadedAudio: {fileID: 11400000, guid: df0c429427445c6409f88af14a31d75e, type: 2}
+  sceneIntro: {fileID: 11400000, guid: df0c429427445c6409f88af14a31d75e, type: 2}
+  sceneMusic: {fileID: 0}
   postProcessProfile: {fileID: 11400000, guid: 2eba52f5ca670c046b7dcfba8d1e1991, type: 2}

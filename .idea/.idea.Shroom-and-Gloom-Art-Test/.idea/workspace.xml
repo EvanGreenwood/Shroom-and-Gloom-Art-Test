@@ -6,73 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="825655da-4771-4664-b01a-9bffcaa881d5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Shroom-and-Gloom-Art-Test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Shroom-and-Gloom-Art-Test/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Creatures/rat_sprite_sheet.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Creatures/spore_frond_sprite_sheet.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/UI/LogoShadow.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/UI/LogoShadow.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/UI/Portal.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/UI/Portal.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/UI/PortalShadow.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/UI/PortalShadow.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/UI/RatStampede.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/UI/RatStampede.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/UI/Space.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/UI/Space.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/creatures/creature_fly.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/creatures/creature_fly.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/creatures/rat_sprite_sheet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/creatures/spore_frond_sprite_sheet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/FreeCamera.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/FreeCamera.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/GameController.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/GameController.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SpeechBubble.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SpeechBubble.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/BakeZone/Mines/Emote.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/BakeZone/Mines/Emote.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/BakeZone/Mines/Emote_Black.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/BakeZone/Mines/Emote_Black.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/BakeZone/Mines/Mines.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/BakeZone/Mines/Mines.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/BakeZone/Mines/Prelude_PPV.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/BakeZone/Mines/Prelude_PPV.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/BakeZone/Mines/RatEmote.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/BakeZone/Mines/RatEmote.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/BakeZone/Mines/RatEmote.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/BakeZone/Mines/RatEmote.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/BakeZone/Mines/RatEmote_Silohette.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/BakeZone/Mines/RatEmote_Silohette.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/BakeZone/Mines/SpriteToMeshTest.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/BakeZone/Mines/SpriteToMeshTest.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/BakeZone/Mines/Test_PPV.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/BakeZone/Mines/Test_PPV.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/BakeZone/Mines/Test_PPV_DOF.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/BakeZone/Mines/Test_PPV_DOF.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/BakeZone/Shroomy/GlowSpores.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/BakeZone/Shroomy/GlowSpores.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/BakeZone/Shroomy/Shroom_PPV.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/BakeZone/Shroomy/Shroom_PPV.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/BakeZone/Shroomy/Shroomy.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/BakeZone/Shroomy/Shroomy.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/BakeZone/Shroomy/Shroomy_Baked.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/BakeZone/Shroomy/Shroomy_Baked.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/S0b Menu.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/S0b Menu.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/S1 Mines.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/S1 Mines.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/S5 Shroomy.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/S5 Shroomy.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Camera/CameraAutoFocus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Camera/CameraAutoFocus.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Effects/LightAnim.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Effects/LightAnim.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SceneController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SceneController.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level Generation/TunnelGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Level Generation/TunnelGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/SceneData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/SceneData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/FPSMovement.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/FPSMovement.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SceneController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SceneController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
