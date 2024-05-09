@@ -5,60 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="825655da-4771-4664-b01a-9bffcaa881d5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Prop/SpeechBubble.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Prop/SpeechBubble.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Shroom-and-Gloom-Art-Test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Shroom-and-Gloom-Art-Test/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Mine/Chain.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Environment/Mine/Chain.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Mine/Mine_Stuff.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Environment/Mine/Mine_Stuff.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Mine/Mine_Stuff.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Environment/Mine/Mine_Stuff.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Mine/Prefabs/Mine_Wall.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Environment/Mine/Prefabs/Mine_Wall.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Props/Flame_02.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Environment/Props/Flame_02.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Props/Flame_02.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Environment/Props/Flame_02.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/stalagtites/_0000_stalagtite-1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Environment/stalagtites/_0000_stalagtite-1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/stalagtites/_0001_stalagtite-10.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Environment/stalagtites/_0001_stalagtite-10.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/stalagtites/_0002_stalagtite-9.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Environment/stalagtites/_0002_stalagtite-9.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/stalagtites/_0003_stalagtite-8.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Environment/stalagtites/_0003_stalagtite-8.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/stalagtites/_0004_stalagtite-7.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Environment/stalagtites/_0004_stalagtite-7.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/stalagtites/_0005_stalagtite-6.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Environment/stalagtites/_0005_stalagtite-6.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/stalagtites/_0006_Stalagtite-5.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Environment/stalagtites/_0006_Stalagtite-5.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/stalagtites/_0007_Stalagtite-4.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Environment/stalagtites/_0007_Stalagtite-4.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/stalagtites/_0008_stalagtite-3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Environment/stalagtites/_0008_stalagtite-3.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/stalagtites/_0009_Stalagtite-2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Environment/stalagtites/_0009_Stalagtite-2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/TestBench/JarredTest.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/TestBench/JarredTest/JarredTest.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/TestBench/JarredTest/JarredTest.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/TestBench/JarredTest/SpriteToMeshTest.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/TestBench/JarredTest/SpriteToMeshTest.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/DataStructures/FloatAnim.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Mainframe/DataStructures/FloatAnim.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/CPU/CanvasSingleton.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/CPU/CanvasSingleton.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/CPU/MonoBehaviour.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/CPU/MonoBehaviour.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/CPU/MonoBehaviourUI.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/CPU/MonoBehaviourUI.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/CPU/MonoSingleton.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/CPU/MonoSingleton.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/CPU/MonoSingletonUI.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/CPU/MonoSingletonUI.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/CPU/ScriptableObject.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/CPU/ScriptableObject.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/CPU/ScriptableSingleton.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/CPU/ScriptableSingleton.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/Editors/Editor.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/Editors/Editor.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/Editors/EditorWindow.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/Editors/EditorWindow.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/Editors/PropertyDrawer.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/Editors/PropertyDrawer.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/Types/Class.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/Types/Class.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/UTIL/EASE.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Mainframe/UTIL/EASE.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/UTIL/GIZMOS.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Mainframe/UTIL/GIZMOS.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/UTIL/INPUT.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Mainframe/UTIL/INPUT.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/UTIL/LERP.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Mainframe/UTIL/LERP.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/UTIL/SPRITE.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Mainframe/UTIL/SPRITE.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/S1 Mines.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/S1 Mines.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/S5 Shroomy.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/S5 Shroomy.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/TestBench/Test/Test_PPV.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/TestBench/Test/Test_PPV.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/S0 Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/S0 Menu.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/S7 Portal.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/S7 Portal.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Effects/LightAnim.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Effects/LightAnim.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Effects/RotationWobble.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Effects/RotationWobble.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level Generation/PropCoward.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level Generation/PropCoward.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level Generation/SubGenerators/Random/SGRandomSprite.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Level Generation/SubGenerators/Random/SGRandomSprite.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level Generation/TunnelGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Level Generation/TunnelGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/Post Processing/Global_PPV.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/Post Processing/Global_PPV.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Search.settings" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Search.settings" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,6 +73,14 @@
   }
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../_builds/00/Shroom And Gloom New Art Test.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="D:\.work\.unity\shroom-and-gloom\_builds\00" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.25f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath $PROJECT_DIR$ -debugCodeOptimization" />
@@ -177,6 +135,8 @@
       <workItem from="1715117067160" duration="7283000" />
       <workItem from="1715189384608" duration="1515000" />
       <workItem from="1715225641342" duration="423000" />
+      <workItem from="1715256227569" duration="2000" />
+      <workItem from="1715256238751" duration="139000" />
     </task>
     <servers />
   </component>
