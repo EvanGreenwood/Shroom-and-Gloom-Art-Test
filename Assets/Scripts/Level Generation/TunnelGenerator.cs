@@ -8,7 +8,7 @@
 #region Usings
 using System;
 using Framework;
-using Mainframe;
+using MathBad;
 using NaughtyAttributes;
 using System.Collections;
 using System.Collections.Generic;
@@ -118,7 +118,7 @@ public class TunnelGenerator : MonoBehaviour
     [SerializeField] float _lumpyWidth = 0.5f;
     [SerializeField] float _clearingWidth = 1f;
     [SerializeField] float _clearingDepth = 2.33f;
-    [HideInInspector]
+//    [HideInInspector]
     [SerializeField] bool _setHideFlags = true;
 
     [Header("Elements")]

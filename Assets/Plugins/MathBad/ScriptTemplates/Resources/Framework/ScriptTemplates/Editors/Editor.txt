@@ -1,0 +1,19 @@
+#region Usings
+using UnityEngine;
+using UnityEditor;
+using MathBad;
+#endregion
+
+[CustomEditor(typeof(#SCRIPTNAME#))]
+public class #SCRIPTNAME# : Editor
+{
+    #SCRIPTNAME# _target;
+
+    void OnEnable() { _target = (#SCRIPTNAME#)target; }
+    void OnDisable() { }
+
+    public override void OnInspectorGUI()
+    {
+        base.OnInspectorGUI();
+    }
+}

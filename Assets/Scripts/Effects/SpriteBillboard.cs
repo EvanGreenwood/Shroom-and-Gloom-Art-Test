@@ -1,7 +1,7 @@
 #region Usings
 using Framework;
 using UnityEngine;
-using Mainframe;
+using MathBad;
 #endregion
 
 public class SpriteBillboard : MonoBehaviour

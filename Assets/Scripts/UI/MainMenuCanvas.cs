@@ -1,13 +1,12 @@
 #region Usings
 using UnityEngine;
-using Mainframe;
+using MathBad;
 #endregion
 
-public class MainMenuCanvas: CanvasSingleton<MainMenuCanvas>
+public class MainMenuCanvas : CanvasSingleton<MainMenuCanvas>
 {
-    void Update()
+    public void StartAdventure()
     {
-        if(INPUT.leftMouse.down)
-            SCENE.LoadScene(2);
+        SCENE.LoadScene(2);
     }
 }
