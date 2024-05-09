@@ -5,9 +5,60 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="825655da-4771-4664-b01a-9bffcaa881d5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Prop/SpeechBubble.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Prop/SpeechBubble.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Shroom-and-Gloom-Art-Test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Shroom-and-Gloom-Art-Test/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Mine/Chain.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Environment/Mine/Chain.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Mine/Mine_Stuff.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Environment/Mine/Mine_Stuff.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Mine/Mine_Stuff.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Environment/Mine/Mine_Stuff.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Mine/Prefabs/Mine_Wall.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Environment/Mine/Prefabs/Mine_Wall.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Props/Flame_02.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Environment/Props/Flame_02.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Props/Flame_02.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Environment/Props/Flame_02.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/stalagtites/_0000_stalagtite-1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Environment/stalagtites/_0000_stalagtite-1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/stalagtites/_0001_stalagtite-10.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Environment/stalagtites/_0001_stalagtite-10.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/stalagtites/_0002_stalagtite-9.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Environment/stalagtites/_0002_stalagtite-9.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/stalagtites/_0003_stalagtite-8.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Environment/stalagtites/_0003_stalagtite-8.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/stalagtites/_0004_stalagtite-7.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Environment/stalagtites/_0004_stalagtite-7.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/stalagtites/_0005_stalagtite-6.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Environment/stalagtites/_0005_stalagtite-6.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/stalagtites/_0006_Stalagtite-5.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Environment/stalagtites/_0006_Stalagtite-5.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/stalagtites/_0007_Stalagtite-4.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Environment/stalagtites/_0007_Stalagtite-4.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/stalagtites/_0008_stalagtite-3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Environment/stalagtites/_0008_stalagtite-3.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/stalagtites/_0009_Stalagtite-2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Environment/stalagtites/_0009_Stalagtite-2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/TestBench/JarredTest.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/TestBench/JarredTest/JarredTest.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/TestBench/JarredTest/JarredTest.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/TestBench/JarredTest/SpriteToMeshTest.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/TestBench/JarredTest/SpriteToMeshTest.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/DataStructures/FloatAnim.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Mainframe/DataStructures/FloatAnim.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/CPU/CanvasSingleton.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/CPU/CanvasSingleton.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/CPU/MonoBehaviour.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/CPU/MonoBehaviour.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/CPU/MonoBehaviourUI.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/CPU/MonoBehaviourUI.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/CPU/MonoSingleton.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/CPU/MonoSingleton.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/CPU/MonoSingletonUI.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/CPU/MonoSingletonUI.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/CPU/ScriptableObject.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/CPU/ScriptableObject.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/CPU/ScriptableSingleton.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/CPU/ScriptableSingleton.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/Editors/Editor.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/Editors/Editor.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/Editors/EditorWindow.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/Editors/EditorWindow.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/Editors/PropertyDrawer.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/Editors/PropertyDrawer.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/Types/Class.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/Types/Class.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/UTIL/EASE.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Mainframe/UTIL/EASE.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/UTIL/GIZMOS.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Mainframe/UTIL/GIZMOS.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/UTIL/INPUT.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Mainframe/UTIL/INPUT.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/UTIL/LERP.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Mainframe/UTIL/LERP.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/UTIL/SPRITE.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Mainframe/UTIL/SPRITE.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player/Player.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/S1 Mines.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/S1 Mines.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/S5 Shroomy.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/S5 Shroomy.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/S7 Portal.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/S7 Portal.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Effects/LightAnim.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Effects/LightAnim.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Effects/RotationWobble.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Effects/RotationWobble.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level Generation/PropCoward.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level Generation/PropCoward.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level Generation/SubGenerators/Random/SGRandomSprite.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Level Generation/SubGenerators/Random/SGRandomSprite.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level Generation/TunnelGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Level Generation/TunnelGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/Post Processing/Global_PPV.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/Post Processing/Global_PPV.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Search.settings" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Search.settings" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,12 +69,27 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../../hardgore/hardgore/Assets/Plugins/Framework/Patterns/Timer/Timer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../hardgore/hardgore/Assets/Scripts/Common/KeepSpriteUpright.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../horror/horror/Assets/Plugins/MathBad/Extensions/TransformExt.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Mainframe/DataStructures/FloatAnim.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Mainframe/Extensions/TransformExt.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Mainframe/Patterns/Timer2/Timer2.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Effects/Cable/Cable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Effects/LightAnim.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Effects/SpriteBillboard.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Level Generation/Editor/TunnelStyleEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Level Generation/SubGenerators/Random/SGRandomFlipSprite.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Lighting/ShroomLightingService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/ServiceLocator/MonoService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/ServiceLocator/Service.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Prop/Emote.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Prop/PropActor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Prop/SpriteBody.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/LetterBox.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Prefabs.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/ConvertSpriteRenderers.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/FreeCamera.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/SceneViewShaderHelper.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.splines@2.5.2/Runtime/SplineUtility.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -35,27 +101,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Attach to Unity Editor.Attach to Unity Editor.executor": "Debug",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.sourceCode.C#",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Attach to Unity Editor.Attach to Unity Editor.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.C#&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\Junt\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
-      "C:\\Users\\Junt\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
-      "C:\\Users\\Junt\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\Junt\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\Junt\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\Junt\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.25f1\Editor\Unity.exe" />
@@ -110,6 +176,7 @@
       <workItem from="1715068932110" duration="8853000" />
       <workItem from="1715117067160" duration="7283000" />
       <workItem from="1715189384608" duration="1515000" />
+      <workItem from="1715225641342" duration="423000" />
     </task>
     <servers />
   </component>

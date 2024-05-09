@@ -12,7 +12,10 @@ using Mainframe;
 using NaughtyAttributes;
 using System.Collections;
 using System.Collections.Generic;
+#if UNITY_EDITOR
 using Unity.EditorCoroutines.Editor;
+#endif
+
 using Unity.Mathematics;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -115,6 +118,8 @@ public class TunnelGenerator : MonoBehaviour
     [SerializeField] float _lumpyWidth = 0.5f;
     [SerializeField] float _clearingWidth = 1f;
     [SerializeField] float _clearingDepth = 2.33f;
+    [HideInInspector]
+    [SerializeField] bool _setHideFlags = true;
 
     [Header("Elements")]
     [SerializeField]
@@ -142,7 +147,11 @@ public class TunnelGenerator : MonoBehaviour
     [SerializeField] bool _drawGizmos;
     float _tunnelLength = 1;
 
-    [SerializeField] [HideInInspector] bool _generatedIsSelectable = false;
+    [SerializeField]
+    // [HideInInspector] 
+    bool _generatedIsSelectable = false;
+
+    public SplineContainer tunnelSpline => _tunnelSpline;
 
     // Tunnel Evaluators
     //----------------------------------------------------------------------------------------------------
@@ -204,11 +213,13 @@ public class TunnelGenerator : MonoBehaviour
     SpriteRenderer SpawnTunnelElement(SpriteRenderer prefab, Vector3 position, Quaternion rotation, Vector3 forward, bool tryFlipSubGenerators, float normalizedDistance)
     {
         SpriteRenderer sprite = Instantiate(prefab, position, rotation, transform);
-
-        sprite.gameObject.hideFlags = HideFlags.DontSaveInEditor | HideFlags.DontSave;
-        if(!_generatedIsSelectable)
+        if(_setHideFlags)
         {
-            sprite.gameObject.hideFlags |= HideFlags.HideInHierarchy | HideFlags.NotEditable | HideFlags.HideInInspector;
+            sprite.gameObject.hideFlags = HideFlags.DontSaveInEditor | HideFlags.DontSave;
+            if(!_generatedIsSelectable)
+            {
+                sprite.gameObject.hideFlags |= HideFlags.HideInHierarchy | HideFlags.NotEditable | HideFlags.HideInInspector;
+            }
         }
 
         //We require a tunnel element on children. But dont require that somebody building levels knows. :)
@@ -225,7 +236,9 @@ public class TunnelGenerator : MonoBehaviour
         }
         else
         {
+#if UNITY_EDITOR
             EditorCoroutineUtility.StartCoroutine(SetupSubGenerators(element, tryFlipSubGenerators), this);
+#endif
         }
         IEnumerator SetupSubGenerators(TunnelElement e, bool flip)
         {
@@ -253,11 +266,13 @@ public class TunnelGenerator : MonoBehaviour
     ParticleSystem SpawnParticleSystem(ParticleSystem system, Vector3 position, Quaternion rotation)
     {
         ParticleSystem element = Instantiate(system, position, rotation, transform);
-
-        element.gameObject.hideFlags = HideFlags.DontSaveInEditor | HideFlags.DontSave;
-        if(!_generatedIsSelectable)
+        if(_setHideFlags)
         {
-            element.gameObject.hideFlags |= HideFlags.HideInHierarchy | HideFlags.NotEditable | HideFlags.HideInInspector;
+            element.gameObject.hideFlags = HideFlags.DontSaveInEditor | HideFlags.DontSave;
+            if(!_generatedIsSelectable)
+            {
+                element.gameObject.hideFlags |= HideFlags.HideInHierarchy | HideFlags.NotEditable | HideFlags.HideInInspector;
+            }
         }
 
         _generatedElements.Add(element.transform);
@@ -331,17 +346,20 @@ public class TunnelGenerator : MonoBehaviour
                 }
                 else
                 {
+#if UNITY_EDITOR
                     EditorCoroutineUtility.StartCoroutine(DestroyNextFrameBecauseUnity(), this);
+
                     IEnumerator DestroyNextFrameBecauseUnity()
                     {
                         yield return null;
 
-                        //May happen on play. Ok.
+                        // May happen on play. Ok.
                         if(element != null)
                         {
                             DestroyImmediate(element.gameObject);
                         }
                     }
+#endif
                 }
             }
             _generatedElements.Clear();

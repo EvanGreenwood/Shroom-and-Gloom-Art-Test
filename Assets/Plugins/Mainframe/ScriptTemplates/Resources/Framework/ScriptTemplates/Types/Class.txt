@@ -1,6 +1,6 @@
 #region Usings
 using UnityEngine;
-using Framework;
+using Mainframe;
 #endregion
 
 public class #SCRIPTNAME# {}

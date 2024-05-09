@@ -425,57 +425,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mine_Stuff_0
+      name: Rat
       rect:
         serializedVersion: 2
-        x: 914
-        y: 16
-        width: 96
-        height: 513
+        x: 504
+        y: 24
+        width: 337
+        height: 137
       alignment: 9
-      pivot: {x: 0.44697127, y: 0.1948541}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8bf8c5ce3cdc5a4459abb54969599f94
-      internalID: -516524588
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mine_Stuff_1
-      rect:
-        serializedVersion: 2
-        x: 714
-        y: 31
-        width: 186
-        height: 288
-      alignment: 9
-      pivot: {x: 0.2947286, y: 0.10228702}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 399ff6e65d7eaa746b35bb4abbbbcb85
-      internalID: 1304526119
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mine_Stuff_2
-      rect:
-        serializedVersion: 2
-        x: 515
-        y: 54
-        width: 168
-        height: 364
-      alignment: 9
-      pivot: {x: 0.15910266, y: 0.5734242}
+      pivot: {x: 0.6689308, y: 0.4062114}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -507,12 +465,12 @@ TextureImporter:
       Chain: -684026894
       Mine_Stuff_0: -516524588
       Mine_Stuff_1: 1304526119
-      Mine_Stuff_2: 1495628867
       Plank_0: 2130094210
       Plank_1: 2043757662
       Plank_2: -906295589
       Plank_3: -1862553185
       Plank_4: 1428229257
+      Rat: 1495628867
       Root_0: 1530658447
       Root_1: -1372925077
       Skull_0: -889555625

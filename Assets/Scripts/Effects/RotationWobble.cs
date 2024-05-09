@@ -1,13 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using static UnityEditor.Experimental.AssetDatabaseExperimental.AssetDatabaseCounters;
 
 public class RotationWobble : MonoBehaviour
 {
     [SerializeField] private float _speed = 2;
     [SerializeField] private float _amount = 4;
-   private Quaternion _originalLocalRotation ;
+    private Quaternion _originalLocalRotation;
     private float _counter = 0;
     void Start()
     {

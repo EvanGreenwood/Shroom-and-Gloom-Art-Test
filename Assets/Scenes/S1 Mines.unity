@@ -316,7 +316,7 @@ GameObject:
   - component: {fileID: 436994524}
   - component: {fileID: 436994526}
   m_Layer: 0
-  m_Name: Torch
+  m_Name: Torch (0)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -455,6 +455,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1053576327981276249, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
+      propertyPath: _headHeight
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1788053498998766857, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
       propertyPath: m_LocalPosition.y
       value: -1.64
@@ -506,6 +510,10 @@ PrefabInstance:
     - target: {fileID: 3577085838745663624, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
       propertyPath: m_BackGroundColor.r
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3577085838745663624, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
+      propertyPath: m_NormalizedViewPortRect.width
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4287536555734979045, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1115,6 +1123,7 @@ MonoBehaviour:
   _lumpyWidth: 0.5
   _clearingWidth: 1
   _clearingDepth: 2
+  _setHideFlags: 1
   wallElements:
   - name: Wall
     wallPrefabs:

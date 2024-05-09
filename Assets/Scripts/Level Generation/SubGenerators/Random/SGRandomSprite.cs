@@ -4,10 +4,8 @@ using Framework;
 using Mainframe;
 using NaughtyAttributes;
 using System;
-
 #endregion
 
-[RequireComponent(typeof(SpriteRenderer))]
 public class RandomSprite : SubGenerator
 {
   [SerializeField] Sprite[] _sprites;

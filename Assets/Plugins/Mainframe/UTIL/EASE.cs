@@ -11,7 +11,7 @@ using UnityEngine;
 #endregion
 namespace Mainframe
 {
-public enum Easing
+public enum EaseType
 {
   Linear = 0,
   InQuad, OutQuad, InOutQuad,
@@ -26,38 +26,38 @@ public enum Easing
 }
 public static class EASE
 {
-  public static float Evaluate(float t, Easing type)
+  public static float Evaluate(float t, EaseType type)
   {
     return type switch
            {
-             Easing.Linear       => Linear(t),
-             Easing.InQuad       => InQuad(t),
-             Easing.OutQuad      => OutQuad(t),
-             Easing.InOutQuad    => InOutQuad(t),
-             Easing.InCubic      => InCubic(t),
-             Easing.OutCubic     => OutCubic(t),
-             Easing.InOutCubic   => InOutCubic(t),
-             Easing.InQuart      => InQuart(t),
-             Easing.OutQuart     => OutQuart(t),
-             Easing.InOutQuart   => InOutQuart(t),
-             Easing.InSine       => InSine(t),
-             Easing.OutSine      => OutSine(t),
-             Easing.InOutSine    => InOutSine(t),
-             Easing.InExpo       => InExpo(t),
-             Easing.OutExpo      => OutExpo(t),
-             Easing.InOutExpo    => InOutExpo(t),
-             Easing.InCirc       => InCirc(t),
-             Easing.OutCirc      => OutCirc(t),
-             Easing.InOutCirc    => InOutCirc(t),
-             Easing.InElastic    => InElastic(t),
-             Easing.OutElastic   => OutElastic(t),
-             Easing.InOutElastic => InOutElastic(t),
-             Easing.InBack       => InBack(t),
-             Easing.OutBack      => OutBack(t),
-             Easing.InOutBack    => InOutBack(t),
-             Easing.InBounce     => InBounce(t),
-             Easing.OutBounce    => OutBounce(t),
-             Easing.InOutBounce  => InOutBounce(t),
+             EaseType.Linear       => Linear(t),
+             EaseType.InQuad       => InQuad(t),
+             EaseType.OutQuad      => OutQuad(t),
+             EaseType.InOutQuad    => InOutQuad(t),
+             EaseType.InCubic      => InCubic(t),
+             EaseType.OutCubic     => OutCubic(t),
+             EaseType.InOutCubic   => InOutCubic(t),
+             EaseType.InQuart      => InQuart(t),
+             EaseType.OutQuart     => OutQuart(t),
+             EaseType.InOutQuart   => InOutQuart(t),
+             EaseType.InSine       => InSine(t),
+             EaseType.OutSine      => OutSine(t),
+             EaseType.InOutSine    => InOutSine(t),
+             EaseType.InExpo       => InExpo(t),
+             EaseType.OutExpo      => OutExpo(t),
+             EaseType.InOutExpo    => InOutExpo(t),
+             EaseType.InCirc       => InCirc(t),
+             EaseType.OutCirc      => OutCirc(t),
+             EaseType.InOutCirc    => InOutCirc(t),
+             EaseType.InElastic    => InElastic(t),
+             EaseType.OutElastic   => OutElastic(t),
+             EaseType.InOutElastic => InOutElastic(t),
+             EaseType.InBack       => InBack(t),
+             EaseType.OutBack      => OutBack(t),
+             EaseType.InOutBack    => InOutBack(t),
+             EaseType.InBounce     => InBounce(t),
+             EaseType.OutBounce    => OutBounce(t),
+             EaseType.InOutBounce  => InOutBounce(t),
              _                     => Linear(t)
            };
   }

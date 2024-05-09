@@ -55,4 +55,5 @@ public static class GIZMOS
         Vector2 pos = min + size.Half();
         GizmoColor(color, () => Gizmos.DrawWireCube(pos, size));
     }
+    public static void WireSphere(Vector3 p0, float radius, Color color) {GizmoColor(color, () => Gizmos.DrawWireSphere(p0, radius));}
 }

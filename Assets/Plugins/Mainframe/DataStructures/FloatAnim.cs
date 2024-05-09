@@ -17,7 +17,7 @@ public enum LoopType
 public struct FloatAnim
 {
     [SerializeField]
-    Easing _easing;
+    EaseType _easeType;
     LoopType _loopType;
     bool _reverse;
     float _value;
@@ -26,9 +26,9 @@ public struct FloatAnim
 
     bool _wasFinishedThisFrame, _hasFinished, _wasFinished;
 
-    public FloatAnim(Easing easing, LoopType loopType, float duration, bool reverse)
+    public FloatAnim(EaseType easeType, LoopType loopType, float duration, bool reverse)
     {
-        _easing = easing;
+        _easeType = easeType;
         _loopType = loopType;
         _duration = Mathf.Max(0.0001f, duration);
         _reverse = reverse;
@@ -39,15 +39,15 @@ public struct FloatAnim
         onLoop = null;
     }
 
-    public FloatAnim(Easing easing, LoopType loopType, float duration) : this(easing, loopType, duration, false) { }
-    public FloatAnim(Easing easing, float duration, bool reverse) : this(easing, LoopType.None, duration, reverse) { }
-    public FloatAnim(Easing easing, float duration) : this(easing, LoopType.None, duration, false) { }
+    public FloatAnim(EaseType easeType, LoopType loopType, float duration) : this(easeType, loopType, duration, false) { }
+    public FloatAnim(EaseType easeType, float duration, bool reverse) : this(easeType, LoopType.None, duration, reverse) { }
+    public FloatAnim(EaseType easeType, float duration) : this(easeType, LoopType.None, duration, false) { }
 
     public float duration => _duration;
     public bool reverse => _reverse;
     public float percent => _percent;
     public float lerp => _reverse ? 1f - _percent : _percent;
-    public Easing easing => _easing;
+    public EaseType easeType => _easeType;
     public float value => _value;
     public bool wasFinishedThisFrame => _wasFinishedThisFrame;
     public bool hasFinished => _hasFinished;
@@ -89,7 +89,7 @@ public struct FloatAnim
             }
         }
 
-        _value = EASE.Evaluate(Mathf.Clamp01(_percent), _easing);
+        _value = EASE.Evaluate(Mathf.Clamp01(_percent), _easeType);
     }
 
     public void SetDuration(float duration) {_duration = Mathf.Max(0.0001f, duration);}

@@ -1,7 +1,7 @@
 #region Usings
 using UnityEngine;
 using UnityEditor;
-using Framework;
+using Mainframe;
 #endregion
 
 [CustomEditor(typeof(#SCRIPTNAME#))]
