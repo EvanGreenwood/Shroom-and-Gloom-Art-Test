@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Shroomy
   m_EditorClassIdentifier: 
   title: Shroomy
-  description: 
+  description: Don't follow the light...
   onSceneLoadedAudio: {fileID: 11400000, guid: df0c429427445c6409f88af14a31d75e, type: 2}

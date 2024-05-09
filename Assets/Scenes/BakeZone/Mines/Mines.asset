@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: The Grey Mines
   description: Don't feed the animals...
-  onSceneLoaded: {fileID: 11400000, guid: df0c429427445c6409f88af14a31d75e, type: 2}
+  onSceneLoadedAudio: {fileID: 11400000, guid: df0c429427445c6409f88af14a31d75e, type: 2}
