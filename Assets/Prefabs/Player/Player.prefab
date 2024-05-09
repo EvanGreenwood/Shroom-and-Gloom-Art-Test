@@ -217,7 +217,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a83cb751f854594a8824eccf58b5c8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _volume: {fileID: 0}
+  _volume: {fileID: 2101669767777074678}
   _smoothTime: 0.15
 --- !u!114 &7064727645479905585
 MonoBehaviour:
