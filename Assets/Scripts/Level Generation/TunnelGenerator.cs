@@ -132,8 +132,8 @@ public class TunnelGenerator : MonoBehaviour
 
     [SerializeField] TunnelFloorData[] floorElements;
     public SpriteRenderer flatFloorPrefab;
-    public float flatFloorOffset = -1;
     public float flatFloorSpacing = 1f;
+    public float flatFloorOffset = -1;
 
     [SerializeField] TunnelCeilingData[] ceilingElements;
     public SpriteRenderer flatCeilingPrefab;

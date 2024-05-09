@@ -9,6 +9,7 @@ public class CameraAutoFocus : MonoBehaviour
 {
     [SerializeField] PostProcessVolume _volume;
     [SerializeField] float _smoothTime = 0.15f;
+    
     PostProcessProfile _ppv;
     DepthOfField _dof;
     float _curFocalDst, _lastDepthSuccess;

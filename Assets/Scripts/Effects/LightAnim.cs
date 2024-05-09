@@ -31,7 +31,7 @@ public class LightAnim : MonoBehaviour
 
     // MonoBehaviour
     //----------------------------------------------------------------------------------------------------
-    void Awake()
+    void Start()
     {
         _camera = Camera.main;
         _anim = new FloatAnim(_easingType, LoopType.PingPong, 0.1f);

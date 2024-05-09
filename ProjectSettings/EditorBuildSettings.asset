@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/S0a Prelude.unity
     guid: 39bbfa26a1fd80d49b6fdd44c760ccd8
   - enabled: 1
-    path: Assets/Scenes/S0b Menu.unity
+    path: Assets/Scenes/S0b MainMenu.unity
     guid: f6e338d74409f9049b6c278e10ee0653
   - enabled: 1
     path: Assets/Scenes/BakeZone/Mines/Mines_Baked.unity
