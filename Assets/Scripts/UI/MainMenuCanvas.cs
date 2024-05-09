@@ -1,16 +1,12 @@
 #region Usings
 using UnityEngine;
-using Mainframe;
+using MathBad;
 #endregion
 
-public class MainMenuCanvas: CanvasSingleton<MainMenuCanvas>
+public class MainMenuCanvas : CanvasSingleton<MainMenuCanvas>
 {
-    // Init
-    //----------------------------------------------------------------------------------------------------
-    public void Init() {}
-    
-    // MonoBehaviour
-    //----------------------------------------------------------------------------------------------------
-    void Awake() {}
-    void Update() {}
+    public void StartAdventure()
+    {
+        SCENE.LoadScene(2);
+    }
 }

@@ -1,6 +1,6 @@
 #region
 using Framework;
-using Mainframe;
+using MathBad;
 using UnityEngine;
 #endregion
 
@@ -23,10 +23,13 @@ public class FreeCamera : MonoBehaviour
     float _pitch, _yaw;
     float _fovVelocity;
     float _startFov;
+
     // MonoBehaviour
     //----------------------------------------------------------------------------------------------------
     void Awake()
     {
+        _pitch = MATH.Normalize_360(transform.eulerAngles.x);
+        _yaw = MATH.Normalize_360(transform.eulerAngles.y);
         _startFov = _camera.fieldOfView;
         INPUT.mouseCaptured = true;
     }
@@ -47,7 +50,7 @@ public class FreeCamera : MonoBehaviour
         Vector3 input = INPUT.moveInput2.ToVector3XZ();
         if(INPUT.rightMouse.pressed) input.y = 1f;
         if(INPUT.leftShift.pressed) input.y = -1f;
-        
+
         Vector3 moveForce = input.normalized * _moveSpeed;
         Vector3 dragForce = PHYSICS.GetLinearDragForce(_velocity, _moveDrag);
 

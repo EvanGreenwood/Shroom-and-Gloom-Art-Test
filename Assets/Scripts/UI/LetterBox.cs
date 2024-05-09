@@ -1,7 +1,7 @@
 #region Usings
 using UnityEngine;
 using Framework;
-using Mainframe;
+using MathBad;
 using NaughtyAttributes;
 using UnityEngine.UI;
 #endregion
@@ -11,11 +11,12 @@ public class LetterBox : MonoBehaviourUI
     [SerializeField] Image _top, _bottom;
     [SerializeField] float _startDuration = 1f;
     [Range(0f, 1f)]
-    [SerializeField]
-    float _size = 0.15f;
+    [SerializeField] float _size = 0.15f;
+    [SerializeField] float _stopSize = 0.0f;
 
     float _startTime = 0f;
     FloatAnim _fadeTimer = new FloatAnim(EaseType.OutQuart, LoopType.None, 3f);
+    bool _isStopped;
 
     // Monobehaviour
     //----------------------------------------------------------------------------------------------------
@@ -30,14 +31,23 @@ public class LetterBox : MonoBehaviourUI
 
     void Update()
     {
+        if(_isStopped)
+            return;
+        
         if(_startTime > 0f)
             _startTime -= Time.deltaTime;
 
         if(_startTime <= 0f)
         {
             _fadeTimer.Step(Time.deltaTime);
-            _top.transform.localScale = _top.transform.localScale.WithY(1f - _fadeTimer.value);
-            _bottom.transform.localScale = _bottom.transform.localScale.WithY(1f - _fadeTimer.value);
+            float percent = 1f - _fadeTimer.value;
+            if(percent <= _stopSize && _stopSize > 0f)
+            {
+                _isStopped = true;
+                return;
+            }
+            _top.transform.localScale = _top.transform.localScale.WithY(percent);
+            _bottom.transform.localScale = _bottom.transform.localScale.WithY(percent);
 
             if(_fadeTimer.wasFinishedThisFrame)
             {

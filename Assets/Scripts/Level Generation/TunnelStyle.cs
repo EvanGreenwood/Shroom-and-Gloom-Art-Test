@@ -1,10 +1,10 @@
 #region Usings
 using System.Collections.Generic;
 using UnityEngine;
-using Mainframe;
+using MathBad;
 using Unity.Mathematics;
 #endregion
-
+[System.Serializable]
 struct TunnelColorKey
 {
     public Color color;
@@ -22,6 +22,7 @@ public class TunnelStyle : MonoBehaviour
 {
     [SerializeField, HideInInspector]
     TunnelGenerator _generator;
+    [SerializeField]
     List<TunnelColorKey> _colorKeys = new List<TunnelColorKey>();
 
     public TunnelGenerator tunnelGenerator

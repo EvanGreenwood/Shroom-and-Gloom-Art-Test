@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 9139629137564745126}
   - component: {fileID: 5190621771042991310}
   - component: {fileID: 2851985317414631120}
+  - component: {fileID: 1485947979047088979}
   m_Layer: 5
   m_Name: MainCamera
   m_TagString: MainCamera
@@ -46,7 +47,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.047058824, g: 0.24705882, b: 0.26666668, a: 1}
+  m_BackGroundColor: {r: 0.50980395, g: 0, b: 0.45143235, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -107,7 +108,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sharedProfile: {fileID: 11400000, guid: 20b511e99e2f8ba4b99759d2615fa5fd, type: 2}
+  sharedProfile: {fileID: 11400000, guid: 297deffda20a45b4897dc7722de264a0, type: 2}
   isGlobal: 1
   blendDistance: 0
   weight: 1
@@ -171,7 +172,24 @@ MonoBehaviour:
   breakBeforeColorGrading: 0
   m_BeforeTransparentBundles: []
   m_BeforeStackBundles: []
-  m_AfterStackBundles: []
+  m_AfterStackBundles:
+  - assemblyQualifiedName: VladStorm.VHSPro, Assembly-CSharp-firstpass, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &1485947979047088979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 245572396879630763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a83cb751f854594a8824eccf58b5c8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _tunnel: {fileID: 0}
+  _directionLookaheadDistance: 5
+  _volume: {fileID: 5190621771042991310}
 --- !u!1 &3020264992416293518
 GameObject:
   m_ObjectHideFlags: 0
@@ -198,7 +216,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3020264992416293518}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -362,6 +380,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7442059856797200300}
   - component: {fileID: 1220127152409290909}
+  - component: {fileID: 6297396040608760303}
   m_Layer: 0
   m_Name: Light
   m_TagString: Untagged
@@ -396,7 +415,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
+  m_Intensity: 2
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -446,6 +465,64 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &6297396040608760303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6542453135667980607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77dd3bb68517c894395317ba7e2575b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _easingType: 3
+  _animateIntensity: 1
+  _loopDuration:
+    _min: 1.5
+    _max: 3
+  _intensityRange:
+    _min: 1.5
+    _max: 1.5
+  _animateColor: 1
+  _colorPool:
+    serializedVersion: 2
+    key0: {r: 1, g: 1, b: 1, a: 1}
+    key1: {r: 0.49056602, g: 0.49056602, b: 0.49056602, a: 1}
+    key2: {r: 0, g: 0, b: 0, a: 0}
+    key3: {r: 0, g: 0, b: 0, a: 0}
+    key4: {r: 0, g: 0, b: 0, a: 0}
+    key5: {r: 0, g: 0, b: 0, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
+    key7: {r: 0, g: 0, b: 0, a: 0}
+    ctime0: 0
+    ctime1: 65535
+    ctime2: 0
+    ctime3: 0
+    ctime4: 0
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_ColorSpace: 0
+    m_NumColorKeys: 2
+    m_NumAlphaKeys: 2
+  _cameraDst: 0
+  _cameraDstMinMax:
+    _min: 1
+    _max: 5
+  _cameraDstFactor:
+    _min: 0.75
+    _max: 1
 --- !u!1 &6754491647642625121
 GameObject:
   m_ObjectHideFlags: 0
