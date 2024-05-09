@@ -8,6 +8,8 @@ namespace MathBad
 {
 public class FreeCamera : MonoBehaviour
 {
+    [SerializeField] bool _isPaused;
+    [Space]
     [SerializeField] Camera _camera;
     [SerializeField] float _sensitivity = 5f;
     [Header("Move")]
@@ -24,6 +26,10 @@ public class FreeCamera : MonoBehaviour
     float _fovVelocity;
     float _startFov;
 
+    public void Pause(bool flag)
+    {
+        _isPaused = flag;
+    }
     // MonoBehaviour
     //----------------------------------------------------------------------------------------------------
     void Awake()
@@ -33,7 +39,12 @@ public class FreeCamera : MonoBehaviour
         _startFov = _camera.fieldOfView;
         INPUT.mouseCaptured = true;
     }
-    void Update() {Step(Time.deltaTime);}
+    void Update()
+    {
+        if(_isPaused)
+            return;
+        Step(Time.deltaTime);
+    }
 
     // Step
     //----------------------------------------------------------------------------------------------------

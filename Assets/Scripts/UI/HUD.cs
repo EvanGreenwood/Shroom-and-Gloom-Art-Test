@@ -16,7 +16,10 @@ public class HUD : CanvasSingleton<HUD>
 
     // MonoBehaviour
     //----------------------------------------------------------------------------------------------------
-    void Awake() {_activeSceneName = SceneManager.GetActiveScene().name;}
+    void Awake()
+    {
+        _activeSceneName = SceneManager.GetActiveScene().name;
+    }
     void Update()
     {
         _infoLabel.text = $"{_activeSceneName}  |  " +

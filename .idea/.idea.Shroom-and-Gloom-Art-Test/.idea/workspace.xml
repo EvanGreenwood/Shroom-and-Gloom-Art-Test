@@ -6,337 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="825655da-4771-4664-b01a-9bffcaa881d5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Shroom-and-Gloom-Art-Test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Shroom-and-Gloom-Art-Test/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Mine/Chain.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Environment/Mine/Chain.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/TestBench.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/TestBench/Test.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/TestBench/Test/Emote.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/TestBench/Test/Emote.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/TestBench/Test/Emote_Black.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/TestBench/Test/Emote_Black.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/TestBench/Test/MeshRendererTest.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/TestBench/Test/MeshRendererTest.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/TestBench/Test/Prelude_PPV.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/TestBench/Test/Prelude_PPV.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/TestBench/Test/Rat.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/TestBench/Test/Rat.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/TestBench/Test/RatEmote.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/TestBench/Test/RatEmote.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/TestBench/Test/RatEmote.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/TestBench/Test/RatEmote.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/TestBench/Test/RatEmote_Silohette.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/TestBench/Test/RatEmote_Silohette.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/TestBench/Test/SpriteToMeshTest.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/TestBench/Test/SpriteToMeshTest.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/TestBench/Test/Test_PPV.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/TestBench/Test/Test_PPV.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/TestBench/Test/Test_PPV_DOF.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/TestBench/Test/Test_PPV_DOF.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/TestBench/Test/Tunnel_Backup.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/TestBench/Test/Tunnel_Backup.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/DataStructures.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/DataStructures/Bank.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/DataStructures/Bank/ScriptableBank.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/DataStructures/Bank/ScriptableBank.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/DataStructures/Bank/SpriteBank.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/DataStructures/Bank/SpriteBank.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/DataStructures/Bit.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/DataStructures/Bit/Bit.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/DataStructures/Bit/Bit.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/DataStructures/Bit/Editor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/DataStructures/Bit/Editor/BitDrawers.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/DataStructures/Bit/Editor/BitDrawers.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/DataStructures/FloatAnim.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/DataStructures/FloatAnim.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/DataStructures/InputActions.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/DataStructures/InputActions/ButtonAction.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/DataStructures/InputActions/ButtonAction.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/DataStructures/InputActions/KeyAction.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/DataStructures/InputActions/KeyAction.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/DataStructures/Int.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/DataStructures/Int/Editor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/DataStructures/Int/Editor/Int2Drawer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/DataStructures/Int/Editor/Int2Drawer.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/DataStructures/Int/Editor/Int3Drawer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/DataStructures/Int/Editor/Int3Drawer.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/DataStructures/Int/Int2.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/DataStructures/Int/Int2.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/DataStructures/Int/Int3.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/DataStructures/Int/Int3.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/DataStructures/PID.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/DataStructures/PID/Editor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/DataStructures/PID/Editor/PIDDrawer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/DataStructures/PID/Editor/PIDDrawer.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/DataStructures/PID/PID.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/DataStructures/PID/PID.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/DataStructures/Pinned.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/DataStructures/Pinned.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/DataStructures/Spatial.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/DataStructures/Spatial/Spatial2F.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/DataStructures/Spatial/Spatial2F.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/DataStructures/Spatial/Spatial3F.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/DataStructures/Spatial/Spatial3F.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/DataStructures/Spatial/SpatialExt.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/DataStructures/Spatial/SpatialExt.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Editor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Editor/EDITOR_HELP.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Editor/EDITOR_HELP.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Editor/EditorInput.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Editor/EditorInput.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Editor/REFLECTION.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Editor/REFLECTION.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Editor/SaveAsset.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Editor/SaveAsset.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Editor/UnityEditorUtil.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Editor/UnityEditorUtil.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Extensions.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Extensions/CastingExt.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Extensions/CastingExt.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Extensions/CollectionExt.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Extensions/CollectionExt.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Extensions/ColorExt.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Extensions/ColorExt.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Extensions/Editor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Extensions/Editor/EditorGUIExt.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Extensions/Editor/EditorGUIExt.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Extensions/MathExt.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Extensions/MathExt.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Extensions/RectExt.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Extensions/RectExt.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Extensions/ReflectionExt.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Extensions/ReflectionExt.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Extensions/ShaderExt.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Extensions/ShaderExt.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Extensions/StringExt.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Extensions/StringExt.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Extensions/TextureExt.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Extensions/TextureExt.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Extensions/TransformExt.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Extensions/TransformExt.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Patterns.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Patterns/FrameRate.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Patterns/FrameRate/FrameRate.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Patterns/FrameRate/FrameRate.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Patterns/Singleton.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Patterns/Singleton/ISingelton.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Patterns/Singleton/ISingelton.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Patterns/Singleton/MonoSingleton.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Patterns/Singleton/MonoSingleton.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Patterns/Singleton/MonoSingletonUI.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Patterns/Singleton/MonoSingletonUI.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Patterns/Singleton/ScriptableSingleton.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Patterns/Singleton/ScriptableSingleton.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Patterns/Singleton/Singleton.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Patterns/Singleton/Singleton.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Patterns/Sprite.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Patterns/Sprite/SpriteAnimator.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Patterns/Sprite/SpriteAnimator.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Patterns/StateMachine.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Patterns/StateMachine/StateMachine.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Patterns/StateMachine/StateMachine.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Patterns/Timer2.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Patterns/Timer2/Editor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Patterns/Timer2/Editor/Timer2Drawer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Patterns/Timer2/Editor/Timer2Drawer.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Patterns/Timer2/Timer2.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Patterns/Timer2/Timer2.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Patterns/UI.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Patterns/UI/ButtonUI.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Patterns/UI/ButtonUI.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Patterns/UI/CanvasSingleton.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Patterns/UI/CanvasSingleton.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Patterns/UI/CanvasValidator.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Patterns/UI/CanvasValidator.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Patterns/UI/Draggable.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Patterns/UI/Draggable.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Patterns/UI/EncapsulateLabel.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Patterns/UI/EncapsulateLabel.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Patterns/UI/FieldList.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Patterns/UI/FieldList.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Patterns/UI/FieldUI.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Patterns/UI/FieldUI.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Patterns/UI/FrameRateUI.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Patterns/UI/FrameRateUI.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Patterns/UI/IgnoreUIState.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Patterns/UI/IgnoreUIState.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Patterns/UI/Interactable.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Patterns/UI/Interactable.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Patterns/UI/MonoBehaviourUI.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Patterns/UI/MonoBehaviourUI.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Patterns/UI/PointerUIState.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Patterns/UI/PointerUIState.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/QuickMenu.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/QuickMenu/Attributes.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/QuickMenu/Attributes/IMenuAttribute.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/QuickMenu/Attributes/IMenuAttribute.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/QuickMenu/Attributes/MenuCreateAttribute.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/QuickMenu/Attributes/MenuCreateAttribute.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/QuickMenu/Attributes/MenuInvokeAttribute.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/QuickMenu/Attributes/MenuInvokeAttribute.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/QuickMenu/Editor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/QuickMenu/Editor/Menus.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/QuickMenu/Editor/Menus/DataMenu.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/QuickMenu/Editor/Menus/DataMenu.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/QuickMenu/Editor/Menus/GlobalMenu.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/QuickMenu/Editor/Menus/GlobalMenu.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/QuickMenu/Editor/Menus/HeirarchyMenu.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/QuickMenu/Editor/Menus/HeirarchyMenu.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/QuickMenu/Editor/Menus/ProjectMenu.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/QuickMenu/Editor/Menus/ProjectMenu.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/QuickMenu/Editor/QuickMenu.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/QuickMenu/Editor/QuickMenu.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Editor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Editor/ScriptTemplates.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Editor/ScriptTemplates.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/CPU.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/CPU/CanvasSingleton.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/CPU/CanvasSingleton.txt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/CPU/MonoBehaviour.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/CPU/MonoBehaviour.txt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/CPU/MonoBehaviourUI.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/CPU/MonoBehaviourUI.txt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/CPU/MonoSingleton.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/CPU/MonoSingleton.txt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/CPU/MonoSingletonUI.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/CPU/MonoSingletonUI.txt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/CPU/ScriptableObject.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/CPU/ScriptableObject.txt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/CPU/ScriptableSingleton.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/CPU/ScriptableSingleton.txt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/Editors.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/Editors/Editor.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/Editors/Editor.txt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/Editors/EditorWindow.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/Editors/EditorWindow.txt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/Editors/PropertyDrawer.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/Editors/PropertyDrawer.txt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/GPU.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/GPU/ComputeDispatch.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/GPU/ComputeDispatch.txt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/GPU/ComputeShader.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/GPU/ComputeShader.txt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/GPU/FragmentShader.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/GPU/FragmentShader.txt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/GPU/ShaderInclude.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/GPU/ShaderInclude.txt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/Text.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/Text.txt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/Types.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/Types/Class.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/ScriptTemplates/Resources/Framework/ScriptTemplates/Types/Class.txt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Tools.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Tools/AsciiFonts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Tools/AsciiFonts/AsciiUtil.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Tools/AsciiFonts/AsciiUtil.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Tools/AsciiFonts/Editor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Tools/AsciiFonts/Editor/AsciiFontGenerator.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Tools/AsciiFonts/Editor/AsciiFontGenerator.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Tools/AsciiFonts/GeneratedAsciiFonts.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Tools/AsciiFonts/GeneratedAsciiFonts.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Tools/AsciiFonts/Resources.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Tools/AsciiFonts/Resources/Framework.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Tools/AsciiFonts/Resources/Framework/AsciiFonts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Tools/AsciiFonts/Resources/Framework/AsciiFonts/Fonts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Tools/AsciiFonts/Resources/Framework/AsciiFonts/Fonts/Graphitti.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Tools/AsciiFonts/Resources/Framework/AsciiFonts/Fonts/Graphitti.txt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Tools/AsciiFonts/Resources/Framework/AsciiFonts/Fonts/Small.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Tools/AsciiFonts/Resources/Framework/AsciiFonts/Fonts/Small.txt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Tools/BatchRename.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Tools/BatchRename/Editor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Tools/BatchRename/Editor/BatchRename.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/Tools/BatchRename/Editor/BatchRename.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/UTIL.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/UTIL/ARRAY.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/UTIL/ARRAY.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/UTIL/CAMERA.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/UTIL/CAMERA.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/UTIL/CANVAS.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/UTIL/CANVAS.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/UTIL/DEBUG.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/UTIL/DEBUG.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/UTIL/DIRECTION.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/UTIL/DIRECTION.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/UTIL/EASE.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/UTIL/EASE.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/UTIL/ENUM.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/UTIL/ENUM.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/UTIL/Editor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/UTIL/Editor/EDITOR.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/UTIL/Editor/EDITOR.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/UTIL/Editor/EDITOR_LIB.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/UTIL/Editor/EDITOR_LIB.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/UTIL/Editor/PATH.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/UTIL/Editor/PATH.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/UTIL/GIZMOS.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/UTIL/GIZMOS.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/UTIL/GPU.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/UTIL/GPU.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/UTIL/INPUT.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/UTIL/INPUT.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/UTIL/LERP.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/UTIL/LERP.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/UTIL/LOAD.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/UTIL/LOAD.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/UTIL/MATH.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/UTIL/MATH.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/UTIL/MESH.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/UTIL/MESH.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/UTIL/PHYSICS.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/UTIL/PHYSICS.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/UTIL/RENDER.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/UTIL/RENDER.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/UTIL/RGB.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/UTIL/RGB.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/UTIL/RNG.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/UTIL/RNG.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/UTIL/SCENE.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/UTIL/SCENE.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/UTIL/SCREEN.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/UTIL/SCREEN.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/UTIL/SPRITE.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/UTIL/SPRITE.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/UTIL/TEX.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/UTIL/TEX.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/UTIL/UI.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/UTIL/UI.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/UTIL/WAIT.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mainframe/UTIL/WAIT.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Plugins/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/FreeCamera.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/FreeCamera.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/BakeZone/Mines/Mines_Baked.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/BakeZone/Mines/Mines_Baked.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/BakeZone/Mines/Test_PPV_DOF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/BakeZone/Mines/Test_PPV_DOF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/BakeZone/Shroomy/Shroomy_Baked.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/BakeZone/Shroomy/Shroomy_Baked.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/S0b Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/S0b Menu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/S5 Shroomy.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/S5 Shroomy.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Camera/CameraAutoFocus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Camera/CameraAutoFocus.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Effects/Cable/Cable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Effects/Cable/Cable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Effects/Cable/CableNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Effects/Cable/CableNode.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Effects/CableHanging.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Effects/CableHanging.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Effects/LightAnim.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Effects/LightAnim.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Effects/SpriteBillboard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Effects/SpriteBillboard.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level Generation/Editor/TunnelStyleEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Level Generation/Editor/TunnelStyleEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level Generation/SubGenerators/Random/SGRandomFlipSprite.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Level Generation/SubGenerators/Random/SGRandomFlipSprite.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level Generation/SubGenerators/Random/SGRandomSprite.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Level Generation/SubGenerators/Random/SGRandomSprite.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level Generation/SubGenerators/VisibilityProbability.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Level Generation/SubGenerators/VisibilityProbability.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level Generation/TestNoise.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Level Generation/TestNoise.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level Generation/TunnelElement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Level Generation/TunnelElement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level Generation/TunnelGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Level Generation/TunnelGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level Generation/TunnelStyle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Level Generation/TunnelStyle.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Prop/Emote.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Prop/Emote.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Prop/PropActor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Prop/PropActor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Prop/SpeechBubble.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Prop/SpeechBubble.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Prop/SpriteBody.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Prop/SpriteBody.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/HUD.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/HUD.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/LetterBox.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/LetterBox.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/MainMenuCanvas.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/MainMenuCanvas.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Prefabs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Prefabs.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/PreludeCanvas.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/PreludeCanvas.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/ConvertSpriteRenderers.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/ConvertSpriteRenderers.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/FreeCamera.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/FreeCamera.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/SpriteHueShift.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/SpriteHueShift.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -355,15 +33,14 @@
     <setting file="file://$PROJECT_DIR$/../../hardgore/hardgore/Assets/Plugins/Framework/Patterns/Timer/Timer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../hardgore/hardgore/Assets/Scripts/Common/KeepSpriteUpright.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../horror/horror/Assets/Plugins/MathBad/Extensions/TransformExt.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Mainframe/DataStructures/FloatAnim.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Mainframe/Extensions/TransformExt.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Mainframe/Patterns/Timer2/Timer2.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/MathBad/Editor/TransformInspector.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Effects/Cable/Cable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Effects/LightAnim.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Effects/SpriteBillboard.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Level Generation/Editor/TunnelStyleEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Level Generation/SubGenerators/Random/SGRandomFlipSprite.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Lighting/ShroomLightingService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/SceneData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/ServiceLocator/MonoService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/ServiceLocator/Service.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Prop/Emote.cs" root0="FORCE_HIGHLIGHTING" />
@@ -371,6 +48,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Prop/SpriteBody.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/LetterBox.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Prefabs.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/SceneTransition.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/ConvertSpriteRenderers.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/FreeCamera.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/MoveTowardsCamera.cs" root0="FORCE_HIGHLIGHTING" />
@@ -474,7 +152,7 @@
       <workItem from="1715189384608" duration="1515000" />
       <workItem from="1715225641342" duration="423000" />
       <workItem from="1715256227569" duration="2000" />
-      <workItem from="1715256238751" duration="15960000" />
+      <workItem from="1715256238751" duration="21353000" />
     </task>
     <servers />
   </component>

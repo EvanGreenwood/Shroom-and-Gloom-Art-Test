@@ -12,9 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/S0b Menu.unity
     guid: f6e338d74409f9049b6c278e10ee0653
   - enabled: 1
-    path: Assets/Scenes/BakeZone/Shroomy/Shroomy_Baked.unity
-    guid: 96d26d485e4f2804aa7e54a5896ffd32
-  - enabled: 1
     path: Assets/Scenes/BakeZone/Mines/Mines_Baked.unity
     guid: 2dca7fe6831d86f4393adf80f0d0e36d
+  - enabled: 1
+    path: Assets/Scenes/BakeZone/Shroomy/Shroomy_Baked.unity
+    guid: 96d26d485e4f2804aa7e54a5896ffd32
   m_configObjects: {}
