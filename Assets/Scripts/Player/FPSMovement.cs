@@ -1,7 +1,6 @@
 using Framework;
 using System.Collections;
 using System.Collections.Generic;
-using MathBad;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -25,6 +24,7 @@ public class FPSMovement : MonoBehaviour
 
     float _bobCounter = 0;
     float _currentSpeed = 5;
+
     bool _isActivated;
 
     // Activate
@@ -46,7 +46,7 @@ public class FPSMovement : MonoBehaviour
     {
         if(!_isActivated)
             return;
-        if(INPUT.leftShift.pressed)
+        if(Input.GetKey(KeyCode.LeftShift))
         {
             _currentSpeed = Mathf.MoveTowards(_currentSpeed, _speed * 1.8f, Time.deltaTime * _speed * 0.6f);
         }
@@ -55,8 +55,7 @@ public class FPSMovement : MonoBehaviour
             _currentSpeed = Mathf.MoveTowards(_currentSpeed, _speed, Time.deltaTime * _speed);
         }
 
-        float moveDir = INPUT.moveInput2.y;
-
+        float moveDir = Input.GetKey(KeyCode.W) ? 1f : Input.GetKey(KeyCode.S) ? -1f : 0;
         if(Mathf.Abs(moveDir) > 0)
         {
             if(_tunnel == null)
