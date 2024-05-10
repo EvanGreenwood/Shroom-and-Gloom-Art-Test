@@ -6,35 +6,34 @@
   <component name="ChangeListManager">
     <list default="true" id="825655da-4771-4664-b01a-9bffcaa881d5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Shroom-and-Gloom-Art-Test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Shroom-and-Gloom-Art-Test/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/particles/Dust/DustParticles.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/particles/Dust/DustParticles.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/MathBad/Extensions/MeshExt.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/MathBad/Extensions/MeshExt.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/MathBad/UTIL/GIZMOS.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/MathBad/UTIL/GIZMOS.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/TextMeshPro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/TextMeshPro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Enemies/PoppyPimples.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Enemies/PoppyPimples/Animation.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Enemies/PoppyPimples/Animation/Idle.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Enemies/PoppyPimples/Animation/Idle.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Enemies/PoppyPimples/Animation/PoppyPimples.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Enemies/PoppyPimples/Animation/PoppyPimples.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Enemies/PoppyPimples/PoppyPimples.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Enemies/PoppyPimples/PoppyPimples.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Enemies/PoppyPimples/PoppyPimples.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Enemies/PoppyPimples/PoppyPimples.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Enemies/Terry.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Enemies/Terry.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Enemies/Terry_Veteran.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Enemies/Terry_Veteran.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Enemies/Terry_sprite_sheet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Enemies/Terry_sprite_sheet.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Enemies/Touchy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Enemies/Touchy.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Enemies/Touchy_Idle.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Enemies/Touchy_Idle.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Enemies/Touchy_sprite_sheet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Enemies/Touchy_sprite_sheet.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/HBAO/SRP/HDRP.unitypackage.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/HBAO/SRP/URP.unitypackage.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Text Animator/Extra/Typewriter Sound - Package.unitypackage.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/View.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player/View.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/SceneData/S1_Mines_SceneData.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/SceneData/SceneData/S1_Mines_SceneData.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPV.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPV/S1_Mines_PPP.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPV/S1_Mines_PPP.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPV/S2_RockTunnel_PPP.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPV/S2_RockTunnel_PPP.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPV/S3_RockCave_PPP.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPV/S3_RockCave_PPP.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPV/S4_Cavern_PPP.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPV/S4_Cavern_PPP.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPV/S5_Shroomy_PPP.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPV/S5_Shroomy_PPP.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPV/S6_Trippy_PPP.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPV/S6_Trippy_PPP.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPV/S7_Portal_PPP.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPV/S7_Portal_PPP.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPV/S8_Gloom_PPP.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPV/S8_Gloom_PPP.asset.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/S1_TheMines.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/S1_TheMines.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level Generation/TunnelGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Level Generation/TunnelGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level Generation/TunnelMesh.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Level Generation/TunnelMesh.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/View.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/View.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/Post Processing/Transition_PPV.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/Post Processing/Transition_PPV.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/PresetManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/PresetManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,16 +44,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/32ee6a9f8f3649e6a7a7646d2fd0953c7c00/ac/15ec8e46/Input.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c5ed782439084ef1bc2ad85eec89e9fe175a00/92/657d0cbe/Gizmos.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../Steamboat-Winky/SteamboatWinky/SteamboatWinky/Assets/Plugins/MathBad/Extensions/TransformExt.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../Steamboat-Winky/SteamboatWinky/SteamboatWinky/Assets/Scripts/Camera/CameraRig.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../_backup/backup/.bu/.backup2/.backup/.arpg/arpg/Assets/Plugins/Framework/Editor/SceneHelper.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../_backup/backup/.bu/.backup2/.backup/.arpg/arpg/Assets/Plugins/Framework/Utils/Editor/SceneViewDebug.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../_backup/backup/.bu/data/data/Assets/Plugins/Framework/Utils/Editor/EditorWindowUtil.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../hardgore/hardgore/Assets/Plugins/Framework/Patterns/Timer/Timer.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../hardgore/hardgore/Assets/Scripts/Common/KeepSpriteUpright.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../horror/horror/Assets/Plugins/MathBad/Extensions/TransformExt.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Art/Enemies/HumanoidEnemy/AnimationTriggers.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/MathBad/Editor/TransformInspector.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/MathBad/Patterns/TubeRenderer/TubeRenderer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Effects/Cable/Cable.cs" root0="FORCE_HIGHLIGHTING" />
@@ -80,14 +70,6 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/MoveTowardsCamera.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/SceneViewShaderHelper.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.splines@2.5.2/Runtime/SplineUtility.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../../backup/_Work/_Projects-Unity/z_backup/_hardgore/hardgore/Assets/Plugins/Framework/Tools/ToobarExtender/Editor/ToolbarCallback.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../../backup/_Work/_Projects-Unity/z_backup/_hardgore/hardgore/Assets/Plugins/Framework/Tools/ToobarExtender/Editor/ToolbarExtender.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../../backup/_Work/_Projects-Unity/z_backup/_hardgore/hardgore/Assets/Plugins/Framework/Tools/ToobarExtender/Editor/Toolbars/ProjectButtons.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../../backup/_Work/_Projects-Unity/z_backup/_hardgore/hardgore/Assets/Plugins/Framework/Tools/ToobarExtender/Editor/Toolbars/SceneCollection.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../../backup/_Work/_Projects-Unity/z_backup/_hardgore/hardgore/Assets/Plugins/Framework/Utils/Editor/SceneViewDebug.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../../backup/_Work/_Projects-Unity/z_backup/backup/__Versions/_GODFUCKER/GodFucker/Assets/Plugins/Framework/Geometry/Extensions/MESH_EXT.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../../backup/_Work/_Projects-Unity/z_backup/backup/__Versions/__THEPIT/thepit/Assets/Plugins/Framework/Geometry/Extensions/GeoExt.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../../backup/_Work/_Projects-Unity/z_backup/backup/__Versions/__THEPIT/thepit/Assets/Plugins/Framework/Geometry/Extensions/MESH_EXT.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
