@@ -6,31 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="825655da-4771-4664-b01a-9bffcaa881d5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Shroom-and-Gloom-Art-Test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Shroom-and-Gloom-Art-Test/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Cavern/Cavern_Ceiling_Rocks_Angry.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Environment/Cavern/Cavern_Ceiling_Rocks_Angry.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Cavern/Cavern_Floor.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Environment/Cavern/Cavern_Floor.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Cavern/Cavern_Floor_Open.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Environment/Cavern/Cavern_Floor_Open.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Cavern/DistanceHatching.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Environment/Cavern/DistanceHatching.shader" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Cavern/Hatching.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Environment/Cavern/Hatching.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Cavern/Hatching.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Environment/Cavern/Hatching.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Cavern/Hatching.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Environment/Cavern/Hatching.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/particles/Dust/DustParticles.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/particles/Dust/DustParticles.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/AmplifyShaderEditor/Plugins/Editor/Nodes/CommentaryNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/AmplifyShaderEditor/Plugins/Editor/Nodes/CommentaryNode.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/MathBad/UTIL/GIZMOS.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/MathBad/UTIL/GIZMOS.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/VHSPro/Resources/Materials/VHSPro_pass1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/VHSPro/Resources/Materials/VHSPro_pass1.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/SceneTransition.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/SceneTransition.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/SceneData/S1_Mines_SceneData.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/SceneData/SceneData/S1_Mines_SceneData.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/SceneData/S2_RockTunnel_SceneData.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/SceneData/SceneData/S2_RockTunnel_SceneData.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/SceneData/S3_RockCave_SceneData.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/SceneData/SceneData/S3_RockCave_SceneData.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/SceneData/S4_Cavern_SceneData.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/SceneData/SceneData/S4_Cavern_SceneData.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/SceneData/S5_Shroomy_SceneData.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/SceneData/SceneData/S5_Shroomy_SceneData.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/SceneData/S6_Trippy_SceneData.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/SceneData/SceneData/S6_Trippy_SceneData.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/SceneData/S7_Portal_SceneData.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/SceneData/SceneData/S7_Portal_SceneData.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/SceneData/S8_Gloom_SceneData.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/SceneData/SceneData/S8_Gloom_SceneData.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPV/S4_Cavern_PPV.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPV/S4_Cavern_PPV.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/S4_Cavern.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/S4_Cavern.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level Generation/SkyboxSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Level Generation/SkyboxSpawner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scene/SceneController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scene/SceneController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scene/SceneData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scene/SceneData.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,6 +153,7 @@
       <workItem from="1715256238751" duration="15960000" />
       <workItem from="1715289477964" duration="1139000" />
       <workItem from="1715311378778" duration="9528000" />
+      <workItem from="1715327637587" duration="63000" />
     </task>
     <servers />
   </component>

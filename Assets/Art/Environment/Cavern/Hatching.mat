@@ -52,11 +52,11 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Cutoff: 0.25
+    - _Cutoff: 0.5
     - _EmissionWaveBasedOnTunnel: 1
     - _FogIntensityCoefficient: 1
     - _HachingFactor: 1
-    - _HatchingScale: 0.25
+    - _HatchingScale: 0.1
     - _IsSmall: 0
     - _NoisyFog: 1
     - _NormalMip: 2
