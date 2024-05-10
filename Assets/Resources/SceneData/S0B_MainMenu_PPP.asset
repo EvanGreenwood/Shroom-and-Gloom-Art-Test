@@ -174,7 +174,7 @@ MonoBehaviour:
     value: 1
   g_noise:
     overrideState: 0
-    value: 1
+    value: 0
   g_jitter:
     overrideState: 0
     value: 0
@@ -262,10 +262,10 @@ MonoBehaviour:
     value: 0
   bleedAmount:
     overrideState: 1
-    value: 0.5
+    value: 0.1
   noiseResGlobal:
-    overrideState: 1
-    value: 1
+    overrideState: 0
+    value: 0
   noiseResWidth:
     overrideState: 0
     value: 640
@@ -273,10 +273,10 @@ MonoBehaviour:
     overrideState: 0
     value: 480
   filmgrainOn:
-    overrideState: 1
-    value: 1
+    overrideState: 0
+    value: 0
   filmGrainAmount:
-    overrideState: 1
+    overrideState: 0
     value: 0.001
   signalNoiseOn:
     overrideState: 0
@@ -464,13 +464,13 @@ MonoBehaviour:
     value: 0
   saturation:
     overrideState: 1
-    value: -15
+    value: -10
   brightness:
     overrideState: 0
     value: 0
   postExposure:
     overrideState: 1
-    value: 1.5
+    value: 1.25
   contrast:
     overrideState: 1
     value: 50

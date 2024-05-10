@@ -1,0 +1,1230 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &200072845071079390
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1035578140989063796}
+  m_Layer: 0
+  m_Name: Tunnel Destination
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1035578140989063796
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 200072845071079390}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -9, y: -5, z: 15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3638407725093331640}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &369839720005185535
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8865714671741875835}
+  - component: {fileID: 8319606277681460882}
+  - component: {fileID: 2714713922768172109}
+  m_Layer: 0
+  m_Name: Tunnel (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &8865714671741875835
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 369839720005185535}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8643867485083461633}
+  m_Father: {fileID: 674656507176938256}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8319606277681460882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 369839720005185535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f743e6c0a9ec45e4abb4374dc99d4a09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _colorGradient:
+    serializedVersion: 2
+    key0: {r: 0.6981132, g: 0.535298, b: 0.50448555, a: 1}
+    key1: {r: 0.59716547, g: 0.7132075, b: 0.44541824, a: 1}
+    key2: {r: 0.5150943, g: 0.735849, b: 0.54452825, a: 0}
+    key3: {r: 0.6747628, g: 0.7433963, b: 0.5091563, a: 0}
+    key4: {r: 0.69803923, g: 0.5372549, b: 0.5058824, a: 0}
+    key5: {r: 0, g: 0, b: 0, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
+    key7: {r: 0, g: 0, b: 0, a: 0}
+    ctime0: 7828
+    ctime1: 24282
+    ctime2: 32967
+    ctime3: 41333
+    ctime4: 53285
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_ColorSpace: -1
+    m_NumColorKeys: 5
+    m_NumAlphaKeys: 2
+  _particles: {fileID: 0}
+  _particleSpawnDistance: 1
+  _baseTunnelWidth: 1
+  _lumpyWidth: 0.5
+  _clearingWidth: 1
+  _clearingDepth: 2.33
+  _setHideFlags: 1
+  wallElements:
+  - name: Wall Thorns
+    disabled: 0
+    wallPrefabs:
+    - {fileID: 717079983591251126, guid: 1c9cc17696a50154985091ca956b6bb9, type: 3}
+    zOffset: 0
+    spacing: 0.5
+    width: 5
+    heightOffset:
+      _min: 0
+      _max: 0.1
+    verticalLoopLength: 5
+    verticalLoopIncrement: 2
+    minMaxAngle:
+      _min: -20
+      _max: 20
+    minMaxPosition:
+      _min: 1.6
+      _max: 3
+    randomRotation: 13
+    randomFlipY: 1
+  - name: Thorns Base
+    disabled: 0
+    wallPrefabs:
+    - {fileID: 717079983591251126, guid: e8dfdb4b844a34d4a98d85cd3968b570, type: 3}
+    zOffset: 0.1
+    spacing: 1
+    width: 3.2
+    heightOffset:
+      _min: 0
+      _max: 0.1
+    verticalLoopLength: 3
+    verticalLoopIncrement: 1
+    minMaxAngle:
+      _min: -15
+      _max: 30
+    minMaxPosition:
+      _min: 0
+      _max: 0.3
+    randomRotation: 10
+    randomFlipY: 0
+  flatWallPrefab: {fileID: 0}
+  flatWallSpacing: 1
+  flatWallOffset: 1
+  surroundElements: []
+  floorElements:
+  - name: Floor
+    disabled: 0
+    floorPrefabs:
+    - {fileID: 717079983591251126, guid: 123a7dddfdd730f4e9e8313cea5e281c, type: 3}
+    zOffset: 0.08
+    spacing: 0.5
+    randomXPosition: 0.5
+    minMaxAngle:
+      _min: -1
+      _max: 1
+    xRotation: 0
+    minMaxPosition:
+      _min: -0.05
+      _max: 0.05
+    randomFlipX: 1
+  flatFloorPrefab: {fileID: 0}
+  flatFloorSpacing: 1
+  flatFloorOffset: -1
+  ceilingElements:
+  - name: Ceiling
+    disabled: 0
+    ceilingPrefabs:
+    - {fileID: 717079983591251126, guid: 58a3e2b112178c84aafe4bc29a0c0083, type: 3}
+    height: 4
+    zOffset: 0.02
+    spacing: 0.5
+    randomXPosition: 1.4
+    minMaxAngle:
+      _min: -0.5
+      _max: 0.5
+    xRotation: -45
+    minMaxPosition:
+      _min: -0.03
+      _max: 0.03
+    randomFlipX: 1
+  flatCeilingPrefab: {fileID: 0}
+  flatCeilingSpacing: 1
+  flatCeilingOffset: 1
+  _elementParents:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  _drawGizmos: 0
+  _generatedIsSelectable: 0
+  _internalTunnelSpline: {fileID: 2714713922768172109}
+  _internalTunnelMesh: {fileID: 0}
+--- !u!114 &2714713922768172109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 369839720005185535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dab5c7d4c32e743048dfca98e2d5914f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Spline:
+    m_EditModeType: 1
+    m_Knots: []
+    m_MetaData: []
+    m_Closed: 0
+    m_IntData:
+      m_Data: []
+    m_FloatData:
+      m_Data: []
+    m_Float4Data:
+      m_Data: []
+    m_ObjectData:
+      m_Data: []
+  m_Splines:
+  - m_EditModeType: 1
+    m_Knots: []
+    m_MetaData: []
+    m_Closed: 0
+    m_IntData:
+      m_Data: []
+    m_FloatData:
+      m_Data: []
+    m_Float4Data:
+      m_Data: []
+    m_ObjectData:
+      m_Data: []
+  m_Knots:
+    m_KnotsLink: []
+--- !u!1 &2569019055333161848
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8643867485083461633}
+  m_Layer: 0
+  m_Name: Tunnel Destination
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8643867485083461633
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2569019055333161848}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 9, y: 0, z: 15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8865714671741875835}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2812827517409916737
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3638407725093331640}
+  - component: {fileID: 7783070791448818715}
+  - component: {fileID: 4143181431459070074}
+  m_Layer: 0
+  m_Name: Tunnel (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &3638407725093331640
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2812827517409916737}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 22, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1035578140989063796}
+  m_Father: {fileID: 674656507176938256}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7783070791448818715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2812827517409916737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f743e6c0a9ec45e4abb4374dc99d4a09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _colorGradient:
+    serializedVersion: 2
+    key0: {r: 0.6981132, g: 0.535298, b: 0.50448555, a: 1}
+    key1: {r: 0.59716547, g: 0.7132075, b: 0.44541824, a: 1}
+    key2: {r: 0.5397144, g: 0.7290569, b: 0.51479673, a: 0}
+    key3: {r: 0.5882353, g: 0.77254903, b: 0.7137255, a: 0}
+    key4: {r: 0.5882164, g: 0.7735849, b: 0.71179545, a: 0}
+    key5: {r: 0.5150943, g: 0.735849, b: 0.54452825, a: 0}
+    key6: {r: 0.6747628, g: 0.7433963, b: 0.5091563, a: 0}
+    key7: {r: 0.69803923, g: 0.5372549, b: 0.5058824, a: 0}
+    ctime0: 7828
+    ctime1: 22330
+    ctime2: 27389
+    ctime3: 31772
+    ctime4: 33604
+    ctime5: 37508
+    ctime6: 42687
+    ctime7: 53285
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_ColorSpace: -1
+    m_NumColorKeys: 8
+    m_NumAlphaKeys: 2
+  _particles: {fileID: 0}
+  _particleSpawnDistance: 1
+  _baseTunnelWidth: 1
+  _lumpyWidth: 0.5
+  _clearingWidth: 2.7
+  _clearingDepth: 2.33
+  _setHideFlags: 1
+  wallElements:
+  - name: Wall Thorns
+    disabled: 0
+    wallPrefabs:
+    - {fileID: 717079983591251126, guid: 2fadf5ce0ef2c9f4893132f5f32d3387, type: 3}
+    zOffset: 0
+    spacing: 0.2
+    width: 1
+    heightOffset:
+      _min: 0
+      _max: 0.1
+    verticalLoopLength: 5
+    verticalLoopIncrement: 2
+    minMaxAngle:
+      _min: -10
+      _max: 10
+    minMaxPosition:
+      _min: 1
+      _max: 2
+    randomRotation: 5
+    randomFlipY: 1
+  flatWallPrefab: {fileID: 0}
+  flatWallSpacing: 1
+  flatWallOffset: 1
+  surroundElements: []
+  floorElements:
+  - name: Floor
+    disabled: 0
+    floorPrefabs:
+    - {fileID: 717079983591251126, guid: a1e8ce5975fcce44d977754df999f3f9, type: 3}
+    zOffset: 0.08
+    spacing: 0.5
+    randomXPosition: 0.5
+    minMaxAngle:
+      _min: -1
+      _max: 1
+    xRotation: 0
+    minMaxPosition:
+      _min: -0.05
+      _max: 0.05
+    randomFlipX: 1
+  flatFloorPrefab: {fileID: 0}
+  flatFloorSpacing: 1
+  flatFloorOffset: -1
+  ceilingElements:
+  - name: Ceiling
+    disabled: 0
+    ceilingPrefabs:
+    - {fileID: 717079983591251126, guid: 92bea43dd56732f47873721fda19fca4, type: 3}
+    height: 4
+    zOffset: 0.02
+    spacing: 0.5
+    randomXPosition: 1.4
+    minMaxAngle:
+      _min: -0.5
+      _max: 0.5
+    xRotation: 0
+    minMaxPosition:
+      _min: -0.03
+      _max: 0.03
+    randomFlipX: 1
+  flatCeilingPrefab: {fileID: 0}
+  flatCeilingSpacing: 1
+  flatCeilingOffset: 1
+  _elementParents:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  _drawGizmos: 0
+  _generatedIsSelectable: 0
+  _internalTunnelSpline: {fileID: 4143181431459070074}
+  _internalTunnelMesh: {fileID: 0}
+--- !u!114 &4143181431459070074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2812827517409916737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dab5c7d4c32e743048dfca98e2d5914f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Spline:
+    m_EditModeType: 1
+    m_Knots: []
+    m_MetaData: []
+    m_Closed: 0
+    m_IntData:
+      m_Data: []
+    m_FloatData:
+      m_Data: []
+    m_Float4Data:
+      m_Data: []
+    m_ObjectData:
+      m_Data: []
+  m_Splines:
+  - m_EditModeType: 1
+    m_Knots: []
+    m_MetaData: []
+    m_Closed: 0
+    m_IntData:
+      m_Data: []
+    m_FloatData:
+      m_Data: []
+    m_Float4Data:
+      m_Data: []
+    m_ObjectData:
+      m_Data: []
+  m_Knots:
+    m_KnotsLink: []
+--- !u!1 &3083817694350921338
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6419554577620380692}
+  - component: {fileID: 3614994244825032765}
+  - component: {fileID: 4336620608883258858}
+  m_Layer: 0
+  m_Name: Tunnel (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &6419554577620380692
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3083817694350921338}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -23, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5780074791354493999}
+  m_Father: {fileID: 674656507176938256}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3614994244825032765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3083817694350921338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f743e6c0a9ec45e4abb4374dc99d4a09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _colorGradient:
+    serializedVersion: 2
+    key0: {r: 0.6981132, g: 0.535298, b: 0.50448555, a: 1}
+    key1: {r: 0.59716547, g: 0.7132075, b: 0.44541824, a: 1}
+    key2: {r: 0.5397144, g: 0.7290569, b: 0.51479673, a: 0}
+    key3: {r: 0.5882353, g: 0.77254903, b: 0.7137255, a: 0}
+    key4: {r: 0.5882164, g: 0.7735849, b: 0.71179545, a: 0}
+    key5: {r: 0.5150943, g: 0.735849, b: 0.54452825, a: 0}
+    key6: {r: 0.6747628, g: 0.7433963, b: 0.5091563, a: 0}
+    key7: {r: 0.69803923, g: 0.5372549, b: 0.5058824, a: 0}
+    ctime0: 7828
+    ctime1: 22330
+    ctime2: 27389
+    ctime3: 31772
+    ctime4: 33604
+    ctime5: 37508
+    ctime6: 42687
+    ctime7: 53285
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_ColorSpace: -1
+    m_NumColorKeys: 8
+    m_NumAlphaKeys: 2
+  _particles: {fileID: 0}
+  _particleSpawnDistance: 1
+  _baseTunnelWidth: 1
+  _lumpyWidth: 0.5
+  _clearingWidth: 2.7
+  _clearingDepth: 2.33
+  _setHideFlags: 1
+  wallElements:
+  - name: Wall Thorns
+    disabled: 0
+    wallPrefabs:
+    - {fileID: 717079983591251126, guid: ddc45fe4dbe102941a4865a3e7eb9c34, type: 3}
+    zOffset: 0
+    spacing: 0.3333
+    width: 1
+    heightOffset:
+      _min: 0
+      _max: 0.1
+    verticalLoopLength: 5
+    verticalLoopIncrement: 2
+    minMaxAngle:
+      _min: -5
+      _max: 5
+    minMaxPosition:
+      _min: 1.5
+      _max: 2.5
+    randomRotation: 3
+    randomFlipY: 1
+  flatWallPrefab: {fileID: 0}
+  flatWallSpacing: 1
+  flatWallOffset: 1
+  surroundElements: []
+  floorElements:
+  - name: Floor
+    disabled: 0
+    floorPrefabs:
+    - {fileID: 717079983591251126, guid: 123a7dddfdd730f4e9e8313cea5e281c, type: 3}
+    zOffset: 0.08
+    spacing: 0.5
+    randomXPosition: 0.5
+    minMaxAngle:
+      _min: -1
+      _max: 1
+    xRotation: 0
+    minMaxPosition:
+      _min: -0.05
+      _max: 0.05
+    randomFlipX: 1
+  flatFloorPrefab: {fileID: 0}
+  flatFloorSpacing: 1
+  flatFloorOffset: -1
+  ceilingElements:
+  - name: Ceiling
+    disabled: 0
+    ceilingPrefabs:
+    - {fileID: 717079983591251126, guid: 58a3e2b112178c84aafe4bc29a0c0083, type: 3}
+    height: 4
+    zOffset: 0.02
+    spacing: 0.5
+    randomXPosition: 1.4
+    minMaxAngle:
+      _min: -0.5
+      _max: 0.5
+    xRotation: -45
+    minMaxPosition:
+      _min: -0.03
+      _max: 0.03
+    randomFlipX: 1
+  flatCeilingPrefab: {fileID: 0}
+  flatCeilingSpacing: 1
+  flatCeilingOffset: 1
+  _elementParents:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  _drawGizmos: 0
+  _generatedIsSelectable: 0
+  _internalTunnelSpline: {fileID: 4336620608883258858}
+  _internalTunnelMesh: {fileID: 0}
+--- !u!114 &4336620608883258858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3083817694350921338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dab5c7d4c32e743048dfca98e2d5914f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Spline:
+    m_EditModeType: 1
+    m_Knots: []
+    m_MetaData: []
+    m_Closed: 0
+    m_IntData:
+      m_Data: []
+    m_FloatData:
+      m_Data: []
+    m_Float4Data:
+      m_Data: []
+    m_ObjectData:
+      m_Data: []
+  m_Splines:
+  - m_EditModeType: 1
+    m_Knots: []
+    m_MetaData: []
+    m_Closed: 0
+    m_IntData:
+      m_Data: []
+    m_FloatData:
+      m_Data: []
+    m_Float4Data:
+      m_Data: []
+    m_ObjectData:
+      m_Data: []
+  m_Knots:
+    m_KnotsLink: []
+--- !u!1 &3956532408794633133
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 561878034567924570}
+  - component: {fileID: 320866476871045700}
+  - component: {fileID: 3501669016090935032}
+  m_Layer: 0
+  m_Name: Tunnel (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &561878034567924570
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3956532408794633133}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -32, y: -5, z: 15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 703992491082209806}
+  m_Father: {fileID: 674656507176938256}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &320866476871045700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3956532408794633133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f743e6c0a9ec45e4abb4374dc99d4a09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _colorGradient:
+    serializedVersion: 2
+    key0: {r: 0.6981132, g: 0.535298, b: 0.50448555, a: 1}
+    key1: {r: 0.59716547, g: 0.7132075, b: 0.44541824, a: 1}
+    key2: {r: 0.5397144, g: 0.7290569, b: 0.51479673, a: 0}
+    key3: {r: 0.5882353, g: 0.77254903, b: 0.7137255, a: 0}
+    key4: {r: 0.5882164, g: 0.7735849, b: 0.71179545, a: 0}
+    key5: {r: 0.5150943, g: 0.735849, b: 0.54452825, a: 0}
+    key6: {r: 0.6747628, g: 0.7433963, b: 0.5091563, a: 0}
+    key7: {r: 0.69803923, g: 0.5372549, b: 0.5058824, a: 0}
+    ctime0: 7828
+    ctime1: 22330
+    ctime2: 27389
+    ctime3: 31772
+    ctime4: 33604
+    ctime5: 37508
+    ctime6: 42687
+    ctime7: 53285
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_ColorSpace: -1
+    m_NumColorKeys: 8
+    m_NumAlphaKeys: 2
+  _particles: {fileID: 0}
+  _particleSpawnDistance: 1
+  _baseTunnelWidth: 1
+  _lumpyWidth: 0.5
+  _clearingWidth: 2.7
+  _clearingDepth: 2.33
+  _setHideFlags: 1
+  wallElements:
+  - name: Wall Thorns
+    disabled: 0
+    wallPrefabs:
+    - {fileID: 717079983591251126, guid: f6563b9334d6e4d7ab19853f506c6f3c, type: 3}
+    zOffset: 0
+    spacing: 0.3333
+    width: 2
+    heightOffset:
+      _min: 0
+      _max: 0.1
+    verticalLoopLength: 5
+    verticalLoopIncrement: 2
+    minMaxAngle:
+      _min: -10
+      _max: 10
+    minMaxPosition:
+      _min: 1.5
+      _max: 2.5
+    randomRotation: 13
+    randomFlipY: 0
+  flatWallPrefab: {fileID: 0}
+  flatWallSpacing: 1
+  flatWallOffset: 1
+  surroundElements: []
+  floorElements:
+  - name: Floor
+    disabled: 0
+    floorPrefabs:
+    - {fileID: 717079983591251126, guid: 123a7dddfdd730f4e9e8313cea5e281c, type: 3}
+    zOffset: 0.08
+    spacing: 0.5
+    randomXPosition: 0.5
+    minMaxAngle:
+      _min: -1
+      _max: 1
+    xRotation: 0
+    minMaxPosition:
+      _min: -0.05
+      _max: 0.05
+    randomFlipX: 1
+  flatFloorPrefab: {fileID: 0}
+  flatFloorSpacing: 1
+  flatFloorOffset: -1
+  ceilingElements:
+  - name: Ceiling
+    disabled: 0
+    ceilingPrefabs:
+    - {fileID: 717079983591251126, guid: 58a3e2b112178c84aafe4bc29a0c0083, type: 3}
+    height: 4
+    zOffset: 0.02
+    spacing: 0.5
+    randomXPosition: 1.4
+    minMaxAngle:
+      _min: -0.5
+      _max: 0.5
+    xRotation: -45
+    minMaxPosition:
+      _min: -0.03
+      _max: 0.03
+    randomFlipX: 1
+  flatCeilingPrefab: {fileID: 0}
+  flatCeilingSpacing: 1
+  flatCeilingOffset: 1
+  _elementParents:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  _drawGizmos: 0
+  _generatedIsSelectable: 0
+  _internalTunnelSpline: {fileID: 3501669016090935032}
+  _internalTunnelMesh: {fileID: 0}
+--- !u!114 &3501669016090935032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3956532408794633133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dab5c7d4c32e743048dfca98e2d5914f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Spline:
+    m_EditModeType: 1
+    m_Knots: []
+    m_MetaData: []
+    m_Closed: 0
+    m_IntData:
+      m_Data: []
+    m_FloatData:
+      m_Data: []
+    m_Float4Data:
+      m_Data: []
+    m_ObjectData:
+      m_Data: []
+  m_Splines:
+  - m_EditModeType: 1
+    m_Knots: []
+    m_MetaData: []
+    m_Closed: 0
+    m_IntData:
+      m_Data: []
+    m_FloatData:
+      m_Data: []
+    m_Float4Data:
+      m_Data: []
+    m_ObjectData:
+      m_Data: []
+  m_Knots:
+    m_KnotsLink: []
+--- !u!1 &4195944674876004168
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4537771464813528657}
+  m_Layer: 0
+  m_Name: Tunnel Destination
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4537771464813528657
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4195944674876004168}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1, y: 0, z: 13}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3527914331674196062}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5010413757226701478
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3527914331674196062}
+  - component: {fileID: 1800477799137434591}
+  - component: {fileID: 5053994544313533456}
+  m_Layer: 0
+  m_Name: Tunnel (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &3527914331674196062
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5010413757226701478}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 5, y: 0, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4537771464813528657}
+  m_Father: {fileID: 674656507176938256}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1800477799137434591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5010413757226701478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f743e6c0a9ec45e4abb4374dc99d4a09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _colorGradient:
+    serializedVersion: 2
+    key0: {r: 0.6981132, g: 0.535298, b: 0.50448555, a: 1}
+    key1: {r: 0.59716547, g: 0.7132075, b: 0.44541824, a: 1}
+    key2: {r: 0.5397144, g: 0.7290569, b: 0.51479673, a: 0}
+    key3: {r: 0.5882353, g: 0.77254903, b: 0.7137255, a: 0}
+    key4: {r: 0.5882164, g: 0.7735849, b: 0.71179545, a: 0}
+    key5: {r: 0.5150943, g: 0.735849, b: 0.54452825, a: 0}
+    key6: {r: 0.6747628, g: 0.7433963, b: 0.5091563, a: 0}
+    key7: {r: 0.69803923, g: 0.5372549, b: 0.5058824, a: 0}
+    ctime0: 7828
+    ctime1: 22330
+    ctime2: 27389
+    ctime3: 31772
+    ctime4: 33604
+    ctime5: 37508
+    ctime6: 42687
+    ctime7: 53285
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_ColorSpace: -1
+    m_NumColorKeys: 8
+    m_NumAlphaKeys: 2
+  _particles: {fileID: 0}
+  _particleSpawnDistance: 1
+  _baseTunnelWidth: 1
+  _lumpyWidth: 0.5
+  _clearingWidth: 2.7
+  _clearingDepth: 2.33
+  _setHideFlags: 1
+  wallElements:
+  - name: Wall Thorns
+    disabled: 0
+    wallPrefabs:
+    - {fileID: 717079983591251126, guid: f6563b9334d6e4d7ab19853f506c6f3c, type: 3}
+    zOffset: 0
+    spacing: 0.3333
+    width: 2
+    heightOffset:
+      _min: 0
+      _max: 0.1
+    verticalLoopLength: 5
+    verticalLoopIncrement: 2
+    minMaxAngle:
+      _min: -10
+      _max: 10
+    minMaxPosition:
+      _min: 1.5
+      _max: 2.5
+    randomRotation: 13
+    randomFlipY: 0
+  - name: Rocks
+    disabled: 0
+    wallPrefabs:
+    - {fileID: 717079983591251126, guid: 281b97e065f0cf04c8d24be50977924e, type: 3}
+    zOffset: 0.01
+    spacing: 0.5
+    width: 2.5
+    heightOffset:
+      _min: 0
+      _max: 0.1
+    verticalLoopLength: 5
+    verticalLoopIncrement: 2
+    minMaxAngle:
+      _min: 0
+      _max: 35
+    minMaxPosition:
+      _min: -0.2
+      _max: 0
+    randomRotation: 13
+    randomFlipY: 0
+  flatWallPrefab: {fileID: 0}
+  flatWallSpacing: 1
+  flatWallOffset: 1
+  surroundElements: []
+  floorElements:
+  - name: Floor
+    disabled: 0
+    floorPrefabs:
+    - {fileID: 717079983591251126, guid: 123a7dddfdd730f4e9e8313cea5e281c, type: 3}
+    zOffset: 0.08
+    spacing: 0.5
+    randomXPosition: 0.5
+    minMaxAngle:
+      _min: -1
+      _max: 1
+    xRotation: 0
+    minMaxPosition:
+      _min: -0.05
+      _max: 0.05
+    randomFlipX: 1
+  flatFloorPrefab: {fileID: 0}
+  flatFloorSpacing: 1
+  flatFloorOffset: -1
+  ceilingElements:
+  - name: Ceiling
+    disabled: 0
+    ceilingPrefabs:
+    - {fileID: 717079983591251126, guid: 58a3e2b112178c84aafe4bc29a0c0083, type: 3}
+    height: 4
+    zOffset: 0.02
+    spacing: 0.5
+    randomXPosition: 1.4
+    minMaxAngle:
+      _min: -0.5
+      _max: 0.5
+    xRotation: -45
+    minMaxPosition:
+      _min: -0.03
+      _max: 0.03
+    randomFlipX: 1
+  flatCeilingPrefab: {fileID: 0}
+  flatCeilingSpacing: 1
+  flatCeilingOffset: 1
+  _elementParents:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  _drawGizmos: 0
+  _generatedIsSelectable: 0
+  _internalTunnelSpline: {fileID: 5053994544313533456}
+  _internalTunnelMesh: {fileID: 0}
+--- !u!114 &5053994544313533456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5010413757226701478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dab5c7d4c32e743048dfca98e2d5914f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Spline:
+    m_EditModeType: 1
+    m_Knots: []
+    m_MetaData: []
+    m_Closed: 0
+    m_IntData:
+      m_Data: []
+    m_FloatData:
+      m_Data: []
+    m_Float4Data:
+      m_Data: []
+    m_ObjectData:
+      m_Data: []
+  m_Splines:
+  - m_EditModeType: 1
+    m_Knots: []
+    m_MetaData: []
+    m_Closed: 0
+    m_IntData:
+      m_Data: []
+    m_FloatData:
+      m_Data: []
+    m_Float4Data:
+      m_Data: []
+    m_ObjectData:
+      m_Data: []
+  m_Knots:
+    m_KnotsLink: []
+--- !u!1 &5516470699255502899
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5780074791354493999}
+  m_Layer: 0
+  m_Name: Tunnel Destination
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5780074791354493999
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5516470699255502899}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -9, y: -5, z: 15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6419554577620380692}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7940074613974653595
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 674656507176938256}
+  m_Layer: 0
+  m_Name: OldTunnels
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &674656507176938256
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7940074613974653595}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3638407725093331640}
+  - {fileID: 6419554577620380692}
+  - {fileID: 561878034567924570}
+  - {fileID: 3527914331674196062}
+  - {fileID: 8865714671741875835}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8821867314128733295
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 703992491082209806}
+  m_Layer: 0
+  m_Name: Tunnel Destination
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &703992491082209806
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8821867314128733295}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -9, y: 0, z: 15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 561878034567924570}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
