@@ -6,8 +6,23 @@
   <component name="ChangeListManager">
     <list default="true" id="825655da-4771-4664-b01a-9bffcaa881d5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Shroom-and-Gloom-Art-Test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Shroom-and-Gloom-Art-Test/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/S4_Cavern.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/S4_Cavern.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/VHSPro/Resources/Materials/VHSPro_pass1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/VHSPro/Resources/Materials/VHSPro_pass1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/VHSPro/Resources/Materials/VHSPro_tape.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/VHSPro/Resources/Materials/VHSPro_tape.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/HUD.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/HUD.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/SceneTransition.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/SceneTransition.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/Depth_PPV.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/SceneData/Depth_PPV.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/SceneData/S5_Shroomy_SceneData.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/SceneData/SceneData/S5_Shroomy_SceneData.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPV/S2_RockTunnel_PPV.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPV/S2_RockTunnel_PPV.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPV/S5_Shroomy_PPV.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPV/S5_Shroomy_PPV.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/S1_TheMines.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/S1_TheMines.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/S2_RockTunnel.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/S2_RockTunnel.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ScenesBackup.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ScenesBackup/NaughtyTerry.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ScenesBackup/NaughtyTerry.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level Generation/SkyboxSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Level Generation/SkyboxSpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scene/SceneController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scene/SceneController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/SceneTransition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/SceneTransition.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,6 +169,7 @@
       <workItem from="1715289477964" duration="1139000" />
       <workItem from="1715311378778" duration="9528000" />
       <workItem from="1715327637587" duration="63000" />
+      <workItem from="1715349915458" duration="3484000" />
     </task>
     <servers />
   </component>

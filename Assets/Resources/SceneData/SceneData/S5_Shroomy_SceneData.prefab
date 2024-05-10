@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Shroomy
   description: Follow the lights...
-  titleColor: {r: 0.17568529, g: 0.7924528, b: 0.37368008, a: 1}
+  titleColor: {r: 0, g: 0.9433962, b: 0.30044475, a: 1}
   sceneIntro: {fileID: 11400000, guid: df0c429427445c6409f88af14a31d75e, type: 2}
   sceneMusic: {fileID: 8300000, guid: 63f9e86f3c72824478f2552efca5c68b, type: 3}
   postProcessProfile: {fileID: 11400000, guid: 2eba52f5ca670c046b7dcfba8d1e1991, type: 2}

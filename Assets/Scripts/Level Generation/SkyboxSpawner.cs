@@ -22,6 +22,7 @@ public class SkyboxSpawner : MonoBehaviour
             spawned.transform.localScale = Vector3.Scale(spawned.transform.localScale, factor);
         }
     }
+
     void OnDrawGizmos()
     {
         GIZMOS.WireBoxMinMax(_spawnArea.min, _spawnArea.max, RGB.yellow.WithA(0.25f));

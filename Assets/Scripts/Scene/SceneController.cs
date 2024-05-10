@@ -7,18 +7,22 @@ using UnityEngine.SceneManagement;
 
 public class SceneController : MonoSingleton<SceneController>
 {
-    SceneData _sceneData;
+    [SerializeField] float _sceneIntroLeadDelay = 1f;
+    [SerializeField] float _sceneIntroFadeTime = 2f;
     [SerializeField] Music _music;
+
+    SceneData _sceneData;
     string _activeSceneName;
-    AudioSource _musicSource;
+    
     public SceneData sceneData => _sceneData;
 
     void Awake()
     {
         _sceneData = FindObjectOfType<SceneData>();
         _activeSceneName = SceneManager.GetActiveScene().name;
+
         SceneTransition.inst.Transition(OnTransitionComplete,
-                                        1.5f, false, false, 1f,
+                                        _sceneIntroLeadDelay, false, false, _sceneIntroFadeTime,
                                         _sceneData.title, _sceneData.description,
                                         _sceneData.titleColor);
     }

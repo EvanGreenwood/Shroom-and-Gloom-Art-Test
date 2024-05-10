@@ -4,6 +4,7 @@ using System.Collections;
 using UnityEngine;
 using MathBad;
 using TMPro;
+using UnityEngine.Rendering.PostProcessing;
 using UnityEngine.UI;
 #endregion
 
@@ -14,6 +15,10 @@ public class SceneTransition : MonoSingletonUI<SceneTransition>
     [SerializeField] TextMeshProUGUI _message;
     [SerializeField] Image _panel;
     [SerializeField] CanvasGroup _canvasGroup;
+    [SerializeField] PostProcessVolume _ppv;
+
+    [SerializeField] string _titleTags = "<incr>$</incr>";
+    [SerializeField] string _messageTags = "<bounce>$</bounce>";
 
     Timer2 _fadeTimer = new Timer2(1f);
     Coroutine _fadeRoutine;
@@ -41,13 +46,12 @@ public class SceneTransition : MonoSingletonUI<SceneTransition>
         if(_fadeRoutine != null)
             return;
 
-        _canvasGroup.alpha = fadeIn ? 0f : 1f;
-        _fadeTimer.Reset(fadeTime);
-
         _title.color = titleColor;
         if(!title.IsNullOrEmpty())
         {
-            _title.text = title;
+            _title.color = _title.color.WithA(0f);
+            string[] t0 = _titleTags.Split('$');
+            _title.text = $"{t0[0]}{title}{t0[1]}";
             _title.gameObject.SetActive(true);
         }
         else
@@ -56,38 +60,66 @@ public class SceneTransition : MonoSingletonUI<SceneTransition>
             _title.gameObject.SetActive(false);
         }
 
-        // if(!message.IsNullOrEmpty())
-        // {
-        //     _message.text = message;
-        //     _message.gameObject.SetActive(true);
-        // }
-        // else
-        // {
-        //     _message.text = string.Empty;
-        //     _message.gameObject.SetActive(false);
-        // }
+        if(!message.IsNullOrEmpty())
+        {
+            _message.color = _message.color.WithA(0f);
+            string[] t0 = _messageTags.Split('$');
+            _message.text = $"{t0[0]}{message}{t0[1]}";
+            _message.gameObject.SetActive(true);
+        }
+        else
+        {
+            _message.text = string.Empty;
+            _message.gameObject.SetActive(false);
+        }
 
+        _fadeTimer.Reset(fadeTime);
         _panel.color = RGB.black;
+        _canvasGroup.alpha = 0f;
+        _ppv.weight = fadeIn ? 0f : 1f;
+        _ppv.gameObject.SetActive(true);
 
         gameObject.SetActive(true);
+
         _fadeRoutine = StartCoroutine(FadeInRoutine(onComplete, leadDelay, fadeIn, waitForInput));
     }
 
     IEnumerator FadeInRoutine(Action onComplete, float leadDelay, bool fadeIn, bool waitForInput)
     {
-        yield return WAIT.ForSeconds(leadDelay);
+        _canvasGroup.alpha = fadeIn ? 0f : 1f;
 
-        EaseType easing = fadeIn ? EaseType.InQuad : EaseType.OutQuad;
-
-        while(!_fadeTimer.hasFinished)
+        float leadTime = 0f;
+        while(leadTime < leadDelay)
         {
-            _fadeTimer.Step(Time.deltaTime);
-            float lerp = EASE.Evaluate(fadeIn ? _fadeTimer.percent : 1f - _fadeTimer.percent, easing);
-            _canvasGroup.alpha = lerp;
+            float percent = (leadTime / leadDelay).Clamp01();
+            float lerp = EASE.Evaluate(percent, EaseType.InQuad);
+
+            if(_title.gameObject.activeInHierarchy) _title.color = _title.color.WithA(lerp);
+            if(_message.gameObject.activeInHierarchy) _message.color = _message.color.WithA(lerp);
+
+            leadTime += Time.deltaTime;
             yield return null;
         }
 
-        if(waitForInput)
+        EaseType easing = fadeIn ? EaseType.InQuad : EaseType.InOutQuad;
+        bool skip = false;
+        while(!_fadeTimer.hasFinished)
+        {
+            if(INPUT.leftMouse.down)
+            {
+                skip = true;
+                break;
+            }
+
+            _fadeTimer.Step(Time.deltaTime);
+            float lerp = EASE.Evaluate(fadeIn ? _fadeTimer.percent : 1f - _fadeTimer.percent, easing);
+            _canvasGroup.alpha = lerp;
+            _ppv.weight = lerp;
+            yield return null;
+        }
+        if(!fadeIn) _ppv.gameObject.SetActive(false);
+
+        if(!skip && waitForInput)
         {
             float wait = 3f;
             while(true)
