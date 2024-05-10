@@ -70,11 +70,14 @@ public class View : MonoSingleton<View>
         GIZMOS.Sphere(_viewTarget.position, 0.25f, RGB.yellow);
         GIZMOS.Line(transform.position, _viewTarget.position, RGB.cyan);
     }
+
     void Look()
     {
+        Vector2 mousePos = INPUT.mousePos;
+        
         float halfWidth = SCREEN.size.x * 0.5f, halfHeight = SCREEN.size.y * 0.5f;
-        float pitch = (INPUT.mousePos.y - halfHeight) / -halfHeight * _maxXAngle;
-        float yaw = (INPUT.mousePos.x - halfWidth) / halfWidth * _maxYAngle;
+        float pitch = (mousePos.y - halfHeight) / -halfHeight * _maxXAngle;
+        float yaw = (mousePos.x - halfWidth) / halfWidth * _maxYAngle;
 
         transform.localEulerAngles = new Vector3(pitch, yaw, 0);
     }
@@ -88,7 +91,7 @@ public class View : MonoSingleton<View>
 
         _dof.focusDistance.value = (_viewTarget.position - transform.position).magnitude;
         StepFocusPos(Player.inst.tunnel.tunnelMesh);
-        
+
         return;
         //--------------------------------------------------
         void StepFocusPos(TunnelMesh mesh)
