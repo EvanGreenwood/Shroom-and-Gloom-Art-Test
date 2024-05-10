@@ -74,6 +74,8 @@ public class View : MonoSingleton<View>
     void Look()
     {
         Vector2 mousePos = INPUT.mousePos;
+        if(!SCREEN.rect.Contains(mousePos))
+            return;
         
         float halfWidth = SCREEN.size.x * 0.5f, halfHeight = SCREEN.size.y * 0.5f;
         float pitch = (mousePos.y - halfHeight) / -halfHeight * _maxXAngle;
