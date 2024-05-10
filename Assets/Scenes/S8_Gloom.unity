@@ -581,6 +581,7 @@ MonoBehaviour:
   _setHideFlags: 1
   wallElements:
   - name: Wall Cave
+    disabled: 0
     wallPrefabs:
     - {fileID: 717079983591251126, guid: 7ffc0bd0eaa3c4aa28edd6c5974a2f20, type: 3}
     - {fileID: 717079983591251126, guid: 6e7233b1fe502482786141cbcff48c8d, type: 3}
@@ -601,6 +602,7 @@ MonoBehaviour:
     randomRotation: 8
     randomFlipY: 1
   - name: Rocks base
+    disabled: 0
     wallPrefabs:
     - {fileID: 717079983591251126, guid: cb8c4ff9972b3b745991cb1b0a747464, type: 3}
     - {fileID: 717079983591251126, guid: 3f32d0a184728724682dd65b9791dd96, type: 3}
@@ -628,6 +630,7 @@ MonoBehaviour:
   surroundElements: []
   floorElements:
   - name: Floor
+    disabled: 0
     floorPrefabs:
     - {fileID: 717079983591251126, guid: c7bf440da759743d2babef9b1f6de9ef, type: 3}
     zOffset: 0.08
@@ -646,6 +649,7 @@ MonoBehaviour:
   flatFloorOffset: -1
   ceilingElements:
   - name: Stalactites
+    disabled: 0
     ceilingPrefabs:
     - {fileID: 717079983591251126, guid: 27bacbf4aeb5d44ac9799a0cc6ead2d1, type: 3}
     - {fileID: 717079983591251126, guid: 0e7499d4e7bc84f359fc4525db7054d9, type: 3}
@@ -667,6 +671,7 @@ MonoBehaviour:
       _max: 0.7
     randomFlipX: 0
   - name: Ceiling
+    disabled: 0
     ceilingPrefabs:
     - {fileID: 717079983591251126, guid: 2832df8ee9a104c518c231259296af54, type: 3}
     - {fileID: 717079983591251126, guid: b40fb7650720d4555ab821e23919b6c9, type: 3}
@@ -698,6 +703,8 @@ MonoBehaviour:
   - {fileID: 0}
   _drawGizmos: 0
   _generatedIsSelectable: 0
+  _internalTunnelSpline: {fileID: 1392419567}
+  _internalTunnelMesh: {fileID: 0}
 --- !u!4 &1392419566
 Transform:
   m_ObjectHideFlags: 0
@@ -800,6 +807,6 @@ SceneRoots:
   - {fileID: 1321564997}
   - {fileID: 1361835118}
   - {fileID: 1228317355}
-  - {fileID: 37918224}
   - {fileID: 301206922}
+  - {fileID: 37918224}
   - {fileID: 1381225328}

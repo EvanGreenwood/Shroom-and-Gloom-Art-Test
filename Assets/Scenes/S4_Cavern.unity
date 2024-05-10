@@ -550,6 +550,8 @@ MonoBehaviour:
   - {fileID: 0}
   _drawGizmos: 1
   _generatedIsSelectable: 1
+  _internalTunnelSpline: {fileID: 456737836}
+  _internalTunnelMesh: {fileID: 0}
 --- !u!4 &456737835
 Transform:
   m_ObjectHideFlags: 0
@@ -1511,6 +1513,8 @@ MonoBehaviour:
   - {fileID: 0}
   _drawGizmos: 0
   _generatedIsSelectable: 1
+  _internalTunnelSpline: {fileID: 1024201288}
+  _internalTunnelMesh: {fileID: 0}
 --- !u!4 &1024201287
 Transform:
   m_ObjectHideFlags: 0
@@ -1907,6 +1911,8 @@ MonoBehaviour:
   - {fileID: 0}
   _drawGizmos: 1
   _generatedIsSelectable: 0
+  _internalTunnelSpline: {fileID: 1418270755}
+  _internalTunnelMesh: {fileID: 0}
 --- !u!4 &1418270754
 Transform:
   m_ObjectHideFlags: 0
@@ -2225,6 +2231,8 @@ MonoBehaviour:
   - {fileID: 0}
   _drawGizmos: 0
   _generatedIsSelectable: 1
+  _internalTunnelSpline: {fileID: 1551529201}
+  _internalTunnelMesh: {fileID: 0}
 --- !u!4 &1551529200
 Transform:
   m_ObjectHideFlags: 0
@@ -2840,6 +2848,8 @@ MonoBehaviour:
   - {fileID: 0}
   _drawGizmos: 1
   _generatedIsSelectable: 0
+  _internalTunnelSpline: {fileID: 2006139837}
+  _internalTunnelMesh: {fileID: 0}
 --- !u!114 &2006139837
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3663,8 +3673,8 @@ SceneRoots:
   - {fileID: 2119652643}
   - {fileID: 5024598757371713799}
   - {fileID: 2128167866}
-  - {fileID: 525790713}
   - {fileID: 597362863}
+  - {fileID: 525790713}
   - {fileID: 120243511}
   - {fileID: 276788893}
   - {fileID: 295426747}
