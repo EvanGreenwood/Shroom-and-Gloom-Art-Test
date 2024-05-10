@@ -9,7 +9,9 @@ using UnityEngine.SceneManagement;
 public class HUD : CanvasSingleton<HUD>
 {
     [SerializeField] TextMeshProUGUI _infoLabel;
+
     string _activeSceneName;
+
     // Init
     //----------------------------------------------------------------------------------------------------
     public void Init() { }
@@ -22,7 +24,7 @@ public class HUD : CanvasSingleton<HUD>
     }
     void Update()
     {
-        _infoLabel.text = $"{_activeSceneName}  |  " +
-                          $"[Avg Fps: {FrameRate.inst.fpsAverage:000}]";
+        _infoLabel.text = $"{SceneController.inst.sceneData.title}  |  " +
+                          $"[FPS: {FrameRate.inst.fpsAverage:000}]";
     }
 }

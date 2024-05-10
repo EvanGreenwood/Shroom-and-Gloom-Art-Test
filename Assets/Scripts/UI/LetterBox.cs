@@ -10,7 +10,7 @@ public class LetterBox : MonoBehaviourUI
 {
     [SerializeField] Image _top, _bottom;
     [SerializeField] float _startDuration = 1f;
-    [Range(0f, 1f)]
+    [Range(0f, 2f)]
     [SerializeField] float _size = 0.15f;
     [SerializeField] float _stopSize = 0.0f;
 

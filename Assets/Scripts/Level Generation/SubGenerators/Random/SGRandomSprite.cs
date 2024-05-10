@@ -3,7 +3,6 @@ using UnityEngine;
 using Framework;
 using MathBad;
 using NaughtyAttributes;
-using System;
 #endregion
 
 public class RandomSprite : SubGenerator

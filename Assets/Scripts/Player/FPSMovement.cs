@@ -1,26 +1,19 @@
 using Framework;
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
+using MathBad;
 using UnityEngine;
 
 public class FPSMovement : MonoBehaviour
 {
-    [SerializeField] float _speed = 4;
-    [SerializeField] float _bobHeight = 0.1f;
-    [SerializeField] float _bobRate = 0.5f;
+    [SerializeField] Transform _view;
+    [SerializeField] TunnelGenerator _tunnel;
 
+    [SerializeField] float _speed = 4;
     [SerializeField] float _headHeight = 1.6f;
     [SerializeField] float _directionLookaheadDistance = 1;
-    //
-    [SerializeField] Vector2 angleOffset;
-    [SerializeField] float maxXAngle = 35;
-    [SerializeField] float maxYAngle = 35;
 
-    //
-    [SerializeField] Transform _view;
-    //
-    [SerializeField] TunnelGenerator _tunnel;
+    [Header("Bob")]
+    [SerializeField] float _bobHeight = 0.1f;
+    [SerializeField] float _bobRate = 0.5f;
 
     float _bobCounter = 0;
     float _currentSpeed = 5;
@@ -29,16 +22,26 @@ public class FPSMovement : MonoBehaviour
 
     // Activate
     //----------------------------------------------------------------------------------------------------
-    public void Activate() {_isActivated = true;}
+    public void Activate()
+    {
+        INPUT.SetCursorPos(SCREEN.center);
+        _isActivated = true;
+    }
+
+    public void SwitchTunnel(TunnelGenerator newTunnel)
+    {
+        _tunnel = newTunnel;
+    }
+
     void Start()
     {
-        transform.position = transform.position.WithY(_headHeight);
-        //
+        _view.localPosition = new Vector3(0f, _headHeight, 0f);
+
         if(_tunnel == null)
         {
-            FindNewTunnel();
+            _tunnel = TunnelSystem.inst.FindNewTunnel(transform.position);
         }
-        //
+
         _currentSpeed = _speed;
     }
 
@@ -68,7 +71,7 @@ public class FPSMovement : MonoBehaviour
                 {
                     if(_tunnel.GetNormDistanceFromPoint(transform.position) > 0.99f)
                     {
-                        FindNewTunnel();
+                        _tunnel = TunnelSystem.inst.FindNewTunnel(transform.position);
                     }
                 }
                 else if(moveDir < 0)
@@ -99,35 +102,5 @@ public class FPSMovement : MonoBehaviour
             _bobCounter = Mathf.Lerp(_bobCounter, Mathf.Round(_bobCounter * _bobRate) / _bobRate, Time.deltaTime * 7);
             _view.transform.localPosition = _view.transform.localPosition.WithY(Mathf.Lerp(_view.transform.localPosition.y, _headHeight + Mathf.Sin(_bobCounter / _bobRate * Mathf.PI) * _bobHeight, Time.deltaTime * 8));
         }
-
-        //Camera movement
-        _view.transform.localEulerAngles = new Vector3(((Input.mousePosition.y - Screen.height / 2f) / Screen.height / -2f) * maxXAngle, ((Input.mousePosition.x - Screen.width / 2f) / Screen.width / 2f) * maxYAngle, 0);
-    }
-
-    // Get Tunnel
-    //----------------------------------------------------------------------------------------------------
-    void FindNewTunnel()
-    {
-        //Slow and bad
-        TunnelGenerator[] generators = FindObjectsByType<TunnelGenerator>(FindObjectsInactive.Exclude, FindObjectsSortMode.None);
-
-        //find closest tunnel
-        float closestDistance = float.MaxValue;
-        TunnelGenerator closestGenerator = null;
-        foreach(TunnelGenerator generator in generators)
-        {
-            float distance = Vector3.Distance(generator.transform.position, transform.position);
-
-            if(distance < closestDistance)
-            {
-                closestDistance = distance;
-                closestGenerator = generator;
-            }
-        }
-        _tunnel = closestGenerator;
-    }
-    public void SwitchTunnel(TunnelGenerator newTunnel)
-    {
-        _tunnel = newTunnel;
     }
 }

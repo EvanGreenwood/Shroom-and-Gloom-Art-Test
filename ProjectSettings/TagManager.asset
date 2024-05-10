@@ -35,9 +35,12 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - Volumes
+  - VolumeUI
+  - VolumeMain
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: UI
+    uniqueID: 2721211599
     locked: 0

@@ -9,6 +9,7 @@ using UnityEngine.UI;
 
 public class SceneTransition : MonoSingletonUI<SceneTransition>
 {
+    [SerializeField] Color _defaultTitleColor = RGB.darkGrey;
     [SerializeField] TextMeshProUGUI _title;
     [SerializeField] TextMeshProUGUI _message;
     [SerializeField] Image _panel;
@@ -17,11 +18,25 @@ public class SceneTransition : MonoSingletonUI<SceneTransition>
     Timer2 _fadeTimer = new Timer2(1f);
     Coroutine _fadeRoutine;
 
+    // Transition
+    //----------------------------------------------------------------------------------------------------
+    public void Transition(Action onComplete,
+                           float leadDelay, bool waitForInput,
+                           bool fadeIn, float fadeTime,
+                           string title, string message)
+    {
+        Transition(onComplete,
+                   leadDelay, waitForInput,
+                   fadeIn, fadeTime,
+                   title, message,
+                   _defaultTitleColor);
+    }
+
     public void Transition(Action onComplete,
                            float leadDelay, bool waitForInput,
                            bool fadeIn, float fadeTime,
                            string title, string message,
-                           Color titleColor, Color panelColor)
+                           Color titleColor)
     {
         if(_fadeRoutine != null)
             return;
@@ -41,18 +56,18 @@ public class SceneTransition : MonoSingletonUI<SceneTransition>
             _title.gameObject.SetActive(false);
         }
 
-        if(!message.IsNullOrEmpty())
-        {
-            _message.text = message;
-            _message.gameObject.SetActive(true);
-        }
-        else
-        {
-            _message.text = string.Empty;
-            _message.gameObject.SetActive(false);
-        }
+        // if(!message.IsNullOrEmpty())
+        // {
+        //     _message.text = message;
+        //     _message.gameObject.SetActive(true);
+        // }
+        // else
+        // {
+        //     _message.text = string.Empty;
+        //     _message.gameObject.SetActive(false);
+        // }
 
-        _panel.color = panelColor;
+        _panel.color = RGB.black;
 
         gameObject.SetActive(true);
         _fadeRoutine = StartCoroutine(FadeInRoutine(onComplete, leadDelay, fadeIn, waitForInput));

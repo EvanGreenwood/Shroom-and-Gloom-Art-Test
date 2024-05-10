@@ -14,6 +14,7 @@ public class CameraAutoFocus : MonoBehaviour
     DepthOfField _dof;
     float _curFocalDst, _lastDepthSuccess;
     float _velocity;
+    
     void Awake()
     {
         _ppv = _volume.profile;

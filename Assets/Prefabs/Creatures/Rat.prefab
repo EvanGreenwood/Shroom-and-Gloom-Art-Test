@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3034379991999458407}
   - component: {fileID: 2633181192094563035}
   - component: {fileID: 6351433809878490592}
+  - component: {fileID: 7966242583065437334}
   m_Layer: 0
   m_Name: Rat
   m_TagString: Untagged
@@ -76,8 +77,8 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -1052003526, guid: fa4f9a72adf957c449f9e952e7536717, type: 3}
-  m_Color: {r: 0.9462983, g: 0.9462983, b: 0.9462983, a: 1}
-  m_FlipX: 0
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 0.335, y: 1.08}
@@ -129,8 +130,8 @@ MonoBehaviour:
   _colorOverTime: 1
   _colorOverTimeGradient:
     serializedVersion: 2
-    key0: {r: 0.44313726, g: 0.44313726, b: 0.44313726, a: 1}
-    key1: {r: 0.44313726, g: 0.44313726, b: 0.44313726, a: 1}
+    key0: {r: 1, g: 1, b: 1, a: 1}
+    key1: {r: 1, g: 1, b: 1, a: 1}
     key2: {r: 0, g: 0, b: 0, a: 0}
     key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
@@ -163,3 +164,16 @@ MonoBehaviour:
   _destroyOnComplete: 0
   _frameDelta: 0.05
   _totalTime: 0.25
+--- !u!114 &7966242583065437334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3729888122041238011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59146cfe761ff774490a9979c3ac8f68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _probability: 0.05

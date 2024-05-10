@@ -118,7 +118,7 @@ public static class INPUT
   public static Vector2 mousePosCanvas { [MethodImpl(MethodImplOptions.AggressiveInlining)] get => new Vector2(mousePos.x, Screen.height - mousePos.y); }
   public static Vector2 mouseDelta { [MethodImpl(MethodImplOptions.AggressiveInlining)] get => mouse.delta.ReadValue(); }
   public static float mouseScroll { [MethodImpl(MethodImplOptions.AggressiveInlining)] get => mouse.scroll.ReadValue().y; }
-
+  
   static bool _mouseCaptured;
   public static bool mouseCaptured
   {

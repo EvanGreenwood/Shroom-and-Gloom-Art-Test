@@ -1,10 +1,7 @@
 #region Usings
 using UnityEngine;
-using Framework;
 using MathBad;
 using NaughtyAttributes;
-using System;
-
 #endregion
 [RequireComponent(typeof(SpriteRenderer))]
 

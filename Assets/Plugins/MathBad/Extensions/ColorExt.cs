@@ -1,6 +1,7 @@
 ﻿#region
 using UnityEngine;
 #endregion
+
 namespace MathBad
 {
 public static class ColorExt

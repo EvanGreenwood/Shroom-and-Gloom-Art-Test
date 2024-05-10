@@ -7,6 +7,7 @@ using MathBad;
 public class SpriteBillboard : MonoBehaviour
 {
     [SerializeField] bool _cameraFade = true;
+    [SerializeField] bool _vertical = true;
     SpriteRenderer _sr;
     float _startAlpha;
     void Awake()
@@ -17,6 +18,8 @@ public class SpriteBillboard : MonoBehaviour
     void Update()
     {
         Vector3 dir = (SceneUtils.MainCamera.transform.position - transform.position).normalized;
+        if(_vertical) dir = dir.WithY(0f).normalized;
+        
         transform.rotation = Quaternion.LookRotation(-dir, Vector3.up);
 
         if(!_cameraFade)
