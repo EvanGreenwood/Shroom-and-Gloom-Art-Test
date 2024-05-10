@@ -5,24 +5,62 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="825655da-4771-4664-b01a-9bffcaa881d5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/MathBad/Extensions/MeshExt.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/MathBad/Extensions/MeshExt.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Shroom-and-Gloom-Art-Test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Shroom-and-Gloom-Art-Test/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/MathBad/DataStructures/Bit/Editor/BitDrawers.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/MathBad/DataStructures/Bit/Editor/BitDrawers.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/MathBad/Extensions/RectExt.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/MathBad/Extensions/RectExt.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Plugins/VHSPro/Resources/Materials/VHSPro_pass1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/VHSPro/Resources/Materials/VHSPro_pass1.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/VHSPro/Resources/Materials/VHSPro_tape.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/VHSPro/Resources/Materials/VHSPro_tape.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/HUD.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/HUD.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/SceneTransition.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/SceneTransition.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/Depth_PPV.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/SceneData/Depth_PPV.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/SceneData/S5_Shroomy_SceneData.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/SceneData/SceneData/S5_Shroomy_SceneData.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPV/S2_RockTunnel_PPV.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPV/S2_RockTunnel_PPV.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPV/S5_Shroomy_PPV.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPV/S5_Shroomy_PPV.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/Depth_PPV.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/Depth_PPV.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/S0A_Prelude_PPV.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/S0A_Prelude_PPV.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/S0B_MainMenu_PPV.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/S0B_MainMenu_PPV.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPV/S1_Mines_PPV.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPV/S1_Mines_PPV.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPV/S2_RockTunnel_PPV.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPV/S2_RockTunnel_PPV.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPV/S3_RockCave_PPV.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPV/S3_RockCave_PPV.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPV/S4_Cavern_PPV.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPV/S4_Cavern_PPV.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPV/S5_Shroomy_PPV.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPV/S5_Shroomy_PPV.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPV/S6_Trippy_PPV.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPV/S6_Trippy_PPV.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPV/S7_Portal_PPV.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPV/S7_Portal_PPV.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPV/S8_Gloom_PPV.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPV/S8_Gloom_PPV.asset.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/S1_TheMines.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/S1_TheMines.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/S2_RockTunnel.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/S2_RockTunnel.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ScenesBackup.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ScenesBackup/NaughtyTerry.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ScenesBackup/NaughtyTerry.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level Generation/SkyboxSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Level Generation/SkyboxSpawner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scene/SceneController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scene/SceneController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/S5_Shroomy.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/S5_Shroomy.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Camera/CameraAutoFocus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Camera/CameraAutoFocus.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraValidator.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraValidator.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level Generation/TunnelGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Level Generation/TunnelGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level Generation/TunnelSwich.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Level Generation/TunnelSwich.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level Generation/TunnelSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Level Generation/TunnelSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/FPSMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/FPSMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/View.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/View.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/SceneTransition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/SceneTransition.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Test.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/TestComponent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Test.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/TestComponent.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/Editor/SceneViewDebug.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/Editor/SceneViewDebug.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WorldColors.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WorldColors.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/Post Processing/Transition_PPV.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/Post Processing/Transition_PPV.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Flare.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Flare.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Flare.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Flare.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Portal.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Portal.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/SpriteToMesh.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/SpriteToMesh.shader.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,13 +81,14 @@
     <setting file="file://$PROJECT_DIR$/../../hardgore/hardgore/Assets/Scripts/Common/KeepSpriteUpright.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../horror/horror/Assets/Plugins/MathBad/Extensions/TransformExt.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/MathBad/Editor/TransformInspector.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/MathBad/Patterns/TubeRenderer/TubeRenderer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Effects/Cable/Cable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Effects/LightAnim.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Effects/SpriteBillboard.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Level Generation/Editor/TunnelStyleEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Level Generation/SubGenerators/Random/SGRandomFlipSprite.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Level Generation/TunnelLight.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Level Generation/World.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Level Generation/TunnelMesh.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Lighting/ShroomLightingService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/ServiceLocator/MonoService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/ServiceLocator/Service.cs" root0="FORCE_HIGHLIGHTING" />
@@ -71,6 +110,9 @@
     <setting file="file://$PROJECT_DIR$/../../../../backup/_Work/_Projects-Unity/z_backup/_hardgore/hardgore/Assets/Plugins/Framework/Tools/ToobarExtender/Editor/Toolbars/ProjectButtons.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../backup/_Work/_Projects-Unity/z_backup/_hardgore/hardgore/Assets/Plugins/Framework/Tools/ToobarExtender/Editor/Toolbars/SceneCollection.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../backup/_Work/_Projects-Unity/z_backup/_hardgore/hardgore/Assets/Plugins/Framework/Utils/Editor/SceneViewDebug.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../backup/_Work/_Projects-Unity/z_backup/backup/__Versions/_GODFUCKER/GodFucker/Assets/Plugins/Framework/Geometry/Extensions/MESH_EXT.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../backup/_Work/_Projects-Unity/z_backup/backup/__Versions/__THEPIT/thepit/Assets/Plugins/Framework/Geometry/Extensions/GeoExt.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../backup/_Work/_Projects-Unity/z_backup/backup/__Versions/__THEPIT/thepit/Assets/Plugins/Framework/Geometry/Extensions/MESH_EXT.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
@@ -169,7 +211,7 @@
       <workItem from="1715289477964" duration="1139000" />
       <workItem from="1715311378778" duration="9528000" />
       <workItem from="1715327637587" duration="63000" />
-      <workItem from="1715349915458" duration="3484000" />
+      <workItem from="1715349915458" duration="14969000" />
     </task>
     <servers />
   </component>

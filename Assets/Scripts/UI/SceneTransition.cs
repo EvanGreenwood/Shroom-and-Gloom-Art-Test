@@ -117,6 +117,13 @@ public class SceneTransition : MonoSingletonUI<SceneTransition>
             _ppv.weight = lerp;
             yield return null;
         }
+        
+        if(skip)
+        {
+            _canvasGroup.alpha = fadeIn ? 1f : 0f;
+            _ppv.weight = fadeIn ? 1f : 0f;
+        }
+        
         if(!fadeIn) _ppv.gameObject.SetActive(false);
 
         if(!skip && waitForInput)

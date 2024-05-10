@@ -6,39 +6,88 @@ using UnityEngine.Rendering.PostProcessing;
 
 public class Player : MonoSingleton<Player>
 {
-    [SerializeField] View _view;
     [SerializeField] FPSMovement _movement;
+
+    TunnelGenerator _tunnel;
+
     bool _hasInit, _isActivated;
     bool _cursorConfined;
-    public View view => _view;
+    float _fwdInput;
+    bool _runInput;
 
-    // Init
-    //----------------------------------------------------------------------------------------------------
+    public TunnelGenerator tunnel => _tunnel;
+
     public void Init(SceneData sceneData)
     {
-        _view.Init(sceneData.postProcessProfile);
+        View.inst.Init(sceneData.postProcessProfile);
         _hasInit = true;
     }
+
     public void Activate()
     {
-        _view.Activate();
+        View.inst.Activate();
         _movement.Activate();
         _isActivated = true;
     }
+
+    void Start()
+    {
+        TunnelSystem.inst.TryGetTunnel(transform.position, out _tunnel);
+        _movement.SetTunnel(_tunnel);
+    }
+
     void Update()
     {
         if(!_hasInit || !_isActivated)
             return;
 
+        ReadInput();
+        CheckTunnel();
+    }
+
+    void ReadInput()
+    {
         if(INPUT.tab.down)
         {
             _cursorConfined = !_cursorConfined;
             Cursor.lockState = _cursorConfined ? CursorLockMode.Confined : CursorLockMode.None;
         }
+
+        _fwdInput = INPUT.moveInput2.y;
+        _runInput = INPUT.leftShift.pressed;
+        _movement.SetInput(_fwdInput, _runInput);
     }
 
-    public void SetPostProcessingProfile(PostProcessProfile ppv)
+    // Tunnel
+    //----------------------------------------------------------------------------------------------------
+    void CheckTunnel()
     {
-        _view.SetPostProcessingProfile(ppv);
+        if(_fwdInput > 0)
+        {
+            if(_tunnel.GetNormDistanceFromPoint(transform.position) > 0.99f)
+            {
+                if(TunnelSystem.inst.TryGetTunnel(transform.position, out _tunnel))
+                    _movement.SetTunnel(_tunnel);
+            }
+        }
+        else if(_fwdInput < 0)
+        {
+            //TODO: RN, can not go back to a previous tunnel. Does not work, closest tunnel is still current.
+            /*if (_tunnel.GetNormDistanceFromPoint(transform.position) < 0.1f)
+            {
+                FindNewTunnel();
+            }*/
+        }
+    }
+
+    public void SwitchTunnel(TunnelGenerator newTunnel)
+    {
+        _tunnel = newTunnel;
+        _movement.SetTunnel(_tunnel);
+    }
+
+    public void SetScenePostProcessProfile(PostProcessProfile ppv)
+    {
+        View.inst.depthVolume.profile = ppv;
     }
 }

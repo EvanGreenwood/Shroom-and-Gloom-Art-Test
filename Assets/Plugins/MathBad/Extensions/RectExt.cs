@@ -32,17 +32,17 @@ public static class RectExt
 
   // Components
   //----------------------------------------------------------------------------------------------------
-  [MethodImpl(256)] public static Rect WithX(this Rect rect, float x) => new Rect(x, rect.y, rect.width, rect.height);
-  [MethodImpl(256)] public static Rect WithY(this Rect rect, float y) => new Rect(rect.x, y, rect.width, rect.height);
-  [MethodImpl(256)] public static Rect WithPosition(this Rect rect, float x, float y) => new Rect(x, y, rect.width, rect.height);
-
-  [MethodImpl(256)] public static Rect WithWidth(this Rect rect, float w) => new Rect(rect.x, rect.y, w, rect.height);
-  [MethodImpl(256)] public static Rect WithHeight(this Rect rect, float h) => new Rect(rect.x, rect.y, rect.width, h);
-  [MethodImpl(256)] public static Rect WithSize(this Rect rect, float w, float h) => new Rect(rect.x, rect.y, w, h);
-
-  [MethodImpl(256)] public static Rect WithMin(this Rect rect, Vector2 min) => Rect.MinMaxRect(min.x, min.y, rect.max.x, rect.max.y);
-  [MethodImpl(256)] public static Rect WithMax(this Rect rect, Vector2 max) => Rect.MinMaxRect(rect.min.x, rect.min.y, max.x, max.y);
-  [MethodImpl(256)] public static Rect WithMinMax(this Rect rect, Vector2 min, Vector2 max) => Rect.MinMaxRect(min.x, min.y, max.x, max.y);
+  // [MethodImpl(256)] public static Rect WithX(this Rect rect, float x) => new Rect(x, rect.y, rect.width, rect.height);
+  // [MethodImpl(256)] public static Rect WithY(this Rect rect, float y) => new Rect(rect.x, y, rect.width, rect.height);
+  // [MethodImpl(256)] public static Rect WithPosition(this Rect rect, float x, float y) => new Rect(x, y, rect.width, rect.height);
+  //
+  // [MethodImpl(256)] public static Rect WithWidth(this Rect rect, float w) => new Rect(rect.x, rect.y, w, rect.height);
+  // [MethodImpl(256)] public static Rect WithHeight(this Rect rect, float h) => new Rect(rect.x, rect.y, rect.width, h);
+  // [MethodImpl(256)] public static Rect WithSize(this Rect rect, float w, float h) => new Rect(rect.x, rect.y, w, h);
+  //
+  // [MethodImpl(256)] public static Rect WithMin(this Rect rect, Vector2 min) => Rect.MinMaxRect(min.x, min.y, rect.max.x, rect.max.y);
+  // [MethodImpl(256)] public static Rect WithMax(this Rect rect, Vector2 max) => Rect.MinMaxRect(rect.min.x, rect.min.y, max.x, max.y);
+  // [MethodImpl(256)] public static Rect WithMinMax(this Rect rect, Vector2 min, Vector2 max) => Rect.MinMaxRect(min.x, min.y, max.x, max.y);
 
   // Size
   //----------------------------------------------------------------------------------------------------

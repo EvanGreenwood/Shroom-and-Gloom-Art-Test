@@ -19,6 +19,9 @@ public class SceneViewDebug
 
     static void OnSceneGUI(SceneView sceneView)
     {
+        if(Application.isPlaying)
+            return;
+        
         Handles.BeginGUI();
 
         Vector2 buttonSize = new Vector2(75, 20);
@@ -26,18 +29,20 @@ public class SceneViewDebug
         Rect windowRect = sceneView.position.WithPosition(new Vector2(0f, -20));
         Rect rect = new Rect(windowRect.max - buttonSize - padding, buttonSize);
         rect.Draw(RGB.black);
-        
+
         if(GUI.Button(rect, "RefreshAll"))
         {
             TunnelGenerator[] generators = Object.FindObjectsOfType<TunnelGenerator>();
             generators.Foreach(generator => generator.Generate());
         }
-        if(GUI.Button(rect.MoveLeft(buttonSize.x + padding.x), "ValidatePPV"))
+
+        rect = rect.WithWidth(rect.width + 15f);
+        if(GUI.Button(rect.MoveLeft(rect.width + padding.x), "ValidatePPV"))
         {
             SceneData sceneData = Object.FindObjectOfType<SceneData>();
-            Player.inst.SetPostProcessingProfile(sceneData.postProcessProfile);
+            Player.inst.SetScenePostProcessProfile(sceneData.postProcessProfile);
         }
-        
+
         Handles.EndGUI();
     }
 }

@@ -18,13 +18,13 @@ MonoBehaviour:
     value: 1
   g_pixel:
     overrideState: 0
-    value: 1
+    value: 0
   g_color:
     overrideState: 0
-    value: 1
+    value: 0
   g_palette:
     overrideState: 0
-    value: 1
+    value: 0
   g_crt:
     overrideState: 0
     value: 1
@@ -33,7 +33,7 @@ MonoBehaviour:
     value: 1
   g_jitter:
     overrideState: 0
-    value: 1
+    value: 0
   g_signal:
     overrideState: 0
     value: 1
@@ -51,7 +51,7 @@ MonoBehaviour:
     value: 0
   screenResPresetId:
     overrideState: 0
-    value: 2
+    value: 0
   screenWidth:
     overrideState: 0
     value: 640
@@ -207,40 +207,40 @@ MonoBehaviour:
     overrideState: 0
     value: 1
   signalTweakOn:
-    overrideState: 1
-    value: 1
+    overrideState: 0
+    value: 0
   signalAdjustY:
-    overrideState: 1
+    overrideState: 0
     value: -0.055
   signalAdjustI:
-    overrideState: 1
+    overrideState: 0
     value: 0.025
   signalAdjustQ:
-    overrideState: 1
+    overrideState: 0
     value: 0
   signalShiftY:
-    overrideState: 1
+    overrideState: 0
     value: 1
   signalShiftI:
-    overrideState: 1
+    overrideState: 0
     value: 1
   signalShiftQ:
-    overrideState: 1
+    overrideState: 0
     value: 1
   feedbackOn:
-    overrideState: 1
-    value: 1
+    overrideState: 0
+    value: 0
   feedbackThresh:
-    overrideState: 1
+    overrideState: 0
     value: 0.1
   feedbackAmount:
-    overrideState: 1
+    overrideState: 0
     value: 2
   feedbackFade:
-    overrideState: 1
+    overrideState: 0
     value: 0.65
   feedbackColor:
-    overrideState: 1
+    overrideState: 0
     value: {r: 1, g: 0.5, b: 0, a: 1}
   feedbackDebugOn:
     overrideState: 0

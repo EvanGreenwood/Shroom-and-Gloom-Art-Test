@@ -1,0 +1,333 @@
+//  _____        _          ___                _                                                      //
+// |_   _| _  _ | |__  ___ | _ \ ___  _ _   __| | ___  _ _  ___  _ _                                  //
+//   | |  | || || '_ \/ -_)|   // -_)| ' \ / _` |/ -_)| '_|/ -_)| '_|                                 //
+//   |_|   \_,_||_.__/\___||_|_\\___||_||_|\__,_|\___||_|  \___||_|                                   //
+//                                                                                                    //
+//----------------------------------------------------------------------------------------------------//
+
+#region
+using System;
+using System.Collections.Generic;
+using Unity.Jobs;
+using UnityEngine;
+#endregion
+
+namespace Framework
+{
+public unsafe class TubeRenderer : MonoBehaviour
+{
+    [SerializeField] private MeshFilter _meshFilter;
+    [SerializeField] private MeshRenderer _meshRenderer;
+    [SerializeField]
+    private Vector3[] _positions = {new Vector3(0f, 0f, 0f), new Vector3(0f, 0f, 1f)};
+    [SerializeField] private bool _useWorldSpace = false;
+
+    [SerializeField, Min(3)]
+    private int _sides = 6;
+
+    [SerializeField] private AnimationCurve _radius = AnimationCurve.Linear(0f, 1f, 1f, 1f);
+    [SerializeField] private float _radiusFactor = 0.25f;
+
+    [Range(0f, 360f), SerializeField]
+    private float _spin = 0f;
+    [SerializeField] private bool _endCaps = true;
+    [SerializeField] private bool _keepOrientation = false;
+
+    // Mesh Data
+    private List<Vector2> _uvs = new List<Vector2>();
+    private List<int> _indices = new List<int>();
+
+    private Mesh _mesh;
+    private float _totalLength = 0f;
+    private bool _isDirty;
+
+    // Public Fields
+    public Vector3[] positions => _positions;
+    public bool useWorldSpace => _useWorldSpace;
+    public List<Vector3> vertices { get; private set; } = new List<Vector3>();
+
+    public Material material
+    {
+        get => _meshRenderer.sharedMaterial;
+        set => _meshRenderer.sharedMaterial = value;
+    }
+
+    [Button("Straighten")]
+    public static void Straighten(TubeRenderer tube)
+    {
+        if(tube.positions.IsNullOrEmpty())
+            return;
+        if(tube.positions.Length < 2)
+            return;
+        int count = tube.positions.Length;
+        Vector3 heading = tube.positions[count - 1] - tube.positions[0];
+        float spacing = heading.magnitude / (count - 1);
+
+        Vector3 p0 = tube.positions[0];
+        Vector3 dir = heading.normalized;
+
+        for(int i = 1; i < count - 1; i++)
+            tube.positions[i] = p0 + dir * i * spacing;
+    }
+
+    [Button("Step")]
+    private void InternalStep()
+    {
+        if(_meshFilter == null || _meshRenderer == null)
+        {
+            Debug.Log("Tube Renderer: Assign both mesh filter and mesh renderer components.");
+            return;
+        }
+        if(_mesh == null && _meshFilter.sharedMesh != null)
+            _mesh = _meshFilter.sharedMesh;
+        Step();
+    }
+
+    public Vector3 this[int index]
+    {
+        get
+        {
+            if(index < 0 || index >= _positions.Length)
+                throw new IndexOutOfRangeException($"{index} is out of range of the _positions array.");
+            return _positions[index];
+        }
+        set
+        {
+            if(index < 0 || index >= _positions.Length)
+                throw new IndexOutOfRangeException($"{index} is out of range of the _positions array.");
+            _positions[index] = value;
+            _isDirty = true;
+        }
+    }
+
+    // monobehaviour
+    //--------------------------------------------------------------------------------------------------//
+    private void OnEnable()
+    {
+        if(_meshRenderer != null) { _meshRenderer.enabled = true; }
+    }
+    private void OnDisable()
+    {
+        if(_meshRenderer != null) { _meshRenderer.enabled = false; }
+    }
+
+    private void Awake()
+    {
+        if(_meshFilter == null) _meshFilter = gameObject.GetComponent<MeshFilter>();
+        if(_meshRenderer == null) _meshRenderer = gameObject.GetComponent<MeshRenderer>();
+
+        _mesh = new Mesh();
+        _mesh.name = "Tube";
+        _meshFilter.mesh = _mesh;
+        vertices = new List<Vector3>();
+    }
+
+    private void Update()
+    {
+        if(_isDirty)
+        {
+            Step();
+            _isDirty = false;
+        }
+    }
+
+    // set
+    //--------------------------------------------------------------------------------------------------//
+    public void SetNumPositions(int numPositions)
+    {
+        _positions = new Vector3[numPositions];
+    }
+    public void SetPositions(Vector3[] positions)
+    {
+        _positions = positions;
+        _isDirty = true;
+    }
+    public void SetPosition(int index, Vector3 position)
+    {
+        _positions[index] = position;
+        _isDirty = true;
+    }
+
+    // step
+    //--------------------------------------------------------------------------------------------------//
+    public void Step()
+    {
+        vertices.Clear();
+
+        for(int i = 0; i < _positions.Length; i++)
+        {
+            Vector3[] circle = CalculateCircle(i);
+            foreach(Vector3 vertex in circle) vertices.Add(_useWorldSpace ? transform.InverseTransformPoint(vertex) : vertex);
+        }
+
+        _totalLength = 0f;
+        for(int i = 0; i < _positions.Length - 1; i++)
+        {
+            _totalLength += (_positions[i + 1] - _positions[i]).magnitude;
+        }
+
+        int verticesLength = _sides * _positions.Length;
+
+        GenerateUVs();
+        GenerateIndices();
+
+        if(_endCaps) GenerateEndCaps();
+
+        if(verticesLength > _mesh.vertexCount)
+        {
+            _mesh.SetVertices(vertices);
+            _mesh.SetTriangles(_indices, 0);
+            _mesh.uv = _uvs.ToArray();
+        }
+        else
+        {
+            _mesh.SetTriangles(_indices, 0);
+            _mesh.SetVertices(vertices);
+            _mesh.uv = _uvs.ToArray();
+        }
+
+        _mesh.RecalculateNormals();
+        _mesh.RecalculateBounds();
+    }
+
+    // end caps
+    //--------------------------------------------------------------------------------------------------//
+    private void GenerateEndCaps()
+    {
+        // Generate start cap
+        int startCenterIndex = vertices.Count;
+        Vector3 rootVertex = _positions[0];
+        vertices.Add(_useWorldSpace ? transform.InverseTransformPoint(rootVertex) : rootVertex);
+
+        for(int i = 0; i < _sides; i++)
+        {
+            int nextIndex = (i + 1) % _sides;
+
+            _indices.Add(startCenterIndex);
+            _indices.Add(nextIndex);
+            _indices.Add(i);
+        }
+
+        // Generate end cap
+        int endCenterIndex = vertices.Count;
+        Vector3 leafVertex = _positions[_positions.Length - 1];
+        vertices.Add(_useWorldSpace ? transform.InverseTransformPoint(leafVertex) : leafVertex);
+
+        for(int i = 0; i < _sides; i++)
+        {
+            int baseIndex = (_positions.Length - 1) * _sides;
+            int nextIndex = (i + 1) % _sides;
+
+            _indices.Add(endCenterIndex);
+            _indices.Add(baseIndex + i);
+            _indices.Add(baseIndex + nextIndex);
+        }
+    }
+
+    // uvs
+    //----------------------------------------------------------------------------------------------------//
+    private void GenerateUVs()
+    {
+        _uvs.Clear();
+        float radius = 0.25f;
+        float circumference = (2f * Mathf.PI) * radius;
+        float anglePerSide = (2f * Mathf.PI) / _sides;
+
+        float u = 0f;
+
+        float increment = 1f / _sides.ToFloat();
+        float step = 0f;
+        for(int side = 0; side < _sides; side++, step += increment)
+        {
+            _uvs.Add(new Vector2(u, step));
+        }
+
+        for(int segment = 1; segment < _positions.Length; segment++)
+        {
+            float segmentLength = Vector3.Distance(_positions[segment - 1], _positions[segment]);
+            u += segmentLength / circumference;
+
+            step = 0f;
+            for(int side = 0; side < _sides; side++, step += increment)
+            {
+                _uvs.Add(new Vector2(u, step));
+            }
+        }
+
+        if(_endCaps)
+        {
+            _uvs.Add(new Vector2(0.5f, 0.5f));
+            _uvs.Add(new Vector2(u, 0.5f));
+        }
+    }
+
+
+    // indices
+    //--------------------------------------------------------------------------------------------------//
+    private void GenerateIndices()
+    {
+        _indices.Clear();
+        for(int segment = 1; segment < _positions.Length; segment++)
+        for(int side = 0; side < _sides; side++)
+        {
+            int vertIndex = segment * _sides + side;
+            int prevVertIndex = vertIndex - _sides;
+
+            // triangle one
+            _indices.Add(prevVertIndex);
+            _indices.Add((side + 1) % _sides + segment * _sides);
+            _indices.Add(vertIndex);
+
+            // triangle two
+            _indices.Add((prevVertIndex + 1) % _sides + (segment - 1) * _sides);
+            _indices.Add((side + 1) % _sides + segment * _sides);
+            _indices.Add(prevVertIndex);
+        }
+    }
+
+    // tube circle
+    //--------------------------------------------------------------------------------------------------//
+    private Vector3[] CalculateCircle(int index)
+    {
+        int dirCount = 0;
+        Vector3 forward = Vector3.zero;
+
+        // not root
+        if(index > 0)
+        {
+            forward += (_positions[index] - _positions[index - 1]).normalized;
+            dirCount++;
+        }
+
+        // not leaf
+        if(index < _positions.Length - 1)
+        {
+            forward += (_positions[index + 1] - _positions[index]).normalized;
+            dirCount++;
+        }
+
+        forward = (forward / dirCount).normalized;
+        Vector3 side = _keepOrientation ? Vector3.right : Vector3.Cross(forward, forward + new Vector3(.123564f, .34675f, .756892f)).normalized;
+        Vector3 up = Vector3.Cross(forward, side).normalized;
+
+        Vector3[] circle = new Vector3[_sides];
+
+        float angleStep = 2f * Mathf.PI / _sides;
+        float spinInRadians = _spin / 360f * 2f * Mathf.PI;
+
+        float t = index / (_positions.Length - 1f);
+        float radius = _radius.Evaluate(t) * _radiusFactor;
+        float angle = 0f;
+
+        for(int i = 0; i < _sides; i++)
+        {
+            // add the spin in radians to the angle.
+            circle[i] = _positions[index] + Mathf.Cos(angle + spinInRadians) * radius * side
+                                          + Mathf.Sin(angle + spinInRadians) * radius * up;
+
+            angle += angleStep;
+        }
+
+        return circle;
+    }
+}

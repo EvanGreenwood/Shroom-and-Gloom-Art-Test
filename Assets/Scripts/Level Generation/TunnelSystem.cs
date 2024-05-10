@@ -16,15 +16,12 @@ public class TunnelSystem : MonoSingleton<TunnelSystem>
 
     // Find Tunnel
     //----------------------------------------------------------------------------------------------------
-    public TunnelGenerator FindNewTunnel(Vector3 pos)
+    public bool TryGetTunnel(Vector3 pos, out TunnelGenerator tunnel)
     {
-        //Slow and bad
-        TunnelGenerator[] generators = FindObjectsByType<TunnelGenerator>(FindObjectsInactive.Exclude, FindObjectsSortMode.None);
-
         // Find closest tunnel
         float closestDistance = float.MaxValue;
         TunnelGenerator closestGenerator = null;
-        foreach(TunnelGenerator generator in generators)
+        foreach(TunnelGenerator generator in _tunnels)
         {
             float distance = Vector3.Distance(generator.transform.position, pos);
 
@@ -35,12 +32,20 @@ public class TunnelSystem : MonoSingleton<TunnelSystem>
             }
         }
 
-        return closestGenerator;
+        if(closestGenerator != null)
+        {
+            tunnel = closestGenerator;
+            return true;
+        }
+
+        tunnel = null;
+        return false;
     }
 
     public Vector3 GetDirectionAt(Vector3 worldPos, float lookaheadDst)
     {
-        TunnelGenerator tunnel = FindNewTunnel(worldPos);
+        TryGetTunnel(worldPos, out TunnelGenerator tunnel);
+        
         float t = tunnel.GetClosestPositionAndDirection(worldPos, out Vector3 currentPosition, out Vector3 currentDirection, out Vector3 currentUp);
         Vector3 lookaheadPoint = tunnel.GetLookaheadPoint(t, lookaheadDst);
         Vector3 towardsLookahead = (lookaheadPoint - currentPosition).normalized;

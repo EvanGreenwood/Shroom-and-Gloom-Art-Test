@@ -169,6 +169,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cameraFade: 1
+  _vertical: 1
 --- !u!212 &7085079
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -329,6 +330,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cameraFade: 1
+  _vertical: 1
 --- !u!212 &219383181
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6391,6 +6393,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cameraFade: 1
+  _vertical: 1
 --- !u!212 &904407869
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6743,6 +6746,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cameraFade: 1
+  _vertical: 1
 --- !u!212 &1303299626
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6900,7 +6904,7 @@ MonoBehaviour:
     atime6: 0
     atime7: 0
     m_Mode: 0
-    m_ColorSpace: 0
+    m_ColorSpace: -1
     m_NumColorKeys: 8
     m_NumAlphaKeys: 2
   _particles: {fileID: 2402285776899386762, guid: 8e61f67cd760b423db14eb998271668d, type: 3}
@@ -7205,6 +7209,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cameraFade: 1
+  _vertical: 1
 --- !u!212 &1431840635
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21938,6 +21943,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cameraFade: 1
+  _vertical: 1
 --- !u!212 &1720823857
 SpriteRenderer:
   m_ObjectHideFlags: 0
