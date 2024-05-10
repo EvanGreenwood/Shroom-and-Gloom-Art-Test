@@ -25,6 +25,7 @@ public class TubeRenderer : MonoBehaviour
     [Range(0f, 360f)]
     [SerializeField] float _spin = 0f;
     [SerializeField] bool _taper = false;
+    [SerializeField] bool _flipNormals = false;
 
     MeshFilter _meshFilter;
     MeshRenderer _meshRenderer;
@@ -63,10 +64,11 @@ public class TubeRenderer : MonoBehaviour
 
     // Init
     //----------------------------------------------------------------------------------------------------
-    public void Init(float radius, int sides, Vector3[] positions)
+    public void Init(Vector3[] positions, float radius, int sides, bool flipNormals)
     {
         _radius = radius;
         _sides = sides;
+        _flipNormals = flipNormals;
 
         _meshFilter = gameObject.GetComponent<MeshFilter>();
         _meshRenderer = gameObject.GetComponent<MeshRenderer>();
@@ -175,6 +177,7 @@ public class TubeRenderer : MonoBehaviour
            {
                indices = _indices,
                sides = _sides,
+               flipNormals = _flipNormals,
            };
 
     [BurstCompile]
@@ -269,6 +272,7 @@ public class TubeRenderer : MonoBehaviour
         [NativeDisableParallelForRestriction]
         [WriteOnly] public NativeArray<int> indices;
         [ReadOnly] public int sides;
+        [ReadOnly] public bool flipNormals;
 
         public void Execute(int quadIndex)
         {
@@ -278,16 +282,30 @@ public class TubeRenderer : MonoBehaviour
 
             int vertIndex = (segment + 1) * sides + side;
             int prevVertIndex = vertIndex - sides;
+            if(flipNormals)
+            {
+                // Triangle one
+                indices[i] = vertIndex;
+                indices[i + 1] = (side + 1) % sides + (segment + 1) * sides;
+                indices[i + 2] = prevVertIndex;
 
-            // triangle one
-            indices[i] = prevVertIndex;
-            indices[i + 1] = (side + 1) % sides + (segment + 1) * sides;
-            indices[i + 2] = vertIndex;
+                // Triangle two
+                indices[i + 3] = prevVertIndex;
+                indices[i + 4] = (side + 1) % sides + (segment + 1) * sides;
+                indices[i + 5] = prevVertIndex + 1 - (side == sides - 1 ? sides : 0);
+            }
+            else
+            {
+                // triangle one
+                indices[i] = prevVertIndex;
+                indices[i + 1] = (side + 1) % sides + (segment + 1) * sides;
+                indices[i + 2] = vertIndex;
 
-            // triangle two
-            indices[i + 3] = prevVertIndex + 1 - (side == sides - 1 ? sides : 0);
-            indices[i + 4] = (side + 1) % sides + (segment + 1) * sides;
-            indices[i + 5] = prevVertIndex;
+                // triangle two
+                indices[i + 3] = prevVertIndex + 1 - (side == sides - 1 ? sides : 0);
+                indices[i + 4] = (side + 1) % sides + (segment + 1) * sides;
+                indices[i + 5] = prevVertIndex;
+            }
         }
     }
 }
