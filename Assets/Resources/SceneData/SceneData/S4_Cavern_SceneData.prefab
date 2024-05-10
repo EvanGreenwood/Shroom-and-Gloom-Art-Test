@@ -46,6 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Cavern
   description: Don't look down...
+  titleColor: {r: 0.5754717, g: 0.19670124, b: 0.05157528, a: 1}
   sceneIntro: {fileID: 11400000, guid: df0c429427445c6409f88af14a31d75e, type: 2}
   sceneMusic: {fileID: 8300000, guid: 2d9a175e22843574e9bb72fcf98c64c3, type: 3}
   postProcessProfile: {fileID: 11400000, guid: 6ef2e333e113ea94c919d36e0940d486, type: 2}

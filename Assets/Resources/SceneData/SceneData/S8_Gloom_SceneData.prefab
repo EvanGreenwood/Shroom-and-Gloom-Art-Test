@@ -46,6 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Gloom
   description: Nobody has ever liked it here...
+  titleColor: {r: 0.24705882, g: 0.24705882, b: 0.24705882, a: 1}
   sceneIntro: {fileID: 11400000, guid: df0c429427445c6409f88af14a31d75e, type: 2}
   sceneMusic: {fileID: 8300000, guid: 2d9a175e22843574e9bb72fcf98c64c3, type: 3}
   postProcessProfile: {fileID: 11400000, guid: 6c3e8eca950a5e6458762273b6365ba9, type: 2}

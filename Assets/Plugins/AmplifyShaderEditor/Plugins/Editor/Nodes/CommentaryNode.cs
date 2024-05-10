@@ -30,7 +30,7 @@ namespace AmplifyShaderEditor
 		private readonly Vector2 ResizeButtonPos = new Vector2( 1, 1 );
 
 		[SerializeField]
-		private string m_commentText = "Comment";
+		private string m_commentText = string.Empty;
 
 		[SerializeField]
 		private string m_titleText = string.Empty;
@@ -69,7 +69,7 @@ namespace AmplifyShaderEditor
 		private bool m_checkCommentText = true;
 		private bool m_checkTitleText = true;
 
-		public Color m_frameColor = Color.white;
+		public Color m_frameColor = Color.black;
 
 		private List<int> m_nodesIds = new List<int>();
 		private bool m_checkContents = false;

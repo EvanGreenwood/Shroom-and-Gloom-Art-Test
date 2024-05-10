@@ -19,7 +19,8 @@ public class SceneController : MonoSingleton<SceneController>
         _activeSceneName = SceneManager.GetActiveScene().name;
         SceneTransition.inst.Transition(OnTransitionComplete,
                                         1.5f, false, false, 1f,
-                                        _sceneData.title, _sceneData.description);
+                                        _sceneData.title, _sceneData.description,
+                                        _sceneData.titleColor);
     }
 
     void Start()
