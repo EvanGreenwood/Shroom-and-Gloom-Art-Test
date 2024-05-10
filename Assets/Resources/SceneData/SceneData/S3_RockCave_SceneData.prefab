@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Rock Cave
   description: They seem, uneasy.
-  titleColor: {r: 0.24705882, g: 0.24705882, b: 0.24705882, a: 1}
+  titleColor: {r: 0.54901963, g: 0.54901963, b: 0.54901963, a: 1}
   sceneIntro: {fileID: 11400000, guid: df0c429427445c6409f88af14a31d75e, type: 2}
   sceneMusic: {fileID: 8300000, guid: 2d9a175e22843574e9bb72fcf98c64c3, type: 3}
   postProcessProfile: {fileID: 11400000, guid: e773dede00d4e6f498446f2e8e8374bb, type: 2}

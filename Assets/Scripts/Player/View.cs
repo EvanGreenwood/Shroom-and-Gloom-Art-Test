@@ -20,17 +20,11 @@ public class View : MonoSingleton<View>
     [SerializeField] float _maxXAngle = 35;
     [SerializeField] float _maxYAngle = 35;
 
-    [Header("DepthOfField")]
-    [SerializeField] float _autoFocusSmoothTime = 0.075f;
-
     TunnelGenerator _curTunnel;
 
     DepthOfField _dof;
 
     Transform _viewTarget;
-    Timer2 _autoFocusTimer = new Timer2(0.05f);
-    float _curFocalDst, _lastFocusDepthSuccess;
-    float _autoFocusVelocity;
 
     bool _hasInit, _isActivated;
     bool _isAwake;
@@ -48,8 +42,7 @@ public class View : MonoSingleton<View>
         _sceneVolume.profile = uiProfile;
 
         _dof = _depthVolume.profile.GetSetting<DepthOfField>();
-        _lastFocusDepthSuccess = 10f;
-        _dof.focusDistance.Override(_lastFocusDepthSuccess);
+        _dof.focusDistance.Override(10f);
 
         _hasInit = true;
     }
@@ -58,7 +51,6 @@ public class View : MonoSingleton<View>
 
     void Awake()
     {
-        _lastFocusDepthSuccess = 10f;
         _viewTarget = transform.CreateChild("ViewTarget");
         _isAwake = true;
     }
@@ -78,11 +70,16 @@ public class View : MonoSingleton<View>
         GIZMOS.Sphere(_viewTarget.position, 0.25f, RGB.yellow);
         GIZMOS.Line(transform.position, _viewTarget.position, RGB.cyan);
     }
+
     void Look()
     {
+        Vector2 mousePos = INPUT.mousePos;
+        if(!SCREEN.rect.Contains(mousePos))
+            return;
+        
         float halfWidth = SCREEN.size.x * 0.5f, halfHeight = SCREEN.size.y * 0.5f;
-        float pitch = (INPUT.mousePos.y - halfHeight) / -halfHeight * _maxXAngle;
-        float yaw = (INPUT.mousePos.x - halfWidth) / halfWidth * _maxYAngle;
+        float pitch = (mousePos.y - halfHeight) / -halfHeight * _maxXAngle;
+        float yaw = (mousePos.x - halfWidth) / halfWidth * _maxYAngle;
 
         transform.localEulerAngles = new Vector3(pitch, yaw, 0);
     }
@@ -94,15 +91,8 @@ public class View : MonoSingleton<View>
         if(!_dof.enabled)
             return;
 
-        _curFocalDst = Mathf.SmoothDamp(_curFocalDst, _lastFocusDepthSuccess, ref _autoFocusVelocity, _autoFocusSmoothTime, 25f, dt);
-        _dof.focusDistance.Override(_curFocalDst);
-
-        _autoFocusTimer.Step(dt);
-        if(_autoFocusTimer.wasFinishedThisFrame)
-        {
-            _autoFocusTimer.Reset();
-            StepFocusPos(Player.inst.tunnel.tunnelMesh);
-        }
+        _dof.focusDistance.value = (_viewTarget.position - transform.position).magnitude;
+        StepFocusPos(Player.inst.tunnel.tunnelMesh);
 
         return;
         //--------------------------------------------------
@@ -114,7 +104,6 @@ public class View : MonoSingleton<View>
             {
                 _viewTarget.position = hitPos;
                 _viewTarget.rotation = Quaternion.LookRotation(hitNormal, Vector3.up);
-                _lastFocusDepthSuccess = (hitPos - transform.position).magnitude;
             }
         }
     }

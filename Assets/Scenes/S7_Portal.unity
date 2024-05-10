@@ -437,6 +437,7 @@ MonoBehaviour:
   surroundElements: []
   floorElements:
   - name: Floor
+    disabled: 0
     floorPrefabs:
     - {fileID: 717079983591251126, guid: d30a5199178c74edea9e16ed711674da, type: 3}
     zOffset: 0.08
@@ -465,6 +466,8 @@ MonoBehaviour:
   - {fileID: 0}
   _drawGizmos: 0
   _generatedIsSelectable: 0
+  _internalTunnelSpline: {fileID: 1392419567}
+  _internalTunnelMesh: {fileID: 0}
 --- !u!4 &1392419566
 Transform:
   m_ObjectHideFlags: 0
@@ -725,6 +728,6 @@ SceneRoots:
   - {fileID: 1686028834}
   - {fileID: 434009612}
   - {fileID: 628942183}
-  - {fileID: 74350560}
   - {fileID: 1978147710}
+  - {fileID: 74350560}
   - {fileID: 828164201}

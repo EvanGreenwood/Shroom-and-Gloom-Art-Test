@@ -281,7 +281,6 @@ GameObject:
   - component: {fileID: 4654575696843197936}
   - component: {fileID: 7943480954501777965}
   - component: {fileID: 1334371573513572669}
-  - component: {fileID: 3085254339977396997}
   - component: {fileID: 6648676398689704295}
   m_Layer: 0
   m_Name: MainCamera
@@ -472,18 +471,6 @@ MonoBehaviour:
   m_AfterStackBundles:
   - assemblyQualifiedName: VladStorm.VHSPro, Assembly-CSharp-firstpass, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!114 &3085254339977396997
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4406298769184563709}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a83cb751f854594a8824eccf58b5c8f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &6648676398689704295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -800,7 +787,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7613433579686252243}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -828,6 +815,5 @@ MonoBehaviour:
   _depthVolume: {fileID: 1833403613556771955}
   _sceneVolume: {fileID: 2550306420702432672}
   _angleOffset: {x: 0, y: 0}
-  _maxXAngle: 15
+  _maxXAngle: 10
   _maxYAngle: 25
-  _autoFocusSmoothTime: 0.05

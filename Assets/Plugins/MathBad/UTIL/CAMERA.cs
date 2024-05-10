@@ -31,6 +31,7 @@ public static class CAMERA
       return _mainCameraInternal;
     }
   }
+  
   public static Camera ui
   {
     get
@@ -46,6 +47,7 @@ public static class CAMERA
       return _uiCameraInternal;
     }
   }
+  
   public static Camera ByID(CameraID id)
   {
     return id switch
@@ -55,6 +57,7 @@ public static class CAMERA
              _                   => null
            };
   }
+  
   public static Vector2 mouseWorld => main.ScreenToWorldPoint(INPUT.mousePos);
   public static Vector2 mouseWorldUI => ui.ScreenToWorldPoint(INPUT.mousePos);
 }
