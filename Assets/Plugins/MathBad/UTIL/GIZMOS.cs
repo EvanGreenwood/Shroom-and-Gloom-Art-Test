@@ -29,6 +29,7 @@ public static class GIZMOS
     }
 
     public static void Line(Vector2 p0, Vector2 p1, Color color) {GizmoColor(color, () => Gizmos.DrawLine(p0, p1));}
+    public static void Line(Vector3 p0, Vector3 p1, Color color) {GizmoColor(color, () => Gizmos.DrawLine(p0, p1));}
     public static void LineThick(Vector3 p0, Vector3 p1, float thickness, Color color)
     {
         Vector3 disp = p1 - p0;

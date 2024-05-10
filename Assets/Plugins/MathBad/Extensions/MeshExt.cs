@@ -3,12 +3,12 @@ namespace MathBad
 {
 public static class MeshExt
 {
-    public static bool Raycast(this Mesh mesh, Ray ray, out Vector3 hitPos, out Vector3 hitNormal)
+    public static bool Raycast(this Mesh mesh, Ray ray, float minDst, out Vector3 hitPos, out Vector3 hitNormal)
     {
         hitPos = Vector3.zero;
         hitNormal = Vector3.zero;
 
-        float minDst = Mathf.Infinity;
+        float closestDst = Mathf.Infinity;
 
         for(int i = 0; i < mesh.triangles.Length; i += 3)
         {
@@ -18,18 +18,21 @@ public static class MeshExt
 
             if(RayIntersectsTriangle(ray, v0, v1, v2, out Vector3 hit, out float dst))
             {
-                if(dst < minDst)
+                if(dst < closestDst)
                 {
-                    minDst = dst;
+                    closestDst = dst;
                     hitPos = hit;
                     hitNormal = Vector3.Cross(v1 - v0, v2 - v0).normalized;
                     if(Vector3.Dot(ray.direction, hitNormal) > 0)
                         hitNormal = -hitNormal; // Ensure the normal is facing against the ray
+
+                    if(closestDst <= minDst)
+                        return true;
                 }
             }
         }
 
-        return minDst != Mathf.Infinity;
+        return closestDst != Mathf.Infinity;
         //--------------------------------------------------
         bool RayIntersectsTriangle(Ray r, Vector3 p0, Vector3 p1, Vector3 p2, out Vector3 hitPos, out float dst)
         {

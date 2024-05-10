@@ -27,11 +27,13 @@ public class View : MonoSingleton<View>
 
     DepthOfField _dof;
 
-    Timer2 _autoFocusTimer = new Timer2(0.15f, 0.025f);
+    Transform _viewTarget;
+    Timer2 _autoFocusTimer = new Timer2(0.05f);
     float _curFocalDst, _lastFocusDepthSuccess;
     float _autoFocusVelocity;
 
     bool _hasInit, _isActivated;
+    bool _isAwake;
 
     public Camera mainCamera => _mainCamera;
     public Camera uiCamera => _uiCamera;
@@ -54,7 +56,12 @@ public class View : MonoSingleton<View>
 
     public void Activate() {_isActivated = true;}
 
-    void Awake() {_lastFocusDepthSuccess = 10f;}
+    void Awake()
+    {
+        _lastFocusDepthSuccess = 10f;
+        _viewTarget = transform.CreateChild("ViewTarget");
+        _isAwake = true;
+    }
     void Update()
     {
         if(!_hasInit || !_isActivated)
@@ -64,6 +71,13 @@ public class View : MonoSingleton<View>
         AutoFocus(Time.deltaTime);
     }
 
+    void OnDrawGizmos()
+    {
+        if(!_isAwake)
+            return;
+        GIZMOS.Sphere(_viewTarget.position, 0.25f, RGB.yellow);
+        GIZMOS.Line(transform.position, _viewTarget.position, RGB.cyan);
+    }
     void Look()
     {
         float halfWidth = SCREEN.size.x * 0.5f, halfHeight = SCREEN.size.y * 0.5f;
@@ -87,19 +101,21 @@ public class View : MonoSingleton<View>
         if(_autoFocusTimer.wasFinishedThisFrame)
         {
             _autoFocusTimer.Reset();
-            StepFocusPos();
+            StepFocusPos(Player.inst.tunnel.tunnelMesh);
         }
 
         return;
         //--------------------------------------------------
-        void StepFocusPos()
+        void StepFocusPos(TunnelMesh mesh)
         {
-            Vector3 mousePos = INPUT.mousePos;
-            Ray ray = _mainCamera.GetMouseRay();
+            Ray ray = _mainCamera.ScreenPointToRay(INPUT.mousePos);
 
-            TunnelMesh mesh = Player.inst.tunnel.tunnelMesh;
-            if(mesh != null && mesh.Raycast(ray, out Vector3 hitPos, out Vector3 hitNormal))
+            if(mesh != null && mesh.Raycast(new Ray(transform.position, ray.direction), out Vector3 hitPos, out Vector3 hitNormal))
+            {
+                _viewTarget.position = hitPos;
+                _viewTarget.rotation = Quaternion.LookRotation(hitNormal, Vector3.up);
                 _lastFocusDepthSuccess = (hitPos - transform.position).magnitude;
+            }
         }
     }
 }

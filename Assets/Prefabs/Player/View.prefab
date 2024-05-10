@@ -830,4 +830,4 @@ MonoBehaviour:
   _angleOffset: {x: 0, y: 0}
   _maxXAngle: 15
   _maxYAngle: 25
-  _autoFocusSmoothTime: 0.15
+  _autoFocusSmoothTime: 0.05

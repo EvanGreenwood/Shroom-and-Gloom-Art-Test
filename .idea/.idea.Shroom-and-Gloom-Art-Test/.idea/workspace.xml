@@ -5,62 +5,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="825655da-4771-4664-b01a-9bffcaa881d5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/MathBad/Extensions/MeshExt.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/MathBad/Extensions/MeshExt.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Shroom-and-Gloom-Art-Test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Shroom-and-Gloom-Art-Test/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/MathBad/DataStructures/Bit/Editor/BitDrawers.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/MathBad/DataStructures/Bit/Editor/BitDrawers.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/MathBad/Extensions/RectExt.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/MathBad/Extensions/RectExt.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/VHSPro/Resources/Materials/VHSPro_pass1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/VHSPro/Resources/Materials/VHSPro_pass1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/particles/Dust/DustParticles.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/particles/Dust/DustParticles.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/MathBad/Extensions/MeshExt.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/MathBad/Extensions/MeshExt.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/MathBad/UTIL/GIZMOS.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/MathBad/UTIL/GIZMOS.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/TextMeshPro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/TextMeshPro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/SceneTransition.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/SceneTransition.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/Depth_PPV.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/Depth_PPV.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/S0A_Prelude_PPV.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/S0A_Prelude_PPV.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/S0B_MainMenu_PPV.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/S0B_MainMenu_PPV.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPV/S1_Mines_PPV.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPV/S1_Mines_PPV.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPV/S2_RockTunnel_PPV.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPV/S2_RockTunnel_PPV.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPV/S3_RockCave_PPV.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPV/S3_RockCave_PPV.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPV/S4_Cavern_PPV.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPV/S4_Cavern_PPV.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPV/S5_Shroomy_PPV.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPV/S5_Shroomy_PPV.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPV/S6_Trippy_PPV.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPV/S6_Trippy_PPV.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPV/S7_Portal_PPV.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPV/S7_Portal_PPV.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPV/S8_Gloom_PPV.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPV/S8_Gloom_PPV.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/View.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player/View.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/SceneData/S1_Mines_SceneData.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/SceneData/SceneData/S1_Mines_SceneData.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPV.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPV/S1_Mines_PPP.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPV/S1_Mines_PPP.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPV/S2_RockTunnel_PPP.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPV/S2_RockTunnel_PPP.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPV/S3_RockCave_PPP.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPV/S3_RockCave_PPP.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPV/S4_Cavern_PPP.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPV/S4_Cavern_PPP.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPV/S5_Shroomy_PPP.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPV/S5_Shroomy_PPP.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPV/S6_Trippy_PPP.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPV/S6_Trippy_PPP.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPV/S7_Portal_PPP.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPV/S7_Portal_PPP.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPV/S8_Gloom_PPP.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPV/S8_Gloom_PPP.asset.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/S1_TheMines.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/S1_TheMines.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/S5_Shroomy.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/S5_Shroomy.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Camera/CameraAutoFocus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Camera/CameraAutoFocus.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraValidator.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraValidator.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level Generation/TunnelGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Level Generation/TunnelGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level Generation/TunnelSwich.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Level Generation/TunnelSwich.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level Generation/TunnelSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Level Generation/TunnelSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/FPSMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/FPSMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level Generation/TunnelMesh.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Level Generation/TunnelMesh.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/View.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/View.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/SceneTransition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/SceneTransition.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Test.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/TestComponent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Test.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/TestComponent.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/Editor/SceneViewDebug.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/Editor/SceneViewDebug.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WorldColors.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WorldColors.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Settings/Post Processing/Transition_PPV.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/Post Processing/Transition_PPV.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Flare.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Flare.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Flare.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Flare.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Portal.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Portal.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Shaders/SpriteToMesh.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Shaders/SpriteToMesh.shader.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +46,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/32ee6a9f8f3649e6a7a7646d2fd0953c7c00/ac/15ec8e46/Input.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c5ed782439084ef1bc2ad85eec89e9fe175a00/92/657d0cbe/Gizmos.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../Steamboat-Winky/SteamboatWinky/SteamboatWinky/Assets/Plugins/MathBad/Extensions/TransformExt.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../Steamboat-Winky/SteamboatWinky/SteamboatWinky/Assets/Scripts/Camera/CameraRig.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../_backup/backup/.bu/.backup2/.backup/.arpg/arpg/Assets/Plugins/Framework/Editor/SceneHelper.cs" root0="SKIP_HIGHLIGHTING" />
@@ -145,7 +120,7 @@
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="$PROJECT_DIR$/../_builds/00/Shroom And Gloom New Art Test.exe" />
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../_builds/00/SnG-ArtTest.exe" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="D:\.work\.unity\shroom-and-gloom\_builds\00" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -211,7 +186,7 @@
       <workItem from="1715289477964" duration="1139000" />
       <workItem from="1715311378778" duration="9528000" />
       <workItem from="1715327637587" duration="63000" />
-      <workItem from="1715349915458" duration="14969000" />
+      <workItem from="1715349915458" duration="16855000" />
     </task>
     <servers />
   </component>

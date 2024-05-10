@@ -38,14 +38,15 @@ public class TunnelMesh : MonoBehaviour
         if(_tunnelMesh != null) DestroyImmediate(_tunnelMesh);
         _tunnelMesh = tr.Step();
         tr.Dispose();
-        Destroy(tr);
 
-        Material mat = new Material(Shader.Find("MathBad/Wireframe"));
-        MeshRenderer mr = tube.GetComponent<MeshRenderer>();
-        mr.material = mat;
-        mr.material.SetColor("_WireColor", RGB.yellow);
+        Destroy(tube.gameObject);
+
+        // Material mat = new Material(Shader.Find("MathBad/Wireframe"));
+        // MeshRenderer mr = tube.GetComponent<MeshRenderer>();
+        // mr.material = mat;
+        // mr.material.SetColor("_WireColor", RGB.yellow);
     }
 
     public bool Raycast(Ray ray, out Vector3 hitPos, out Vector3 hitNormal)
-        => _tunnelMesh.Raycast(ray, out hitPos, out hitNormal);
+        => _tunnelMesh.Raycast(ray, 2f, out hitPos, out hitNormal);
 }

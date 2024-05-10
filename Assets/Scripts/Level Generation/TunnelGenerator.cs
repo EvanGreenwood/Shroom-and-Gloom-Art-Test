@@ -141,9 +141,6 @@ public class TunnelGenerator : MonoBehaviour
     public float flatCeilingSpacing = 1;
     public float flatCeilingOffset = 1;
 
-    SplineContainer _tunnelSpline;
-    TunnelMesh _internalTunnelMesh;
-
     [SerializeField, HideInInspector]
     List<Transform> _elementParents;
     List<Transform> _generatedElements;
@@ -156,7 +153,21 @@ public class TunnelGenerator : MonoBehaviour
     bool _generatedIsSelectable = false;
     public float baseTunnelWidth => _baseTunnelWidth;
 
-    public SplineContainer tunnelSpline => _tunnelSpline;
+    
+    [SerializeField, HideInInspector]
+    SplineContainer _internalTunnelSpline;
+    [SerializeField, HideInInspector]
+    TunnelMesh _internalTunnelMesh;
+
+    public SplineContainer tunnelSpline
+    {
+        get
+        {
+            if(_internalTunnelSpline == null)
+                _internalTunnelSpline = GetComponent<SplineContainer>();
+            return _internalTunnelSpline;
+        }
+    }
     public TunnelMesh tunnelMesh
     {
         get
@@ -176,21 +187,21 @@ public class TunnelGenerator : MonoBehaviour
     //----------------------------------------------------------------------------------------------------
     public Vector3 GetClosestPoint(Vector3 point)
     {
-        SplineUtility.GetNearestPoint(_tunnelSpline.Spline, point, out float3 nearest, out float t);
+        SplineUtility.GetNearestPoint(tunnelSpline.Spline, point, out float3 nearest, out float t);
         return nearest;
     }
 
     public float GetNormDistanceFromPoint(Vector3 worldPoint)
     {
         Vector3 localPoint = transform.InverseTransformPoint(worldPoint);
-        SplineUtility.GetNearestPoint(_tunnelSpline.Spline, localPoint, out float3 nearest, out float t, 6, 6);
+        SplineUtility.GetNearestPoint(tunnelSpline.Spline, localPoint, out float3 nearest, out float t, 6, 6);
         return t;
     }
 
     public Vector3 GetLookaheadPoint(float normalizedPosition, float distanceAhead)
     {
-        _tunnelSpline.Spline.GetPointAtLinearDistance(normalizedPosition, distanceAhead, out float newT);
-        return _tunnelSpline.EvaluatePosition(newT);
+        tunnelSpline.Spline.GetPointAtLinearDistance(normalizedPosition, distanceAhead, out float newT);
+        return tunnelSpline.EvaluatePosition(newT);
     }
     public float GetClosestPositionAndDirection(Vector3 closestPoint, out Vector3 position, out Vector3 direction, out Vector3 up)
     {
@@ -201,7 +212,7 @@ public class TunnelGenerator : MonoBehaviour
 
     public void GetTunnelPositionAndDirection(float t, out Vector3 position, out Vector3 direction, out Vector3 up)
     {
-        _tunnelSpline.Spline.Evaluate(t, out float3 vPosition, out float3 vTangent, out float3 vUp);
+        tunnelSpline.Spline.Evaluate(t, out float3 vPosition, out float3 vTangent, out float3 vUp);
         position = transform.TransformPoint(vPosition);
         direction = transform.TransformDirection(vTangent.normalize());
         up = transform.TransformDirection(vUp.normalize());
@@ -439,7 +450,7 @@ public class TunnelGenerator : MonoBehaviour
             _elementParents.Clear();
         }
 
-        _tunnelLength = _tunnelSpline.CalculateLength();
+        _tunnelLength = tunnelSpline.CalculateLength();
 
         // Vector3 perpendicular = new Vector3(-direction.z, 0, direction.x);
         // Quaternion rotation = Quaternion.LookRotation(direction, Vector3.up);
@@ -488,7 +499,7 @@ public class TunnelGenerator : MonoBehaviour
                 float distanceM = wallData.zOffset / _tunnelLength;
                 while(distanceM < 1)
                 {
-                    _tunnelSpline.Spline.GetPointAtLinearDistance(distanceM, wallData.spacing, out distanceM);
+                    tunnelSpline.Spline.GetPointAtLinearDistance(distanceM, wallData.spacing, out distanceM);
 
                     //
                     GetTunnelPositionAndDirection(distanceM, out Vector3 currentPosition, out Vector3 currentDirection,
@@ -551,7 +562,7 @@ public class TunnelGenerator : MonoBehaviour
             Transform flatsParent = SpawnContainer("Flats", wallParent);
             while(dist < 1)
             {
-                _tunnelSpline.Spline.GetPointAtLinearDistance(dist, flatWallSpacing, out dist);
+                tunnelSpline.Spline.GetPointAtLinearDistance(dist, flatWallSpacing, out dist);
 
                 //
                 GetTunnelPositionAndDirection(dist, out Vector3 currentPosition, out Vector3 currentDirection, out Quaternion currentRotation, out Vector3 up, out perpendicular);
@@ -589,7 +600,7 @@ public class TunnelGenerator : MonoBehaviour
             float distanceM = surroundData.zOffset / _tunnelLength;
             while(distanceM < 1)
             {
-                _tunnelSpline.Spline.GetPointAtLinearDistance(distanceM, surroundData.spacing, out distanceM);
+                tunnelSpline.Spline.GetPointAtLinearDistance(distanceM, surroundData.spacing, out distanceM);
 
                 //
                 GetTunnelPositionAndDirection(distanceM, out Vector3 currentPosition, out Vector3 currentDirection, out Quaternion currentRotation, out Vector3 up, out perpendicular);
@@ -707,7 +718,7 @@ public class TunnelGenerator : MonoBehaviour
                 bool flip = true;
                 if(floorData.randomFlipX) flip = Random.value > 0.5f;
 
-                _tunnelSpline.Spline.GetPointAtLinearDistance(distanceM, floorData.spacing, out distanceM);
+                tunnelSpline.Spline.GetPointAtLinearDistance(distanceM, floorData.spacing, out distanceM);
 
                 //
                 GetTunnelPositionAndDirection(distanceM, out Vector3 currentPosition, out Vector3 currentDirection, out Quaternion currentRotation, out Vector3 up, out perpendicular);
@@ -739,7 +750,7 @@ public class TunnelGenerator : MonoBehaviour
         Transform flatsParent = SpawnContainer("Flats", floorParent);
         while(dist < 1)
         {
-            _tunnelSpline.Spline.GetPointAtLinearDistance(dist, flatFloorSpacing, out dist);
+            tunnelSpline.Spline.GetPointAtLinearDistance(dist, flatFloorSpacing, out dist);
 
             //
             GetTunnelPositionAndDirection(dist, out Vector3 currentPosition, out Vector3 currentDirection, out Quaternion currentRotation, out Vector3 up, out perpendicular);
@@ -777,7 +788,7 @@ public class TunnelGenerator : MonoBehaviour
             {
                 bool flip = true;
                 if(ceilingData.randomFlipX) flip = Random.value > 0.5f;
-                _tunnelSpline.Spline.GetPointAtLinearDistance(distanceM, ceilingData.spacing, out distanceM);
+                tunnelSpline.Spline.GetPointAtLinearDistance(distanceM, ceilingData.spacing, out distanceM);
 
                 //
                 GetTunnelPositionAndDirection(distanceM, out Vector3 currentPosition, out Vector3 currentDirection, out Quaternion currentRotation, out Vector3 up, out perpendicular);
@@ -807,7 +818,7 @@ public class TunnelGenerator : MonoBehaviour
         Transform flatsParent = SpawnContainer("Flats", ceilingsParent);
         while(dist < 1)
         {
-            _tunnelSpline.Spline.GetPointAtLinearDistance(dist, flatCeilingSpacing, out dist);
+            tunnelSpline.Spline.GetPointAtLinearDistance(dist, flatCeilingSpacing, out dist);
 
             //
             GetTunnelPositionAndDirection(dist, out Vector3 currentPosition, out Vector3 currentDirection, out Quaternion currentRotation, out Vector3 up, out perpendicular);
@@ -846,7 +857,7 @@ public class TunnelGenerator : MonoBehaviour
             float distanceM = floorData.zOffset / _tunnelLength;
             while(distanceM < 1)
             {
-                _tunnelSpline.Spline.GetPointAtLinearDistance(distanceM, _particleSpawnDistance, out distanceM);
+                tunnelSpline.Spline.GetPointAtLinearDistance(distanceM, _particleSpawnDistance, out distanceM);
                 //
                 GetTunnelPositionAndDirection(distanceM, out Vector3 currentPosition, out Vector3 currentDirection, out Quaternion currentRotation, out Vector3 up, out perpendicular);
 
@@ -879,7 +890,6 @@ public class TunnelGenerator : MonoBehaviour
     // MonoBehaviour
     //----------------------------------------------------------------------------------------------------
     void Awake() {Generate();}
-    void OnEnable() {_tunnelSpline = GetComponent<SplineContainer>();}
 
 #if UNITY_EDITOR
     EditorCoroutine _onValidateRoutine;
@@ -903,7 +913,6 @@ public class TunnelGenerator : MonoBehaviour
             yield break;
         }
         yield return null;
-        _tunnelSpline = GetComponent<SplineContainer>();
         Generate();
         _onValidateRoutine = null;
     }
