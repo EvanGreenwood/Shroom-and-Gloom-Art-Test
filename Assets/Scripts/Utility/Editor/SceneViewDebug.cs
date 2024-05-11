@@ -30,14 +30,14 @@ public class SceneViewDebug
         Rect rect = new Rect(windowRect.max - buttonSize - padding, buttonSize);
         rect.Draw(RGB.black);
 
-        if(GUI.Button(rect, "RefreshAll"))
+        if(GUI.Button(rect, "Regenerate"))
         {
             TunnelGenerator[] generators = Object.FindObjectsOfType<TunnelGenerator>();
             generators.Foreach(generator => generator.Generate());
         }
 
         rect = rect.WithWidth(rect.width + 15f);
-        if(GUI.Button(rect.MoveLeft(rect.width + padding.x), "ValidatePPV"))
+        if(GUI.Button(rect.MoveLeft(rect.width + padding.x), "Update PPV"))
         {
             SceneData sceneData = Object.FindObjectOfType<SceneData>();
             Player.inst.SetScenePostProcessProfile(sceneData.postProcessProfile);

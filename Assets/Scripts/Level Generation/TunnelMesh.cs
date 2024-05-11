@@ -63,6 +63,6 @@ public class TunnelMesh : MonoBehaviour
         if(!_drawMesh || !_hasGenerated)
             return;
 
-        Graphics.DrawMesh(_tunnelMesh, Matrix4x4.identity, _mat, 0, View.inst.mainCamera);
+        Graphics.DrawMesh(_tunnelMesh, Matrix4x4.identity, _mat, 0, PlayerView.inst.mainCamera);
     }
 }

@@ -6,10 +6,51 @@
   <component name="ChangeListManager">
     <list default="true" id="825655da-4771-4664-b01a-9bffcaa881d5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Shroom-and-Gloom-Art-Test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Shroom-and-Gloom-Art-Test/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/MathBad/UTIL/CAMERA.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/MathBad/UTIL/CAMERA.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/MathBad/UTIL/SCREEN.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/MathBad/UTIL/SCREEN.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/View.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/View.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Player/Player.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Player/Player.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/UI/Emotes/Emote_Disturbed.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/UI/Emotes/Emote_Disturbed.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/_Debug/Player_Wireframe.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/_Debug/Player_Wireframe.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/_Debug/Test_Wireframe.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/_Debug/Test_Wireframe.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/particles/Dust/DustParticles.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/particles/Dust/DustParticles.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/player/Hand With Map Fungus Level 1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/player/Hand With Map Fungus Level 1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/player/Hand With Map Fungus Level 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/player/Hand With Map Fungus Level 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/player/Hand With Map Fungus Level 3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/player/Hand With Map Fungus Level 3.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/player/Hand With Map Fungus Level 4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/player/Hand With Map Fungus Level 4.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/player/Hand With Map Fungus Level 5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/player/Hand With Map Fungus Level 5.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/player/Hand With Map Fungus Level 6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/player/Hand With Map Fungus Level 6.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/player/Hand With Map Fungus Level 7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/player/Hand With Map Fungus Level 7.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/player/Hand With Map Fungus Level 8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/player/Hand With Map Fungus Level 8.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/player/player-hand-bottom.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/player/player-hand-bottom.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/player/player-hand-top.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/player/player-hand-top.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/TestFonts/BloodSlimeRegular SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/TestFonts/BloodSlimeRegular SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/VHSPro/Resources/Materials/VHSPro_pass1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/VHSPro/Resources/Materials/VHSPro_pass1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Effects/Lights/MineLight_Dim.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Effects/Lights/MineLight_Dim.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/Player.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/Player.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/View.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player/View.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/HUD.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/HUD.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/SceneInfo.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/SceneInfo.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/S1_TheMines.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/S1_TheMines.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level Generation/TunnelMesh.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Level Generation/TunnelMesh.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/FPSMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMover.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/FPSMovement.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMover.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/View.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/View.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/Editor/SceneViewDebug.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/Editor/SceneViewDebug.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,8 +84,8 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Lighting/ShroomLightingService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/ServiceLocator/MonoService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/ServiceLocator/Service.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Body/Head.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/View.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Prop/Emote.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Prop/PropActor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Prop/SpriteBody.cs" root0="FORCE_HIGHLIGHTING" />
@@ -163,7 +204,7 @@
       <workItem from="1715311378778" duration="9528000" />
       <workItem from="1715327637587" duration="63000" />
       <workItem from="1715349915458" duration="17461000" />
-      <workItem from="1715373759598" duration="6142000" />
+      <workItem from="1715373759598" duration="11327000" />
     </task>
     <servers />
   </component>
