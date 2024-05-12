@@ -6,8 +6,8 @@ using UnityEngine.Rendering.PostProcessing;
 
 public class Player : MonoSingleton<Player>
 {
-    [SerializeField] FPSMovement _movement;
-
+    [SerializeField] PlayerMover _movement;
+    
     TunnelGenerator _tunnel;
 
     bool _hasInit, _isActivated;
@@ -19,13 +19,13 @@ public class Player : MonoSingleton<Player>
 
     public void Init(SceneData sceneData)
     {
-        View.inst.Init(sceneData.postProcessProfile);
+        PlayerView.inst.Init(sceneData.postProcessProfile);
         _hasInit = true;
     }
 
     public void Activate()
     {
-        View.inst.Activate();
+        PlayerView.inst.Activate();
         _movement.Activate();
         _isActivated = true;
     }
@@ -88,6 +88,6 @@ public class Player : MonoSingleton<Player>
 
     public void SetScenePostProcessProfile(PostProcessProfile ppv)
     {
-        View.inst.depthVolume.profile = ppv;
+        PlayerView.inst.depthVolume.profile = ppv;
     }
 }
