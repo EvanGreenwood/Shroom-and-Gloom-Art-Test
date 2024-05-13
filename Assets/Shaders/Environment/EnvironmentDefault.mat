@@ -67,6 +67,14 @@ Material:
     - _EmissionWaveBasedOnTunnel: 1
     - _FogIntensityCoefficient: 0.227
     - _IsSceneView: 1
+    - _LineColorBlend: 1
+    - _LineColorHueBlend: 1
+    - _LineColorVsHSVBlend: 1
+    - _LineHueOffset: -0.32
+    - _LineReplaceFuzziness: 0.2
+    - _LineReplaceRange: 0.1
+    - _LineSaturationOffset: 0
+    - _LineValueOffset: 0
     - _Lit: 1
     - _NoiseDist: 0.4
     - _NoiseFrequency: 0.5
@@ -74,6 +82,7 @@ Material:
     - _NoisyFog: 0
     - _NormalMip: 2
     - _RampOffset: -0.5
+    - _ReplaceLineColor: 0
     - _ScreenSpaceScale: 24
     - _Shininess: 0.1
     - _TunnelDistance: 0
@@ -84,6 +93,8 @@ Material:
     - __dirty: 0
     m_Colors:
     - _EmissionColor: {r: 0, g: 1, b: 0.7490196, a: 1}
+    - _PostReplaceLineColor: {r: 0.28123888, g: 0.754717, b: 0.49600625, a: 1}
+    - _PreReplaceLineColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecularColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 1}
     - _TerminatorLineColor: {r: 0, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []
