@@ -30,7 +30,7 @@ public class TunnelMesh : MonoBehaviour
 
         for(int i = 0; i < numVerts; i++)
         {
-            float t = mathi.Lerp(i, numVerts);
+            float t = mathi.unlerp(i, numVerts);
             Vector3 pos = spline.EvaluatePosition(t);
             splinePositions[i] = pos + new Vector3(0f, _verticalOffset, 0f);
         }

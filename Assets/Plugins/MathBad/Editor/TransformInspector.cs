@@ -10,7 +10,7 @@ using static MathBad_Editor.EDITOR_HELP;
 namespace MathBad_Editor
 {
 [CustomEditor(typeof(Transform), true), CanEditMultipleObjects]
-public class TransformInspector : EditorExtended<Transform>
+public class TransformInspector : ExtendedEditor<Transform>
 {
   Editor _defaultEditor;
 

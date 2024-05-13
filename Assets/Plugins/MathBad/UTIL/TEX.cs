@@ -14,6 +14,13 @@ namespace MathBad
 {
 public static class TEX
 {
+  static TEX()
+  {
+    checkerTex = Create(16, 16, FilterMode.Point, TextureFormat.RGBA32, false)
+     .CheckerFill(1, 1, RGB.darkGrey, RGB.grey);
+  }
+  public static Texture2D checkerTex;
+
   public static Texture2D Create(int width, int height,
                                  FilterMode filterMode = FilterMode.Bilinear,
                                  TextureFormat format = TextureFormat.RGBA32,

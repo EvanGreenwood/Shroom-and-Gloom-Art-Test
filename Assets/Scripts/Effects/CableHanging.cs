@@ -38,7 +38,7 @@ public class CableHanging : MonoBehaviour
     {
       _positions[i] = transform.TransformPoint(Vector3.Lerp(Vector3.zero,
                                                             transform.TransformDirection(_direction) * length,
-                                                            mathi.Lerp(i, _numNodes)));
+                                                            mathi.unlerp(i, _numNodes)));
       _lr.SetPosition(i, _positions[i]);
     }
     _isAwake = true;

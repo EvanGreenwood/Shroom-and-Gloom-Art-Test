@@ -20,7 +20,7 @@ public static class mathi
   [MethodImpl(MethodImplOptions.AggressiveInlining)] public static int xyi(int x, int y, int height) => x * height + y;
   [MethodImpl(MethodImplOptions.AggressiveInlining)] public static int yxi(int x, int y, int width) => x + y * width;
   [MethodImpl(MethodImplOptions.AggressiveInlining)] public static int xyzi(int x, int y, int z, int width, int height) => x + y * width + z * width * height;
-  public static float Lerp(int index, int count) => math.unlerp(0f, count - 1, index);
+  public static float unlerp(int index, int count) => math.unlerp(0f, count - 1, index);
 }
 public static partial class MATH
 {

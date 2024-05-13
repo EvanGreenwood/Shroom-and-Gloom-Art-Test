@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace MathBad_Editor
 {
-public class EditorExtended<T> : Editor where T : Component
+public class ExtendedEditor<T> : Editor where T : Object
 {
   protected T _target;
   protected T[] _targets;
