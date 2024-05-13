@@ -22,7 +22,7 @@ Shader "MathBad/Wireframe"
 
         Blend SrcAlpha OneMinusSrcAlpha
         ZWrite On
-        Cull Off
+        // Cull Off
 
         Pass
         {

@@ -15,7 +15,7 @@ GameObject:
   m_Layer: 0
   m_Name: Chain_Hanging
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -150,7 +150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9dd35dd5f3b383041a41bc015c38bacc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _density: 2
+  _density: 0.5
   _direction: {x: 0, y: -1}
   _length:
     _min: 2

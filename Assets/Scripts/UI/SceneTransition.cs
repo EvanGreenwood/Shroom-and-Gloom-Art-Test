@@ -103,6 +103,8 @@ public class SceneTransition : MonoSingletonUI<SceneTransition>
 
         EaseType easing = fadeIn ? EaseType.InQuad : EaseType.InOutQuad;
         bool skip = false;
+        Color titleColor = _title.color;
+        Color messageColor = _message.color;
         while(!_fadeTimer.hasFinished)
         {
             if(INPUT.leftMouse.down)
@@ -113,17 +115,18 @@ public class SceneTransition : MonoSingletonUI<SceneTransition>
 
             _fadeTimer.Step(Time.deltaTime);
             float lerp = EASE.Evaluate(fadeIn ? _fadeTimer.percent : 1f - _fadeTimer.percent, easing);
-            _canvasGroup.alpha = lerp;
+
+            // _canvasGroup.alpha = lerp;
             _ppv.weight = lerp;
+            _title.color = Color.Lerp(titleColor, RGB.black, 1f - lerp);
+            _message.color = Color.Lerp(messageColor, RGB.black, 1f - lerp);
+
             yield return null;
         }
-        
-        if(skip)
-        {
-            _canvasGroup.alpha = fadeIn ? 1f : 0f;
-            _ppv.weight = fadeIn ? 1f : 0f;
-        }
-        
+
+        _canvasGroup.alpha = fadeIn ? 1f : 0f;
+        _ppv.weight = fadeIn ? 1f : 0f;
+
         if(!fadeIn) _ppv.gameObject.SetActive(false);
 
         if(!skip && waitForInput)

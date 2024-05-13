@@ -36,8 +36,11 @@ public class WorldColors : MonoBehaviour
         Shader.SetGlobalColor("ShadowsColor", _shadowsColor);
         
         Shader.SetGlobalTexture("_Ramp", _rampTexture);
- 
-        Camera.main.backgroundColor = _fogColor;
+
+        if (Camera.main)
+        {
+            Camera.main.backgroundColor = _fogColor;
+        }
     }
 
     private void OnValidate()

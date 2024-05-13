@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 7313456130727942817}
   - component: {fileID: 3673212683675504505}
   - component: {fileID: 2037361899663152430}
-  - component: {fileID: 3315421919361842879}
   m_Layer: 0
   m_Name: MainCamera
   m_TagString: MainCamera
@@ -112,7 +111,7 @@ MonoBehaviour:
   volumeTrigger: {fileID: 4354797744881313849}
   volumeLayer:
     serializedVersion: 2
-    m_Bits: 2
+    m_Bits: 2147483648
   stopNaNPropagation: 1
   finalBlitToCameraTarget: 0
   antialiasingMode: 0
@@ -220,20 +219,6 @@ MonoBehaviour:
   _positionIntensity: 0
   _rotationIntensity: 5
   _speed: 0.1
---- !u!114 &3315421919361842879
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 109040420758377877}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a83cb751f854594a8824eccf58b5c8f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _volume: {fileID: 4682045412604890433}
-  _smoothTime: 0.1
 --- !u!1 &1354057040617334523
 GameObject:
   m_ObjectHideFlags: 0
@@ -434,6 +419,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21986141641ee8e49a077961d80e732a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _isPaused: 0
   _camera: {fileID: 8527055753736296869}
   _sensitivity: 3
   _moveSpeed: 20
@@ -537,7 +523,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5755995188669456994}
   - component: {fileID: 4682045412604890433}
-  m_Layer: 1
+  m_Layer: 31
   m_Name: PPV
   m_TagString: Untagged
   m_Icon: {fileID: 0}

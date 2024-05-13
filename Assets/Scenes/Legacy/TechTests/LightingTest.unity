@@ -189,12 +189,14 @@ MonoBehaviour:
   _lumpyWidth: 0.5
   _clearingWidth: 2.7
   _clearingDepth: 3
+  _setHideFlags: 1
   wallElements: []
   flatWallPrefab: {fileID: 0}
   flatWallSpacing: 1
   flatWallOffset: 1
   surroundElements:
   - name: Lumps
+    disabled: 0
     surroundPrefabs:
     - {fileID: 717079983591251126, guid: dde57e21e6c354eec8aacabab5da9407, type: 3}
     - {fileID: 717079983591251126, guid: 8bf6d4da7dbaf468fa9ccdb283aa9e40, type: 3}
@@ -212,6 +214,7 @@ MonoBehaviour:
     randomFlipY: 1
     randomFlipX: 0
   - name: Fronds
+    disabled: 0
     surroundPrefabs:
     - {fileID: 717079983591251126, guid: 96dd40d30bcfc82448cd8aa84fc68cbf, type: 3}
     - {fileID: 717079983591251126, guid: c4c24c7ddee851a468a0cc764008ba1b, type: 3}
@@ -232,6 +235,7 @@ MonoBehaviour:
     randomFlipX: 0
   floorElements:
   - name: Floor
+    disabled: 0
     floorPrefabs:
     - {fileID: 717079983591251126, guid: d30a5199178c74edea9e16ed711674da, type: 3}
     zOffset: 0.08
@@ -246,14 +250,24 @@ MonoBehaviour:
       _max: 0.05
     randomFlipX: 1
   flatFloorPrefab: {fileID: 0}
-  flatFloorOffset: -1
   flatFloorSpacing: 1
+  flatFloorOffset: -1
   ceilingElements: []
   flatCeilingPrefab: {fileID: 0}
   flatCeilingSpacing: 1
   flatCeilingOffset: 1
+  _elementParents:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   _drawGizmos: 0
   _generatedIsSelectable: 0
+  _internalTunnelSpline: {fileID: 127535799}
+  _internalTunnelMesh: {fileID: 0}
 --- !u!114 &127535799
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -425,7 +439,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &299464884
 Light:
   m_ObjectHideFlags: 0
@@ -561,7 +575,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5ca85f3d6dc59433ba7ba5297d6bc209, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1a456299397284370a02db8e1e999e1c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -603,7 +617,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &626472879
 Light:
   m_ObjectHideFlags: 0
@@ -696,7 +710,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &745235106
 Transform:
   m_ObjectHideFlags: 0
@@ -773,7 +787,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 43c8ae2a1dfff4025b00b54e6a976be1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 50cd522caf49e4ec997f3554b16d8c4c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -865,8 +879,10 @@ MonoBehaviour:
   _lumpyWidth: 0.5
   _clearingWidth: 1
   _clearingDepth: 2
+  _setHideFlags: 1
   wallElements:
   - name: Wall
+    disabled: 0
     wallPrefabs:
     - {fileID: 1508189691331659514, guid: 58503cf409f035144b23039e7efe5466, type: 3}
     zOffset: 0
@@ -891,6 +907,7 @@ MonoBehaviour:
   surroundElements: []
   floorElements:
   - name: Floor
+    disabled: 0
     floorPrefabs:
     - {fileID: -8373903463449722979, guid: 26d96b879b500654a952b8ee6bc0661b, type: 3}
     zOffset: 0.08
@@ -905,10 +922,11 @@ MonoBehaviour:
       _max: 0.05
     randomFlipX: 1
   flatFloorPrefab: {fileID: 6315135170778095943, guid: 1b84736bfc8e3498bb0f56612263e106, type: 3}
-  flatFloorOffset: -4
   flatFloorSpacing: 1
+  flatFloorOffset: -4
   ceilingElements:
   - name: Ceiling
+    disabled: 0
     ceilingPrefabs:
     - {fileID: -8373903463449722979, guid: 3187e059e3559af40bd0147434345f61, type: 3}
     height: 4
@@ -924,6 +942,7 @@ MonoBehaviour:
       _max: 0.03
     randomFlipX: 1
   - name: Ceiling2
+    disabled: 0
     ceilingPrefabs:
     - {fileID: -8373903463449722979, guid: 982cddbb89e4ead4cb0ef88eed6105d5, type: 3}
     height: 4
@@ -941,8 +960,24 @@ MonoBehaviour:
   flatCeilingPrefab: {fileID: 6315135170778095943, guid: c5d39d8515fd7483685405c5e8044cc6, type: 3}
   flatCeilingSpacing: 1
   flatCeilingOffset: 8
+  _elementParents:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   _drawGizmos: 0
   _generatedIsSelectable: 0
+  _internalTunnelSpline: {fileID: 891135099}
+  _internalTunnelMesh: {fileID: 0}
 --- !u!114 &891135099
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1123,6 +1158,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 3020264992416293518, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4287536555734979045, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1200,9 +1239,9 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 1, g: 0.15566039, b: 0.15566039, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
-  m_Range: 4.28
+  m_Range: 11.699074
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -1260,7 +1299,7 @@ Transform:
   m_GameObject: {fileID: 1215433094}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.14, y: -0.38, z: 30.72}
+  m_LocalPosition: {x: 2.83, y: 1.16, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1319,54 +1358,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 096a733823e81485784ebd1193459c2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1599776184
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1599776185}
-  - component: {fileID: 1599776186}
-  m_Layer: 0
-  m_Name: ShroomLight
-  m_TagString: Untagged
-  m_Icon: {fileID: 2800000, guid: 575a292ce34294d29986accc1afcd4d2, type: 3}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1599776185
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1599776184}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.58, y: 0.554, z: -1.68}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1599776186
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1599776184}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 564411645f46841fda907f5a1ad9e14e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OuterRadius: 10
-  InnerRadius: 2
-  Intensity: 1
-  Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1981339014
 GameObject:
   m_ObjectHideFlags: 0
@@ -1477,8 +1468,10 @@ MonoBehaviour:
   _lumpyWidth: 0.5
   _clearingWidth: 1
   _clearingDepth: 2.33
+  _setHideFlags: 1
   wallElements:
   - name: Wall Cave
+    disabled: 0
     wallPrefabs:
     - {fileID: 717079983591251126, guid: 7ffc0bd0eaa3c4aa28edd6c5974a2f20, type: 3}
     - {fileID: 717079983591251126, guid: 6e7233b1fe502482786141cbcff48c8d, type: 3}
@@ -1499,6 +1492,7 @@ MonoBehaviour:
     randomRotation: 8
     randomFlipY: 1
   - name: Rocks base
+    disabled: 0
     wallPrefabs:
     - {fileID: 717079983591251126, guid: cb8c4ff9972b3b745991cb1b0a747464, type: 3}
     - {fileID: 717079983591251126, guid: 3f32d0a184728724682dd65b9791dd96, type: 3}
@@ -1526,6 +1520,7 @@ MonoBehaviour:
   surroundElements: []
   floorElements:
   - name: Floor
+    disabled: 0
     floorPrefabs:
     - {fileID: 717079983591251126, guid: c7bf440da759743d2babef9b1f6de9ef, type: 3}
     zOffset: 0.08
@@ -1540,10 +1535,11 @@ MonoBehaviour:
       _max: 0.05
     randomFlipX: 1
   flatFloorPrefab: {fileID: 0}
-  flatFloorOffset: -1
   flatFloorSpacing: 1
+  flatFloorOffset: -1
   ceilingElements:
   - name: Stalactites
+    disabled: 0
     ceilingPrefabs:
     - {fileID: 717079983591251126, guid: 27bacbf4aeb5d44ac9799a0cc6ead2d1, type: 3}
     - {fileID: 717079983591251126, guid: 0e7499d4e7bc84f359fc4525db7054d9, type: 3}
@@ -1565,6 +1561,7 @@ MonoBehaviour:
       _max: 0.7
     randomFlipX: 0
   - name: Ceiling
+    disabled: 0
     ceilingPrefabs:
     - {fileID: 717079983591251126, guid: 2832df8ee9a104c518c231259296af54, type: 3}
     - {fileID: 717079983591251126, guid: b40fb7650720d4555ab821e23919b6c9, type: 3}
@@ -1583,8 +1580,21 @@ MonoBehaviour:
   flatCeilingPrefab: {fileID: 0}
   flatCeilingSpacing: 1
   flatCeilingOffset: 1
+  _elementParents:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   _drawGizmos: 0
   _generatedIsSelectable: 0
+  _internalTunnelSpline: {fileID: 2007857667}
+  _internalTunnelMesh: {fileID: 0}
 --- !u!114 &2007857667
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1686,11 +1696,10 @@ SceneRoots:
   m_Roots:
   - {fileID: 1981339015}
   - {fileID: 1300135157}
-  - {fileID: 624777314}
   - {fileID: 745235106}
   - {fileID: 1113519279}
-  - {fileID: 1599776185}
   - {fileID: 843290409}
+  - {fileID: 624777314}
   - {fileID: 969841057}
   - {fileID: 1215433096}
   - {fileID: 299464885}
