@@ -4,6 +4,7 @@ using UnityEngine;
 using MathBad;
 #endregion
 
+// Testing rotating tunnel peices with some 1D perlin over length of tunnel
 public class TestNoise : MonoBehaviour
 {
     [SerializeField] SpriteRenderer[] _renderers;

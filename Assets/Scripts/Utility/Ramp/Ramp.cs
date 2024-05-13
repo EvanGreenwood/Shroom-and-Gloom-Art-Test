@@ -6,6 +6,7 @@ using MathBad;
 #endregion
 
 [MenuCreate("RampTexture", 0)]
+[CreateAssetMenu(fileName = "Ramp", menuName = "Ramp", order = 0)]
 public class Ramp : ScriptableObject
 {
     public enum RampUseFlags

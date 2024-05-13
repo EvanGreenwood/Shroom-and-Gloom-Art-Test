@@ -14,6 +14,7 @@ Material:
   m_ValidKeywords:
   - _EMISSIONWAVEBASEDONTUNNEL_ON
   - _NOISYFOG_ON
+  - _REPLACELINECOLOR_ON
   - _USEFOG_ON
   m_InvalidKeywords:
   - _ALPHATEST_ON
@@ -101,12 +102,19 @@ Material:
     - _Glossiness: 0
     - _GlossyReflections: 0
     - _LightingEnabled: 0
+    - _LineColorVsHSVBlend: 1
+    - _LineHueOffset: 0
+    - _LineReplaceFuzziness: 0
+    - _LineReplaceRange: 0
+    - _LineSaturationOffset: 0
+    - _LineValueOffset: 0
     - _Metallic: 0
     - _Mode: 1
     - _NoisyFog: 1
     - _NormalMip: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
+    - _ReplaceLineColor: 1
     - _SmoothnessTextureChannel: 0
     - _SoftParticlesEnabled: 0
     - _SoftParticlesFarFadeDistance: 1
@@ -123,5 +131,7 @@ Material:
     - _Color: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 1}
     - _ColorAddSubDiff: {r: 0, g: 0, b: 0, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _PostReplaceLineColor: {r: 0, g: 0, b: 0, a: 1}
+    - _PreReplaceLineColor: {r: 0, g: 0, b: 0, a: 1}
     - _SoftParticleFadeParams: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []

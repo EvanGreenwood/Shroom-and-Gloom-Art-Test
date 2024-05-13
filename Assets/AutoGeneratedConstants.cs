@@ -14,6 +14,7 @@ public enum LayerName
 	IgnoreRaycast = -1,
 	Water = 4,
 	UI = 5,
+	Tunnel = 6,
 	Player = 10,
 	PlayerHead = 11,
 	VolumeUI = 30,
@@ -34,6 +35,7 @@ public static class Layer
 	public const int IgnoreRaycast = -1;
 	public const int Water = 4;
 	public const int UI = 5;
+	public const int Tunnel = 6;
 	public const int Player = 10;
 	public const int PlayerHead = 11;
 	public const int VolumeUI = 30;
@@ -72,6 +74,7 @@ public static partial class LayerMasks
 	public static readonly LayerMask IgnoreRaycast = -2147483648;
 	public static readonly LayerMask Water = 16;
 	public static readonly LayerMask UI = 32;
+	public static readonly LayerMask Tunnel = 64;
 	public static readonly LayerMask Player = 1024;
 	public static readonly LayerMask PlayerHead = 2048;
 	public static readonly LayerMask VolumeUI = 1073741824;
@@ -89,6 +92,7 @@ public static class CollisionMatrix
 	public static readonly LayerMask IgnoreRaycastCollisionMask = -1;
 	public static readonly LayerMask WaterCollisionMask = -1;
 	public static readonly LayerMask UICollisionMask = -1;
+	public static readonly LayerMask TunnelCollisionMask = -1;
 	public static readonly LayerMask PlayerCollisionMask = -1;
 	public static readonly LayerMask PlayerHeadCollisionMask = -1;
 	public static readonly LayerMask VolumeUICollisionMask = -1;

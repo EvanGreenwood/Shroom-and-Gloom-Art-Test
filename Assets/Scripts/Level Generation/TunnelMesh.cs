@@ -36,6 +36,7 @@ public class TunnelMesh : MonoBehaviour
         }
 
         Transform tube = transform.CreateChild("TunnelMesh");
+        tube.gameObject.layer = Layer.Tunnel;
         _tunnelMesh = MESH.Tube.Create(Matrix4x4.identity, splinePositions, 5f, 8, true);
 
         MeshCollider mc = tube.gameObject.AddComponent<MeshCollider>();
@@ -52,7 +53,7 @@ public class TunnelMesh : MonoBehaviour
         // Raycast against the mesh using Ray -> Triangle intersection (Slow)
         // return _tunnelMesh.Raycast(ray, 2f, out hitPos, out hitNormal);
 
-        bool success = Physics.Raycast(ray.origin, ray.direction, out RaycastHit hit, 100f);
+        bool success = Physics.Raycast(ray.origin, ray.direction, out RaycastHit hit, 100f, LayerMasks.Tunnel);
         hitPos = hit.point;
         hitNormal = hit.normal;
         return success;

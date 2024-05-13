@@ -1,15 +1,13 @@
 #region Usings
-using System;
 using MathBad;
 using UnityEngine;
 using UnityEditor;
 using MathBad_Editor;
 using static MathBad_Editor.EDITOR_HELP;
-using Object = UnityEngine.Object;
 #endregion
 
 [CustomEditor(typeof(Ramp))]
-public class RampExtendedEditor : ExtendedEditor<Ramp>
+public class RampEditor : ExtendedEditor<Ramp>
 {
     const int WIDTH = 64;
     const int SINGLE_HEIGHT = 16;
@@ -23,9 +21,8 @@ public class RampExtendedEditor : ExtendedEditor<Ramp>
     string NextTextureName() => $"{_target.name}";
     Int2 NextTextureSize()
     {
-        if(_target.useFlags
-           is Ramp.RampUseFlags.AB_TopBottom
-           or Ramp.RampUseFlags.AB_HorizontalVertical)
+        if(_target.useFlags == Ramp.RampUseFlags.AB_TopBottom
+        || _target.useFlags == Ramp.RampUseFlags.AB_HorizontalVertical)
             return new Int2(WIDTH, WIDTH);
         return new Int2(WIDTH, SINGLE_HEIGHT);
     }

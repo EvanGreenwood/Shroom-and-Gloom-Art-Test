@@ -670,6 +670,7 @@ GameObject:
   - component: {fileID: 1551529200}
   - component: {fileID: 1551529201}
   - component: {fileID: 1551529199}
+  - component: {fileID: 1551529202}
   m_Layer: 0
   m_Name: Tunnel
   m_TagString: Untagged
@@ -980,6 +981,21 @@ MonoBehaviour:
       m_Data: []
   m_Knots:
     m_KnotsLink: []
+--- !u!114 &1551529202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1551529198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ae0d8a919d033c4195f22fc4f031450, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _drawMesh: 0
+  _vertexDensity: 0.1
+  _verticalOffset: 4
 --- !u!1001 &1849587837
 PrefabInstance:
   m_ObjectHideFlags: 0
