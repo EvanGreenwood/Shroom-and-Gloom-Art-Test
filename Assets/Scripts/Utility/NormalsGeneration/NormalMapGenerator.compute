@@ -1,0 +1,43 @@
+#pragma kernel GenerateSDF
+
+uint _Width;
+uint _Height;
+float AlphaThreshold = 0.01;
+
+StructuredBuffer<float4> _ColorTex;
+RWStructuredBuffer<float4> _SDFTex;
+
+[numthreads(8, 8, 1)]
+void GenerateSDF(uint3 id : SV_DispatchThreadID)
+{
+    if (id.x >= _Width || id.y >= _Height)
+    {
+        return;
+    }
+    
+    uint index = id.y * _Width + id.x;
+    float closestDistance = _Width*_Height;
+    float furthestDist = 0;
+    for(int x = 0; x < _Width; x++)
+    {
+        for(int y = 0; y < _Height; y++)
+        {
+            float2 current = float2(x, y);
+            uint currentIndex = current.y * _Width + current.x;
+            float dist = distance(current, id.xy);
+            float4 currentColor = _ColorTex[currentIndex];
+            if(currentColor.a == 0 && dist < closestDistance)
+            {
+                closestDistance = dist;
+            }
+
+            if(dist > furthestDist)
+            {
+                furthestDist = dist;
+            }
+        }
+    }
+
+    float dNorm = closestDistance/furthestDist;
+    _SDFTex[index] = float4(dNorm, dNorm, dNorm, 1);
+}
