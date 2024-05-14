@@ -6,9 +6,10 @@ public class RotationWobble : MonoBehaviour
     [SerializeField] private float _amount = 4;
     private Quaternion _originalLocalRotation;
     private float _counter = 0;
+    [SerializeField] private float _offsetFrameYM = 0;
     void Start()
     {
-        _counter = transform.position.z;
+        _counter = transform.position.z + transform.position.y * _offsetFrameYM;
         _originalLocalRotation = transform.localRotation;
     }
 
