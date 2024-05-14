@@ -40,6 +40,9 @@ sampler2D _CameraGBufferTexture2;
 
 sampler2D _Ramp;
 
+float _HighlightValueThreshold;
+
+
 //https://www.ronja-tutorials.com/post/047-invlerp_remap/#remap
 /*float invLerp(float from, float to, float value){
   return (value - from) / (to - from);
@@ -49,6 +52,39 @@ float remap(float origFrom, float origTo, float targetFrom, float targetTo, floa
   float rel = invLerp(origFrom, origTo, value);
   return lerp(targetFrom, targetTo, rel);
 }*/
+
+//modified from https://stackoverflow.com/questions/15095909/from-rgb-to-hsv-in-opengl-glsl
+// All components are in the range [0…1], including hue.
+float3 rgb2hsv(float3 c)
+{
+    float4 K = float4(0.0, -1.0 / 3.0, 2.0 / 3.0, -1.0);
+    float4 p = lerp(float4(c.bg, K.wz), float4(c.gb, K.xy), step(c.b, c.g));
+    float4 q = lerp(float4(p.xyw, c.r), float4(c.r, p.yzx), step(p.x, c.r));
+
+    float d = q.x - min(q.w, q.y);
+    float e = 1.0e-10;
+    return float3(abs(q.z + (q.w - q.y) / (6.0 * d + e)), d / (q.x + e), q.x);
+}
+
+// All components are in the range [0…1], including hue.
+float3 hsv2rgb(float3 c)
+{
+    float4 K = float4(1.0, 2.0 / 3.0, 1.0 / 3.0, 3.0);
+    float3 p = abs(frac(c.xxx + K.xyz) * 6.0 - K.www);
+    return c.z * lerp(K.xxx, clamp(p - K.xxx, 0.0, 1.0), c.y);
+}
+
+float3 ReplaceColorBasedOnValue(float3 current, float fromValue, float3 to, float range, float fuzziness)
+{
+    float3 currentHSV = hsv2rgb(current);
+
+    //clip below value threshold, then convert to distance (either 1 (dont replace), or 0 (replace)
+    float clip = currentHSV.z - fromValue;
+    clip = 1-ceil(clamp(clip, 0, 1));
+    
+    float3 result = lerp(to, current, saturate((clip - range) / max(fuzziness, 1e-05)));
+    return result;
+}
 
 half4 CalculateLight (unity_v2f_deferred i)
 {
@@ -67,18 +103,66 @@ half4 CalculateLight (unity_v2f_deferred i)
     UnityStandardData data = UnityStandardDataFromGbuffer(gbuffer0, gbuffer1, gbuffer2);
 
     // --- CUSTOM BELOW ---
-
-    float noiseOffset = SimplexNoise(wpos);
-    float d = dot(data.normalWorld, light.dir);
-    float rampSamplePos =  abs(d); //backfaces are the same as front with billboards!
-    float2 rampUV = float2(rampSamplePos + noiseOffset*0.025, 0.5);
+    float3 tangentProjectedDir = light.dir;
     
-    float4 rampCol = tex2D(_Ramp, rampUV);
-    float3 finalCol = data.diffuseColor.xyz * rampCol.xyz * light.color;
-    return float4(finalCol, 1);
+    float noiseOffset = SimplexNoise(wpos);
+    float distToLight = distance(wpos, _LightPos.xyz);
+    float d = dot(data.normalWorld, tangentProjectedDir);
+    float normD = (1.0+d)/2.0;
+
+    //return float4(data.normalWorld, 1);
+    
+    //float2 rampUV = float2(rampSamplePos + noiseOffset*0.025, 0.5);
+    
+    //float3 toLight = _LightPos.xyz - wpos;
+    //float radius = dot(toLight, toLight) * _LightPos.w;
+    //return float4(radius, 0,0,1);
+    
+    //w seems to be range, based off internet, but also its not...w is squared, kinda, idk rsqrt works.
+    
+    float radius = rsqrt(_LightPos.w);
+
+    //1, edge. 0, center.
+    float normalizedDist = (distToLight/radius);
+    
+
+    //this sample pos will set ramp halfway threshold exactly at half of the lights radius.
+    float rampSamplePos = (1.0 - normalizedDist);
+
+    //use the normal as an offset into the ramp sample.
+    float normalEffectStrength = 0.1;
+    float noiseEffectStrength = 0.015;
+    //float normalOffset = pow(d, 1);  //we want the normal to increase in intensity towards the edges
+    float normalOffset = 0.0;
+    rampSamplePos += normalOffset * normalEffectStrength;
+    rampSamplePos += noiseOffset * noiseEffectStrength;
+    
+     float3 diffuseColor = data.diffuseColor.xyz;
+    
+
+    //float2 rampUV = float2(rampSamplePos, 0.5);
+    //float4 rampCol = float4(1.0,1.0,1.0,1.0);//tex2D(_Ramp, rampUV);
+
+    //float3 highlightColor = float4(1,1,1,1);
+   
+    //float3 highlightedDiffuse = ReplaceColorBasedOnValue(diffuseColor, _HighlightValueThreshold, highlightColor, 0.2, 0.2);
+    //return float4(highlightedDiffuse, 1);
+    //return float4(diffuseColor, 1);
+    //return clamp(d*2, 0,1);
+    //return abs(d);
+    //return d;
+    //float diffuseHighlightMix = lerp(diffuseColor, highlightedDiffuse, clamp(d*2, 0,1));
+    
+    //float3 finalCol = highlightedDiffuse * rampCol.xyz * light.color;
+    //float3 finalCol = diffuseHighlightMix ;//* rampCol.xyz * light.color;
+
+    float3 finalCol = diffuseColor * light.color;
+    return float4(finalCol, 1.0);
 
     // ---
 }
+
+
 
 #ifdef UNITY_HDR_ON
 half4

@@ -14,6 +14,7 @@ public class PlayerView : MonoSingleton<PlayerView>
     [Header("Volumes")]
     [SerializeField] PostProcessVolume _depthVolume;
     [SerializeField] PostProcessVolume _sceneVolume;
+    [SerializeField] bool UseCursorFocus = false;
 
     [Header("Clamp")]
     [SerializeField] Vector2 _angleOffset;
@@ -42,7 +43,7 @@ public class PlayerView : MonoSingleton<PlayerView>
         _sceneVolume.profile = uiProfile;
 
         _dof = _depthVolume.profile.GetSetting<DepthOfField>();
-        _dof.focusDistance.Override(10f);
+        //_dof.focusDistance.Override(10f);
 
         _hasInit = true;
     }
@@ -60,7 +61,11 @@ public class PlayerView : MonoSingleton<PlayerView>
             return;
 
         Look();
-        AutoFocus(Time.deltaTime);
+
+        if (UseCursorFocus)
+        {
+            AutoFocus(Time.deltaTime);
+        }
     }
 
     void OnDrawGizmos()

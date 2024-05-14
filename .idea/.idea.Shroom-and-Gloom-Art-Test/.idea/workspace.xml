@@ -6,51 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="825655da-4771-4664-b01a-9bffcaa881d5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Shroom-and-Gloom-Art-Test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Shroom-and-Gloom-Art-Test/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Player/Player.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Player/Player.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/UI/Emotes/Emote_Disturbed.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/UI/Emotes/Emote_Disturbed.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/_Debug/Player_Wireframe.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/_Debug/Player_Wireframe.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/_Debug/Test_Wireframe.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/_Debug/Test_Wireframe.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/particles/Dust/DustParticles.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/particles/Dust/DustParticles.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/player/Hand With Map Fungus Level 1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/player/Hand With Map Fungus Level 1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/player/Hand With Map Fungus Level 2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/player/Hand With Map Fungus Level 2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/player/Hand With Map Fungus Level 3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/player/Hand With Map Fungus Level 3.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/player/Hand With Map Fungus Level 4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/player/Hand With Map Fungus Level 4.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/player/Hand With Map Fungus Level 5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/player/Hand With Map Fungus Level 5.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/player/Hand With Map Fungus Level 6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/player/Hand With Map Fungus Level 6.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/player/Hand With Map Fungus Level 7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/player/Hand With Map Fungus Level 7.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/player/Hand With Map Fungus Level 8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/player/Hand With Map Fungus Level 8.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/player/player-hand-bottom.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/player/player-hand-bottom.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/player/player-hand-top.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/player/player-hand-top.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fonts/TestFonts/BloodSlimeRegular SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/TestFonts/BloodSlimeRegular SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/VHSPro/Resources/Materials/VHSPro_pass1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/VHSPro/Resources/Materials/VHSPro_pass1.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Effects/Lights/MineLight_Dim.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Effects/Lights/MineLight_Dim.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/Player.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/Player.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/View.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player/View.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/HUD.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/HUD.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/SceneInfo.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/SceneInfo.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/S1_TheMines.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/S1_TheMines.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level Generation/TunnelMesh.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Level Generation/TunnelMesh.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/FPSMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMover.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/FPSMovement.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMover.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/View.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/View.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/Editor/SceneViewDebug.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/Editor/SceneViewDebug.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Ramps/RampFlat.ramp.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Ramps/RampFlat.ramp.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/Hero.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player/Hero.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/View 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player/View 1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/Depth_PPP.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/SceneData/Depth_PPP.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Lighting/WorldColors.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Lighting/WorldColors.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Environment/Environment.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/Environment/Environment.shader" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Environment/EnvironmentDefault.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/Environment/EnvironmentDefault.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Resources/Shroomy-DeferredShading.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/Resources/Shroomy-DeferredShading.shader" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,17 +25,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/32ee6a9f8f3649e6a7a7646d2fd0953c7c00/ac/15ec8e46/Input.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c5ed782439084ef1bc2ad85eec89e9fe175a00/92/657d0cbe/Gizmos.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c5ed782439084ef1bc2ad85eec89e9fe175a00/eb/a50c74b6/Rect.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../Steamboat-Winky/SteamboatWinky/SteamboatWinky/Assets/Plugins/MathBad/Extensions/TransformExt.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../Steamboat-Winky/SteamboatWinky/SteamboatWinky/Assets/Scripts/Camera/CameraRig.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../_backup/backup/.bu/.backup2/.backup/.arpg/arpg/Assets/Plugins/Framework/Editor/SceneHelper.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../_backup/backup/.bu/.backup2/.backup/.arpg/arpg/Assets/Plugins/Framework/Utils/Editor/SceneViewDebug.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../_backup/backup/.bu/data/data/Assets/Plugins/Framework/Utils/Editor/EditorWindowUtil.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../hardgore/hardgore/Assets/Plugins/Framework/Patterns/Timer/Timer.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../hardgore/hardgore/Assets/Scripts/Common/KeepSpriteUpright.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../horror/horror/Assets/Plugins/MathBad/Extensions/TransformExt.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file:///Applications/Unity/Hub/Editor/2022.3.25f1/Unity.app/Contents/CGIncludes/UnityDeferredLibrary.cginc" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file:///Applications/Unity/Hub/Editor/2022.3.25f1/Unity.app/Contents/CGIncludes/UnityShaderVariables.cginc" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file:///Applications/Unity/Hub/Editor/2022.3.25f1/Unity.app/Contents/CGIncludes/UnityShadowLibrary.cginc" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/MathBad/Editor/TransformInspector.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/MathBad/Patterns/TubeRenderer/TubeRenderer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Effects/Cable/Cable.cs" root0="FORCE_HIGHLIGHTING" />
@@ -81,10 +37,8 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Level Generation/SubGenerators/Random/SGRandomFlipSprite.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Level Generation/TunnelLight.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Level Generation/TunnelMesh.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Lighting/ShroomLightingService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/ServiceLocator/MonoService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/ServiceLocator/Service.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Body/Head.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Prop/Emote.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Prop/PropActor.cs" root0="FORCE_HIGHLIGHTING" />
@@ -97,14 +51,6 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/MoveTowardsCamera.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/SceneViewShaderHelper.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.splines@2.5.2/Runtime/SplineUtility.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../../backup/_Work/_Projects-Unity/z_backup/_hardgore/hardgore/Assets/Plugins/Framework/Tools/ToobarExtender/Editor/ToolbarCallback.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../../backup/_Work/_Projects-Unity/z_backup/_hardgore/hardgore/Assets/Plugins/Framework/Tools/ToobarExtender/Editor/ToolbarExtender.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../../backup/_Work/_Projects-Unity/z_backup/_hardgore/hardgore/Assets/Plugins/Framework/Tools/ToobarExtender/Editor/Toolbars/ProjectButtons.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../../backup/_Work/_Projects-Unity/z_backup/_hardgore/hardgore/Assets/Plugins/Framework/Tools/ToobarExtender/Editor/Toolbars/SceneCollection.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../../backup/_Work/_Projects-Unity/z_backup/_hardgore/hardgore/Assets/Plugins/Framework/Utils/Editor/SceneViewDebug.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../../backup/_Work/_Projects-Unity/z_backup/backup/__Versions/_GODFUCKER/GodFucker/Assets/Plugins/Framework/Geometry/Extensions/MESH_EXT.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../../backup/_Work/_Projects-Unity/z_backup/backup/__Versions/__THEPIT/thepit/Assets/Plugins/Framework/Geometry/Extensions/GeoExt.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../../backup/_Work/_Projects-Unity/z_backup/backup/__Versions/__THEPIT/thepit/Assets/Plugins/Framework/Geometry/Extensions/MESH_EXT.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
@@ -114,27 +60,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Attach to Unity Editor.Attach to Unity Editor.executor&quot;: &quot;Debug&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.C#&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Attach to Unity Editor.Attach to Unity Editor.executor": "Debug",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.sourceCode.C#",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\Junt\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\Junt\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\Junt\\AppData\\Local\\Symbols\\src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "/Users/RH-Ross-MBP/Library/Application Support/JetBrains/Rider2023.3/resharper-host/DecompilerCache",
+      "/Users/RH-Ross-MBP/Library/Application Support/JetBrains/Rider2023.3/resharper-host/SourcesCache",
+      "/Users/RH-Ross-MBP/.local/share/Symbols/src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="$PROJECT_DIR$/../_builds/00/SnG-ArtTest.exe" />
@@ -145,7 +91,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.25f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/2022.3.25f1/Unity.app/Contents/MacOS/Unity" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath $PROJECT_DIR$ -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -153,7 +99,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.25f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/2022.3.25f1/Unity.app/Contents/MacOS/Unity" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath $PROJECT_DIR$ -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -205,6 +151,7 @@
       <workItem from="1715327637587" duration="63000" />
       <workItem from="1715349915458" duration="17461000" />
       <workItem from="1715373759598" duration="11327000" />
+      <workItem from="1715623331389" duration="21747000" />
     </task>
     <servers />
   </component>

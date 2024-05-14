@@ -14,7 +14,9 @@ public class WorldColors : MonoBehaviour
     
     [Header("Ramp")]
     [SerializeField] private Texture2D _rampTexture;
-   
+    
+    [Header("Highlight")]
+    [SerializeField] private float _lightingHighlightThreshold;
     
     void Start()
     {
@@ -36,7 +38,7 @@ public class WorldColors : MonoBehaviour
         Shader.SetGlobalColor("ShadowsColor", _shadowsColor);
         
         Shader.SetGlobalTexture("_Ramp", _rampTexture);
-
+        Shader.SetGlobalFloat("_HighlightValueThreshold", _lightingHighlightThreshold);
         if (Camera.main)
         {
             Camera.main.backgroundColor = _fogColor;

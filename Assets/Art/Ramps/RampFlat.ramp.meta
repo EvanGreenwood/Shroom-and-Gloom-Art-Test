@@ -12,17 +12,17 @@ ScriptedImporter:
   Height: 1
   HorizontalGradient:
     serializedVersion: 2
-    key0: {r: 0.2784314, g: 0.2784314, b: 0.2784314, a: 1}
-    key1: {r: 0.3490566, g: 0.3490566, b: 0.3490566, a: 1}
-    key2: {r: 0.7264151, g: 0.7264151, b: 0.7264151, a: 0}
+    key0: {r: 1, g: 0, b: 0, a: 1}
+    key1: {r: 1, g: 1, b: 1, a: 1}
+    key2: {r: 1, g: 1, b: 1, a: 0}
     key3: {r: 1, g: 1, b: 1, a: 0}
     key4: {r: 1, g: 1, b: 1, a: 0}
     key5: {r: 0, g: 0, b: 0, a: 0}
     key6: {r: 0, g: 0, b: 0, a: 0}
     key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 193
-    ctime1: 771
-    ctime2: 32768
+    ctime0: 32768
+    ctime1: 65535
+    ctime2: 65535
     ctime3: 65535
     ctime4: 65535
     ctime5: 0
@@ -38,7 +38,7 @@ ScriptedImporter:
     atime7: 0
     mode: 1
     colorSpace: 0
-    numColorKeys: 4
+    numColorKeys: 2
     numAlphaKeys: 2
   VerticalGradient:
     serializedVersion: 2
