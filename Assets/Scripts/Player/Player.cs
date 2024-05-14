@@ -17,6 +17,8 @@ public class Player : MonoSingleton<Player>
 
     public TunnelGenerator tunnel => _tunnel;
 
+    private Service<WorldManagerService> _world;
+
     public void Init(SceneData sceneData)
     {
         PlayerView.inst.Init(sceneData.postProcessProfile);
@@ -32,14 +34,13 @@ public class Player : MonoSingleton<Player>
 
     void Start()
     {
-        TunnelSystem.inst.TryGetTunnel(transform.position, out _tunnel);
+        _world.Value.TryGetTunnel(transform.position, out _tunnel);
         _movement.SetTunnel(_tunnel);
     }
 
     void Update()
     {
-        if(!_hasInit || !_isActivated)
-            return;
+        if(!_hasInit || !_isActivated) {return;}
 
         ReadInput();
         CheckTunnel();
@@ -66,13 +67,19 @@ public class Player : MonoSingleton<Player>
         {
             if(_tunnel.GetNormDistanceFromPoint(transform.position) > 0.99f)
             {
-                if(TunnelSystem.inst.TryGetTunnel(transform.position, out _tunnel))
+                if (_world.Value.TryGetTunnel(transform.position, out _tunnel))
+                {
                     _movement.SetTunnel(_tunnel);
+                }
             }
         }
         else if(_fwdInput < 0)
         {
-            //TODO: RN, can not go back to a previous tunnel. Does not work, closest tunnel is still current.
+            //RN, can not go back to a previous tunnel. Does not work, closest tunnel is still current.
+            //Failure is graceful, just cant move backwards anymore
+            //We can add a stack of previous tunnels, but we should decide if thats something we want to allow,
+            //eg, what happens if you go back to a door choice..?
+            
             /*if (_tunnel.GetNormDistanceFromPoint(transform.position) < 0.1f)
             {
                 FindNewTunnel();

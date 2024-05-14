@@ -259,27 +259,14 @@ GameObject:
   m_Component:
   - component: {fileID: 1089071972}
   - component: {fileID: 1089071971}
-  - component: {fileID: 1089071970}
+  - component: {fileID: 1089071973}
   m_Layer: 0
-  m_Name: TunnelSystem
+  m_Name: World
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1089071970
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1089071969}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92d55adc0335b6242ade96683686e672, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _dntDestroyOnLoad: 0
 --- !u!114 &1089071971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -296,7 +283,6 @@ MonoBehaviour:
   _fogStart: 1.5
   _fogDistance: 30
   _shadowsColor: {r: 0.4528302, g: 0.4528302, b: 0.4528302, a: 1}
-  _rampTexture: {fileID: 0}
 --- !u!4 &1089071972
 Transform:
   m_ObjectHideFlags: 0
@@ -315,6 +301,22 @@ Transform:
   - {fileID: 1008998061}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1089071973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1089071969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be0d82d27da3546d6b0fbda67dbe8dcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SingleTunnelTestMode: 1
+  MapSettings: {fileID: 0}
+  _areYouTakingCareOfYourself: 0
+  _greatJobYouGotThis: 0
 --- !u!1001 &1387279064
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -402,6 +404,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f743e6c0a9ec45e4abb4374dc99d4a09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  UseSOData: 0
+  GenerationSettings: {fileID: 0}
+  EditMode: 0
   _colorGradient:
     serializedVersion: 2
     key0: {r: 0.6981132, g: 0.535298, b: 0.50448555, a: 1}
@@ -438,7 +443,6 @@ MonoBehaviour:
   _lumpyWidth: 0.5
   _clearingWidth: 7.5
   _clearingDepth: 4
-  _setHideFlags: 1
   wallElements: []
   flatWallPrefab: {fileID: 0}
   flatWallSpacing: 1
@@ -517,8 +521,6 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  _drawGizmos: 0
-  _generatedIsSelectable: 0
   _internalTunnelSpline: {fileID: 1392419567}
   _internalTunnelMesh: {fileID: 0}
 --- !u!4 &1392419566
@@ -1087,6 +1089,34 @@ PrefabInstance:
     - target: {fileID: 4287536555734979045, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5849437770161265570, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
+      propertyPath: m_Positions.Array.data[0].z
+      value: 0.000000018626451
+      objectReference: {fileID: 0}
+    - target: {fileID: 5849437770161265570, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
+      propertyPath: m_Positions.Array.data[1].x
+      value: 0.000000059604645
+      objectReference: {fileID: 0}
+    - target: {fileID: 5849437770161265570, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
+      propertyPath: m_Positions.Array.data[1].z
+      value: 0.19999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 8924337108285858432, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
+      propertyPath: m_Positions.Array.data[0].z
+      value: -0.000000018626451
+      objectReference: {fileID: 0}
+    - target: {fileID: 8924337108285858432, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
+      propertyPath: m_Positions.Array.data[1].z
+      value: 0.20000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 8924337108285858432, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
+      propertyPath: m_Positions.Array.data[2].x
+      value: -0.000000059604645
+      objectReference: {fileID: 0}
+    - target: {fileID: 8924337108285858432, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
+      propertyPath: m_Positions.Array.data[2].z
+      value: -0.12600005
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

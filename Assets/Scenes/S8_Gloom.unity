@@ -175,6 +175,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5849437770161265570, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
+      propertyPath: m_Positions.Array.data[1].z
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5849437770161265570, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
+      propertyPath: m_Positions.Array.data[2].z
+      value: -0.12599997
+      objectReference: {fileID: 0}
+    - target: {fileID: 8924337108285858432, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
+      propertyPath: m_Positions.Array.data[1].z
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8924337108285858432, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
+      propertyPath: m_Positions.Array.data[2].z
+      value: -0.126
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -457,10 +473,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1381225328}
-  - component: {fileID: 1381225329}
   - component: {fileID: 1381225327}
+  - component: {fileID: 1381225329}
   m_Layer: 0
-  m_Name: TunnelSystem
+  m_Name: World
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -482,7 +498,6 @@ MonoBehaviour:
   _fogStart: 15
   _fogDistance: 50
   _shadowsColor: {r: 0.4528302, g: 0.4528302, b: 0.4528302, a: 1}
-  _rampTexture: {fileID: 0}
 --- !u!4 &1381225328
 Transform:
   m_ObjectHideFlags: 0
@@ -508,10 +523,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1381225326}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92d55adc0335b6242ade96683686e672, type: 3}
+  m_Script: {fileID: 11500000, guid: be0d82d27da3546d6b0fbda67dbe8dcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _dntDestroyOnLoad: 0
+  SingleTunnelTestMode: 1
+  MapSettings: {fileID: 0}
+  _areYouTakingCareOfYourself: 0
+  _greatJobYouGotThis: 0
 --- !u!1 &1392419564
 GameObject:
   m_ObjectHideFlags: 0
@@ -542,6 +560,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f743e6c0a9ec45e4abb4374dc99d4a09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  UseSOData: 0
+  GenerationSettings: {fileID: 0}
+  EditMode: 0
   _colorGradient:
     serializedVersion: 2
     key0: {r: 0.3001513, g: 0.40477195, b: 0.6698113, a: 1}
@@ -578,7 +599,6 @@ MonoBehaviour:
   _lumpyWidth: 0.5
   _clearingWidth: 1
   _clearingDepth: 2.33
-  _setHideFlags: 1
   wallElements:
   - name: Wall Cave
     disabled: 0
@@ -701,8 +721,6 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  _drawGizmos: 0
-  _generatedIsSelectable: 0
   _internalTunnelSpline: {fileID: 1392419567}
   _internalTunnelMesh: {fileID: 0}
 --- !u!4 &1392419566

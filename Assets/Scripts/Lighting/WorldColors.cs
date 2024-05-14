@@ -5,6 +5,7 @@ using UnityEngine;
 public class WorldColors : MonoBehaviour
 {
     [Header("Fog")]
+    //TODO: consider using unity fog instead, its the same, but has more integration in editor?
     [SerializeField] private Color _fogColor = Color.white;
     [SerializeField] private float _fogStart = 1.5f;
     [SerializeField] private float _fogDistance = 30;
@@ -12,8 +13,8 @@ public class WorldColors : MonoBehaviour
     [Header("Shadows")]
     [SerializeField] private Color _shadowsColor = Color.blue;
     
-    [Header("Ramp")]
-    [SerializeField] private Texture2D _rampTexture;
+    //[Header("Ramp")]
+    //[SerializeField] private Texture2D _rampTexture;
    
     
     void Start()
@@ -35,7 +36,7 @@ public class WorldColors : MonoBehaviour
         
         Shader.SetGlobalColor("ShadowsColor", _shadowsColor);
         
-        Shader.SetGlobalTexture("_Ramp", _rampTexture);
+        //Shader.SetGlobalTexture("_Ramp", _rampTexture);
 
         if (Camera.main)
         {

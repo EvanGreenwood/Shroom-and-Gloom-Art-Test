@@ -351,9 +351,9 @@ GameObject:
   m_Component:
   - component: {fileID: 737954244}
   - component: {fileID: 737954243}
-  - component: {fileID: 737954246}
+  - component: {fileID: 737954245}
   m_Layer: 0
-  m_Name: TunnelSystem
+  m_Name: World
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -375,7 +375,6 @@ MonoBehaviour:
   _fogStart: 1.5
   _fogDistance: 30
   _shadowsColor: {r: 0.4528302, g: 0.4528302, b: 0.4528302, a: 1}
-  _rampTexture: {fileID: 0}
 --- !u!4 &737954244
 Transform:
   m_ObjectHideFlags: 0
@@ -392,7 +391,7 @@ Transform:
   - {fileID: 1551529200}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &737954246
+--- !u!114 &737954245
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -401,10 +400,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 737954242}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92d55adc0335b6242ade96683686e672, type: 3}
+  m_Script: {fileID: 11500000, guid: be0d82d27da3546d6b0fbda67dbe8dcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _dntDestroyOnLoad: 0
+  SingleTunnelTestMode: 1
+  MapSettings: {fileID: 0}
+  _areYouTakingCareOfYourself: 0
+  _greatJobYouGotThis: 0
 --- !u!1 &897133119
 GameObject:
   m_ObjectHideFlags: 0
@@ -690,6 +692,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f743e6c0a9ec45e4abb4374dc99d4a09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  UseSOData: 0
+  GenerationSettings: {fileID: 0}
+  EditMode: 0
   _colorGradient:
     serializedVersion: 2
     key0: {r: 0.3301887, g: 0.3301887, b: 0.3301887, a: 1}
@@ -726,7 +731,6 @@ MonoBehaviour:
   _lumpyWidth: 0.5
   _clearingWidth: 1
   _clearingDepth: 2
-  _setHideFlags: 1
   wallElements:
   - name: Wall
     disabled: 0
@@ -842,8 +846,6 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  _drawGizmos: 0
-  _generatedIsSelectable: 1
   _internalTunnelSpline: {fileID: 1551529201}
   _internalTunnelMesh: {fileID: 0}
 --- !u!4 &1551529200
@@ -1315,5 +1317,5 @@ SceneRoots:
   - {fileID: 1991036712}
   - {fileID: 1096277767}
   - {fileID: 525790713}
-  - {fileID: 737954244}
   - {fileID: 1849587837}
+  - {fileID: 737954244}

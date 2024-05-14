@@ -92,7 +92,7 @@ public class PlayerView : MonoSingleton<PlayerView>
             return;
 
         _dof.focusDistance.value = (_viewTarget.position - transform.position).magnitude;
-        StepFocusPos(Player.inst.tunnel.tunnelMesh);
+        StepFocusPos(Player.inst.tunnel.Mesh);
 
         return;
         //--------------------------------------------------

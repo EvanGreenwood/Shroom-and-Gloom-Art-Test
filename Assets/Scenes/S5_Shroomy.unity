@@ -5899,7 +5899,7 @@ GameObject:
   - component: {fileID: 533433262}
   - component: {fileID: 533433264}
   m_Layer: 0
-  m_Name: TunnelSystem
+  m_Name: World
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5921,7 +5921,6 @@ MonoBehaviour:
   _fogStart: 15
   _fogDistance: 50
   _shadowsColor: {r: 0.4528302, g: 0.4528302, b: 0.4528302, a: 1}
-  _rampTexture: {fileID: 0}
 --- !u!4 &533433263
 Transform:
   m_ObjectHideFlags: 0
@@ -5950,10 +5949,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 533433261}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92d55adc0335b6242ade96683686e672, type: 3}
+  m_Script: {fileID: 11500000, guid: be0d82d27da3546d6b0fbda67dbe8dcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _dntDestroyOnLoad: 0
+  SingleTunnelTestMode: 1
+  MapSettings: {fileID: 0}
+  _areYouTakingCareOfYourself: 0
+  _greatJobYouGotThis: 0
 --- !u!1001 &590746459
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6633,6 +6635,7 @@ MonoBehaviour:
   _loop: 1
   _destroyAtEnd: 0
   _rotateEachFrame: 0
+  _startingFrameAjustmentFromYPos: 0
 --- !u!212 &1294973854
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6877,6 +6880,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f743e6c0a9ec45e4abb4374dc99d4a09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  UseSOData: 0
+  GenerationSettings: {fileID: 0}
+  EditMode: 0
   _colorGradient:
     serializedVersion: 2
     key0: {r: 0.6981132, g: 0.535298, b: 0.50448555, a: 1}
@@ -6913,7 +6919,6 @@ MonoBehaviour:
   _lumpyWidth: 0.5
   _clearingWidth: 2.7
   _clearingDepth: 3
-  _setHideFlags: 1
   wallElements: []
   flatWallPrefab: {fileID: 0}
   flatWallSpacing: 1
@@ -6992,8 +6997,6 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  _drawGizmos: 0
-  _generatedIsSelectable: 1
   _internalTunnelSpline: {fileID: 1392419567}
   _internalTunnelMesh: {fileID: 0}
 --- !u!4 &1392419566

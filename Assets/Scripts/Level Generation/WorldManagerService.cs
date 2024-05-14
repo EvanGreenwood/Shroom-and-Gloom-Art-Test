@@ -1,11 +1,15 @@
-#region Usings
+using JetBrains.Annotations;
+using NaughtyAttributes;
 using UnityEngine;
-using MathBad;
-#endregion
 
-public class TunnelSystem : MonoSingleton<TunnelSystem>
+public class WorldManagerService : MonoService
 {
-    TunnelGenerator[] _tunnels;
+    public bool SingleTunnelTestMode;
+    [HideIf("SingleTunnelTestMode")]public WorldMapSettings MapSettings;
+    
+    private TunnelGenerator[] _tunnels;
+
+    
 
     // MonoBehaviour
     //----------------------------------------------------------------------------------------------------
@@ -52,5 +56,18 @@ public class TunnelSystem : MonoSingleton<TunnelSystem>
         transform.forward = Vector3.RotateTowards(transform.forward, towardsLookahead, Time.deltaTime * 0.25f, 0);
 
         return currentDirection;
+    } 
+    
+// =========================
+#if UNITY_EDITOR
+
+    //Very important.
+    [HideIf("_areYouTakingCareOfYourself")] [SerializeField] private bool _areYouTakingCareOfYourself; 
+    [ShowIf("ShowGreatJob")] [SerializeField] private bool _greatJobYouGotThis;
+    [UsedImplicitly]
+    bool ShowGreatJob()
+    {
+        return _areYouTakingCareOfYourself && !_greatJobYouGotThis;
     }
+#endif
 }

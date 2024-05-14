@@ -343,8 +343,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1392419566}
-  - component: {fileID: 1392419567}
   - component: {fileID: 1392419565}
+  - component: {fileID: 1392419567}
   m_Layer: 0
   m_Name: Tunnel
   m_TagString: Untagged
@@ -364,6 +364,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f743e6c0a9ec45e4abb4374dc99d4a09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  UseSOData: 0
+  GenerationSettings: {fileID: 0}
+  EditMode: 0
   _colorGradient:
     serializedVersion: 2
     key0: {r: 0.3001513, g: 0.40477195, b: 0.6698113, a: 1}
@@ -400,7 +403,6 @@ MonoBehaviour:
   _lumpyWidth: 0.5
   _clearingWidth: 1
   _clearingDepth: 2.33
-  _setHideFlags: 1
   wallElements:
   - name: Wall Cave
     disabled: 0
@@ -523,8 +525,6 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  _drawGizmos: 0
-  _generatedIsSelectable: 0
   _internalTunnelSpline: {fileID: 1392419567}
   _internalTunnelMesh: {fileID: 0}
 --- !u!4 &1392419566
@@ -688,8 +688,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1758886926}
-  - component: {fileID: 1758886925}
   - component: {fileID: 1758886924}
+  - component: {fileID: 1758886927}
   m_Layer: 0
   m_Name: TunnelSystem
   m_TagString: Untagged
@@ -713,20 +713,6 @@ MonoBehaviour:
   _fogStart: 3
   _fogDistance: 20
   _shadowsColor: {r: 0, g: 0, b: 1, a: 1}
-  _rampTexture: {fileID: 0}
---- !u!114 &1758886925
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1758886923}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92d55adc0335b6242ade96683686e672, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _dntDestroyOnLoad: 0
 --- !u!4 &1758886926
 Transform:
   m_ObjectHideFlags: 0
@@ -743,6 +729,22 @@ Transform:
   - {fileID: 1392419566}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1758886927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1758886923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be0d82d27da3546d6b0fbda67dbe8dcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SingleTunnelTestMode: 1
+  MapSettings: {fileID: 0}
+  _areYouTakingCareOfYourself: 0
+  _greatJobYouGotThis: 0
 --- !u!1001 &1899238011
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -806,6 +808,22 @@ PrefabInstance:
     - target: {fileID: 4287536555734979045, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5849437770161265570, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
+      propertyPath: m_Positions.Array.data[1].z
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5849437770161265570, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
+      propertyPath: m_Positions.Array.data[2].z
+      value: -0.12599997
+      objectReference: {fileID: 0}
+    - target: {fileID: 8924337108285858432, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
+      propertyPath: m_Positions.Array.data[1].z
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8924337108285858432, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
+      propertyPath: m_Positions.Array.data[2].z
+      value: -0.126
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
