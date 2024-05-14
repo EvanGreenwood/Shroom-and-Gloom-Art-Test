@@ -15,6 +15,7 @@ public class AnimatedSprite : MonoBehaviour
     [SerializeField] private bool _loop = false;
     [SerializeField] private bool _destroyAtEnd = true;
     [SerializeField] private bool _rotateEachFrame = false;
+    [SerializeField] private float _startingFrameAjustmentFromYPos = 0;
     void Awake()
     {
         _spriteRenderer = GetComponent<SpriteRenderer>();
@@ -28,6 +29,10 @@ public class AnimatedSprite : MonoBehaviour
         else
         {
             _spriteRenderer.sprite = _sprites[0];
+        }
+        if (_startingFrameAjustmentFromYPos != 0)
+        {
+            _frame = (int)(transform.position.y * _startingFrameAjustmentFromYPos);
         }
     }
 
