@@ -324,7 +324,7 @@ public static class TextureExt
         return texture;
     }
 
-    public static Texture2D GadientFillTB(this Texture2D texture,
+    public static Texture2D GadientFillNorthSouth(this Texture2D texture,
                                           Gradient t, Gradient b,
                                           EaseType easeType = EaseType.Linear)
     {
@@ -345,7 +345,27 @@ public static class TextureExt
         texture.Apply(colors);
         return texture;
     }
+    public static Texture2D GadientFillEastWest(this Texture2D texture,
+                                                  Gradient t, Gradient b,
+                                                  EaseType easeType = EaseType.Linear)
+    {
+        Color32[] colors = new Color32[texture.width * texture.height];
 
+        for(int i = 0; i < colors.Length; i++)
+        {
+            Int2 xy = mathi.ixy(i, texture.width);
+            float y_lerp = mathi.unlerp(xy.y, texture.height);
+            Color c0 = t.Evaluate(y_lerp);
+            Color c1 = b.Evaluate(y_lerp);
+
+            float x_lerp = mathi.unlerp(xy.x, texture.width);
+            Color c = Color.Lerp(c1, c0, EASE.Evaluate(x_lerp, easeType));
+            colors[i] = (Color32)c;
+        }
+
+        texture.Apply(colors);
+        return texture;
+    }
     public static Texture2D GadientFillHV(this Texture2D texture,
                                           Gradient h, Gradient v,
                                           EaseType easeType = EaseType.Linear)
