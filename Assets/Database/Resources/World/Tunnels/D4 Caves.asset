@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 50d28d391025841c192a919a7297e73e, type: 3}
-  m_Name: D7 Caves
+  m_Name: D4 Caves
   m_EditorClassIdentifier: 
   _guid: 696d1d69f71c24e0ca8eea9eda6dee88
   ColorGradient:

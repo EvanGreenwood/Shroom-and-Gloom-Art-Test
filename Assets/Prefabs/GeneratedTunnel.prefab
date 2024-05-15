@@ -1,0 +1,340 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7137455459775689044
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1618399540182981667}
+  - component: {fileID: 2911752884358585114}
+  - component: {fileID: 182820386374825050}
+  - component: {fileID: 6298472048694712905}
+  m_Layer: 0
+  m_Name: GeneratedTunnel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1618399540182981667
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7137455459775689044}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2911752884358585114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7137455459775689044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dab5c7d4c32e743048dfca98e2d5914f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Spline:
+    m_EditModeType: 1
+    m_Knots: []
+    m_MetaData: []
+    m_Closed: 0
+    m_IntData:
+      m_Data: []
+    m_FloatData:
+      m_Data: []
+    m_Float4Data:
+      m_Data: []
+    m_ObjectData:
+      m_Data: []
+  m_Splines:
+  - m_EditModeType: 1
+    m_Knots:
+    - Position:
+        x: 0
+        y: 0
+        z: 0
+      TangentIn:
+        x: 0
+        y: 0
+        z: -1
+      TangentOut:
+        x: 0
+        y: 0
+        z: 1
+      Rotation:
+        value:
+          x: 0
+          y: 0
+          z: 0
+          w: 1
+    - Position:
+        x: -2
+        y: 2
+        z: 16
+      TangentIn:
+        x: 0
+        y: 0
+        z: -1
+      TangentOut:
+        x: 0
+        y: 0
+        z: 1
+      Rotation:
+        value:
+          x: 0
+          y: 0
+          z: 0
+          w: 1
+    - Position:
+        x: 0
+        y: -2
+        z: 32
+      TangentIn:
+        x: 0
+        y: 0
+        z: -4
+      TangentOut:
+        x: 0
+        y: 0
+        z: 3
+      Rotation:
+        value:
+          x: 0
+          y: 0
+          z: 0
+          w: 1
+    - Position:
+        x: 8
+        y: 0
+        z: 67
+      TangentIn:
+        x: 0
+        y: 0
+        z: -1
+      TangentOut:
+        x: 0
+        y: 0
+        z: 1
+      Rotation:
+        value:
+          x: 0
+          y: 0
+          z: 0
+          w: 1
+    m_MetaData:
+    - Mode: 2
+      Tension: 0.5
+    - Mode: 2
+      Tension: 0.5
+    - Mode: 3
+      Tension: 0.5
+    - Mode: 2
+      Tension: 0.5
+    m_Closed: 0
+    m_IntData:
+      m_Data: []
+    m_FloatData:
+      m_Data: []
+    m_Float4Data:
+      m_Data: []
+    m_ObjectData:
+      m_Data: []
+  m_Knots:
+    m_KnotsLink: []
+--- !u!114 &182820386374825050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7137455459775689044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f743e6c0a9ec45e4abb4374dc99d4a09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UseSOData: 0
+  GenerationSettings: {fileID: 0}
+  EditMode: 1
+  Old_ColorGradient:
+    serializedVersion: 2
+    key0: {r: 1, g: 1, b: 1, a: 1}
+    key1: {r: 1, g: 1, b: 1, a: 1}
+    key2: {r: 0, g: 0, b: 0, a: 0}
+    key3: {r: 0, g: 0, b: 0, a: 0}
+    key4: {r: 0, g: 0, b: 0, a: 0}
+    key5: {r: 0, g: 0, b: 0, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
+    key7: {r: 0, g: 0, b: 0, a: 0}
+    ctime0: 0
+    ctime1: 65535
+    ctime2: 0
+    ctime3: 0
+    ctime4: 0
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_ColorSpace: 0
+    m_NumColorKeys: 2
+    m_NumAlphaKeys: 2
+  Old_Particles: {fileID: 2402285776899386762, guid: 8e61f67cd760b423db14eb998271668d, type: 3}
+  Old_ParticleSpawnDistance: 5
+  Old_BaseTunnelWidth: 5
+  Old_LumpyWidth: 0.5
+  Old_ClearingWidth: 1
+  Old_ClearingDepth: 2
+  Old_WallElements:
+  - Name: Wall
+    Disabled: 0
+    WallPrefabs:
+    - {fileID: 1508189691331659514, guid: 58503cf409f035144b23039e7efe5466, type: 3}
+    ZOffset: 0
+    Spacing: 2
+    Width: 0.5
+    HeightOffset:
+      _min: 4
+      _max: 4
+    VerticalLoopLength: 5
+    VerticalLoopIncrement: 2
+    MinMaxAngle:
+      _min: 0
+      _max: 0
+    MinMaxPosition:
+      _min: -1
+      _max: 0.2
+    RandomRotation: 5
+    RandomFlipY: 1
+  - Name: Lights
+    Disabled: 0
+    WallPrefabs:
+    - {fileID: -7297887267121322941, guid: 660d0c2cbb403b444a71f20620e0cc43, type: 3}
+    ZOffset: 1
+    Spacing: 8
+    Width: 1.5
+    HeightOffset:
+      _min: -0.5
+      _max: -0.5
+    VerticalLoopLength: 5
+    VerticalLoopIncrement: 3
+    MinMaxAngle:
+      _min: 0
+      _max: 0
+    MinMaxPosition:
+      _min: -1
+      _max: 1
+    RandomRotation: 5
+    RandomFlipY: 0
+  Old_FlatWallPrefab: {fileID: 6315135170778095943, guid: 3422533d8785543c0bc4c752557808e0, type: 3}
+  Old_FlatWallSpacing: 2
+  Old_FlatWallOffset: 7
+  Old_SurroundElements: []
+  Old_FloorElements:
+  - Name: Floor
+    Disabled: 0
+    FloorPrefabs:
+    - {fileID: -8373903463449722979, guid: 26d96b879b500654a952b8ee6bc0661b, type: 3}
+    ZOffset: 0.08
+    Spacing: 0.5
+    RandomXPosition: 0.5
+    MinMaxAngle:
+      _min: -1
+      _max: 1
+    XRotation: 0
+    MinMaxPosition:
+      _min: 0
+      _max: 0
+    RandomFlipX: 1
+  Old_FlatFloorPrefab: {fileID: 6315135170778095943, guid: 1b84736bfc8e3498bb0f56612263e106, type: 3}
+  Old_FlatFloorSpacing: 1
+  Old_FlatFloorOffset: -10
+  Old_CeilingElements:
+  - Name: Ceiling
+    Disabled: 0
+    CeilingPrefabs:
+    - {fileID: -8373903463449722979, guid: 3187e059e3559af40bd0147434345f61, type: 3}
+    Height: 8
+    ZOffset: 0.02
+    Spacing: 1
+    RandomXPosition: 1
+    MinMaxAngle:
+      _min: -0.5
+      _max: 0.5
+    XRotation: 0
+    MinMaxPosition:
+      _min: -0.03
+      _max: 0.03
+    RandomFlipX: 1
+  - Name: Ceiling2
+    Disabled: 0
+    CeilingPrefabs:
+    - {fileID: -8373903463449722979, guid: 982cddbb89e4ead4cb0ef88eed6105d5, type: 3}
+    Height: 7.5
+    ZOffset: 0.5
+    Spacing: 1
+    RandomXPosition: 1
+    MinMaxAngle:
+      _min: -0.5
+      _max: 0.5
+    XRotation: 0
+    MinMaxPosition:
+      _min: -0.03
+      _max: 0.03
+    RandomFlipX: 1
+  Old_FlatCeilingPrefab: {fileID: 6315135170778095943, guid: c5d39d8515fd7483685405c5e8044cc6, type: 3}
+  Old_FlatCeilingSpacing: 1
+  Old_FlatCeilingOffset: 8
+  SOToCopyInto: {fileID: 11400000, guid: 9278d73a8c93c4d8da665d5d471ec094, type: 2}
+  _elementParents:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  _internalTunnelSpline: {fileID: 2911752884358585114}
+  _internalTunnelMesh: {fileID: 0}
+--- !u!114 &6298472048694712905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7137455459775689044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ae0d8a919d033c4195f22fc4f031450, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _drawMesh: 0
+  _vertexDensity: 0.1
+  _verticalOffset: 4

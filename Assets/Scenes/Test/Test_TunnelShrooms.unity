@@ -259,27 +259,14 @@ GameObject:
   m_Component:
   - component: {fileID: 1089071972}
   - component: {fileID: 1089071971}
-  - component: {fileID: 1089071970}
+  - component: {fileID: 1089071973}
   m_Layer: 0
-  m_Name: TunnelSystem
+  m_Name: World
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1089071970
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1089071969}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92d55adc0335b6242ade96683686e672, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _dntDestroyOnLoad: 0
 --- !u!114 &1089071971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -296,7 +283,6 @@ MonoBehaviour:
   _fogStart: 1.5
   _fogDistance: 30
   _shadowsColor: {r: 0.4528302, g: 0.4528302, b: 0.4528302, a: 1}
-  _rampTexture: {fileID: 0}
 --- !u!4 &1089071972
 Transform:
   m_ObjectHideFlags: 0
@@ -315,6 +301,22 @@ Transform:
   - {fileID: 1008998061}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1089071973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1089071969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be0d82d27da3546d6b0fbda67dbe8dcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SingleTunnelTestMode: 1
+  MapSettings: {fileID: 0}
+  _areYouTakingCareOfYourself: 0
+  _greatJobYouGotThis: 0
 --- !u!1001 &1387279064
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -402,7 +404,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f743e6c0a9ec45e4abb4374dc99d4a09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _colorGradient:
+  UseSOData: 0
+  GenerationSettings: {fileID: 0}
+  EditMode: 0
+  Old_ColorGradient:
     serializedVersion: 2
     key0: {r: 0.6981132, g: 0.535298, b: 0.50448555, a: 1}
     key1: {r: 0.59716547, g: 0.7132075, b: 0.44541824, a: 1}
@@ -432,57 +437,57 @@ MonoBehaviour:
     m_ColorSpace: 0
     m_NumColorKeys: 8
     m_NumAlphaKeys: 2
-  _particles: {fileID: 0}
-  _particleSpawnDistance: 1
-  _baseTunnelWidth: 1
-  _lumpyWidth: 0.5
-  _clearingWidth: 6.5
-  _clearingDepth: 4
-  _setHideFlags: 1
-  wallElements: []
-  flatWallPrefab: {fileID: 0}
-  flatWallSpacing: 1
-  flatWallOffset: 1
-  surroundElements:
-  - name: Lumps
-    disabled: 0
-    surroundPrefabs:
+  Old_Particles: {fileID: 0}
+  Old_ParticleSpawnDistance: 1
+  Old_BaseTunnelWidth: 1
+  Old_LumpyWidth: 0.5
+  Old_ClearingWidth: 6.5
+  Old_ClearingDepth: 4
+  Old_WallElements: []
+  Old_FlatWallPrefab: {fileID: 0}
+  Old_FlatWallSpacing: 1
+  Old_FlatWallOffset: 1
+  Old_SurroundElements:
+  - Name: Lumps
+    Disabled: 0
+    SurroundPrefabs:
     - {fileID: 717079983591251126, guid: b703fc31de6d8184cb05a4b73a07dd93, type: 3}
-    zOffset: 0
-    spacing: 0.4
-    radiusOffset: -1.3
-    centerHeight: 2.3
-    pattern: 1
-    angleRange:
+    ZOffset: 0
+    Spacing: 0.4
+    RadiusOffset: -1.3
+    CenterHeight: 2.3
+    Pattern: 1
+    AngleRange:
       _min: 20
       _max: 340
-    angleIncrement: 33
-    randomRotation: 16
-    randomFlipY: 1
-    randomFlipX: 0
-  floorElements:
-  - name: Floor
-    disabled: 0
-    floorPrefabs:
+    AngleIncrement: 33
+    RandomRotation: 16
+    RandomFlipY: 1
+    RandomFlipX: 0
+  Old_FloorElements:
+  - Name: Floor
+    Disabled: 0
+    FloorPrefabs:
     - {fileID: 717079983591251126, guid: d30a5199178c74edea9e16ed711674da, type: 3}
-    zOffset: 0.08
-    spacing: 0.5
-    randomXPosition: 0.5
-    minMaxAngle:
+    ZOffset: 0.08
+    Spacing: 0.5
+    RandomXPosition: 0.5
+    MinMaxAngle:
       _min: -1
       _max: 1
-    xRotation: 0
-    minMaxPosition:
+    XRotation: 0
+    MinMaxPosition:
       _min: -0.05
       _max: 0.05
-    randomFlipX: 1
-  flatFloorPrefab: {fileID: 0}
-  flatFloorSpacing: 1
-  flatFloorOffset: -1
-  ceilingElements: []
-  flatCeilingPrefab: {fileID: 0}
-  flatCeilingSpacing: 1
-  flatCeilingOffset: 1
+    RandomFlipX: 1
+  Old_FlatFloorPrefab: {fileID: 0}
+  Old_FlatFloorSpacing: 1
+  Old_FlatFloorOffset: -1
+  Old_CeilingElements: []
+  Old_FlatCeilingPrefab: {fileID: 0}
+  Old_FlatCeilingSpacing: 1
+  Old_FlatCeilingOffset: 1
+  SOToCopyInto: {fileID: 0}
   _elementParents:
   - {fileID: 0}
   - {fileID: 0}
@@ -490,8 +495,6 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  _drawGizmos: 0
-  _generatedIsSelectable: 0
   _internalTunnelSpline: {fileID: 1392419567}
   _internalTunnelMesh: {fileID: 0}
 --- !u!4 &1392419566
@@ -1021,6 +1024,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c47c4c75a538c442919e38114b9d485, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _distance: 1
+  _speed: 1.5
+  _triggerThreshold: 0.9
+  _blacknessThreshold: 0.96
 --- !u!1001 &846687522224407855
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1044,6 +1051,18 @@ PrefabInstance:
     - target: {fileID: 3114858846951454881, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
       propertyPath: _intensityRange._min
       value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3577085838745663624, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3577085838745663624, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3577085838745663624, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4287536555734979045, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
       propertyPath: m_LocalPosition.x

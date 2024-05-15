@@ -1,3 +1,7 @@
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
+
 using Framework;
 using JetBrains.Annotations;
 using NaughtyAttributes;
@@ -81,6 +85,10 @@ public partial class TunnelSettings : ScriptableEnum
         FlatCeilingOffset = t.Old_FlatCeilingOffset;
         
         Debug.Log($"<color=green><b> Copied embedded settings into {name}. Now set UseSOData to true on {t.gameObject.name}</b></color>");
+        
+        #if UNITY_EDITOR
+        AssetDatabase.SaveAssets();
+        #endif
     }
     
     [UsedImplicitly]
