@@ -13,8 +13,9 @@ public class Ramp : ScriptableObject
     {
         A_Horizontal = 0,
         B_Horizontal = 1,
-        AB_TopBottom = 2,
-        AB_HorizontalVertical = 3,
+        NorthSouth = 2,
+        AB_EastWest = 3,
+        AB_HorizontalVertical = 4,
     }
 
     public RampUseFlags useFlags = RampUseFlags.A_Horizontal;

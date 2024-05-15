@@ -21,7 +21,8 @@ public class RampEditor : ExtendedEditor<Ramp>
     string NextTextureName() => $"{_target.name}";
     Int2 NextTextureSize()
     {
-        if(_target.useFlags == Ramp.RampUseFlags.AB_TopBottom
+        if(_target.useFlags == Ramp.RampUseFlags.NorthSouth
+        || _target.useFlags == Ramp.RampUseFlags.AB_EastWest
         || _target.useFlags == Ramp.RampUseFlags.AB_HorizontalVertical)
             return new Int2(WIDTH, WIDTH);
         return new Int2(WIDTH, SINGLE_HEIGHT);
@@ -80,7 +81,8 @@ public class RampEditor : ExtendedEditor<Ramp>
         Space(5);
         bool showGradientA = _target.useFlags != Ramp.RampUseFlags.B_Horizontal;
         bool showGradientB = _target.useFlags == Ramp.RampUseFlags.B_Horizontal
-                          || _target.useFlags == Ramp.RampUseFlags.AB_TopBottom
+                          || _target.useFlags == Ramp.RampUseFlags.NorthSouth
+                          || _target.useFlags == Ramp.RampUseFlags.AB_EastWest
                           || _target.useFlags == Ramp.RampUseFlags.AB_HorizontalVertical;
 
         if(showGradientA)
@@ -134,8 +136,11 @@ public class RampEditor : ExtendedEditor<Ramp>
             case Ramp.RampUseFlags.B_Horizontal:
                 _target.texture.GadientFill(_target.gradientB, _target.easeType);
                 break;
-            case Ramp.RampUseFlags.AB_TopBottom:
-                _target.texture.GadientFillTB(_target.gradientA, _target.gradientB, _target.easeType);
+            case Ramp.RampUseFlags.NorthSouth:
+                _target.texture.GadientFillNorthSouth(_target.gradientA, _target.gradientB, _target.easeType);
+                break;
+            case Ramp.RampUseFlags.AB_EastWest:
+                _target.texture.GadientFillEastWest(_target.gradientA, _target.gradientB, _target.easeType);
                 break;
             case Ramp.RampUseFlags.AB_HorizontalVertical:
                 _target.texture.GadientFillHV(_target.gradientA, _target.gradientB, _target.easeType);
