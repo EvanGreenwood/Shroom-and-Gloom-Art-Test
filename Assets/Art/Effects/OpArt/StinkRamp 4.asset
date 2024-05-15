@@ -1,0 +1,344 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!213 &-7805276434431964395
+Sprite:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: StinkRamp 4_Icon
+  m_Rect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 64
+    height: 16
+  m_Offset: {x: 0, y: 0}
+  m_Border: {x: 0, y: 0, z: 0, w: 0}
+  m_PixelsToUnits: 128
+  m_Pivot: {x: 0.5, y: 0.5}
+  m_Extrude: 0
+  m_IsPolygon: 0
+  m_AtlasName: 
+  m_PackingTag: 
+  m_RenderDataKey:
+    db235af5277bb1a409e04413ad566fe2: -7805276434431964395
+  m_AtlasTags: []
+  m_SpriteAtlas: {fileID: 0}
+  m_RD:
+    serializedVersion: 3
+    texture: {fileID: 8550232144664997530}
+    alphaTexture: {fileID: 0}
+    secondaryTextures: []
+    m_SubMeshes:
+    - serializedVersion: 2
+      firstByte: 0
+      indexCount: 6
+      topology: 0
+      baseVertex: 0
+      firstVertex: 0
+      vertexCount: 4
+      localAABB:
+        m_Center: {x: 0, y: 0, z: 0}
+        m_Extent: {x: 0, y: 0, z: 0}
+    m_IndexBuffer: 000001000200020001000300
+    m_VertexData:
+      serializedVersion: 3
+      m_VertexCount: 4
+      m_Channels:
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 3
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 1
+        offset: 0
+        format: 0
+        dimension: 2
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      m_DataSize: 80
+      _typelessdata: 000080be0000803d000000000000803e0000803d00000000000080be000080bd000000000000803e000080bd000000000000000000000000000000000000000000000000000000000000000000000000
+    m_Bindpose: []
+    textureRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 64
+      height: 16
+    textureRectOffset: {x: 0, y: 0}
+    atlasRectOffset: {x: -1, y: -1}
+    settingsRaw: 64
+    uvTransform: {x: 128, y: 32, z: 128, w: 8}
+    downscaleMultiplier: 1
+  m_AtlasRD:
+    serializedVersion: 3
+    texture: {fileID: 8550232144664997530}
+    alphaTexture: {fileID: 0}
+    secondaryTextures: []
+    m_SubMeshes:
+    - serializedVersion: 2
+      firstByte: 0
+      indexCount: 6
+      topology: 0
+      baseVertex: 0
+      firstVertex: 0
+      vertexCount: 4
+      localAABB:
+        m_Center: {x: 0, y: 0, z: 0}
+        m_Extent: {x: 0, y: 0, z: 0}
+    m_IndexBuffer: 000001000200020001000300
+    m_VertexData:
+      serializedVersion: 3
+      m_VertexCount: 4
+      m_Channels:
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 3
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 1
+        offset: 0
+        format: 0
+        dimension: 2
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      m_DataSize: 80
+      _typelessdata: 000080be0000803d000000000000803e0000803d00000000000080be000080bd000000000000803e000080bd000000000000000000000000000000000000000000000000000000000000000000000000
+    m_Bindpose: []
+    textureRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 64
+      height: 16
+    textureRectOffset: {x: 0, y: 0}
+    atlasRectOffset: {x: -1, y: -1}
+    settingsRaw: 64
+    uvTransform: {x: 128, y: 32, z: 128, w: 8}
+    downscaleMultiplier: 1
+  m_PhysicsShape: []
+  m_Bones: []
+  m_SpriteID: 
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c9244de6da778b44887f13caf0fa418, type: 3}
+  m_Name: StinkRamp 4
+  m_EditorClassIdentifier: 
+  useFlags: 0
+  gradientA:
+    serializedVersion: 2
+    key0: {r: 1, g: 0, b: 0, a: 1}
+    key1: {r: 1, g: 0.9815198, b: 0, a: 1}
+    key2: {r: 0.31428504, g: 1, b: 0, a: 0}
+    key3: {r: 0, g: 1, b: 0.98041606, a: 0}
+    key4: {r: 0, g: 0.059885558, b: 0.76862746, a: 0}
+    key5: {r: 0.6814251, g: 0, b: 1, a: 0}
+    key6: {r: 1, g: 0, b: 0.5860157, a: 0}
+    key7: {r: 1, g: 0, b: 0, a: 0}
+    ctime0: 0
+    ctime1: 11565
+    ctime2: 20432
+    ctime3: 29876
+    ctime4: 39514
+    ctime5: 49922
+    ctime6: 58018
+    ctime7: 65535
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_ColorSpace: 0
+    m_NumColorKeys: 8
+    m_NumAlphaKeys: 2
+  gradientB:
+    serializedVersion: 2
+    key0: {r: 0.21226418, g: 1, b: 0.37976667, a: 1}
+    key1: {r: 0.22364914, g: 1, b: 0, a: 1}
+    key2: {r: 0, g: 0, b: 0, a: 0}
+    key3: {r: 0.052286565, g: 0.00049665803, b: 0, a: 0}
+    key4: {r: 0, g: 0, b: 0, a: 0}
+    key5: {r: 0, g: 0, b: 0, a: 0}
+    key6: {r: 1, g: 0, b: 0.5860157, a: 0}
+    key7: {r: 1, g: 0, b: 0, a: 0}
+    ctime0: 0
+    ctime1: 4868
+    ctime2: 65535
+    ctime3: 55890
+    ctime4: 65535
+    ctime5: 65535
+    ctime6: 58018
+    ctime7: 65535
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_ColorSpace: 0
+    m_NumColorKeys: 3
+    m_NumAlphaKeys: 2
+  easeType: 0
+  sRGB: 1
+  alphaIsTransparency: 0
+  wrapMode: 1
+  filterMode: 1
+  alwaysUpdate: 1
+  _texture: {fileID: 8550232144664997530}
+  icon: {fileID: -7805276434431964395}
+  _children:
+  - {fileID: 8550232144664997530}
+  - {fileID: -7805276434431964395}
+--- !u!28 &8550232144664997530
+Texture2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: StinkRamp 4
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_IsAlphaChannelOptional: 0
+  serializedVersion: 2
+  m_Width: 64
+  m_Height: 16
+  m_CompleteImageSize: 4096
+  m_MipsStripped: 0
+  m_TextureFormat: 4
+  m_MipCount: 1
+  m_IsReadable: 1
+  m_IsPreProcessed: 0
+  m_IgnoreMipmapLimit: 0
+  m_MipmapLimitGroupName: 
+  m_StreamingMipmaps: 0
+  m_StreamingMipmapsPriority: 0
+  m_VTOnly: 0
+  m_AlphaIsTransparency: 0
+  m_ImageCount: 1
+  m_TextureDimension: 2
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_LightmapFormat: 0
+  m_ColorSpace: 1
+  m_PlatformBlob: 
+  image data: 4096
+  _typelessdata: ff0000ffff1700ffff2d00ffff4400ffff5a00ffff7100ffff8700ffff9e00ffffb400ffffcb00ffffe100fffff800ffedfb00ffd8fb00ffc4fc00ffaffc00ff9bfd00ff86fe00ff72fe00ff5dff00ff4dff0aff44ff25ff3bff41ff32ff5cff2aff78ff21ff94ff18ffafff0fffcbff06ffe6ff00f8f8ff00def3ff00c4edff00aae7ff0090e1ff0076dbff005dd5ff0043d0ff0029caff000fc4ff120ecaff230cd0ff340bd6ff4609dcff5708e2ff6806e7ff7a05edff8b03f3ff9d02f9ffae00ffffb800f1ffc300e4ffcd00d6ffd800c9ffe200bbffec00adfff700a0ffff0091ffff007cffff0067ffff0053ffff003effff0029ffff0015ffff0000ffff0000ffff1700ffff2d00ffff4400ffff5a00ffff7100ffff8700ffff9e00ffffb400ffffcb00ffffe100fffff800ffedfb00ffd8fb00ffc4fc00ffaffc00ff9bfd00ff86fe00ff72fe00ff5dff00ff4dff0aff44ff25ff3bff41ff32ff5cff2aff78ff21ff94ff18ffafff0fffcbff06ffe6ff00f8f8ff00def3ff00c4edff00aae7ff0090e1ff0076dbff005dd5ff0043d0ff0029caff000fc4ff120ecaff230cd0ff340bd6ff4609dcff5708e2ff6806e7ff7a05edff8b03f3ff9d02f9ffae00ffffb800f1ffc300e4ffcd00d6ffd800c9ffe200bbffec00adfff700a0ffff0091ffff007cffff0067ffff0053ffff003effff0029ffff0015ffff0000ffff0000ffff1700ffff2d00ffff4400ffff5a00ffff7100ffff8700ffff9e00ffffb400ffffcb00ffffe100fffff800ffedfb00ffd8fb00ffc4fc00ffaffc00ff9bfd00ff86fe00ff72fe00ff5dff00ff4dff0aff44ff25ff3bff41ff32ff5cff2aff78ff21ff94ff18ffafff0fffcbff06ffe6ff00f8f8ff00def3ff00c4edff00aae7ff0090e1ff0076dbff005dd5ff0043d0ff0029caff000fc4ff120ecaff230cd0ff340bd6ff4609dcff5708e2ff6806e7ff7a05edff8b03f3ff9d02f9ffae00ffffb800f1ffc300e4ffcd00d6ffd800c9ffe200bbffec00adfff700a0ffff0091ffff007cffff0067ffff0053ffff003effff0029ffff0015ffff0000ffff0000ffff1700ffff2d00ffff4400ffff5a00ffff7100ffff8700ffff9e00ffffb400ffffcb00ffffe100fffff800ffedfb00ffd8fb00ffc4fc00ffaffc00ff9bfd00ff86fe00ff72fe00ff5dff00ff4dff0aff44ff25ff3bff41ff32ff5cff2aff78ff21ff94ff18ffafff0fffcbff06ffe6ff00f8f8ff00def3ff00c4edff00aae7ff0090e1ff0076dbff005dd5ff0043d0ff0029caff000fc4ff120ecaff230cd0ff340bd6ff4609dcff5708e2ff6806e7ff7a05edff8b03f3ff9d02f9ffae00ffffb800f1ffc300e4ffcd00d6ffd800c9ffe200bbffec00adfff700a0ffff0091ffff007cffff0067ffff0053ffff003effff0029ffff0015ffff0000ffff0000ffff1700ffff2d00ffff4400ffff5a00ffff7100ffff8700ffff9e00ffffb400ffffcb00ffffe100fffff800ffedfb00ffd8fb00ffc4fc00ffaffc00ff9bfd00ff86fe00ff72fe00ff5dff00ff4dff0aff44ff25ff3bff41ff32ff5cff2aff78ff21ff94ff18ffafff0fffcbff06ffe6ff00f8f8ff00def3ff00c4edff00aae7ff0090e1ff0076dbff005dd5ff0043d0ff0029caff000fc4ff120ecaff230cd0ff340bd6ff4609dcff5708e2ff6806e7ff7a05edff8b03f3ff9d02f9ffae00ffffb800f1ffc300e4ffcd00d6ffd800c9ffe200bbffec00adfff700a0ffff0091ffff007cffff0067ffff0053ffff003effff0029ffff0015ffff0000ffff0000ffff1700ffff2d00ffff4400ffff5a00ffff7100ffff8700ffff9e00ffffb400ffffcb00ffffe100fffff800ffedfb00ffd8fb00ffc4fc00ffaffc00ff9bfd00ff86fe00ff72fe00ff5dff00ff4dff0aff44ff25ff3bff41ff32ff5cff2aff78ff21ff94ff18ffafff0fffcbff06ffe6ff00f8f8ff00def3ff00c4edff00aae7ff0090e1ff0076dbff005dd5ff0043d0ff0029caff000fc4ff120ecaff230cd0ff340bd6ff4609dcff5708e2ff6806e7ff7a05edff8b03f3ff9d02f9ffae00ffffb800f1ffc300e4ffcd00d6ffd800c9ffe200bbffec00adfff700a0ffff0091ffff007cffff0067ffff0053ffff003effff0029ffff0015ffff0000ffff0000ffff1700ffff2d00ffff4400ffff5a00ffff7100ffff8700ffff9e00ffffb400ffffcb00ffffe100fffff800ffedfb00ffd8fb00ffc4fc00ffaffc00ff9bfd00ff86fe00ff72fe00ff5dff00ff4dff0aff44ff25ff3bff41ff32ff5cff2aff78ff21ff94ff18ffafff0fffcbff06ffe6ff00f8f8ff00def3ff00c4edff00aae7ff0090e1ff0076dbff005dd5ff0043d0ff0029caff000fc4ff120ecaff230cd0ff340bd6ff4609dcff5708e2ff6806e7ff7a05edff8b03f3ff9d02f9ffae00ffffb800f1ffc300e4ffcd00d6ffd800c9ffe200bbffec00adfff700a0ffff0091ffff007cffff0067ffff0053ffff003effff0029ffff0015ffff0000ffff0000ffff1700ffff2d00ffff4400ffff5a00ffff7100ffff8700ffff9e00ffffb400ffffcb00ffffe100fffff800ffedfb00ffd8fb00ffc4fc00ffaffc00ff9bfd00ff86fe00ff72fe00ff5dff00ff4dff0aff44ff25ff3bff41ff32ff5cff2aff78ff21ff94ff18ffafff0fffcbff06ffe6ff00f8f8ff00def3ff00c4edff00aae7ff0090e1ff0076dbff005dd5ff0043d0ff0029caff000fc4ff120ecaff230cd0ff340bd6ff4609dcff5708e2ff6806e7ff7a05edff8b03f3ff9d02f9ffae00ffffb800f1ffc300e4ffcd00d6ffd800c9ffe200bbffec00adfff700a0ffff0091ffff007cffff0067ffff0053ffff003effff0029ffff0015ffff0000ffff0000ffff1700ffff2d00ffff4400ffff5a00ffff7100ffff8700ffff9e00ffffb400ffffcb00ffffe100fffff800ffedfb00ffd8fb00ffc4fc00ffaffc00ff9bfd00ff86fe00ff72fe00ff5dff00ff4dff0aff44ff25ff3bff41ff32ff5cff2aff78ff21ff94ff18ffafff0fffcbff06ffe6ff00f8f8ff00def3ff00c4edff00aae7ff0090e1ff0076dbff005dd5ff0043d0ff0029caff000fc4ff120ecaff230cd0ff340bd6ff4609dcff5708e2ff6806e7ff7a05edff8b03f3ff9d02f9ffae00ffffb800f1ffc300e4ffcd00d6ffd800c9ffe200bbffec00adfff700a0ffff0091ffff007cffff0067ffff0053ffff003effff0029ffff0015ffff0000ffff0000ffff1700ffff2d00ffff4400ffff5a00ffff7100ffff8700ffff9e00ffffb400ffffcb00ffffe100fffff800ffedfb00ffd8fb00ffc4fc00ffaffc00ff9bfd00ff86fe00ff72fe00ff5dff00ff4dff0aff44ff25ff3bff41ff32ff5cff2aff78ff21ff94ff18ffafff0fffcbff06ffe6ff00f8f8ff00def3ff00c4edff00aae7ff0090e1ff0076dbff005dd5ff0043d0ff0029caff000fc4ff120ecaff230cd0ff340bd6ff4609dcff5708e2ff6806e7ff7a05edff8b03f3ff9d02f9ffae00ffffb800f1ffc300e4ffcd00d6ffd800c9ffe200bbffec00adfff700a0ffff0091ffff007cffff0067ffff0053ffff003effff0029ffff0015ffff0000ffff0000ffff1700ffff2d00ffff4400ffff5a00ffff7100ffff8700ffff9e00ffffb400ffffcb00ffffe100fffff800ffedfb00ffd8fb00ffc4fc00ffaffc00ff9bfd00ff86fe00ff72fe00ff5dff00ff4dff0aff44ff25ff3bff41ff32ff5cff2aff78ff21ff94ff18ffafff0fffcbff06ffe6ff00f8f8ff00def3ff00c4edff00aae7ff0090e1ff0076dbff005dd5ff0043d0ff0029caff000fc4ff120ecaff230cd0ff340bd6ff4609dcff5708e2ff6806e7ff7a05edff8b03f3ff9d02f9ffae00ffffb800f1ffc300e4ffcd00d6ffd800c9ffe200bbffec00adfff700a0ffff0091ffff007cffff0067ffff0053ffff003effff0029ffff0015ffff0000ffff0000ffff1700ffff2d00ffff4400ffff5a00ffff7100ffff8700ffff9e00ffffb400ffffcb00ffffe100fffff800ffedfb00ffd8fb00ffc4fc00ffaffc00ff9bfd00ff86fe00ff72fe00ff5dff00ff4dff0aff44ff25ff3bff41ff32ff5cff2aff78ff21ff94ff18ffafff0fffcbff06ffe6ff00f8f8ff00def3ff00c4edff00aae7ff0090e1ff0076dbff005dd5ff0043d0ff0029caff000fc4ff120ecaff230cd0ff340bd6ff4609dcff5708e2ff6806e7ff7a05edff8b03f3ff9d02f9ffae00ffffb800f1ffc300e4ffcd00d6ffd800c9ffe200bbffec00adfff700a0ffff0091ffff007cffff0067ffff0053ffff003effff0029ffff0015ffff0000ffff0000ffff1700ffff2d00ffff4400ffff5a00ffff7100ffff8700ffff9e00ffffb400ffffcb00ffffe100fffff800ffedfb00ffd8fb00ffc4fc00ffaffc00ff9bfd00ff86fe00ff72fe00ff5dff00ff4dff0aff44ff25ff3bff41ff32ff5cff2aff78ff21ff94ff18ffafff0fffcbff06ffe6ff00f8f8ff00def3ff00c4edff00aae7ff0090e1ff0076dbff005dd5ff0043d0ff0029caff000fc4ff120ecaff230cd0ff340bd6ff4609dcff5708e2ff6806e7ff7a05edff8b03f3ff9d02f9ffae00ffffb800f1ffc300e4ffcd00d6ffd800c9ffe200bbffec00adfff700a0ffff0091ffff007cffff0067ffff0053ffff003effff0029ffff0015ffff0000ffff0000ffff1700ffff2d00ffff4400ffff5a00ffff7100ffff8700ffff9e00ffffb400ffffcb00ffffe100fffff800ffedfb00ffd8fb00ffc4fc00ffaffc00ff9bfd00ff86fe00ff72fe00ff5dff00ff4dff0aff44ff25ff3bff41ff32ff5cff2aff78ff21ff94ff18ffafff0fffcbff06ffe6ff00f8f8ff00def3ff00c4edff00aae7ff0090e1ff0076dbff005dd5ff0043d0ff0029caff000fc4ff120ecaff230cd0ff340bd6ff4609dcff5708e2ff6806e7ff7a05edff8b03f3ff9d02f9ffae00ffffb800f1ffc300e4ffcd00d6ffd800c9ffe200bbffec00adfff700a0ffff0091ffff007cffff0067ffff0053ffff003effff0029ffff0015ffff0000ffff0000ffff1700ffff2d00ffff4400ffff5a00ffff7100ffff8700ffff9e00ffffb400ffffcb00ffffe100fffff800ffedfb00ffd8fb00ffc4fc00ffaffc00ff9bfd00ff86fe00ff72fe00ff5dff00ff4dff0aff44ff25ff3bff41ff32ff5cff2aff78ff21ff94ff18ffafff0fffcbff06ffe6ff00f8f8ff00def3ff00c4edff00aae7ff0090e1ff0076dbff005dd5ff0043d0ff0029caff000fc4ff120ecaff230cd0ff340bd6ff4609dcff5708e2ff6806e7ff7a05edff8b03f3ff9d02f9ffae00ffffb800f1ffc300e4ffcd00d6ffd800c9ffe200bbffec00adfff700a0ffff0091ffff007cffff0067ffff0053ffff003effff0029ffff0015ffff0000ffff0000ffff1700ffff2d00ffff4400ffff5a00ffff7100ffff8700ffff9e00ffffb400ffffcb00ffffe100fffff800ffedfb00ffd8fb00ffc4fc00ffaffc00ff9bfd00ff86fe00ff72fe00ff5dff00ff4dff0aff44ff25ff3bff41ff32ff5cff2aff78ff21ff94ff18ffafff0fffcbff06ffe6ff00f8f8ff00def3ff00c4edff00aae7ff0090e1ff0076dbff005dd5ff0043d0ff0029caff000fc4ff120ecaff230cd0ff340bd6ff4609dcff5708e2ff6806e7ff7a05edff8b03f3ff9d02f9ffae00ffffb800f1ffc300e4ffcd00d6ffd800c9ffe200bbffec00adfff700a0ffff0091ffff007cffff0067ffff0053ffff003effff0029ffff0015ffff0000ff
+  m_StreamData:
+    serializedVersion: 2
+    offset: 0
+    size: 0
+    path: 

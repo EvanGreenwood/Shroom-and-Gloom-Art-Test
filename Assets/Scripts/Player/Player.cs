@@ -88,6 +88,6 @@ public class Player : MonoSingleton<Player>
 
     public void SetScenePostProcessProfile(PostProcessProfile ppv)
     {
-        PlayerView.inst.depthVolume.profile = ppv;
+        PlayerView.inst.sceneVolume.profile = ppv;
     }
 }

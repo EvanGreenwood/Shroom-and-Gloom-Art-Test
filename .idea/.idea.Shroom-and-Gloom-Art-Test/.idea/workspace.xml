@@ -6,11 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="825655da-4771-4664-b01a-9bffcaa881d5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Shroom-and-Gloom-Art-Test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Shroom-and-Gloom-Art-Test/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/MathBad/Extensions/TextureExt.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/MathBad/Extensions/TextureExt.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Effects/OpArt/StinkEye.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Effects/OpArt/StinkEye.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/particles/Dust/DustParticles.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/particles/Dust/DustParticles.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Plugins/VHSPro/Resources/Materials/VHSPro_pass1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/VHSPro/Resources/Materials/VHSPro_pass1.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/Ramp/Editor/RampEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/Ramp/Editor/RampEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/Ramp/Ramp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/Ramp/Ramp.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Environment/Environment.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/Environment/Environment.shader" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/Hero.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player/Hero.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/Depth_PPP.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/SceneData/Depth_PPP.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPP/S8_Gloom_PPP.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPP/S8_Gloom_PPP.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/S8_Gloom.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/S8_Gloom.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,6 +172,8 @@
       <workItem from="1715373759598" duration="11327000" />
       <workItem from="1715633551470" duration="2037000" />
       <workItem from="1715680629883" duration="3699000" />
+      <workItem from="1715720850500" duration="2258000" />
+      <workItem from="1715733305467" duration="19000" />
     </task>
     <servers />
   </component>

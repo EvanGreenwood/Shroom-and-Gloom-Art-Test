@@ -1,0 +1,344 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c9244de6da778b44887f13caf0fa418, type: 3}
+  m_Name: SkyDome
+  m_EditorClassIdentifier: 
+  useFlags: 0
+  gradientA:
+    serializedVersion: 2
+    key0: {r: 0, g: 0, b: 0, a: 1}
+    key1: {r: 0.055226494, g: 0, b: 0.42352942, a: 1}
+    key2: {r: 0, g: 0.2712398, b: 0.8980392, a: 0}
+    key3: {r: 0, g: 0.74262595, b: 1, a: 0}
+    key4: {r: 0.427451, g: 1, b: 0.93528575, a: 0}
+    key5: {r: 0, g: 0, b: 0, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
+    key7: {r: 0, g: 0, b: 0, a: 0}
+    ctime0: 34255
+    ctime1: 44621
+    ctime2: 50391
+    ctime3: 57783
+    ctime4: 65535
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_ColorSpace: 0
+    m_NumColorKeys: 5
+    m_NumAlphaKeys: 2
+  gradientB:
+    serializedVersion: 2
+    key0: {r: 1, g: 1, b: 1, a: 1}
+    key1: {r: 1, g: 1, b: 1, a: 1}
+    key2: {r: 0, g: 0, b: 0, a: 0}
+    key3: {r: 0, g: 0, b: 0, a: 0}
+    key4: {r: 0, g: 0, b: 0, a: 0}
+    key5: {r: 0, g: 0, b: 0, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
+    key7: {r: 0, g: 0, b: 0, a: 0}
+    ctime0: 0
+    ctime1: 65535
+    ctime2: 0
+    ctime3: 0
+    ctime4: 0
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_ColorSpace: -1
+    m_NumColorKeys: 2
+    m_NumAlphaKeys: 2
+  easeType: 0
+  sRGB: 1
+  alphaIsTransparency: 0
+  wrapMode: 1
+  filterMode: 1
+  alwaysUpdate: 1
+  _texture: {fileID: 7054639872418601915}
+  icon: {fileID: 1337405150985556076}
+  _children:
+  - {fileID: 7054639872418601915}
+  - {fileID: 1337405150985556076}
+--- !u!213 &1337405150985556076
+Sprite:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: SkyDome_Icon
+  m_Rect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 64
+    height: 16
+  m_Offset: {x: 0, y: 0}
+  m_Border: {x: 0, y: 0, z: 0, w: 0}
+  m_PixelsToUnits: 128
+  m_Pivot: {x: 0.5, y: 0.5}
+  m_Extrude: 0
+  m_IsPolygon: 0
+  m_AtlasName: 
+  m_PackingTag: 
+  m_RenderDataKey:
+    fac6a30aa9797194fabf0a812d12b709: 1337405150985556076
+  m_AtlasTags: []
+  m_SpriteAtlas: {fileID: 0}
+  m_RD:
+    serializedVersion: 3
+    texture: {fileID: 7054639872418601915}
+    alphaTexture: {fileID: 0}
+    secondaryTextures: []
+    m_SubMeshes:
+    - serializedVersion: 2
+      firstByte: 0
+      indexCount: 6
+      topology: 0
+      baseVertex: 0
+      firstVertex: 0
+      vertexCount: 4
+      localAABB:
+        m_Center: {x: 0, y: 0, z: 0}
+        m_Extent: {x: 0, y: 0, z: 0}
+    m_IndexBuffer: 000001000200020001000300
+    m_VertexData:
+      serializedVersion: 3
+      m_VertexCount: 4
+      m_Channels:
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 3
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 1
+        offset: 0
+        format: 0
+        dimension: 2
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      m_DataSize: 80
+      _typelessdata: 000080be0000803d000000000000803e0000803d00000000000080be000080bd000000000000803e000080bd000000000000000000000000000000000000000000000000000000000000000000000000
+    m_Bindpose: []
+    textureRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 64
+      height: 16
+    textureRectOffset: {x: 0, y: 0}
+    atlasRectOffset: {x: -1, y: -1}
+    settingsRaw: 64
+    uvTransform: {x: 128, y: 32, z: 128, w: 8}
+    downscaleMultiplier: 1
+  m_AtlasRD:
+    serializedVersion: 3
+    texture: {fileID: 7054639872418601915}
+    alphaTexture: {fileID: 0}
+    secondaryTextures: []
+    m_SubMeshes:
+    - serializedVersion: 2
+      firstByte: 0
+      indexCount: 6
+      topology: 0
+      baseVertex: 0
+      firstVertex: 0
+      vertexCount: 4
+      localAABB:
+        m_Center: {x: 0, y: 0, z: 0}
+        m_Extent: {x: 0, y: 0, z: 0}
+    m_IndexBuffer: 000001000200020001000300
+    m_VertexData:
+      serializedVersion: 3
+      m_VertexCount: 4
+      m_Channels:
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 3
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 1
+        offset: 0
+        format: 0
+        dimension: 2
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      - stream: 0
+        offset: 0
+        format: 0
+        dimension: 0
+      m_DataSize: 80
+      _typelessdata: 000080be0000803d000000000000803e0000803d00000000000080be000080bd000000000000803e000080bd000000000000000000000000000000000000000000000000000000000000000000000000
+    m_Bindpose: []
+    textureRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 64
+      height: 16
+    textureRectOffset: {x: 0, y: 0}
+    atlasRectOffset: {x: -1, y: -1}
+    settingsRaw: 64
+    uvTransform: {x: 128, y: 32, z: 128, w: 8}
+    downscaleMultiplier: 1
+  m_PhysicsShape: []
+  m_Bones: []
+  m_SpriteID: 
+--- !u!28 &7054639872418601915
+Texture2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: SkyDome
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_IsAlphaChannelOptional: 0
+  serializedVersion: 2
+  m_Width: 64
+  m_Height: 16
+  m_CompleteImageSize: 4096
+  m_MipsStripped: 0
+  m_TextureFormat: 4
+  m_MipCount: 1
+  m_IsReadable: 1
+  m_IsPreProcessed: 0
+  m_IgnoreMipmapLimit: 0
+  m_MipmapLimitGroupName: 
+  m_StreamingMipmaps: 0
+  m_StreamingMipmapsPriority: 0
+  m_VTOnly: 0
+  m_AlphaIsTransparency: 0
+  m_ImageCount: 1
+  m_TextureDimension: 2
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_LightmapFormat: 0
+  m_ColorSpace: 1
+  m_PlatformBlob: 
+  image data: 4096
+  _typelessdata: 000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000001ff02000cff030016ff040021ff06002cff070037ff090042ff0a004dff0b0057ff0d0062ff0e016eff0b0e84ff091a9aff0627b0ff0433c6ff0140dbff004fe7ff0060ebff0070eeff0081f2ff0092f6ff00a3f9ff00b4fdff07c1feff15cafcff24d3faff32dcf7ff41e5f5ff50edf3ff5ef6f1ff6dffeeff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000001ff02000cff030016ff040021ff06002cff070037ff090042ff0a004dff0b0057ff0d0062ff0e016eff0b0e84ff091a9aff0627b0ff0433c6ff0140dbff004fe7ff0060ebff0070eeff0081f2ff0092f6ff00a3f9ff00b4fdff07c1feff15cafcff24d3faff32dcf7ff41e5f5ff50edf3ff5ef6f1ff6dffeeff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000001ff02000cff030016ff040021ff06002cff070037ff090042ff0a004dff0b0057ff0d0062ff0e016eff0b0e84ff091a9aff0627b0ff0433c6ff0140dbff004fe7ff0060ebff0070eeff0081f2ff0092f6ff00a3f9ff00b4fdff07c1feff15cafcff24d3faff32dcf7ff41e5f5ff50edf3ff5ef6f1ff6dffeeff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000001ff02000cff030016ff040021ff06002cff070037ff090042ff0a004dff0b0057ff0d0062ff0e016eff0b0e84ff091a9aff0627b0ff0433c6ff0140dbff004fe7ff0060ebff0070eeff0081f2ff0092f6ff00a3f9ff00b4fdff07c1feff15cafcff24d3faff32dcf7ff41e5f5ff50edf3ff5ef6f1ff6dffeeff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000001ff02000cff030016ff040021ff06002cff070037ff090042ff0a004dff0b0057ff0d0062ff0e016eff0b0e84ff091a9aff0627b0ff0433c6ff0140dbff004fe7ff0060ebff0070eeff0081f2ff0092f6ff00a3f9ff00b4fdff07c1feff15cafcff24d3faff32dcf7ff41e5f5ff50edf3ff5ef6f1ff6dffeeff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000001ff02000cff030016ff040021ff06002cff070037ff090042ff0a004dff0b0057ff0d0062ff0e016eff0b0e84ff091a9aff0627b0ff0433c6ff0140dbff004fe7ff0060ebff0070eeff0081f2ff0092f6ff00a3f9ff00b4fdff07c1feff15cafcff24d3faff32dcf7ff41e5f5ff50edf3ff5ef6f1ff6dffeeff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000001ff02000cff030016ff040021ff06002cff070037ff090042ff0a004dff0b0057ff0d0062ff0e016eff0b0e84ff091a9aff0627b0ff0433c6ff0140dbff004fe7ff0060ebff0070eeff0081f2ff0092f6ff00a3f9ff00b4fdff07c1feff15cafcff24d3faff32dcf7ff41e5f5ff50edf3ff5ef6f1ff6dffeeff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000001ff02000cff030016ff040021ff06002cff070037ff090042ff0a004dff0b0057ff0d0062ff0e016eff0b0e84ff091a9aff0627b0ff0433c6ff0140dbff004fe7ff0060ebff0070eeff0081f2ff0092f6ff00a3f9ff00b4fdff07c1feff15cafcff24d3faff32dcf7ff41e5f5ff50edf3ff5ef6f1ff6dffeeff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000001ff02000cff030016ff040021ff06002cff070037ff090042ff0a004dff0b0057ff0d0062ff0e016eff0b0e84ff091a9aff0627b0ff0433c6ff0140dbff004fe7ff0060ebff0070eeff0081f2ff0092f6ff00a3f9ff00b4fdff07c1feff15cafcff24d3faff32dcf7ff41e5f5ff50edf3ff5ef6f1ff6dffeeff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000001ff02000cff030016ff040021ff06002cff070037ff090042ff0a004dff0b0057ff0d0062ff0e016eff0b0e84ff091a9aff0627b0ff0433c6ff0140dbff004fe7ff0060ebff0070eeff0081f2ff0092f6ff00a3f9ff00b4fdff07c1feff15cafcff24d3faff32dcf7ff41e5f5ff50edf3ff5ef6f1ff6dffeeff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000001ff02000cff030016ff040021ff06002cff070037ff090042ff0a004dff0b0057ff0d0062ff0e016eff0b0e84ff091a9aff0627b0ff0433c6ff0140dbff004fe7ff0060ebff0070eeff0081f2ff0092f6ff00a3f9ff00b4fdff07c1feff15cafcff24d3faff32dcf7ff41e5f5ff50edf3ff5ef6f1ff6dffeeff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000001ff02000cff030016ff040021ff06002cff070037ff090042ff0a004dff0b0057ff0d0062ff0e016eff0b0e84ff091a9aff0627b0ff0433c6ff0140dbff004fe7ff0060ebff0070eeff0081f2ff0092f6ff00a3f9ff00b4fdff07c1feff15cafcff24d3faff32dcf7ff41e5f5ff50edf3ff5ef6f1ff6dffeeff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000001ff02000cff030016ff040021ff06002cff070037ff090042ff0a004dff0b0057ff0d0062ff0e016eff0b0e84ff091a9aff0627b0ff0433c6ff0140dbff004fe7ff0060ebff0070eeff0081f2ff0092f6ff00a3f9ff00b4fdff07c1feff15cafcff24d3faff32dcf7ff41e5f5ff50edf3ff5ef6f1ff6dffeeff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000001ff02000cff030016ff040021ff06002cff070037ff090042ff0a004dff0b0057ff0d0062ff0e016eff0b0e84ff091a9aff0627b0ff0433c6ff0140dbff004fe7ff0060ebff0070eeff0081f2ff0092f6ff00a3f9ff00b4fdff07c1feff15cafcff24d3faff32dcf7ff41e5f5ff50edf3ff5ef6f1ff6dffeeff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000001ff02000cff030016ff040021ff06002cff070037ff090042ff0a004dff0b0057ff0d0062ff0e016eff0b0e84ff091a9aff0627b0ff0433c6ff0140dbff004fe7ff0060ebff0070eeff0081f2ff0092f6ff00a3f9ff00b4fdff07c1feff15cafcff24d3faff32dcf7ff41e5f5ff50edf3ff5ef6f1ff6dffeeff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000001ff02000cff030016ff040021ff06002cff070037ff090042ff0a004dff0b0057ff0d0062ff0e016eff0b0e84ff091a9aff0627b0ff0433c6ff0140dbff004fe7ff0060ebff0070eeff0081f2ff0092f6ff00a3f9ff00b4fdff07c1feff15cafcff24d3faff32dcf7ff41e5f5ff50edf3ff5ef6f1ff6dffeeff
+  m_StreamData:
+    serializedVersion: 2
+    offset: 0
+    size: 0
+    path: 
