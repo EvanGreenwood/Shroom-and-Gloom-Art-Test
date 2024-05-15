@@ -6,7 +6,7 @@ Sprite:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: GloomCrystals_Ramp_Icon
+  m_Name: Crystal_Ramp_Icon
   m_Rect:
     serializedVersion: 2
     x: 0
@@ -220,7 +220,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3c9244de6da778b44887f13caf0fa418, type: 3}
-  m_Name: GloomCrystals_Ramp
+  m_Name: Crystal_Ramp
   m_EditorClassIdentifier: 
   useFlags: 3
   gradientA:
@@ -300,7 +300,7 @@ Texture2D:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: GloomCrystals_Ramp
+  m_Name: Crystal_Ramp
   m_ImageContentsHash:
     serializedVersion: 2
     Hash: 00000000000000000000000000000000
