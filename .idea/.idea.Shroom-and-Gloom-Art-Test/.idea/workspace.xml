@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="825655da-4771-4664-b01a-9bffcaa881d5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Shroom-and-Gloom-Art-Test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Shroom-and-Gloom-Art-Test/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ArtTestWalkthrough.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ArtTestWalkthrough.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/Editor/SceneViewDebug.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/Editor/SceneViewDebug.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +89,7 @@
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="$PROJECT_DIR$/../_builds/00/SnG-ArtTest.exe" />
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../_builds/01\SnG-ArtTest.exe" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="D:\.work\.unity\shroom-and-gloom\_builds\00" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -122,10 +122,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="55219">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="55219" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -162,6 +162,7 @@
       <workItem from="1715720850500" duration="2258000" />
       <workItem from="1715733305467" duration="19000" />
       <workItem from="1715824794123" duration="4150000" />
+      <workItem from="1715875172115" duration="1691000" />
     </task>
     <servers />
   </component>
@@ -184,7 +185,7 @@
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/GameManager.cs</url>
           <line>16</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/GameManager.cs" initialLine="16" containingFunctionPresentation="Lambda expression inside Method 'Start'">
+          <properties documentPath="$PROJECT_DIR$/Assets/GameManager.cs" containingFunctionPresentation="Lambda expression inside Method 'Start'">
             <startOffsets>
               <option value="415" />
             </startOffsets>
@@ -197,7 +198,7 @@
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/GameManager.cs</url>
           <line>17</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/GameManager.cs" initialLine="17" containingFunctionPresentation="Lambda expression inside Method 'Start'">
+          <properties documentPath="$PROJECT_DIR$/Assets/GameManager.cs" containingFunctionPresentation="Lambda expression inside Method 'Start'">
             <startOffsets>
               <option value="489" />
             </startOffsets>

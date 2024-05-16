@@ -140,7 +140,7 @@ Material:
     - _ShiftSkyHorizontal: -0.55
     - _ShiftSkyVertical: 0.4
     - _ShiftVertical: -0.25
-    - _SkySize: 150
+    - _SkySize: 200
     - _SkyTop: 0.499
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
