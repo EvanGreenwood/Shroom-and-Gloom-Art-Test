@@ -37,7 +37,7 @@ public class TunnelGenerator : MonoBehaviour
         VisibleAndSave //Careful, you want to save generated elements in the scene?
     }
     
-    public bool UseSOData = false;
+    public bool UseSOData = true;
     [ShowIf("UseSOData")]
     public TunnelSettings GenerationSettings;
     
@@ -184,10 +184,12 @@ public class TunnelGenerator : MonoBehaviour
 
     // Tunnel Evaluators
     //----------------------------------------------------------------------------------------------------
-    public Vector3 GetClosestPoint(Vector3 point)
+    public Vector3 GetClosestPoint(Vector3 worldPoint)
     {
-        SplineUtility.GetNearestPoint(Spline.Spline, point, out float3 nearest, out float t);
-        return nearest;
+        Vector3 localPoint = transform.InverseTransformPoint(worldPoint);
+        SplineUtility.GetNearestPoint(Spline.Spline, localPoint, out float3 nearest, out float t);
+        worldPoint = transform.TransformPoint(nearest);
+        return worldPoint;
     }
 
     public float GetNormDistanceFromPoint(Vector3 worldPoint)

@@ -118,21 +118,34 @@ public partial class TunnelSettings
 {
 
 	public static TunnelSettings[] AllTunnelSettings { get { if (__allTunnelSettings == null) __allTunnelSettings = GetValues<TunnelSettings>(); return __allTunnelSettings; } }
-	public static TunnelSettings D1BuriedCity { get { if (__d1BuriedCity == null) __d1BuriedCity = GetValue<TunnelSettings>("D1 BuriedCity"); return __d1BuriedCity; } }
-	public static TunnelSettings D2ThornyTrees { get { if (__d2ThornyTrees == null) __d2ThornyTrees = GetValue<TunnelSettings>("D2 ThornyTrees"); return __d2ThornyTrees; } }
-	public static TunnelSettings D3DirtTunnels { get { if (__d3DirtTunnels == null) __d3DirtTunnels = GetValue<TunnelSettings>("D3 DirtTunnels"); return __d3DirtTunnels; } }
-	public static TunnelSettings D4Mines { get { if (__d4Mines == null) __d4Mines = GetValue<TunnelSettings>("D4 Mines"); return __d4Mines; } }
-	public static TunnelSettings D5ShroomyCaves { get { if (__d5ShroomyCaves == null) __d5ShroomyCaves = GetValue<TunnelSettings>("D5 ShroomyCaves"); return __d5ShroomyCaves; } }
-	public static TunnelSettings D6Shroomy { get { if (__d6Shroomy == null) __d6Shroomy = GetValue<TunnelSettings>("D6 Shroomy"); return __d6Shroomy; } }
-	public static TunnelSettings D7Caves { get { if (__d7Caves == null) __d7Caves = GetValue<TunnelSettings>("D7 Caves"); return __d7Caves; } }
+	public static TunnelSettings D1Ruins { get { if (__d1Ruins == null) __d1Ruins = GetValue<TunnelSettings>("D1 Ruins"); return __d1Ruins; } }
+	public static TunnelSettings D2Mines { get { if (__d2Mines == null) __d2Mines = GetValue<TunnelSettings>("D2 Mines"); return __d2Mines; } }
+	public static TunnelSettings D3Rock { get { if (__d3Rock == null) __d3Rock = GetValue<TunnelSettings>("D3 Rock"); return __d3Rock; } }
+	public static TunnelSettings D4Caves { get { if (__d4Caves == null) __d4Caves = GetValue<TunnelSettings>("D4 Caves"); return __d4Caves; } }
+	public static TunnelSettings D5AShroomy { get { if (__d5AShroomy == null) __d5AShroomy = GetValue<TunnelSettings>("D5A Shroomy"); return __d5AShroomy; } }
+	public static TunnelSettings D5BShroomy { get { if (__d5BShroomy == null) __d5BShroomy = GetValue<TunnelSettings>("D5B Shroomy"); return __d5BShroomy; } }
+	public static TunnelSettings D6Trippy { get { if (__d6Trippy == null) __d6Trippy = GetValue<TunnelSettings>("D6 Trippy"); return __d6Trippy; } }
+	public static TunnelSettings D7Gloom { get { if (__d7Gloom == null) __d7Gloom = GetValue<TunnelSettings>("D7 Gloom"); return __d7Gloom; } }
 	
 	protected static TunnelSettings[] __allTunnelSettings;
-	protected static TunnelSettings __d1BuriedCity;
-	protected static TunnelSettings __d2ThornyTrees;
-	protected static TunnelSettings __d3DirtTunnels;
-	protected static TunnelSettings __d4Mines;
-	protected static TunnelSettings __d5ShroomyCaves;
-	protected static TunnelSettings __d6Shroomy;
-	protected static TunnelSettings __d7Caves;
+	protected static TunnelSettings __d1Ruins;
+	protected static TunnelSettings __d2Mines;
+	protected static TunnelSettings __d3Rock;
+	protected static TunnelSettings __d4Caves;
+	protected static TunnelSettings __d5AShroomy;
+	protected static TunnelSettings __d5BShroomy;
+	protected static TunnelSettings __d6Trippy;
+	protected static TunnelSettings __d7Gloom;
+
+}
+
+[CreateAssetMenu(fileName = "Spline Volume", menuName = "Scriptable Enum/Spline Volume")]
+public partial class SplineVolume
+{
+
+	public static SplineVolume[] AllSplineVolumes { get { if (__allSplineVolumes == null) __allSplineVolumes = GetValues<SplineVolume>(); return __allSplineVolumes; } }
+	
+	protected static SplineVolume[] __allSplineVolumes;
+	
 
 }

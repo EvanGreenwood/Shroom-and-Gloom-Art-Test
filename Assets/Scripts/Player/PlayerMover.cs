@@ -19,19 +19,10 @@ public class PlayerMover : MonoBehaviour
 
     float _bobCounter = 0;
     float _currentSpeed = 5;
-
-    bool _isActivated;
+    
     bool _runInput;
     float _fwdInput;
-
-    // Activate
-    //----------------------------------------------------------------------------------------------------
-    public void Activate()
-    {
-        INPUT.SetCursorPos(SCREEN.center);
-        _isActivated = true;
-    }
-
+    
     // Input
     //----------------------------------------------------------------------------------------------------
     public void SetInput(float fwdInput, bool runInput)
@@ -49,15 +40,13 @@ public class PlayerMover : MonoBehaviour
     
     void Start()
     {
+        INPUT.SetCursorPos(SCREEN.center);
         _view.localPosition = new Vector3(0f, _headHeight, 0f);
         _currentSpeed = _speed;
     }
 
     void Update()
     {
-        if(!_isActivated)
-            return;
-
         float speed = _runInput ? _speed * _runMul : _speed;
         float dt = Time.deltaTime * (_runInput ? _speed * 0.6f : _speed);
         _currentSpeed = Mathf.MoveTowards(_currentSpeed, _speed, dt);

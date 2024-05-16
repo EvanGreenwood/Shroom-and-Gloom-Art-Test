@@ -3,12 +3,14 @@ using NaughtyAttributes;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 #if UNITY_EDITOR
 using Unity.EditorCoroutines.Editor;
 using UnityEditor;
 #endif
 using UnityEngine;
 
+[ExecuteAlways]
 public class WorldManagerService : MonoService
 {
     public bool SingleTunnelTestMode;
@@ -29,15 +31,7 @@ public class WorldManagerService : MonoService
         _tunnels ??= new List<TunnelGenerator>();
         _joins ??= new List<TunnelJoin>();
 
-        float startTime = Time.time;
-        
-        #if UNITY_EDITOR
-        if (!Application.isPlaying)
-        {
-            startTime = (float)EditorApplication.timeSinceStartup;
-        }
-        #endif
-        
+        float startTime = SafeTime.Time;
         Debug.Log($"<color=green><b>==== BEGINNING WORLD GENERATION FOR MAP: {MapSettings.name.ToUpperInvariant()} ====</b></color>");
         
         //Clear existing children
@@ -75,8 +69,8 @@ public class WorldManagerService : MonoService
                 yield return GeneratePath(MapSettings.Paths[0]);
                 yield return null;
             }
-            
-            Debug.Log($"<color=green><b>==== WORLD GENERATION COMPLETE ====</b></color>");
+            float genTime = SafeTime.Time - startTime;
+            Debug.Log($"<color=green><b>==== WORLD GENERATION COMPLETE IN {genTime:0.00}s====</b></color>");
             onComplete?.Invoke();
         }
     }
@@ -226,23 +220,29 @@ public class WorldManagerService : MonoService
     //----------------------------------------------------------------------------------------------------
     void Awake()
     {
-        if (SingleTunnelTestMode)
-        {
-            _tunnels = new List<TunnelGenerator>(GetComponentsInChildren<TunnelGenerator>());
-        }
+        _tunnels = new List<TunnelGenerator>(GetComponentsInChildren<TunnelGenerator>());
+        _joins = new List<TunnelJoin>(GetComponentsInChildren<TunnelJoin>());
     }
 
     // Find Tunnel
     //----------------------------------------------------------------------------------------------------
-    public bool TryGetTunnel(Vector3 pos, out TunnelGenerator tunnel)
+    public bool TryGetTunnel(Vector3 pos, out TunnelGenerator tunnel, params TunnelGenerator[] toExclude)
     {
         // Find closest tunnel
         float closestDistance = float.MaxValue;
         TunnelGenerator closestGenerator = null;
+
+        _tunnels ??= new List<TunnelGenerator>();
         foreach(TunnelGenerator generator in _tunnels)
         {
-            float distance = Vector3.Distance(generator.transform.position, pos);
+            Vector3 closest = generator.GetClosestPoint(pos);
+            float distance = Vector3.Distance(closest, pos);
 
+            //Debug.LogWarning($"{generator.name} {distance}");
+            if (toExclude.Contains(generator))
+            {
+                continue;
+            }
             if(distance < closestDistance)
             {
                 closestDistance = distance;

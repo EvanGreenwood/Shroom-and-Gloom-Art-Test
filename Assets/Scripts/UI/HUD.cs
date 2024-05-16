@@ -13,7 +13,7 @@ public class HUD : CanvasSingleton<HUD>
 
     string _activeSceneName;
 
-    private Service<SceneController> _sceneController;
+    private Service<SceneManager> _sceneController;
 
     // Init
     //----------------------------------------------------------------------------------------------------
@@ -24,7 +24,7 @@ public class HUD : CanvasSingleton<HUD>
     void Awake()
     {
         _letterBox.gameObject.SetActive(true);
-        _activeSceneName = SceneManager.GetActiveScene().name;
+        _activeSceneName = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
     }
     void Update()
     {

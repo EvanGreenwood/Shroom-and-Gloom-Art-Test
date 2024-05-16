@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b83d476c5904c8697ff73e5d8173433, type: 3}
+  m_Name: D5A ShoomyVolume
+  m_EditorClassIdentifier: 
+  _guid: a0a2c157c71f44fa191842cd667e765c
+  Settings:
+    FogColor: {r: 0, g: 0, b: 0, a: 1}
+    FogStart: 3
+    FogDistance: 30
+    PostProcessingProfile: {fileID: 11400000, guid: 50134b3c5464a4ef18159fe8958340f4, type: 2}
+    TransitionInTime: 2

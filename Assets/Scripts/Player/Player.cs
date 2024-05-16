@@ -1,47 +1,49 @@
 #region Usings
 using UnityEngine;
 using MathBad;
+using System.Collections.Generic;
 using UnityEngine.Rendering.PostProcessing;
 #endregion
 
 public class Player : MonoService
 {
     [SerializeField] PlayerMover _movement;
-    
-    TunnelGenerator _tunnel;
 
-    bool _hasInit, _isActivated;
+    private TunnelGenerator _tunnel => _tunnelStack.Count == 0 ? null : _tunnelStack[^1];
+    
     bool _cursorConfined;
     float _fwdInput;
     bool _runInput;
 
+    private List<TunnelGenerator> _tunnelStack = new List<TunnelGenerator>();
+
     public TunnelGenerator tunnel => _tunnel;
+
+    public bool CanMove
+    {
+        get;
+        set;
+    }
 
     private Service<WorldManagerService> _world;
 
-    public void Init(SceneData sceneData)
-    {
-        PlayerView.inst.Init(sceneData.postProcessProfile);
-        _hasInit = true;
-    }
-
-    public void Activate()
-    {
-        PlayerView.inst.Activate();
-        _movement.Activate();
-        _isActivated = true;
-    }
-
     void Start()
     {
-        _world.Value.TryGetTunnel(transform.position, out _tunnel);
-        _movement.SetTunnel(_tunnel);
+        TunnelGenerator current = _tunnel;
+        if (_world.Value.TryGetTunnel(transform.position, out current, _tunnelStack.ToArray()))
+        {
+            _tunnelStack.Add(current);
+            _movement.SetTunnel(_tunnel);
+        }
     }
 
     void Update()
     {
-        if(!_hasInit || !_isActivated) {return;}
-
+        if (!CanMove)
+        {
+            return;
+        }
+        
         ReadInput();
         CheckTunnel();
     }
@@ -67,9 +69,11 @@ public class Player : MonoService
         {
             if(_tunnel.GetNormDistanceFromPoint(transform.position) > 0.99f)
             {
-                if (_world.Value.TryGetTunnel(transform.position, out _tunnel))
+                TunnelGenerator current = _tunnel;
+                if (_world.Value.TryGetTunnel(transform.position, out current, _tunnelStack.ToArray()))
                 {
-                    _movement.SetTunnel(_tunnel);
+                    _tunnelStack.Add(current);
+                    _movement.SetTunnel(current);
                 }
             }
         }
@@ -89,12 +93,7 @@ public class Player : MonoService
 
     public void SwitchTunnel(TunnelGenerator newTunnel)
     {
-        _tunnel = newTunnel;
+        _tunnelStack.Add(newTunnel);
         _movement.SetTunnel(_tunnel);
-    }
-
-    public void SetScenePostProcessProfile(PostProcessProfile ppv)
-    {
-        PlayerView.inst.sceneVolume.profile = ppv;
     }
 }
