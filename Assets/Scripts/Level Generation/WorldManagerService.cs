@@ -9,6 +9,7 @@ using UnityEditor;
 #endif
 using UnityEngine;
 
+[ExecuteAlways]
 public class WorldManagerService : MonoService
 {
     public bool SingleTunnelTestMode;
@@ -239,9 +240,12 @@ public class WorldManagerService : MonoService
         // Find closest tunnel
         float closestDistance = float.MaxValue;
         TunnelGenerator closestGenerator = null;
+
+        _tunnels ??= new List<TunnelGenerator>();
         foreach(TunnelGenerator generator in _tunnels)
         {
-            float distance = Vector3.Distance(generator.transform.position, pos);
+            Vector3 closest = generator.GetClosestPoint(pos);
+            float distance = Vector3.Distance(generator.transform.position, closest);
 
             if(distance < closestDistance)
             {

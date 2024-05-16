@@ -1,5 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
+#if UNITY_EDITOR
+    using UnityEditor;
+#endif
+
 using UnityEngine;
 
 public static class SafeTime
@@ -8,7 +10,14 @@ public static class SafeTime
     {
         get
         {
-            return 0;
+            if (Application.isPlaying)
+            {
+                return UnityEngine.Time.deltaTime;
+            }
+            else
+            {
+                return 1/30f; //Estimate for editor
+            }
         }
     }
     
@@ -16,7 +25,17 @@ public static class SafeTime
     {
         get
         {
-            return 0;
+            if (Application.isPlaying)
+            {
+                return UnityEngine.Time.time;
+            }
+            else
+            {
+                #if UNITY_EDITOR
+                return (float)EditorApplication.timeSinceStartup;
+                #endif
+                return 0;
+            }
         }
     }
 }

@@ -133,3 +133,4 @@ MonoBehaviour:
   FlatCeilingPrefab: {fileID: 0}
   FlatCeilingSpacing: 1
   FlatCeilingOffset: 1
+  SplineVolume: {fileID: 11400000, guid: 1398c26e9858443658509d481116778e, type: 2}

@@ -46,6 +46,8 @@ public partial class TunnelSettings : ScriptableEnum
     [ShowIf("UsingCeilingFlats")] public float FlatCeilingSpacing = 1;
     [ShowIf("UsingCeilingFlats")] public float FlatCeilingOffset = 1;
 
+    public SplineVolume SplineVolume;
+    
     public void OnValidate()
     {
         ParticleSpawnDistance = Mathf.Max(0.1f, ParticleSpawnDistance);
