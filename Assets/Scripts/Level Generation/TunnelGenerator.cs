@@ -37,7 +37,7 @@ public class TunnelGenerator : MonoBehaviour
         VisibleAndSave //Careful, you want to save generated elements in the scene?
     }
     
-    public bool UseSOData = false;
+    public bool UseSOData = true;
     [ShowIf("UseSOData")]
     public TunnelSettings GenerationSettings;
     

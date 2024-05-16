@@ -239,6 +239,7 @@ GameObject:
   - component: {fileID: 625972566}
   - component: {fileID: 625972567}
   - component: {fileID: 625972568}
+  - component: {fileID: 625972569}
   m_Layer: 0
   m_Name: WorldManager
   m_TagString: Untagged
@@ -295,6 +296,18 @@ MonoBehaviour:
   _fogStart: 15
   _fogDistance: 50
   _shadowsColor: {r: 0.4528302, g: 0.4528302, b: 0.4528302, a: 1}
+--- !u!114 &625972569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 625972565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c9f2c6c69e874f948d6e8c4d99dad87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1236866500
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -303,6 +316,34 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1881532988}
     m_Modifications:
+    - target: {fileID: 2374260406459338245, guid: 81dfcbda98ab2ab4e992cdfc33593879, type: 3}
+      propertyPath: title
+      value: Where is this?
+      objectReference: {fileID: 0}
+    - target: {fileID: 2374260406459338245, guid: 81dfcbda98ab2ab4e992cdfc33593879, type: 3}
+      propertyPath: sceneIntro
+      value: 
+      objectReference: {fileID: 11400000, guid: df0c429427445c6409f88af14a31d75e, type: 2}
+    - target: {fileID: 2374260406459338245, guid: 81dfcbda98ab2ab4e992cdfc33593879, type: 3}
+      propertyPath: sceneMusic
+      value: 
+      objectReference: {fileID: 8300000, guid: 63f9e86f3c72824478f2552efca5c68b, type: 3}
+    - target: {fileID: 2374260406459338245, guid: 81dfcbda98ab2ab4e992cdfc33593879, type: 3}
+      propertyPath: titleColor.b
+      value: 0.20184366
+      objectReference: {fileID: 0}
+    - target: {fileID: 2374260406459338245, guid: 81dfcbda98ab2ab4e992cdfc33593879, type: 3}
+      propertyPath: titleColor.g
+      value: 0.14173195
+      objectReference: {fileID: 0}
+    - target: {fileID: 2374260406459338245, guid: 81dfcbda98ab2ab4e992cdfc33593879, type: 3}
+      propertyPath: titleColor.r
+      value: 0.46226418
+      objectReference: {fileID: 0}
+    - target: {fileID: 2374260406459338245, guid: 81dfcbda98ab2ab4e992cdfc33593879, type: 3}
+      propertyPath: postProcessProfile
+      value: 
+      objectReference: {fileID: 11400000, guid: 2eba52f5ca670c046b7dcfba8d1e1991, type: 2}
     - target: {fileID: 2651333542126033498, guid: 81dfcbda98ab2ab4e992cdfc33593879, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -353,9 +394,6 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 8626711496347271734, guid: 81dfcbda98ab2ab4e992cdfc33593879, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1236866504}
-    - targetCorrespondingSourceObject: {fileID: 8626711496347271734, guid: 81dfcbda98ab2ab4e992cdfc33593879, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1236866503}
   m_SourcePrefab: {fileID: 100100000, guid: 81dfcbda98ab2ab4e992cdfc33593879, type: 3}
 --- !u!1 &1236866502 stripped
@@ -375,24 +413,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 096a733823e81485784ebd1193459c2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1236866504
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1236866502}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 767c36581d1a6d641895bcb56d55a238, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  title: Where is this?
-  description: 
-  titleColor: {r: 0.46226418, g: 0.14173195, b: 0.20184366, a: 1}
-  sceneIntro: {fileID: 11400000, guid: df0c429427445c6409f88af14a31d75e, type: 2}
-  sceneMusic: {fileID: 8300000, guid: 63f9e86f3c72824478f2552efca5c68b, type: 3}
-  postProcessProfile: {fileID: 11400000, guid: 2eba52f5ca670c046b7dcfba8d1e1991, type: 2}
 --- !u!4 &1236866506 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2651333542126033498, guid: 81dfcbda98ab2ab4e992cdfc33593879, type: 3}

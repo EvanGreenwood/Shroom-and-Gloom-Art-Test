@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics.Eventing.Reader;
+using System.Reflection;
 using UnityEditor;
 using UnityEngine;
 using Object = UnityEngine.Object;
@@ -8,8 +9,8 @@ using Object = UnityEngine.Object;
 
 namespace Framework
 {
-    [CustomPropertyDrawer(typeof(ScriptableEnum), true)]
-    [CanEditMultipleObjects]
+    //[CustomPropertyDrawer(typeof(ScriptableEnum), true)]
+    //[CanEditMultipleObjects]
     public class ScriptableEnumDrawer : PropertyDrawer
     {
         const float PICKER_WIDTH = 36f;
@@ -26,10 +27,10 @@ namespace Framework
                 type = fieldInfo.FieldType.GetGenericArguments()[0];
             }
           
-            EditorGUI.BeginProperty(position, label, property);
+            EditorGUI.BeginProperty(position, GUIContent.none, property);
 
 
-            DrawPopup(position.WithWidth(position.width - PICKER_WIDTH), label, type, (ScriptableEnum)property.objectReferenceValue, selectedValue =>
+            DrawPopup(position.WithWidth(position.width - PICKER_WIDTH), GUIContent.none, type, (ScriptableEnum)property.objectReferenceValue, selectedValue =>
               {
                   property.objectReferenceValue = selectedValue;
                   property.serializedObject.ApplyModifiedProperties();
