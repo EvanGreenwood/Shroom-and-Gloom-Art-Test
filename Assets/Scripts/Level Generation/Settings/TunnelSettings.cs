@@ -24,26 +24,57 @@ public partial class TunnelSettings : ScriptableEnum
     [ShowIf("UsingParticles")] public float ParticleSpawnDistance = 1f;
 
     [Header("Walls")]
-    [SerializeField] TunnelWallData[] WallElements;
+    public TunnelWallData[] WallElements;
     
     public SpriteRenderer FlatWallPrefab;
     [ShowIf("UsingWallFlats")] public float FlatWallSpacing = 1;
     [ShowIf("UsingWallFlats")] public float FlatWallOffset = 1;
 
     [Header("Surrounds")]
-    [SerializeField] TunnelSurroundData[] SurroundElements;
+    public TunnelSurroundData[] SurroundElements;
 
     [Header("Floor")]
-    [SerializeField] TunnelFloorData[] FloorElements;
+    public TunnelFloorData[] FloorElements;
     public SpriteRenderer FlatFloorPrefab;
     [ShowIf("UsingFloorFlats")] public float FlatFloorSpacing = 1f;
     [ShowIf("UsingFloorFlats")] public float FlatFloorOffset = -1;
 
     [Header("Ceiling")]
-    [SerializeField] TunnelCeilingData[] CeilingElements;
+    public TunnelCeilingData[] CeilingElements;
     public SpriteRenderer FlatCeilingPrefab;
     [ShowIf("UsingCeilingFlats")] public float FlatCeilingSpacing = 1;
     [ShowIf("UsingCeilingFlats")] public float FlatCeilingOffset = 1;
+
+    public void OnValidate()
+    {
+        ParticleSpawnDistance = Mathf.Max(0.1f, ParticleSpawnDistance);
+        BaseTunnelWidth = Mathf.Max(0.1f, BaseTunnelWidth);
+        LumpyWidth = Mathf.Max(0.1f, LumpyWidth);
+        ClearingWidth = Mathf.Max(0.1f, ClearingWidth);
+
+        foreach(var wallData in WallElements)
+        {
+            wallData.Spacing = Mathf.Max(0.1f, wallData.Spacing);
+        }
+        FlatWallSpacing = Mathf.Max(0.1f, FlatWallSpacing);
+
+        foreach(var surroundData in SurroundElements)
+        {
+            surroundData.Spacing = Mathf.Max(0.1f, surroundData.Spacing);
+        }
+
+        foreach(var floorData in FloorElements)
+        {
+            floorData.Spacing = Mathf.Max(0.1f, floorData.Spacing);
+        }
+        FlatFloorSpacing = Mathf.Max(0.1f, FlatFloorSpacing);
+
+        foreach(var ceilingData in CeilingElements)
+        {
+            ceilingData.Spacing = Mathf.Max(0.1f, ceilingData.Spacing);
+        }
+        FlatCeilingSpacing = Mathf.Max(0.1f, FlatCeilingSpacing);
+    }
     
     public void CopyValues(TunnelGenerator t)
     {
@@ -87,7 +118,8 @@ public partial class TunnelSettings : ScriptableEnum
         Debug.Log($"<color=green><b> Copied embedded settings into {name}. Now set UseSOData to true on {t.gameObject.name}</b></color>");
         
         #if UNITY_EDITOR
-        AssetDatabase.SaveAssets();
+            AssetDatabase.SaveAssetIfDirty(this);
+            AssetDatabase.SaveAssets();
         #endif
     }
     

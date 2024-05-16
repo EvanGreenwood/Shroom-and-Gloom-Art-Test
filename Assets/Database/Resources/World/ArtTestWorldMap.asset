@@ -12,3 +12,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd5b29bea78c14160af88fcb183e9da1, type: 3}
   m_Name: ArtTestWorldMap
   m_EditorClassIdentifier: 
+  Paths:
+  - Name: Start
+    ConnectingPaths: 6
+    Tunnels:
+    - {fileID: 11400000, guid: 9278d73a8c93c4d8da665d5d471ec094, type: 2}
+    - {fileID: 11400000, guid: ccafa92de43e94640a546ca9be5a8202, type: 2}
+    - {fileID: 11400000, guid: 7f9d805cfee874ffaaec5f739f82f890, type: 2}
+    - {fileID: 11400000, guid: 5983a5035799743de9f7fa1a1fe67b70, type: 2}
+  - Name: Path A
+    ConnectingPaths: 8
+    Tunnels:
+    - {fileID: 11400000, guid: 08d7e8c56f511461f8bb8e69c4ed5c67, type: 2}
+  - Name: Path B
+    ConnectingPaths: 8
+    Tunnels:
+    - {fileID: 11400000, guid: 696d1d69f71c24e0ca8eea9eda6dee88, type: 2}
+  - Name: End
+    ConnectingPaths: 0
+    Tunnels:
+    - {fileID: 11400000, guid: f4f811ccaebf44fb09a180abeaaa97ff, type: 2}
+    - {fileID: 11400000, guid: d35d03e40ab46408088b2de71ca2a3f1, type: 2}
+  GraphPreview:
+    TexDirty: 1
+    TempGraphTexturePath: 
+    GraphTex: {fileID: 0}
+  PriorNames:
+  - Start
+  - PathA
+  - PathB
+  - End
