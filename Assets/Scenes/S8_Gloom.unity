@@ -2061,7 +2061,7 @@ MonoBehaviour:
   Old_FlatCeilingPrefab: {fileID: 0}
   Old_FlatCeilingSpacing: 1
   Old_FlatCeilingOffset: 1
-  SOToCopyInto: {fileID: 0}
+  SOToCopyInto: {fileID: 11400000, guid: d35d03e40ab46408088b2de71ca2a3f1, type: 2}
   _elementParents:
   - {fileID: 0}
   - {fileID: 0}

@@ -10,6 +10,9 @@ public class SpriteBillboard : MonoBehaviour
     [SerializeField] bool _vertical = true;
     SpriteRenderer _sr;
     float _startAlpha;
+    
+    private Vector3 _cameraPos => Camera.main?Camera.main.transform.position:Vector3.zero; 
+    
     void Awake()
     {
         _sr = GetComponent<SpriteRenderer>();
@@ -17,7 +20,7 @@ public class SpriteBillboard : MonoBehaviour
     }
     void Update()
     {
-        Vector3 dir = (SceneUtils.MainCamera.transform.position - transform.position).normalized;
+        Vector3 dir = (_cameraPos - transform.position).normalized;
         if(_vertical) dir = dir.WithY(0f).normalized;
         
         transform.rotation = Quaternion.LookRotation(-dir, Vector3.up);
@@ -25,7 +28,7 @@ public class SpriteBillboard : MonoBehaviour
         if(!_cameraFade)
             return;
 
-        float dst = Vector3.Distance(transform.position, SceneUtils.MainCamera.transform.position);
+        float dst = Vector3.Distance(transform.position, _cameraPos);
         if(dst < 4f)
         {
             _sr.color = _sr.color.WithA(Mathf.Lerp(0f, _startAlpha, Mathf.InverseLerp(0f, 4f, dst)));

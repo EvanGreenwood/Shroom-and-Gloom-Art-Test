@@ -10,7 +10,7 @@ public class PropCoward : MonoBehaviour
     [SerializeField] private float _triggerThreshold = 0.9f;
     [SerializeField] private float _blacknessThreshold = 0.96f;
     private bool _leftWall = true;
-    private Transform _cameraTransform;
+    private Transform _cameraTransform => Camera.main?Camera.main.transform:null;
     private bool _retreating = false;
     private Vector3 _startPosition = Vector3.zero;
     private float _retreatTime = 0;
@@ -19,7 +19,6 @@ public class PropCoward : MonoBehaviour
     void Start()
     {
         _startPosition = transform.position;
-        _cameraTransform = Camera.main.transform;
         _spriteRenderer = GetComponent<SpriteRenderer>();
         if  ( _spriteRenderer != null ) _originalColor = _spriteRenderer.color;
     }
@@ -31,7 +30,7 @@ public class PropCoward : MonoBehaviour
     }
     void Update()
     {
-        if (_spriteRenderer != null && _blacknessThreshold < 1)
+        if (_cameraTransform != null && _spriteRenderer != null && _blacknessThreshold < 1)
         {
             float dot =  Vector3.Dot((_cameraTransform.position - transform.position).WithY(0).normalized, transform.right.WithY(0).normalized * (_leftWall? 1 : -1));
             if (dot > _blacknessThreshold)
@@ -53,7 +52,7 @@ public class PropCoward : MonoBehaviour
                 transform.position = transform.position.WithY(Mathf.Lerp(transform.position.y, _startPosition.y + Mathf.Sin(Time.time * 40) * 0.06f + +Mathf.Sin(_retreatTime * 6) * 0.06f, Time.deltaTime * 35));
             }
         }
-        else
+        else if(_cameraTransform != null)
         {
             if (_leftWall)
             {

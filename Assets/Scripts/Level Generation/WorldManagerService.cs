@@ -5,6 +5,7 @@ using System.Collections;
 using System.Collections.Generic;
 #if UNITY_EDITOR
 using Unity.EditorCoroutines.Editor;
+using UnityEditor;
 #endif
 using UnityEngine;
 
@@ -17,8 +18,7 @@ public class WorldManagerService : MonoService
     private List<TunnelGenerator> _tunnels;
     private List<TunnelJoin> _joins;
 
-    [Button("Generate")][UsedImplicitly]
-    void Generate()
+    public void Generate(Action onComplete)
     {
         if (SingleTunnelTestMode)
         {
@@ -29,6 +29,15 @@ public class WorldManagerService : MonoService
         _tunnels ??= new List<TunnelGenerator>();
         _joins ??= new List<TunnelJoin>();
 
+        float startTime = Time.time;
+        
+        #if UNITY_EDITOR
+        if (!Application.isPlaying)
+        {
+            startTime = (float)EditorApplication.timeSinceStartup;
+        }
+        #endif
+        
         Debug.Log($"<color=green><b>==== BEGINNING WORLD GENERATION FOR MAP: {MapSettings.name.ToUpperInvariant()} ====</b></color>");
         
         //Clear existing children
@@ -54,9 +63,9 @@ public class WorldManagerService : MonoService
         }
         else
         {
-            #if UNITY_EDITOR
+#if UNITY_EDITOR
             EditorCoroutineUtility.StartCoroutine(BeginGeneration(), this);
-            #endif
+#endif
         }
         
         IEnumerator BeginGeneration()
@@ -66,7 +75,19 @@ public class WorldManagerService : MonoService
                 yield return GeneratePath(MapSettings.Paths[0]);
                 yield return null;
             }
+            
+            Debug.Log($"<color=green><b>==== WORLD GENERATION COMPLETE ====</b></color>");
+            onComplete?.Invoke();
         }
+    }
+
+    [Button("Generate")][UsedImplicitly]
+    private void Generate()
+    {
+        Generate(() =>
+        {
+            //Nothing its a test
+        });
     }
 
     IEnumerator GeneratePath(WorldMapSettings.LevelPath path, TunnelGenerator inTunnel = null, TunnelJoin inJoin = null, WorldMapSettings.LevelPath inPath = null, int branchIndex = 1, int totalBranches = 1)
@@ -117,7 +138,7 @@ public class WorldManagerService : MonoService
                     lastJoinOutPaths = inPath.ConnectingPathCount;
                 }
                 
-                Debug.Log($"{tunnelInstance.gameObject.name} Setting out path count for join:" + lastJoinOutPaths, tunnelInstance);
+                //Debug.Log($"{tunnelInstance.gameObject.name} Setting out path count for join:" + lastJoinOutPaths, tunnelInstance);
                 lastJoin.AddOutTunnel(lastJoinOutPaths,
                     tunnelInstance,
                     out Vector3 tunnelPosition,

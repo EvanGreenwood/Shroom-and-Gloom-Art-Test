@@ -5522,9 +5522,9 @@ MonoBehaviour:
   _loopDuration:
     _min: 1
     _max: 2
-  _intensityRange:
-    _min: 0.25
-    _max: 2
+  _intensityOffsetRange:
+    _min: 0
+    _max: 1
   _animateColor: 0
   _colorPool:
     serializedVersion: 2
@@ -5954,6 +5954,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SingleTunnelTestMode: 1
   MapSettings: {fileID: 0}
+  TunnelPrefab: {fileID: 0}
+  TunnelJoinPrefab: {fileID: 0}
   _areYouTakingCareOfYourself: 0
   _greatJobYouGotThis: 0
 --- !u!1001 &590746459
@@ -6883,7 +6885,7 @@ MonoBehaviour:
   UseSOData: 0
   GenerationSettings: {fileID: 0}
   EditMode: 0
-  _colorGradient:
+  Old_ColorGradient:
     serializedVersion: 2
     key0: {r: 0.6981132, g: 0.535298, b: 0.50448555, a: 1}
     key1: {r: 0.59716547, g: 0.7132075, b: 0.44541824, a: 1}
@@ -6913,81 +6915,82 @@ MonoBehaviour:
     m_ColorSpace: -1
     m_NumColorKeys: 8
     m_NumAlphaKeys: 2
-  _particles: {fileID: 2402285776899386762, guid: 8e61f67cd760b423db14eb998271668d, type: 3}
-  _particleSpawnDistance: 1
-  _baseTunnelWidth: 1.25
-  _lumpyWidth: 0.5
-  _clearingWidth: 2.7
-  _clearingDepth: 3
-  wallElements: []
-  flatWallPrefab: {fileID: 0}
-  flatWallSpacing: 1
-  flatWallOffset: 8
-  surroundElements:
-  - name: Lumps
-    disabled: 0
-    surroundPrefabs:
+  Old_Particles: {fileID: 2402285776899386762, guid: 8e61f67cd760b423db14eb998271668d, type: 3}
+  Old_ParticleSpawnDistance: 1
+  Old_BaseTunnelWidth: 1.25
+  Old_LumpyWidth: 0.5
+  Old_ClearingWidth: 2.7
+  Old_ClearingDepth: 3
+  Old_WallElements: []
+  Old_FlatWallPrefab: {fileID: 0}
+  Old_FlatWallSpacing: 1
+  Old_FlatWallOffset: 8
+  Old_SurroundElements:
+  - Name: Lumps
+    Disabled: 0
+    SurroundPrefabs:
     - {fileID: 717079983591251126, guid: b122cb429a7bb40cb931c9f0bddee1aa, type: 3}
     - {fileID: 717079983591251126, guid: 039de9e0764d14bb4812bff4c58cd8ec, type: 3}
     - {fileID: 717079983591251126, guid: 3604b86102e1a4ab786f280d835dfc71, type: 3}
     - {fileID: 717079983591251126, guid: dde57e21e6c354eec8aacabab5da9407, type: 3}
     - {fileID: 717079983591251126, guid: 8bf6d4da7dbaf468fa9ccdb283aa9e40, type: 3}
     - {fileID: 717079983591251126, guid: ae6fca2e20524476e8af244b76c1e882, type: 3}
-    zOffset: 0
-    spacing: 0.5
-    radiusOffset: 2
-    centerHeight: 1.7
-    pattern: 1
-    angleRange:
+    ZOffset: 0
+    Spacing: 0.5
+    RadiusOffset: 2
+    CenterHeight: 1.7
+    Pattern: 1
+    AngleRange:
       _min: 26
       _max: 334
-    angleIncrement: 45
-    randomRotation: 7
-    randomFlipY: 1
-    randomFlipX: 0
-  - name: Fronds
-    disabled: 0
-    surroundPrefabs:
+    AngleIncrement: 45
+    RandomRotation: 7
+    RandomFlipY: 1
+    RandomFlipX: 0
+  - Name: Fronds
+    Disabled: 0
+    SurroundPrefabs:
     - {fileID: 717079983591251126, guid: eabd18e107e8c4a9593b4acb9bed0c61, type: 3}
     - {fileID: 717079983591251126, guid: f473276211eaa4a0d934ad01a9362aac, type: 3}
     - {fileID: 717079983591251126, guid: a4c0f475ee3734eeeb0a4f7ea144db60, type: 3}
     - {fileID: 717079983591251126, guid: 6f7001e6b0753493d9e8ef6911710f29, type: 3}
     - {fileID: 717079983591251126, guid: 557273227691a4aa2b7d7af7282daaa0, type: 3}
-    zOffset: 0.3
-    spacing: 0.3
-    radiusOffset: 2.5
-    centerHeight: 1.7
-    pattern: 2
-    angleRange:
+    ZOffset: 0.3
+    Spacing: 0.3
+    RadiusOffset: 2.5
+    CenterHeight: 1.7
+    Pattern: 2
+    AngleRange:
       _min: 35
       _max: 325
-    angleIncrement: 22.5
-    randomRotation: 22.5
-    randomFlipY: 1
-    randomFlipX: 0
-  floorElements:
-  - name: Floor
-    disabled: 0
-    floorPrefabs:
+    AngleIncrement: 22.5
+    RandomRotation: 22.5
+    RandomFlipY: 1
+    RandomFlipX: 0
+  Old_FloorElements:
+  - Name: Floor
+    Disabled: 0
+    FloorPrefabs:
     - {fileID: 717079983591251126, guid: d30a5199178c74edea9e16ed711674da, type: 3}
-    zOffset: 0.08
-    spacing: 0.5
-    randomXPosition: 0.5
-    minMaxAngle:
+    ZOffset: 0.08
+    Spacing: 0.5
+    RandomXPosition: 0.5
+    MinMaxAngle:
       _min: -1
       _max: 1
-    xRotation: 0
-    minMaxPosition:
+    XRotation: 0
+    MinMaxPosition:
       _min: -0.05
       _max: 0.05
-    randomFlipX: 1
-  flatFloorPrefab: {fileID: 0}
-  flatFloorSpacing: 1
-  flatFloorOffset: -2
-  ceilingElements: []
-  flatCeilingPrefab: {fileID: 0}
-  flatCeilingSpacing: 1
-  flatCeilingOffset: 5
+    RandomFlipX: 1
+  Old_FlatFloorPrefab: {fileID: 0}
+  Old_FlatFloorSpacing: 1
+  Old_FlatFloorOffset: -2
+  Old_CeilingElements: []
+  Old_FlatCeilingPrefab: {fileID: 0}
+  Old_FlatCeilingSpacing: 1
+  Old_FlatCeilingOffset: 5
+  SOToCopyInto: {fileID: 0}
   _elementParents:
   - {fileID: 0}
   - {fileID: 0}

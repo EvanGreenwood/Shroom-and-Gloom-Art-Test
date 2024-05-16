@@ -1,5 +1,6 @@
 #if UNITY_EDITOR
 using UnityEditor;
+using UnityEngine.Assertions;
 #endif
 
 using Framework;
@@ -118,8 +119,10 @@ public partial class TunnelSettings : ScriptableEnum
         Debug.Log($"<color=green><b> Copied embedded settings into {name}. Now set UseSOData to true on {t.gameObject.name}</b></color>");
         
         #if UNITY_EDITOR
+            EditorUtility.SetDirty(this);
             AssetDatabase.SaveAssetIfDirty(this);
             AssetDatabase.SaveAssets();
+            AssetDatabase.Refresh();
         #endif
     }
     

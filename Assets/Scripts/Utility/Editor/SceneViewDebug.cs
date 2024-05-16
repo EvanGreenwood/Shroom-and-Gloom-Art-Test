@@ -16,7 +16,7 @@ public class SceneViewDebug
         SceneView.duringSceneGui -= OnSceneGUI;
         SceneView.duringSceneGui += OnSceneGUI;
     }
-
+    
     static void OnSceneGUI(SceneView sceneView)
     {
         if(Application.isPlaying)
@@ -40,7 +40,15 @@ public class SceneViewDebug
         if(GUI.Button(rect.MoveLeft(rect.width + padding.x), "Update PPV"))
         {
             SceneData sceneData = Object.FindObjectOfType<SceneData>();
-            Player.inst.SetScenePostProcessProfile(sceneData.postProcessProfile);
+            if(ServiceLocator.Has<Player>())
+            {
+                ServiceLocator.Get<Player>().SetScenePostProcessProfile(sceneData.postProcessProfile);
+            }
+            else
+            {
+                Debug.LogWarning("[SceneViewDebug] Player not ready.");
+            }
+          
         }
 
         Handles.EndGUI();

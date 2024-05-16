@@ -4,7 +4,7 @@ using MathBad;
 using UnityEngine.Rendering.PostProcessing;
 #endregion
 
-public class Player : MonoSingleton<Player>
+public class Player : MonoService
 {
     [SerializeField] PlayerMover _movement;
     

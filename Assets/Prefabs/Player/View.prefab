@@ -264,8 +264,8 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 2
-  m_Range: 10
+  m_Intensity: 1
+  m_Range: 8
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -867,7 +867,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7214319385912494085, guid: 9f1c6a3672c46cf4289997900a44f3bf, type: 3}
       propertyPath: m_Positions.Array.data[1].x
-      value: 0.000000014901161
+      value: 0.000000007450581
       objectReference: {fileID: 0}
     - target: {fileID: 7214319385912494085, guid: 9f1c6a3672c46cf4289997900a44f3bf, type: 3}
       propertyPath: m_Positions.Array.data[1].y
@@ -875,15 +875,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7214319385912494085, guid: 9f1c6a3672c46cf4289997900a44f3bf, type: 3}
       propertyPath: m_Positions.Array.data[1].z
-      value: 0.1451209
+      value: 0.14512087
       objectReference: {fileID: 0}
     - target: {fileID: 8124811048679472621, guid: 9f1c6a3672c46cf4289997900a44f3bf, type: 3}
       propertyPath: m_Positions.Array.data[1].y
-      value: -0.14138575
+      value: -0.14138573
       objectReference: {fileID: 0}
     - target: {fileID: 8124811048679472621, guid: 9f1c6a3672c46cf4289997900a44f3bf, type: 3}
       propertyPath: m_Positions.Array.data[1].z
-      value: 0.10079202
+      value: 0.10079196
       objectReference: {fileID: 0}
     - target: {fileID: 8124811048679472621, guid: 9f1c6a3672c46cf4289997900a44f3bf, type: 3}
       propertyPath: m_Positions.Array.data[2].y

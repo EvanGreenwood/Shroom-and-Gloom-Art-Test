@@ -23,7 +23,7 @@ namespace Framework
                 {
                     _mainCamera = FindObjectOfType<Camera>(false);
                 }
-
+                
                 return _mainCamera;
             }
         }

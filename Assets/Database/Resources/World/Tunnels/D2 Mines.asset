@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50d28d391025841c192a919a7297e73e, type: 3}
   m_Name: D2 Mines
   m_EditorClassIdentifier: 
-  _guid: 696d1d69f71c24e0ca8eea9eda6dee88
+  _guid: ccafa92de43e94640a546ca9be5a8202
   ColorGradient:
     serializedVersion: 2
     key0: {r: 1, g: 1, b: 1, a: 1}
@@ -43,22 +43,109 @@ MonoBehaviour:
     m_ColorSpace: -1
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
-  BaseTunnelWidth: 1
+  BaseTunnelWidth: 5
   LumpyWidth: 0.5
   ClearingWidth: 1
-  ClearingDepth: 2.33
-  Particles: {fileID: 0}
-  ParticleSpawnDistance: 1
-  WallElements: []
-  FlatWallPrefab: {fileID: 0}
-  FlatWallSpacing: 1
-  FlatWallOffset: 1
+  ClearingDepth: 2
+  Particles: {fileID: 2402285776899386762, guid: 8e61f67cd760b423db14eb998271668d, type: 3}
+  ParticleSpawnDistance: 4
+  WallElements:
+  - Name: Wall
+    Disabled: 0
+    WallPrefabs:
+    - {fileID: 1508189691331659514, guid: 58503cf409f035144b23039e7efe5466, type: 3}
+    ZOffset: 0
+    Spacing: 2
+    Width: 0.5
+    HeightOffset:
+      _min: 4
+      _max: 4
+    VerticalLoopLength: 5
+    VerticalLoopIncrement: 2
+    MinMaxAngle:
+      _min: 0
+      _max: 0
+    MinMaxPosition:
+      _min: -1
+      _max: 0.2
+    RandomRotation: 5
+    RandomFlipY: 1
+  - Name: Lights
+    Disabled: 0
+    WallPrefabs:
+    - {fileID: -7297887267121322941, guid: 660d0c2cbb403b444a71f20620e0cc43, type: 3}
+    ZOffset: 1
+    Spacing: 8
+    Width: 1.5
+    HeightOffset:
+      _min: -0.5
+      _max: -0.5
+    VerticalLoopLength: 5
+    VerticalLoopIncrement: 3
+    MinMaxAngle:
+      _min: 0
+      _max: 0
+    MinMaxPosition:
+      _min: -1
+      _max: 1
+    RandomRotation: 5
+    RandomFlipY: 0
+  FlatWallPrefab: {fileID: 6315135170778095943, guid: 3422533d8785543c0bc4c752557808e0, type: 3}
+  FlatWallSpacing: 2
+  FlatWallOffset: 7
   SurroundElements: []
-  FloorElements: []
-  FlatFloorPrefab: {fileID: 0}
+  FloorElements:
+  - Name: Floor
+    Disabled: 0
+    FloorPrefabs:
+    - {fileID: -8373903463449722979, guid: 26d96b879b500654a952b8ee6bc0661b, type: 3}
+    ZOffset: 0.08
+    Spacing: 0.5
+    RandomXPosition: 0.5
+    MinMaxAngle:
+      _min: -1
+      _max: 1
+    XRotation: 0
+    MinMaxPosition:
+      _min: 0
+      _max: 0
+    RandomFlipX: 1
+  FlatFloorPrefab: {fileID: 6315135170778095943, guid: 1b84736bfc8e3498bb0f56612263e106, type: 3}
   FlatFloorSpacing: 1
-  FlatFloorOffset: -1
-  CeilingElements: []
-  FlatCeilingPrefab: {fileID: 0}
+  FlatFloorOffset: -10
+  CeilingElements:
+  - Name: Ceiling
+    Disabled: 0
+    CeilingPrefabs:
+    - {fileID: -8373903463449722979, guid: 3187e059e3559af40bd0147434345f61, type: 3}
+    Height: 8
+    ZOffset: 0.02
+    Spacing: 1
+    RandomXPosition: 1
+    MinMaxAngle:
+      _min: -0.5
+      _max: 0.5
+    XRotation: 0
+    MinMaxPosition:
+      _min: -0.03
+      _max: 0.03
+    RandomFlipX: 1
+  - Name: Ceiling2
+    Disabled: 0
+    CeilingPrefabs:
+    - {fileID: -8373903463449722979, guid: 982cddbb89e4ead4cb0ef88eed6105d5, type: 3}
+    Height: 7.5
+    ZOffset: 0.5
+    Spacing: 1
+    RandomXPosition: 1
+    MinMaxAngle:
+      _min: -0.5
+      _max: 0.5
+    XRotation: 0
+    MinMaxPosition:
+      _min: -0.03
+      _max: 0.03
+    RandomFlipX: 1
+  FlatCeilingPrefab: {fileID: 6315135170778095943, guid: c5d39d8515fd7483685405c5e8044cc6, type: 3}
   FlatCeilingSpacing: 1
-  FlatCeilingOffset: 1
+  FlatCeilingOffset: 8

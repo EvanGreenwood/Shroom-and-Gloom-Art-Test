@@ -34,6 +34,8 @@ public class PlayerView : MonoSingleton<PlayerView>
 
     public PostProcessVolume depthVolume => _depthVolume;
     public PostProcessVolume sceneVolume => _sceneVolume;
+    
+    private Service<Player> _player;
 
     // Init
     //----------------------------------------------------------------------------------------------------
@@ -88,11 +90,11 @@ public class PlayerView : MonoSingleton<PlayerView>
     //----------------------------------------------------------------------------------------------------
     void AutoFocus(float dt)
     {
-        if(!_dof.enabled)
+        if(!_dof.enabled || !_player.Exists)
             return;
 
         _dof.focusDistance.value = (_viewTarget.position - transform.position).magnitude;
-        StepFocusPos(Player.inst.tunnel.Mesh);
+        StepFocusPos(_player.Value.tunnel.Mesh);
 
         return;
         //--------------------------------------------------

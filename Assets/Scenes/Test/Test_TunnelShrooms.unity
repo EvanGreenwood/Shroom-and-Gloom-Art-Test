@@ -315,6 +315,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SingleTunnelTestMode: 1
   MapSettings: {fileID: 0}
+  TunnelPrefab: {fileID: 0}
+  TunnelJoinPrefab: {fileID: 0}
   _areYouTakingCareOfYourself: 0
   _greatJobYouGotThis: 0
 --- !u!1001 &1387279064
@@ -487,7 +489,7 @@ MonoBehaviour:
   Old_FlatCeilingPrefab: {fileID: 0}
   Old_FlatCeilingSpacing: 1
   Old_FlatCeilingOffset: 1
-  SOToCopyInto: {fileID: 0}
+  SOToCopyInto: {fileID: 11400000, guid: f4f811ccaebf44fb09a180abeaaa97ff, type: 2}
   _elementParents:
   - {fileID: 0}
   - {fileID: 0}
