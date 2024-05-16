@@ -6,14 +6,24 @@
   <component name="ChangeListManager">
     <list default="true" id="825655da-4771-4664-b01a-9bffcaa881d5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Shroom-and-Gloom-Art-Test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Shroom-and-Gloom-Art-Test/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Effects/OpArt/StinkEye.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Effects/OpArt/StinkEye.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/particles/Dust/DustParticles.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/particles/Dust/DustParticles.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Enemies/GloomWorm/GloomWorm_Butt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Enemies/GloomWorm/GloomWorm_Butt.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Gloom/Crystals/Crystal_1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Environment/Gloom/Crystals/Crystal_1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Gloom/Crystals/Crystal_1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Environment/Gloom/Crystals/Crystal_1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Gloom/Crystals/Crystal_2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Environment/Gloom/Crystals/Crystal_2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Gloom/Crystals/Crystal_Ramp.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Environment/Gloom/Crystals/Crystal_Ramp.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Gloom/GloomSky.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Environment/Gloom/GloomSky.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Gloom/Gloom_Floor.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Environment/Gloom/Gloom_Floor.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Props/crystal_cluster_1_Normals.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Props/crystal_cluster_1_Normals.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Props/crystal_cluster_2_Normals.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Props/crystal_cluster_2_Normals.png.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Plugins/VHSPro/Resources/Materials/VHSPro_pass1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/VHSPro/Resources/Materials/VHSPro_pass1.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/Hero.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player/Hero.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/Depth_PPP.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/SceneData/Depth_PPP.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPP/S8_Gloom_MainCam_PPP.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPP/S8_Gloom_MainCam_PPP.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPP/S8_Gloom_PPP.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPP/S8_Gloom_PPP.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/S8_Gloom.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/S8_Gloom.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Environment/Crystal.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/Environment/Crystal.shader" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,6 +184,7 @@
       <workItem from="1715680629883" duration="3699000" />
       <workItem from="1715720850500" duration="2258000" />
       <workItem from="1715733305467" duration="19000" />
+      <workItem from="1715824794123" duration="4150000" />
     </task>
     <servers />
   </component>

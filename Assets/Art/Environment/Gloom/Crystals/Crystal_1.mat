@@ -33,7 +33,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Ramp:
-        m_Texture: {fileID: 8550232144664997530, guid: e2607a1a235301742aa37ce083893b1c, type: 2}
+        m_Texture: {fileID: 8550232144664997530, guid: 7030cc97acf38fa4b887fffb331a13e7, type: 2}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _texcoord:
@@ -45,19 +45,19 @@ Material:
     - _Blend: 0.5
     - _ChromaticAberration: 0.3
     - _DarkSideLift: 0.8
-    - _DarkSideShadowLift: 0.25
-    - _DarkSideWidth: 0.75
+    - _DarkSideShadowLift: 0.488
+    - _DarkSideWidth: 0.702
     - _EmissionFactor: 1
-    - _EmissionMul: 5
+    - _EmissionMul: 0.84
     - _EmissionPower: 8
     - _Float0: 0.25
-    - _GrabPassDistortionFactor: 0.586
+    - _GrabPassDistortionFactor: 0.15
     - _InvertDarkSide: 1
     - _LiftShadow: 0.25
-    - _NoiseScale: 1
+    - _NoiseScale: 2
     - _NoiseSpeed: 0.15
     - _NormalScale: 1
-    - _RampBlendFactor: 0.5
+    - _RampBlendFactor: 0.809
     - _TimeScale: 0.5
     - __dirty: 0
     m_Colors: []

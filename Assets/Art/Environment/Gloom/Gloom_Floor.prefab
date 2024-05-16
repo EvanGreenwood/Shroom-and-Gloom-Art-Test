@@ -32,9 +32,9 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8204561693414194095}
+  - {fileID: 697789985877379955}
   - {fileID: 4324407854206278452}
   - {fileID: 7321158870231450680}
-  - {fileID: 697789985877379955}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &-8373903463449722979
@@ -216,8 +216,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FlipFlags: 129
   _angle:
-    _min: -15
-    _max: 15
+    _min: -35
+    _max: -35
 --- !u!114 &3899380063173073133
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -356,8 +356,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FlipFlags: 129
   _angle:
-    _min: -15
-    _max: 15
+    _min: -35
+    _max: -35
 --- !u!114 &7620797027061257406
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -491,8 +491,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FlipFlags: 129
   _angle:
-    _min: -15
-    _max: 15
+    _min: 5
+    _max: 35
 --- !u!114 &612685804786050292
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -621,8 +621,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FlipFlags: 129
   _angle:
-    _min: -15
-    _max: 15
+    _min: 5
+    _max: 35
 --- !u!114 &5260487438889054965
 MonoBehaviour:
   m_ObjectHideFlags: 0

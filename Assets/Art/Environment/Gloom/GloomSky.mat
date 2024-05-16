@@ -122,10 +122,10 @@ Material:
     - _DistMul: 10
     - _DistSize: 2
     - _DstBlend: 0
-    - _GlobalBrightness: 2
+    - _GlobalBrightness: 1.38
     - _GlobalBrightnessFactor: 1
     - _GlobalContrast: 1
-    - _GlobalHueShift: 0.099
+    - _GlobalHueShift: 0.918
     - _GlobalSaturation: 1
     - _GlobalSaturationFactor: 0.914
     - _GlobalValueFactor: 1
@@ -137,10 +137,10 @@ Material:
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _ShiftHorizontal: 0
-    - _ShiftSkyHorizontal: -0.14
+    - _ShiftSkyHorizontal: -0.55
     - _ShiftSkyVertical: 0.4
     - _ShiftVertical: -0.25
-    - _SkySize: 116
+    - _SkySize: 150
     - _SkyTop: 0.499
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
@@ -148,7 +148,7 @@ Material:
     - _SrcBlend: 1
     - _StarRemapMin: 0.909
     - _StarScale: 75
-    - _StarsBlend: 0.982
+    - _StarsBlend: 1
     - _TimeScale: 1
     - _UVSec: 0
     - _ZWrite: 1
