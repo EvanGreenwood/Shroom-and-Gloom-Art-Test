@@ -6,14 +6,24 @@
   <component name="ChangeListManager">
     <list default="true" id="825655da-4771-4664-b01a-9bffcaa881d5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Shroom-and-Gloom-Art-Test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Shroom-and-Gloom-Art-Test/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Database/Resources/World/ArtTestWorldMap.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Database/Resources/World/ArtTestWorldMap.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/GeneratedTunnel.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/GeneratedTunnel.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ArtTestWalkthrough.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ArtTestWalkthrough.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level Generation/Settings/TunnelSettings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Level Generation/Settings/TunnelSettings.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level Generation/Settings/WorldMapSettings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Level Generation/Settings/WorldMapSettings.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level Generation/TunnelGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Level Generation/TunnelGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level Generation/WorldManagerService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Level Generation/WorldManagerService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Enemies/GloomWorm/GloomWorm_Butt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Enemies/GloomWorm/GloomWorm_Butt.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Gloom/Crystals/Crystal_1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Environment/Gloom/Crystals/Crystal_1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Gloom/Crystals/Crystal_1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Environment/Gloom/Crystals/Crystal_1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Gloom/Crystals/Crystal_2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Environment/Gloom/Crystals/Crystal_2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Gloom/Crystals/Crystal_Ramp.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Environment/Gloom/Crystals/Crystal_Ramp.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Gloom/GloomSky.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Environment/Gloom/GloomSky.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Gloom/Gloom_Floor.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Environment/Gloom/Gloom_Floor.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Props/crystal_cluster_1_Normals.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Props/crystal_cluster_1_Normals.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Props/crystal_cluster_2_Normals.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Environment/Props/crystal_cluster_2_Normals.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/VHSPro/Resources/Materials/VHSPro_pass1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/VHSPro/Resources/Materials/VHSPro_pass1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/Depth_PPP.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/SceneData/Depth_PPP.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPP/S8_Gloom_MainCam_PPP.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPP/S8_Gloom_MainCam_PPP.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPP/S8_Gloom_PPP.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/SceneData/ScenePPP/S8_Gloom_PPP.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/S8_Gloom.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/S8_Gloom.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Environment/Crystal.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/Environment/Crystal.shader" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,22 +34,29 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file:///Applications/Unity/Hub/Editor/2022.3.25f1/Unity.app/Contents/CGIncludes/UnityDeferredLibrary.cginc" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file:///Applications/Unity/Hub/Editor/2022.3.25f1/Unity.app/Contents/CGIncludes/UnityShaderVariables.cginc" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file:///Applications/Unity/Hub/Editor/2022.3.25f1/Unity.app/Contents/CGIncludes/UnityShadowLibrary.cginc" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/32ee6a9f8f3649e6a7a7646d2fd0953c7c00/ac/15ec8e46/Input.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c5ed782439084ef1bc2ad85eec89e9fe175a00/92/657d0cbe/Gizmos.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c5ed782439084ef1bc2ad85eec89e9fe175a00/eb/a50c74b6/Rect.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../Steamboat-Winky/SteamboatWinky/SteamboatWinky/Assets/Plugins/MathBad/Extensions/TransformExt.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../Steamboat-Winky/SteamboatWinky/SteamboatWinky/Assets/Scripts/Camera/CameraRig.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../_backup/backup/.bu/.backup2/.backup/.arpg/arpg/Assets/Plugins/Framework/Editor/SceneHelper.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../_backup/backup/.bu/.backup2/.backup/.arpg/arpg/Assets/Plugins/Framework/Utils/Editor/SceneViewDebug.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../_backup/backup/.bu/data/data/Assets/Plugins/Framework/Utils/Editor/EditorWindowUtil.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../bhell/bhell/Assets/Plugins/MathBad/Extensions/TextureExt.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../bhell/bhell/Assets/Plugins/MathBad/UTIL/Editor/EDITOR_LIB.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../bhell/bhell/Assets/Plugins/MathBad/UTIL/TEX.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../hardgore/hardgore/Assets/Plugins/Framework/Patterns/Timer/Timer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../hardgore/hardgore/Assets/Scripts/Common/KeepSpriteUpright.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../horror/horror/Assets/Plugins/MathBad/Extensions/TransformExt.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/MathBad/Editor/TransformInspector.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/MathBad/Patterns/TubeRenderer/TubeRenderer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Door.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Effects/Cable/Cable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Effects/LightAnim.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Effects/SpriteBillboard.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Generated/TunnelPath.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Level Generation/Editor/TunnelStyleEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Level Generation/SubGenerators/Random/SGRandomFlipSprite.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Level Generation/TunnelJoin.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Level Generation/TunnelLight.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Level Generation/TunnelMesh.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Level Generation/WorldManagerService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/ServiceLocator/MonoService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/ServiceLocator/Service.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" root0="FORCE_HIGHLIGHTING" />
@@ -50,18 +67,19 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Prefabs.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/SceneTransition.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/ConvertSpriteRenderers.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/Editor/StringOps.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/FreeCamera.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/MoveTowardsCamera.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/Ramp/Ramp.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/SceneViewShaderHelper.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/ScriptGenerationUtility.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.dbrizov.naughtyattributes@8a8fa5a965/Scripts/Editor/Utility/PropertyUtility.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.splines@2.5.2/Runtime/SplineUtility.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.test-framework@1.1.33/UnityEditor.TestRunner/CommandLineTest/TestStarter.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.visualscripting@1.9.2/Editor/VisualScripting.Core/Platforms/AotPreBuilder.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5a41d6b7189842eca409fd0b1c3e3dcf17bf78/8d/d86dfefe/String.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e307bbb467104258887a104f6151f183469200/4c/d6c4c89c/CancellationTokenSource.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../backup/_Work/_Projects-Unity/z_backup/_hardgore/hardgore/Assets/Plugins/Framework/Tools/ToobarExtender/Editor/ToolbarCallback.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../backup/_Work/_Projects-Unity/z_backup/_hardgore/hardgore/Assets/Plugins/Framework/Tools/ToobarExtender/Editor/ToolbarExtender.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../backup/_Work/_Projects-Unity/z_backup/_hardgore/hardgore/Assets/Plugins/Framework/Tools/ToobarExtender/Editor/Toolbars/ProjectButtons.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../backup/_Work/_Projects-Unity/z_backup/_hardgore/hardgore/Assets/Plugins/Framework/Tools/ToobarExtender/Editor/Toolbars/SceneCollection.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../backup/_Work/_Projects-Unity/z_backup/_hardgore/hardgore/Assets/Plugins/Framework/Utils/Editor/SceneViewDebug.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../backup/_Work/_Projects-Unity/z_backup/backup/__Versions/_GODFUCKER/GodFucker/Assets/Plugins/Framework/Geometry/Extensions/MESH_EXT.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../backup/_Work/_Projects-Unity/z_backup/backup/__Versions/__THEPIT/thepit/Assets/Plugins/Framework/Geometry/Extensions/GeoExt.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../backup/_Work/_Projects-Unity/z_backup/backup/__Versions/__THEPIT/thepit/Assets/Plugins/Framework/Geometry/Extensions/MESH_EXT.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
@@ -86,9 +104,9 @@
   },
   &quot;keyToStringList&quot;: {
     &quot;rider.external.source.directories&quot;: [
-      &quot;/Users/RH-Ross-MBP/Library/Application Support/JetBrains/Rider2023.3/resharper-host/DecompilerCache&quot;,
-      &quot;/Users/RH-Ross-MBP/Library/Application Support/JetBrains/Rider2023.3/resharper-host/SourcesCache&quot;,
-      &quot;/Users/RH-Ross-MBP/.local/share/Symbols/src&quot;
+      &quot;C:\\Users\\Junt\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\Junt\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\Junt\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
 }</component>
@@ -102,7 +120,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/2022.3.25f1/Unity.app/Contents/MacOS/Unity" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.25f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath $PROJECT_DIR$ -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -110,7 +128,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/2022.3.25f1/Unity.app/Contents/MacOS/Unity" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.25f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath $PROJECT_DIR$ -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -127,10 +145,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="55219">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="55219" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -164,13 +182,9 @@
       <workItem from="1715373759598" duration="11327000" />
       <workItem from="1715633551470" duration="2037000" />
       <workItem from="1715680629883" duration="3699000" />
-      <workItem from="1715777190150" duration="18000" />
-      <workItem from="1715777238479" duration="5000" />
-      <workItem from="1715777260445" duration="15000" />
-      <workItem from="1715777289557" duration="27000" />
-      <workItem from="1715777342088" duration="42000" />
-      <workItem from="1715777420575" duration="198000" />
-      <workItem from="1715777650928" duration="37744000" />
+      <workItem from="1715720850500" duration="2258000" />
+      <workItem from="1715733305467" duration="19000" />
+      <workItem from="1715824794123" duration="4150000" />
     </task>
     <servers />
   </component>

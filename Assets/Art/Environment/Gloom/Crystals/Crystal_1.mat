@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Crystal_1
+  m_Shader: {fileID: 4800000, guid: a8c2fce67fc512c4aa6c6511458709ca, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords:
+  - _INVERTDARKSIDE_ON
+  m_InvalidKeywords: []
+  m_LightmapFlags: 0
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Normals:
+        m_Texture: {fileID: 2800000, guid: 1e7331ccd8000854db26e3d4f083bd01, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Ramp:
+        m_Texture: {fileID: 8550232144664997530, guid: 7030cc97acf38fa4b887fffb331a13e7, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Blend: 0.5
+    - _ChromaticAberration: 0.3
+    - _DarkSideLift: 0.8
+    - _DarkSideShadowLift: 0.488
+    - _DarkSideWidth: 0.702
+    - _EmissionFactor: 1
+    - _EmissionMul: 0.84
+    - _EmissionPower: 8
+    - _Float0: 0.25
+    - _GrabPassDistortionFactor: 0.15
+    - _InvertDarkSide: 1
+    - _LiftShadow: 0.25
+    - _NoiseScale: 2
+    - _NoiseSpeed: 0.15
+    - _NormalScale: 1
+    - _RampBlendFactor: 0.809
+    - _TimeScale: 0.5
+    - __dirty: 0
+    m_Colors: []
+  m_BuildTextureStacks: []

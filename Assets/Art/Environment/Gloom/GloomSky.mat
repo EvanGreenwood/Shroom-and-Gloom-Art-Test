@@ -1,0 +1,159 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: GloomSky
+  m_Shader: {fileID: 4800000, guid: 2d465c43c45cacd458884a8f7e524ca5, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 0
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _CloudRamp:
+        m_Texture: {fileID: 8550232144664997530, guid: 5065efe6f2338d84195fe0edd86ba16c, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _CloudRampTex:
+        m_Texture: {fileID: 8550232144664997530, guid: 5065efe6f2338d84195fe0edd86ba16c, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _HorizontalRamp:
+        m_Texture: {fileID: 7054639872418601915, guid: 2e6499e1040517545a3b427e331ad883, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _HorizontalRampTex:
+        m_Texture: {fileID: 7054639872418601915, guid: 2e6499e1040517545a3b427e331ad883, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Ramp:
+        m_Texture: {fileID: 7054639872418601915, guid: 1a7086b20631ee34b94a42c5fe636409, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SkyHorizontalRamp:
+        m_Texture: {fileID: 7054639872418601915, guid: 2e6499e1040517545a3b427e331ad883, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SkyVerticalRamp:
+        m_Texture: {fileID: 7054639872418601915, guid: 1a7086b20631ee34b94a42c5fe636409, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _StarRamp:
+        m_Texture: {fileID: 8550232144664997530, guid: bfe81db5e0a887a41b76d0da3a8e5dc5, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Vert:
+        m_Texture: {fileID: 7054639872418601915, guid: 1a7086b20631ee34b94a42c5fe636409, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _VerticalRamp:
+        m_Texture: {fileID: 7054639872418601915, guid: 1a7086b20631ee34b94a42c5fe636409, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _VerticalRampTex:
+        m_Texture: {fileID: 7054639872418601915, guid: 1a7086b20631ee34b94a42c5fe636409, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _BumpScale: 1
+    - _CloudAlpha: 1
+    - _CloudMax: 0.65
+    - _CloudMin: 0.383
+    - _CloudSize: 10
+    - _CloudSmoothness: 0.15
+    - _CloudSquash: 3
+    - _Contrast: 1
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _DistMul: 10
+    - _DistSize: 2
+    - _DstBlend: 0
+    - _GlobalBrightness: 1.38
+    - _GlobalBrightnessFactor: 1
+    - _GlobalContrast: 1
+    - _GlobalHueShift: 0.918
+    - _GlobalSaturation: 1
+    - _GlobalSaturationFactor: 0.914
+    - _GlobalValueFactor: 1
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _Metallic: 0
+    - _Mode: 0
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
+    - _ShiftHorizontal: 0
+    - _ShiftSkyHorizontal: -0.55
+    - _ShiftSkyVertical: 0.4
+    - _ShiftVertical: -0.25
+    - _SkySize: 150
+    - _SkyTop: 0.499
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SquashTopDown: 0
+    - _SrcBlend: 1
+    - _StarRemapMin: 0.909
+    - _StarScale: 75
+    - _StarsBlend: 1
+    - _TimeScale: 1
+    - _UVSec: 0
+    - _ZWrite: 1
+    - __dirty: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+  m_BuildTextureStacks: []
