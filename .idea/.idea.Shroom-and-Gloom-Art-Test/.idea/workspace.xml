@@ -6,34 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="825655da-4771-4664-b01a-9bffcaa881d5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Shroom-and-Gloom-Art-Test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Shroom-and-Gloom-Art-Test/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/particles/Dust/DustParticles.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/particles/Dust/DustParticles.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Framework/Utility Classes/SceneUtils.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Framework/Utility Classes/SceneUtils.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/GenerationTemplates/GeneratedTunnel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/GenerationTemplates/GeneratedTunnel.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/GenerationTemplates/TunnelJoin.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/GenerationTemplates/TunnelJoin.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/Hero.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player/Hero.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/View.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player/View.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/ArtTestWalkthrough.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ArtTestWalkthrough.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Legacy/TechTests/Stupid Thorns.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Legacy/TechTests/Stupid Thorns.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/S1_TheMines.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/S1_TheMines.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/S2_RockTunnel.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/S2_RockTunnel.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/S3_RockCave.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/S3_RockCave.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/S5_Shroomy.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/S5_Shroomy.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/S6_Trippy.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/S6_Trippy.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/S8_Gloom.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/S8_Gloom.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Test/Test_TunnelShrooms.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Test/Test_TunnelShrooms.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Effects/CableHanging.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Effects/CableHanging.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Effects/LightAnim.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Effects/LightAnim.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Effects/SpriteBillboard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Effects/SpriteBillboard.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level Generation/Settings/TunnelSettings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Level Generation/Settings/TunnelSettings.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level Generation/TunnelSwich.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Level Generation/TunnelSwich.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level Generation/WorldManagerService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Level Generation/WorldManagerService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Prop/PropActor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Prop/PropActor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Prop/PropCoward.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Prop/PropCoward.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scene/SceneController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scene/SceneController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/HUD.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/HUD.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/Editor/SceneViewDebug.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/Editor/SceneViewDebug.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,10 +122,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="55219">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="55219" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
