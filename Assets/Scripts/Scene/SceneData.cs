@@ -13,7 +13,4 @@ public class SceneData : MonoBehaviour
     [Header("Audio")]
     public EffectSoundBank sceneIntro;
     public AudioClip sceneMusic;
-
-    [Header("Post Processing")]
-    public PostProcessProfile postProcessProfile;
 }

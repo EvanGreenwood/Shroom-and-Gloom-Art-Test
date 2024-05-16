@@ -229,6 +229,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2651333542126033498}
   - component: {fileID: 1291769757783795385}
+  - component: {fileID: 2374260406459338245}
+  - component: {fileID: 1327354733047355902}
   m_Layer: 0
   m_Name: SceneController
   m_TagString: Untagged
@@ -266,9 +268,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4e34cc4ca5076942ba6144685630652, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _dntDestroyOnLoad: 0
-  _sceneData: {fileID: 11400000, guid: 516a1e806d4097d4ea76620936863f7b, type: 2}
+  PlayerPrefab: {fileID: 3020264992416293518, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
+  _sceneIntroLeadDelay: 1
+  _sceneIntroFadeTime: 2
   _music: {fileID: 120610215176344792}
+--- !u!114 &2374260406459338245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8626711496347271734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 767c36581d1a6d641895bcb56d55a238, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: 
+  description: 
+  titleColor: {r: 0.25, g: 0.25, b: 0.25, a: 1}
+  sceneIntro: {fileID: 0}
+  sceneMusic: {fileID: 0}
+--- !u!114 &1327354733047355902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8626711496347271734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 096a733823e81485784ebd1193459c2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6273817105924395288
 PrefabInstance:
   m_ObjectHideFlags: 0

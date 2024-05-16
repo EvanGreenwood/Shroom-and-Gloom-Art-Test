@@ -5,7 +5,7 @@ using MathBad;
 using UnityEngine.Rendering.PostProcessing;
 #endregion
 
-public class PlayerView : MonoSingleton<PlayerView>
+public class PlayerView : MonoBehaviour
 {
     [Header("Cameras")]
     [SerializeField] Camera _mainCamera;
@@ -13,7 +13,6 @@ public class PlayerView : MonoSingleton<PlayerView>
 
     [Header("Volumes")]
     [SerializeField] PostProcessVolume _depthVolume;
-    [SerializeField] PostProcessVolume _sceneVolume;
 
     [Header("Clamp")]
     [SerializeField] Vector2 _angleOffset;
@@ -26,49 +25,32 @@ public class PlayerView : MonoSingleton<PlayerView>
 
     Transform _viewTarget;
 
-    bool _hasInit, _isActivated;
-    bool _isAwake;
-
     public Camera mainCamera => _mainCamera;
     public Camera uiCamera => _uiCamera;
-
-    public PostProcessVolume depthVolume => _depthVolume;
-    public PostProcessVolume sceneVolume => _sceneVolume;
     
     private Service<Player> _player;
 
     // Init
     //----------------------------------------------------------------------------------------------------
-    public void Init(PostProcessProfile uiProfile)
-    {
-        _sceneVolume.profile = uiProfile;
-
-        _dof = _depthVolume.profile.GetSetting<DepthOfField>();
-        _dof.focusDistance.Override(10f);
-
-        _hasInit = true;
-    }
-
-    public void Activate() {_isActivated = true;}
 
     void Awake()
     {
         _viewTarget = transform.CreateChild("ViewTarget");
-        _isAwake = true;
+        _dof = _depthVolume.profile.GetSetting<DepthOfField>();
+        _dof.focusDistance.Override(10f);
     }
     void Update()
     {
-        if(!_hasInit || !_isActivated)
-            return;
-
         Look();
         AutoFocus(Time.deltaTime);
     }
 
     void OnDrawGizmos()
     {
-        if(!_isAwake)
+        if (_viewTarget == null)
+        {
             return;
+        }
         GIZMOS.Sphere(_viewTarget.position, 0.25f, RGB.yellow);
         GIZMOS.Line(transform.position, _viewTarget.position, RGB.cyan);
     }
