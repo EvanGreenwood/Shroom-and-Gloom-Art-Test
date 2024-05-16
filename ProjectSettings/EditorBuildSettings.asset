@@ -30,7 +30,7 @@ EditorBuildSettings:
     path: Assets/Scenes/S6_Trippy.unity
     guid: fcc227c6b1fe34a26969884f74194712
   - enabled: 1
-    path: Assets/Scenes/Test/Test_TunnelShrooms.unity
+    path: Assets/Scenes/Test/TestTunnelShrooms.unity
     guid: 7d2a5a85e34804b4cbce70421d681191
   - enabled: 1
     path: Assets/Scenes/S7_Portal.unity
