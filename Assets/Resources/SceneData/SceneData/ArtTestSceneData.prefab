@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2959661974089673670
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5975490683484983860}
+  - component: {fileID: 4957685194760006062}
+  - component: {fileID: 6241053201958376135}
+  m_Layer: 0
+  m_Name: ArtTestSceneData
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5975490683484983860
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2959661974089673670}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4957685194760006062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2959661974089673670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 767c36581d1a6d641895bcb56d55a238, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: Shroomy
+  description: Follow the lights...
+  titleColor: {r: 0, g: 0.9433962, b: 0.30044475, a: 1}
+  sceneIntro: {fileID: 11400000, guid: df0c429427445c6409f88af14a31d75e, type: 2}
+  sceneMusic: {fileID: 8300000, guid: 63f9e86f3c72824478f2552efca5c68b, type: 3}
+  postProcessProfile: {fileID: 11400000, guid: 2eba52f5ca670c046b7dcfba8d1e1991, type: 2}
+--- !u!114 &6241053201958376135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2959661974089673670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 096a733823e81485784ebd1193459c2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

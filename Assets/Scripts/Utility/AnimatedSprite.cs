@@ -47,7 +47,7 @@ public class AnimatedSprite : MonoBehaviour
             //
             if (_loop && _frame >= _sprites.Length) _frame -= _sprites.Length;
             //
-            if (_frame < _sprites.Length)
+            if (_frame > -1 && _frame < _sprites.Length)
             {
                 _spriteRenderer.sprite = _sprites[_frame];
                 //

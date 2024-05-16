@@ -1,0 +1,122 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50d28d391025841c192a919a7297e73e, type: 3}
+  m_Name: D3 Rock
+  m_EditorClassIdentifier: 
+  _guid: 7f9d805cfee874ffaaec5f739f82f890
+  ColorGradient:
+    serializedVersion: 2
+    key0: {r: 1, g: 1, b: 1, a: 1}
+    key1: {r: 1, g: 1, b: 1, a: 1}
+    key2: {r: 0, g: 0, b: 0, a: 0}
+    key3: {r: 0, g: 0, b: 0, a: 0}
+    key4: {r: 0, g: 0, b: 0, a: 0}
+    key5: {r: 0, g: 0, b: 0, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
+    key7: {r: 0, g: 0, b: 0, a: 0}
+    ctime0: 0
+    ctime1: 65535
+    ctime2: 0
+    ctime3: 0
+    ctime4: 0
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_ColorSpace: -1
+    m_NumColorKeys: 2
+    m_NumAlphaKeys: 2
+  BaseTunnelWidth: 1
+  LumpyWidth: 0.5
+  ClearingWidth: 7.5
+  ClearingDepth: 4
+  Particles: {fileID: 2402285776899386762, guid: 8e61f67cd760b423db14eb998271668d, type: 3}
+  ParticleSpawnDistance: 4
+  WallElements: []
+  FlatWallPrefab: {fileID: 0}
+  FlatWallSpacing: 1
+  FlatWallOffset: 1
+  SurroundElements:
+  - Name: Lumps
+    Disabled: 0
+    SurroundPrefabs:
+    - {fileID: 717079983591251126, guid: dde57e21e6c354eec8aacabab5da9407, type: 3}
+    - {fileID: 717079983591251126, guid: 8bf6d4da7dbaf468fa9ccdb283aa9e40, type: 3}
+    ZOffset: 0
+    Spacing: 0.5
+    RadiusOffset: 2
+    CenterHeight: 1.7
+    Pattern: 1
+    AngleRange:
+      _min: 26
+      _max: 334
+    AngleIncrement: 45
+    RandomRotation: 7
+    RandomFlipY: 1
+    RandomFlipX: 0
+  FloorElements:
+  - Name: Floor
+    Disabled: 0
+    FloorPrefabs:
+    - {fileID: 717079983591251126, guid: d30a5199178c74edea9e16ed711674da, type: 3}
+    ZOffset: 0.08
+    Spacing: 0.5
+    RandomXPosition: 0.5
+    MinMaxAngle:
+      _min: -1
+      _max: 1
+    XRotation: 0
+    MinMaxPosition:
+      _min: -0.05
+      _max: 0.05
+    RandomFlipX: 1
+  FlatFloorPrefab: {fileID: 0}
+  FlatFloorSpacing: 1
+  FlatFloorOffset: -1
+  CeilingElements:
+  - Name: Stalactites
+    Disabled: 0
+    CeilingPrefabs:
+    - {fileID: 717079983591251126, guid: 27bacbf4aeb5d44ac9799a0cc6ead2d1, type: 3}
+    - {fileID: 717079983591251126, guid: eb304f83198d44625be12cd2c1e54164, type: 3}
+    - {fileID: 717079983591251126, guid: 18274c28eec394e51bf119e0f5dcccba, type: 3}
+    - {fileID: 717079983591251126, guid: a7e03495bb5ff4272a7651af7a029a03, type: 3}
+    - {fileID: 717079983591251126, guid: 46a67771cfb8f4303905beb97ff79355, type: 3}
+    - {fileID: 717079983591251126, guid: ae2402116713349269ef279680b4b0e0, type: 3}
+    - {fileID: 717079983591251126, guid: 1e1cd682bc70840f496f379f701bbbf2, type: 3}
+    - {fileID: 717079983591251126, guid: 5ed6d792c22cc47668aed863a6db01a8, type: 3}
+    - {fileID: 717079983591251126, guid: 4a384414610284064b5d675f55a09c66, type: 3}
+    - {fileID: 717079983591251126, guid: 0e7499d4e7bc84f359fc4525db7054d9, type: 3}
+    Height: 3.7
+    ZOffset: 0
+    Spacing: 0.5
+    RandomXPosition: 2
+    MinMaxAngle:
+      _min: 0
+      _max: 0
+    XRotation: 0
+    MinMaxPosition:
+      _min: -4
+      _max: 4
+    RandomFlipX: 1
+  FlatCeilingPrefab: {fileID: 0}
+  FlatCeilingSpacing: 1
+  FlatCeilingOffset: 1
+  SplineVolume: {fileID: 11400000, guid: 299b66eec72664f149d907088da26d28, type: 2}

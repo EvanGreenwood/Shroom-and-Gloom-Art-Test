@@ -11,7 +11,7 @@ public class LightAnim : MonoBehaviour
     [Space]
     [SerializeField] bool _animateIntensity = true;
     [SerializeField] FloatRange _loopDuration = new FloatRange(0.1f, 0.25f);
-    [SerializeField] FloatRange _intensityRange = new FloatRange(0.0f, 1f);
+    [SerializeField] FloatRange _intensityOffsetRange = new FloatRange(0.0f, 1f);
 
     [Space]
     [SerializeField] bool _animateColor = true;
@@ -25,7 +25,7 @@ public class LightAnim : MonoBehaviour
 
     Light _light;
     FloatAnim _anim;
-    float _lastIntensity, _targetIntensity;
+    private float _lastIntensity, _targetIntensity, _defaultIntensity;
     float _lastColor, _targetColor;
     Camera _camera;
 
@@ -37,6 +37,7 @@ public class LightAnim : MonoBehaviour
         _anim = new FloatAnim(_easingType, LoopType.PingPong, 0.1f);
         _light = GetComponent<Light>();
         _targetIntensity = _light.intensity;
+        _defaultIntensity = _light.intensity;
         _anim.onLoop += NextTarget;
         NextTarget();
     }
@@ -48,7 +49,7 @@ public class LightAnim : MonoBehaviour
     void Step(float dt)
     {
         _anim.Step(dt);
-        if(_animateIntensity) _light.intensity = Mathf.Lerp(_lastIntensity, _targetIntensity, _anim.percent.Clamp01());
+        if(_animateIntensity) _light.intensity = Mathf.Lerp(_lastIntensity, _defaultIntensity +_targetIntensity, _anim.percent.Clamp01());
         if(_animateColor) _light.color = _colorPool.Evaluate(Mathf.Lerp(_lastColor, _targetColor, _anim.percent.Clamp01()));
         if(_cameraDst && _camera != null)
         {
@@ -63,7 +64,7 @@ public class LightAnim : MonoBehaviour
         _lastColor = _targetColor;
         _targetColor = RNG.Float();
         _lastIntensity = _targetIntensity;
-        _targetIntensity = _intensityRange.ChooseRandom();
+        _targetIntensity = _intensityOffsetRange.ChooseRandom();
         _targetIntensity = _targetIntensity.Max(0);
         _anim.SetDuration(_loopDuration.ChooseRandom());
     }

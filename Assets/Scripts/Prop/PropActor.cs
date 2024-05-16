@@ -21,8 +21,7 @@ public class PropActor : MonoBehaviour
     [SerializeField]FloatRange _moveAngleRange = new FloatRange(-25f, 25f);
 
     SpriteRenderer _sr;
-    Camera _camera;
-
+    private Vector3 _cameraPos => Camera.main?Camera.main.transform.position:Vector3.zero;
     bool _isFleeing;
 
     float _fleeDir, _speed;
@@ -32,7 +31,6 @@ public class PropActor : MonoBehaviour
     void Awake()
     {
         _sr = GetComponent<SpriteRenderer>();
-        _camera = Camera.main;
         _fleeAnim = new FloatAnim(EaseType.InQuad, LoopType.PingPong, _feelAngleTime);
         _fleeDir = (_randomFleeDir ? RNG.CoinFlip() : !_sr.flipX) ? 1f : -1f;
         _speed = _fleeSpeed.ChooseRandom();
@@ -45,7 +43,7 @@ public class PropActor : MonoBehaviour
             return;
         }
 
-        float dst = Vector3.Distance(transform.position, _camera.transform.position);
+        float dst = Vector3.Distance(transform.position, _cameraPos);
         if(!_isFleeing && dst <= _disturbDst)
         {
             _isFleeing = true;

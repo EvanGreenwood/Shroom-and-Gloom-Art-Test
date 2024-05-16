@@ -2,42 +2,52 @@
 using UnityEngine;
 using Framework;
 using MathBad;
+using System;
 using UnityEngine.SceneManagement;
 #endregion
 
-public class SceneController : MonoSingleton<SceneController>
+[RequireComponent(typeof(SceneData))]
+public class SceneController : MonoService
 {
     [SerializeField] float _sceneIntroLeadDelay = 1f;
     [SerializeField] float _sceneIntroFadeTime = 2f;
     [SerializeField] Music _music;
 
-    SceneData _sceneData;
-    string _activeSceneName;
-    
-    public SceneData sceneData => _sceneData;
+    public SceneData Data { get; private set; }
+
+    private Service<Player> _player;
+    private Service<GameManager> _gameManager;
 
     void Awake()
     {
-        _sceneData = FindObjectOfType<SceneData>();
-        _activeSceneName = SceneManager.GetActiveScene().name;
-
-        SceneTransition.inst.Transition(OnTransitionComplete,
-                                        _sceneIntroLeadDelay, false, false, _sceneIntroFadeTime,
-                                        _sceneData.title, _sceneData.description,
-                                        _sceneData.titleColor);
+        Data = GetComponent<SceneData>();
     }
 
-    void Start()
+    private void Start()
     {
+        if (!_gameManager.Exists)
+        {
+            //No game manager to sequence things. Presuming player is in scene.
+            BeginIntro();
+        }
+    }
+
+    public void BeginIntro()
+    {
+        Debug.Assert(_player.Exists);
+        
         HUD.inst.Init();
-        _sceneData.sceneIntro.Play();
-        _music.Init(_sceneData.sceneMusic);
-        Player.inst.Init(_sceneData);
-    }
-
-    void OnTransitionComplete()
-    {
-        Player.inst.Activate();
-        _music.Play();
+        Data.sceneIntro.Play();
+        _music.Init(Data.sceneMusic);
+        _player.Value.Init(Data);
+        
+        SceneTransition.inst.Transition(() =>
+            {
+                _player.Value.Activate();
+                _music.Play();
+            },
+            _sceneIntroLeadDelay, false, false, _sceneIntroFadeTime,
+            Data.title, Data.description,
+            Data.titleColor);
     }
 }

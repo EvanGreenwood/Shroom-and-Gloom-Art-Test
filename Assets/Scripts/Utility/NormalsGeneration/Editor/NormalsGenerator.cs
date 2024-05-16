@@ -23,7 +23,7 @@ public class NormalsGenerator : EditorWindow
     private static int ColorTexId = Shader.PropertyToID("_ColorTex");
     private static int SDFTexId = Shader.PropertyToID("_SDFTex");
 
-    [MenuItem("Assets/S&G/Generate Normal Maps", false, 0)]
+    [MenuItem("Assets/S&G/Generate Normal Maps", false, 10)]
     private static void GenerateNormalMapsFromSelection()
     {
         string[] guids = AssetDatabase.FindAssets("NormalMapGenerator");

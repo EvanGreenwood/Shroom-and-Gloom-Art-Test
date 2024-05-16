@@ -13,6 +13,8 @@ public class HUD : CanvasSingleton<HUD>
 
     string _activeSceneName;
 
+    private Service<SceneController> _sceneController;
+
     // Init
     //----------------------------------------------------------------------------------------------------
     public void Init() { }
@@ -26,7 +28,7 @@ public class HUD : CanvasSingleton<HUD>
     }
     void Update()
     {
-        _infoLabel.text = $"{SceneController.inst.sceneData.title}  |  " +
+        _infoLabel.text = $"{_sceneController.Value.Data.title}  |  " +
                           $"FPS: {FrameRate.inst.fpsAverage:000}";
     }
 }
