@@ -1999,8 +1999,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1381225328}
-  - component: {fileID: 1381225329}
   - component: {fileID: 1381225327}
+  - component: {fileID: 1381225329}
   m_Layer: 0
   m_Name: TunnelSystem
   m_TagString: Untagged
@@ -2024,7 +2024,6 @@ MonoBehaviour:
   _fogStart: 30
   _fogDistance: 100
   _shadowsColor: {r: 0.4528302, g: 0.4528302, b: 0.4528302, a: 1}
-  _rampTexture: {fileID: 0}
 --- !u!4 &1381225328
 Transform:
   m_ObjectHideFlags: 0
@@ -2050,10 +2049,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1381225326}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92d55adc0335b6242ade96683686e672, type: 3}
+  m_Script: {fileID: 11500000, guid: be0d82d27da3546d6b0fbda67dbe8dcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _dntDestroyOnLoad: 0
+  SingleTunnelTestMode: 1
+  MapSettings: {fileID: 0}
+  TunnelPrefab: {fileID: 0}
+  TunnelJoinPrefab: {fileID: 0}
+  _areYouTakingCareOfYourself: 0
+  _greatJobYouGotThis: 0
 --- !u!1 &1392419564
 GameObject:
   m_ObjectHideFlags: 0
@@ -2084,7 +2088,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f743e6c0a9ec45e4abb4374dc99d4a09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _colorGradient:
+  UseSOData: 0
+  GenerationSettings: {fileID: 0}
+  EditMode: 0
+  Old_ColorGradient:
     serializedVersion: 2
     key0: {r: 1, g: 1, b: 1, a: 1}
     key1: {r: 1, g: 1, b: 1, a: 1}
@@ -2114,41 +2121,41 @@ MonoBehaviour:
     m_ColorSpace: 0
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
-  _particles: {fileID: 2402285776899386762, guid: 8e61f67cd760b423db14eb998271668d, type: 3}
-  _particleSpawnDistance: 5
-  _baseTunnelWidth: 1
-  _lumpyWidth: 0.5
-  _clearingWidth: 1
-  _clearingDepth: 2.33
-  _setHideFlags: 1
-  wallElements: []
-  flatWallPrefab: {fileID: 0}
-  flatWallSpacing: 1
-  flatWallOffset: 1
-  surroundElements: []
-  floorElements:
-  - name: Floor
-    disabled: 0
-    floorPrefabs:
+  Old_Particles: {fileID: 2402285776899386762, guid: 8e61f67cd760b423db14eb998271668d, type: 3}
+  Old_ParticleSpawnDistance: 5
+  Old_BaseTunnelWidth: 1
+  Old_LumpyWidth: 0.5
+  Old_ClearingWidth: 1
+  Old_ClearingDepth: 2.33
+  Old_WallElements: []
+  Old_FlatWallPrefab: {fileID: 0}
+  Old_FlatWallSpacing: 1
+  Old_FlatWallOffset: 1
+  Old_SurroundElements: []
+  Old_FloorElements:
+  - Name: Floor
+    Disabled: 0
+    FloorPrefabs:
     - {fileID: -8373903463449722979, guid: aa1eb4f5e699fe049baf3326f7e33932, type: 3}
-    zOffset: 0.08
-    spacing: 0.5
-    randomXPosition: 0.5
-    minMaxAngle:
+    ZOffset: 0.08
+    Spacing: 0.5
+    RandomXPosition: 0.5
+    MinMaxAngle:
       _min: -1
       _max: 1
-    xRotation: 0
-    minMaxPosition:
+    XRotation: 0
+    MinMaxPosition:
       _min: -0.05
       _max: 0.05
-    randomFlipX: 1
-  flatFloorPrefab: {fileID: 0}
-  flatFloorSpacing: 1
-  flatFloorOffset: -1
-  ceilingElements: []
-  flatCeilingPrefab: {fileID: 0}
-  flatCeilingSpacing: 1
-  flatCeilingOffset: 1
+    RandomFlipX: 1
+  Old_FlatFloorPrefab: {fileID: 0}
+  Old_FlatFloorSpacing: 1
+  Old_FlatFloorOffset: -1
+  Old_CeilingElements: []
+  Old_FlatCeilingPrefab: {fileID: 0}
+  Old_FlatCeilingSpacing: 1
+  Old_FlatCeilingOffset: 1
+  SOToCopyInto: {fileID: 11400000, guid: d35d03e40ab46408088b2de71ca2a3f1, type: 2}
   _elementParents:
   - {fileID: 0}
   - {fileID: 0}
@@ -2156,8 +2163,6 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  _drawGizmos: 0
-  _generatedIsSelectable: 1
   _internalTunnelSpline: {fileID: 1392419567}
   _internalTunnelMesh: {fileID: 0}
 --- !u!4 &1392419566

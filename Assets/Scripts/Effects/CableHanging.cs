@@ -16,6 +16,8 @@ public class CableHanging : MonoBehaviour
   LineRenderer _lr;
   int _numNodes;
 
+  private Transform _cameraTransform => Camera.main?Camera.main.transform:null;
+
   Vector3[] _positions;
   Vector3[] _velocities;
   float _restLength;
@@ -64,7 +66,8 @@ public class CableHanging : MonoBehaviour
     //            RNG.Vector2InsideUnitCircle().ToVector3() * RNG.Float(1f, 3f), 1.5f);
     _positions[0] = transform.position;
     _lr.SetPosition(0, transform.position);
-    Vector3 cameraPos = Camera.main.transform.position;
+    
+    Vector3 cameraPos = _cameraTransform?_cameraTransform.position:Vector3.zero;
     for(int i = 1; i < _numNodes; i++)
     {
       Vector3 spring_up = PHYSICS.LinearSpringForce(_positions[i], _positions[i - 1], _restLength, _stiffness);

@@ -343,8 +343,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1392419566}
-  - component: {fileID: 1392419567}
   - component: {fileID: 1392419565}
+  - component: {fileID: 1392419567}
   m_Layer: 0
   m_Name: Tunnel
   m_TagString: Untagged
@@ -364,7 +364,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f743e6c0a9ec45e4abb4374dc99d4a09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _colorGradient:
+  UseSOData: 0
+  GenerationSettings: {fileID: 0}
+  EditMode: 0
+  Old_ColorGradient:
     serializedVersion: 2
     key0: {r: 0.3001513, g: 0.40477195, b: 0.6698113, a: 1}
     key1: {r: 0.45469916, g: 0.47264493, b: 0.735849, a: 1}
@@ -394,85 +397,84 @@ MonoBehaviour:
     m_ColorSpace: -1
     m_NumColorKeys: 5
     m_NumAlphaKeys: 2
-  _particles: {fileID: 2402285776899386762, guid: 8e61f67cd760b423db14eb998271668d, type: 3}
-  _particleSpawnDistance: 5
-  _baseTunnelWidth: 1
-  _lumpyWidth: 0.5
-  _clearingWidth: 1
-  _clearingDepth: 2.33
-  _setHideFlags: 1
-  wallElements:
-  - name: Wall Cave
-    disabled: 0
-    wallPrefabs:
+  Old_Particles: {fileID: 2402285776899386762, guid: 8e61f67cd760b423db14eb998271668d, type: 3}
+  Old_ParticleSpawnDistance: 5
+  Old_BaseTunnelWidth: 1
+  Old_LumpyWidth: 0.5
+  Old_ClearingWidth: 1
+  Old_ClearingDepth: 2.33
+  Old_WallElements:
+  - Name: Wall Cave
+    Disabled: 0
+    WallPrefabs:
     - {fileID: 717079983591251126, guid: 7ffc0bd0eaa3c4aa28edd6c5974a2f20, type: 3}
     - {fileID: 717079983591251126, guid: 6e7233b1fe502482786141cbcff48c8d, type: 3}
-    zOffset: 0
-    spacing: 0.2
-    width: 0.9
-    heightOffset:
+    ZOffset: 0
+    Spacing: 0.2
+    Width: 0.9
+    HeightOffset:
       _min: 1.9
       _max: 2.2
-    verticalLoopLength: 5
-    verticalLoopIncrement: 2
-    minMaxAngle:
+    VerticalLoopLength: 5
+    VerticalLoopIncrement: 2
+    MinMaxAngle:
       _min: 0
       _max: 20
-    minMaxPosition:
+    MinMaxPosition:
       _min: 1.3
       _max: 3
-    randomRotation: 8
-    randomFlipY: 1
-  - name: Rocks base
-    disabled: 0
-    wallPrefabs:
+    RandomRotation: 8
+    RandomFlipY: 1
+  - Name: Rocks base
+    Disabled: 0
+    WallPrefabs:
     - {fileID: 717079983591251126, guid: cb8c4ff9972b3b745991cb1b0a747464, type: 3}
     - {fileID: 717079983591251126, guid: 3f32d0a184728724682dd65b9791dd96, type: 3}
     - {fileID: 717079983591251126, guid: 424e1344612e50945b8f0a0656bf0812, type: 3}
     - {fileID: 717079983591251126, guid: 281b97e065f0cf04c8d24be50977924e, type: 3}
-    zOffset: 0
-    spacing: 1.1
-    width: 2
-    heightOffset:
+    ZOffset: 0
+    Spacing: 1.1
+    Width: 2
+    HeightOffset:
       _min: 0
       _max: 0.1
-    verticalLoopLength: 8
-    verticalLoopIncrement: 2
-    minMaxAngle:
+    VerticalLoopLength: 8
+    VerticalLoopIncrement: 2
+    MinMaxAngle:
       _min: -5
       _max: 7
-    minMaxPosition:
+    MinMaxPosition:
       _min: -1
       _max: 0
-    randomRotation: 4
-    randomFlipY: 1
-  flatWallPrefab: {fileID: 0}
-  flatWallSpacing: 1
-  flatWallOffset: 1
-  surroundElements: []
-  floorElements:
-  - name: Floor
-    disabled: 0
-    floorPrefabs:
+    RandomRotation: 4
+    RandomFlipY: 1
+  Old_FlatWallPrefab: {fileID: 0}
+  Old_FlatWallSpacing: 1
+  Old_FlatWallOffset: 1
+  Old_SurroundElements: []
+  Old_FloorElements:
+  - Name: Floor
+    Disabled: 0
+    FloorPrefabs:
     - {fileID: 717079983591251126, guid: c7bf440da759743d2babef9b1f6de9ef, type: 3}
-    zOffset: 0.08
-    spacing: 0.5
-    randomXPosition: 0.5
-    minMaxAngle:
+    ZOffset: 0.08
+    Spacing: 0.5
+    RandomXPosition: 0.5
+    MinMaxAngle:
       _min: -1
       _max: 1
-    xRotation: 0
-    minMaxPosition:
+    XRotation: 0
+    MinMaxPosition:
       _min: -0.05
       _max: 0.05
-    randomFlipX: 1
-  flatFloorPrefab: {fileID: 0}
-  flatFloorSpacing: 1
-  flatFloorOffset: -1
-  ceilingElements:
-  - name: Stalactites
-    disabled: 0
-    ceilingPrefabs:
+    RandomFlipX: 1
+  Old_FlatFloorPrefab: {fileID: 0}
+  Old_FlatFloorSpacing: 1
+  Old_FlatFloorOffset: -1
+  Old_CeilingElements:
+  - Name: Stalactites
+    Disabled: 0
+    CeilingPrefabs:
     - {fileID: 717079983591251126, guid: 27bacbf4aeb5d44ac9799a0cc6ead2d1, type: 3}
     - {fileID: 717079983591251126, guid: 0e7499d4e7bc84f359fc4525db7054d9, type: 3}
     - {fileID: 717079983591251126, guid: 18274c28eec394e51bf119e0f5dcccba, type: 3}
@@ -480,38 +482,39 @@ MonoBehaviour:
     - {fileID: 717079983591251126, guid: eb304f83198d44625be12cd2c1e54164, type: 3}
     - {fileID: 717079983591251126, guid: eb304f83198d44625be12cd2c1e54164, type: 3}
     - {fileID: 717079983591251126, guid: eb304f83198d44625be12cd2c1e54164, type: 3}
-    height: 4
-    zOffset: 0.02
-    spacing: 0.57
-    randomXPosition: 4
-    minMaxAngle:
+    Height: 4
+    ZOffset: 0.02
+    Spacing: 0.57
+    RandomXPosition: 4
+    MinMaxAngle:
       _min: 0
       _max: 0.5
-    xRotation: 0
-    minMaxPosition:
+    XRotation: 0
+    MinMaxPosition:
       _min: -0.03
       _max: 0.7
-    randomFlipX: 0
-  - name: Ceiling
-    disabled: 0
-    ceilingPrefabs:
+    RandomFlipX: 0
+  - Name: Ceiling
+    Disabled: 0
+    CeilingPrefabs:
     - {fileID: 717079983591251126, guid: 2832df8ee9a104c518c231259296af54, type: 3}
     - {fileID: 717079983591251126, guid: b40fb7650720d4555ab821e23919b6c9, type: 3}
-    height: 4
-    zOffset: 0
-    spacing: 0.477
-    randomXPosition: 1
-    minMaxAngle:
+    Height: 4
+    ZOffset: 0
+    Spacing: 0.477
+    RandomXPosition: 1
+    MinMaxAngle:
       _min: 0
       _max: 0
-    xRotation: 0
-    minMaxPosition:
+    XRotation: 0
+    MinMaxPosition:
       _min: -0.03
       _max: 0.03
-    randomFlipX: 1
-  flatCeilingPrefab: {fileID: 0}
-  flatCeilingSpacing: 1
-  flatCeilingOffset: 1
+    RandomFlipX: 1
+  Old_FlatCeilingPrefab: {fileID: 0}
+  Old_FlatCeilingSpacing: 1
+  Old_FlatCeilingOffset: 1
+  SOToCopyInto: {fileID: 11400000, guid: 5983a5035799743de9f7fa1a1fe67b70, type: 2}
   _elementParents:
   - {fileID: 0}
   - {fileID: 0}
@@ -523,8 +526,6 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  _drawGizmos: 0
-  _generatedIsSelectable: 0
   _internalTunnelSpline: {fileID: 1392419567}
   _internalTunnelMesh: {fileID: 0}
 --- !u!4 &1392419566
@@ -688,8 +689,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1758886926}
-  - component: {fileID: 1758886925}
   - component: {fileID: 1758886924}
+  - component: {fileID: 1758886927}
   m_Layer: 0
   m_Name: TunnelSystem
   m_TagString: Untagged
@@ -713,20 +714,6 @@ MonoBehaviour:
   _fogStart: 3
   _fogDistance: 20
   _shadowsColor: {r: 0, g: 0, b: 1, a: 1}
-  _rampTexture: {fileID: 0}
---- !u!114 &1758886925
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1758886923}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92d55adc0335b6242ade96683686e672, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _dntDestroyOnLoad: 0
 --- !u!4 &1758886926
 Transform:
   m_ObjectHideFlags: 0
@@ -743,6 +730,24 @@ Transform:
   - {fileID: 1392419566}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1758886927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1758886923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be0d82d27da3546d6b0fbda67dbe8dcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SingleTunnelTestMode: 1
+  MapSettings: {fileID: 0}
+  TunnelPrefab: {fileID: 0}
+  TunnelJoinPrefab: {fileID: 0}
+  _areYouTakingCareOfYourself: 0
+  _greatJobYouGotThis: 0
 --- !u!1001 &1899238011
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -806,6 +811,22 @@ PrefabInstance:
     - target: {fileID: 4287536555734979045, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5849437770161265570, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
+      propertyPath: m_Positions.Array.data[1].z
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5849437770161265570, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
+      propertyPath: m_Positions.Array.data[2].z
+      value: -0.12599997
+      objectReference: {fileID: 0}
+    - target: {fileID: 8924337108285858432, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
+      propertyPath: m_Positions.Array.data[1].z
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8924337108285858432, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
+      propertyPath: m_Positions.Array.data[2].z
+      value: -0.126
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

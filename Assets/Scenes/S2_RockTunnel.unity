@@ -259,27 +259,14 @@ GameObject:
   m_Component:
   - component: {fileID: 1089071972}
   - component: {fileID: 1089071971}
-  - component: {fileID: 1089071970}
+  - component: {fileID: 1089071973}
   m_Layer: 0
-  m_Name: TunnelSystem
+  m_Name: World
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1089071970
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1089071969}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92d55adc0335b6242ade96683686e672, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _dntDestroyOnLoad: 0
 --- !u!114 &1089071971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -296,7 +283,6 @@ MonoBehaviour:
   _fogStart: 1.5
   _fogDistance: 30
   _shadowsColor: {r: 0.4528302, g: 0.4528302, b: 0.4528302, a: 1}
-  _rampTexture: {fileID: 0}
 --- !u!4 &1089071972
 Transform:
   m_ObjectHideFlags: 0
@@ -315,6 +301,24 @@ Transform:
   - {fileID: 1008998061}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1089071973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1089071969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be0d82d27da3546d6b0fbda67dbe8dcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SingleTunnelTestMode: 1
+  MapSettings: {fileID: 0}
+  TunnelPrefab: {fileID: 0}
+  TunnelJoinPrefab: {fileID: 0}
+  _areYouTakingCareOfYourself: 0
+  _greatJobYouGotThis: 0
 --- !u!1001 &1387279064
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -402,7 +406,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f743e6c0a9ec45e4abb4374dc99d4a09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _colorGradient:
+  UseSOData: 0
+  GenerationSettings: {fileID: 0}
+  EditMode: 0
+  Old_ColorGradient:
     serializedVersion: 2
     key0: {r: 0.6981132, g: 0.535298, b: 0.50448555, a: 1}
     key1: {r: 0.59716547, g: 0.7132075, b: 0.44541824, a: 1}
@@ -432,58 +439,57 @@ MonoBehaviour:
     m_ColorSpace: -1
     m_NumColorKeys: 8
     m_NumAlphaKeys: 2
-  _particles: {fileID: 0}
-  _particleSpawnDistance: 1
-  _baseTunnelWidth: 1
-  _lumpyWidth: 0.5
-  _clearingWidth: 7.5
-  _clearingDepth: 4
-  _setHideFlags: 1
-  wallElements: []
-  flatWallPrefab: {fileID: 0}
-  flatWallSpacing: 1
-  flatWallOffset: 1
-  surroundElements:
-  - name: Lumps
-    disabled: 0
-    surroundPrefabs:
+  Old_Particles: {fileID: 0}
+  Old_ParticleSpawnDistance: 1
+  Old_BaseTunnelWidth: 1
+  Old_LumpyWidth: 0.5
+  Old_ClearingWidth: 7.5
+  Old_ClearingDepth: 4
+  Old_WallElements: []
+  Old_FlatWallPrefab: {fileID: 0}
+  Old_FlatWallSpacing: 1
+  Old_FlatWallOffset: 1
+  Old_SurroundElements:
+  - Name: Lumps
+    Disabled: 0
+    SurroundPrefabs:
     - {fileID: 717079983591251126, guid: dde57e21e6c354eec8aacabab5da9407, type: 3}
     - {fileID: 717079983591251126, guid: 8bf6d4da7dbaf468fa9ccdb283aa9e40, type: 3}
-    zOffset: 0
-    spacing: 0.5
-    radiusOffset: 2
-    centerHeight: 1.7
-    pattern: 1
-    angleRange:
+    ZOffset: 0
+    Spacing: 0.5
+    RadiusOffset: 2
+    CenterHeight: 1.7
+    Pattern: 1
+    AngleRange:
       _min: 26
       _max: 334
-    angleIncrement: 45
-    randomRotation: 7
-    randomFlipY: 1
-    randomFlipX: 0
-  floorElements:
-  - name: Floor
-    disabled: 0
-    floorPrefabs:
+    AngleIncrement: 45
+    RandomRotation: 7
+    RandomFlipY: 1
+    RandomFlipX: 0
+  Old_FloorElements:
+  - Name: Floor
+    Disabled: 0
+    FloorPrefabs:
     - {fileID: 717079983591251126, guid: d30a5199178c74edea9e16ed711674da, type: 3}
-    zOffset: 0.08
-    spacing: 0.5
-    randomXPosition: 0.5
-    minMaxAngle:
+    ZOffset: 0.08
+    Spacing: 0.5
+    RandomXPosition: 0.5
+    MinMaxAngle:
       _min: -1
       _max: 1
-    xRotation: 0
-    minMaxPosition:
+    XRotation: 0
+    MinMaxPosition:
       _min: -0.05
       _max: 0.05
-    randomFlipX: 1
-  flatFloorPrefab: {fileID: 0}
-  flatFloorSpacing: 1
-  flatFloorOffset: -1
-  ceilingElements:
-  - name: Stalactites
-    disabled: 0
-    ceilingPrefabs:
+    RandomFlipX: 1
+  Old_FlatFloorPrefab: {fileID: 0}
+  Old_FlatFloorSpacing: 1
+  Old_FlatFloorOffset: -1
+  Old_CeilingElements:
+  - Name: Stalactites
+    Disabled: 0
+    CeilingPrefabs:
     - {fileID: 717079983591251126, guid: 27bacbf4aeb5d44ac9799a0cc6ead2d1, type: 3}
     - {fileID: 717079983591251126, guid: eb304f83198d44625be12cd2c1e54164, type: 3}
     - {fileID: 717079983591251126, guid: 18274c28eec394e51bf119e0f5dcccba, type: 3}
@@ -494,21 +500,22 @@ MonoBehaviour:
     - {fileID: 717079983591251126, guid: 5ed6d792c22cc47668aed863a6db01a8, type: 3}
     - {fileID: 717079983591251126, guid: 4a384414610284064b5d675f55a09c66, type: 3}
     - {fileID: 717079983591251126, guid: 0e7499d4e7bc84f359fc4525db7054d9, type: 3}
-    height: 3.7
-    zOffset: 0
-    spacing: 0.5
-    randomXPosition: 2
-    minMaxAngle:
+    Height: 3.7
+    ZOffset: 0
+    Spacing: 0.5
+    RandomXPosition: 2
+    MinMaxAngle:
       _min: 0
       _max: 0
-    xRotation: 0
-    minMaxPosition:
+    XRotation: 0
+    MinMaxPosition:
       _min: -4
       _max: 4
-    randomFlipX: 1
-  flatCeilingPrefab: {fileID: 0}
-  flatCeilingSpacing: 1
-  flatCeilingOffset: 1
+    RandomFlipX: 1
+  Old_FlatCeilingPrefab: {fileID: 0}
+  Old_FlatCeilingSpacing: 1
+  Old_FlatCeilingOffset: 1
+  SOToCopyInto: {fileID: 11400000, guid: 7f9d805cfee874ffaaec5f739f82f890, type: 2}
   _elementParents:
   - {fileID: 0}
   - {fileID: 0}
@@ -517,8 +524,6 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  _drawGizmos: 0
-  _generatedIsSelectable: 0
   _internalTunnelSpline: {fileID: 1392419567}
   _internalTunnelMesh: {fileID: 0}
 --- !u!4 &1392419566
@@ -1087,6 +1092,34 @@ PrefabInstance:
     - target: {fileID: 4287536555734979045, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5849437770161265570, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
+      propertyPath: m_Positions.Array.data[0].z
+      value: 0.000000018626451
+      objectReference: {fileID: 0}
+    - target: {fileID: 5849437770161265570, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
+      propertyPath: m_Positions.Array.data[1].x
+      value: 0.000000059604645
+      objectReference: {fileID: 0}
+    - target: {fileID: 5849437770161265570, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
+      propertyPath: m_Positions.Array.data[1].z
+      value: 0.19999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 8924337108285858432, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
+      propertyPath: m_Positions.Array.data[0].z
+      value: -0.000000018626451
+      objectReference: {fileID: 0}
+    - target: {fileID: 8924337108285858432, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
+      propertyPath: m_Positions.Array.data[1].z
+      value: 0.20000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 8924337108285858432, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
+      propertyPath: m_Positions.Array.data[2].x
+      value: -0.000000059604645
+      objectReference: {fileID: 0}
+    - target: {fileID: 8924337108285858432, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
+      propertyPath: m_Positions.Array.data[2].z
+      value: -0.12600005
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

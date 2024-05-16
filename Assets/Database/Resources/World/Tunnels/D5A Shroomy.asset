@@ -1,0 +1,120 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50d28d391025841c192a919a7297e73e, type: 3}
+  m_Name: D5A Shroomy
+  m_EditorClassIdentifier: 
+  _guid: 08d7e8c56f511461f8bb8e69c4ed5c67
+  ColorGradient:
+    serializedVersion: 2
+    key0: {r: 1, g: 1, b: 1, a: 1}
+    key1: {r: 1, g: 1, b: 1, a: 1}
+    key2: {r: 0, g: 0, b: 0, a: 0}
+    key3: {r: 0, g: 0, b: 0, a: 0}
+    key4: {r: 0, g: 0, b: 0, a: 0}
+    key5: {r: 0, g: 0, b: 0, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
+    key7: {r: 0, g: 0, b: 0, a: 0}
+    ctime0: 0
+    ctime1: 65535
+    ctime2: 0
+    ctime3: 0
+    ctime4: 0
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_ColorSpace: -1
+    m_NumColorKeys: 2
+    m_NumAlphaKeys: 2
+  BaseTunnelWidth: 1.25
+  LumpyWidth: 0.5
+  ClearingWidth: 2.7
+  ClearingDepth: 3
+  Particles: {fileID: 2402285776899386762, guid: 8e61f67cd760b423db14eb998271668d, type: 3}
+  ParticleSpawnDistance: 5
+  WallElements: []
+  FlatWallPrefab: {fileID: 0}
+  FlatWallSpacing: 1
+  FlatWallOffset: 8
+  SurroundElements:
+  - Name: Lumps
+    Disabled: 0
+    SurroundPrefabs:
+    - {fileID: 717079983591251126, guid: b122cb429a7bb40cb931c9f0bddee1aa, type: 3}
+    - {fileID: 717079983591251126, guid: 039de9e0764d14bb4812bff4c58cd8ec, type: 3}
+    - {fileID: 717079983591251126, guid: 3604b86102e1a4ab786f280d835dfc71, type: 3}
+    - {fileID: 717079983591251126, guid: dde57e21e6c354eec8aacabab5da9407, type: 3}
+    - {fileID: 717079983591251126, guid: 8bf6d4da7dbaf468fa9ccdb283aa9e40, type: 3}
+    - {fileID: 717079983591251126, guid: ae6fca2e20524476e8af244b76c1e882, type: 3}
+    ZOffset: 0
+    Spacing: 0.5
+    RadiusOffset: 2
+    CenterHeight: 1.7
+    Pattern: 1
+    AngleRange:
+      _min: 26
+      _max: 334
+    AngleIncrement: 45
+    RandomRotation: 7
+    RandomFlipY: 1
+    RandomFlipX: 0
+  - Name: Fronds
+    Disabled: 0
+    SurroundPrefabs:
+    - {fileID: 717079983591251126, guid: eabd18e107e8c4a9593b4acb9bed0c61, type: 3}
+    - {fileID: 717079983591251126, guid: f473276211eaa4a0d934ad01a9362aac, type: 3}
+    - {fileID: 717079983591251126, guid: a4c0f475ee3734eeeb0a4f7ea144db60, type: 3}
+    - {fileID: 717079983591251126, guid: 6f7001e6b0753493d9e8ef6911710f29, type: 3}
+    - {fileID: 717079983591251126, guid: 557273227691a4aa2b7d7af7282daaa0, type: 3}
+    ZOffset: 0.3
+    Spacing: 0.3
+    RadiusOffset: 2.5
+    CenterHeight: 1.7
+    Pattern: 2
+    AngleRange:
+      _min: 35
+      _max: 325
+    AngleIncrement: 22.5
+    RandomRotation: 22.5
+    RandomFlipY: 1
+    RandomFlipX: 0
+  FloorElements:
+  - Name: Floor
+    Disabled: 0
+    FloorPrefabs:
+    - {fileID: 717079983591251126, guid: d30a5199178c74edea9e16ed711674da, type: 3}
+    ZOffset: 0.08
+    Spacing: 0.5
+    RandomXPosition: 0.5
+    MinMaxAngle:
+      _min: -1
+      _max: 1
+    XRotation: 0
+    MinMaxPosition:
+      _min: -0.05
+      _max: 0.05
+    RandomFlipX: 1
+  FlatFloorPrefab: {fileID: 0}
+  FlatFloorSpacing: 1
+  FlatFloorOffset: -2
+  CeilingElements: []
+  FlatCeilingPrefab: {fileID: 0}
+  FlatCeilingSpacing: 1
+  FlatCeilingOffset: 5

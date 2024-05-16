@@ -44,7 +44,7 @@ public class TunnelStyle : MonoBehaviour
     {
         Vector3 splinePos = _generator.GetClosestPoint(worldPos);
         float t = 0f;
-        _generator.tunnelSpline.Evaluate(t.Clamp01(), out float3 pos, out float3 tangent, out float3 upVector);
+        _generator.Spline.Evaluate(t.Clamp01(), out float3 pos, out float3 tangent, out float3 upVector);
     }
 
     // MonoBehaviour
