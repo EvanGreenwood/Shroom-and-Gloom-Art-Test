@@ -35,7 +35,10 @@ public static class GIZMOS
         Vector3 disp = p1 - p0;
         float dst = disp.magnitude;
         Vector3 normal = disp.normalized;
-
+        if(normal.Approx(0f))
+        {
+            normal = Vector3.up;
+        }
         Matrix4x4 matrix = Matrix4x4.TRS(p0 + disp.Half(), Quaternion.LookRotation(normal), new Vector3(thickness, thickness, dst));
         GizmoColor(color, () =>
                        GizmoMatrix(matrix, () =>

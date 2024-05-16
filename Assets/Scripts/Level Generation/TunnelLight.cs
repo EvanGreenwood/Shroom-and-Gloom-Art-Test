@@ -1,32 +1,34 @@
 #region Usings
 using UnityEngine;
-using MathBad;
-using Framework;
+using NaughtyAttributes;
 #endregion
 
+[RequireComponent(typeof(Light))]
 public class TunnelLight : MonoBehaviour
 {
     [SerializeField] Light _light;
-    [SerializeField] SpriteRenderer _flare;
-    [SerializeField] Gradient _colorRange;
-    [SerializeField] FloatRange _intensityMinMax = new FloatRange(0.75f, 1f);
-    [SerializeField] FloatRange _rangeMinMax = new FloatRange(4.5f, 5.5f);
-    [SerializeField] FloatRange _flareAlphaMinMax = new FloatRange(0.05f, 0.1f);
-    [SerializeField] float _flareHueVariance = 0.05f;
+    [SerializeField] TunnelRig _rig;
+    [SerializeField] float _splinePercent;
+    [SerializeField] float _angle;
+    [SerializeField] float _distance;
 
-    void Awake()
+    public TunnelRig rig => _rig;
+    public new Light light => _light;
+
+    public float splinePercent { get => _splinePercent; set => _splinePercent = value; }
+    public float angle { get => _angle; set => _angle = value; }
+    public float distance { get => _distance; set => _distance = value; }
+
+    public void Init(TunnelRig rig)
     {
-        float intensity = _intensityMinMax.ChooseRandom();
-        float range = _rangeMinMax.ChooseRandom();
-        Color color = _colorRange.Evaluate(RNG.Float());
+        _rig = rig;
+        _light = GetComponent<Light>();
+    }
 
-        _light.intensity = intensity;
-        _light.range = range;
-        _light.color = color;
-
-        _flare.color = color.WithHueShift(RNG.FloatVariance(0f, _flareHueVariance)).WithA(_flareAlphaMinMax.ChooseRandom());
-        _flare.transform.localScale = new Vector3(RNG.FloatVariance(range, 0.15f),
-                                                  RNG.FloatVariance(range, 0.15f),
-                                                  1f);
+    void OnDestroy()
+    {
+        if(_rig == null)
+            return;
+        _rig.RemoveLight(this);
     }
 }

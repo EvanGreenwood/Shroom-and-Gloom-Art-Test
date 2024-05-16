@@ -5,17 +5,32 @@ namespace MathBad_Editor
 {
 public class ExtendedEditor<T> : Editor where T : Object
 {
-  protected T _target;
-  protected T[] _targets;
+    T _targetInternal;
+    T[] _targetsInternal;
 
-  protected virtual void OnEnable()
-  {
-    _target = target as T;
-    _targets = new T[targets.Length];
-    for(int i = 0; i < targets.Length; i++)
+    protected new T target
     {
-      _targets[i] = targets[i] as T;
+        get
+        {
+            if(_targetInternal == null)
+                _targetInternal = base.target as T;
+            return _targetInternal;
+        }
     }
-  }
+    protected new T[] targets
+    {
+        get
+        {
+            if(_targetsInternal == null)
+            {
+                _targetsInternal = new T[base.targets.Length];
+                for(int i = 0; i < base.targets.Length; i++)
+                {
+                    _targetsInternal[i] = base.targets[i] as T;
+                }
+            }
+            return _targetsInternal;
+        }
+    }
 }
 }
