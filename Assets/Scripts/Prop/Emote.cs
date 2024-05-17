@@ -30,9 +30,9 @@ public class Emote : MonoBehaviour
     }
     public void Update()
     {
-        _anim.Step(Time.deltaTime);
+        _anim.Step(UnityEngine.Time.deltaTime);
 
         transform.localScale = _startScale * _anim.lerp;
-        transform.position += Vector3.up * (0.25f * Time.deltaTime);
+        transform.position += Vector3.up * (0.25f * UnityEngine.Time.deltaTime);
     }
 }

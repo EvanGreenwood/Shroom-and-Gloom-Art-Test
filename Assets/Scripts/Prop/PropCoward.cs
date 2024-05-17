@@ -32,11 +32,11 @@ public class PropCoward : MonoBehaviour
     {
         if(_retreating)
         {
-            _retreatTime += Time.deltaTime;
+            _retreatTime += UnityEngine.Time.deltaTime;
             if(_retreatTime < _distance / _speed + 0.02f)
             {
-                transform.position = Vector3.MoveTowards(transform.position, _startPosition + (_leftWall ? transform.right * -_distance : transform.right * _distance), Time.deltaTime * _speed);
-                transform.position = transform.position.WithY(Mathf.Lerp(transform.position.y, _startPosition.y + Mathf.Sin(Time.time * 40) * 0.06f + +Mathf.Sin(_retreatTime * 6) * 0.06f, Time.deltaTime * 35));
+                transform.position = Vector3.MoveTowards(transform.position, _startPosition + (_leftWall ? transform.right * -_distance : transform.right * _distance), UnityEngine.Time.deltaTime * _speed);
+                transform.position = transform.position.WithY(Mathf.Lerp(transform.position.y, _startPosition.y + Mathf.Sin(UnityEngine.Time.time * 40) * 0.06f + +Mathf.Sin(_retreatTime * 6) * 0.06f, UnityEngine.Time.deltaTime * 35));
             }
         }
         else if(CAMERA.main != null)

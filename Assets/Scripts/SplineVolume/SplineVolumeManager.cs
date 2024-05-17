@@ -1,4 +1,5 @@
 
+using Ross.EditorRuntimeCombatibility;
 using System;
 using Unity.VisualScripting;
 
@@ -11,7 +12,6 @@ using UnityEngine.Rendering.PostProcessing;
 [ExecuteAlways]
 public class SplineVolumeManager : MonoService
 {
-    private float _lastUpdateTime;
     private float _currentTransitionTime;
     private SplineVolume _targetVolume;
     private SplineVolume _lastVolume;
@@ -120,9 +120,8 @@ public class SplineVolumeManager : MonoService
         {
             return;
         }
-        
-        float dt = SafeTime.Time - _lastUpdateTime;
-        _currentTransitionTime += dt;
+
+        _currentTransitionTime += Safe.Time.deltaTime;
         float transitionInTime = _targetVolume.Settings.TransitionInTime;
         float normTime = Mathf.Clamp01(_currentTransitionTime / transitionInTime);
         _currentSettings.FogDistance = Mathf.Lerp(_lastVolume.Settings.FogDistance, _targetVolume.Settings.FogDistance, normTime);
@@ -130,8 +129,6 @@ public class SplineVolumeManager : MonoService
         
         _oldVolume.weight = 1f - normTime;
         _newVolume.weight = normTime;
-        
-        _lastUpdateTime = SafeTime.Time;
     }
     
     private void UpdateToCurrentSettings()

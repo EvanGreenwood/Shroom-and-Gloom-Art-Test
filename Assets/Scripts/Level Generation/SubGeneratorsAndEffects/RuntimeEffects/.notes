@@ -1,0 +1,1 @@
+Effects for anything spawned by a tunnel, or otherwise, does not need TunnelGenerator, and TunnelGenerator does not use them.

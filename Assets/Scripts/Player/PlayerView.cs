@@ -49,7 +49,7 @@ public class PlayerView : MonoBehaviour
         }
 
         if(_canLook) Look();
-        AutoFocus(Time.deltaTime);
+        AutoFocus(UnityEngine.Time.deltaTime);
     }
 
     void OnDrawGizmos()

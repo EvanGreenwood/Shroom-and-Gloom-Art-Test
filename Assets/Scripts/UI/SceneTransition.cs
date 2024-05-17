@@ -97,7 +97,7 @@ public class SceneTransition : MonoSingletonUI<SceneTransition>
             if(_title.gameObject.activeInHierarchy) _title.color = _title.color.WithA(lerp);
             if(_message.gameObject.activeInHierarchy) _message.color = _message.color.WithA(lerp);
 
-            leadTime += Time.deltaTime;
+            leadTime += UnityEngine.Time.deltaTime;
             yield return null;
         }
 
@@ -113,7 +113,7 @@ public class SceneTransition : MonoSingletonUI<SceneTransition>
                 break;
             }
 
-            _fadeTimer.Step(Time.deltaTime);
+            _fadeTimer.Step(UnityEngine.Time.deltaTime);
             float lerp = EASE.Evaluate(fadeIn ? _fadeTimer.percent : 1f - _fadeTimer.percent, easing);
 
             // _canvasGroup.alpha = lerp;
@@ -136,7 +136,7 @@ public class SceneTransition : MonoSingletonUI<SceneTransition>
             {
                 if(INPUT.leftMouse.down)
                     break;
-                wait -= Time.deltaTime;
+                wait -= UnityEngine.Time.deltaTime;
                 if(wait <= 0f)
                     break;
                 yield return null;
