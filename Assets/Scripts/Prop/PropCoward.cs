@@ -30,19 +30,19 @@ public class PropCoward : MonoBehaviour
     }
     void Update()
     {
-        if (_cameraTransform != null && _spriteRenderer != null && _blacknessThreshold < 1)
-        {
-            float dot =  Vector3.Dot((_cameraTransform.position - transform.position).WithY(0).normalized, transform.right.WithY(0).normalized * (_leftWall? 1 : -1));
-            if (dot > _blacknessThreshold)
-            {
-                _spriteRenderer.color = Color.Lerp(_spriteRenderer.color, Color.black, Time.deltaTime * 15);
-            }
-            else
-            {
-                _spriteRenderer.color = Color.Lerp(_spriteRenderer.color, _originalColor, Time.deltaTime * 15);
-                //
-            }
-        }
+        // if (_cameraTransform != null && _spriteRenderer != null && _blacknessThreshold < 1)
+        // {
+        //     float dot =  Vector3.Dot((_cameraTransform.position - transform.position).WithY(0).normalized, transform.right.WithY(0).normalized * (_leftWall? 1 : -1));
+        //     if (dot > _blacknessThreshold)
+        //     {
+        //         _spriteRenderer.color = Color.Lerp(_spriteRenderer.color, Color.black, Time.deltaTime * 15);
+        //     }
+        //     else
+        //     {
+        //         _spriteRenderer.color = Color.Lerp(_spriteRenderer.color, _originalColor, Time.deltaTime * 15);
+        //         //
+        //     }
+        // }
         if (_retreating)
         {
             _retreatTime += Time.deltaTime;

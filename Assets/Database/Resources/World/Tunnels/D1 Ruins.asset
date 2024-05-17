@@ -50,26 +50,6 @@ MonoBehaviour:
   Particles: {fileID: 2402285776899386762, guid: 8e61f67cd760b423db14eb998271668d, type: 3}
   ParticleSpawnDistance: 5
   WallElements:
-  - Name: Wall Thorns
-    Disabled: 0
-    WallPrefabs:
-    - {fileID: 717079983591251126, guid: 1c9cc17696a50154985091ca956b6bb9, type: 3}
-    ZOffset: 0
-    Spacing: 0.5
-    Width: 1.5
-    HeightOffset:
-      _min: 1.5
-      _max: 2
-    VerticalLoopLength: 5
-    VerticalLoopIncrement: 2
-    MinMaxAngle:
-      _min: -20
-      _max: 20
-    MinMaxPosition:
-      _min: 1.6
-      _max: 3
-    RandomRotation: 13
-    RandomFlipY: 1
   - Name: Thorns Base
     Disabled: 0
     WallPrefabs:
@@ -90,6 +70,29 @@ MonoBehaviour:
       _max: 0.3
     RandomRotation: 10
     RandomFlipY: 0
+  - Name: Wall Thorns
+    Disabled: 0
+    WallPrefabs:
+    - {fileID: 717079983591251126, guid: 1c9cc17696a50154985091ca956b6bb9, type: 3}
+    - {fileID: 717079983591251126, guid: 6b8cd0b78b7a43547a6828e17806a41c, type: 3}
+    - {fileID: 717079983591251126, guid: 3ba71e0ec8102b5449495397c5e84ddd, type: 3}
+    - {fileID: 717079983591251126, guid: d9915620e3e1d8544964806d08091d29, type: 3}
+    ZOffset: 0
+    Spacing: 0.25
+    Width: 1.5
+    HeightOffset:
+      _min: 1.5
+      _max: 2
+    VerticalLoopLength: 5
+    VerticalLoopIncrement: 2
+    MinMaxAngle:
+      _min: -35
+      _max: 20
+    MinMaxPosition:
+      _min: 1.6
+      _max: 3
+    RandomRotation: 25
+    RandomFlipY: 1
   FlatWallPrefab: {fileID: 0}
   FlatWallSpacing: 1
   FlatWallOffset: 1

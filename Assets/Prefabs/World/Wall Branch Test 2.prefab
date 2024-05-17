@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 717079983591251126}
   - component: {fileID: -6326658844294600344}
   m_Layer: 0
-  m_Name: Wall Branch Test
+  m_Name: Wall Branch Test 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
