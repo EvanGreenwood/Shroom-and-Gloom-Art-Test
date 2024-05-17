@@ -3,7 +3,9 @@ guid: e1ae805add3d24f43a94829d4cb99a2a
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - _splineContainer: {instanceID: 0}
+  - _tunneLightPrefab: {fileID: 4971119271147331324, guid: eae6e977ad6b72c4090b093c59697af4, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

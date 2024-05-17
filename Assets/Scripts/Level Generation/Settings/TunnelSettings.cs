@@ -47,6 +47,8 @@ public partial class TunnelSettings : ScriptableEnum
     [ShowIf("UsingCeilingFlats")] public float FlatCeilingOffset = 1;
 
     public SplineVolume SplineVolume;
+
+    public TunnelSceneData SceneData;
     
     public void OnValidate()
     {
