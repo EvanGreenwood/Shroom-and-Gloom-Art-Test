@@ -48,14 +48,14 @@ public class PlayerMover : MonoBehaviour
     void Update()
     {
         float speed = _runInput ? _speed * _runMul : _speed;
-        float dt = Time.deltaTime * (_runInput ? _speed * 0.6f : _speed);
+        float dt = UnityEngine.Time.deltaTime * (_runInput ? _speed * 0.6f : _speed);
         _currentSpeed = Mathf.MoveTowards(_currentSpeed, _speed, dt);
 
         if(_fwdInput.Abs() > 0)
         {
             if(_tunnel == null)
             {
-                transform.Translate(transform.forward * (Time.deltaTime * _currentSpeed * _fwdInput));
+                transform.Translate(transform.forward * (UnityEngine.Time.deltaTime * _currentSpeed * _fwdInput));
             }
             else
             {
@@ -68,22 +68,22 @@ public class PlayerMover : MonoBehaviour
                 
                 Vector3 lookaheadPoint = _tunnel.GetLookaheadPoint(t, _directionLookaheadDistance);
                 Vector3 towardsLookahead = (lookaheadPoint - currentPosition).normalized;
-                transform.forward = Vector3.RotateTowards(transform.forward, towardsLookahead, Time.deltaTime * 0.25f, 0);
+                transform.forward = Vector3.RotateTowards(transform.forward, towardsLookahead, UnityEngine.Time.deltaTime * 0.25f, 0);
                 currentDirection = _fwdInput * currentDirection;
                
                 Debug.DrawLine(currentPosition, currentPosition + currentDirection);
-                transform.position = Vector3.MoveTowards(transform.position, currentPosition + currentDirection, Time.deltaTime * _currentSpeed);
+                transform.position = Vector3.MoveTowards(transform.position, currentPosition + currentDirection, UnityEngine.Time.deltaTime * _currentSpeed);
             }
 
             //Moving bob
-            _bobCounter += Time.deltaTime * _speed * _fwdInput;
-            _view.transform.localPosition = _view.transform.localPosition.WithY(Mathf.Lerp(_view.transform.localPosition.y, _headHeight + Mathf.Sin(_bobCounter / _bobRate * Mathf.PI) * _bobHeight, Time.deltaTime * 12));
+            _bobCounter += UnityEngine.Time.deltaTime * _speed * _fwdInput;
+            _view.transform.localPosition = _view.transform.localPosition.WithY(Mathf.Lerp(_view.transform.localPosition.y, _headHeight + Mathf.Sin(_bobCounter / _bobRate * Mathf.PI) * _bobHeight, UnityEngine.Time.deltaTime * 12));
         }
         else
         {
             //Reduce bob
-            _bobCounter = Mathf.Lerp(_bobCounter, Mathf.Round(_bobCounter * _bobRate) / _bobRate, Time.deltaTime * 7);
-            _view.transform.localPosition = _view.transform.localPosition.WithY(Mathf.Lerp(_view.transform.localPosition.y, _headHeight + Mathf.Sin(_bobCounter / _bobRate * Mathf.PI) * _bobHeight, Time.deltaTime * 8));
+            _bobCounter = Mathf.Lerp(_bobCounter, Mathf.Round(_bobCounter * _bobRate) / _bobRate, UnityEngine.Time.deltaTime * 7);
+            _view.transform.localPosition = _view.transform.localPosition.WithY(Mathf.Lerp(_view.transform.localPosition.y, _headHeight + Mathf.Sin(_bobCounter / _bobRate * Mathf.PI) * _bobHeight, UnityEngine.Time.deltaTime * 8));
         }
     }
 }

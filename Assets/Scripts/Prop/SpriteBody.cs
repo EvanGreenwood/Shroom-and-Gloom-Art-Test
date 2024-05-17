@@ -36,7 +36,7 @@ public class SpriteBody : MonoBehaviour
 
     void FixedUpdate()
     {
-        FixedStep(Time.fixedDeltaTime);
+        FixedStep(UnityEngine.Time.fixedDeltaTime);
         _lastPos = transform.position;
     }
 

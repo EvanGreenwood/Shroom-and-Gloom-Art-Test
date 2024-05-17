@@ -38,7 +38,7 @@ public class Music : MonoBehaviour
 
         if(!_volumeTimer.hasFinished)
         {
-            _volumeTimer.Step(Time.deltaTime);
+            _volumeTimer.Step(UnityEngine.Time.deltaTime);
             _source.volume = EASE.Evaluate(_volumeTimer.percent.Clamp01(), EaseType.InQuad);
         }
     }

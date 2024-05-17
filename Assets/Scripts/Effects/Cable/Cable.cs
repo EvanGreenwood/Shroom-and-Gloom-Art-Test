@@ -95,7 +95,7 @@ public class Cable : MonoBehaviour
     if(!_hasInit)
       return;
 
-    Step(Time.deltaTime);
+    Step(UnityEngine.Time.deltaTime);
 
     // Render
     for(int i = 0; i < _numNodes; i++) { _lr.SetPosition(i, transform.InverseTransformPoint(_nodes[i].position)); }

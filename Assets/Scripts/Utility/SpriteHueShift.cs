@@ -23,7 +23,7 @@ public class SpriteHueShift : MonoBehaviour
     }
     void Update()
     {
-        _anim.Step(Time.deltaTime);
+        _anim.Step(UnityEngine.Time.deltaTime);
         _sr.color = RGB.Hue(_anim.lerp).WithA(_alpha);
     }
 }

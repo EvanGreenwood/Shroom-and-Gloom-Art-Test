@@ -42,7 +42,7 @@ public class LightAnim : MonoBehaviour
         NextTarget();
     }
 
-    void Update() {Step(Time.deltaTime);}
+    void Update() {Step(UnityEngine.Time.deltaTime);}
 
     // Step
     //----------------------------------------------------------------------------------------------------

@@ -112,7 +112,10 @@ public class TunnelElement : MonoBehaviour
                 continue;
             }
 
-            sg.RequestFlip();
+            if (sg is SGFlip flip)
+            {
+                flip.RequestFlip();
+            }
         }
     }
 

@@ -11,6 +11,7 @@ using Framework;
 using JetBrains.Annotations;
 using MathBad;
 using NaughtyAttributes;
+using Ross.EditorRuntimeCombatibility;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.Mathematics;
@@ -23,12 +24,11 @@ using Random = UnityEngine.Random;
 #if UNITY_EDITOR
 using Unity.EditorCoroutines.Editor;
 using UnityEditor;
-using UnityEngine.SceneManagement;
 #endif
 #endregion
 
 [RequireComponent(typeof(SplineContainer))]
-public class TunnelGenerator : MonoBehaviour
+public partial class TunnelGenerator : MonoBehaviour
 {
     public enum EditorHideMode
     {
@@ -151,6 +151,9 @@ public class TunnelGenerator : MonoBehaviour
     
     private List<Transform> _generatedElements;
     private float _tunnelLength = 1;
+
+    //Needed for setting color before instantiating
+    private ParticleSystem _templateInstance;
 
     #region PROPS
         public SplineContainer Spline
@@ -284,7 +287,7 @@ public class TunnelGenerator : MonoBehaviour
         {
             // Give time for TunnelElement and sub generators to run awake, onenable, start
             yield return null;
-
+            
             e.SubGenerate();
 
             yield return null;
@@ -831,6 +834,12 @@ public class TunnelGenerator : MonoBehaviour
             Debug.LogWarning($"[TunnelGenerator] {gameObject.name}; Missing particles prefab! Skipping...");
             return;
         }
+        
+        //Need to set the particle color on template instance, because prewarm spawns particles before we can set it in instance.
+        if (_templateInstance == null)
+        {
+            _templateInstance = Instantiate(Particles);
+        }
 
         Transform particleParent = SpawnContainer("Particles");
         Vector3 perpendicular;
@@ -849,11 +858,13 @@ public class TunnelGenerator : MonoBehaviour
 
                 Color particleColor = ColorGradient.Evaluate(distanceM);
 
-                //Need to set the particle color on prefab, because prewarm spawns particles before we can set it in instance.
-                var prefabMain = Particles.main;
-                prefabMain.startColor = particleColor;
+                
+               
+                var templateMain = _templateInstance.main;
+                
+                templateMain.startColor = particleColor;
 
-                ParticleSystem particles = SpawnParticleSystem(Particles, spawnPos, currentRotation);
+                ParticleSystem particles = SpawnParticleSystem(_templateInstance, spawnPos, currentRotation);
                 particleParent.TakeChild(particles);
 
                 //floor.transform.localPosition = floor.transform.localPosition.PlusY(floorData.minMaxPosition.ChooseRandom());
@@ -868,6 +879,8 @@ public class TunnelGenerator : MonoBehaviour
                 colorOverLifetime.color = gradient;
             }
         }
+        
+        Safe.Destroy(_templateInstance.gameObject);
     }
 
     // MonoBehaviour
@@ -937,10 +950,12 @@ public class TunnelGenerator : MonoBehaviour
 
     private void OnDrawGizmos()
     {
+        #if UNITY_EDITOR
         Color c = Handles.color;
         Handles.color =  ColorGradient.Evaluate(0.5f);
         Spline.Evaluate(0.5f, out float3 position, out float3 tangent, out float3 upVector);
         Handles.Label(position, InWorldContext?gameObject.name:UseSOData?GenerationSettings.name:gameObject.name);
         Handles.color = c;
+        #endif
     }
 }

@@ -61,7 +61,7 @@ public class MainMenuCanvas : CanvasSingleton<MainMenuCanvas>
 
         while(t < duration)
         {
-            t += Time.deltaTime;
+            t += UnityEngine.Time.deltaTime;
             float lerp = (t / duration).Clamp01();
             _vhsPro.feedbackFade.value = 1f - lerp;
             emission.rateOverTimeMultiplier = rateOverTime * lerp;

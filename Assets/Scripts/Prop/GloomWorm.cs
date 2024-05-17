@@ -58,7 +58,7 @@ public class GloomWorm : MonoBehaviour
             SpriteRenderer bodyPart = _segments[i];
 
             float lerp = mathi.unlerp(i, _segments.Count);
-            float t = Time.time + (lerp * _bodyJiggleSpacing);
+            float t = UnityEngine.Time.time + (lerp * _bodyJiggleSpacing);
 
             float sizeFactor = Mathf.Lerp(_bodyJiggleSizeFactor.Min, _bodyJiggleSizeFactor.Max, lerp);
             float x = Mathf.Sin((t + _bodyJiggleSpeed.x) * _speedMul) * _bodyJiggleSize.x * sizeFactor;

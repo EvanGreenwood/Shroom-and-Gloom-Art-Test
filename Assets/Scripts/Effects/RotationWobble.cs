@@ -16,7 +16,7 @@ public class RotationWobble : MonoBehaviour
     // 
     void Update()
     {
-        _counter += Time.deltaTime * _speed;
+        _counter += UnityEngine.Time.deltaTime * _speed;
         transform.localRotation = _originalLocalRotation * Quaternion.Euler(0, 0, Mathf.Sin(_counter) * _amount);
     }
 }

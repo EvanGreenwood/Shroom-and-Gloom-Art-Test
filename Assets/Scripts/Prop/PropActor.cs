@@ -39,7 +39,7 @@ public class PropActor : MonoBehaviour
     {
         if(_isFleeing)
         {
-            Flee(Time.deltaTime);
+            Flee(UnityEngine.Time.deltaTime);
             return;
         }
 

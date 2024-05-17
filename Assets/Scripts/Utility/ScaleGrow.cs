@@ -15,7 +15,7 @@ public class ScaleGrow : MonoBehaviour
     
     void Update()
     {
-        transform.localScale += Vector3.one * (_speed * Time.deltaTime);
+        transform.localScale += Vector3.one * (_speed * UnityEngine.Time.deltaTime);
     }
 
     void OnDisable() {transform.localScale = _startScale;}

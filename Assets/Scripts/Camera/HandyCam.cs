@@ -23,16 +23,16 @@ public class HandyCam : MonoBehaviour
     public void Update()
     {
         // position
-        float x = Mathf.PerlinNoise(Time.time * _speed, 0) * 2.0f - 1.0f;
-        float y = Mathf.PerlinNoise(0, Time.time * _speed) * 2.0f - 1.0f;
-        float z = Mathf.PerlinNoise(Time.time * _speed, Time.time * _speed) * 2.0f - 1.0f;
+        float x = Mathf.PerlinNoise(UnityEngine.Time.time * _speed, 0) * 2.0f - 1.0f;
+        float y = Mathf.PerlinNoise(0, UnityEngine.Time.time * _speed) * 2.0f - 1.0f;
+        float z = Mathf.PerlinNoise(UnityEngine.Time.time * _speed, UnityEngine.Time.time * _speed) * 2.0f - 1.0f;
         Vector3 move = new Vector3(x, y, z) * _positionIntensity;
         transform.localPosition = _initialPosition + move;
 
         // rotation
-        x = Mathf.PerlinNoise(Time.time * _speed, 0.3f) * 2.0f - 1.0f;
-        y = Mathf.PerlinNoise(0.3f, Time.time * _speed) * 2.0f - 1.0f;
-        z = Mathf.PerlinNoise(Time.time * _speed, Time.time * _speed + 0.3f) * 2.0f - 1.0f;
+        x = Mathf.PerlinNoise(UnityEngine.Time.time * _speed, 0.3f) * 2.0f - 1.0f;
+        y = Mathf.PerlinNoise(0.3f, UnityEngine.Time.time * _speed) * 2.0f - 1.0f;
+        z = Mathf.PerlinNoise(UnityEngine.Time.time * _speed, UnityEngine.Time.time * _speed + 0.3f) * 2.0f - 1.0f;
         Vector3 rot = new Vector3(x, y, z) * _rotationIntensity;
         transform.localRotation = _initialRotation * Quaternion.Euler(rot);
     }

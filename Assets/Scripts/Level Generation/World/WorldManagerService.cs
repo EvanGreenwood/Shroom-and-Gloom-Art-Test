@@ -31,7 +31,7 @@ public class WorldManagerService : MonoService
         _tunnels ??= new List<TunnelGenerator>();
         _joins ??= new List<TunnelJoin>();
 
-        float startTime = SafeTime.Time;
+        float startTime = Time.time;
         Debug.Log($"<color=green><b>==== BEGINNING WORLD GENERATION FOR MAP: {MapSettings.name.ToUpperInvariant()} ====</b></color>");
         
         //Clear existing children
@@ -69,7 +69,7 @@ public class WorldManagerService : MonoService
                 yield return GeneratePath(MapSettings.Paths[0]);
                 yield return null;
             }
-            float genTime = SafeTime.Time - startTime;
+            float genTime = Time.time - startTime;
             Debug.Log($"<color=green><b>==== WORLD GENERATION COMPLETE IN {genTime:0.00}s====</b></color>");
             onComplete?.Invoke();
         }
@@ -267,7 +267,7 @@ public class WorldManagerService : MonoService
         float t = tunnel.GetClosestPositionAndDirection(worldPos, out Vector3 currentPosition, out Vector3 currentDirection, out Vector3 currentUp);
         Vector3 lookaheadPoint = tunnel.GetLookaheadPoint(t, lookaheadDst);
         Vector3 towardsLookahead = (lookaheadPoint - currentPosition).normalized;
-        transform.forward = Vector3.RotateTowards(transform.forward, towardsLookahead, Time.deltaTime * 0.25f, 0);
+        transform.forward = Vector3.RotateTowards(transform.forward, towardsLookahead, UnityEngine.Time.deltaTime * 0.25f, 0);
 
         return currentDirection;
     } 

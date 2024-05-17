@@ -35,11 +35,11 @@ public class LetterBox : MonoBehaviourUI
             return;
         
         if(_startTime > 0f)
-            _startTime -= Time.deltaTime;
+            _startTime -= UnityEngine.Time.deltaTime;
 
         if(_startTime <= 0f)
         {
-            _fadeTimer.Step(Time.deltaTime);
+            _fadeTimer.Step(UnityEngine.Time.deltaTime);
             float percent = 1f - _fadeTimer.value;
             if(percent <= _stopSize && _stopSize > 0f)
             {

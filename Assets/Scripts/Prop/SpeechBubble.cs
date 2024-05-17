@@ -22,7 +22,7 @@ public class SpeechBubble : MonoBehaviour
     {
         if(!_hasInit)
             return;
-        transform.position += Vector3.up * (0.25f * Time.deltaTime);
+        transform.position += Vector3.up * (0.25f * UnityEngine.Time.deltaTime);
     }
     IEnumerator ShowTextRoutine(float duration)
     {
@@ -42,7 +42,7 @@ public class SpeechBubble : MonoBehaviour
         _ps.Stop();
         while(t < 1f)
         {
-            t += Time.deltaTime;
+            t += UnityEngine.Time.deltaTime;
             transform.localScale = Vector3.Lerp(startScale, Vector3.zero, EASE.Evaluate((t / duration).Clamp01(), EaseType.OutCubic));
             yield return null;
         }

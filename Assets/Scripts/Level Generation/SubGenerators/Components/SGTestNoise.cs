@@ -5,7 +5,7 @@ using MathBad;
 #endregion
 
 // Testing rotating tunnel peices with some 1D perlin over length of tunnel
-public class TestNoise : MonoBehaviour
+public class SGTestNoise : SubGenerator
 {
     [SerializeField] SpriteRenderer[] _renderers;
     [SerializeField] FloatRange _randomAngleMinMax = new FloatRange(-25, 25);
@@ -14,7 +14,7 @@ public class TestNoise : MonoBehaviour
     [SerializeField] float _yOffsetNoiseScale = 2f;
     // MonoBehaviour
     //----------------------------------------------------------------------------------------------------
-    void Awake()
+    public override void Generate()
     {
         for(int i = 0; i < _renderers.Length; i++)
         {

@@ -43,7 +43,7 @@ public class FreeCamera : MonoBehaviour
     {
         if(_isPaused)
             return;
-        Step(Time.deltaTime);
+        Step(UnityEngine.Time.deltaTime);
     }
 
     // Step

@@ -21,7 +21,7 @@ public class AnimatedSprite : MonoBehaviour
         _spriteRenderer = GetComponent<SpriteRenderer>();
 
         //
-        if (Time.deltaTime >= _frameRate /2f)
+        if (UnityEngine.Time.deltaTime >= _frameRate /2f)
         {
             _frame = Random.Range(0, 3);
             _spriteRenderer.sprite = _sprites[_frame % _sprites.Length];
@@ -39,7 +39,7 @@ public class AnimatedSprite : MonoBehaviour
      
     void Update()
     {
-        _counter += Time.deltaTime;
+        _counter += UnityEngine.Time.deltaTime;
         while (_counter > _frameRate)
         {
             _counter -= _frameRate;
