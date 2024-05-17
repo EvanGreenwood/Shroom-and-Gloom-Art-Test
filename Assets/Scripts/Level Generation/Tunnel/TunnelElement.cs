@@ -72,7 +72,7 @@ public class TunnelElement : MonoBehaviour
         for(int i = 0; i < _childRenderers.Length; i++)
         {
             SpriteRenderer sr = _childRenderers[i];
-            if(sr.GetComponent<IgnoreGeneratedColor>())
+            if(sr.GetComponent<SGIgnoreGeneratedColor>())
                 continue;
             
             if(sr && sr.gameObject.activeInHierarchy)

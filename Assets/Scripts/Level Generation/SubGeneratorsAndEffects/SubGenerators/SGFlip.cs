@@ -23,7 +23,6 @@ public class SGFlip : SubGenerator
     
     //default flip mode. Works for most things
     public FlipMode FlipFlags = FlipMode.FlipLocalPosX | FlipMode.FlipLocalRotation;
-    private TunnelElement _parent;
     
       protected bool Flip(FlipMode flipMode)
     {

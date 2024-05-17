@@ -3,10 +3,15 @@ using UnityEngine;
 using MathBad;
 #endregion
 
-public class IgnoreGeneratedColor : MonoBehaviour
+public class SGIgnoreGeneratedColor : SubGenerator
 {
     // MonoBehaviour
     //----------------------------------------------------------------------------------------------------
     void Awake() {}
     void Update() {}
+    
+    public override void Generate()
+    {
+        
+    }
 }

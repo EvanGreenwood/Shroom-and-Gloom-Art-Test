@@ -37,5 +37,6 @@ public abstract class SubGenerator : MonoBehaviour
     }
 
     //override to add your own generation stuff. Dont use Start, Awake etc
+    //Gives ability to generate outside playmode for preview
     public abstract void Generate();
 }
