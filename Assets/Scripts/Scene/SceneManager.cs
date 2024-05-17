@@ -36,7 +36,12 @@ public class SceneManager : MonoService
         }
         else
         {
-            Instantiate(PlayerPrefab, Vector3.zero, Quaternion.identity);
+            Hero hero = FindObjectOfType<Hero>();
+            if (!hero)
+            {
+                Instantiate(PlayerPrefab, Vector3.zero, Quaternion.identity);
+            }
+         
             BeginIntro();
         }
     }

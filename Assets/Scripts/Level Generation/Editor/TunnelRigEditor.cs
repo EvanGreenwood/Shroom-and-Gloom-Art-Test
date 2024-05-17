@@ -17,5 +17,6 @@ public class TunnelRigEditor : ExtendedEditor<TunnelRig>
         base.OnInspectorGUI();
         Button("Add Light", () => { target.AddLight(); });
         Button("Add ColorNode", () => { target.AddColorNode(); });
+        Button("Collect Scene Lights", () => { target.CollectSceneLights(); });
     }
 }
