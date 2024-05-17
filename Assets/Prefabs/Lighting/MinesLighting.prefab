@@ -64,7 +64,7 @@ Transform:
   m_LocalScale: {x: 11.0484, y: 6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 7070949996102120579}
+  m_Father: {fileID: 8091606457791890788}
   m_LocalEulerAnglesHint: {x: 0, y: 15.339, z: 0}
 --- !u!212 &8103149339927432210
 SpriteRenderer:
@@ -5372,7 +5372,6 @@ GameObject:
   - component: {fileID: 3696018163572968210}
   - component: {fileID: 3463149734793613907}
   - component: {fileID: 3915168951698064552}
-  - component: {fileID: 5006759179793422340}
   m_Layer: 0
   m_Name: Flare
   m_TagString: Untagged
@@ -5461,18 +5460,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _cameraFade: 1
   _vertical: 1
---- !u!114 &5006759179793422340
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2236772573565944246}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7726d1edf80c3d49881403767ad98a6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2278944354408211806
 GameObject:
   m_ObjectHideFlags: 0
@@ -5517,7 +5504,6 @@ GameObject:
   - component: {fileID: 6400208504570513844}
   - component: {fileID: 2140990171322838487}
   - component: {fileID: 7893443540512510136}
-  - component: {fileID: 97198748881991190}
   m_Layer: 0
   m_Name: Flare
   m_TagString: Untagged
@@ -5606,18 +5592,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _cameraFade: 1
   _vertical: 1
---- !u!114 &97198748881991190
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2450955395380787113}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7726d1edf80c3d49881403767ad98a6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2557599757807973001
 GameObject:
   m_ObjectHideFlags: 0
@@ -5802,7 +5776,7 @@ Transform:
   m_LocalScale: {x: 6, y: 6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 7070949996102120579}
+  m_Father: {fileID: 8091606457791890788}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2356579763156387997
 SpriteRenderer:
@@ -10743,7 +10717,6 @@ GameObject:
   - component: {fileID: 1060634096812492205}
   - component: {fileID: 2808739745577254683}
   - component: {fileID: 2186511506986857130}
-  - component: {fileID: 8387745800831169581}
   m_Layer: 0
   m_Name: Flare
   m_TagString: Untagged
@@ -10832,18 +10805,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _cameraFade: 1
   _vertical: 1
---- !u!114 &8387745800831169581
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5040177023998944282}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7726d1edf80c3d49881403767ad98a6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &5419357943342889255
 GameObject:
   m_ObjectHideFlags: 0
@@ -16011,9 +15972,7 @@ Transform:
   - {fileID: 1957156914843393178}
   - {fileID: 2687051263735707142}
   - {fileID: 9092945148733229823}
-  - {fileID: 5460079638605910207}
-  - {fileID: 2867150057299162734}
-  - {fileID: 7295274929346786973}
+  - {fileID: 8091606457791890788}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6109075463217556129
@@ -16047,7 +16006,7 @@ Transform:
   m_LocalScale: {x: 6, y: 6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 7070949996102120579}
+  m_Father: {fileID: 8091606457791890788}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2449339309743512988
 SpriteRenderer:
@@ -16212,6 +16171,40 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _cameraFade: 1
   _vertical: 1
+--- !u!1 &7235819104129174456
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8091606457791890788}
+  m_Layer: 0
+  m_Name: CeilingFlares
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8091606457791890788
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7235819104129174456}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5460079638605910207}
+  - {fileID: 2867150057299162734}
+  - {fileID: 7295274929346786973}
+  m_Father: {fileID: 7070949996102120579}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7727748589721781337
 GameObject:
   m_ObjectHideFlags: 0

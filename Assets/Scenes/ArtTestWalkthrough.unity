@@ -291,6 +291,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2374260406459338245, guid: 81dfcbda98ab2ab4e992cdfc33593879, type: 3}
+      propertyPath: title
+      value: TUNNEL CAVES
+      objectReference: {fileID: 0}
     - target: {fileID: 2651333542126033498, guid: 81dfcbda98ab2ab4e992cdfc33593879, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
