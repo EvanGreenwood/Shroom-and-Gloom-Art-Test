@@ -96,6 +96,27 @@ MonoBehaviour:
     RandomRotation: 22.5
     RandomFlipY: 1
     RandomFlipX: 0
+  - Name: Fronds
+    Disabled: 0
+    SurroundPrefabs:
+    - {fileID: 717079983591251126, guid: eabd18e107e8c4a9593b4acb9bed0c61, type: 3}
+    - {fileID: 717079983591251126, guid: f473276211eaa4a0d934ad01a9362aac, type: 3}
+    - {fileID: 717079983591251126, guid: a4c0f475ee3734eeeb0a4f7ea144db60, type: 3}
+    - {fileID: 717079983591251126, guid: 6f7001e6b0753493d9e8ef6911710f29, type: 3}
+    - {fileID: 717079983591251126, guid: 557273227691a4aa2b7d7af7282daaa0, type: 3}
+    - {fileID: 3280782123582157517, guid: 6a59a8e70389946b9a7873290e93bd2e, type: 3}
+    ZOffset: 0.3
+    Spacing: 0.3
+    RadiusOffset: 2.5
+    CenterHeight: 1.7
+    Pattern: 2
+    AngleRange:
+      _min: 35
+      _max: 325
+    AngleIncrement: 22.5
+    RandomRotation: 22.5
+    RandomFlipY: 1
+    RandomFlipX: 0
   FloorElements:
   - Name: Floor
     Disabled: 0
