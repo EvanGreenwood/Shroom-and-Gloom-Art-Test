@@ -60,10 +60,17 @@ public class PlayerMover : MonoBehaviour
             else
             {
                 float t = _tunnel.GetClosestPositionAndDirection(transform.position, out Vector3 currentPosition, out Vector3 currentDirection, out Vector3 currentUp);
+
+                if (float.IsNaN(currentDirection.x) || float.IsNaN(currentDirection.y) || float.IsNaN(currentDirection.z))
+                {
+                    currentDirection = transform.forward;
+                }
+                
                 Vector3 lookaheadPoint = _tunnel.GetLookaheadPoint(t, _directionLookaheadDistance);
                 Vector3 towardsLookahead = (lookaheadPoint - currentPosition).normalized;
                 transform.forward = Vector3.RotateTowards(transform.forward, towardsLookahead, Time.deltaTime * 0.25f, 0);
                 currentDirection = _fwdInput * currentDirection;
+               
                 Debug.DrawLine(currentPosition, currentPosition + currentDirection);
                 transform.position = Vector3.MoveTowards(transform.position, currentPosition + currentDirection, Time.deltaTime * _currentSpeed);
             }

@@ -134,3 +134,19 @@ MonoBehaviour:
   FlatCeilingSpacing: 1
   FlatCeilingOffset: 1
   SplineVolume: {fileID: 11400000, guid: 1398c26e9858443658509d481116778e, type: 2}
+  SceneData:
+    LightData: []
+    PrefabData: []
+    Spline:
+      m_EditModeType: 1
+      m_Knots: []
+      m_MetaData: []
+      m_Closed: 0
+      m_IntData:
+        m_Data: []
+      m_FloatData:
+        m_Data: []
+      m_Float4Data:
+        m_Data: []
+      m_ObjectData:
+        m_Data: []

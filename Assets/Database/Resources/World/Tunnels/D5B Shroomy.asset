@@ -83,6 +83,7 @@ MonoBehaviour:
     - {fileID: 717079983591251126, guid: a4c0f475ee3734eeeb0a4f7ea144db60, type: 3}
     - {fileID: 717079983591251126, guid: 6f7001e6b0753493d9e8ef6911710f29, type: 3}
     - {fileID: 717079983591251126, guid: 557273227691a4aa2b7d7af7282daaa0, type: 3}
+    - {fileID: 3280782123582157517, guid: 6a59a8e70389946b9a7873290e93bd2e, type: 3}
     ZOffset: 0.3
     Spacing: 0.3
     RadiusOffset: 2.5
@@ -119,3 +120,19 @@ MonoBehaviour:
   FlatCeilingSpacing: 1
   FlatCeilingOffset: 5
   SplineVolume: {fileID: 11400000, guid: b7af032b454cf4d34b1709c47ac9db03, type: 2}
+  SceneData:
+    LightData: []
+    PrefabData: []
+    Spline:
+      m_EditModeType: 1
+      m_Knots: []
+      m_MetaData: []
+      m_Closed: 0
+      m_IntData:
+        m_Data: []
+      m_FloatData:
+        m_Data: []
+      m_Float4Data:
+        m_Data: []
+      m_ObjectData:
+        m_Data: []

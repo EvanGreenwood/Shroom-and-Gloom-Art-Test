@@ -7239,7 +7239,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UseSOData: 0
-  GenerationSettings: {fileID: 0}
+  GenerationSettings: {fileID: 11400000, guid: 08d7e8c56f511461f8bb8e69c4ed5c67, type: 2}
   EditMode: 0
   Old_ColorGradient:
     serializedVersion: 2
