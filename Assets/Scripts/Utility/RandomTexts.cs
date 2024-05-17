@@ -8,22 +8,21 @@ using TMPro;
 
 public class RandomTexts : MonoBehaviour
 {
+    [SerializeField] bool _chooseOnAwake = true;
     [SerializeField] string[] _texts;
-    TextMeshPro _label;
 
     // MonoBehaviour
     //----------------------------------------------------------------------------------------------------
     void Awake()
     {
-        _label = GetComponent<TextMeshPro>();
-        _label.text = _texts.ChooseRandom();
+        if(_chooseOnAwake)
+            Choose();
     }
 
     [Button]
-    void Choose()
+    public void Choose()
     {
-        if(_label == null)
-            _label = GetComponent<TextMeshPro>();
-        _label.text = _texts.ChooseRandom();
+        if(gameObject.TryGetComponent(out TextMeshPro label)) label.text = _texts.ChooseRandom();
+        else if(gameObject.TryGetComponent(out TextMeshProUGUI labelUI)) labelUI.text = _texts.ChooseRandom();
     }
 }

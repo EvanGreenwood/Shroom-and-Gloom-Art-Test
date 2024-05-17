@@ -119,10 +119,10 @@ MonoBehaviour:
     noiseType: 0
     debugMode: 0
   m_AOSettings:
-    radius: 1.75
+    radius: 2.88
     maxRadiusPixels: 256
     bias: 0.5
-    intensity: 2
+    intensity: 1.59
     useMultiBounce: 1
     multiBounceInfluence: 1
     offscreenSamplesContribution: 0
@@ -141,7 +141,7 @@ MonoBehaviour:
     saturation: 4
     albedoMultiplier: 4
     brightnessMask: 1
-    brightnessMaskRange: {x: 0, y: 0.49999994}
+    brightnessMaskRange: {x: 0, y: 2}
 --- !u!114 &3930884114819850005
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -249,7 +249,7 @@ GameObject:
   - component: {fileID: 3724822256681467758}
   m_Layer: 0
   m_Name: MainPlayerLight
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -282,7 +282,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
-  m_Range: 8
+  m_Range: 5
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -350,7 +350,7 @@ MonoBehaviour:
     _max: 3
   _intensityOffsetRange:
     _min: 0
-    _max: 1
+    _max: 0.5
   _animateColor: 1
   _colorPool:
     serializedVersion: 2
@@ -402,7 +402,7 @@ GameObject:
   - component: {fileID: 8696294475716246056}
   m_Layer: 0
   m_Name: UICamera
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -547,7 +547,7 @@ GameObject:
   - component: {fileID: 1389313399734797094}
   m_Layer: 0
   m_Name: View
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -560,7 +560,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5723357887469795658}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1.5999999, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -598,7 +598,7 @@ GameObject:
   - component: {fileID: 1028824547035521220}
   m_Layer: 0
   m_Name: Cameras
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

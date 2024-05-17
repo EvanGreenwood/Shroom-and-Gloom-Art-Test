@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8884007177842172156}
-  - component: {fileID: 4533463445691787995}
+  - component: {fileID: 492115279662816668}
   - component: {fileID: 473833051978795132}
   - component: {fileID: 5999106646311635809}
   - component: {fileID: 5961904378624624818}
@@ -43,7 +43,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &4533463445691787995
+--- !u!114 &492115279662816668
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -55,7 +55,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c616463ab6ef6ae49a9043e19925338c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _validateOnAwake: 1
+  _validateOnAwake: 0
   _cameraType: 1
   _renderMode: 1
   _referenceResolution:
@@ -77,6 +77,7 @@ MonoBehaviour:
   _dntDestroyOnLoad: 0
   _infoLabel: {fileID: 7954333394377039262}
   _letterBox: {fileID: 3284268195684113993}
+  _loadingScreen: {fileID: 0}
 --- !u!223 &5999106646311635809
 Canvas:
   m_ObjectHideFlags: 0

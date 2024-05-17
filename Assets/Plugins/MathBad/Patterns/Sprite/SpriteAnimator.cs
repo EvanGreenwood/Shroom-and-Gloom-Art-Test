@@ -61,7 +61,11 @@ public class SpriteAnimator : MonoBehaviour
 
     // init
     //----------------------------------------------------------------------------------------------------//
-    public void Init() {Init(_bank);}
+    public void Init()
+    {
+        ValidateComponents();
+        Init(_bank, _sr != null ? _sr.color : _image != null ? _image.color : RGB.white);
+    }
     public void Init(SpriteBank bank) {Init(bank, RGB.white);}
     public void Init(SpriteBank bank, Color color)
     {

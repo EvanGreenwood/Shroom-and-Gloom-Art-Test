@@ -19,10 +19,10 @@ public class PlayerMover : MonoBehaviour
 
     float _bobCounter = 0;
     float _currentSpeed = 5;
-    
+
     bool _runInput;
     float _fwdInput;
-    
+
     // Input
     //----------------------------------------------------------------------------------------------------
     public void SetInput(float fwdInput, bool runInput)
@@ -37,7 +37,7 @@ public class PlayerMover : MonoBehaviour
     }
 
     public void SetTunnel(TunnelGenerator tunnel) {_tunnel = tunnel;}
-    
+
     void Start()
     {
         INPUT.SetCursorPos(SCREEN.center);

@@ -50,7 +50,7 @@ MonoBehaviour:
   Particles: {fileID: 2402285776899386762, guid: 8e61f67cd760b423db14eb998271668d, type: 3}
   ParticleSpawnDistance: 5
   WallElements:
-  - Name: Thorns Base
+  - Name: StickThorns Base
     Disabled: 0
     WallPrefabs:
     - {fileID: 717079983591251126, guid: e8dfdb4b844a34d4a98d85cd3968b570, type: 3}
@@ -70,13 +70,12 @@ MonoBehaviour:
       _max: 0.3
     RandomRotation: 10
     RandomFlipY: 0
-  - Name: Wall Thorns
+  - Name: StickThorns
     Disabled: 0
     WallPrefabs:
-    - {fileID: 717079983591251126, guid: 1c9cc17696a50154985091ca956b6bb9, type: 3}
-    - {fileID: 717079983591251126, guid: 6b8cd0b78b7a43547a6828e17806a41c, type: 3}
-    - {fileID: 717079983591251126, guid: 3ba71e0ec8102b5449495397c5e84ddd, type: 3}
     - {fileID: 717079983591251126, guid: d9915620e3e1d8544964806d08091d29, type: 3}
+    - {fileID: 717079983591251126, guid: 3ba71e0ec8102b5449495397c5e84ddd, type: 3}
+    - {fileID: 717079983591251126, guid: 6b8cd0b78b7a43547a6828e17806a41c, type: 3}
     ZOffset: 0
     Spacing: 0.25
     Width: 1.5
@@ -96,12 +95,30 @@ MonoBehaviour:
   FlatWallPrefab: {fileID: 0}
   FlatWallSpacing: 1
   FlatWallOffset: 1
-  SurroundElements: []
+  SurroundElements:
+  - Name: StickThorns
+    Disabled: 0
+    SurroundPrefabs:
+    - {fileID: 717079983591251126, guid: d9915620e3e1d8544964806d08091d29, type: 3}
+    - {fileID: 717079983591251126, guid: 3ba71e0ec8102b5449495397c5e84ddd, type: 3}
+    - {fileID: 717079983591251126, guid: 6b8cd0b78b7a43547a6828e17806a41c, type: 3}
+    ZOffset: 0
+    Spacing: 0.5
+    RadiusOffset: 4.5
+    CenterHeight: 1.5
+    Pattern: 0
+    AngleRange:
+      _min: 25
+      _max: 330
+    AngleIncrement: 45
+    RandomRotation: 35
+    RandomFlipY: 1
+    RandomFlipX: 0
   FloorElements:
   - Name: Floor
     Disabled: 0
     FloorPrefabs:
-    - {fileID: 717079983591251126, guid: 123a7dddfdd730f4e9e8313cea5e281c, type: 3}
+    - {fileID: 717079983591251126, guid: 7dfa9a70717977449804ed7615425c73, type: 3}
     ZOffset: 0.08
     Spacing: 0.5
     RandomXPosition: 0.5
@@ -118,7 +135,7 @@ MonoBehaviour:
   FlatFloorOffset: -1
   CeilingElements:
   - Name: Ceiling
-    Disabled: 0
+    Disabled: 1
     CeilingPrefabs:
     - {fileID: 717079983591251126, guid: 58a3e2b112178c84aafe4bc29a0c0083, type: 3}
     Height: 4
@@ -137,3 +154,19 @@ MonoBehaviour:
   FlatCeilingSpacing: 1
   FlatCeilingOffset: 1
   SplineVolume: {fileID: 11400000, guid: 1398c26e9858443658509d481116778e, type: 2}
+  SceneData:
+    LightData: []
+    PrefabData: []
+    Spline:
+      m_EditModeType: 1
+      m_Knots: []
+      m_MetaData: []
+      m_Closed: 0
+      m_IntData:
+        m_Data: []
+      m_FloatData:
+        m_Data: []
+      m_Float4Data:
+        m_Data: []
+      m_ObjectData:
+        m_Data: []

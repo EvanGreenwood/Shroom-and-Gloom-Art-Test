@@ -14,12 +14,14 @@ public class SceneManager : MonoService
     [SerializeField] float _sceneIntroLeadDelay = 1f;
     [SerializeField] float _sceneIntroFadeTime = 2f;
     [SerializeField] Music _music;
+    [SerializeField] Camera _loadingCamera;
+    [SerializeField] Canvas _loadingCanvas;
 
     public SceneData Data { get; private set; }
 
     private Service<Player> _player;
 
-    void Awake()
+    private void Awake()
     {
         Data = GetComponent<SceneData>();
     }
@@ -48,9 +50,11 @@ public class SceneManager : MonoService
 
     public void BeginIntro()
     {
+        _loadingCamera.gameObject.SetActive(false);
+        _loadingCanvas.gameObject.SetActive(false);
+        
         Debug.Assert(_player.Exists);
         
-        HUD.inst.Init();
         Data.sceneIntro.Play();
         _music.Init(Data.sceneMusic);
         

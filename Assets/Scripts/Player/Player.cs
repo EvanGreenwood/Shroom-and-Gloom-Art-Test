@@ -9,15 +9,13 @@ public class Player : MonoService
 {
     [SerializeField] PlayerMover _movement;
 
-    private TunnelGenerator _tunnel => _tunnelStack.Count == 0 ? null : _tunnelStack[^1];
-    
     bool _cursorConfined;
     float _fwdInput;
     bool _runInput;
 
     private List<TunnelGenerator> _tunnelStack = new List<TunnelGenerator>();
 
-    public TunnelGenerator tunnel => _tunnel;
+    public TunnelGenerator Tunnel => _tunnelStack.Count == 0 ? null : _tunnelStack[^1];
 
     public bool CanMove
     {
@@ -29,21 +27,21 @@ public class Player : MonoService
 
     void Start()
     {
-        TunnelGenerator current = _tunnel;
-        if (_world.Value.TryGetTunnel(transform.position, out current, _tunnelStack.ToArray()))
+        TunnelGenerator current = Tunnel;
+        if(_world.Value.TryGetTunnel(transform.position, out current, _tunnelStack.ToArray()))
         {
             _tunnelStack.Add(current);
-            _movement.SetTunnel(_tunnel);
+            _movement.SetTunnel(Tunnel);
         }
     }
 
     void Update()
     {
-        if (!CanMove)
+        if(!CanMove)
         {
             return;
         }
-        
+
         ReadInput();
         CheckTunnel();
     }
@@ -67,10 +65,10 @@ public class Player : MonoService
     {
         if(_fwdInput > 0)
         {
-            if(_tunnel.GetNormDistanceFromPoint(transform.position) > 0.99f)
+            if(Tunnel.GetNormDistanceFromPoint(transform.position) > 0.99f)
             {
-                TunnelGenerator current = _tunnel;
-                if (_world.Value.TryGetTunnel(transform.position, out current, _tunnelStack.ToArray()))
+                TunnelGenerator current = Tunnel;
+                if(_world.Value.TryGetTunnel(transform.position, out current, _tunnelStack.ToArray()))
                 {
                     _tunnelStack.Add(current);
                     _movement.SetTunnel(current);
@@ -83,7 +81,7 @@ public class Player : MonoService
             //Failure is graceful, just cant move backwards anymore
             //We can add a stack of previous tunnels, but we should decide if thats something we want to allow,
             //eg, what happens if you go back to a door choice..?
-            
+
             /*if (_tunnel.GetNormDistanceFromPoint(transform.position) < 0.1f)
             {
                 FindNewTunnel();
@@ -94,6 +92,6 @@ public class Player : MonoService
     public void SwitchTunnel(TunnelGenerator newTunnel)
     {
         _tunnelStack.Add(newTunnel);
-        _movement.SetTunnel(_tunnel);
+        _movement.SetTunnel(Tunnel);
     }
 }
