@@ -155,8 +155,18 @@ MonoBehaviour:
   FlatCeilingOffset: 1
   SplineVolume: {fileID: 11400000, guid: 1398c26e9858443658509d481116778e, type: 2}
   SceneData:
-    LightData: []
-    PrefabData: []
+    LightData:
+    - SplinePercent: 0
+      SplineAngle: 0
+      SplineDistanceFrom: 0
+      LightColor: {r: 0, g: 0, b: 0, a: 0}
+      LightIntensity: 0
+      LightRange: 0
+    PrefabData:
+    - SplinePercent: 0
+      SplineAngle: 0
+      SplineDistanceFrom: 0
+      Prefab: {fileID: 0}
     Spline:
       m_EditModeType: 1
       m_Knots: []

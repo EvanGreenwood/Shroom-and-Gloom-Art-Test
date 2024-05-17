@@ -43,6 +43,7 @@ public class PropActor : MonoBehaviour
             return;
         }
 
+        //TODO: running update check probably more expensive than using radial triggers+physics system.
         float dst = Vector3.Distance(transform.position, _cameraPos);
         if(!_isFleeing && dst <= _disturbDst)
         {
