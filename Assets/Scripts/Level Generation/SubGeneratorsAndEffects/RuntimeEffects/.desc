@@ -1,0 +1,3 @@
+Effects are used to give runtime behaviours to tunnel elements (anything thats spawned in by a TunnelGenerator)
+
+They do not know about the TunnelGenerator, and the TunnelGenerator does not know about them.

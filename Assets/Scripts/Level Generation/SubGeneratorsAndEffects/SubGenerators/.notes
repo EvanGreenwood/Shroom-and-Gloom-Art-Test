@@ -1,0 +1,5 @@
+Performs generation task on a TunnelElement (anything spawned by TunnelGenerator)
+
+SubGenerators Generate() is called by TunnelGenerator, and as such works at runtime.
+
+Please ensure if you add a SubGenerator you ensure it functions in edit mode properly.
