@@ -53,9 +53,9 @@ public class TunnelRig : MonoBehaviour
             tLight.range = lightData.LightRange;
             
             TunnelLight light = AddLight(tLight);
-            light.distance = lightData.SplineDistanceFrom;
-            light.splinePercent = lightData.SplinePercent;
-            light.angle = lightData.SplineAngle;
+            light.Distance = lightData.SplineDistanceFrom;
+            light.SplinePercent = lightData.SplinePercent;
+            light.Angle = lightData.SplineAngle;
             
             light.Refresh();
         }
@@ -68,8 +68,8 @@ public class TunnelRig : MonoBehaviour
         Vector3 worldNearest = transform.TransformPoint(localNearest);
         Vector3 tangent = _splineContainer.EvaluateTangent(t);
         Vector3 up = _splineContainer.EvaluateUpVector(t);
-        light.splinePercent = t;
-        light.distance = Vector3.Distance(localPoint, localNearest);
+        light.SplinePercent = t;
+        light.Distance = Vector3.Distance(localPoint, localNearest);
         
         Vector3 toPos = (trans.position - worldNearest).normalized;
         
@@ -79,7 +79,7 @@ public class TunnelRig : MonoBehaviour
         
         Quaternion upRot = Quaternion.LookRotation(tangent, up);
         Quaternion diffRot = Quaternion.LookRotation(tangent, toPos);
-        light.angle = -Quaternion.Angle(upRot, diffRot);
+        light.Angle = -Quaternion.Angle(upRot, diffRot);
     }
 
     public void AssureRoot()
@@ -121,9 +121,9 @@ public class TunnelRig : MonoBehaviour
             tunnelLight.transform.position = existing.transform.position;
             tunnelLight.transform.rotation = existing.transform.rotation;
 
-            tunnelLight.light.color = existing.color;
-            tunnelLight.light.intensity = existing.intensity;
-            tunnelLight.light.range = existing.range;
+            tunnelLight.Light.color = existing.color;
+            tunnelLight.Light.intensity = existing.intensity;
+            tunnelLight.Light.range = existing.range;
         }
         
         tunnelLight.transform.SetParent(_root);

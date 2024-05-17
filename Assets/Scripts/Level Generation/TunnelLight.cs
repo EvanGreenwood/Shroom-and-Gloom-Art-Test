@@ -1,39 +1,37 @@
 #region Usings
-
 using MathBad;
 using UnityEngine;
 using NaughtyAttributes;
 using System;
 using Unity.Mathematics;
 using UnityEngine.Splines;
-
 #endregion
 
 [RequireComponent(typeof(Light))]
 public class TunnelLight : MonoBehaviour
 {
-    [SerializeField] Light _light;
-    [SerializeField] TunnelRig _rig;
-    [SerializeField] float _splinePercent;
-    [SerializeField] float _angle;
-    [SerializeField] float _distance;
+    [SerializeField] private Light _light;
+    [SerializeField] private TunnelRig _rig;
+    [SerializeField] private float _splinePercent;
+    [SerializeField] private float _angle;
+    [SerializeField] private float _distance;
 
-    public TunnelRig rig => _rig;
-    public new Light light => _light;
+    public TunnelRig Rig => _rig;
+    public Light Light => _light;
 
-    public float splinePercent { get => _splinePercent; set => _splinePercent = value; }
-    public float angle { get => _angle; set => _angle = value; }
-    public float distance { get => _distance; set => _distance = value; }
+    public float SplinePercent { get => _splinePercent; set => _splinePercent = value; }
+    public float Angle { get => _angle; set => _angle = value; }
+    public float Distance { get => _distance; set => _distance = value; }
 
-    public void Start()
+    void Start()
     {
-        if (_rig == null)
+        if(_rig == null)
         {
             _rig = GetComponentInParent<TunnelRig>();
             _rig?.RegisterLight(this);
         }
 
-        if (light == null)
+        if(Light == null)
         {
             _light = GetComponent<Light>();
         }
@@ -43,9 +41,9 @@ public class TunnelLight : MonoBehaviour
     {
         if(_rig == null)
             return;
-        _rig.spline.Evaluate(splinePercent, out float3 pos, out float3 tangent, out float3 up);
-        float3 dir = Quaternion.AngleAxis(MATH.Normalize_360(angle), tangent) * up;
-        float3 nextPos = pos + dir * distance;
+        _rig.spline.Evaluate(SplinePercent, out float3 pos, out float3 tangent, out float3 up);
+        float3 dir = Quaternion.AngleAxis(MATH.Normalize_360(Angle), tangent) * up;
+        float3 nextPos = pos + dir * Distance;
         transform.rotation = Quaternion.LookRotation(tangent, up);
         transform.position = nextPos;
     }
@@ -57,7 +55,7 @@ public class TunnelLight : MonoBehaviour
         _light = GetComponent<Light>();
     }
 
-    void OnDestroy()
+    private void OnDestroy()
     {
         if(_rig == null)
             return;

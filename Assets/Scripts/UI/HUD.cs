@@ -3,30 +3,25 @@ using Framework;
 using UnityEngine;
 using MathBad;
 using TMPro;
-using UnityEngine.SceneManagement;
 #endregion
 
 public class HUD : CanvasSingleton<HUD>
 {
-    [SerializeField] TextMeshProUGUI _infoLabel;
-    [SerializeField] LetterBox _letterBox;
+    [SerializeField] private TextMeshProUGUI _infoLabel;
+    [SerializeField] private LetterBox _letterBox;
 
-    string _activeSceneName;
+    private string _activeSceneName;
 
     private Service<SceneManager> _sceneController;
 
-    // Init
-    //----------------------------------------------------------------------------------------------------
-    public void Init() { }
-
     // MonoBehaviour
     //----------------------------------------------------------------------------------------------------
-    void Awake()
+    private void Awake()
     {
         _letterBox.gameObject.SetActive(true);
         _activeSceneName = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
     }
-    void Update()
+    private void Update()
     {
         _infoLabel.text = $"{_sceneController.Value.Data.title}  |  " +
                           $"FPS: {FrameRate.inst.fpsAverage:000}";

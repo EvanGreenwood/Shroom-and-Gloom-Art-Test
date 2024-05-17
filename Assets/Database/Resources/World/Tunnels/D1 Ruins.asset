@@ -15,19 +15,19 @@ MonoBehaviour:
   _guid: 9278d73a8c93c4d8da665d5d471ec094
   ColorGradient:
     serializedVersion: 2
-    key0: {r: 0.6981132, g: 0.535298, b: 0.50448555, a: 1}
-    key1: {r: 0.59716547, g: 0.7132075, b: 0.44541824, a: 1}
-    key2: {r: 0.5397144, g: 0.7290569, b: 0.51479673, a: 0}
-    key3: {r: 0.5882353, g: 0.77254903, b: 0.7137255, a: 0}
-    key4: {r: 0.7627777, g: 0.5882353, b: 0.77254903, a: 0}
+    key0: {r: 0.33962262, g: 0.33962262, b: 0.33962262, a: 1}
+    key1: {r: 0.46804386, g: 0.62352943, b: 0.32156864, a: 1}
+    key2: {r: 0.63290936, g: 0.6792453, b: 0.2979708, a: 0}
+    key3: {r: 0.6509434, g: 0.59396946, b: 0.38995194, a: 0}
+    key4: {r: 0.6320754, g: 0.6320754, b: 0.6320754, a: 0}
     key5: {r: 0.5137255, g: 0.5992844, b: 0.7372549, a: 0}
     key6: {r: 0.6747628, g: 0.7433963, b: 0.5091563, a: 0}
     key7: {r: 0.39958468, g: 0.8773585, b: 0.36832502, a: 0}
-    ctime0: 4626
-    ctime1: 22330
-    ctime2: 27389
-    ctime3: 31772
-    ctime4: 42405
+    ctime0: 0
+    ctime1: 18930
+    ctime2: 36328
+    ctime3: 49850
+    ctime4: 65535
     ctime5: 49344
     ctime6: 57054
     ctime7: 65535
@@ -40,8 +40,8 @@ MonoBehaviour:
     atime6: 0
     atime7: 0
     m_Mode: 0
-    m_ColorSpace: -1
-    m_NumColorKeys: 8
+    m_ColorSpace: 0
+    m_NumColorKeys: 5
     m_NumAlphaKeys: 2
   BaseTunnelWidth: 1
   LumpyWidth: 0.5
@@ -50,27 +50,7 @@ MonoBehaviour:
   Particles: {fileID: 2402285776899386762, guid: 8e61f67cd760b423db14eb998271668d, type: 3}
   ParticleSpawnDistance: 5
   WallElements:
-  - Name: Wall Thorns
-    Disabled: 0
-    WallPrefabs:
-    - {fileID: 717079983591251126, guid: 1c9cc17696a50154985091ca956b6bb9, type: 3}
-    ZOffset: 0
-    Spacing: 0.5
-    Width: 1.5
-    HeightOffset:
-      _min: 1.5
-      _max: 2
-    VerticalLoopLength: 5
-    VerticalLoopIncrement: 2
-    MinMaxAngle:
-      _min: -20
-      _max: 20
-    MinMaxPosition:
-      _min: 1.6
-      _max: 3
-    RandomRotation: 13
-    RandomFlipY: 1
-  - Name: Thorns Base
+  - Name: StickThorns Base
     Disabled: 0
     WallPrefabs:
     - {fileID: 717079983591251126, guid: e8dfdb4b844a34d4a98d85cd3968b570, type: 3}
@@ -90,15 +70,55 @@ MonoBehaviour:
       _max: 0.3
     RandomRotation: 10
     RandomFlipY: 0
+  - Name: StickThorns
+    Disabled: 0
+    WallPrefabs:
+    - {fileID: 717079983591251126, guid: d9915620e3e1d8544964806d08091d29, type: 3}
+    - {fileID: 717079983591251126, guid: 3ba71e0ec8102b5449495397c5e84ddd, type: 3}
+    - {fileID: 717079983591251126, guid: 6b8cd0b78b7a43547a6828e17806a41c, type: 3}
+    ZOffset: 0
+    Spacing: 0.25
+    Width: 1.5
+    HeightOffset:
+      _min: 1.5
+      _max: 2
+    VerticalLoopLength: 5
+    VerticalLoopIncrement: 2
+    MinMaxAngle:
+      _min: -35
+      _max: 20
+    MinMaxPosition:
+      _min: 1.6
+      _max: 3
+    RandomRotation: 25
+    RandomFlipY: 1
   FlatWallPrefab: {fileID: 0}
   FlatWallSpacing: 1
   FlatWallOffset: 1
-  SurroundElements: []
+  SurroundElements:
+  - Name: StickThorns
+    Disabled: 0
+    SurroundPrefabs:
+    - {fileID: 717079983591251126, guid: d9915620e3e1d8544964806d08091d29, type: 3}
+    - {fileID: 717079983591251126, guid: 3ba71e0ec8102b5449495397c5e84ddd, type: 3}
+    - {fileID: 717079983591251126, guid: 6b8cd0b78b7a43547a6828e17806a41c, type: 3}
+    ZOffset: 0
+    Spacing: 0.5
+    RadiusOffset: 4.5
+    CenterHeight: 1.5
+    Pattern: 0
+    AngleRange:
+      _min: 25
+      _max: 330
+    AngleIncrement: 45
+    RandomRotation: 35
+    RandomFlipY: 1
+    RandomFlipX: 0
   FloorElements:
   - Name: Floor
     Disabled: 0
     FloorPrefabs:
-    - {fileID: 717079983591251126, guid: 123a7dddfdd730f4e9e8313cea5e281c, type: 3}
+    - {fileID: 717079983591251126, guid: 7dfa9a70717977449804ed7615425c73, type: 3}
     ZOffset: 0.08
     Spacing: 0.5
     RandomXPosition: 0.5
@@ -115,7 +135,7 @@ MonoBehaviour:
   FlatFloorOffset: -1
   CeilingElements:
   - Name: Ceiling
-    Disabled: 0
+    Disabled: 1
     CeilingPrefabs:
     - {fileID: 717079983591251126, guid: 58a3e2b112178c84aafe4bc29a0c0083, type: 3}
     Height: 4

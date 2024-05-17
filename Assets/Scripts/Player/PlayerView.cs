@@ -24,10 +24,11 @@ public class PlayerView : MonoBehaviour
     DepthOfField _dof;
 
     Transform _viewTarget;
+    bool _canLook = true;
 
-    public Camera mainCamera => _mainCamera;
-    public Camera uiCamera => _uiCamera;
-    
+    public Camera MainCamera => _mainCamera;
+    public Camera UICamera => _uiCamera;
+
     private Service<Player> _player;
 
     // Init
@@ -41,13 +42,19 @@ public class PlayerView : MonoBehaviour
     }
     void Update()
     {
-        Look();
+        // For editing post effects / materials,
+        if(INPUT.leftShift.pressed && INPUT.tab.down)
+        {
+            _canLook = !_canLook;
+        }
+
+        if(_canLook) Look();
         AutoFocus(Time.deltaTime);
     }
 
     void OnDrawGizmos()
     {
-        if (_viewTarget == null)
+        if(_viewTarget == null)
         {
             return;
         }
@@ -60,7 +67,7 @@ public class PlayerView : MonoBehaviour
         Vector2 mousePos = INPUT.mousePos;
         if(!SCREEN.rect.Contains(mousePos))
             return;
-        
+
         float halfWidth = SCREEN.size.x * 0.5f, halfHeight = SCREEN.size.y * 0.5f;
         float pitch = (mousePos.y - halfHeight) / -halfHeight * _maxXAngle;
         float yaw = (mousePos.x - halfWidth) / halfWidth * _maxYAngle;
@@ -76,7 +83,7 @@ public class PlayerView : MonoBehaviour
             return;
 
         _dof.focusDistance.value = (_viewTarget.position - transform.position).magnitude;
-        StepFocusPos(_player.Value.tunnel.Mesh);
+        StepFocusPos(_player.Value.Tunnel.Mesh);
 
         return;
         //--------------------------------------------------
