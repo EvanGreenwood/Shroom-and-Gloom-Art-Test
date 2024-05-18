@@ -24,7 +24,9 @@ public class WorldManagerService : MonoService
     {
         if (SingleTunnelTestMode)
         {
-            Debug.Log("Cant generate world in single tunnel test mode.");
+            TunnelGenerator singleTunnel = FindObjectOfType<TunnelGenerator>();
+            singleTunnel.Generate();
+            onComplete?.Invoke();
             return;
         }
         

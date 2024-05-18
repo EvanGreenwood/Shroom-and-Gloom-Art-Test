@@ -6,7 +6,7 @@ using UnityEngine;
 
 public abstract class ProximityTrigger : MonoBehaviour
 {
-    private CircleCollider2D _collider;
+    private SphereCollider _collider;
 
     public LayerMask ValidTriggerSources;
 
@@ -14,12 +14,13 @@ public abstract class ProximityTrigger : MonoBehaviour
 
     private void Awake()
     {
-        _collider = gameObject.AddComponent<CircleCollider2D>();
+        _collider = gameObject.AddComponent<SphereCollider>();
         _collider.isTrigger = true;
+        _collider.radius = ProximityRadius;
     }
 
     private void OnTriggerEnter(Collider other)
-    {
+    {Debug.Log($"ENTER {other.gameObject.name}");
         if (ValidTriggerSources.Contains(other.gameObject.layer))
         {
             ProximityEnter(other.gameObject);
@@ -27,7 +28,7 @@ public abstract class ProximityTrigger : MonoBehaviour
     }
     
     private void OnTriggerExit(Collider other)
-    {
+    {Debug.Log($"exit {other.gameObject.name}");
         if (ValidTriggerSources.Contains(other.gameObject.layer))
         {
             ProximityExit(other.gameObject);
@@ -47,8 +48,8 @@ public abstract class ProximityTrigger : MonoBehaviour
    
     public abstract void ProximityExit(GameObject exited);
 
-    private void OnDrawGizmos()
+    private void OnDrawGizmosSelected()
     {
-        Gizmos.DrawWireSphere(transform.position, ProximityRadius);
+        //Gizmos.DrawWireSphere(transform.position, ProximityRadius);
     }
 }

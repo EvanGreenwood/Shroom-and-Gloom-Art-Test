@@ -427,14 +427,14 @@ public partial class TunnelGenerator : MonoBehaviour
 
         _tunnelLength = Spline.CalculateLength();
 
-        try
-        {
+        //try
+        //{
             SpawnWalls();
             SpawnSurrounds();
             SpawnFloors();
             SpawnCeilings();
             SpawnParticles();
-        }
+       /* }
         catch (Exception e)
         {
             if (!Application.isPlaying)
@@ -442,11 +442,11 @@ public partial class TunnelGenerator : MonoBehaviour
                 // Weird regeneration prefab error, during compilation. Rather just early exit. Not the end of the world.
                 // This will not happen in build but instead you will see unity errors. (should not happen while game is running)
                 // In case it does... throw
-                // Debug.LogError(e.Message);
+                Debug.LogError(e.Message);
                 return;
             }
             throw;
-        }
+        }*/
       
 
         if (Application.isPlaying)

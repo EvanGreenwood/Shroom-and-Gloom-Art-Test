@@ -133,7 +133,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01c645945ddc34f93acc1c352e9f840e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ValidTriggerSources:
+    serializedVersion: 2
+    m_Bits: 1024
+  ProximityRadius: 6
   BeginIdle: {fileID: 7400000, guid: 154b2fb3e230d49d287d0fc8a9d09299, type: 2}
   BeginToEnd: {fileID: 7400000, guid: 07a75c3e833f3413582a11b221affd28, type: 2}
+  EndToBegin: {fileID: 7400000, guid: 8f84c09c0cb814e9dbc04de31eb005ff, type: 2}
   EndIdle: {fileID: 7400000, guid: 992561574871b4c919495e81722b6a1c, type: 2}
   DisableChance: 0

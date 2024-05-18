@@ -48,6 +48,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3280782123582157517, guid: 4ae065efecdee4410a65eb42d0754d2f, type: 3}
+      propertyPath: m_Size.x
+      value: 3.7509158
+      objectReference: {fileID: 0}
+    - target: {fileID: 3280782123582157517, guid: 4ae065efecdee4410a65eb42d0754d2f, type: 3}
+      propertyPath: m_Size.y
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 3280782123582157517, guid: 4ae065efecdee4410a65eb42d0754d2f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 360229442, guid: a1cc32101b4edd3418097bc173ea32d2, type: 3}
+    - target: {fileID: 3280782123582157517, guid: 4ae065efecdee4410a65eb42d0754d2f, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3280782123582157517, guid: 4ae065efecdee4410a65eb42d0754d2f, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 30e16db51640dd44ca5d96b5d1712f06, type: 2}
     - target: {fileID: 7092329696028056695, guid: 4ae065efecdee4410a65eb42d0754d2f, type: 3}
       propertyPath: m_Name
       value: TE_SporeFrondProximity
@@ -55,5 +75,28 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7092329696028056695, guid: 4ae065efecdee4410a65eb42d0754d2f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -1717763483697670799}
   m_SourcePrefab: {fileID: 100100000, guid: 4ae065efecdee4410a65eb42d0754d2f, type: 3}
+--- !u!1 &1785739619857529472 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7092329696028056695, guid: 4ae065efecdee4410a65eb42d0754d2f, type: 3}
+  m_PrefabInstance: {fileID: 8837536850496595703}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &-1717763483697670799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1785739619857529472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 544e04e238fb0394187af33b199b5cee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _speed: 1.4
+  _amount: 3
+  _offsetFrameYM: 0
