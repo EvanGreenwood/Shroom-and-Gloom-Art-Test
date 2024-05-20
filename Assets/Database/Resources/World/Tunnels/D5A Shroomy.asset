@@ -15,21 +15,21 @@ MonoBehaviour:
   _guid: 08d7e8c56f511461f8bb8e69c4ed5c67
   ColorGradient:
     serializedVersion: 2
-    key0: {r: 0.6981132, g: 0.535298, b: 0.50448555, a: 1}
-    key1: {r: 0.59716547, g: 0.7132075, b: 0.44541824, a: 1}
-    key2: {r: 0.5397144, g: 0.7290569, b: 0.51479673, a: 0}
-    key3: {r: 0.5882353, g: 0.77254903, b: 0.7137255, a: 0}
+    key0: {r: 0.5231675, g: 0.69803923, b: 0.5058824, a: 1}
+    key1: {r: 0.44705883, g: 0.621612, b: 0.7137255, a: 1}
+    key2: {r: 0.571622, g: 0.5137255, b: 0.7294118, a: 0}
+    key3: {r: 0.69455564, g: 0.5882353, b: 0.77254903, a: 0}
     key4: {r: 0.7627777, g: 0.5882353, b: 0.77254903, a: 0}
-    key5: {r: 0.5137255, g: 0.5992844, b: 0.7372549, a: 0}
-    key6: {r: 0.6747628, g: 0.7433963, b: 0.5091563, a: 0}
-    key7: {r: 0.39958468, g: 0.8773585, b: 0.36832502, a: 0}
+    key5: {r: 0.7372549, g: 0.5137255, b: 0.6680977, a: 0}
+    key6: {r: 0.74509805, g: 0.50980395, b: 0.5274768, a: 0}
+    key7: {r: 0.42868155, g: 0.8784314, b: 0.36862752, a: 0}
     ctime0: 4626
-    ctime1: 22330
+    ctime1: 14264
     ctime2: 27389
-    ctime3: 31772
-    ctime4: 42405
-    ctime5: 49344
-    ctime6: 57054
+    ctime3: 38165
+    ctime4: 40670
+    ctime5: 47417
+    ctime6: 52621
     ctime7: 65535
     atime0: 0
     atime1: 65535
@@ -40,7 +40,7 @@ MonoBehaviour:
     atime6: 0
     atime7: 0
     m_Mode: 0
-    m_ColorSpace: -1
+    m_ColorSpace: 0
     m_NumColorKeys: 8
     m_NumAlphaKeys: 2
   BaseTunnelWidth: 1.25
@@ -57,12 +57,8 @@ MonoBehaviour:
   - Name: Lumps
     Disabled: 0
     SurroundPrefabs:
-    - {fileID: 717079983591251126, guid: b122cb429a7bb40cb931c9f0bddee1aa, type: 3}
-    - {fileID: 717079983591251126, guid: 039de9e0764d14bb4812bff4c58cd8ec, type: 3}
-    - {fileID: 717079983591251126, guid: 3604b86102e1a4ab786f280d835dfc71, type: 3}
-    - {fileID: 717079983591251126, guid: dde57e21e6c354eec8aacabab5da9407, type: 3}
-    - {fileID: 717079983591251126, guid: 8bf6d4da7dbaf468fa9ccdb283aa9e40, type: 3}
     - {fileID: 717079983591251126, guid: ae6fca2e20524476e8af244b76c1e882, type: 3}
+    - {fileID: 1508189691331659514, guid: abe2161f17e3d435691c2653789f0661, type: 3}
     ZOffset: 0
     Spacing: 0.5
     RadiusOffset: 2
