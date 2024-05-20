@@ -5,6 +5,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(SpriteAnim))]
 public class ProximityAnimation : ProximityTrigger
 {
     [Header("Animations")]
@@ -13,8 +14,8 @@ public class ProximityAnimation : ProximityTrigger
     public AnimationClip EndToBegin;
     public AnimationClip EndIdle;
 
-    [Range(0,1)]
-    public float DisableChance;
+    //[Range(0,1)]
+    //public float DisableChance;
 
     private SpriteAnim _anim;
 

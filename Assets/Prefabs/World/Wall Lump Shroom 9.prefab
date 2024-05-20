@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1400878947339728258}
   - component: {fileID: 717079983591251126}
+  - component: {fileID: -7563686447197288435}
   m_Layer: 0
   m_Name: Wall Lump Shroom 9
   m_TagString: Untagged
@@ -84,3 +85,33 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
+--- !u!114 &-7563686447197288435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7873198937741219095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e0b62a04908b49b0b71406c4cb81f53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _scope: 1
+  _autoRenderers:
+  - {fileID: 717079983591251126}
+  _manualRenderers: []
+  _maskClipValue: 0.6
+  _normalMip: 2
+  _emissionColor: {r: 0, g: 0, b: 0, a: 0}
+  _emissionUsesTunnelWave: 1
+  _useFog: 0
+  _fogIntensity: 0
+  _replaceLineColor: 0
+  _lineReplaceRange: 0
+  _lineReplaceFuzziness: 0
+  _lineColorToReplace: {r: 0, g: 0, b: 0, a: 0}
+  _lineColorAfterReplace: {r: 0, g: 0, b: 0, a: 0}
+  _lineColorVsHSVBlend: 0
+  _lineHSVOffset: {x: 0, y: 0, z: 0}
+  _defaultsSet: 0

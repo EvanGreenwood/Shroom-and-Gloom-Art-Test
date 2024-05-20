@@ -80,6 +80,9 @@ public static class EDITOR
             return false;
         if(EditorWindow.mouseOverWindow == null)
             return false;
+        if (string.IsNullOrEmpty(EditorWindow.mouseOverWindow.name))
+            return false;
+        
         return EditorWindow.mouseOverWindow.ToString().Contains($"UnityEditor.{type.ToString()}");
     }
 
