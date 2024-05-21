@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6380215176895553525}
   - component: {fileID: 2402285776899386762}
   - component: {fileID: 3600716459995782754}
-  m_Layer: 12
+  m_Layer: 1
   m_Name: DustParticles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
