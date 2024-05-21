@@ -188,7 +188,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UseSOData: 1
   GenerationSettings: {fileID: 11400000, guid: 9278d73a8c93c4d8da665d5d471ec094, type: 2}
-  EditMode: 1
+  EditMode: 0
   Old_ColorGradient:
     serializedVersion: 2
     key0: {r: 1, g: 1, b: 1, a: 1}
