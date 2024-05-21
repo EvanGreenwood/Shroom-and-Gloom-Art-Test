@@ -21,9 +21,6 @@ EditorBuildSettings:
     path: Assets/Scenes/S3_RockCave.unity
     guid: a6cf1a37391f64b39b6f465c500c7800
   - enabled: 1
-    path: Assets/Scenes/S4_Cavern.unity
-    guid: 07abb29e922594d9286d5653d4c1194c
-  - enabled: 1
     path: Assets/Scenes/S5_Shroomy.unity
     guid: cadb801682f9f425c831890820114604
   - enabled: 1
@@ -32,12 +29,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/S6_Trippy.unity
     guid: fcc227c6b1fe34a26969884f74194712
-  - enabled: 1
-    path: Assets/Scenes/Test/TestTunnelShrooms.unity
-    guid: 7d2a5a85e34804b4cbce70421d681191
-  - enabled: 1
-    path: Assets/Scenes/S7_Portal.unity
-    guid: 0957ee3effbed4461b52f787a3f83be9
   - enabled: 1
     path: Assets/Scenes/S8_Gloom.unity
     guid: 9d08e2606df8640de8a37e7f75feb546

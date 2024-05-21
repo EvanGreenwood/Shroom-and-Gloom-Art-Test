@@ -120,7 +120,97 @@ MonoBehaviour:
     PrefabData: []
     Spline:
       m_EditModeType: 1
-      m_Knots: []
+      m_Knots:
+      - Position:
+          x: 0
+          y: 0
+          z: 0
+        TangentIn:
+          x: 0
+          y: 0
+          z: -0
+        TangentOut:
+          x: 0
+          y: 0
+          z: 0
+        Rotation:
+          value:
+            x: 0.029319547
+            y: 0
+            z: 0.010623137
+            w: 0.99951357
+      - Position:
+          x: 2.54
+          y: 0.92
+          z: 12
+        TangentIn:
+          x: 0
+          y: 0
+          z: -8.218664
+        TangentOut:
+          x: 0
+          y: 0
+          z: 8.218664
+        Rotation:
+          value:
+            x: 0.1003536
+            y: -0.06754966
+            z: -0.019111775
+            w: 0.9924721
+      - Position:
+          x: -15.58
+          y: -9.85
+          z: 26
+        TangentIn:
+          x: 0
+          y: 0
+          z: -8.218664
+        TangentOut:
+          x: 0
+          y: 0
+          z: 4.1093297
+        Rotation:
+          value:
+            x: 0.098544516
+            y: -0.0701625
+            z: 0.006965447
+            w: 0.9926317
+      - Position:
+          x: -27
+          y: -12.3
+          z: 38
+        TangentIn:
+          x: 0.000000029802322
+          y: -0.00000012293458
+          z: -3.1633604
+        TangentOut:
+          x: -0.000000029802322
+          y: 0.00000012293458
+          z: 3.1633604
+        Rotation:
+          value:
+            x: 0.12868921
+            y: -0.09162503
+            z: 0.0069288993
+            w: 0.98741883
+      - Position:
+          x: -16.9
+          y: -21.2
+          z: 56.4
+        TangentIn:
+          x: 0
+          y: 0
+          z: -12.61824
+        TangentOut:
+          x: 0
+          y: 0
+          z: 8.218664
+        Rotation:
+          value:
+            x: 0.070330806
+            y: 0.5264172
+            z: -0.06781585
+            w: 0.8445943
       m_MetaData: []
       m_Closed: 0
       m_IntData:

@@ -154,15 +154,15 @@ MonoBehaviour:
           z: 0
           w: 1
     m_MetaData:
-    - Mode: 2
+    - Mode: 4
       Tension: 0.5
-    - Mode: 2
+    - Mode: 4
       Tension: 0.5
-    - Mode: 2
+    - Mode: 4
       Tension: 0.5
-    - Mode: 2
+    - Mode: 4
       Tension: 0.5
-    - Mode: 2
+    - Mode: 4
       Tension: 0.5
     m_Closed: 0
     m_IntData:
@@ -329,6 +329,9 @@ MonoBehaviour:
   Old_FlatCeilingOffset: 8
   SOToCopyInto: {fileID: 11400000, guid: 9278d73a8c93c4d8da665d5d471ec094, type: 2}
   _elementParents:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}

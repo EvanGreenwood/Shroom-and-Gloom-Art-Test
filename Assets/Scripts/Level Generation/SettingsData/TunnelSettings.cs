@@ -151,6 +151,16 @@ public partial class TunnelSettings : ScriptableEnum
     {
         return Particles != null;
     }
+
+    public void Save()
+    {
+        #if UNITY_EDITOR
+        EditorUtility.SetDirty(this);
+        AssetDatabase.SaveAssetIfDirty(this);
+        AssetDatabase.SaveAssets();
+        AssetDatabase.Refresh();
+        #endif
+    }
 }
 
 #region Tunnel Data

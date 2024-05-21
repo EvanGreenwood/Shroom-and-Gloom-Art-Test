@@ -22,6 +22,7 @@ using UnityEngine.Serialization;
 using UnityEngine.Splines;
 using MathUtils = Framework.MathUtils;
 using Random = UnityEngine.Random;
+using Spline = UnityEngine.Splines.Spline;
 #if UNITY_EDITOR
 using Unity.EditorCoroutines.Editor;
 using UnityEditor;
@@ -37,6 +38,8 @@ public partial class TunnelGenerator : MonoBehaviour
         Hidden,
         VisibleAndSave //Careful, you want to save generated elements in the scene?
     }
+    
+    private const string generatedTunnelTag = "GeneratedTunnelData";
     
     public bool UseSOData = true;
     [ShowIf("UseSOData")]
@@ -328,7 +331,24 @@ public partial class TunnelGenerator : MonoBehaviour
 
     Transform SpawnContainer(string parentName)
     {
-        return SpawnContainer(parentName, transform);
+        Transform root = transform;
+        if (PrefabUtility.IsPartOfAnyPrefab(root))
+        {
+            root = new GameObject($"{generatedTunnelTag} - {parentName}").transform;
+            root.tag = generatedTunnelTag;
+            if(EditMode != EditorHideMode.VisibleAndSave)
+            {
+                root.gameObject.hideFlags = HideFlags.DontSaveInEditor | HideFlags.DontSave;
+                if(EditMode == EditorHideMode.Hidden)
+                {
+                    root.gameObject.hideFlags |= HideFlags.HideInHierarchy | HideFlags.NotEditable | HideFlags.HideInInspector;
+                }
+            }
+            
+            root.SetParent(transform.parent);
+        }
+        
+        return SpawnContainer(parentName, root);
     }
 
     Transform SpawnContainer(string parentName, Transform parent)
@@ -339,6 +359,7 @@ public partial class TunnelGenerator : MonoBehaviour
             throw new InvalidOperationException("Parent is considered prefab, cant spawn container.");
         }
         #endif
+        
         Transform container = parent.CreateChild(parentName);
         _elementParents.Add(container);
         if(EditMode != EditorHideMode.VisibleAndSave)
@@ -352,6 +373,7 @@ public partial class TunnelGenerator : MonoBehaviour
         return container;
     }
 
+    
     // Generate
     //----------------------------------------------------------------------------------------------------
     [Button("Refresh")]
@@ -426,6 +448,16 @@ public partial class TunnelGenerator : MonoBehaviour
             }
 
             _elementParents.Clear();
+        }
+
+        if (!Application.isPlaying)
+        {
+            GameObject[] oldGenerated = GameObject.FindGameObjectsWithTag(generatedTunnelTag);
+            for (int i = oldGenerated.Length - 1; i >= 0; i--)
+            {
+                GameObject generated = oldGenerated[i];
+                Safe.Destroy(generated);
+            }
         }
 
         _tunnelLength = Spline.CalculateLength();
@@ -919,6 +951,9 @@ public partial class TunnelGenerator : MonoBehaviour
 
     IEnumerator OnValidateRoutine()
     {
+        //Copy local spline to SO
+        //CopySplinePoints();
+        
         if(this == null)
         {
             _onValidateRoutine = null;
@@ -953,6 +988,36 @@ public partial class TunnelGenerator : MonoBehaviour
         Spline.Evaluate(1, out float3 position, out float3 tangent, out float3 upVector);
         lastTunnelPoint = position;
         lastTunnelRotation = Quaternion.LookRotation(tangent, upVector);
+    }
+
+    [Button("Save Spline")][UsedImplicitly]
+    public void CopySplinePoints()
+    {
+        if (Spline.Spline.Count > 1)
+        {
+            GenerationSettings.SceneData.Spline = new Spline(Spline.Spline);
+            GenerationSettings.Save();
+            Debug.Log($"Saved spline data to {GenerationSettings.name}");
+        }
+    }
+    
+    [Button("Load Spline")][UsedImplicitly]
+    public void SetSplinePointsFromSO()
+    {
+        if (UseSOData && GenerationSettings.SceneData.Spline != null)
+        {
+            if (GenerationSettings.SceneData.Spline.Count > 1 )
+            {
+                Spline.Spline = new Spline(GenerationSettings.SceneData.Spline);
+                #if UNITY_EDITOR
+                EditorUtility.SetDirty(Spline);
+                PrefabUtility.RecordPrefabInstancePropertyModifications(gameObject);
+                #endif
+                Debug.Log($"Loaded spline data from {GenerationSettings.name}");
+                
+                Generate();
+            }
+        }
     }
 
     private void OnDrawGizmos()

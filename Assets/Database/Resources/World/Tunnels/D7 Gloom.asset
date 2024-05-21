@@ -78,3 +78,60 @@ MonoBehaviour:
   FlatCeilingSpacing: 1
   FlatCeilingOffset: 1
   SplineVolume: {fileID: 11400000, guid: 690203b4c3f2342fba808003afb4226a, type: 2}
+  SceneData:
+    LightData: []
+    PrefabData: []
+    Spline:
+      m_EditModeType: 1
+      m_Knots:
+      - Position:
+          x: 0
+          y: 0
+          z: 0
+        TangentIn:
+          x: 0
+          y: 0
+          z: -1
+        TangentOut:
+          x: 0
+          y: 0
+          z: 1
+        Rotation:
+          value:
+            x: 0
+            y: 0
+            z: 0
+            w: 1
+      - Position:
+          x: 0
+          y: 0
+          z: 32
+        TangentIn:
+          x: 0
+          y: 0
+          z: -1
+        TangentOut:
+          x: 0
+          y: 0
+          z: 1
+        Rotation:
+          value:
+            x: 0
+            y: 0
+            z: 0
+            w: 1
+      m_MetaData: []
+      m_Closed: 0
+      m_IntData:
+        m_Data: []
+      m_FloatData:
+        m_Data: []
+      m_Float4Data:
+        m_Data: []
+      m_ObjectData:
+        m_Data:
+        - Key: 
+          Value:
+            m_IndexUnit: 2
+            m_DefaultValue: {fileID: 0}
+            m_DataPoints: []

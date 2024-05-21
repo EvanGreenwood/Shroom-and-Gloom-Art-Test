@@ -304,6 +304,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SingleTunnelTestMode: 1
   MapSettings: {fileID: 0}
+  TunnelPrefab: {fileID: 0}
+  TunnelJoinPrefab: {fileID: 0}
   _areYouTakingCareOfYourself: 0
   _greatJobYouGotThis: 0
 --- !u!1 &276788892
@@ -479,8 +481,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UseSOData: 0
   GenerationSettings: {fileID: 0}
+  TunnelVolume: {fileID: 0}
   EditMode: 0
-  _colorGradient:
+  Old_ColorGradient:
     serializedVersion: 2
     key0: {r: 0.735849, g: 0.41347235, b: 0.35056958, a: 1}
     key1: {r: 0.16981131, g: 0.13063456, b: 0.12415449, a: 1}
@@ -510,40 +513,41 @@ MonoBehaviour:
     m_ColorSpace: 0
     m_NumColorKeys: 4
     m_NumAlphaKeys: 2
-  _particles: {fileID: 2402285776899386762, guid: 8e61f67cd760b423db14eb998271668d, type: 3}
-  _particleSpawnDistance: 5
-  _baseTunnelWidth: 2.5
-  _lumpyWidth: 0.5
-  _clearingWidth: 1
-  _clearingDepth: 2.33
-  wallElements: []
-  flatWallPrefab: {fileID: 0}
-  flatWallSpacing: 1
-  flatWallOffset: 1
-  surroundElements: []
-  floorElements:
-  - name: Floor
-    disabled: 0
-    floorPrefabs:
+  Old_Particles: {fileID: 2402285776899386762, guid: 8e61f67cd760b423db14eb998271668d, type: 3}
+  Old_ParticleSpawnDistance: 5
+  Old_BaseTunnelWidth: 2.5
+  Old_LumpyWidth: 0.5
+  Old_ClearingWidth: 1
+  Old_ClearingDepth: 2.33
+  Old_WallElements: []
+  Old_FlatWallPrefab: {fileID: 0}
+  Old_FlatWallSpacing: 1
+  Old_FlatWallOffset: 1
+  Old_SurroundElements: []
+  Old_FloorElements:
+  - Name: Floor
+    Disabled: 0
+    FloorPrefabs:
     - {fileID: 533812792349040230, guid: d06aabe27cc4f4c9c9a2d4957a747e37, type: 3}
-    zOffset: 0.08
-    spacing: 0.5
-    randomXPosition: 0.5
-    minMaxAngle:
+    ZOffset: 0.08
+    Spacing: 0.5
+    RandomXPosition: 0.5
+    MinMaxAngle:
       _min: -1
       _max: 1
-    xRotation: 0
-    minMaxPosition:
+    XRotation: 0
+    MinMaxPosition:
       _min: -0.05
       _max: 0.05
-    randomFlipX: 1
-  flatFloorPrefab: {fileID: 8948351601474626931, guid: dcbf014b9ccc649b396066c1a03ebc65, type: 3}
-  flatFloorSpacing: 2
-  flatFloorOffset: -2
-  ceilingElements: []
-  flatCeilingPrefab: {fileID: 0}
-  flatCeilingSpacing: 1
-  flatCeilingOffset: 1
+    RandomFlipX: 1
+  Old_FlatFloorPrefab: {fileID: 8948351601474626931, guid: dcbf014b9ccc649b396066c1a03ebc65, type: 3}
+  Old_FlatFloorSpacing: 2
+  Old_FlatFloorOffset: -2
+  Old_CeilingElements: []
+  Old_FlatCeilingPrefab: {fileID: 0}
+  Old_FlatCeilingSpacing: 1
+  Old_FlatCeilingOffset: 1
+  SOToCopyInto: {fileID: 0}
   _elementParents:
   - {fileID: 0}
   - {fileID: 0}
@@ -1026,9 +1030,9 @@ MonoBehaviour:
   _loopDuration:
     _min: 0.025
     _max: 0.5
-  _intensityRange:
-    _min: 2.5
-    _max: 3
+  _intensityOffsetRange:
+    _min: 0
+    _max: 1
   _animateColor: 1
   _colorPool:
     serializedVersion: 2
@@ -1179,9 +1183,9 @@ MonoBehaviour:
   _loopDuration:
     _min: 0.025
     _max: 0.5
-  _intensityRange:
-    _min: 2.5
-    _max: 3
+  _intensityOffsetRange:
+    _min: 0
+    _max: 1
   _animateColor: 1
   _colorPool:
     serializedVersion: 2
@@ -1246,6 +1250,7 @@ GameObject:
   - component: {fileID: 1010163283}
   - component: {fileID: 1010163282}
   - component: {fileID: 1010163281}
+  - component: {fileID: 1010163284}
   m_Layer: 0
   m_Name: HotLight (1)
   m_TagString: Untagged
@@ -1266,47 +1271,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _light: {fileID: 744440927}
-  _flare: {fileID: 69968928}
-  _colorRange:
-    serializedVersion: 2
-    key0: {r: 1, g: 0.028, b: 0, a: 1}
-    key1: {r: 1, g: 0.3184083, b: 0, a: 1}
-    key2: {r: 1, g: 0.39937478, b: 0, a: 0}
-    key3: {r: 1, g: 0.9392036, b: 0.427451, a: 0}
-    key4: {r: 1, g: 0.9392036, b: 0.427451, a: 0}
-    key5: {r: 1, g: 0, b: 0, a: 0}
-    key6: {r: 1, g: 0, b: 0, a: 0}
-    key7: {r: 1, g: 0, b: 0, a: 0}
-    ctime0: 0
-    ctime1: 23167
-    ctime2: 57873
-    ctime3: 65535
-    ctime4: 65535
-    ctime5: 65535
-    ctime6: 65535
-    ctime7: 65535
-    atime0: 0
-    atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_ColorSpace: 0
-    m_NumColorKeys: 3
-    m_NumAlphaKeys: 2
-  _intensityMinMax:
-    _min: 1
-    _max: 2
-  _rangeMinMax:
-    _min: 4
-    _max: 6
-  _flareAlphaMinMax:
-    _min: 0.01
-    _max: 0.02
-  _flareHueVariance: 0.05
+  _rig: {fileID: 0}
+  _splinePercent: 0
+  _angle: 0
+  _distance: 0
 --- !u!212 &1010163282
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1376,6 +1344,68 @@ Transform:
   - {fileID: 69968931}
   m_Father: {fileID: 1944771072}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!108 &1010163284
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1010163280}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 2
+  m_Shape: 0
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 1
+  m_Range: 10
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!1 &1024201285
 GameObject:
   m_ObjectHideFlags: 0
@@ -1408,8 +1438,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UseSOData: 0
   GenerationSettings: {fileID: 0}
+  TunnelVolume: {fileID: 0}
   EditMode: 0
-  _colorGradient:
+  Old_ColorGradient:
     serializedVersion: 2
     key0: {r: 0.6981132, g: 0.535298, b: 0.50448555, a: 1}
     key1: {r: 0.59716547, g: 0.7132075, b: 0.44541824, a: 1}
@@ -1439,96 +1470,97 @@ MonoBehaviour:
     m_ColorSpace: -1
     m_NumColorKeys: 8
     m_NumAlphaKeys: 2
-  _particles: {fileID: 2402285776899386762, guid: 8e61f67cd760b423db14eb998271668d, type: 3}
-  _particleSpawnDistance: 5
-  _baseTunnelWidth: 2.5
-  _lumpyWidth: 0.5
-  _clearingWidth: 1
-  _clearingDepth: 2.33
-  wallElements:
-  - name: Wall Thorns
-    disabled: 0
-    wallPrefabs:
+  Old_Particles: {fileID: 2402285776899386762, guid: 8e61f67cd760b423db14eb998271668d, type: 3}
+  Old_ParticleSpawnDistance: 5
+  Old_BaseTunnelWidth: 2.5
+  Old_LumpyWidth: 0.5
+  Old_ClearingWidth: 1
+  Old_ClearingDepth: 2.33
+  Old_WallElements:
+  - Name: Wall Thorns
+    Disabled: 0
+    WallPrefabs:
     - {fileID: 1508189691331659514, guid: 58503cf409f035144b23039e7efe5466, type: 3}
-    zOffset: 0
-    spacing: 2
-    width: 2
-    heightOffset:
+    ZOffset: 0
+    Spacing: 2
+    Width: 2
+    HeightOffset:
       _min: 0
       _max: 5
-    verticalLoopLength: 5
-    verticalLoopIncrement: 2
-    minMaxAngle:
+    VerticalLoopLength: 5
+    VerticalLoopIncrement: 2
+    MinMaxAngle:
       _min: 0
       _max: 0
-    minMaxPosition:
+    MinMaxPosition:
       _min: 2
       _max: 3
-    randomRotation: 0
-    randomFlipY: 0
-  - name: Thorns Base
-    disabled: 0
-    wallPrefabs:
+    RandomRotation: 0
+    RandomFlipY: 0
+  - Name: Thorns Base
+    Disabled: 0
+    WallPrefabs:
     - {fileID: 717079983591251126, guid: 239ca69b503789f4097c61f9e63c3318, type: 3}
-    zOffset: 0.1
-    spacing: 0.5
-    width: 4
-    heightOffset:
+    ZOffset: 0.1
+    Spacing: 0.5
+    Width: 4
+    HeightOffset:
       _min: -3
       _max: -1
-    verticalLoopLength: 3
-    verticalLoopIncrement: 1
-    minMaxAngle:
+    VerticalLoopLength: 3
+    VerticalLoopIncrement: 1
+    MinMaxAngle:
       _min: -15
       _max: 30
-    minMaxPosition:
+    MinMaxPosition:
       _min: -2
       _max: -1
-    randomRotation: 90
-    randomFlipY: 0
-  flatWallPrefab: {fileID: 0}
-  flatWallSpacing: 1
-  flatWallOffset: 1
-  surroundElements: []
-  floorElements:
-  - name: Floor
-    disabled: 0
-    floorPrefabs:
+    RandomRotation: 90
+    RandomFlipY: 0
+  Old_FlatWallPrefab: {fileID: 0}
+  Old_FlatWallSpacing: 1
+  Old_FlatWallOffset: 1
+  Old_SurroundElements: []
+  Old_FloorElements:
+  - Name: Floor
+    Disabled: 0
+    FloorPrefabs:
     - {fileID: -8373903463449722979, guid: 26d96b879b500654a952b8ee6bc0661b, type: 3}
-    zOffset: 0.08
-    spacing: 0.5
-    randomXPosition: 0.5
-    minMaxAngle:
+    ZOffset: 0.08
+    Spacing: 0.5
+    RandomXPosition: 0.5
+    MinMaxAngle:
       _min: -1
       _max: 1
-    xRotation: 0
-    minMaxPosition:
+    XRotation: 0
+    MinMaxPosition:
       _min: -0.05
       _max: 0.05
-    randomFlipX: 1
-  flatFloorPrefab: {fileID: 0}
-  flatFloorSpacing: 1
-  flatFloorOffset: -1
-  ceilingElements:
-  - name: Ceiling
-    disabled: 0
-    ceilingPrefabs:
+    RandomFlipX: 1
+  Old_FlatFloorPrefab: {fileID: 0}
+  Old_FlatFloorSpacing: 1
+  Old_FlatFloorOffset: -1
+  Old_CeilingElements:
+  - Name: Ceiling
+    Disabled: 0
+    CeilingPrefabs:
     - {fileID: -8373903463449722979, guid: 869ee8a3f63981240939fadfb5569cb7, type: 3}
-    height: 5
-    zOffset: 0.02
-    spacing: 0.5
-    randomXPosition: 1.4
-    minMaxAngle:
+    Height: 5
+    ZOffset: 0.02
+    Spacing: 0.5
+    RandomXPosition: 1.4
+    MinMaxAngle:
       _min: -0.5
       _max: 0.5
-    xRotation: -45
-    minMaxPosition:
+    XRotation: -45
+    MinMaxPosition:
       _min: -0.03
       _max: 0.03
-    randomFlipX: 1
-  flatCeilingPrefab: {fileID: 0}
-  flatCeilingSpacing: 1
-  flatCeilingOffset: 1
+    RandomFlipX: 1
+  Old_FlatCeilingPrefab: {fileID: 0}
+  Old_FlatCeilingSpacing: 1
+  Old_FlatCeilingOffset: 1
+  SOToCopyInto: {fileID: 0}
   _elementParents:
   - {fileID: 0}
   - {fileID: 0}
@@ -1702,7 +1734,7 @@ SpriteRenderer:
   m_Size: {x: 4.3, y: 3.4}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1256414499
@@ -1864,8 +1896,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UseSOData: 0
   GenerationSettings: {fileID: 0}
+  TunnelVolume: {fileID: 0}
   EditMode: 0
-  _colorGradient:
+  Old_ColorGradient:
     serializedVersion: 2
     key0: {r: 0.54088044, g: 0.54088044, b: 0.54088044, a: 1}
     key1: {r: 0.38364768, g: 0.33659652, b: 0.33659652, a: 1}
@@ -1895,40 +1928,41 @@ MonoBehaviour:
     m_ColorSpace: -1
     m_NumColorKeys: 5
     m_NumAlphaKeys: 2
-  _particles: {fileID: 2402285776899386762, guid: 8e61f67cd760b423db14eb998271668d, type: 3}
-  _particleSpawnDistance: 5
-  _baseTunnelWidth: 2.5
-  _lumpyWidth: 0.5
-  _clearingWidth: 1
-  _clearingDepth: 2.33
-  wallElements: []
-  flatWallPrefab: {fileID: 0}
-  flatWallSpacing: 1
-  flatWallOffset: 1
-  surroundElements: []
-  floorElements:
-  - name: Floor
-    disabled: 0
-    floorPrefabs:
+  Old_Particles: {fileID: 2402285776899386762, guid: 8e61f67cd760b423db14eb998271668d, type: 3}
+  Old_ParticleSpawnDistance: 5
+  Old_BaseTunnelWidth: 2.5
+  Old_LumpyWidth: 0.5
+  Old_ClearingWidth: 1
+  Old_ClearingDepth: 2.33
+  Old_WallElements: []
+  Old_FlatWallPrefab: {fileID: 0}
+  Old_FlatWallSpacing: 1
+  Old_FlatWallOffset: 1
+  Old_SurroundElements: []
+  Old_FloorElements:
+  - Name: Floor
+    Disabled: 0
+    FloorPrefabs:
     - {fileID: 533812792349040230, guid: d06aabe27cc4f4c9c9a2d4957a747e37, type: 3}
-    zOffset: 0.08
-    spacing: 0.5
-    randomXPosition: 0.5
-    minMaxAngle:
+    ZOffset: 0.08
+    Spacing: 0.5
+    RandomXPosition: 0.5
+    MinMaxAngle:
       _min: -1
       _max: 1
-    xRotation: 0
-    minMaxPosition:
+    XRotation: 0
+    MinMaxPosition:
       _min: -0.05
       _max: 0.05
-    randomFlipX: 1
-  flatFloorPrefab: {fileID: 8948351601474626931, guid: dcbf014b9ccc649b396066c1a03ebc65, type: 3}
-  flatFloorSpacing: 3
-  flatFloorOffset: -2.5
-  ceilingElements: []
-  flatCeilingPrefab: {fileID: 0}
-  flatCeilingSpacing: 1
-  flatCeilingOffset: 1
+    RandomFlipX: 1
+  Old_FlatFloorPrefab: {fileID: 8948351601474626931, guid: dcbf014b9ccc649b396066c1a03ebc65, type: 3}
+  Old_FlatFloorSpacing: 3
+  Old_FlatFloorOffset: -2.5
+  Old_CeilingElements: []
+  Old_FlatCeilingPrefab: {fileID: 0}
+  Old_FlatCeilingSpacing: 1
+  Old_FlatCeilingOffset: 1
+  SOToCopyInto: {fileID: 0}
   _elementParents:
   - {fileID: 0}
   - {fileID: 0}
@@ -2126,8 +2160,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UseSOData: 0
   GenerationSettings: {fileID: 0}
+  TunnelVolume: {fileID: 0}
   EditMode: 0
-  _colorGradient:
+  Old_ColorGradient:
     serializedVersion: 2
     key0: {r: 0.19584373, g: 0.22951756, b: 0.254717, a: 1}
     key1: {r: 0.48235294, g: 0.4180515, b: 0.23529412, a: 1}
@@ -2157,96 +2192,97 @@ MonoBehaviour:
     m_ColorSpace: 0
     m_NumColorKeys: 3
     m_NumAlphaKeys: 2
-  _particles: {fileID: 2402285776899386762, guid: 8e61f67cd760b423db14eb998271668d, type: 3}
-  _particleSpawnDistance: 5
-  _baseTunnelWidth: 2.5
-  _lumpyWidth: 0.5
-  _clearingWidth: 1
-  _clearingDepth: 2.33
-  wallElements:
-  - name: Wall Thorns
-    disabled: 0
-    wallPrefabs:
+  Old_Particles: {fileID: 2402285776899386762, guid: 8e61f67cd760b423db14eb998271668d, type: 3}
+  Old_ParticleSpawnDistance: 5
+  Old_BaseTunnelWidth: 2.5
+  Old_LumpyWidth: 0.5
+  Old_ClearingWidth: 1
+  Old_ClearingDepth: 2.33
+  Old_WallElements:
+  - Name: Wall Thorns
+    Disabled: 0
+    WallPrefabs:
     - {fileID: 1508189691331659514, guid: 58503cf409f035144b23039e7efe5466, type: 3}
-    zOffset: 0
-    spacing: 2
-    width: 2
-    heightOffset:
+    ZOffset: 0
+    Spacing: 2
+    Width: 2
+    HeightOffset:
       _min: 0
       _max: 5
-    verticalLoopLength: 5
-    verticalLoopIncrement: 2
-    minMaxAngle:
+    VerticalLoopLength: 5
+    VerticalLoopIncrement: 2
+    MinMaxAngle:
       _min: 0
       _max: 0
-    minMaxPosition:
+    MinMaxPosition:
       _min: 2
       _max: 3
-    randomRotation: 0
-    randomFlipY: 0
-  - name: Thorns Base
-    disabled: 0
-    wallPrefabs:
+    RandomRotation: 0
+    RandomFlipY: 0
+  - Name: Thorns Base
+    Disabled: 0
+    WallPrefabs:
     - {fileID: 717079983591251126, guid: 239ca69b503789f4097c61f9e63c3318, type: 3}
-    zOffset: 0.1
-    spacing: 0.5
-    width: 4
-    heightOffset:
+    ZOffset: 0.1
+    Spacing: 0.5
+    Width: 4
+    HeightOffset:
       _min: -3
       _max: -1
-    verticalLoopLength: 3
-    verticalLoopIncrement: 1
-    minMaxAngle:
+    VerticalLoopLength: 3
+    VerticalLoopIncrement: 1
+    MinMaxAngle:
       _min: -15
       _max: 30
-    minMaxPosition:
+    MinMaxPosition:
       _min: -2
       _max: -1
-    randomRotation: 90
-    randomFlipY: 0
-  flatWallPrefab: {fileID: 0}
-  flatWallSpacing: 1
-  flatWallOffset: 1
-  surroundElements: []
-  floorElements:
-  - name: Floor
-    disabled: 0
-    floorPrefabs:
+    RandomRotation: 90
+    RandomFlipY: 0
+  Old_FlatWallPrefab: {fileID: 0}
+  Old_FlatWallSpacing: 1
+  Old_FlatWallOffset: 1
+  Old_SurroundElements: []
+  Old_FloorElements:
+  - Name: Floor
+    Disabled: 0
+    FloorPrefabs:
     - {fileID: -8373903463449722979, guid: 2008e0a0116986147b68b75b30fa1c37, type: 3}
-    zOffset: 0.08
-    spacing: 0.5
-    randomXPosition: 0.5
-    minMaxAngle:
+    ZOffset: 0.08
+    Spacing: 0.5
+    RandomXPosition: 0.5
+    MinMaxAngle:
       _min: -5
       _max: 5
-    xRotation: 0
-    minMaxPosition:
+    XRotation: 0
+    MinMaxPosition:
       _min: -0.05
       _max: 0.05
-    randomFlipX: 1
-  flatFloorPrefab: {fileID: 0}
-  flatFloorSpacing: 1
-  flatFloorOffset: -1
-  ceilingElements:
-  - name: Ceiling
-    disabled: 0
-    ceilingPrefabs:
+    RandomFlipX: 1
+  Old_FlatFloorPrefab: {fileID: 0}
+  Old_FlatFloorSpacing: 1
+  Old_FlatFloorOffset: -1
+  Old_CeilingElements:
+  - Name: Ceiling
+    Disabled: 0
+    CeilingPrefabs:
     - {fileID: -8373903463449722979, guid: 869ee8a3f63981240939fadfb5569cb7, type: 3}
-    height: 5
-    zOffset: 0.02
-    spacing: 0.5
-    randomXPosition: 1.4
-    minMaxAngle:
+    Height: 5
+    ZOffset: 0.02
+    Spacing: 0.5
+    RandomXPosition: 1.4
+    MinMaxAngle:
       _min: -0.5
       _max: 0.5
-    xRotation: -45
-    minMaxPosition:
+    XRotation: -45
+    MinMaxPosition:
       _min: -0.03
       _max: 0.03
-    randomFlipX: 1
-  flatCeilingPrefab: {fileID: 0}
-  flatCeilingSpacing: 1
-  flatCeilingOffset: 1
+    RandomFlipX: 1
+  Old_FlatCeilingPrefab: {fileID: 0}
+  Old_FlatCeilingSpacing: 1
+  Old_FlatCeilingOffset: 1
+  SOToCopyInto: {fileID: 0}
   _elementParents:
   - {fileID: 0}
   - {fileID: 0}
@@ -2420,7 +2456,7 @@ SpriteRenderer:
   m_Size: {x: 4.3, y: 3.4}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1594887859
@@ -2615,7 +2651,7 @@ SpriteRenderer:
   m_Size: {x: 4.3, y: 3.4}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1673784903
@@ -2644,6 +2680,7 @@ GameObject:
   - component: {fileID: 1853541269}
   - component: {fileID: 1853541268}
   - component: {fileID: 1853541267}
+  - component: {fileID: 1853541270}
   m_Layer: 0
   m_Name: HotLight (2)
   m_TagString: Untagged
@@ -2664,47 +2701,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _light: {fileID: 699668597}
-  _flare: {fileID: 1405058169}
-  _colorRange:
-    serializedVersion: 2
-    key0: {r: 1, g: 0.028, b: 0, a: 1}
-    key1: {r: 1, g: 0.3184083, b: 0, a: 1}
-    key2: {r: 1, g: 0.39937478, b: 0, a: 0}
-    key3: {r: 1, g: 0.9392036, b: 0.427451, a: 0}
-    key4: {r: 1, g: 0.9392036, b: 0.427451, a: 0}
-    key5: {r: 1, g: 0, b: 0, a: 0}
-    key6: {r: 1, g: 0, b: 0, a: 0}
-    key7: {r: 1, g: 0, b: 0, a: 0}
-    ctime0: 0
-    ctime1: 23167
-    ctime2: 57873
-    ctime3: 65535
-    ctime4: 65535
-    ctime5: 65535
-    ctime6: 65535
-    ctime7: 65535
-    atime0: 0
-    atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_ColorSpace: 0
-    m_NumColorKeys: 3
-    m_NumAlphaKeys: 2
-  _intensityMinMax:
-    _min: 1
-    _max: 2
-  _rangeMinMax:
-    _min: 8
-    _max: 12
-  _flareAlphaMinMax:
-    _min: 0.01
-    _max: 0.02
-  _flareHueVariance: 0.05
+  _rig: {fileID: 0}
+  _splinePercent: 0
+  _angle: 0
+  _distance: 0
 --- !u!212 &1853541268
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2774,6 +2774,68 @@ Transform:
   - {fileID: 1405058172}
   m_Father: {fileID: 1944771072}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!108 &1853541270
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1853541266}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 2
+  m_Shape: 0
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 1
+  m_Range: 10
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!1 &1944771071
 GameObject:
   m_ObjectHideFlags: 0
@@ -2847,8 +2909,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UseSOData: 0
   GenerationSettings: {fileID: 0}
+  TunnelVolume: {fileID: 0}
   EditMode: 0
-  _colorGradient:
+  Old_ColorGradient:
     serializedVersion: 2
     key0: {r: 0.54088044, g: 0.54088044, b: 0.54088044, a: 1}
     key1: {r: 0.38364768, g: 0.33659652, b: 0.33659652, a: 1}
@@ -2878,40 +2941,41 @@ MonoBehaviour:
     m_ColorSpace: -1
     m_NumColorKeys: 5
     m_NumAlphaKeys: 2
-  _particles: {fileID: 2402285776899386762, guid: 8e61f67cd760b423db14eb998271668d, type: 3}
-  _particleSpawnDistance: 5
-  _baseTunnelWidth: 2.5
-  _lumpyWidth: 0.5
-  _clearingWidth: 1
-  _clearingDepth: 2.33
-  wallElements: []
-  flatWallPrefab: {fileID: 0}
-  flatWallSpacing: 1
-  flatWallOffset: 1
-  surroundElements: []
-  floorElements:
-  - name: Floor
-    disabled: 0
-    floorPrefabs:
+  Old_Particles: {fileID: 2402285776899386762, guid: 8e61f67cd760b423db14eb998271668d, type: 3}
+  Old_ParticleSpawnDistance: 5
+  Old_BaseTunnelWidth: 2.5
+  Old_LumpyWidth: 0.5
+  Old_ClearingWidth: 1
+  Old_ClearingDepth: 2.33
+  Old_WallElements: []
+  Old_FlatWallPrefab: {fileID: 0}
+  Old_FlatWallSpacing: 1
+  Old_FlatWallOffset: 1
+  Old_SurroundElements: []
+  Old_FloorElements:
+  - Name: Floor
+    Disabled: 0
+    FloorPrefabs:
     - {fileID: 533812792349040230, guid: d06aabe27cc4f4c9c9a2d4957a747e37, type: 3}
-    zOffset: 0.08
-    spacing: 0.5
-    randomXPosition: 0.5
-    minMaxAngle:
+    ZOffset: 0.08
+    Spacing: 0.5
+    RandomXPosition: 0.5
+    MinMaxAngle:
       _min: -1
       _max: 1
-    xRotation: 0
-    minMaxPosition:
+    XRotation: 0
+    MinMaxPosition:
       _min: -0.05
       _max: 0.05
-    randomFlipX: 1
-  flatFloorPrefab: {fileID: 8948351601474626931, guid: dcbf014b9ccc649b396066c1a03ebc65, type: 3}
-  flatFloorSpacing: 3
-  flatFloorOffset: -2.5
-  ceilingElements: []
-  flatCeilingPrefab: {fileID: 0}
-  flatCeilingSpacing: 1
-  flatCeilingOffset: 1
+    RandomFlipX: 1
+  Old_FlatFloorPrefab: {fileID: 8948351601474626931, guid: dcbf014b9ccc649b396066c1a03ebc65, type: 3}
+  Old_FlatFloorSpacing: 3
+  Old_FlatFloorOffset: -2.5
+  Old_CeilingElements: []
+  Old_FlatCeilingPrefab: {fileID: 0}
+  Old_FlatCeilingSpacing: 1
+  Old_FlatCeilingOffset: 1
+  SOToCopyInto: {fileID: 0}
   _elementParents:
   - {fileID: 0}
   - {fileID: 0}
@@ -3300,6 +3364,7 @@ GameObject:
   - component: {fileID: 518262147555641664}
   - component: {fileID: 6965766245544029895}
   - component: {fileID: 8536468867790060586}
+  - component: {fileID: 8536468867790060587}
   m_Layer: 0
   m_Name: HotLight
   m_TagString: Untagged
@@ -3475,7 +3540,7 @@ SpriteRenderer:
   m_Size: {x: 4.3, y: 3.4}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &5898832831514542662
@@ -3606,9 +3671,9 @@ MonoBehaviour:
   _loopDuration:
     _min: 0.025
     _max: 0.5
-  _intensityRange:
-    _min: 2.5
-    _max: 3
+  _intensityOffsetRange:
+    _min: 0
+    _max: 1
   _animateColor: 1
   _colorPool:
     serializedVersion: 2
@@ -3660,47 +3725,72 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _light: {fileID: 3589334310083432301}
-  _flare: {fileID: 3219350154045090262}
-  _colorRange:
+  _rig: {fileID: 0}
+  _splinePercent: 0
+  _angle: 0
+  _distance: 0
+--- !u!108 &8536468867790060587
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3520222860002016329}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 2
+  m_Shape: 0
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 1
+  m_Range: 10
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
     serializedVersion: 2
-    key0: {r: 1, g: 0.028, b: 0, a: 1}
-    key1: {r: 1, g: 0.3184083, b: 0, a: 1}
-    key2: {r: 1, g: 0.39937478, b: 0, a: 0}
-    key3: {r: 1, g: 0.9392036, b: 0.427451, a: 0}
-    key4: {r: 1, g: 0.9392036, b: 0.427451, a: 0}
-    key5: {r: 1, g: 0, b: 0, a: 0}
-    key6: {r: 1, g: 0, b: 0, a: 0}
-    key7: {r: 1, g: 0, b: 0, a: 0}
-    ctime0: 0
-    ctime1: 23167
-    ctime2: 57873
-    ctime3: 65535
-    ctime4: 65535
-    ctime5: 65535
-    ctime6: 65535
-    ctime7: 65535
-    atime0: 0
-    atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_ColorSpace: 0
-    m_NumColorKeys: 3
-    m_NumAlphaKeys: 2
-  _intensityMinMax:
-    _min: 1
-    _max: 2
-  _rangeMinMax:
-    _min: 4
-    _max: 6
-  _flareAlphaMinMax:
-    _min: 0.01
-    _max: 0.02
-  _flareHueVariance: 0.05
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!1 &8651148998416440927
 GameObject:
   m_ObjectHideFlags: 0
