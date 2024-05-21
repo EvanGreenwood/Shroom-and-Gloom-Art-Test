@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
+[ExecuteAlways]
 public class TunnelJoin : MonoBehaviour
 {
     public Transform DoorParentLinear;
@@ -18,6 +19,13 @@ public class TunnelJoin : MonoBehaviour
 
     private int _totalTunnelCount = -1;
 
+    private void Awake()
+    {
+        DoorParentLinear.gameObject.SetActive(false);
+        DoorParentBranch.gameObject.SetActive(false);
+        DoorParentThranch.gameObject.SetActive(false);
+    }
+
     public void AddOutTunnel(int totalTunnelCount, TunnelGenerator tunnelInstance, out Vector3 position, out Quaternion rotation)
     {
         Debug.Assert(_totalTunnelCount == -1 || totalTunnelCount == _totalTunnelCount, $"A PATH IS CHANGING AN ALREADY SET TUNNEL OUT COUNT. New: {totalTunnelCount} vs Current: {_totalTunnelCount}", gameObject);
@@ -29,6 +37,7 @@ public class TunnelJoin : MonoBehaviour
         {
             DoorParentBranch.gameObject.SetActive(false);
             DoorParentThranch.gameObject.SetActive(false);
+            DoorParentLinear.gameObject.SetActive(true);
             
             position = DoorParentLinear.GetChild(0).position;
             rotation = DoorParentLinear.GetChild(0).rotation;
@@ -37,6 +46,7 @@ public class TunnelJoin : MonoBehaviour
         {
             DoorParentLinear.gameObject.SetActive(false);
             DoorParentThranch.gameObject.SetActive(false);
+            DoorParentBranch.gameObject.SetActive(true);
             
            if(OutTunnels.Count == 1)
            {
@@ -53,6 +63,7 @@ public class TunnelJoin : MonoBehaviour
         {
             DoorParentLinear.gameObject.SetActive(false);
             DoorParentBranch.gameObject.SetActive(false);
+            DoorParentThranch.gameObject.SetActive(true);
             
             if(OutTunnels.Count == 1)
             {
