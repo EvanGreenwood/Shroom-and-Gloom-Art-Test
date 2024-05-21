@@ -49,11 +49,9 @@ public class PropActor : MonoBehaviour
         {
             _isFleeing = true;
             float dir = _sr.flipX ? -1f : 1f;
-            Emote emote = Instantiate(_disturbedEmotePrefab,
-                                      transform.position + transform.right * (1.5f * dir) + Vector3.up * 0.5f,
-                                      transform.rotation);
-
-            if(_sr.flipX) emote.GetComponent<SpriteRenderer>().flipX = true;
+            
+            // Emote emote = Instantiate(_disturbedEmotePrefab, transform.position + transform.right * (1.5f * dir) + Vector3.up * 0.5f, transform.rotation);
+            // if(_sr.flipX) emote.GetComponent<SpriteRenderer>().flipX = true;
             _onDisturbed.Play(transform.position);
             _onFlee.Play(transform);
             
