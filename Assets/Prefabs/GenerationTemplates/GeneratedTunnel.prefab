@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3382484875251901626
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6180991011087404878}
+  m_Layer: 0
+  m_Name: TunnelRigRoot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6180991011087404878
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3382484875251901626}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1618399540182981667}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7137455459775689044
 GameObject:
   m_ObjectHideFlags: 0
@@ -12,6 +43,7 @@ GameObject:
   - component: {fileID: 2911752884358585114}
   - component: {fileID: 182820386374825050}
   - component: {fileID: 6298472048694712905}
+  - component: {fileID: 7637014425186247472}
   m_Layer: 0
   m_Name: GeneratedTunnel
   m_TagString: Untagged
@@ -33,6 +65,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4093521764744058375}
+  - {fileID: 6180991011087404878}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2911752884358585114
@@ -338,6 +371,9 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   _internalTunnelSpline: {fileID: 2911752884358585114}
   _internalTunnelMesh: {fileID: 0}
 --- !u!114 &6298472048694712905
@@ -355,6 +391,26 @@ MonoBehaviour:
   _drawMesh: 0
   _vertexDensity: 0.1
   _verticalOffset: 4
+--- !u!114 &7637014425186247472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7137455459775689044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1ae805add3d24f43a94829d4cb99a2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _tunnelRig: {fileID: 0}
+  _splinePercent: 0
+  _angle: 0
+  _distance: 0
+  _splineContainer: {fileID: 2911752884358585114}
+  _tunneLightPrefab: {fileID: 4971119271147331324, guid: eae6e977ad6b72c4090b093c59697af4, type: 3}
+  _root: {fileID: 0}
+  _tunnelLights: []
 --- !u!1001 &5701008362049638169
 PrefabInstance:
   m_ObjectHideFlags: 0

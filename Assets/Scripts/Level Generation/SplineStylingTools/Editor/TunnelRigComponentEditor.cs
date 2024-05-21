@@ -5,51 +5,46 @@ using MathBad;
 using MathBad_Editor;
 using Unity.Mathematics;
 using UnityEngine.Splines;
-using static MathBad_Editor.EDITOR_HELP;
 #endregion
 
-[CustomEditor(typeof(TunnelLight))]
-public class TunnelLightEditor : ExtendedEditor<TunnelLight>
+[CustomEditor(typeof(TunnelRigComponent),true)]
+public class TunnelRigComponentEditor : ExtendedEditor<TunnelRigComponent>
 {
     public override void OnInspectorGUI()
     {
-        // base.OnInspectorGUI();
         EditorGUI.BeginChangeCheck();
         target.SplinePercent = EditorGUILayout.Slider("Spline Percent", target.SplinePercent, 0f, 1f);
-        target.Distance = EditorGUILayout.Slider("Distance", target.Distance, 0f, 10f);
-        target.Angle = EditorGUILayout.Slider("Angle", target.Angle, -180f, 180f);
+
+        if (target.UsesAngleDistance())
+        {
+            target.Distance = EditorGUILayout.Slider("Distance", target.Distance, 0f, 10f);
+            target.Angle = EditorGUILayout.Slider("Angle", target.Angle, -180f, 180f);
+        }
+       
         if(EditorGUI.EndChangeCheck())
         {
-            Undo.RecordObject(target, "TunnelLight Transform changed");
-            Step();
+            Undo.RecordObject(target, "TunnelRigComponent Transform changed");
+            target.Refresh();
 
             EditorUtility.SetDirty(target);
         }
-
-        return;
-        void Step()
-        {
-            if(target.Rig == null)
-                return;
-            target.Rig.spline.Evaluate(target.SplinePercent, out float3 pos, out float3 tangent, out float3 up);
-            float3 dir = Quaternion.AngleAxis(MATH.Normalize_360(target.Angle), tangent) * up;
-            float3 nextPos = pos + dir * target.Distance;
-            target.transform.rotation = Quaternion.LookRotation(tangent, up);
-            target.transform.position = nextPos;
-        }
+        
+        EditorGUILayout.Space();
+        
+        DrawDefaultInspector();
     }
 
     void OnSceneGUI()
     {
         Tools.current = Tool.None;
-        target.Rig.spline.Evaluate(target.SplinePercent, out float3 curPos, out float3 curTangent, out float3 curUp);
+        target.TunnelRig.spline.Evaluate(target.SplinePercent, out float3 curPos, out float3 curTangent, out float3 curUp);
 
         EditorGUI.BeginChangeCheck();
         Handles.color = Handles.zAxisColor;
         Vector3 wishPos = Handles.Slider(target.transform.position, curTangent);
         if(EditorGUI.EndChangeCheck())
         {
-            Undo.RecordObject(target, "TunnelLight position changed");
+            Undo.RecordObject(target, "TunnelRigComponent position changed");
             MoveForward(wishPos);
             EditorUtility.SetDirty(target);
         }
@@ -65,7 +60,7 @@ public class TunnelLightEditor : ExtendedEditor<TunnelLight>
         Vector3 wishDstPos = Handles.Slider(target.transform.position, toSpline);
         if(EditorGUI.EndChangeCheck())
         {
-            Undo.RecordObject(target, "TunnelLight distance changed");
+            Undo.RecordObject(target, "TunnelRigComponent distance changed");
             MoveDistance(wishDstPos);
             EditorUtility.SetDirty(target);
         }
@@ -75,7 +70,7 @@ public class TunnelLightEditor : ExtendedEditor<TunnelLight>
         Quaternion wishRot = Handles.Disc(Quaternion.AngleAxis(target.Angle, curTangent), curPos, curTangent, target.Distance, false, 0f);
         if(EditorGUI.EndChangeCheck())
         {
-            Undo.RecordObject(target, "TunnelLight angle changed");
+            Undo.RecordObject(target, "TunnelRigComponent angle changed");
             Rotate(wishRot);
             EditorUtility.SetDirty(target);
         }
@@ -83,8 +78,8 @@ public class TunnelLightEditor : ExtendedEditor<TunnelLight>
         return;
         void MoveForward(float3 nextPos)
         {
-            SplineUtility.GetNearestPoint(target.Rig.spline, new float3(0f, 0f, nextPos.z), out float3 nearest, out float t, 20, 3);
-            target.Rig.spline.Evaluate(t, out float3 pos, out float3 tangent, out float3 up);
+            SplineUtility.GetNearestPoint(target.TunnelRig.spline, new float3(0f, 0f, nextPos.z), out float3 nearest, out float t, 20, 3);
+            target.TunnelRig.spline.Evaluate(t, out float3 pos, out float3 tangent, out float3 up);
             target.SplinePercent = t;
 
             float3 dir = Quaternion.AngleAxis(target.Angle, tangent) * up;
@@ -94,7 +89,7 @@ public class TunnelLightEditor : ExtendedEditor<TunnelLight>
         }
         void MoveDistance(Vector3 nextDst)
         {
-            float3 curSplinePos = target.Rig.spline.EvaluatePosition(target.SplinePercent);
+            float3 curSplinePos = target.TunnelRig.spline.EvaluatePosition(target.SplinePercent);
             float dst = (nextDst - curSplinePos._Vec3()).magnitude;
             target.Distance = dst;
             float3 dir = Quaternion.AngleAxis(target.Angle, curTangent) * curUp;

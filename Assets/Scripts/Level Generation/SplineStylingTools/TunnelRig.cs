@@ -13,7 +13,7 @@ using UnityEngine.Splines;
 #endregion
 
 [RequireComponent(typeof(SplineContainer))]
-public class TunnelRig : MonoBehaviour
+public class TunnelRig : TunnelRigComponent
 {
     [SerializeField] SplineContainer _splineContainer;
     [SerializeField] TunnelLight _tunneLightPrefab;
@@ -22,6 +22,9 @@ public class TunnelRig : MonoBehaviour
     
     [SerializeField, ReadOnly]
     List<TunnelLight> _tunnelLights = new List<TunnelLight>();
+    
+    [SerializeField, ReadOnly]
+    List<TunnelLight> _tunnelEncounters = new List<TunnelLight>();
 
     public Spline spline => _splineContainer.Spline;
 
@@ -41,7 +44,7 @@ public class TunnelRig : MonoBehaviour
         }
     }
 
-    public void InitFromTunnelData(TunnelSceneData data)
+    public void InitLightFromTunnelData(TunnelSceneData data)
     {
         GameObject template = new GameObject("TunnelDataLightTemplate");
         Light tLight = template.AddComponent<Light>();
@@ -86,10 +89,10 @@ public class TunnelRig : MonoBehaviour
     {
         if (_root == null)
         {
-            _root = transform.Find("TunnelLights");
+            _root = transform.Find("TunnelRigRoot");
             if (_root == null)
             {
-                _root = new GameObject("TunnelLights").transform;
+                _root = new GameObject("TunnelRigRoot").transform;
                 _root.SetParent(transform, false);
             }
         }
@@ -129,7 +132,7 @@ public class TunnelRig : MonoBehaviour
         tunnelLight.transform.SetParent(_root);
         
         tunnelLight.name = $"TunnelLight_{_tunnelLights.Count}";
-        tunnelLight.Init(this);
+        tunnelLight.SetRig(this);
 
         _tunnelLights.Add(tunnelLight);
         _root.TakeChild(tunnelLight);
@@ -172,6 +175,11 @@ public class TunnelRig : MonoBehaviour
         AssureRoot();
         _tunnelLights.Add(tunnelLight);
         _root.TakeChild(tunnelLight);
-        tunnelLight.Init(this); //redundant but just in case
+        tunnelLight.SetRig(this); //redundant but just in case
+    }
+
+    public override bool UsesAngleDistance()
+    {
+        throw new NotImplementedException();
     }
 }
