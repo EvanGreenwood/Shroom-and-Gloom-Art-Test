@@ -17,6 +17,7 @@ using System.Collections.Generic;
 using Unity.Mathematics;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Rendering.PostProcessing;
 using UnityEngine.Serialization;
 using UnityEngine.Splines;
 using MathUtils = Framework.MathUtils;
@@ -40,6 +41,8 @@ public partial class TunnelGenerator : MonoBehaviour
     public bool UseSOData = true;
     [ShowIf("UseSOData")]
     public TunnelSettings GenerationSettings;
+
+    public PostProcessVolume TunnelVolume;
     
     [Space]
     [Tooltip("Default: dont save, rely on regeneration. " +
@@ -447,7 +450,11 @@ public partial class TunnelGenerator : MonoBehaviour
             }
             throw;
         }*/
-      
+
+       if (TunnelVolume != null && UseSOData)
+       {
+           TunnelVolume.profile = GenerationSettings.SplineVolume.Settings.PostProcessingProfile;
+       }
 
         if (Application.isPlaying)
         {

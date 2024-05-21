@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 487974763898991913}
   - component: {fileID: 7376181246787500649}
   - component: {fileID: 5258449524715896244}
-  - component: {fileID: 3930884114819850005}
   - component: {fileID: 3765442274311022244}
+  - component: {fileID: 4268221850285607269}
   - component: {fileID: 8827615854436265726}
   m_Layer: 0
   m_Name: MainCamera
@@ -159,23 +159,6 @@ MonoBehaviour:
     albedoMultiplier: 4
     brightnessMask: 1
     brightnessMaskRange: {x: 0, y: 2}
---- !u!114 &3930884114819850005
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2009585435895354980}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sharedProfile: {fileID: 11400000, guid: 98490f9df67b3764686a06246bd79317, type: 2}
-  isGlobal: 1
-  blendDistance: 0
-  weight: 1
-  priority: 0
 --- !u!114 &3765442274311022244
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -238,6 +221,24 @@ MonoBehaviour:
   m_AfterStackBundles:
   - assemblyQualifiedName: VladStorm.VHSPro, Assembly-CSharp-firstpass, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &4268221850285607269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2009585435895354980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c520d478f3d2445429bd7ac9c92b03a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  postProcessLayer: {fileID: 3765442274311022244}
+  lightMeter: 0
+  histogram: 0
+  waveform: 0
+  vectorscope: 0
+  debugOverlay: 0
 --- !u!114 &8827615854436265726
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -600,7 +601,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _mainCamera: {fileID: 2967684256118243143}
   _uiCamera: {fileID: 6458702004872144483}
-  _depthVolume: {fileID: 3930884114819850005}
+  _depthVolume: {fileID: 0}
   _angleOffset: {x: 0, y: 0}
   _maxXAngle: 25
   _maxYAngle: 35

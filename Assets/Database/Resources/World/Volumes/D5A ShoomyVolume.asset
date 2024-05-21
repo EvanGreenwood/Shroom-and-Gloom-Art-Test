@@ -17,5 +17,5 @@ MonoBehaviour:
     FogColor: {r: 0, g: 0, b: 0, a: 1}
     FogStart: 3
     FogDistance: 30
-    PostProcessingProfile: {fileID: 11400000, guid: 50134b3c5464a4ef18159fe8958340f4, type: 2}
+    PostProcessingProfile: {fileID: 11400000, guid: 8956a6e584333492fb37e42feb9d90ee, type: 2}
     TransitionInTime: 5

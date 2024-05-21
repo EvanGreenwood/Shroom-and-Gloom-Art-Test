@@ -20,7 +20,7 @@ public abstract class ProximityTrigger : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider other)
-    {Debug.Log($"ENTER {other.gameObject.name}");
+    {
         if (ValidTriggerSources.Contains(other.gameObject.layer))
         {
             ProximityEnter(other.gameObject);
@@ -28,7 +28,7 @@ public abstract class ProximityTrigger : MonoBehaviour
     }
     
     private void OnTriggerExit(Collider other)
-    {Debug.Log($"exit {other.gameObject.name}");
+    {
         if (ValidTriggerSources.Contains(other.gameObject.layer))
         {
             ProximityExit(other.gameObject);

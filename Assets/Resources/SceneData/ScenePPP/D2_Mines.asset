@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-7998966063929767419
+--- !u!114 &-5080806355331495265
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9,24 +9,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6050e2d5de785ce4d931e4dbdbf2d755, type: 3}
-  m_Name: ChromaticAberration
+  m_Script: {fileID: 11500000, guid: d65e486e4de6e5448a8fbb43dc8756a0, type: 3}
+  m_Name: Grain
   m_EditorClassIdentifier: 
   active: 1
   enabled:
     overrideState: 1
     value: 1
-  spectralLut:
+  colored:
     overrideState: 0
-    value: {fileID: 0}
-    defaultState: 1
+    value: 1
   intensity:
-    overrideState: 1
-    value: 0.128
-  fastMode:
     overrideState: 0
     value: 0
---- !u!114 &-4503902858072471111
+  size:
+    overrideState: 0
+    value: 1
+  lumContrib:
+    overrideState: 0
+    value: 0.8
+--- !u!114 &-3752184820014846024
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -53,10 +55,10 @@ MonoBehaviour:
     value: {x: 0.5, y: 0.5}
   intensity:
     overrideState: 1
-    value: 0.391
+    value: 0.219
   smoothness:
-    overrideState: 0
-    value: 0.2
+    overrideState: 1
+    value: 1
   roundness:
     overrideState: 0
     value: 1
@@ -70,6 +72,261 @@ MonoBehaviour:
   opacity:
     overrideState: 0
     value: 1
+--- !u!114 &-971985825836961021
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a63c99b3ed38a41f39e4d2bc6c00dfba, type: 3}
+  m_Name: VHSPro
+  m_EditorClassIdentifier: 
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  g_pixel:
+    overrideState: 0
+    value: 1
+  g_color:
+    overrideState: 0
+    value: 1
+  g_palette:
+    overrideState: 0
+    value: 1
+  g_crt:
+    overrideState: 0
+    value: 1
+  g_noise:
+    overrideState: 0
+    value: 1
+  g_jitter:
+    overrideState: 0
+    value: 1
+  g_signal:
+    overrideState: 0
+    value: 1
+  g_feedback:
+    overrideState: 0
+    value: 1
+  g_extra:
+    overrideState: 0
+    value: 0
+  g_bypass:
+    overrideState: 0
+    value: 0
+  pixelOn:
+    overrideState: 0
+    value: 0
+  screenResPresetId:
+    overrideState: 0
+    value: 2
+  screenWidth:
+    overrideState: 0
+    value: 640
+  screenHeight:
+    overrideState: 0
+    value: 480
+  colorOn:
+    overrideState: 0
+    value: 0
+  colorMode:
+    overrideState: 0
+    value: 2
+  colorSyncedOn:
+    overrideState: 0
+    value: 1
+  bitsR:
+    overrideState: 0
+    value: 2
+  bitsG:
+    overrideState: 0
+    value: 2
+  bitsB:
+    overrideState: 0
+    value: 2
+  bitsSynced:
+    overrideState: 0
+    value: 2
+  bitsGray:
+    overrideState: 0
+    value: 1
+  grayscaleColor:
+    overrideState: 0
+    value: {r: 1, g: 1, b: 1, a: 1}
+  ditherOn:
+    overrideState: 0
+    value: 0
+  ditherMode:
+    overrideState: 0
+    value: 3
+  ditherAmount:
+    overrideState: 0
+    value: 1
+  paletteOn:
+    overrideState: 0
+    value: 0
+  paletteId:
+    overrideState: 0
+    value: 0
+  paletteDelta:
+    overrideState: 0
+    value: 5
+  paletteTex:
+    overrideState: 0
+    value: {fileID: 0}
+    defaultState: 1
+  paletteCustom: {fileID: 0}
+  paletteCustomName: 
+  paletteCustomInit: 0
+  bleedOn:
+    overrideState: 1
+    value: 1
+  crtMode:
+    overrideState: 0
+    value: 0
+  bleedAmount:
+    overrideState: 1
+    value: 0.25
+  noiseResGlobal:
+    overrideState: 0
+    value: 1
+  noiseResWidth:
+    overrideState: 0
+    value: 640
+  noiseResHeight:
+    overrideState: 0
+    value: 480
+  filmgrainOn:
+    overrideState: 0
+    value: 0
+  filmGrainAmount:
+    overrideState: 0
+    value: 0.016
+  signalNoiseOn:
+    overrideState: 0
+    value: 0
+  signalNoiseAmount:
+    overrideState: 0
+    value: 0.3
+  signalNoisePower:
+    overrideState: 0
+    value: 0.83
+  lineNoiseOn:
+    overrideState: 0
+    value: 0
+  lineNoiseAmount:
+    overrideState: 0
+    value: 1
+  lineNoiseSpeed:
+    overrideState: 0
+    value: 5
+  tapeNoiseOn:
+    overrideState: 0
+    value: 0
+  tapeNoiseTH:
+    overrideState: 0
+    value: 0.63
+  tapeNoiseAmount:
+    overrideState: 0
+    value: 1
+  tapeNoiseSpeed:
+    overrideState: 0
+    value: 1
+  scanLinesOn:
+    overrideState: 0
+    value: 0
+  scanLineWidth:
+    overrideState: 0
+    value: 10
+  linesFloatOn:
+    overrideState: 0
+    value: 0
+  linesFloatSpeed:
+    overrideState: 0
+    value: 1
+  stretchOn:
+    overrideState: 0
+    value: 0
+  jitterHOn:
+    overrideState: 0
+    value: 0
+  jitterHAmount:
+    overrideState: 0
+    value: 0.5
+  jitterVOn:
+    overrideState: 0
+    value: 0
+  jitterVAmount:
+    overrideState: 0
+    value: 1
+  jitterVSpeed:
+    overrideState: 0
+    value: 1
+  twitchHOn:
+    overrideState: 0
+    value: 0
+  twitchHFreq:
+    overrideState: 0
+    value: 1
+  twitchVOn:
+    overrideState: 0
+    value: 0
+  twitchVFreq:
+    overrideState: 0
+    value: 1
+  signalTweakOn:
+    overrideState: 0
+    value: 0
+  signalAdjustY:
+    overrideState: 0
+    value: 0
+  signalAdjustI:
+    overrideState: 0
+    value: 0
+  signalAdjustQ:
+    overrideState: 0
+    value: 0
+  signalShiftY:
+    overrideState: 0
+    value: 1
+  signalShiftI:
+    overrideState: 0
+    value: 1
+  signalShiftQ:
+    overrideState: 0
+    value: 1
+  feedbackOn:
+    overrideState: 0
+    value: 0
+  feedbackThresh:
+    overrideState: 0
+    value: 0.1
+  feedbackAmount:
+    overrideState: 0
+    value: 2
+  feedbackFade:
+    overrideState: 0
+    value: 0.82
+  feedbackColor:
+    overrideState: 0
+    value: {r: 1, g: 0.5, b: 0, a: 1}
+  feedbackDebugOn:
+    overrideState: 0
+    value: 0
+  independentTimeOn:
+    overrideState: 0
+    value: 0
+  bypassOn:
+    overrideState: 0
+    value: 0
+  bypassTex:
+    overrideState: 0
+    value: {fileID: 0}
+    defaultState: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -85,10 +342,12 @@ MonoBehaviour:
   settings:
   - {fileID: 3921921438752968272}
   - {fileID: 1077696711740925371}
-  - {fileID: 4780074093030991786}
-  - {fileID: -4503902858072471111}
-  - {fileID: -7998966063929767419}
-  - {fileID: 5054283597302721438}
+  - {fileID: -971985825836961021}
+  - {fileID: -3752184820014846024}
+  - {fileID: 4559072486176322855}
+  - {fileID: 4551387979788163372}
+  - {fileID: -5080806355331495265}
+  - {fileID: 7162641468179790949}
 --- !u!114 &1077696711740925371
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -107,25 +366,25 @@ MonoBehaviour:
     value: 1
   intensity:
     overrideState: 1
-    value: 9
+    value: 2
   threshold:
     overrideState: 1
-    value: 1.2
+    value: 0.5
   softKnee:
     overrideState: 1
-    value: 0.5
+    value: 1
   clamp:
     overrideState: 0
     value: 2
   diffusion:
     overrideState: 1
-    value: 8
+    value: 8.87
   anamorphicRatio:
     overrideState: 1
-    value: 1
+    value: 0.09
   color:
-    overrideState: 0
-    value: {r: 0.75415343, g: 1, b: 0.65471697, a: 1}
+    overrideState: 1
+    value: {r: 0.5643761, g: 1, b: 0.3915094, a: 1}
   fastMode:
     overrideState: 0
     value: 0
@@ -189,28 +448,28 @@ MonoBehaviour:
     value: 1
   temperature:
     overrideState: 1
-    value: 33
+    value: 16
   tint:
     overrideState: 0
     value: 0
   colorFilter:
-    overrideState: 0
-    value: {r: 1, g: 1, b: 1, a: 1}
+    overrideState: 1
+    value: {r: 0.8301887, g: 0.7465729, b: 0.54432184, a: 1}
   hueShift:
     overrideState: 0
     value: 0
   saturation:
-    overrideState: 0
-    value: 0
+    overrideState: 1
+    value: -19
   brightness:
     overrideState: 0
     value: 0
   postExposure:
-    overrideState: 0
-    value: 0.25
+    overrideState: 1
+    value: 1
   contrast:
     overrideState: 1
-    value: 5
+    value: 20
   mixerRedOutRedIn:
     overrideState: 0
     value: 100
@@ -1447,7 +1706,7 @@ MonoBehaviour:
       - 0.5
       - 0.5
       - 0.5
---- !u!114 &4780074093030991786
+--- !u!114 &4551387979788163372
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1456,277 +1715,85 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a63c99b3ed38a41f39e4d2bc6c00dfba, type: 3}
-  m_Name: VHSPro
+  m_Script: {fileID: 11500000, guid: 6050e2d5de785ce4d931e4dbdbf2d755, type: 3}
+  m_Name: ChromaticAberration
   m_EditorClassIdentifier: 
   active: 1
   enabled:
     overrideState: 1
     value: 1
-  g_pixel:
-    overrideState: 0
-    value: 1
-  g_color:
-    overrideState: 0
-    value: 1
-  g_palette:
-    overrideState: 0
-    value: 1
-  g_crt:
-    overrideState: 0
-    value: 1
-  g_noise:
-    overrideState: 0
-    value: 0
-  g_jitter:
-    overrideState: 0
-    value: 0
-  g_signal:
-    overrideState: 0
-    value: 1
-  g_feedback:
-    overrideState: 0
-    value: 0
-  g_extra:
-    overrideState: 0
-    value: 0
-  g_bypass:
-    overrideState: 0
-    value: 0
-  pixelOn:
-    overrideState: 0
-    value: 0
-  screenResPresetId:
-    overrideState: 0
-    value: 2
-  screenWidth:
-    overrideState: 0
-    value: 640
-  screenHeight:
-    overrideState: 0
-    value: 480
-  colorOn:
-    overrideState: 0
-    value: 0
-  colorMode:
-    overrideState: 0
-    value: 2
-  colorSyncedOn:
-    overrideState: 0
-    value: 1
-  bitsR:
-    overrideState: 0
-    value: 2
-  bitsG:
-    overrideState: 0
-    value: 2
-  bitsB:
-    overrideState: 0
-    value: 2
-  bitsSynced:
-    overrideState: 0
-    value: 2
-  bitsGray:
-    overrideState: 0
-    value: 1
-  grayscaleColor:
-    overrideState: 0
-    value: {r: 1, g: 1, b: 1, a: 1}
-  ditherOn:
-    overrideState: 0
-    value: 0
-  ditherMode:
-    overrideState: 0
-    value: 3
-  ditherAmount:
-    overrideState: 0
-    value: 1
-  paletteOn:
-    overrideState: 0
-    value: 0
-  paletteId:
-    overrideState: 0
-    value: 0
-  paletteDelta:
-    overrideState: 0
-    value: 5
-  paletteTex:
+  spectralLut:
     overrideState: 0
     value: {fileID: 0}
     defaultState: 1
-  paletteCustom: {fileID: 0}
-  paletteCustomName: 
-  paletteCustomInit: 0
-  bleedOn:
-    overrideState: 1
-    value: 1
-  crtMode:
-    overrideState: 0
-    value: 1
-  bleedAmount:
-    overrideState: 1
-    value: 0.2
-  noiseResGlobal:
-    overrideState: 0
-    value: 1
-  noiseResWidth:
-    overrideState: 0
-    value: 640
-  noiseResHeight:
-    overrideState: 0
-    value: 480
-  filmgrainOn:
-    overrideState: 0
-    value: 0
-  filmGrainAmount:
-    overrideState: 0
-    value: 0.016
-  signalNoiseOn:
-    overrideState: 0
-    value: 0
-  signalNoiseAmount:
-    overrideState: 0
-    value: 0.3
-  signalNoisePower:
-    overrideState: 0
-    value: 0.83
-  lineNoiseOn:
-    overrideState: 0
-    value: 0
-  lineNoiseAmount:
-    overrideState: 0
-    value: 1
-  lineNoiseSpeed:
-    overrideState: 0
-    value: 5
-  tapeNoiseOn:
-    overrideState: 0
-    value: 0
-  tapeNoiseTH:
-    overrideState: 0
-    value: 0.63
-  tapeNoiseAmount:
-    overrideState: 0
-    value: 1
-  tapeNoiseSpeed:
-    overrideState: 0
-    value: 1
-  scanLinesOn:
-    overrideState: 0
-    value: 0
-  scanLineWidth:
-    overrideState: 0
-    value: 10
-  linesFloatOn:
-    overrideState: 0
-    value: 0
-  linesFloatSpeed:
-    overrideState: 0
-    value: 1
-  stretchOn:
-    overrideState: 0
-    value: 0
-  jitterHOn:
-    overrideState: 0
-    value: 0
-  jitterHAmount:
-    overrideState: 0
-    value: 0.5
-  jitterVOn:
-    overrideState: 0
-    value: 0
-  jitterVAmount:
-    overrideState: 0
-    value: 1
-  jitterVSpeed:
-    overrideState: 0
-    value: 1
-  twitchHOn:
-    overrideState: 0
-    value: 0
-  twitchHFreq:
-    overrideState: 0
-    value: 1
-  twitchVOn:
-    overrideState: 0
-    value: 0
-  twitchVFreq:
-    overrideState: 0
-    value: 1
-  signalTweakOn:
-    overrideState: 1
-    value: 1
-  signalAdjustY:
-    overrideState: 1
-    value: -0.00005
-  signalAdjustI:
-    overrideState: 0
-    value: 0
-  signalAdjustQ:
-    overrideState: 0
-    value: 0
-  signalShiftY:
-    overrideState: 1
-    value: 0.8
-  signalShiftI:
-    overrideState: 1
-    value: 0.87
-  signalShiftQ:
-    overrideState: 1
-    value: 0.7
-  feedbackOn:
-    overrideState: 0
-    value: 0
-  feedbackThresh:
-    overrideState: 0
-    value: 0.1
-  feedbackAmount:
-    overrideState: 0
-    value: 2
-  feedbackFade:
-    overrideState: 0
-    value: 0.82
-  feedbackColor:
-    overrideState: 0
-    value: {r: 1, g: 0.5, b: 0, a: 1}
-  feedbackDebugOn:
-    overrideState: 0
-    value: 0
-  independentTimeOn:
-    overrideState: 0
-    value: 0
-  bypassOn:
-    overrideState: 0
-    value: 0
-  bypassTex:
-    overrideState: 0
-    value: {fileID: 0}
-    defaultState: 1
---- !u!114 &5054283597302721438
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d65e486e4de6e5448a8fbb43dc8756a0, type: 3}
-  m_Name: Grain
-  m_EditorClassIdentifier: 
-  active: 1
-  enabled:
-    overrideState: 1
-    value: 1
-  colored:
-    overrideState: 0
-    value: 1
   intensity:
     overrideState: 1
-    value: 0.05
-  size:
-    overrideState: 1
-    value: 1.46
-  lumContrib:
+    value: 0.15
+  fastMode:
     overrideState: 0
-    value: 0.8
+    value: 0
+--- !u!114 &4559072486176322855
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3f6f3f7c722b4544b97e3c75840aa33, type: 3}
+  m_Name: AutoExposure
+  m_EditorClassIdentifier: 
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  filtering:
+    overrideState: 1
+    value: {x: 54.2, y: 95}
+  minLuminance:
+    overrideState: 1
+    value: -1.3
+  maxLuminance:
+    overrideState: 1
+    value: 9
+  keyValue:
+    overrideState: 1
+    value: 1
+  eyeAdaptation:
+    overrideState: 1
+    value: 0
+  speedUp:
+    overrideState: 1
+    value: 2
+  speedDown:
+    overrideState: 1
+    value: 1
+--- !u!114 &7162641468179790949
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 556797029e73b2347956b6579e77e05b, type: 3}
+  m_Name: DepthOfField
+  m_EditorClassIdentifier: 
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  focusDistance:
+    overrideState: 1
+    value: 10
+  aperture:
+    overrideState: 1
+    value: 5.6
+  focalLength:
+    overrideState: 0
+    value: 50
+  kernelSize:
+    overrideState: 1
+    value: 1

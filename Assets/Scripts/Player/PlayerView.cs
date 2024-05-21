@@ -21,7 +21,7 @@ public class PlayerView : MonoBehaviour
 
     TunnelGenerator _curTunnel;
 
-    DepthOfField _dof;
+    //DepthOfField _dof;
 
     Transform _viewTarget;
     bool _canLook = true;
@@ -37,8 +37,8 @@ public class PlayerView : MonoBehaviour
     void Awake()
     {
         _viewTarget = transform.CreateChild("ViewTarget");
-        _dof = _depthVolume.profile.GetSetting<DepthOfField>();
-        _dof.focusDistance.Override(10f);
+        //_dof = _depthVolume.profile.GetSetting<DepthOfField>();
+        //_dof.focusDistance.Override(10f);
     }
     void Update()
     {
@@ -79,10 +79,10 @@ public class PlayerView : MonoBehaviour
     //----------------------------------------------------------------------------------------------------
     void AutoFocus(float dt)
     {
-        if(!_dof.enabled || !_player.Exists)
+        //if(!_dof.enabled || !_player.Exists)
             return;
 
-        _dof.focusDistance.value = (_viewTarget.position - transform.position).magnitude;
+        //_dof.focusDistance.value = (_viewTarget.position - transform.position).magnitude;
         StepFocusPos(_player.Value.Tunnel.Mesh);
 
         return;
