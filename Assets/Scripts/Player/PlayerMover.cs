@@ -22,6 +22,7 @@ public class PlayerMover : MonoBehaviour
 
     bool _runInput;
     float _fwdInput;
+    bool _isMoving;
 
     // Input
     //----------------------------------------------------------------------------------------------------
@@ -30,12 +31,7 @@ public class PlayerMover : MonoBehaviour
         _fwdInput = fwdInput;
         _runInput = runInput;
     }
-    public void ResetInput()
-    {
-        _fwdInput = 0f;
-        _runInput = false;
-    }
-
+    
     public void SetTunnel(TunnelGenerator tunnel) {_tunnel = tunnel;}
 
     void Start()
@@ -48,42 +44,52 @@ public class PlayerMover : MonoBehaviour
     void Update()
     {
         float speed = _runInput ? _speed * _runMul : _speed;
-        float dt = UnityEngine.Time.deltaTime * (_runInput ? _speed * 0.6f : _speed);
-        _currentSpeed = Mathf.MoveTowards(_currentSpeed, _speed, dt);
+        float timeStep = Time.deltaTime * (_runInput ? _speed * 0.666f : _speed);
+        _currentSpeed = Mathf.MoveTowards(_currentSpeed, speed, timeStep);
+        
+        _isMoving = _fwdInput.Abs() > 0;
 
-        if(_fwdInput.Abs() > 0)
+        if(_isMoving)
         {
             if(_tunnel == null)
-            {
-                transform.Translate(transform.forward * (UnityEngine.Time.deltaTime * _currentSpeed * _fwdInput));
-            }
-            else
-            {
-                float t = _tunnel.GetClosestPositionAndDirection(transform.position, out Vector3 currentPosition, out Vector3 currentDirection, out Vector3 currentUp);
+                transform.Translate(transform.forward * (Time.deltaTime * _currentSpeed * _fwdInput));
+            else Move();
+        }
 
-                if (float.IsNaN(currentDirection.x) || float.IsNaN(currentDirection.y) || float.IsNaN(currentDirection.z))
-                {
-                    currentDirection = transform.forward;
-                }
-                
-                Vector3 lookaheadPoint = _tunnel.GetLookaheadPoint(t, _directionLookaheadDistance);
-                Vector3 towardsLookahead = (lookaheadPoint - currentPosition).normalized;
-                transform.forward = Vector3.RotateTowards(transform.forward, towardsLookahead, UnityEngine.Time.deltaTime * 0.25f, 0);
-                currentDirection = _fwdInput * currentDirection;
-               
-                Debug.DrawLine(currentPosition, currentPosition + currentDirection);
-                transform.position = Vector3.MoveTowards(transform.position, currentPosition + currentDirection, UnityEngine.Time.deltaTime * _currentSpeed);
-            }
+        BobHead();
+    }
 
-            //Moving bob
-            _bobCounter += UnityEngine.Time.deltaTime * _speed * _fwdInput;
-            _view.transform.localPosition = _view.transform.localPosition.WithY(Mathf.Lerp(_view.transform.localPosition.y, _headHeight + Mathf.Sin(_bobCounter / _bobRate * Mathf.PI) * _bobHeight, UnityEngine.Time.deltaTime * 12));
+    void Move()
+    {
+        float t = _tunnel.GetClosestPositionAndDirection(transform.position, out Vector3 currentPosition, out Vector3 currentDirection, out Vector3 currentUp);
+
+        if(float.IsNaN(currentDirection.x) || float.IsNaN(currentDirection.y) || float.IsNaN(currentDirection.z))
+        {
+            currentDirection = transform.forward;
+        }
+
+        Vector3 lookaheadPoint = _tunnel.GetLookaheadPoint(t, _directionLookaheadDistance);
+        Vector3 towardsLookahead = (lookaheadPoint - currentPosition).normalized;
+        transform.forward = Vector3.RotateTowards(transform.forward, towardsLookahead, Time.deltaTime * 0.25f, 0);
+        currentDirection = _fwdInput * currentDirection;
+
+        Debug.DrawLine(currentPosition, currentPosition + currentDirection);
+        transform.position = Vector3.MoveTowards(transform.position, currentPosition + currentDirection, Time.deltaTime * _currentSpeed);
+    }
+
+    void BobHead()
+    {
+        if(_isMoving)
+        {
+            // Moving bob
+            _bobCounter += Time.deltaTime * _speed * _fwdInput;
+            _view.transform.localPosition = _view.transform.localPosition.WithY(Mathf.Lerp(_view.transform.localPosition.y, _headHeight + Mathf.Sin(_bobCounter / _bobRate * Mathf.PI) * _bobHeight, Time.deltaTime * 12));
         }
         else
         {
-            //Reduce bob
-            _bobCounter = Mathf.Lerp(_bobCounter, Mathf.Round(_bobCounter * _bobRate) / _bobRate, UnityEngine.Time.deltaTime * 7);
-            _view.transform.localPosition = _view.transform.localPosition.WithY(Mathf.Lerp(_view.transform.localPosition.y, _headHeight + Mathf.Sin(_bobCounter / _bobRate * Mathf.PI) * _bobHeight, UnityEngine.Time.deltaTime * 8));
+            // Reduce bob
+            _bobCounter = Mathf.Lerp(_bobCounter, Mathf.Round(_bobCounter * _bobRate) / _bobRate, Time.deltaTime * 7);
+            _view.transform.localPosition = _view.transform.localPosition.WithY(Mathf.Lerp(_view.transform.localPosition.y, _headHeight + Mathf.Sin(_bobCounter / _bobRate * Mathf.PI) * _bobHeight, Time.deltaTime * 8));
         }
     }
 }

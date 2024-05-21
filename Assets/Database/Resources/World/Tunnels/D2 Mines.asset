@@ -15,18 +15,18 @@ MonoBehaviour:
   _guid: ccafa92de43e94640a546ca9be5a8202
   ColorGradient:
     serializedVersion: 2
-    key0: {r: 0.4346298, g: 0.46226418, b: 0.30744928, a: 1}
-    key1: {r: 0.41509432, g: 0.30801663, b: 0.17034532, a: 1}
-    key2: {r: 0.34901962, g: 0.14752135, b: 0, a: 0}
-    key3: {r: 0.34901962, g: 0.14752135, b: 0, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
+    key0: {r: 0.40924487, g: 0.4339623, b: 0.29271984, a: 1}
+    key1: {r: 0.3584906, g: 0.32895276, b: 0.26210397, a: 1}
+    key2: {r: 0.5471698, g: 0.40447795, b: 0.21422213, a: 0}
+    key3: {r: 0.3301887, g: 0.26870868, b: 0.21337666, a: 0}
+    key4: {r: 0.34901962, g: 0.14752135, b: 0, a: 0}
     key5: {r: 0, g: 0, b: 0, a: 0}
     key6: {r: 0, g: 0, b: 0, a: 0}
     key7: {r: 0, g: 0, b: 0, a: 0}
     ctime0: 0
-    ctime1: 34796
-    ctime2: 65535
-    ctime3: 65535
+    ctime1: 20192
+    ctime2: 34706
+    ctime3: 51202
     ctime4: 65535
     ctime5: 65535
     ctime6: 0
@@ -41,7 +41,7 @@ MonoBehaviour:
     atime7: 0
     m_Mode: 0
     m_ColorSpace: 0
-    m_NumColorKeys: 3
+    m_NumColorKeys: 5
     m_NumAlphaKeys: 2
   BaseTunnelWidth: 4
   LumpyWidth: 0.5
@@ -53,12 +53,32 @@ MonoBehaviour:
   - Name: Wall
     Disabled: 0
     WallPrefabs:
-    - {fileID: 1508189691331659514, guid: 58503cf409f035144b23039e7efe5466, type: 3}
+    - {fileID: 1508189691331659514, guid: ab3d81e4ed48cb54d8070752e1f09fcb, type: 3}
     ZOffset: 0
-    Spacing: 2
+    Spacing: 1
     Width: 0.5
     HeightOffset:
-      _min: 4
+      _min: 3.5
+      _max: 4
+    VerticalLoopLength: 1
+    VerticalLoopIncrement: 2
+    MinMaxAngle:
+      _min: -10
+      _max: 10
+    MinMaxPosition:
+      _min: -1
+      _max: 0.2
+    RandomRotation: 5
+    RandomFlipY: 1
+  - Name: Wall
+    Disabled: 0
+    WallPrefabs:
+    - {fileID: 1508189691331659514, guid: 58503cf409f035144b23039e7efe5466, type: 3}
+    ZOffset: 0
+    Spacing: 0.5
+    Width: 0.5
+    HeightOffset:
+      _min: 3.5
       _max: 4
     VerticalLoopLength: 5
     VerticalLoopIncrement: 2
@@ -70,7 +90,7 @@ MonoBehaviour:
       _max: 0.2
     RandomRotation: 5
     RandomFlipY: 1
-  FlatWallPrefab: {fileID: 6315135170778095943, guid: 3422533d8785543c0bc4c752557808e0, type: 3}
+  FlatWallPrefab: {fileID: 0}
   FlatWallSpacing: 2
   FlatWallOffset: 7
   SurroundElements: []
@@ -90,7 +110,7 @@ MonoBehaviour:
       _min: 0
       _max: 0
     RandomFlipX: 1
-  FlatFloorPrefab: {fileID: 6315135170778095943, guid: 1b84736bfc8e3498bb0f56612263e106, type: 3}
+  FlatFloorPrefab: {fileID: 0}
   FlatFloorSpacing: 1
   FlatFloorOffset: -10
   CeilingElements:
@@ -98,13 +118,13 @@ MonoBehaviour:
     Disabled: 0
     CeilingPrefabs:
     - {fileID: -8373903463449722979, guid: 3187e059e3559af40bd0147434345f61, type: 3}
-    Height: 8
+    Height: 6.5
     ZOffset: 0.02
     Spacing: 1
     RandomXPosition: 1
     MinMaxAngle:
-      _min: -0.5
-      _max: 0.5
+      _min: -0.25
+      _max: 0.25
     XRotation: 0
     MinMaxPosition:
       _min: -0.03
@@ -114,19 +134,19 @@ MonoBehaviour:
     Disabled: 0
     CeilingPrefabs:
     - {fileID: -8373903463449722979, guid: 982cddbb89e4ead4cb0ef88eed6105d5, type: 3}
-    Height: 7.5
-    ZOffset: 0.5
-    Spacing: 1
+    Height: 6
+    ZOffset: 0.02
+    Spacing: 0.5
     RandomXPosition: 1
     MinMaxAngle:
-      _min: -0.5
-      _max: 0.5
+      _min: -0.25
+      _max: 0.25
     XRotation: 0
     MinMaxPosition:
       _min: -0.03
       _max: 0.03
     RandomFlipX: 1
-  FlatCeilingPrefab: {fileID: 6315135170778095943, guid: c5d39d8515fd7483685405c5e8044cc6, type: 3}
+  FlatCeilingPrefab: {fileID: 0}
   FlatCeilingSpacing: 1
   FlatCeilingOffset: 8
   SplineVolume: {fileID: 11400000, guid: 4407f0985a7d24d1a979cb72b0ebd098, type: 2}

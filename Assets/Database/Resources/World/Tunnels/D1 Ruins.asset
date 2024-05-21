@@ -103,7 +103,7 @@ MonoBehaviour:
     - {fileID: 717079983591251126, guid: 3ba71e0ec8102b5449495397c5e84ddd, type: 3}
     - {fileID: 717079983591251126, guid: 6b8cd0b78b7a43547a6828e17806a41c, type: 3}
     ZOffset: 0
-    Spacing: 0.5
+    Spacing: 0.25
     RadiusOffset: 4.5
     CenterHeight: 1.5
     Pattern: 0
@@ -111,7 +111,7 @@ MonoBehaviour:
       _min: 25
       _max: 330
     AngleIncrement: 45
-    RandomRotation: 35
+    RandomRotation: 45
     RandomFlipY: 1
     RandomFlipX: 0
   FloorElements:

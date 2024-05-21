@@ -77,7 +77,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _view: {fileID: 8927114010632471341}
   _speed: 2.5
-  _runMul: 6
+  _runMul: 2
   _headHeight: 2
   _directionLookaheadDistance: 6
   _bobHeight: 0.07
@@ -352,6 +352,22 @@ PrefabInstance:
     - target: {fileID: 3930884114819850005, guid: 412d4ad8623568a42a0be69a40a66f6c, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5258449524715896244, guid: 412d4ad8623568a42a0be69a40a66f6c, type: 3}
+      propertyPath: m_AOSettings.bias
+      value: 0.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 5258449524715896244, guid: 412d4ad8623568a42a0be69a40a66f6c, type: 3}
+      propertyPath: m_AOSettings.radius
+      value: 3.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 5258449524715896244, guid: 412d4ad8623568a42a0be69a40a66f6c, type: 3}
+      propertyPath: m_AOSettings.intensity
+      value: 0.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 5258449524715896244, guid: 412d4ad8623568a42a0be69a40a66f6c, type: 3}
+      propertyPath: m_AOSettings.maxRadiusPixels
+      value: 98
       objectReference: {fileID: 0}
     - target: {fileID: 5723357887469795658, guid: 412d4ad8623568a42a0be69a40a66f6c, type: 3}
       propertyPath: m_Name

@@ -25,11 +25,13 @@ public class GloomWorm : MonoBehaviour
     [SerializeField] FloatRange _bodyJiggleSizeFactor = new FloatRange(0.05f, 1f);
 
     List<SpriteRenderer> _segments = new List<SpriteRenderer>();
+    Vector3 _startPos;
 
     // MonoBehaviour
     //----------------------------------------------------------------------------------------------------
     void Awake()
     {
+        _startPos = transform.position;
         SpriteRenderer head = Instantiate(_headPrefab, transform.position + Vector3.up * _yOffset, Quaternion.identity);
         head.transform.localScale = Vector3.one * _scaleOverSegments.Min;
 
@@ -58,11 +60,11 @@ public class GloomWorm : MonoBehaviour
             SpriteRenderer bodyPart = _segments[i];
 
             float lerp = mathi.unlerp(i, _segments.Count);
-            float t = UnityEngine.Time.time + (lerp * _bodyJiggleSpacing);
+            float t = Time.time + (lerp * _bodyJiggleSpacing);
 
             float sizeFactor = Mathf.Lerp(_bodyJiggleSizeFactor.Min, _bodyJiggleSizeFactor.Max, lerp);
-            float x = Mathf.Sin((t + _bodyJiggleSpeed.x) * _speedMul) * _bodyJiggleSize.x * sizeFactor;
-            float y = Mathf.Sin((t + _bodyJiggleSpeed.y) * _speedMul) * _bodyJiggleSize.y * sizeFactor;
+            float x =_startPos.x + Mathf.Sin((t + _bodyJiggleSpeed.x) * _speedMul) * _bodyJiggleSize.x * sizeFactor;
+            float y =_startPos.y + Mathf.Sin((t + _bodyJiggleSpeed.y) * _speedMul) * _bodyJiggleSize.y * sizeFactor;
             float angle = Mathf.Sin(t + _bodyJiggleSpeed.x) * Mathf.Lerp(_bodyJiggleWobble.Min, _bodyJiggleWobble.Max, lerp);
 
             bodyPart.transform.position = new Vector3(x, _yOffset + y, bodyPart.transform.position.z);
