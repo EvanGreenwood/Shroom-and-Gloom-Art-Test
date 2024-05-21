@@ -16,20 +16,20 @@ MonoBehaviour:
   ColorGradient:
     serializedVersion: 2
     key0: {r: 0.6981132, g: 0.535298, b: 0.50448555, a: 1}
-    key1: {r: 0.59716547, g: 0.7132075, b: 0.44541824, a: 1}
-    key2: {r: 0.5397144, g: 0.7290569, b: 0.51479673, a: 0}
-    key3: {r: 0.5882353, g: 0.77254903, b: 0.7137255, a: 0}
-    key4: {r: 0.5882164, g: 0.7735849, b: 0.71179545, a: 0}
-    key5: {r: 0.5150943, g: 0.735849, b: 0.54452825, a: 0}
-    key6: {r: 0.6747628, g: 0.7433963, b: 0.5091563, a: 0}
+    key1: {r: 0.5882353, g: 0.77254903, b: 0.7137255, a: 1}
+    key2: {r: 0.5882164, g: 0.7735849, b: 0.71179545, a: 0}
+    key3: {r: 0.69803923, g: 0.5372549, b: 0.5058824, a: 0}
+    key4: {r: 0.69803923, g: 0.5372549, b: 0.5058824, a: 0}
+    key5: {r: 0.69803923, g: 0.5372549, b: 0.5058824, a: 0}
+    key6: {r: 0.69803923, g: 0.5372549, b: 0.5058824, a: 0}
     key7: {r: 0.69803923, g: 0.5372549, b: 0.5058824, a: 0}
     ctime0: 7828
-    ctime1: 22330
-    ctime2: 27389
-    ctime3: 31772
-    ctime4: 33604
-    ctime5: 37508
-    ctime6: 42687
+    ctime1: 29491
+    ctime2: 33604
+    ctime3: 53285
+    ctime4: 53285
+    ctime5: 53285
+    ctime6: 53285
     ctime7: 53285
     atime0: 0
     atime1: 65535
@@ -40,8 +40,8 @@ MonoBehaviour:
     atime6: 0
     atime7: 0
     m_Mode: 0
-    m_ColorSpace: -1
-    m_NumColorKeys: 8
+    m_ColorSpace: 0
+    m_NumColorKeys: 4
     m_NumAlphaKeys: 2
   BaseTunnelWidth: 1
   LumpyWidth: 0.5
@@ -120,3 +120,19 @@ MonoBehaviour:
   FlatCeilingSpacing: 1
   FlatCeilingOffset: 1
   SplineVolume: {fileID: 11400000, guid: 299b66eec72664f149d907088da26d28, type: 2}
+  SceneData:
+    LightData: []
+    PrefabData: []
+    Spline:
+      m_EditModeType: 1
+      m_Knots: []
+      m_MetaData: []
+      m_Closed: 0
+      m_IntData:
+        m_Data: []
+      m_FloatData:
+        m_Data: []
+      m_Float4Data:
+        m_Data: []
+      m_ObjectData:
+        m_Data: []

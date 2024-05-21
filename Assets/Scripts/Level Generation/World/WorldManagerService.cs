@@ -4,6 +4,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Unity.VisualScripting;
 #if UNITY_EDITOR
 using Unity.EditorCoroutines.Editor;
 using UnityEditor;
@@ -275,7 +276,17 @@ public class WorldManagerService : MonoService
                     isActive = true;
                 }
             }
-          
+
+            if (tunnel.BackJoin != null)
+            {
+                tunnel.BackJoin.gameObject.SetActive(isActive);
+            }
+            
+            if (tunnel.FrontJoin != null)
+            {
+                tunnel.FrontJoin.gameObject.SetActive(isActive);
+            }
+            
             tunnel.gameObject.SetActive(isActive);
         }
     }

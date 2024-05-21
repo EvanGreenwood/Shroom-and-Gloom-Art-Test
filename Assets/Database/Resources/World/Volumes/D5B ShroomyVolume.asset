@@ -18,4 +18,4 @@ MonoBehaviour:
     FogStart: 3
     FogDistance: 30
     PostProcessingProfile: {fileID: 11400000, guid: 2eba52f5ca670c046b7dcfba8d1e1991, type: 2}
-    TransitionInTime: 2
+    TransitionInTime: 5

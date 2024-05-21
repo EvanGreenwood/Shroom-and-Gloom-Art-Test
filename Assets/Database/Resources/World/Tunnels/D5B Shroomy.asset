@@ -12,19 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50d28d391025841c192a919a7297e73e, type: 3}
   m_Name: D5B Shroomy
   m_EditorClassIdentifier: 
-  _guid: 696d1d69f71c24e0ca8eea9eda6dee88
+  _guid: 08d7e8c56f511461f8bb8e69c4ed5c67
   ColorGradient:
     serializedVersion: 2
-    key0: {r: 0.6981132, g: 0.535298, b: 0.50448555, a: 1}
-    key1: {r: 0.59716547, g: 0.7132075, b: 0.44541824, a: 1}
-    key2: {r: 0.5397144, g: 0.7290569, b: 0.51479673, a: 0}
-    key3: {r: 0.5882353, g: 0.77254903, b: 0.7137255, a: 0}
-    key4: {r: 0.7627777, g: 0.5882353, b: 0.77254903, a: 0}
-    key5: {r: 0.5137255, g: 0.5992844, b: 0.7372549, a: 0}
+    key0: {r: 0.5058824, g: 0.69803923, b: 0.50781286, a: 1}
+    key1: {r: 0.44705883, g: 0.70119154, b: 0.7137255, a: 1}
+    key2: {r: 0.51723063, g: 0.5137255, b: 0.7294118, a: 0}
+    key3: {r: 0.6339102, g: 0.5882353, b: 0.77254903, a: 0}
+    key4: {r: 0.7163301, g: 0.5882353, b: 0.77254903, a: 0}
+    key5: {r: 0.7372549, g: 0.5137255, b: 0.64860725, a: 0}
     key6: {r: 0.6747628, g: 0.7433963, b: 0.5091563, a: 0}
     key7: {r: 0.39958468, g: 0.8773585, b: 0.36832502, a: 0}
     ctime0: 4626
-    ctime1: 22330
+    ctime1: 22745
     ctime2: 27389
     ctime3: 31772
     ctime4: 42405
@@ -40,15 +40,15 @@ MonoBehaviour:
     atime6: 0
     atime7: 0
     m_Mode: 0
-    m_ColorSpace: -1
+    m_ColorSpace: 0
     m_NumColorKeys: 8
     m_NumAlphaKeys: 2
-  BaseTunnelWidth: 1.25
-  LumpyWidth: 0.5
+  BaseTunnelWidth: 2
+  LumpyWidth: 1
   ClearingWidth: 2.7
   ClearingDepth: 3
   Particles: {fileID: 2402285776899386762, guid: 8e61f67cd760b423db14eb998271668d, type: 3}
-  ParticleSpawnDistance: 5
+  ParticleSpawnDistance: 1
   WallElements: []
   FlatWallPrefab: {fileID: 0}
   FlatWallSpacing: 1
@@ -57,12 +57,8 @@ MonoBehaviour:
   - Name: Lumps
     Disabled: 0
     SurroundPrefabs:
-    - {fileID: 717079983591251126, guid: b122cb429a7bb40cb931c9f0bddee1aa, type: 3}
-    - {fileID: 717079983591251126, guid: 039de9e0764d14bb4812bff4c58cd8ec, type: 3}
-    - {fileID: 717079983591251126, guid: 3604b86102e1a4ab786f280d835dfc71, type: 3}
-    - {fileID: 717079983591251126, guid: dde57e21e6c354eec8aacabab5da9407, type: 3}
-    - {fileID: 717079983591251126, guid: 8bf6d4da7dbaf468fa9ccdb283aa9e40, type: 3}
-    - {fileID: 717079983591251126, guid: ae6fca2e20524476e8af244b76c1e882, type: 3}
+    - {fileID: 1508189691331659514, guid: abe2161f17e3d435691c2653789f0661, type: 3}
+    - {fileID: 1508189691331659514, guid: 0917d2fd94e9947378c1cb66b0e8de3b, type: 3}
     ZOffset: 0
     Spacing: 0.5
     RadiusOffset: 2
@@ -78,7 +74,7 @@ MonoBehaviour:
   - Name: Fronds
     Disabled: 0
     SurroundPrefabs:
-    - {fileID: 6278740279874212922, guid: fffe6f454ee514359bf38c7d73fc4de1, type: 3}
+    - {fileID: 717079983591251126, guid: eabd18e107e8c4a9593b4acb9bed0c61, type: 3}
     - {fileID: 717079983591251126, guid: f473276211eaa4a0d934ad01a9362aac, type: 3}
     - {fileID: 717079983591251126, guid: a4c0f475ee3734eeeb0a4f7ea144db60, type: 3}
     - {fileID: 717079983591251126, guid: 6f7001e6b0753493d9e8ef6911710f29, type: 3}
@@ -118,7 +114,7 @@ MonoBehaviour:
   FlatCeilingPrefab: {fileID: 0}
   FlatCeilingSpacing: 1
   FlatCeilingOffset: 5
-  SplineVolume: {fileID: 11400000, guid: b7af032b454cf4d34b1709c47ac9db03, type: 2}
+  SplineVolume: {fileID: 11400000, guid: a0a2c157c71f44fa191842cd667e765c, type: 2}
   SceneData:
     LightData: []
     PrefabData: []

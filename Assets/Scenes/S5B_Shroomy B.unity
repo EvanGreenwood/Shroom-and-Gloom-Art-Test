@@ -7238,7 +7238,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f743e6c0a9ec45e4abb4374dc99d4a09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UseSOData: 0
+  UseSOData: 1
   GenerationSettings: {fileID: 11400000, guid: 08d7e8c56f511461f8bb8e69c4ed5c67, type: 2}
   EditMode: 0
   Old_ColorGradient:
@@ -7342,7 +7342,7 @@ MonoBehaviour:
   Old_FlatCeilingPrefab: {fileID: 0}
   Old_FlatCeilingSpacing: 1
   Old_FlatCeilingOffset: 5
-  SOToCopyInto: {fileID: 0}
+  SOToCopyInto: {fileID: 11400000, guid: 08d7e8c56f511461f8bb8e69c4ed5c67, type: 2}
   _elementParents:
   - {fileID: 0}
   - {fileID: 0}

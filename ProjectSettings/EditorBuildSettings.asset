@@ -27,6 +27,9 @@ EditorBuildSettings:
     path: Assets/Scenes/S5_Shroomy.unity
     guid: cadb801682f9f425c831890820114604
   - enabled: 1
+    path: Assets/Scenes/S5B_Shroomy B.unity
+    guid: f77b418731ad44e80a0721f5b0995e50
+  - enabled: 1
     path: Assets/Scenes/S6_Trippy.unity
     guid: fcc227c6b1fe34a26969884f74194712
   - enabled: 1
