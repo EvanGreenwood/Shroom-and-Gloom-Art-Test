@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2127490456822156408}
   - component: {fileID: 9012806993808162752}
   - component: {fileID: 5788288063153729517}
+  - component: {fileID: 4959918640357644687}
   m_Layer: 0
   m_Name: ProximityAnimationTunnelElement
   m_TagString: Untagged
@@ -55,7 +56,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 30e16db51640dd44ca5d96b5d1712f06, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -76,15 +77,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 360229442, guid: a1cc32101b4edd3418097bc173ea32d2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 3.84, y: 0.78}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!95 &2127490456822156408
@@ -141,4 +142,34 @@ MonoBehaviour:
   BeginToEnd: {fileID: 7400000, guid: 07a75c3e833f3413582a11b221affd28, type: 2}
   EndToBegin: {fileID: 7400000, guid: 8f84c09c0cb814e9dbc04de31eb005ff, type: 2}
   EndIdle: {fileID: 7400000, guid: 992561574871b4c919495e81722b6a1c, type: 2}
-  DisableChance: 0
+--- !u!114 &4959918640357644687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7092329696028056695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e0b62a04908b49b0b71406c4cb81f53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _scope: 1
+  _autoRenderers:
+  - {fileID: 3280782123582157517}
+  _manualRenderers:
+  - {fileID: 3280782123582157517}
+  _maskClipValue: 0.6
+  _normalMip: 2
+  _emissionColor: {r: 0, g: 1, b: 0.7490196, a: 1}
+  _emissionUsesTunnelWave: 1
+  _useFog: 1
+  _fogIntensity: 0.227
+  _replaceLineColor: 1
+  _lineReplaceRange: 0.1
+  _lineReplaceFuzziness: 0.2
+  _lineColorToReplace: {r: 0, g: 0, b: 0, a: 1}
+  _lineColorAfterReplace: {r: 0.041251317, g: 0.05118256, b: 0.08490565, a: 1}
+  _lineColorVsHSVBlend: 1
+  _lineHSVOffset: {x: 0, y: 0, z: -0.45}
+  _defaultsSet: 1

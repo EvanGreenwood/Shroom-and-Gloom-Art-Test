@@ -31,7 +31,8 @@ public class Player : MonoService
         if(_world.Value.TryGetTunnel(transform.position, out current, _tunnelStack.ToArray()))
         {
             _tunnelStack.Add(current);
-            _movement.SetTunnel(Tunnel);
+            _movement.SetTunnel(current);
+            _world.Value.CullForTunnel(current);
         }
     }
 
@@ -72,6 +73,7 @@ public class Player : MonoService
                 {
                     _tunnelStack.Add(current);
                     _movement.SetTunnel(current);
+                    _world.Value.CullForTunnel(current);
                 }
             }
         }

@@ -3,9 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class Door : MonoBehaviour
+public class Door : MonoBehaviour, IPointerClickHandler
 {
+    public Animator Animation;
+    private static readonly int Open = Animator.StringToHash("Open");
+
     private void OnDrawGizmos()
     {
         if (transform.parent == null)
@@ -31,5 +35,10 @@ public class Door : MonoBehaviour
         Gizmos.DrawLine(transform.position+transform.forward*5, transform.position+transform.forward*4 + -transform.right);
         Gizmos.DrawLine(transform.position+transform.forward*5, transform.position+transform.forward*4 + transform.right);
         Gizmos.color = c;
+    }
+
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        Animation.SetTrigger(Open);
     }
 }

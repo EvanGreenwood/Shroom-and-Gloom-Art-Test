@@ -12,10 +12,9 @@ Material:
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
-  - _EMISSIONWAVEBASEDONTUNNEL_ON
-  - _REPLACELINECOLOR_ON
   - _USEFOG_ON
   m_InvalidKeywords:
+  - _EMISSIONWAVEBASEDONTUNNEL_ON
   - _ISSCENEVIEW_ON
   - _LIT_ON
   - _USEMATCAP_ON
@@ -65,6 +64,7 @@ Material:
     m_Floats:
     - _Cutoff: 0.6
     - _DisplayNormals: 0
+    - _EmissionUsesTunnelWave: 0
     - _EmissionWaveBasedOnTunnel: 1
     - _FogIntensityCoefficient: 0.227
     - _IsSceneView: 1
@@ -72,8 +72,8 @@ Material:
     - _LineColorHueBlend: 1
     - _LineColorVsHSVBlend: 1
     - _LineHueOffset: 0
-    - _LineReplaceFuzziness: 0.2
-    - _LineReplaceRange: 0.1
+    - _LineReplaceFuzziness: 0.3
+    - _LineReplaceRange: 0.3
     - _LineSaturationOffset: 0
     - _LineValueOffset: -0.45
     - _Lit: 1
@@ -83,7 +83,7 @@ Material:
     - _NoisyFog: 0
     - _NormalMip: 2
     - _RampOffset: -0.5
-    - _ReplaceLineColor: 1
+    - _ReplaceLineColor: 0
     - _ScreenSpaceScale: 24
     - _Shininess: 0.1
     - _TunnelDistance: 0
@@ -94,7 +94,7 @@ Material:
     - __dirty: 0
     m_Colors:
     - _EmissionColor: {r: 0, g: 1, b: 0.7490196, a: 1}
-    - _PostReplaceLineColor: {r: 0.04125135, g: 0.051182594, b: 0.084905684, a: 1}
+    - _PostReplaceLineColor: {r: 0.04125134, g: 0.051182576, b: 0.08490568, a: 1}
     - _PreReplaceLineColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecularColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 1}
     - _TerminatorLineColor: {r: 0, g: 0, b: 0, a: 1}
