@@ -135,10 +135,10 @@ MonoBehaviour:
           z: 0
         Rotation:
           value:
-            x: 0.029319547
+            x: 0
             y: 0
-            z: 0.010623137
-            w: 0.99951357
+            z: 0
+            w: 1
       - Position:
           x: 2.54
           y: 0.92

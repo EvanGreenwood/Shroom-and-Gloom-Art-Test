@@ -104,8 +104,26 @@ MonoBehaviour:
             w: 1
       - Position:
           x: 0
+          y: -1.9
+          z: 31.6
+        TangentIn:
+          x: 0
           y: 0
-          z: 32
+          z: -12.5
+        TangentOut:
+          x: 3.4
+          y: 0
+          z: 17.5
+        Rotation:
+          value:
+            x: 0
+            y: 0
+            z: 0
+            w: 1
+      - Position:
+          x: 0
+          y: -18.8
+          z: 68.5
         TangentIn:
           x: 0
           y: 0
@@ -116,10 +134,10 @@ MonoBehaviour:
           z: 1
         Rotation:
           value:
-            x: 0
+            x: 0.24907541
             y: 0
             z: 0
-            w: 1
+            w: 0.96848404
       m_MetaData: []
       m_Closed: 0
       m_IntData:

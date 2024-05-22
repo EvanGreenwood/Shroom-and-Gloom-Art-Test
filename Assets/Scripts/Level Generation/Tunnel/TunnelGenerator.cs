@@ -381,6 +381,12 @@ public partial class TunnelGenerator : MonoBehaviour
     {
         Old_EnsureValidParameters();
 
+        SplineExtrude extrude = GetComponentInChildren<SplineExtrude>();
+        if (extrude)
+        {
+            extrude.Rebuild();
+        }
+        
         if(_generatedElements == null)
         {
             _generatedElements = new List<Transform>();
@@ -988,6 +994,13 @@ public partial class TunnelGenerator : MonoBehaviour
         Spline.Evaluate(1, out float3 position, out float3 tangent, out float3 upVector);
         lastTunnelPoint = position;
         lastTunnelRotation = Quaternion.LookRotation(tangent, upVector);
+    }
+    
+    public void GetLocalStartData(out Vector3 localTunnelStart, out Quaternion localTunnelRotation)
+    {
+        SplineUtility.Evaluate(Spline.Spline, 0, out float3 position, out float3 tangent, out float3 upVector);
+        localTunnelStart = position;
+        localTunnelRotation = Quaternion.LookRotation(tangent, upVector);
     }
 
     [Button("Save Spline")][UsedImplicitly]
