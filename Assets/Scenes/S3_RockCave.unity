@@ -238,7 +238,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 5983a5035799743de9f7fa1a1fe67b70, type: 2}
     - target: {fileID: 182820386374825050, guid: 3a18a561d72904fb188c7be7914fee2d, type: 3}
       propertyPath: _elementParents.Array.size
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 182820386374825050, guid: 3a18a561d72904fb188c7be7914fee2d, type: 3}
       propertyPath: _elementParents.Array.data[0]
