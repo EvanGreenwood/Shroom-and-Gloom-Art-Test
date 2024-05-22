@@ -71,6 +71,34 @@ MonoBehaviour:
       _max: 3
     RandomRotation: 8
     RandomFlipY: 1
+  - Name: Small shrooms
+    Disabled: 0
+    WallPrefabs:
+    - {fileID: 717079983591251126, guid: 3d5b339f2717c4857957646d2174032e, type: 3}
+    - {fileID: 717079983591251126, guid: 2e2ae7f8d17dd447f8c5967cfdb61235, type: 3}
+    - {fileID: 717079983591251126, guid: d523094d757a14164a9467e86515a539, type: 3}
+    - {fileID: 717079983591251126, guid: fe351638a0ce2414b858167381062a55, type: 3}
+    - {fileID: 717079983591251126, guid: 0c189e1f5f1224ba6ae09a6d5f6573c8, type: 3}
+    - {fileID: 717079983591251126, guid: 034c06ee27afb46d4b7ee9875ccdfcb1, type: 3}
+    - {fileID: 717079983591251126, guid: fbebdc647df1742168b09523889169f6, type: 3}
+    - {fileID: 717079983591251126, guid: 2842b594d699f4a63b85a14c2c1039b7, type: 3}
+    - {fileID: 717079983591251126, guid: 2a3afa4b6b50e47469d04b6092baf26b, type: 3}
+    ZOffset: 0
+    Spacing: 1
+    Width: 0.5
+    HeightOffset:
+      _min: 0.1
+      _max: 0.1
+    VerticalLoopLength: 8
+    VerticalLoopIncrement: 2
+    MinMaxAngle:
+      _min: -2.05
+      _max: 2.13
+    MinMaxPosition:
+      _min: -1
+      _max: 1
+    RandomRotation: 0
+    RandomFlipY: 0
   - Name: Rocks base
     Disabled: 0
     WallPrefabs:
@@ -161,3 +189,19 @@ MonoBehaviour:
   FlatCeilingSpacing: 1
   FlatCeilingOffset: 1
   SplineVolume: {fileID: 11400000, guid: 6bf92be7ec6bc4c7c9ee516d30e9ccb7, type: 2}
+  SceneData:
+    LightData: []
+    PrefabData: []
+    Spline:
+      m_EditModeType: 1
+      m_Knots: []
+      m_MetaData: []
+      m_Closed: 0
+      m_IntData:
+        m_Data: []
+      m_FloatData:
+        m_Data: []
+      m_Float4Data:
+        m_Data: []
+      m_ObjectData:
+        m_Data: []

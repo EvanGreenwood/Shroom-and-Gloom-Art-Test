@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1400878947339728258}
   - component: {fileID: 717079983591251126}
   - component: {fileID: 3467065784027115342}
+  - component: {fileID: 1413785931113234620}
   m_Layer: 0
   m_Name: Mushroom small 3
   m_TagString: Untagged
@@ -100,3 +101,20 @@ MonoBehaviour:
   _speed: 1.4
   _amount: 3
   _offsetFrameYM: 0
+--- !u!114 &1413785931113234620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7873198937741219095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed234be4642fbcc429e82a2f4799649a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _axis:
+    _x:
+      _value: 1
+    _y:
+      _value: 0

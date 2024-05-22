@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 1400878947339728258}
   - component: {fileID: 717079983591251126}
   - component: {fileID: 3467065784027115342}
+  - component: {fileID: 2053068727907747999}
+  - component: {fileID: -7907836167462068480}
   m_Layer: 0
   m_Name: Mushroom small 2
   m_TagString: Untagged
@@ -100,3 +102,33 @@ MonoBehaviour:
   _speed: 1.4
   _amount: 3
   _offsetFrameYM: 0
+--- !u!114 &2053068727907747999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7873198937741219095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3abd5f0239b0749aab2324a80b0f5d1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FlipFlags: 72
+--- !u!114 &-7907836167462068480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7873198937741219095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed234be4642fbcc429e82a2f4799649a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _axis:
+    _x:
+      _value: 1
+    _y:
+      _value: 0
