@@ -21,6 +21,13 @@ public class PlayerView : MonoBehaviour
 
     TunnelGenerator _curTunnel;
 
+    private Vector3 _currentUp;
+
+    public void SetUp(Vector3 up)
+    {
+        _currentUp = up;
+    }
+
     //DepthOfField _dof;
 
     Transform _viewTarget;
@@ -94,7 +101,7 @@ public class PlayerView : MonoBehaviour
             if(mesh != null && mesh.Raycast(new Ray(transform.position, ray.direction), out Vector3 hitPos, out Vector3 hitNormal))
             {
                 _viewTarget.position = hitPos;
-                _viewTarget.rotation = Quaternion.LookRotation(hitNormal, Vector3.up);
+                _viewTarget.rotation = Quaternion.LookRotation(hitNormal, _currentUp);
             }
         }
     }
