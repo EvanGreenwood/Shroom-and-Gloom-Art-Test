@@ -38,7 +38,9 @@ public partial class TunnelGenerator : MonoBehaviour
         Hidden,
         VisibleAndSave //Careful, you want to save generated elements in the scene?
     }
-    
+
+    public int TunnelIndex { get; set; }
+
     private const string generatedTunnelTag = "GeneratedTunnelData";
     
     public bool UseSOData = true;
@@ -274,6 +276,7 @@ public partial class TunnelGenerator : MonoBehaviour
 
         TunnelContext context = new TunnelContext()
                                 {
+                                    TunnelIndex = TunnelIndex,
                                     DistanceElementIsAt = normalizedDistance * _tunnelLength,
                                     TunnelLength = _tunnelLength
                                 };

@@ -74,9 +74,10 @@ public class WorldManagerService : MonoService
         
         IEnumerator BeginGeneration()
         {
+            int tunnelIndex = 0;
             if(MapSettings.Paths.Count > 0)
             {
-                yield return GeneratePath(MapSettings.Paths[0]);
+                yield return GeneratePath(MapSettings.Paths[0], tunnelIndex);
                 yield return null;
             }
             float genTime = Time.time - startTime;
@@ -94,7 +95,7 @@ public class WorldManagerService : MonoService
         });
     }
 
-    IEnumerator GeneratePath(WorldMapSettings.LevelPath path, TunnelGenerator inTunnel = null, TunnelJoin inJoin = null, WorldMapSettings.LevelPath inPath = null, int branchIndex = 1, int totalBranches = 1)
+    IEnumerator GeneratePath(WorldMapSettings.LevelPath path, int tunnelIndex, TunnelGenerator inTunnel = null, TunnelJoin inJoin = null, WorldMapSettings.LevelPath inPath = null, int branchIndex = 1, int totalBranches = 1)
     {
         TunnelGenerator lastTunnel = inTunnel;
         TunnelJoin lastJoin = inJoin;
@@ -111,6 +112,8 @@ public class WorldManagerService : MonoService
         {
             TunnelSettings settings = path.Tunnels[i];
             TunnelGenerator tunnelInstance = Instantiate(TunnelPrefab, pathRoot.transform);
+            tunnelInstance.TunnelIndex = tunnelIndex;
+            Debug.LogError($"Setting tunnel index for {settings.name}:{tunnelInstance.TunnelIndex}");
             tunnelInstance.transform.position = Vector3.zero;
             tunnelInstance.transform.rotation = Quaternion.identity;
 
@@ -185,7 +188,7 @@ public class WorldManagerService : MonoService
 
             lastTunnel = tunnelInstance;
             lastJoin = joinInstance;
-
+            tunnelIndex++;
             yield return null;
         }
         
@@ -213,12 +216,14 @@ public class WorldManagerService : MonoService
             }
         }
         
+        
         for (int i = 0; i < newPathStartData.Count; i++)
         {
             (WorldMapSettings.LevelPath pathToCreate, TunnelGenerator parentTunnel, TunnelJoin parentJoin,
                 WorldMapSettings.LevelPath parentPath) = newPathStartData[i];
 
-            yield return GeneratePath(pathToCreate, parentTunnel, parentJoin, 
+            tunnelIndex++;
+            yield return GeneratePath(pathToCreate, tunnelIndex, parentTunnel, parentJoin, 
                 parentPath,branchIndex>i+1?branchIndex:i+1, 
                 totalBranches>branchCount?totalBranches:branchCount);
         }
