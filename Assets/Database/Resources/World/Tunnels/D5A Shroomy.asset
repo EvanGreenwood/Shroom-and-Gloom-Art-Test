@@ -95,6 +95,22 @@ MonoBehaviour:
     RandomRotation: 22.5
     RandomFlipY: 1
     RandomFlipX: 0
+  - Name: Glow Fronds
+    Disabled: 0
+    SurroundPrefabs:
+    - {fileID: 717079983591251126, guid: 6b7d4311d337e40b797a56b457ade2bb, type: 3}
+    ZOffset: 0.3
+    Spacing: 3
+    RadiusOffset: 2.5
+    CenterHeight: 1.7
+    Pattern: 2
+    AngleRange:
+      _min: 35
+      _max: 325
+    AngleIncrement: 22.5
+    RandomRotation: 22.5
+    RandomFlipY: 1
+    RandomFlipX: 0
   FloorElements:
   - Name: Floor
     Disabled: 0
