@@ -194,7 +194,97 @@ MonoBehaviour:
     PrefabData: []
     Spline:
       m_EditModeType: 1
-      m_Knots: []
+      m_Knots:
+      - Position:
+          x: 0
+          y: 0
+          z: 0
+        TangentIn:
+          x: 0
+          y: 0
+          z: -2.730617
+        TangentOut:
+          x: 0
+          y: 0
+          z: 2.730617
+        Rotation:
+          value:
+            x: 0
+            y: 0
+            z: 0
+            w: 1
+      - Position:
+          x: 1.76
+          y: -2
+          z: 15.63
+        TangentIn:
+          x: 0
+          y: 0
+          z: -3.1018825
+        TangentOut:
+          x: 0
+          y: 0
+          z: 3.1018825
+        Rotation:
+          value:
+            x: 0
+            y: 0
+            z: 0
+            w: 1
+      - Position:
+          x: 1.76
+          y: -2
+          z: 17.63
+        TangentIn:
+          x: 0
+          y: 0
+          z: -2
+        TangentOut:
+          x: 0
+          y: 0
+          z: 2
+        Rotation:
+          value:
+            x: 0
+            y: 0
+            z: 0
+            w: 1
+      - Position:
+          x: 1.76
+          y: -2
+          z: 19.63
+        TangentIn:
+          x: 0
+          y: 0
+          z: -2.1480007
+        TangentOut:
+          x: 0
+          y: 0
+          z: 5.34
+        Rotation:
+          value:
+            x: 0
+            y: 0
+            z: 0
+            w: 1
+      - Position:
+          x: -6.92
+          y: -7.84
+          z: 37.15
+        TangentIn:
+          x: 0.001531601
+          y: 0
+          z: -11.23609
+        TangentOut:
+          x: 0
+          y: 0
+          z: 2.7306168
+        Rotation:
+          value:
+            x: 0
+            y: -0.34950656
+            z: 0
+            w: 0.936934
       m_MetaData: []
       m_Closed: 0
       m_IntData:

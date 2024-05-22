@@ -104,22 +104,76 @@ MonoBehaviour:
             w: 1
       - Position:
           x: 0
-          y: 0
-          z: 32
+          y: -1.9
+          z: 31.6
         TangentIn:
           x: 0
           y: 0
-          z: -1
+          z: -12.5
         TangentOut:
-          x: 0
+          x: -0.4
           y: 0
-          z: 1
+          z: 30.9
         Rotation:
           value:
             x: 0
             y: 0
             z: 0
             w: 1
+      - Position:
+          x: 0
+          y: 20.3
+          z: 73.8
+        TangentIn:
+          x: 0
+          y: 0
+          z: -18.102484
+        TangentOut:
+          x: 0
+          y: 0
+          z: 36.61543
+        Rotation:
+          value:
+            x: 0.7580077
+            y: -0.00007467838
+            z: -0.00006425873
+            w: -0.6522456
+      - Position:
+          x: 0
+          y: 41.8
+          z: 16.9
+        TangentIn:
+          x: -0
+          y: -0
+          z: -14.503639
+        TangentOut:
+          x: 0
+          y: 0
+          z: 14.068634
+        Rotation:
+          value:
+            x: 8.15695e-11
+            y: 0.999965
+            z: -0.008369035
+            w: 6.8268194e-13
+      - Position:
+          x: -0.00000003398944
+          y: 41.5
+          z: -14.4
+        TangentIn:
+          x: 0
+          y: 0
+          z: -5.6901107
+        TangentOut:
+          x: 0
+          y: 0
+          z: 5.6901107
+        Rotation:
+          value:
+            x: 3.1141752e-12
+            y: 0.9999951
+            z: 0.0031281412
+            w: -9.955854e-10
       m_MetaData: []
       m_Closed: 0
       m_IntData:
@@ -129,9 +183,4 @@ MonoBehaviour:
       m_Float4Data:
         m_Data: []
       m_ObjectData:
-        m_Data:
-        - Key: 
-          Value:
-            m_IndexUnit: 2
-            m_DefaultValue: {fileID: 0}
-            m_DataPoints: []
+        m_Data: []

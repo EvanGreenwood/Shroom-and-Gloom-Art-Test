@@ -16,6 +16,7 @@ using UnityEngine;
 public class WorldManagerService : MonoService
 {
     public bool SingleTunnelTestMode;
+    public bool LoadSplinesFromSO = false;
     [HideIf("SingleTunnelTestMode")] public WorldMapSettings MapSettings;
     [HideIf("SingleTunnelTestMode")] public TunnelGenerator TunnelPrefab;
     [HideIf("SingleTunnelTestMode")] public TunnelJoin TunnelJoinPrefab;
@@ -27,6 +28,11 @@ public class WorldManagerService : MonoService
         if (SingleTunnelTestMode)
         {
             TunnelGenerator singleTunnel = FindObjectOfType<TunnelGenerator>();
+
+            if (LoadSplinesFromSO)
+            {
+                singleTunnel.SetSplinePointsFromSO();
+            }
             singleTunnel.Generate();
             onComplete?.Invoke();
             return;
@@ -127,6 +133,11 @@ public class WorldManagerService : MonoService
             
             tunnelInstance.gameObject.name = tunnelName;
             tunnelInstance.GenerationSettings = settings;
+            
+            if (LoadSplinesFromSO)
+            {
+                tunnelInstance.SetSplinePointsFromSO();
+            }
 
             if (lastJoin)
             {
@@ -141,6 +152,7 @@ public class WorldManagerService : MonoService
                     tunnelInstance,
                     out Vector3 tunnelPosition,
                     out Quaternion tunnelRotation);
+                //tunnelInstance.GetLocalStartData(out Vector3 localStartPoint, out Quaternion localStartRotation);
                 tunnelInstance.transform.position = tunnelPosition;
                 tunnelInstance.transform.rotation = tunnelRotation;
             }
@@ -176,8 +188,7 @@ public class WorldManagerService : MonoService
 
             yield return null;
         }
-
-        //Store new path start data, so that we dont loose it by doing
+        
         List<(WorldMapSettings.LevelPath, TunnelGenerator, TunnelJoin, WorldMapSettings.LevelPath)> newPathStartData = new();
         int branchCount = 0;
         foreach (TunnelPath value in Enum.GetValues(typeof(TunnelPath)))
