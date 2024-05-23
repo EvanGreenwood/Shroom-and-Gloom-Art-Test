@@ -92,7 +92,6 @@ public class TunnelElement : MonoBehaviour
             if(sg == null)
             {
                 _generators.RemoveAt(i);
-                i++;
                 continue;
             }
 

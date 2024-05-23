@@ -34,7 +34,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _ChromaticAberration: 0.1
-    - _DepthFadeDst: 0.25
+    - _DepthFadeDst: 1
     - __dirty: 0
     m_Colors: []
   m_BuildTextureStacks: []

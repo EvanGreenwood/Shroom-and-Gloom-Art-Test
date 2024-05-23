@@ -11,7 +11,7 @@ public class SGVisibilityProbability : SubGenerator
   //----------------------------------------------------------------------------------------------------
   public override void Generate()
   {
-    if(RNG.Probability(1f-_probability))
+    if(Random.value > _probability)
     {
       gameObject.SetActive(false);
     }

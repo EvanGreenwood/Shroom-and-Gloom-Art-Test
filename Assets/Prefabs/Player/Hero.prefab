@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1053576327981276249}
   - component: {fileID: 7813353865607202483}
   - component: {fileID: 1070737138860152146}
+  - component: {fileID: 3780172410306021506}
   m_Layer: 10
   m_Name: Hero
   m_TagString: Player
@@ -132,6 +133,18 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &3780172410306021506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3020264992416293518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a7e85aac9381485882d5d7f1d9ea01c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5077152400806220540
 GameObject:
   m_ObjectHideFlags: 0
@@ -180,7 +193,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5272879881246543491
 Transform:
   m_ObjectHideFlags: 0
@@ -355,19 +368,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5258449524715896244, guid: 412d4ad8623568a42a0be69a40a66f6c, type: 3}
       propertyPath: m_AOSettings.bias
-      value: 0.37
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5258449524715896244, guid: 412d4ad8623568a42a0be69a40a66f6c, type: 3}
       propertyPath: m_AOSettings.radius
-      value: 3.24
+      value: 1.98
       objectReference: {fileID: 0}
     - target: {fileID: 5258449524715896244, guid: 412d4ad8623568a42a0be69a40a66f6c, type: 3}
       propertyPath: m_AOSettings.intensity
-      value: 0.58
+      value: 3.53
+      objectReference: {fileID: 0}
+    - target: {fileID: 5258449524715896244, guid: 412d4ad8623568a42a0be69a40a66f6c, type: 3}
+      propertyPath: m_AOSettings.baseColor.g
+      value: 0.8773585
+      objectReference: {fileID: 0}
+    - target: {fileID: 5258449524715896244, guid: 412d4ad8623568a42a0be69a40a66f6c, type: 3}
+      propertyPath: m_AOSettings.baseColor.r
+      value: 0.063216485
       objectReference: {fileID: 0}
     - target: {fileID: 5258449524715896244, guid: 412d4ad8623568a42a0be69a40a66f6c, type: 3}
       propertyPath: m_AOSettings.maxRadiusPixels
-      value: 98
+      value: 102
+      objectReference: {fileID: 0}
+    - target: {fileID: 5258449524715896244, guid: 412d4ad8623568a42a0be69a40a66f6c, type: 3}
+      propertyPath: m_TemporalFilterSettings.varianceClipping
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5258449524715896244, guid: 412d4ad8623568a42a0be69a40a66f6c, type: 3}
+      propertyPath: m_ColorBleedingSettings.brightnessMaskRange.y
+      value: 0.9908589
       objectReference: {fileID: 0}
     - target: {fileID: 5723357887469795658, guid: 412d4ad8623568a42a0be69a40a66f6c, type: 3}
       propertyPath: m_Name

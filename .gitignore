@@ -63,3 +63,5 @@ UserSettings/EditorUserSettings.asset
 UserSettings/Layouts/CurrentMaximizeLayout.dwlt
 UserSettings/Layouts/default-2022.dwlt
 Assets/Art/Environment/.DS_Store
+Assets/Art/Environment/Floors/.DS_Store
+*/.DS_Store
