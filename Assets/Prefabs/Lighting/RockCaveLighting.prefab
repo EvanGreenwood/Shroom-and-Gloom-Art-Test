@@ -14728,7 +14728,7 @@ Transform:
   m_GameObject: {fileID: 2255882355074154803}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.26, y: -0.6, z: 13.71}
+  m_LocalPosition: {x: -3.7, y: -0.6, z: 14.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -24540,7 +24540,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7100617192313778322}
   m_Layer: 0
-  m_Name: CaveLighting
+  m_Name: RockCaveLighting
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29742,7 +29742,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.8396226, g: 0.37624598, b: 0.46249583, a: 1}
-  m_Intensity: 4
+  m_Intensity: 3
   m_Range: 5
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
