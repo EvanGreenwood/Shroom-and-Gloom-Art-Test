@@ -55,7 +55,8 @@ public class LightAnim : MonoBehaviour
         if(_animateColor)
         {
             _light.color = _colorPool.Evaluate(Mathf.Lerp(_lastColor, _targetColor, _anim.percent.Clamp01()));
-            _flare.color = _light.color.WithA(_light.intensity / 100f);
+            if(_flare != null)
+                _flare.color = _light.color.WithA(_light.intensity / 100f);
         }
         if(_cameraDst && _camera != null)
         {
