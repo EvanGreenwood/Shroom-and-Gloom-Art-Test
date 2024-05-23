@@ -14,8 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _guid: a0a2c157c71f44fa191842cd667e765c
   Settings:
-    FogColor: {r: 0, g: 0, b: 0, a: 1}
+    FogColor: {r: 0.9339623, g: 0.7685686, b: 0.6123621, a: 1}
     FogStart: 3
     FogDistance: 30
+    BackgroundColor: {r: 0.14150941, g: 0.14150941, b: 0.14150941, a: 1}
     PostProcessingProfile: {fileID: 11400000, guid: 8956a6e584333492fb37e42feb9d90ee, type: 2}
     TransitionInTime: 5

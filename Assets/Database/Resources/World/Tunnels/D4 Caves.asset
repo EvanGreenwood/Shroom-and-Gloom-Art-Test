@@ -46,7 +46,7 @@ MonoBehaviour:
   BaseTunnelWidth: 1
   LumpyWidth: 0.5
   ClearingWidth: 1
-  ClearingDepth: 2.33
+  ClearingDepth: 10
   Particles: {fileID: 2402285776899386762, guid: 8e61f67cd760b423db14eb998271668d, type: 3}
   ParticleSpawnDistance: 5
   WallElements:
@@ -214,9 +214,9 @@ MonoBehaviour:
             z: 0
             w: 1
       - Position:
-          x: 1.76
+          x: -0.21
           y: -2
-          z: 15.63
+          z: 8.12
         TangentIn:
           x: 0
           y: 0
@@ -232,9 +232,9 @@ MonoBehaviour:
             z: 0
             w: 1
       - Position:
-          x: 1.76
+          x: -0.21
           y: -2
-          z: 17.63
+          z: 10.12
         TangentIn:
           x: 0
           y: 0
@@ -250,9 +250,9 @@ MonoBehaviour:
             z: 0
             w: 1
       - Position:
-          x: 1.76
+          x: -0.21
           y: -2
-          z: 19.63
+          z: 12.12
         TangentIn:
           x: 0
           y: 0
@@ -268,9 +268,9 @@ MonoBehaviour:
             z: 0
             w: 1
       - Position:
-          x: -6.92
-          y: -7.84
-          z: 37.15
+          x: -5.4
+          y: -7.8
+          z: 23.2
         TangentIn:
           x: 0.001531601
           y: 0
@@ -282,9 +282,9 @@ MonoBehaviour:
         Rotation:
           value:
             x: 0
-            y: -0.34950656
+            y: 0.34950674
             z: 0
-            w: 0.936934
+            w: -0.9369338
       m_MetaData: []
       m_Closed: 0
       m_IntData:
