@@ -43,9 +43,9 @@ MonoBehaviour:
     m_ColorSpace: 0
     m_NumColorKeys: 5
     m_NumAlphaKeys: 2
-  BaseTunnelWidth: 1
+  BaseTunnelWidth: 0.9
   LumpyWidth: 0.5
-  ClearingWidth: 1
+  ClearingWidth: 1.2
   ClearingDepth: 10
   Particles: {fileID: 2402285776899386762, guid: 8e61f67cd760b423db14eb998271668d, type: 3}
   ParticleSpawnDistance: 5

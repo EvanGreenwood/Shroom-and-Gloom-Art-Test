@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 2960950419429055515}
   - component: {fileID: 9147360062301869752}
   - component: {fileID: -2432869964999923703}
+  - component: {fileID: 8804245298530427162}
   m_Layer: 0
   m_Name: Wiggler
   m_TagString: Untagged
@@ -169,3 +170,15 @@ MonoBehaviour:
   - {fileID: 7400000, guid: f1e584a4fd3474c1e8cd8cd3ea620c74, type: 2}
   - {fileID: 7400000, guid: f8f8c66f1fe5643d99b13fded5a135b3, type: 2}
   - {fileID: 7400000, guid: a0262d452a2724738b57f48e478b698a, type: 2}
+--- !u!114 &8804245298530427162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5041409774772461534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccf819769bf224961955ad1320d0c08c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
