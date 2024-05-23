@@ -7,13 +7,13 @@ using UnityEngine;
 public class MonoService : MonoBehaviour
 {
    
-    void OnEnable()
+    protected void OnEnable()
     {
         ServiceLocator.Register(this);
     }
 
     
-    void OnDisable()
+    protected void OnDisable()
     {
         ServiceLocator.UnRegister(this);
     }

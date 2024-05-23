@@ -190,7 +190,7 @@ MonoBehaviour:
   UseSOData: 1
   GenerationSettings: {fileID: 11400000, guid: 9278d73a8c93c4d8da665d5d471ec094, type: 2}
   TunnelVolume: {fileID: 1136550995282158807}
-  EditMode: 0
+  EditMode: 1
   Old_ColorGradient:
     serializedVersion: 2
     key0: {r: 1, g: 1, b: 1, a: 1}
@@ -342,7 +342,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   _internalTunnelSpline: {fileID: 2911752884358585114}
-  _internalTunnelMesh: {fileID: 0}
+  _internalTunnelMesh: {fileID: 6298472048694712905}
 --- !u!114 &6298472048694712905
 MonoBehaviour:
   m_ObjectHideFlags: 0

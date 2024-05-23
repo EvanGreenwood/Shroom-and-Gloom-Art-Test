@@ -460,6 +460,7 @@ GameObject:
   - component: {fileID: 1291769757783795385}
   - component: {fileID: 2374260406459338245}
   - component: {fileID: 1327354733047355902}
+  - component: {fileID: 6919564794756802595}
   m_Layer: 0
   m_Name: SceneController
   m_TagString: Untagged
@@ -533,6 +534,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 096a733823e81485784ebd1193459c2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &6919564794756802595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8626711496347271734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6870900e9d014b04983d0fec21b0654, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DoorMaskMaterial: {fileID: 2100000, guid: de43f18cea6d8427bba8b4c1fc475016, type: 2}
+  ActiveCameras: []
 --- !u!1001 &3079938150054462497
 PrefabInstance:
   m_ObjectHideFlags: 0
