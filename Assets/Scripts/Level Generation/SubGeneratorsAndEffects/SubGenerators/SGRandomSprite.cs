@@ -15,6 +15,7 @@ public class RandomSprite : SubGenerator
 
   private void Awake()
   {
+    gameObject.SetActive(true);
     _spriteRenderer = GetComponent<SpriteRenderer>();
   }
 
@@ -26,9 +27,6 @@ public class RandomSprite : SubGenerator
       return;
     }
     
-    //reset in case we have already run this.
-    gameObject.SetActive(true);
-
     ChooseRandom();
   }
 
