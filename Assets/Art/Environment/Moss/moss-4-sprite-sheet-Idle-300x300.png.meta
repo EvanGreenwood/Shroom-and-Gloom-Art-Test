@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f90089a1e5eb14edb8f9500c22984170
+guid: 4dfdb13e8c75944faa1fc44f7f64ad42
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: moss-4-sprite-sheet Idle 300x300_0
+      name: moss-4-sprite-sheet-Idle-300x300_0
       rect:
         serializedVersion: 2
         x: 0
@@ -124,14 +124,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c7c10974382c4f7cb5a5e3c05f578a9
-      internalID: 1286825567
+      spriteID: fe9675c4f1c624bb5bd6a93a644add9f
+      internalID: -709152989
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: moss-4-sprite-sheet Idle 300x300_1
+      name: moss-4-sprite-sheet-Idle-300x300_1
       rect:
         serializedVersion: 2
         x: 300
@@ -145,14 +145,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e0f7cb227a9f547abb7a1f05a0496164
-      internalID: -1568571228
+      spriteID: 7c06078b443b04bf788e5c7487de8cc3
+      internalID: -2088246468
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: moss-4-sprite-sheet Idle 300x300_2
+      name: moss-4-sprite-sheet-Idle-300x300_2
       rect:
         serializedVersion: 2
         x: 600
@@ -166,14 +166,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a12294e06a26845fb98b85b47d212e35
-      internalID: -87951452
+      spriteID: 028224ac05c8b473ab565e195e1d063f
+      internalID: 719898599
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: moss-4-sprite-sheet Idle 300x300_3
+      name: moss-4-sprite-sheet-Idle-300x300_3
       rect:
         serializedVersion: 2
         x: 900
@@ -187,14 +187,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54d837044253f4f3e832b99c5a0e68f4
-      internalID: 437359366
+      spriteID: 1f58fe064a06c4a07962d9daa10cf654
+      internalID: 79165744
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: moss-4-sprite-sheet Idle 300x300_4
+      name: moss-4-sprite-sheet-Idle-300x300_4
       rect:
         serializedVersion: 2
         x: 0
@@ -208,14 +208,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d10712877581947fea1914ab9e43c282
-      internalID: 1519992561
+      spriteID: fbcf8d37253b341ee8c2ca8c464ccff4
+      internalID: -600957597
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: moss-4-sprite-sheet Idle 300x300_5
+      name: moss-4-sprite-sheet-Idle-300x300_5
       rect:
         serializedVersion: 2
         x: 300
@@ -229,14 +229,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 230e0f98987974ed2b46b5981c9a37ab
-      internalID: -57990320
+      spriteID: 9f16279ca04b046218cba0c9a8c9fa6a
+      internalID: 334211696
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: moss-4-sprite-sheet Idle 300x300_6
+      name: moss-4-sprite-sheet-Idle-300x300_6
       rect:
         serializedVersion: 2
         x: 600
@@ -250,14 +250,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d180d88ee976b43d886a556f8288f853
-      internalID: 55269183
+      spriteID: 30409e56cfddc421696f93822b0ba2fe
+      internalID: 704576711
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: moss-4-sprite-sheet Idle 300x300_7
+      name: moss-4-sprite-sheet-Idle-300x300_7
       rect:
         serializedVersion: 2
         x: 900
@@ -271,8 +271,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 20832313f55da412ebfe76c17769b669
-      internalID: -1418196924
+      spriteID: 4786633d3108945368adfe909e1dec88
+      internalID: 311541568
       vertices: []
       indices: 
       edges: []
@@ -288,14 +288,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      moss-4-sprite-sheet Idle 300x300_0: 1286825567
-      moss-4-sprite-sheet Idle 300x300_1: -1568571228
-      moss-4-sprite-sheet Idle 300x300_2: -87951452
-      moss-4-sprite-sheet Idle 300x300_3: 437359366
-      moss-4-sprite-sheet Idle 300x300_4: 1519992561
-      moss-4-sprite-sheet Idle 300x300_5: -57990320
-      moss-4-sprite-sheet Idle 300x300_6: 55269183
-      moss-4-sprite-sheet Idle 300x300_7: -1418196924
+      moss-4-sprite-sheet-Idle-300x300_0: -709152989
+      moss-4-sprite-sheet-Idle-300x300_1: -2088246468
+      moss-4-sprite-sheet-Idle-300x300_2: 719898599
+      moss-4-sprite-sheet-Idle-300x300_3: 79165744
+      moss-4-sprite-sheet-Idle-300x300_4: -600957597
+      moss-4-sprite-sheet-Idle-300x300_5: 334211696
+      moss-4-sprite-sheet-Idle-300x300_6: 704576711
+      moss-4-sprite-sheet-Idle-300x300_7: 311541568
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
