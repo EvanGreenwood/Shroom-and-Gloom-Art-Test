@@ -17,5 +17,11 @@ MonoBehaviour:
     FogColor: {r: 0, g: 0, b: 0, a: 1}
     FogStart: 3
     FogDistance: 30
+    BackgroundColor: {r: 0, g: 0, b: 0, a: 0}
     PostProcessingProfile: {fileID: 11400000, guid: c36fe0baa1f294b1491bc29593bcc7e6, type: 2}
+    Radius: 5
+    MaxRadiusPixels: 55
+    Intensity: 1
+    BaseColor: {r: 0, g: 0, b: 0, a: 1}
+    ColorBleedingSaturation: 3
     TransitionInTime: 5

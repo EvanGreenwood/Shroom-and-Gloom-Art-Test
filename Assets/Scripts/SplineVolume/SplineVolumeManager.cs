@@ -1,4 +1,5 @@
 
+using HorizonBasedAmbientOcclusion;
 using Ross.EditorRuntimeCombatibility;
 using System;
 using Unity.VisualScripting;
@@ -16,6 +17,7 @@ public class SplineVolumeManager : MonoService
     private SplineVolume _targetVolume;
     private SplineVolume _lastVolume;
     private SplineVolume.SplineVolumeSettings _currentSettings;
+    private HBAO _hbao;
 
     private Service<Player> _player;
     private Service<WorldManagerService> _worldManager;
@@ -26,23 +28,6 @@ public class SplineVolumeManager : MonoService
         if (_player.Exists)
         {
             cam = Camera.main;
-        }
-
-        if (cam == null)
-        {
-            
-#if UNITY_EDITOR
-            var view = SceneView.currentDrawingSceneView;
-            if (view != null)
-            {
-                cam = view.camera;
-            }
-#endif
-            
-            if(cam == null)
-            {
-                cam = Camera.current;
-            }
         }
 
         return cam;
@@ -70,14 +55,13 @@ public class SplineVolumeManager : MonoService
             {
                 if (_currentSettings == null)
                 {
-                    _currentSettings = closestVolume.Settings;
+                    _currentSettings = new SplineVolume.SplineVolumeSettings(closestVolume.Settings);
                     _lastVolume = closestVolume;
                     _targetVolume = closestVolume;
                     _currentTransitionTime = closestVolume.Settings.TransitionInTime;
                 }
                 else
                 {
-                    
                     _lastVolume = _targetVolume;
                     _targetVolume = closestVolume;
                     _currentTransitionTime = 0;
@@ -102,8 +86,13 @@ public class SplineVolumeManager : MonoService
         _currentSettings.FogDistance = Mathf.Lerp(_lastVolume.Settings.FogDistance, _targetVolume.Settings.FogDistance, normTime);
         _currentSettings.FogColor = Color.Lerp(_lastVolume.Settings.FogColor, _targetVolume.Settings.FogColor, normTime);
         _currentSettings.BackgroundColor = Color.Lerp(_lastVolume.Settings.BackgroundColor, _targetVolume.Settings.BackgroundColor, normTime);
-        //_oldVolume.weight = 1f - normTime;
-        //_newVolume.weight = normTime;
+        
+        //AO
+        _currentSettings.Radius = Mathf.Lerp(_lastVolume.Settings.Radius, _targetVolume.Settings.Radius, normTime);
+        _currentSettings.MaxRadiusPixels = Mathf.RoundToInt(Mathf.Lerp(_lastVolume.Settings.MaxRadiusPixels, _targetVolume.Settings.MaxRadiusPixels, normTime));
+        _currentSettings.Intensity = Mathf.Lerp(_lastVolume.Settings.Intensity, _targetVolume.Settings.Intensity, normTime);
+        _currentSettings.BaseColor = Color.Lerp(_lastVolume.Settings.BaseColor, _targetVolume.Settings.BaseColor, normTime);
+        _currentSettings.ColorBleedingSaturation = Mathf.Lerp(_lastVolume.Settings.ColorBleedingSaturation, _targetVolume.Settings.ColorBleedingSaturation, normTime);
     }
     
     private void UpdateToCurrentSettings()
@@ -117,9 +106,24 @@ public class SplineVolumeManager : MonoService
         Shader.SetGlobalFloat("FogDistance", _currentSettings.FogDistance);
 
         Camera cam = GetActiveCamera();
-        if (cam)
+        if (cam != null)
         {
             cam.backgroundColor = _currentSettings.BackgroundColor;
+
+            if (_hbao == null)
+            {
+                _hbao = cam.GetComponent<HBAO>();
+            }
+
+            if (_hbao != null)
+            {
+                _hbao.GetCurrentPreset();
+                _hbao.SetAoRadius(_currentSettings.Radius);
+                _hbao.SetAoMaxRadiusPixels(_currentSettings.MaxRadiusPixels);
+                _hbao.SetAoIntensity(_currentSettings.Intensity);
+                _hbao.SetAoColor(_currentSettings.BaseColor);
+                _hbao.SetColorBleedingSaturation(_currentSettings.ColorBleedingSaturation);
+            }
         }
     }
 }
