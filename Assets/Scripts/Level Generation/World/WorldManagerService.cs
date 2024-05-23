@@ -168,7 +168,7 @@ public class WorldManagerService : MonoService
             joinInstance.gameObject.name = $"Join - In: {settings.name}";
             joinInstance.transform.position = endPoint;
             joinInstance.transform.rotation = endRotation;
-            joinInstance.InTunnel = tunnelInstance;
+            joinInstance.InInTunnel = tunnelInstance;
 
             if (lastJoin != null)
             {
@@ -286,7 +286,7 @@ public class WorldManagerService : MonoService
     {
         foreach (TunnelGenerator tunnel in _tunnels)
         {
-            bool isActive = active == tunnel || active.BackJoin != null && tunnel == active.BackJoin.InTunnel;
+            bool isActive = active == tunnel || active.BackJoin != null && tunnel == active.BackJoin.InInTunnel;
 
             if (active.FrontJoin != null && active.FrontJoin.OutTunnels != null)
             {

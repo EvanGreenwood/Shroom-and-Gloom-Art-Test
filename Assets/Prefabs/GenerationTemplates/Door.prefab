@@ -372,7 +372,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -2111588262, guid: eadad6ca411640e4fa0c9ea69e9a8597, type: 3}
-  m_Color: {r: 0.5283019, g: 0.5283019, b: 0.5283019, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -934,7 +934,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0be7f4ab03a36d646991c823e324f3cd, type: 3}
-  m_Color: {r: 0.7735849, g: 0.6270206, b: 0.46342114, a: 1}
+  m_Color: {r: 0.9245283, g: 0.7958517, b: 0.6497864, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1211,6 +1211,17 @@ MonoBehaviour:
   DoorMask: {fileID: 7152761601898982796}
   EntryWaypoint: {fileID: 3666536399953758977}
   ExitWaypoint: {fileID: 1229277391027750117}
+  _toColor:
+  - {fileID: 4340785403444848482}
+  - {fileID: 5291331769806580049}
+  - {fileID: 2871738022927738959}
+  - {fileID: 7707407954148373719}
+  - {fileID: 4458264372542375117}
+  - {fileID: 5806389764142014507}
+  - {fileID: 5558911620156470028}
+  - {fileID: 6486581222162863863}
+  - {fileID: 4632827625657417192}
+  - {fileID: 8667875289486683603}
 --- !u!54 &2932551918845929632
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1400,7 +1411,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: e12b3b6e7301f784080710c0237ed36a, type: 3}
-  m_Color: {r: 0.6698113, g: 0.53536683, b: 0.42653078, a: 1}
+  m_Color: {r: 0.8679245, g: 0.6860724, b: 0.53631186, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1477,7 +1488,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: d36a2d29bec184a8d96a8d46b939e8ce, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 2fb9db9b28b72164981848a1a9166ea8, type: 2}
+      objectReference: {fileID: 2100000, guid: 8c08870503093334ab803c240f375089, type: 2}
     - target: {fileID: 919132149155446097, guid: d36a2d29bec184a8d96a8d46b939e8ce, type: 3}
       propertyPath: m_Name
       value: DoorMask

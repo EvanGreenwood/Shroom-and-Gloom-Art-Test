@@ -11,10 +11,28 @@ public class Door : MonoBehaviour, IPointerClickHandler
     private static readonly int Open = Animator.StringToHash("Open");
     public DoorMask DoorMask;
 
+    
+
     public Transform EntryWaypoint;
     public Transform ExitWaypoint;
 
     private TunnelGenerator _maskingTunnel;
+    
+    private List<Color> _baseDoorColors = new List<Color>();
+    
+    [SerializeField] private List<SpriteRenderer> _toColor;
+    
+    
+    public void SetSpriteColors(Color color)
+    {
+        Debug.Assert(_toColor.Count == _baseDoorColors.Count);
+        for (int i = 0; i < _toColor.Count; i++)
+        {
+            SpriteRenderer toColor = _toColor[i];
+            toColor.color = color * _baseDoorColors[i];
+        }
+    }
+    
     public TunnelGenerator MaskingTunnel
     {
         get => _maskingTunnel;
@@ -28,6 +46,12 @@ public class Door : MonoBehaviour, IPointerClickHandler
 
     public void Start()
     {
+        _baseDoorColors.Clear();
+        foreach (SpriteRenderer sr in _toColor)
+        {
+            _baseDoorColors.Add(sr.color);
+        }
+        
         DoorMask.gameObject.SetActive(false);
     }
 

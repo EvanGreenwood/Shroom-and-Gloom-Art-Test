@@ -13,8 +13,28 @@ public class TunnelJoin : MonoBehaviour
     [Space]
     public Transform DoorParentBranch;
     public Transform DoorParentThranch; //Dont tell me how to live my life
-    
-    public TunnelGenerator InTunnel { get; set; }
+
+    private TunnelGenerator _inTunnel;
+    public TunnelGenerator InInTunnel
+    {
+        get
+        {
+            return _inTunnel;
+        }
+        set
+        {
+            _inTunnel = value;
+            List<Door> doors = new List<Door>(DoorParentLinear.GetComponentsInChildren<Door>());
+            doors.AddRange(DoorParentBranch.GetComponentsInChildren<Door>());
+            doors.AddRange(DoorParentThranch.GetComponentsInChildren<Door>());
+
+            foreach (Door door in doors)
+            {
+                door.SetSpriteColors(_inTunnel.ColorGradient.Evaluate(1));
+            }
+        }
+    }
+
     public List<TunnelGenerator> OutTunnels { get; set; }
 
     private int _totalTunnelCount = -1;
