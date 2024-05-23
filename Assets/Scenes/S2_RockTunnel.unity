@@ -877,6 +877,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6919564794756802595, guid: 81dfcbda98ab2ab4e992cdfc33593879, type: 3}
+      propertyPath: ActiveCameras.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6919564794756802595, guid: 81dfcbda98ab2ab4e992cdfc33593879, type: 3}
+      propertyPath: ActiveCameras.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 8626711496347271734, guid: 81dfcbda98ab2ab4e992cdfc33593879, type: 3}
       propertyPath: m_Name
       value: SceneController
@@ -884,8 +892,28 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8626711496347271734, guid: 81dfcbda98ab2ab4e992cdfc33593879, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1552814522}
   m_SourcePrefab: {fileID: 100100000, guid: 81dfcbda98ab2ab4e992cdfc33593879, type: 3}
+--- !u!1 &1552814521 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8626711496347271734, guid: 81dfcbda98ab2ab4e992cdfc33593879, type: 3}
+  m_PrefabInstance: {fileID: 1552814520}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1552814522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1552814521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c9f2c6c69e874f948d6e8c4d99dad87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1791465373
 GameObject:
   m_ObjectHideFlags: 0
@@ -1069,7 +1097,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 245572396879630763, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
