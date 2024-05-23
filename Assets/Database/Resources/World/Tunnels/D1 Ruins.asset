@@ -55,6 +55,10 @@ MonoBehaviour:
     WallPrefabs:
     - {fileID: 717079983591251126, guid: e8dfdb4b844a34d4a98d85cd3968b570, type: 3}
     - {fileID: 717079983591251126, guid: 511552954a5794e4b8e654899291f53b, type: 3}
+    - {fileID: 717079983591251126, guid: e29007ee4aabd4e7b9082010a947bfd2, type: 3}
+    - {fileID: 717079983591251126, guid: 0155c99abc84b474cb1033d10f47ff12, type: 3}
+    - {fileID: 717079983591251126, guid: d91d978e99ad8478c8a1240731c9f0a6, type: 3}
+    - {fileID: 717079983591251126, guid: e29007ee4aabd4e7b9082010a947bfd2, type: 3}
     ZOffset: 0.1
     Spacing: 1
     Width: 3.2
@@ -78,7 +82,7 @@ MonoBehaviour:
     - {fileID: 717079983591251126, guid: 3ba71e0ec8102b5449495397c5e84ddd, type: 3}
     - {fileID: 717079983591251126, guid: 6b8cd0b78b7a43547a6828e17806a41c, type: 3}
     ZOffset: 0
-    Spacing: 0.25
+    Spacing: 0.75
     Width: 1.5
     HeightOffset:
       _min: 1.5
@@ -91,8 +95,31 @@ MonoBehaviour:
     MinMaxPosition:
       _min: 1.6
       _max: 3
-    RandomRotation: 25
+    RandomRotation: 27.69
     RandomFlipY: 1
+  - Name: StickThorns
+    Disabled: 0
+    WallPrefabs:
+    - {fileID: 717079983591251126, guid: 0155c99abc84b474cb1033d10f47ff12, type: 3}
+    - {fileID: 717079983591251126, guid: 92eb6e374454d45d2964cb2305257339, type: 3}
+    - {fileID: 717079983591251126, guid: d91d978e99ad8478c8a1240731c9f0a6, type: 3}
+    - {fileID: 717079983591251126, guid: e29007ee4aabd4e7b9082010a947bfd2, type: 3}
+    ZOffset: 0
+    Spacing: 0.8
+    Width: 2.6
+    HeightOffset:
+      _min: -1.5
+      _max: 0
+    VerticalLoopLength: 5
+    VerticalLoopIncrement: 2
+    MinMaxAngle:
+      _min: -4
+      _max: 4
+    MinMaxPosition:
+      _min: -1
+      _max: 1
+    RandomRotation: 6
+    RandomFlipY: 0
   FlatWallPrefab: {fileID: 6315135170778095943, guid: 3422533d8785543c0bc4c752557808e0, type: 3}
   FlatWallSpacing: 1
   FlatWallOffset: 8
@@ -104,7 +131,7 @@ MonoBehaviour:
     - {fileID: 717079983591251126, guid: 3ba71e0ec8102b5449495397c5e84ddd, type: 3}
     - {fileID: 717079983591251126, guid: 6b8cd0b78b7a43547a6828e17806a41c, type: 3}
     ZOffset: 0
-    Spacing: 0.25
+    Spacing: 0.35
     RadiusOffset: 4.5
     CenterHeight: 1.5
     Pattern: 0
@@ -117,6 +144,22 @@ MonoBehaviour:
     RandomFlipX: 0
   FloorElements:
   - Name: Floor
+    Disabled: 0
+    FloorPrefabs:
+    - {fileID: 717079983591251126, guid: 7dfa9a70717977449804ed7615425c73, type: 3}
+    - {fileID: 717079983591251126, guid: 7dfa9a70717977449804ed7615425c73, type: 3}
+    ZOffset: 0.08
+    Spacing: 0.5
+    RandomXPosition: 0.5
+    MinMaxAngle:
+      _min: -1
+      _max: 1
+    XRotation: 0
+    MinMaxPosition:
+      _min: -0.05
+      _max: 0.05
+    RandomFlipX: 1
+  - Name: LUMPS
     Disabled: 0
     FloorPrefabs:
     - {fileID: 717079983591251126, guid: 7dfa9a70717977449804ed7615425c73, type: 3}
