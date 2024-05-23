@@ -23,6 +23,8 @@ public partial class SplineVolume : ScriptableEnum
         [Header("Post")]
         public PostProcessProfile PostProcessingProfile;
 
+        [Header("AO")] private Color BaseColor;
+
         [Header("Transition")]
         public float TransitionInTime = 2f;
     }
