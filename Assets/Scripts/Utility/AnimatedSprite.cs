@@ -16,6 +16,7 @@ public class AnimatedSprite : MonoBehaviour
     [SerializeField] private bool _destroyAtEnd = true;
     [SerializeField] private bool _rotateEachFrame = false;
     [SerializeField] private float _startingFrameAjustmentFromYPos = 0;
+    
     void Awake()
     {
         _spriteRenderer = GetComponent<SpriteRenderer>();
@@ -45,7 +46,10 @@ public class AnimatedSprite : MonoBehaviour
             _counter -= _frameRate;
             _frame++;
             //
-            if (_loop && _frame >= _sprites.Length) _frame -= _sprites.Length;
+            if(_loop && _frame >= _sprites.Length)
+            {
+                _frame -= _sprites.Length;
+            }
             //
             if (_frame > -1 && _frame < _sprites.Length)
             {
@@ -56,7 +60,7 @@ public class AnimatedSprite : MonoBehaviour
                     transform.localEulerAngles = transform.localEulerAngles.PlusZ(30 + Random.value * 15);
                 }
             }
-            else
+            else if (!_loop)
             {
                 if (_destroyAtEnd)
                 {

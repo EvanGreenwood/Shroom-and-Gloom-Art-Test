@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4104395391090455485}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 15.5}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_ConstrainProportionsScale: 0
@@ -57,10 +57,10 @@ MonoBehaviour:
   _colorOverSegments:
     serializedVersion: 2
     key0: {r: 0.87944293, g: 0.8867924, b: 0.8407796, a: 1}
-    key1: {r: 0.8113208, g: 0.6260377, b: 0.38652548, a: 1}
-    key2: {r: 0.754717, g: 0.35955858, b: 0.542393, a: 0}
-    key3: {r: 0.42308336, g: 0.2775454, b: 0.7264151, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
+    key1: {r: 0.5283019, g: 0.48383835, b: 0.4261303, a: 1}
+    key2: {r: 0.38679248, g: 0.3557761, b: 0.35644537, a: 0}
+    key3: {r: 0.14853884, g: 0.1473834, b: 0.1509434, a: 0}
+    key4: {r: 0.14853884, g: 0.1473834, b: 0.1509434, a: 0}
     key5: {r: 0, g: 0, b: 0, a: 0}
     key6: {r: 0, g: 0, b: 0, a: 0}
     key7: {r: 0, g: 0, b: 0, a: 0}
@@ -68,7 +68,7 @@ MonoBehaviour:
     ctime1: 14153
     ctime2: 37951
     ctime3: 65535
-    ctime4: 0
+    ctime4: 65535
     ctime5: 0
     ctime6: 0
     ctime7: 0
