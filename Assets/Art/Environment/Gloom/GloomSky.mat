@@ -110,11 +110,11 @@ Material:
     m_Ints: []
     m_Floats:
     - _BumpScale: 1
-    - _CloudAlpha: 1
+    - _CloudAlpha: 0.621
     - _CloudMax: 0.65
-    - _CloudMin: 0.383
+    - _CloudMin: 0.138
     - _CloudSize: 10
-    - _CloudSmoothness: 0.15
+    - _CloudSmoothness: 0.068
     - _CloudSquash: 3
     - _Contrast: 1
     - _Cutoff: 0.5
@@ -122,12 +122,12 @@ Material:
     - _DistMul: 10
     - _DistSize: 2
     - _DstBlend: 0
-    - _GlobalBrightness: 1.38
+    - _GlobalBrightness: 0.057
     - _GlobalBrightnessFactor: 1
-    - _GlobalContrast: 1
-    - _GlobalHueShift: 0.918
+    - _GlobalContrast: 6.62
+    - _GlobalHueShift: 0.76
     - _GlobalSaturation: 1
-    - _GlobalSaturationFactor: 0.914
+    - _GlobalSaturationFactor: 0.951
     - _GlobalValueFactor: 1
     - _GlossMapScale: 1
     - _Glossiness: 0.5
@@ -138,7 +138,7 @@ Material:
     - _Parallax: 0.02
     - _ShiftHorizontal: 0
     - _ShiftSkyHorizontal: -0.55
-    - _ShiftSkyVertical: 0.4
+    - _ShiftSkyVertical: 0.621
     - _ShiftVertical: -0.25
     - _SkySize: 200
     - _SkyTop: 0.499
@@ -148,7 +148,7 @@ Material:
     - _SrcBlend: 1
     - _StarRemapMin: 0.909
     - _StarScale: 75
-    - _StarsBlend: 1
+    - _StarsBlend: 0.475
     - _TimeScale: 1
     - _UVSec: 0
     - _ZWrite: 1
