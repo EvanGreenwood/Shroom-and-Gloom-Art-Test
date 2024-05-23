@@ -24,6 +24,7 @@ public class LightAnim : MonoBehaviour
     [SerializeField] FloatRange _cameraDstFactor = new FloatRange(0.75f, 1f);
 
     Light _light;
+    SpriteRenderer _flare;
     FloatAnim _anim;
     private float _lastIntensity, _targetIntensity, _defaultIntensity;
     float _lastColor, _targetColor;
@@ -36,21 +37,26 @@ public class LightAnim : MonoBehaviour
         _camera = Camera.main;
         _anim = new FloatAnim(_easingType, LoopType.PingPong, 0.1f);
         _light = GetComponent<Light>();
+        _flare = GetComponentInChildren<SpriteRenderer>();
         _targetIntensity = _light.intensity;
         _defaultIntensity = _light.intensity;
         _anim.onLoop += NextTarget;
         NextTarget();
     }
 
-    void Update() {Step(UnityEngine.Time.deltaTime);}
+    void Update() {Step(Time.deltaTime);}
 
     // Step
     //----------------------------------------------------------------------------------------------------
     void Step(float dt)
     {
         _anim.Step(dt);
-        if(_animateIntensity) _light.intensity = Mathf.Lerp(_lastIntensity, _defaultIntensity +_targetIntensity, _anim.percent.Clamp01());
-        if(_animateColor) _light.color = _colorPool.Evaluate(Mathf.Lerp(_lastColor, _targetColor, _anim.percent.Clamp01()));
+        if(_animateIntensity) _light.intensity = Mathf.Lerp(_lastIntensity, _defaultIntensity + _targetIntensity, _anim.percent.Clamp01());
+        if(_animateColor)
+        {
+            _light.color = _colorPool.Evaluate(Mathf.Lerp(_lastColor, _targetColor, _anim.percent.Clamp01()));
+            _flare.color = _light.color.WithA(_light.intensity / 100f);
+        }
         if(_cameraDst && _camera != null)
         {
             float dst = Vector3.Distance(_camera.transform.position, transform.position);
