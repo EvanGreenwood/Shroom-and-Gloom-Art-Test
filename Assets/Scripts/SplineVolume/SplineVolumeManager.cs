@@ -16,8 +16,6 @@ public class SplineVolumeManager : MonoService
     private SplineVolume _targetVolume;
     private SplineVolume _lastVolume;
     private SplineVolume.SplineVolumeSettings _currentSettings;
-    //private PostProcessVolume _oldVolume;
-    //private PostProcessVolume _newVolume;
 
     private Service<Player> _player;
     private Service<WorldManagerService> _worldManager;
@@ -67,34 +65,15 @@ public class SplineVolumeManager : MonoService
         if (_worldManager.Value.TryGetTunnel(active.transform.position, out TunnelGenerator tunnel))
         {
             SplineVolume closestVolume = tunnel.GenerationSettings.SplineVolume;
-
-            //Debug.LogError("Chosen Tunnel:" + tunnel.gameObject.name + $" Sample point: {active.transform.name} - {active.transform.position}");
+            
             if (_targetVolume != closestVolume)
             {
-              /*  if (_oldVolume == null)
-                {
-                    _oldVolume = gameObject.AddComponent<PostProcessVolume>();
-                    _oldVolume.isGlobal = true;
-                    _oldVolume.hideFlags = HideFlags.DontSave;
-                } */
-
-                /*if (_newVolume == null)
-                {
-                    _newVolume = gameObject.AddComponent<PostProcessVolume>();
-                    _oldVolume.isGlobal = true;
-                    _newVolume.hideFlags = HideFlags.DontSave;
-                }*/
-
                 if (_currentSettings == null)
                 {
                     _currentSettings = closestVolume.Settings;
                     _lastVolume = closestVolume;
                     _targetVolume = closestVolume;
                     _currentTransitionTime = closestVolume.Settings.TransitionInTime;
-                    //_oldVolume.profile = closestVolume.Settings.PostProcessingProfile;
-                    //_newVolume.profile = closestVolume.Settings.PostProcessingProfile;
-                   // _oldVolume.weight = 0;
-                    //_newVolume.weight = 1;
                 }
                 else
                 {
@@ -102,10 +81,6 @@ public class SplineVolumeManager : MonoService
                     _lastVolume = _targetVolume;
                     _targetVolume = closestVolume;
                     _currentTransitionTime = 0;
-                    //_oldVolume.profile = _newVolume.profile;
-                   // _newVolume.profile = closestVolume.Settings.PostProcessingProfile;
-                   // _oldVolume.weight = 1;
-                   // _newVolume.weight = 0;
                 }
             }
         }

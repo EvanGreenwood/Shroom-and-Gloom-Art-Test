@@ -195,6 +195,10 @@ PrefabInstance:
       propertyPath: m_RebuildOnSplineChange
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 889461265015189518, guid: 3a18a561d72904fb188c7be7914fee2d, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1618399540182981667, guid: 3a18a561d72904fb188c7be7914fee2d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -454,7 +458,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7137455459775689044, guid: 3a18a561d72904fb188c7be7914fee2d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1780936900}
   m_SourcePrefab: {fileID: 100100000, guid: 3a18a561d72904fb188c7be7914fee2d, type: 3}
 --- !u!4 &209036413 stripped
 Transform:
@@ -755,7 +762,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 245572396879630763, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: bcf329e1be87a4aa686e2745e7d0a008, type: 3}
 --- !u!1001 &1705420437
 PrefabInstance:
@@ -805,6 +815,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6919564794756802595, guid: 81dfcbda98ab2ab4e992cdfc33593879, type: 3}
+      propertyPath: ActiveCameras.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6919564794756802595, guid: 81dfcbda98ab2ab4e992cdfc33593879, type: 3}
+      propertyPath: ActiveCameras.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 8626711496347271734, guid: 81dfcbda98ab2ab4e992cdfc33593879, type: 3}
       propertyPath: m_Name
       value: SceneController
@@ -812,8 +830,45 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8626711496347271734, guid: 81dfcbda98ab2ab4e992cdfc33593879, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1705420439}
   m_SourcePrefab: {fileID: 100100000, guid: 81dfcbda98ab2ab4e992cdfc33593879, type: 3}
+--- !u!1 &1705420438 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8626711496347271734, guid: 81dfcbda98ab2ab4e992cdfc33593879, type: 3}
+  m_PrefabInstance: {fileID: 1705420437}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1705420439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1705420438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c9f2c6c69e874f948d6e8c4d99dad87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1780936896 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7137455459775689044, guid: 3a18a561d72904fb188c7be7914fee2d, type: 3}
+  m_PrefabInstance: {fileID: 209036412}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1780936900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1780936896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c9f2c6c69e874f948d6e8c4d99dad87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2129620276
 PrefabInstance:
   m_ObjectHideFlags: 0
