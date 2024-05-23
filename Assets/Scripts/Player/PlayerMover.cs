@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class PlayerMover : MonoBehaviour
 {
-    [SerializeField] Transform _view;
+    public Vector3 CurrentUp => _currentUp;
+    private Vector3 _currentUp;
+    
+    [SerializeField] PlayerView _view;
 
     [SerializeField] float _speed = 4;
     [SerializeField] float _runMul = 1.8f;
@@ -37,7 +40,7 @@ public class PlayerMover : MonoBehaviour
     void Start()
     {
         INPUT.SetCursorPos(SCREEN.center);
-        _view.localPosition = new Vector3(0f, _headHeight, 0f);
+        _view.transform.localPosition = new Vector3(0f, _headHeight, 0f);
         _currentSpeed = _speed;
     }
 
@@ -62,7 +65,8 @@ public class PlayerMover : MonoBehaviour
     void Move()
     {
         float t = _tunnel.GetClosestPositionAndDirection(transform.position, out Vector3 currentPosition, out Vector3 currentDirection, out Vector3 currentUp);
-
+        _currentUp = currentUp;
+        _view.SetUp(_currentUp);
         if(float.IsNaN(currentDirection.x) || float.IsNaN(currentDirection.y) || float.IsNaN(currentDirection.z))
         {
             currentDirection = transform.forward;
@@ -70,10 +74,13 @@ public class PlayerMover : MonoBehaviour
 
         Vector3 lookaheadPoint = _tunnel.GetLookaheadPoint(t, _directionLookaheadDistance);
         Vector3 towardsLookahead = (lookaheadPoint - currentPosition).normalized;
-        transform.forward = Vector3.RotateTowards(transform.forward, towardsLookahead, Time.deltaTime * 0.25f, 0);
+        
+        Vector3 newForward = Vector3.RotateTowards(transform.forward, towardsLookahead, Time.deltaTime * 0.25f, 0);
+        transform.rotation = Quaternion.LookRotation(newForward, currentUp);
         currentDirection = _fwdInput * currentDirection;
 
-        Debug.DrawLine(currentPosition, currentPosition + currentDirection);
+        Debug.DrawLine(currentPosition+ towardsLookahead * 2, currentPosition + towardsLookahead * 5, Color.red);
+        Debug.DrawLine(currentPosition+ currentDirection * 2, currentPosition + currentDirection * 5, Color.green);
         transform.position = Vector3.MoveTowards(transform.position, currentPosition + currentDirection, Time.deltaTime * _currentSpeed);
     }
 

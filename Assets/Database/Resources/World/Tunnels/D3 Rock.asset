@@ -59,6 +59,8 @@ MonoBehaviour:
     SurroundPrefabs:
     - {fileID: 717079983591251126, guid: dde57e21e6c354eec8aacabab5da9407, type: 3}
     - {fileID: 717079983591251126, guid: 8bf6d4da7dbaf468fa9ccdb283aa9e40, type: 3}
+    - {fileID: 1508189691331659514, guid: 447e98987a8304e8084d0cc3ff7af717, type: 3}
+    - {fileID: 1508189691331659514, guid: 8d1eeed8d2c25426abd2f0daf1fe3eb6, type: 3}
     ZOffset: 0
     Spacing: 0.5
     RadiusOffset: 2
@@ -125,7 +127,97 @@ MonoBehaviour:
     PrefabData: []
     Spline:
       m_EditModeType: 1
-      m_Knots: []
+      m_Knots:
+      - Position:
+          x: 0
+          y: 0
+          z: 0
+        TangentIn:
+          x: 0
+          y: 0
+          z: -2.730617
+        TangentOut:
+          x: 0
+          y: 0
+          z: 2.730617
+        Rotation:
+          value:
+            x: 0
+            y: 0
+            z: 0
+            w: 1
+      - Position:
+          x: 1.76
+          y: -2
+          z: 17.46
+        TangentIn:
+          x: 0
+          y: 0
+          z: -3.1018825
+        TangentOut:
+          x: 0
+          y: 0
+          z: 3.1018825
+        Rotation:
+          value:
+            x: 0
+            y: 0
+            z: 0
+            w: 1
+      - Position:
+          x: 1.76
+          y: -2
+          z: 19.46
+        TangentIn:
+          x: 0
+          y: 0
+          z: -2
+        TangentOut:
+          x: 0
+          y: 0
+          z: 2
+        Rotation:
+          value:
+            x: 0
+            y: 0
+            z: 0
+            w: 1
+      - Position:
+          x: 1.76
+          y: -2
+          z: 21.46
+        TangentIn:
+          x: 0
+          y: 0
+          z: -2.1480007
+        TangentOut:
+          x: 0
+          y: 0
+          z: 2.1480007
+        Rotation:
+          value:
+            x: 0
+            y: 0
+            z: 0
+            w: 1
+      - Position:
+          x: 0
+          y: -4
+          z: 41.2
+        TangentIn:
+          x: 0
+          y: 0
+          z: -2.7306168
+        TangentOut:
+          x: 0
+          y: 0
+          z: 2.7306168
+        Rotation:
+          value:
+            x: 0
+            y: 0
+            z: 0
+            w: 1
       m_MetaData: []
       m_Closed: 0
       m_IntData:

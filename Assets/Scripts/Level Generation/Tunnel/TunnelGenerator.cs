@@ -231,7 +231,7 @@ public partial class TunnelGenerator : MonoBehaviour
     public void GetTunnelPositionAndDirection(float t, out Vector3 position, out Vector3 direction, out Quaternion rotation, out Vector3 up, out Vector3 perpendicular)
     {
         GetTunnelPositionAndDirection(t, out position, out direction, out up);
-        rotation = Quaternion.LookRotation(direction);
+        rotation = Quaternion.LookRotation(direction, up);
         perpendicular = Vector3.Cross(direction, up);
     }
 
@@ -381,6 +381,12 @@ public partial class TunnelGenerator : MonoBehaviour
     {
         Old_EnsureValidParameters();
 
+        SplineExtrude extrude = GetComponentInChildren<SplineExtrude>();
+        if (extrude)
+        {
+            extrude.Rebuild();
+        }
+        
         if(_generatedElements == null)
         {
             _generatedElements = new List<Transform>();
@@ -953,6 +959,41 @@ public partial class TunnelGenerator : MonoBehaviour
     {
         //Copy local spline to SO
         //CopySplinePoints();
+        bool dirty = false;
+        if (GenerationSettings.SceneData.Spline.Count == Spline.Spline.Count)
+        {
+            int i = 0;
+            int j = 0;
+            foreach (var soKnot in GenerationSettings.SceneData.Spline)
+            {
+                foreach (var knot in Spline.Spline)
+                {
+                    if (i == j)
+                    {
+                        bool3 rotEquals = soKnot.Rotation.Equals(knot.Rotation);
+                        bool same = Vector3.Distance(soKnot.Position,knot.Position)< 0.01 && rotEquals is { x: true, y: true, z: true } &&
+                            Vector3.Distance(soKnot.TangentIn,knot.TangentIn)< 0.01 && Vector3.Distance(soKnot.TangentOut,knot.TangentOut)< 0.01;
+
+                        if (!same)
+                        {
+                            dirty = false;
+                        }
+                    }
+                    j++;
+                }
+                i++;
+            }
+        }
+        else
+        {
+            dirty = true;
+        }
+
+        if (dirty)
+        {
+            Debug.Log("<color=red>Local spline changes detected. Need to save to TunnelSettings?</color>");
+        }
+       
         
         if(this == null)
         {
@@ -988,6 +1029,13 @@ public partial class TunnelGenerator : MonoBehaviour
         Spline.Evaluate(1, out float3 position, out float3 tangent, out float3 upVector);
         lastTunnelPoint = position;
         lastTunnelRotation = Quaternion.LookRotation(tangent, upVector);
+    }
+    
+    public void GetLocalStartData(out Vector3 localTunnelStart, out Quaternion localTunnelRotation)
+    {
+        SplineUtility.Evaluate(Spline.Spline, 0, out float3 position, out float3 tangent, out float3 upVector);
+        localTunnelStart = position;
+        localTunnelRotation = Quaternion.LookRotation(tangent, upVector);
     }
 
     [Button("Save Spline")][UsedImplicitly]
