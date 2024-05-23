@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/ArtTestWalkthrough.unity
     guid: 0af4ea11e64854d5881e16c6e9eda8b9
   - enabled: 1
+    path: Assets/Scenes/S0_TheRuins.unity
+    guid: 1c57f988145174772961380a62aac026
+  - enabled: 1
     path: Assets/Scenes/S1_TheMines.unity
     guid: 1efa6e595e5d549e9ad2b3fc9cbc0e30
   - enabled: 1
