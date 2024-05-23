@@ -18,15 +18,31 @@ public class SGFlip : SubGenerator
         FlipWorldPosX = 32,
         FlipLocalRotation = 64,
         InvertScaleXOnFlip = 128,
-        InvertScaleYOnFlip = 256
+        InvertScaleYOnFlip = 256,
+        InvertScaleX = 512,
+        InvertScaleY = 1024
     }
     
     //default flip mode. Works for most things
     public FlipMode FlipFlags = FlipMode.FlipLocalPosX | FlipMode.FlipLocalRotation;
     
-      protected bool Flip(FlipMode flipMode)
+    protected bool Flip(FlipMode flipMode)
     {
-        return DefaultPosFlip(flipMode) || DefaultSpriteFlip(flipMode);
+        bool flipped = DefaultPosFlip(flipMode) || DefaultSpriteFlip(flipMode);
+        Transform trans = transform;
+        if (flipMode.HasFlag(FlipMode.InvertScaleX))
+        {
+            trans.localScale = trans.localScale.WithX(-trans.localScale.x);
+            flipped = true;
+        }
+        
+        if (flipMode.HasFlag(FlipMode.InvertScaleY))
+        {
+            trans.localScale = trans.localScale.WithY(-trans.localScale.y);
+            flipped = true;
+        }
+
+        return flipped;
     }
 
     [Button("Test")][UsedImplicitly]
@@ -46,7 +62,7 @@ public class SGFlip : SubGenerator
 
             if (flipMode.HasFlag(FlipMode.InvertScaleXOnFlip))
             {
-                trans.localScale = trans.localScale.WithY(-trans.localScale.y);
+                trans.localScale = trans.localScale.WithX(-trans.localScale.x);
             }
             performed++;
         }
@@ -56,7 +72,7 @@ public class SGFlip : SubGenerator
             trans.localPosition = trans.localPosition.FlipY();
             if (flipMode.HasFlag(FlipMode.InvertScaleYOnFlip))
             {
-                trans.localScale = trans.localScale.WithX(-trans.localScale.x);
+                trans.localScale = trans.localScale.WithY(-trans.localScale.y);
             }
             performed++;
         }
@@ -66,7 +82,7 @@ public class SGFlip : SubGenerator
             trans.localPosition = trans.position - trans.localPosition.x00();
             if (flipMode.HasFlag(FlipMode.InvertScaleXOnFlip))
             {
-                trans.localScale = trans.localScale.WithY(-trans.localScale.y);
+                trans.localScale = trans.localScale.WithX(-trans.localScale.x);
             }
             performed++;
         }
@@ -76,14 +92,14 @@ public class SGFlip : SubGenerator
             trans.localPosition = trans.position - trans.localPosition.y00();
             if (flipMode.HasFlag(FlipMode.InvertScaleYOnFlip))
             {
-                trans.localScale = trans.localScale.WithX(-trans.localScale.x);
+                trans.localScale = trans.localScale.WithY(-trans.localScale.y);
             }
             performed++;
         }
 
         if (flipMode.HasFlag(FlipMode.FlipLocalRotation))
         {
-            trans.rotation = Quaternion.Inverse(trans.rotation);
+            trans.localRotation = Quaternion.Inverse(trans.localRotation);
         }
         
         return performed != 0;

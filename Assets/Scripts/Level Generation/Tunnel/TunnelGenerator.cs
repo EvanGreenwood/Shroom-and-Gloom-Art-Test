@@ -248,9 +248,10 @@ public partial class TunnelGenerator : MonoBehaviour
     public float GetTunnelWidth(float t)
     {
         //Get width
+        //Debug.Log(t);
         float proximityToMiddle = Mathf.Abs(0.5f - t) * _tunnelLength;
 
-        float clearingM = Mathf.Clamp01(ClearingDepth - proximityToMiddle) / ClearingDepth;
+        float clearingM = Mathf.Clamp01((ClearingDepth - proximityToMiddle) / ClearingDepth);
         return BaseTunnelWidth + (1 + Mathf.Sin(t * _tunnelLength * 0.66f)) / 2f * LumpyWidth + clearingM * ClearingWidth;
     }
 
@@ -536,7 +537,6 @@ public partial class TunnelGenerator : MonoBehaviour
             Transform elementParent = SpawnContainer(wallData.Name, wallParent);
 
             int index;
-            float distanceGenerated = wallData.ZOffset;
 
             GenerateWalls(TunnelSide.Left);
             GenerateWalls(TunnelSide.Right);
@@ -562,9 +562,11 @@ public partial class TunnelGenerator : MonoBehaviour
                     GetTunnelPositionAndDirection(distanceM, out Vector3 currentPosition, out Vector3 currentDirection,
                                                   out Quaternion currentRotation, out Vector3 up, out perpendicular);
                     // 
-                    Vector3 spawnPos = currentPosition + perpendicular * (sign * (GetTunnelWidth(distanceGenerated / _tunnelLength) + wallData.Width));
+                    float width = GetTunnelWidth(distanceM);
+                    Vector3 spawnPos = currentPosition + perpendicular * (sign * (width + wallData.Width));
                     SpriteRenderer wall = SpawnTunnelElement(wallData.WallPrefabs.ChooseRandom(), spawnPos, currentRotation, currentDirection, flip, distanceM);
                     elementParent.TakeChild(wall);
+                    //Debug.Log("WIDTH:" + width);
 
                     index = (index + wallData.VerticalLoopIncrement) % (wallData.VerticalLoopLength + 1);
                     float indexM = index / (float)wallData.VerticalLoopLength;

@@ -46,7 +46,7 @@ MonoBehaviour:
   BaseTunnelWidth: 2
   LumpyWidth: 1
   ClearingWidth: 2.7
-  ClearingDepth: 3
+  ClearingDepth: 10
   Particles: {fileID: 2402285776899386762, guid: 8e61f67cd760b423db14eb998271668d, type: 3}
   ParticleSpawnDistance: 1
   WallElements: []
@@ -140,77 +140,59 @@ MonoBehaviour:
             z: 0
             w: 1
       - Position:
-          x: 2.54
-          y: 0.92
-          z: 12
+          x: 8.51
+          y: -2.87
+          z: 15.21
         TangentIn:
           x: 0
           y: 0
-          z: -8.218664
+          z: -11.705241
         TangentOut:
           x: 0
           y: 0
-          z: 8.218664
+          z: 2.82898
         Rotation:
           value:
-            x: 0.1003536
-            y: -0.06754966
-            z: -0.019111775
-            w: 0.9924721
+            x: -0.009596362
+            y: 0.49910823
+            z: -0.05761233
+            w: 0.8645691
       - Position:
-          x: -15.58
-          y: -9.85
-          z: 26
+          x: 19.8
+          y: -2.85
+          z: 17.35
         TangentIn:
           x: 0
           y: 0
-          z: -8.218664
+          z: -4.6620417
         TangentOut:
           x: 0
           y: 0
-          z: 4.1093297
+          z: 4.6620417
         Rotation:
           value:
-            x: 0.098544516
-            y: -0.0701625
-            z: 0.006965447
-            w: 0.9926317
+            x: 0.039955303
+            y: 0.7672425
+            z: 0.035176698
+            w: 0.639144
       - Position:
-          x: -27
-          y: -12.3
-          z: 38
-        TangentIn:
-          x: 0.000000029802322
-          y: -0.00000012293458
-          z: -3.1633604
-        TangentOut:
-          x: -0.000000029802322
-          y: 0.00000012293458
-          z: 3.1633604
-        Rotation:
-          value:
-            x: 0.12868921
-            y: -0.09162503
-            z: 0.0069288993
-            w: 0.98741883
-      - Position:
-          x: -16.9
-          y: -21.2
-          z: 56.4
+          x: 28.02
+          y: -6.64
+          z: 8.34
         TangentIn:
           x: 0
           y: 0
-          z: -12.61824
+          z: -4.801687
         TangentOut:
           x: 0
           y: 0
-          z: 8.218664
+          z: 4.801687
         Rotation:
           value:
-            x: 0.070330806
-            y: 0.5264172
-            z: -0.06781585
-            w: 0.8445943
+            x: 4.6079734e-10
+            y: 0.9893165
+            z: 6.7902094e-11
+            w: 0.14578353
       m_MetaData: []
       m_Closed: 0
       m_IntData:

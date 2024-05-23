@@ -126,7 +126,7 @@ public class SplineVolumeManager : MonoService
         float normTime = Mathf.Clamp01(_currentTransitionTime / transitionInTime);
         _currentSettings.FogDistance = Mathf.Lerp(_lastVolume.Settings.FogDistance, _targetVolume.Settings.FogDistance, normTime);
         _currentSettings.FogColor = Color.Lerp(_lastVolume.Settings.FogColor, _targetVolume.Settings.FogColor, normTime);
-        
+        _currentSettings.BackgroundColor = Color.Lerp(_lastVolume.Settings.BackgroundColor, _targetVolume.Settings.BackgroundColor, normTime);
         //_oldVolume.weight = 1f - normTime;
         //_newVolume.weight = normTime;
     }
@@ -141,10 +141,10 @@ public class SplineVolumeManager : MonoService
         Shader.SetGlobalFloat("FogStart", _currentSettings.FogStart);
         Shader.SetGlobalFloat("FogDistance", _currentSettings.FogDistance);
 
-        /*Camera cam = GetActiveCamera();
+        Camera cam = GetActiveCamera();
         if (cam)
         {
-            cam.backgroundColor = _currentSettings.FogColor;
-        }*/
+            cam.backgroundColor = _currentSettings.BackgroundColor;
+        }
     }
 }

@@ -279,26 +279,26 @@ MonoBehaviour:
     overrideState: 0
     value: 1
   signalTweakOn:
-    overrideState: 0
-    value: 0
+    overrideState: 1
+    value: 1
   signalAdjustY:
-    overrideState: 0
+    overrideState: 1
     value: 0
   signalAdjustI:
-    overrideState: 0
+    overrideState: 1
     value: 0
   signalAdjustQ:
-    overrideState: 0
+    overrideState: 1
     value: 0
   signalShiftY:
-    overrideState: 0
-    value: 1
+    overrideState: 1
+    value: 0.51
   signalShiftI:
-    overrideState: 0
-    value: 1
+    overrideState: 1
+    value: 1.53
   signalShiftQ:
-    overrideState: 0
-    value: 1
+    overrideState: 1
+    value: 0.63
   feedbackOn:
     overrideState: 0
     value: 0
@@ -460,7 +460,7 @@ MonoBehaviour:
     value: 0
   saturation:
     overrideState: 1
-    value: -19
+    value: -68
   brightness:
     overrideState: 0
     value: 0

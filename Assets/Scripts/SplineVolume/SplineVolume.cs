@@ -15,6 +15,7 @@ public partial class SplineVolume : ScriptableEnum
         public Color FogColor = Color.black;
         public float FogStart = 1.5f;
         public float FogDistance = 30;
+        public Color BackgroundColor;
     
         //[Header("Shadows")]
         //[SerializeField] private Color _shadowsColor = Color.blue;

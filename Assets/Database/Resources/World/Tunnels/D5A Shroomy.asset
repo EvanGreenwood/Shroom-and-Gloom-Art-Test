@@ -95,6 +95,22 @@ MonoBehaviour:
     RandomRotation: 22.5
     RandomFlipY: 1
     RandomFlipX: 0
+  - Name: Glow Fronds
+    Disabled: 0
+    SurroundPrefabs:
+    - {fileID: 717079983591251126, guid: 6b7d4311d337e40b797a56b457ade2bb, type: 3}
+    ZOffset: 0.3
+    Spacing: 3
+    RadiusOffset: 2.5
+    CenterHeight: 1.7
+    Pattern: 2
+    AngleRange:
+      _min: 35
+      _max: 325
+    AngleIncrement: 22.5
+    RandomRotation: 22.5
+    RandomFlipY: 1
+    RandomFlipX: 0
   FloorElements:
   - Name: Floor
     Disabled: 0
@@ -144,17 +160,17 @@ MonoBehaviour:
             z: 0
             w: 1
       - Position:
-          x: 2.54
-          y: 0.92
-          z: 12
+          x: 1.166
+          y: 0.301
+          z: 7.138
         TangentIn:
-          x: 0
-          y: 0
-          z: -8.218664
+          x: 0.66363573
+          y: -0.47650027
+          z: -3.5131092
         TangentOut:
-          x: 0
-          y: 0
-          z: 8.218664
+          x: 0.13862967
+          y: -2.4841526
+          z: 8.720419
         Rotation:
           value:
             x: 0.1003536
@@ -162,53 +178,53 @@ MonoBehaviour:
             z: -0.019111775
             w: 0.9924721
       - Position:
-          x: 15.7
-          y: -9.9
-          z: 26
+          x: 5.26
+          y: -5.21
+          z: 18
         TangentIn:
-          x: -2.9145012
-          y: 0.08505583
-          z: -7.8153267
+          x: -1.6569657
+          y: 0.048722267
+          z: -4.172347
         TangentOut:
-          x: 0
-          y: 0
-          z: 4.1093297
+          x: 0.55134773
+          y: -0.017221928
+          z: 4.172347
         Rotation:
           value:
-            x: 0.098544516
-            y: -0.0701625
-            z: 0.006965447
-            w: 0.9926317
+            x: 0.10087199
+            y: 0.10805863
+            z: 0.024663286
+            w: 0.98870623
       - Position:
-          x: 23.8
-          y: -12.3
-          z: 43.6
+          x: 16.91
+          y: -6.72
+          z: 35.4
         TangentIn:
-          x: 0.000000029802322
-          y: -0.00000012293458
-          z: -3.1633604
+          x: 0
+          y: 0
+          z: -4.011168
         TangentOut:
-          x: 0.70152664
-          y: 1.3046379
-          z: 8.043373
+          x: 0
+          y: 0
+          z: 4.011168
         Rotation:
           value:
-            x: 0.12868921
-            y: -0.09162503
-            z: 0.0069288993
-            w: 0.98741883
+            x: 0.08144699
+            y: 0.0016418304
+            z: 0.010730138
+            w: 0.99661857
       - Position:
-          x: 39.5
-          y: -21.2
-          z: 61.2
+          x: 22.94
+          y: -14.9
+          z: 47.89
         TangentIn:
-          x: 0
-          y: 0
-          z: -12.61824
+          x: -0.0006542206
+          y: -0.0018224716
+          z: -5.424591
         TangentOut:
           x: 0
           y: 0
-          z: 8.218664
+          z: 0
         Rotation:
           value:
             x: 0.08505979

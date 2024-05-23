@@ -15,7 +15,7 @@ public class SGRandomRotation : SubGenerator
   public override void Generate()
   {
     //reset then rotate
-    transform.rotation = quaternion.identity;
+    //transform.rotation = Quaternion.identity;
     Rotate();
   }
 
