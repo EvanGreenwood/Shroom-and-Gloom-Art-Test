@@ -302,7 +302,17 @@ MonoBehaviour:
             y: 0.34950674
             z: 0
             w: -0.9369338
-      m_MetaData: []
+      m_MetaData:
+      - Mode: 0
+        Tension: 0
+      - Mode: 0
+        Tension: 0
+      - Mode: 0
+        Tension: 0
+      - Mode: 0
+        Tension: 0
+      - Mode: 0
+        Tension: 0
       m_Closed: 0
       m_IntData:
         m_Data: []
