@@ -256,9 +256,9 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0, g: 1, b: 0.14202738, a: 1}
-  m_Intensity: 2
-  m_Range: 10
+  m_Color: {r: 0.29196337, g: 0.764151, b: 0.35862514, a: 1}
+  m_Intensity: 1
+  m_Range: 10.91
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -319,8 +319,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d77ea2419d289074baeb7ad431b36265, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _color: {r: 0, g: 1, b: 0.14202738, a: 1}
-  _flareAlpha: 3
+  _color: {r: 0.44045925, g: 0.9245283, b: 0.5087984, a: 1}
+  _flareAlpha: 0.48
 --- !u!1 &1928337429457619569
 GameObject:
   m_ObjectHideFlags: 0

@@ -49,7 +49,37 @@ MonoBehaviour:
   ClearingDepth: 4
   Particles: {fileID: 2402285776899386762, guid: 8e61f67cd760b423db14eb998271668d, type: 3}
   ParticleSpawnDistance: 4
-  WallElements: []
+  WallElements:
+  - Name: wall spikes
+    Disabled: 0
+    WallPrefabs:
+    - {fileID: 717079983591251126, guid: 27bacbf4aeb5d44ac9799a0cc6ead2d1, type: 3}
+    - {fileID: 717079983591251126, guid: eb304f83198d44625be12cd2c1e54164, type: 3}
+    - {fileID: 717079983591251126, guid: 18274c28eec394e51bf119e0f5dcccba, type: 3}
+    - {fileID: 717079983591251126, guid: 46a67771cfb8f4303905beb97ff79355, type: 3}
+    - {fileID: 717079983591251126, guid: a7e03495bb5ff4272a7651af7a029a03, type: 3}
+    - {fileID: 717079983591251126, guid: 46a67771cfb8f4303905beb97ff79355, type: 3}
+    - {fileID: 717079983591251126, guid: ae2402116713349269ef279680b4b0e0, type: 3}
+    - {fileID: 717079983591251126, guid: 1e1cd682bc70840f496f379f701bbbf2, type: 3}
+    - {fileID: 717079983591251126, guid: 5ed6d792c22cc47668aed863a6db01a8, type: 3}
+    - {fileID: 717079983591251126, guid: 4a384414610284064b5d675f55a09c66, type: 3}
+    - {fileID: 717079983591251126, guid: 0e7499d4e7bc84f359fc4525db7054d9, type: 3}
+    ZOffset: 0
+    Spacing: 5.51
+    Width: 1
+    HeightOffset:
+      _min: 0
+      _max: 0
+    VerticalLoopLength: 0
+    VerticalLoopIncrement: 0
+    MinMaxAngle:
+      _min: 0
+      _max: 0
+    MinMaxPosition:
+      _min: 0
+      _max: 0
+    RandomRotation: 0
+    RandomFlipY: 0
   FlatWallPrefab: {fileID: 0}
   FlatWallSpacing: 1
   FlatWallOffset: 1
@@ -89,6 +119,31 @@ MonoBehaviour:
       _min: -0.05
       _max: 0.05
     RandomFlipX: 1
+  - Name: floor stuff
+    Disabled: 0
+    FloorPrefabs:
+    - {fileID: 717079983591251126, guid: 434590aba23b14fb4a0bf28f668e251e, type: 3}
+    - {fileID: 717079983591251126, guid: 42941959cb6b14f2cbd6612b9596cc4b, type: 3}
+    - {fileID: 717079983591251126, guid: 968320cd9182248ab96b606efa728089, type: 3}
+    - {fileID: 717079983591251126, guid: d017fd4ed379c423f8bed15ccc56dcaf, type: 3}
+    - {fileID: 717079983591251126, guid: f8584c1d3d0a44edab1fba2023f9b334, type: 3}
+    - {fileID: 717079983591251126, guid: 2a3afa4b6b50e47469d04b6092baf26b, type: 3}
+    - {fileID: 717079983591251126, guid: fe351638a0ce2414b858167381062a55, type: 3}
+    - {fileID: 717079983591251126, guid: 4f63fe734c92240b0946cd183817ece5, type: 3}
+    - {fileID: 717079983591251126, guid: 2e2ae7f8d17dd447f8c5967cfdb61235, type: 3}
+    - {fileID: 717079983591251126, guid: 0c189e1f5f1224ba6ae09a6d5f6573c8, type: 3}
+    - {fileID: 717079983591251126, guid: 16841725ae5df4bae8cca748b0a3e4d9, type: 3}
+    ZOffset: 0
+    Spacing: 2.15
+    RandomXPosition: 4.46
+    MinMaxAngle:
+      _min: -1
+      _max: 1
+    XRotation: 0
+    MinMaxPosition:
+      _min: -0.75
+      _max: -0.1
+    RandomFlipX: 1
   FlatFloorPrefab: {fileID: 0}
   FlatFloorSpacing: 1
   FlatFloorOffset: -1
@@ -106,7 +161,7 @@ MonoBehaviour:
     - {fileID: 717079983591251126, guid: 5ed6d792c22cc47668aed863a6db01a8, type: 3}
     - {fileID: 717079983591251126, guid: 4a384414610284064b5d675f55a09c66, type: 3}
     - {fileID: 717079983591251126, guid: 0e7499d4e7bc84f359fc4525db7054d9, type: 3}
-    Height: 3.7
+    Height: 4
     ZOffset: 0
     Spacing: 0.5
     RandomXPosition: 2
