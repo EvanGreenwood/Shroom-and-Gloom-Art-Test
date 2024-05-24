@@ -34614,7 +34614,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: a8415ec8776fa0e48a957fb378a61f0b, type: 3}
-  m_Color: {r: 0.8396226, g: 0.37624598, b: 0.46249583, a: 0.03}
+  m_Color: {r: 0.8392157, g: 0.63243204, b: 0.3764706, a: 0.01}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -34783,7 +34783,7 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.8396226, g: 0.37624598, b: 0.46249583, a: 1}
+  m_Color: {r: 0.8392157, g: 0.63243204, b: 0.3764706, a: 1}
   m_Intensity: 1
   m_Range: 5
   m_SpotAngle: 30
@@ -34846,7 +34846,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d77ea2419d289074baeb7ad431b36265, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _color: {r: 0.8396226, g: 0.37624598, b: 0.46249583, a: 1}
+  _color: {r: 0.8392157, g: 0.63243204, b: 0.3764706, a: 1}
   _flareAlpha: 1
 --- !u!1 &6019114338630060925
 GameObject:

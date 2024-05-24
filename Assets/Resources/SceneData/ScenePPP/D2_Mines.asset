@@ -55,7 +55,7 @@ MonoBehaviour:
     value: {x: 0.5, y: 0.5}
   intensity:
     overrideState: 1
-    value: 0.219
+    value: 0.28
   smoothness:
     overrideState: 1
     value: 1
@@ -84,7 +84,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a63c99b3ed38a41f39e4d2bc6c00dfba, type: 3}
   m_Name: VHSPro
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   enabled:
     overrideState: 1
     value: 1
@@ -190,7 +190,7 @@ MonoBehaviour:
     value: 0
   bleedAmount:
     overrideState: 1
-    value: 0.25
+    value: 0.1
   noiseResGlobal:
     overrideState: 0
     value: 1
@@ -279,25 +279,25 @@ MonoBehaviour:
     overrideState: 0
     value: 1
   signalTweakOn:
-    overrideState: 1
-    value: 1
+    overrideState: 0
+    value: 0
   signalAdjustY:
-    overrideState: 1
+    overrideState: 0
     value: 0
   signalAdjustI:
-    overrideState: 1
+    overrideState: 0
     value: 0
   signalAdjustQ:
-    overrideState: 1
+    overrideState: 0
     value: 0
   signalShiftY:
-    overrideState: 1
+    overrideState: 0
     value: 0.51
   signalShiftI:
-    overrideState: 1
+    overrideState: 0
     value: 1.53
   signalShiftQ:
-    overrideState: 1
+    overrideState: 0
     value: 0.63
   feedbackOn:
     overrideState: 0
@@ -447,8 +447,8 @@ MonoBehaviour:
     overrideState: 0
     value: 1
   temperature:
-    overrideState: 1
-    value: 16
+    overrideState: 0
+    value: 0
   tint:
     overrideState: 0
     value: 0
@@ -459,17 +459,17 @@ MonoBehaviour:
     overrideState: 0
     value: 0
   saturation:
-    overrideState: 1
-    value: -68
+    overrideState: 0
+    value: 0
   brightness:
     overrideState: 0
     value: 0
   postExposure:
-    overrideState: 1
+    overrideState: 0
     value: 1
   contrast:
-    overrideState: 1
-    value: 20
+    overrideState: 0
+    value: 0
   mixerRedOutRedIn:
     overrideState: 0
     value: 100
@@ -1744,7 +1744,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3f6f3f7c722b4544b97e3c75840aa33, type: 3}
   m_Name: AutoExposure
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   enabled:
     overrideState: 1
     value: 1
