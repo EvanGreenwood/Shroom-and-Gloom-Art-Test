@@ -84,19 +84,19 @@ MonoBehaviour:
     - {fileID: 717079983591251126, guid: 2842b594d699f4a63b85a14c2c1039b7, type: 3}
     - {fileID: 717079983591251126, guid: 2a3afa4b6b50e47469d04b6092baf26b, type: 3}
     ZOffset: 0
-    Spacing: 1
-    Width: 0.5
+    Spacing: 2.17
+    Width: 1.44
     HeightOffset:
-      _min: 0.1
-      _max: 0.1
+      _min: -0.59
+      _max: 0
     VerticalLoopLength: 8
     VerticalLoopIncrement: 2
     MinMaxAngle:
-      _min: -2.05
-      _max: 2.13
+      _min: 0
+      _max: 0
     MinMaxPosition:
-      _min: -1
-      _max: 1
+      _min: -2.97
+      _max: 1.96
     RandomRotation: 0
     RandomFlipY: 0
   - Name: Rocks base
@@ -106,9 +106,23 @@ MonoBehaviour:
     - {fileID: 717079983591251126, guid: 3f32d0a184728724682dd65b9791dd96, type: 3}
     - {fileID: 717079983591251126, guid: 424e1344612e50945b8f0a0656bf0812, type: 3}
     - {fileID: 717079983591251126, guid: 281b97e065f0cf04c8d24be50977924e, type: 3}
+    - {fileID: 717079983591251126, guid: 9a845421d7bcf4d2292a89db828a9780, type: 3}
+    - {fileID: 717079983591251126, guid: 338f7fd068f524ce9b86e6ce6888a35f, type: 3}
+    - {fileID: 717079983591251126, guid: 7c2b0e51a35a94259bade9c68c8d7c9d, type: 3}
+    - {fileID: 717079983591251126, guid: 42941959cb6b14f2cbd6612b9596cc4b, type: 3}
+    - {fileID: 717079983591251126, guid: 47f2835de3c4442b4b388a1f7316be3d, type: 3}
+    - {fileID: 717079983591251126, guid: 8b7eed37fce284675962cbd7c2ce5d93, type: 3}
+    - {fileID: 717079983591251126, guid: 968320cd9182248ab96b606efa728089, type: 3}
+    - {fileID: 717079983591251126, guid: f4c4d0ae815604ef6896f4ce4bc65db1, type: 3}
+    - {fileID: 717079983591251126, guid: ccbf98e1c2011443291cfc1d8667eff5, type: 3}
+    - {fileID: 717079983591251126, guid: f879ac3ca7dc0413c973bda5e1922755, type: 3}
+    - {fileID: 717079983591251126, guid: f3a2eea9e21964631b89664c8b6a30d4, type: 3}
+    - {fileID: 717079983591251126, guid: f9dadf3f5274d410db7f45b9b86a0020, type: 3}
+    - {fileID: 717079983591251126, guid: d017fd4ed379c423f8bed15ccc56dcaf, type: 3}
+    - {fileID: 717079983591251126, guid: f8584c1d3d0a44edab1fba2023f9b334, type: 3}
     ZOffset: 0
-    Spacing: 1.1
-    Width: 2
+    Spacing: 2
+    Width: 1.5
     HeightOffset:
       _min: 0
       _max: 0.1
@@ -121,7 +135,7 @@ MonoBehaviour:
       _min: -1
       _max: 0
     RandomRotation: 4
-    RandomFlipY: 1
+    RandomFlipY: 0
   FlatWallPrefab: {fileID: 0}
   FlatWallSpacing: 1
   FlatWallOffset: 1
@@ -152,21 +166,24 @@ MonoBehaviour:
     - {fileID: 717079983591251126, guid: 27bacbf4aeb5d44ac9799a0cc6ead2d1, type: 3}
     - {fileID: 717079983591251126, guid: 0e7499d4e7bc84f359fc4525db7054d9, type: 3}
     - {fileID: 717079983591251126, guid: 18274c28eec394e51bf119e0f5dcccba, type: 3}
+    - {fileID: 717079983591251126, guid: a7e03495bb5ff4272a7651af7a029a03, type: 3}
+    - {fileID: 717079983591251126, guid: 46a67771cfb8f4303905beb97ff79355, type: 3}
+    - {fileID: 717079983591251126, guid: ae2402116713349269ef279680b4b0e0, type: 3}
     - {fileID: 717079983591251126, guid: eb304f83198d44625be12cd2c1e54164, type: 3}
-    - {fileID: 717079983591251126, guid: eb304f83198d44625be12cd2c1e54164, type: 3}
-    - {fileID: 717079983591251126, guid: eb304f83198d44625be12cd2c1e54164, type: 3}
-    - {fileID: 717079983591251126, guid: eb304f83198d44625be12cd2c1e54164, type: 3}
-    Height: 4
+    - {fileID: 717079983591251126, guid: 1e1cd682bc70840f496f379f701bbbf2, type: 3}
+    - {fileID: 717079983591251126, guid: 5ed6d792c22cc47668aed863a6db01a8, type: 3}
+    - {fileID: 717079983591251126, guid: 4a384414610284064b5d675f55a09c66, type: 3}
+    Height: 4.2
     ZOffset: 0.02
-    Spacing: 0.57
-    RandomXPosition: 4
+    Spacing: 1
+    RandomXPosition: 3
     MinMaxAngle:
       _min: 0
-      _max: 0.5
+      _max: 0
     XRotation: 0
     MinMaxPosition:
       _min: -0.03
-      _max: 0.7
+      _max: 1
     RandomFlipX: 0
   - Name: Ceiling
     Disabled: 0

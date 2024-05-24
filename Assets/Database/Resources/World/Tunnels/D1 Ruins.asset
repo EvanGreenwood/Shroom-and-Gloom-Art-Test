@@ -15,18 +15,18 @@ MonoBehaviour:
   _guid: 9278d73a8c93c4d8da665d5d471ec094
   ColorGradient:
     serializedVersion: 2
-    key0: {r: 0.33962262, g: 0.33962262, b: 0.33962262, a: 1}
+    key0: {r: 0.26723406, g: 0.3584906, b: 0.2012282, a: 1}
     key1: {r: 0.46804386, g: 0.62352943, b: 0.32156864, a: 1}
     key2: {r: 0.63290936, g: 0.6792453, b: 0.2979708, a: 0}
     key3: {r: 0.6509434, g: 0.59396946, b: 0.38995194, a: 0}
-    key4: {r: 0.6320754, g: 0.6320754, b: 0.6320754, a: 0}
+    key4: {r: 0.764151, g: 0.6477641, b: 0.56590426, a: 0}
     key5: {r: 0.5137255, g: 0.5992844, b: 0.7372549, a: 0}
     key6: {r: 0.6747628, g: 0.7433963, b: 0.5091563, a: 0}
     key7: {r: 0.39958468, g: 0.8773585, b: 0.36832502, a: 0}
     ctime0: 0
     ctime1: 18930
     ctime2: 36328
-    ctime3: 49850
+    ctime3: 53585
     ctime4: 65535
     ctime5: 49344
     ctime6: 57054
@@ -159,21 +159,22 @@ MonoBehaviour:
       _min: -0.05
       _max: 0.05
     RandomFlipX: 1
-  - Name: LUMPS
+  - Name: Burrows
     Disabled: 0
     FloorPrefabs:
-    - {fileID: 717079983591251126, guid: 7dfa9a70717977449804ed7615425c73, type: 3}
-    - {fileID: 717079983591251126, guid: 7dfa9a70717977449804ed7615425c73, type: 3}
-    ZOffset: 0.08
-    Spacing: 0.5
-    RandomXPosition: 0.5
+    - {fileID: 717079983591251126, guid: 434590aba23b14fb4a0bf28f668e251e, type: 3}
+    - {fileID: 717079983591251126, guid: 4f63fe734c92240b0946cd183817ece5, type: 3}
+    - {fileID: 717079983591251126, guid: 16841725ae5df4bae8cca748b0a3e4d9, type: 3}
+    ZOffset: 1
+    Spacing: 1.58
+    RandomXPosition: 10.9
     MinMaxAngle:
       _min: -1
-      _max: 1
+      _max: -0.5
     XRotation: 0
     MinMaxPosition:
-      _min: -0.05
-      _max: 0.05
+      _min: -2.47
+      _max: 3
     RandomFlipX: 1
   FlatFloorPrefab: {fileID: 0}
   FlatFloorSpacing: 1
