@@ -33,7 +33,8 @@ public class RenderingManager : MonoService
     public List<DoorMaskEnabledCamera> ActiveCameras = new List<DoorMaskEnabledCamera>();
 
     public static readonly int MaskThresholdIndex = Shader.PropertyToID("_MaskThresholdIndex");
-    
+    private static readonly int UseDoorMasking = Shader.PropertyToID("_UseDoorMasking");
+
     public void AddDoorMask(Renderer renderer, int maskValue)
     {
         DoorMaskRenderers.Add(new DoorMaskData(renderer, maskValue));
@@ -81,6 +82,7 @@ public class RenderingManager : MonoService
     
     private void LateUpdate()
     {
+        Shader.SetGlobalInt(UseDoorMasking, 0);
         List<Camera> activeCameras = new (Camera.allCameras);
         
         #if UNITY_EDITOR

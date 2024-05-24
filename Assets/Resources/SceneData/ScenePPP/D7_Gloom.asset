@@ -190,7 +190,7 @@ MonoBehaviour:
     value: 0
   bleedAmount:
     overrideState: 1
-    value: 0.25
+    value: 0.1
   noiseResGlobal:
     overrideState: 0
     value: 1

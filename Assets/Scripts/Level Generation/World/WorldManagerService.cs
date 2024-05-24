@@ -114,7 +114,7 @@ public class WorldManagerService : MonoService
             TunnelGenerator tunnelInstance = Instantiate(TunnelPrefab, pathRoot.transform);
             tunnelInstance.TunnelIndex = tunnelIndex;
             
-            Debug.Log($"Setting tunnel index for {settings.name}:{tunnelInstance.TunnelIndex}");
+            Debug.Log($"Setting tunnel index for {settings.name}: {tunnelInstance.TunnelIndex}");
             
             tunnelInstance.transform.position = Vector3.zero;
             tunnelInstance.transform.rotation = Quaternion.identity;
@@ -223,11 +223,11 @@ public class WorldManagerService : MonoService
         {
             (WorldMapSettings.LevelPath pathToCreate, TunnelGenerator parentTunnel, TunnelJoin parentJoin,
                 WorldMapSettings.LevelPath parentPath) = newPathStartData[i];
-
-            tunnelIndex++;
+            
             yield return GeneratePath(pathToCreate, tunnelIndex, parentTunnel, parentJoin, 
                 parentPath,branchIndex>i+1?branchIndex:i+1, 
                 totalBranches>branchCount?totalBranches:branchCount);
+            tunnelIndex++;
         }
 
         foreach (TunnelGenerator tunnel in _tunnels)

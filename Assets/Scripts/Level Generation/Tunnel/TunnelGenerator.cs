@@ -1086,7 +1086,7 @@ public partial class TunnelGenerator : MonoBehaviour
                 EditorUtility.SetDirty(Spline);
                 PrefabUtility.RecordPrefabInstancePropertyModifications(gameObject);
                 #endif
-                Debug.Log($"Loaded spline data from {GenerationSettings.name}");
+                //Debug.Log($"Loaded spline data from {GenerationSettings.name}");
                 
                 Generate();
             }

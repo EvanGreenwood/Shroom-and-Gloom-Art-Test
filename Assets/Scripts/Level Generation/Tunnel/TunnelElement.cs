@@ -20,6 +20,7 @@ public class TunnelElement : MonoBehaviour
     SpriteRenderer[] _childRenderers;
     bool _hasInit;
 
+    public TunnelContext Context => _context;
     TunnelContext _context;
     List<SubGenerator> _generators = new List<SubGenerator>();
     public SpriteRenderer spriteRenderer => _spriteRenderer;

@@ -25,6 +25,14 @@ public class Door : MonoBehaviour, IPointerClickHandler
     
     public void SetSpriteColors(Color color)
     {
+        if (_baseDoorColors.Count == 0)
+        {
+            _baseDoorColors.Clear();
+            foreach (SpriteRenderer sr in _toColor)
+            {
+                _baseDoorColors.Add(sr.color);
+            }
+        }
         Debug.Assert(_toColor.Count == _baseDoorColors.Count);
         for (int i = 0; i < _toColor.Count; i++)
         {
@@ -46,12 +54,6 @@ public class Door : MonoBehaviour, IPointerClickHandler
 
     public void Start()
     {
-        _baseDoorColors.Clear();
-        foreach (SpriteRenderer sr in _toColor)
-        {
-            _baseDoorColors.Add(sr.color);
-        }
-        
         DoorMask.gameObject.SetActive(false);
     }
 

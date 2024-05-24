@@ -13,6 +13,7 @@ public class DoorMaskEnabledCamera : MonoBehaviour
     private CommandBuffer _commandBuffer;
     private RenderingManager _renderingManager;
     private static readonly int MaskRef = Shader.PropertyToID("_MaskRef");
+    private static readonly int UseDoorMasking = Shader.PropertyToID("_UseDoorMasking");
 
     private void Awake()
     {
@@ -37,7 +38,17 @@ public class DoorMaskEnabledCamera : MonoBehaviour
     {
         RefreshDoorMaskCommandBuffer();
     }
+
+    public void OnPreRender()
+    {
+        Shader.SetGlobalInt(UseDoorMasking, 1);
+    }
     
+    public void OnPostRender()
+    {
+        Shader.SetGlobalInt(UseDoorMasking, 0);
+    }
+
     void RefreshDoorMaskCommandBuffer()
     {
         if (_renderingManager == null)
