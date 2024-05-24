@@ -376,11 +376,11 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 7b70203f6d3c7445da63188c6fea918a, type: 2}
     - target: {fileID: 5105326567580743529, guid: 07bdc291a2e6240aea52dba01d6ae79e, type: 3}
       propertyPath: m_Range.x
-      value: 0.1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5105326567580743529, guid: 07bdc291a2e6240aea52dba01d6ae79e, type: 3}
       propertyPath: m_Range.y
-      value: 0.9
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5105326567580743529, guid: 07bdc291a2e6240aea52dba01d6ae79e, type: 3}
       propertyPath: m_Container
