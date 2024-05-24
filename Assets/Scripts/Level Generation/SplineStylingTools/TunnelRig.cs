@@ -3,9 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using MathBad;
 using NaughtyAttributes;
-using System;
 using Unity.Mathematics;
-using Unity.VisualScripting;
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
@@ -133,9 +131,9 @@ public class TunnelRig : MonoBehaviour
 
         _tunnelLights.Add(tunnelLight);
         _root.TakeChild(tunnelLight);
-
+#if UNITY_EDITOR
         Selection.activeGameObject = tunnelLight.gameObject;
-
+#endif
         return tunnelLight;
     }
     

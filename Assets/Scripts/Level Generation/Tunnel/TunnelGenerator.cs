@@ -357,6 +357,7 @@ public partial class TunnelGenerator : MonoBehaviour
     Transform SpawnContainer(string parentName)
     {
         Transform root = GetGenerationRoot();
+        #if UNITY_EDITOR
         if (PrefabUtility.IsPartOfAnyPrefab(root))
         {
             root = new GameObject($"{generatedTunnelTag} - {parentName}").transform;
@@ -372,6 +373,7 @@ public partial class TunnelGenerator : MonoBehaviour
             
             root.SetParent(transform.parent);
         }
+        #endif
         
         return SpawnContainer(parentName, root);
     }

@@ -117,6 +117,7 @@ public class TunnelJoin : MonoBehaviour
 
     private void OnDrawGizmos()
     {
+        #if UNITY_EDITOR
         if (_totalTunnelCount == -1)
         {
             return;
@@ -130,5 +131,6 @@ public class TunnelJoin : MonoBehaviour
         {
             Handles.Label(transform.position, $"{_totalTunnelCount} Doors");
         }
+        #endif
     }
 }

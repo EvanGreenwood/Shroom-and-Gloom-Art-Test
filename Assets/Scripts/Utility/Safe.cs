@@ -40,9 +40,11 @@ namespace Ross.EditorRuntimeCombatibility
 
                         private static void EditorUpdate()
                         {
+#if UNITY_EDITOR
                                 float currentTime = (float)EditorApplication.timeSinceStartup;
                                 _editorDt = Mathf.Max(0, currentTime - _editorLastTime);
                                 _editorLastTime = currentTime;
+#endif
                         }
 
                         public static float deltaTime

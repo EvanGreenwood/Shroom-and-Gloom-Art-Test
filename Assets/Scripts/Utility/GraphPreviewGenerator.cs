@@ -5,17 +5,30 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using System.Threading.Tasks;
-#if UNITY_EDITOR
-using Unity.EditorCoroutines.Editor;
-using Unity.VisualScripting;
-using UnityEditor;
-#endif
 using UnityEngine;
 using UnityEngine.Networking;
 
-public class GraphPreviewGenerator
+#if UNITY_EDITOR
+using Unity.EditorCoroutines.Editor;
+#endif
+
+public static class GraphPreviewGenerator
 {
-    public static void RequestGraphAsync(Action<bool, string, Texture2D> onComplete, string graphName, List<(string, string)> connections, List<(string, List<(string, string)>)> subStates = null)
+    private static string CreateMermaidLiveUrl(string mermaidCode)
+    {
+        byte[] mermaidBytes = Encoding.UTF8.GetBytes(mermaidCode);
+        string base64Encoded = Convert.ToBase64String(mermaidBytes);
+
+        return "https://mermaid.ink/img/" + base64Encoded + "?bgColor=383838";
+    }
+
+    public static string GetPath(string graphName)
+    {
+        return Path.Combine(Path.Combine(Application.temporaryCachePath, "GraphPreviews"), graphName + ".png");
+    }
+    
+    public static void RequestGraphAsync(Action<bool, string, Texture2D> onComplete, 
+                                         string graphName, List<(string, string)> connections, List<(string, List<(string, string)>)> subStates = null)
     {
         StringBuilder codeBuilder = new("%%{init: {'theme':'dark'}}%%\nstateDiagram-v2\n");
         //codeBuilder.Append($"    direction LR\n");
@@ -95,49 +108,35 @@ public class GraphPreviewGenerator
             {
                 Debug.LogError("Error showing graph");
             }
-            
-            #endif
-            
+
             onComplete?.Invoke(false, string.Empty, null);
         }
 
-        async Task<Texture2D> GetRemoteTexture(string url)
+        async Task<Texture2D> GetRemoteTexture(string uarel)
         {
-            using (UnityWebRequest www = UnityWebRequestTexture.GetTexture(url))
+            using UnityWebRequest www = UnityWebRequestTexture.GetTexture(uarel);
+
+            // begin request:
+            UnityWebRequestAsyncOperation asyncOp = www.SendWebRequest();
+
+            // await until it's done: 
+            while (asyncOp.isDone == false)
             {
-                // begin request:
-                UnityWebRequestAsyncOperation asyncOp = www.SendWebRequest();
-
-                // await until it's done: 
-                while (asyncOp.isDone == false)
-                {
-                    await Task.Delay(1000 / 30); //30 hertz
-                }
-
-                // read results:
-                if (www.result != UnityWebRequest.Result.Success)
-                {
-                    Debug.Log($"{www.error}, URL:{www.url}");
-
-                    return null;
-                }
-
-                // return valid results:
-                return DownloadHandlerTexture.GetContent(www);
+                await Task.Delay(1000 / 30); //30 hertz
             }
+
+            // read results:
+            if (www.result != UnityWebRequest.Result.Success)
+            {
+                Debug.Log($"{www.error}, URL:{www.url}");
+
+                return null;
+            }
+
+            // return valid results:
+            return DownloadHandlerTexture.GetContent(www);
         }
-    }
-    
-    public static string CreateMermaidLiveUrl(string mermaidCode)
-    {
-        byte[] mermaidBytes = Encoding.UTF8.GetBytes(mermaidCode);
-        string base64Encoded = Convert.ToBase64String(mermaidBytes);
-
-        return "https://mermaid.ink/img/" + base64Encoded + "?bgColor=383838";
-    }
-
-    public static string GetPath(string graphName)
-    {
-        return Path.Combine(Path.Combine(Application.temporaryCachePath, "GraphPreviews"), graphName + ".png");
+        
+        #endif
     }
 }
