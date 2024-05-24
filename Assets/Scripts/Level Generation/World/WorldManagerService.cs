@@ -23,6 +23,8 @@ public class WorldManagerService : MonoService
     private List<TunnelGenerator> _tunnels;
     private List<TunnelJoin> _joins;
 
+    public List<TunnelGenerator> tunnels => _tunnels;
+
     public void Generate(Action onComplete)
     {
         if (SingleTunnelTestMode)

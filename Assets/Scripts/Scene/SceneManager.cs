@@ -9,8 +9,7 @@ public class SceneManager : MonoService
 
     private Service<WorldManagerService> _worldManager;
     private Service<SceneManager> _sceneController; //TODO: move into game manager directly.
-    
-    
+
     [SerializeField] float _sceneIntroLeadDelay = 1f;
     [SerializeField] float _sceneIntroFadeTime = 2f;
     [SerializeField] Music _music;
@@ -20,6 +19,9 @@ public class SceneManager : MonoService
     public SceneData Data { get; private set; }
 
     private Service<Player> _player;
+    public delegate void SceneHandler();
+    public event SceneHandler onSceneLoaded;
+    protected virtual void OnSceneLoaded() {onSceneLoaded?.Invoke();}
 
     private void Awake()
     {
@@ -28,22 +30,23 @@ public class SceneManager : MonoService
 
     private void Start()
     {
-        if (_worldManager.Exists && !_worldManager.Value.SingleTunnelTestMode)
+        if(_worldManager.Exists && !_worldManager.Value.SingleTunnelTestMode)
         {
             _worldManager.Value.Generate(() =>
             {
                 Instantiate(PlayerPrefab, Vector3.zero, Quaternion.identity);
                 BeginIntro();
+                OnSceneLoaded();
             });
         }
         else
         {
             Hero hero = FindObjectOfType<Hero>();
-            if (!hero)
+            if(!hero)
             {
                 Instantiate(PlayerPrefab, Vector3.zero, Quaternion.identity);
             }
-         
+
             BeginIntro();
         }
     }
@@ -52,19 +55,19 @@ public class SceneManager : MonoService
     {
         _loadingCamera.gameObject.SetActive(false);
         _loadingCanvas.gameObject.SetActive(false);
-        
+
         Debug.Assert(_player.Exists);
-        
+
         Data.sceneIntro.Play();
         _music.Init(Data.sceneMusic);
-        
+
         SceneTransition.inst.Transition(() =>
-            {
-                _player.Value.CanMove = true;
-                _music.Play();
-            },
-            _sceneIntroLeadDelay, false, false, _sceneIntroFadeTime,
-            Data.title, Data.description,
-            Data.titleColor);
+                                        {
+                                            _player.Value.CanMove = true;
+                                            _music.Play();
+                                        },
+                                        _sceneIntroLeadDelay, false, false, _sceneIntroFadeTime,
+                                        Data.title, Data.description,
+                                        Data.titleColor);
     }
 }
