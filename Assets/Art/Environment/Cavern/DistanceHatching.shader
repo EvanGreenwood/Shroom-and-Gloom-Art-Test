@@ -55,6 +55,7 @@ Shader "Hatching"
 
 		ENDCG
 	}
+
 	CustomEditor "ASEMaterialInspector"
 }
 /*ASEBEGIN

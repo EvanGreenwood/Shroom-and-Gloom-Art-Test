@@ -13,6 +13,7 @@ Material:
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
   - _USEFOG_ON
+  - _USEIFDOORMASK_ON
   m_InvalidKeywords:
   - _EMISSIONWAVEBASEDONTUNNEL_ON
   - _ISSCENEVIEW_ON
@@ -87,7 +88,9 @@ Material:
     - _ScreenSpaceScale: 24
     - _Shininess: 0.1
     - _TunnelDistance: 0
+    - _TunnelIndex: 0
     - _UseFog: 1
+    - _UseIfDoorMask: 1
     - _UseMatcap: 1
     - _XScaleScreenSpace: 2
     - _YScaleScreenSpace: 90

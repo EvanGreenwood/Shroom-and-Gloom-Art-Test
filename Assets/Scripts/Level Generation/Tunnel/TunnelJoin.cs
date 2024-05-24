@@ -13,8 +13,28 @@ public class TunnelJoin : MonoBehaviour
     [Space]
     public Transform DoorParentBranch;
     public Transform DoorParentThranch; //Dont tell me how to live my life
-    
-    public TunnelGenerator InTunnel { get; set; }
+
+    private TunnelGenerator _inTunnel;
+    public TunnelGenerator InInTunnel
+    {
+        get
+        {
+            return _inTunnel;
+        }
+        set
+        {
+            _inTunnel = value;
+            List<Door> doors = new List<Door>(DoorParentLinear.GetComponentsInChildren<Door>());
+            doors.AddRange(DoorParentBranch.GetComponentsInChildren<Door>());
+            doors.AddRange(DoorParentThranch.GetComponentsInChildren<Door>());
+
+            foreach (Door door in doors)
+            {
+                door.SetSpriteColors(_inTunnel.ColorGradient.Evaluate(1));
+            }
+        }
+    }
+
     public List<TunnelGenerator> OutTunnels { get; set; }
 
     private int _totalTunnelCount = -1;
@@ -39,6 +59,8 @@ public class TunnelJoin : MonoBehaviour
             DoorParentThranch.gameObject.SetActive(false);
             DoorParentLinear.gameObject.SetActive(true);
             
+            Door linearDoor = DoorParentLinear.GetChild(0).GetComponent<Door>();
+            linearDoor.MaskingTunnel = tunnelInstance;
             position = DoorParentLinear.GetChild(0).position;
             rotation = DoorParentLinear.GetChild(0).rotation;
         }
@@ -50,11 +72,15 @@ public class TunnelJoin : MonoBehaviour
             
            if(OutTunnels.Count == 1)
            {
+               Door branchDoor1 = DoorParentBranch.GetChild(0).GetComponent<Door>();
+               branchDoor1.MaskingTunnel = tunnelInstance;
                position = DoorParentBranch.GetChild(0).position;
                rotation = DoorParentBranch.GetChild(0).rotation;
            }
            else //if(OutTunnels.Count == 2)
            { 
+               Door branchDoor2 = DoorParentBranch.GetChild(1).GetComponent<Door>();
+               branchDoor2.MaskingTunnel = tunnelInstance;
                position = DoorParentBranch.GetChild(1).position;
                rotation = DoorParentBranch.GetChild(1).rotation;
            }
@@ -67,16 +93,22 @@ public class TunnelJoin : MonoBehaviour
             
             if(OutTunnels.Count == 1)
             {
+                Door thranchDoor1 = DoorParentThranch.GetChild(0).GetComponent<Door>();
+                thranchDoor1.MaskingTunnel = tunnelInstance;
                 position = DoorParentThranch.GetChild(0).position;
                 rotation = DoorParentThranch.GetChild(0).rotation;
             }
             else if(OutTunnels.Count == 2)
             { 
+                Door thranchDoor2 = DoorParentThranch.GetChild(1).GetComponent<Door>();
+                thranchDoor2.MaskingTunnel = tunnelInstance;
                 position = DoorParentThranch.GetChild(1).position;
                 rotation = DoorParentThranch.GetChild(1).rotation;
             }
             else //if(OutTunnels.Count == 2)
             { 
+                Door thranchDoor3 = DoorParentThranch.GetChild(2).GetComponent<Door>();
+                thranchDoor3.MaskingTunnel = tunnelInstance;
                 position = DoorParentThranch.GetChild(2).position;
                 rotation = DoorParentThranch.GetChild(2).rotation;
             }

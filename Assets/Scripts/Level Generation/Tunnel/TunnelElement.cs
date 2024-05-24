@@ -5,6 +5,7 @@ using System.Collections.Generic;
 
 public class TunnelContext
 {
+    public int TunnelIndex;
     public float DistanceElementIsAt;
     public float TunnelLength;
 }
@@ -19,6 +20,7 @@ public class TunnelElement : MonoBehaviour
     SpriteRenderer[] _childRenderers;
     bool _hasInit;
 
+    public TunnelContext Context => _context;
     TunnelContext _context;
     List<SubGenerator> _generators = new List<SubGenerator>();
     public SpriteRenderer spriteRenderer => _spriteRenderer;
@@ -56,6 +58,7 @@ public class TunnelElement : MonoBehaviour
         MaterialPropertyBlock block = new MaterialPropertyBlock();
         sr.GetPropertyBlock(block);
         block.SetFloat("_TunnelDistance", _context.DistanceElementIsAt);
+        block.SetInt("_TunnelIndex", _context.TunnelIndex);
         sr.SetPropertyBlock(block);
     }
 

@@ -38,7 +38,9 @@ public partial class TunnelGenerator : MonoBehaviour
         Hidden,
         VisibleAndSave //Careful, you want to save generated elements in the scene?
     }
-    
+
+    public int TunnelIndex { get; set; }
+
     private const string generatedTunnelTag = "GeneratedTunnelData";
     
     public bool UseSOData = true;
@@ -46,6 +48,8 @@ public partial class TunnelGenerator : MonoBehaviour
     public TunnelSettings GenerationSettings;
 
     public PostProcessVolume TunnelVolume;
+
+    private Transform _generationRoot;
     
     [Space]
     [Tooltip("Default: dont save, rely on regeneration. " +
@@ -251,11 +255,29 @@ public partial class TunnelGenerator : MonoBehaviour
         return BaseTunnelWidth + (1 + Mathf.Sin(t * _tunnelLength * 0.66f)) / 2f * LumpyWidth + clearingM * ClearingWidth;
     }
 
+    Transform GetGenerationRoot()
+    {
+        #if UNITY_EDITOR
+        if (!Application.isPlaying)
+        {
+            if (PrefabUtility.IsPartOfAnyPrefab(transform))
+            {
+                if (_generationRoot == null || _generationRoot == transform)
+                {
+                    _generationRoot = new GameObject($"{GenerationSettings.name} Generated Data").transform;
+                }
+            }
+        }
+        #endif
+        return transform;
+    }
+
     // Spawn Tunnel Element
     //----------------------------------------------------------------------------------------------------
     SpriteRenderer SpawnTunnelElement(SpriteRenderer prefab, Vector3 position, Quaternion rotation, Vector3 forward, bool tryFlipSubGenerators, float normalizedDistance)
     {
-        SpriteRenderer sprite = Instantiate(prefab, position, rotation, transform);
+        
+        SpriteRenderer sprite = Instantiate(prefab, position, rotation, GetGenerationRoot());
         if(EditMode != EditorHideMode.VisibleAndSave)
         {
             sprite.gameObject.hideFlags = HideFlags.DontSaveInEditor | HideFlags.DontSave;
@@ -275,6 +297,7 @@ public partial class TunnelGenerator : MonoBehaviour
 
         TunnelContext context = new TunnelContext()
                                 {
+                                    TunnelIndex = TunnelIndex,
                                     DistanceElementIsAt = normalizedDistance * _tunnelLength,
                                     TunnelLength = _tunnelLength
                                 };
@@ -315,7 +338,7 @@ public partial class TunnelGenerator : MonoBehaviour
 
     ParticleSystem SpawnParticleSystem(ParticleSystem system, Vector3 position, Quaternion rotation)
     {
-        ParticleSystem element = Instantiate(system, position, rotation, transform);
+        ParticleSystem element = Instantiate(system, position, rotation, GetGenerationRoot());
         if(EditMode != EditorHideMode.VisibleAndSave)
         {
             element.gameObject.hideFlags = HideFlags.DontSaveInEditor | HideFlags.DontSave;
@@ -332,7 +355,7 @@ public partial class TunnelGenerator : MonoBehaviour
 
     Transform SpawnContainer(string parentName)
     {
-        Transform root = transform;
+        Transform root = GetGenerationRoot();
         if (PrefabUtility.IsPartOfAnyPrefab(root))
         {
             root = new GameObject($"{generatedTunnelTag} - {parentName}").transform;
@@ -949,8 +972,8 @@ public partial class TunnelGenerator : MonoBehaviour
         //Determine context.Should run this if we are outside a broader level.
         if (!InWorldContext)
         {
-            //This is causing errors on recompilation.
-            _onValidateRoutine = EditorCoroutineUtility.StartCoroutine(OnValidateRoutine(), this);
+            // Slowing down editor and causing errors. Just call Generated manually by pressing button.
+            //_onValidateRoutine = EditorCoroutineUtility.StartCoroutine(OnValidateRoutine(), this);
         }
     }
 
@@ -1063,7 +1086,7 @@ public partial class TunnelGenerator : MonoBehaviour
                 EditorUtility.SetDirty(Spline);
                 PrefabUtility.RecordPrefabInstancePropertyModifications(gameObject);
                 #endif
-                Debug.Log($"Loaded spline data from {GenerationSettings.name}");
+                //Debug.Log($"Loaded spline data from {GenerationSettings.name}");
                 
                 Generate();
             }
