@@ -24,4 +24,4 @@ MonoBehaviour:
     Intensity: 1
     BaseColor: {r: 1, g: 0.37877145, b: 0, a: 1}
     ColorBleedingSaturation: 0
-    TransitionInTime: 5
+    TransitionInTime: 3
