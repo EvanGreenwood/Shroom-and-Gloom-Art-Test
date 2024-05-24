@@ -1209,6 +1209,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Animation: {fileID: 4496129567019361612}
   DoorMask: {fileID: 7152761601898982796}
+  Friends: []
   EntryWaypoint: {fileID: 3666536399953758977}
   ExitWaypoint: {fileID: 1229277391027750117}
   _toColor:

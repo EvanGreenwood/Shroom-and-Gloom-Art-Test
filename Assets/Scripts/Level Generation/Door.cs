@@ -9,7 +9,10 @@ public class Door : MonoBehaviour, IPointerClickHandler
 {
     public Animator Animation;
     private static readonly int Open = Animator.StringToHash("Open");
+    private static readonly int Close = Animator.StringToHash("Close");
     public DoorMask DoorMask;
+
+    public Door[] Friends;
     
     public Transform EntryWaypoint;
     public Transform ExitWaypoint;
@@ -86,9 +89,30 @@ public class Door : MonoBehaviour, IPointerClickHandler
         Gizmos.color = c;
     }
 
+    private bool _opened;
     public void OnPointerClick(PointerEventData eventData)
     {
+        if (_opened)
+        {
+            return;
+        }
+        _opened = true;
+        
         DoorMask.gameObject.SetActive(true);
+
+        Animation.ResetTrigger(Close);
         Animation.SetTrigger(Open);
+
+        foreach (Door friend in Friends)
+        {
+            friend.AskToClose();
+        }
+    }
+
+    public void AskToClose()
+    {
+        _opened = false;
+        Animation.ResetTrigger(Open);
+        Animation.SetTrigger(Close);
     }
 }
