@@ -8,6 +8,7 @@
 #region Usings
 using System;
 using Framework;
+using FrameworkWIP;
 using JetBrains.Annotations;
 using MathBad;
 using NaughtyAttributes;
@@ -516,11 +517,45 @@ public partial class TunnelGenerator : MonoBehaviour
        if (TunnelVolume != null && UseSOData)
        {
            TunnelVolume.profile = GenerationSettings.SplineVolume.Settings.PostProcessingProfile;
+           TunnelVolume.weight = 0;
+           TunnelVolume.transform.SetParent(null);
        }
 
         if (Application.isPlaying)
         {
             Mesh.GenerateMesh();
+        }
+    }
+
+    public void OnTunnelExit()
+    {
+        StartCoroutine(FadeOut());
+        IEnumerator FadeOut()
+        {
+            float total = 2;
+            float t = total;
+            while (t > 0)
+            {
+                TunnelVolume.weight = Mathf.Min( TunnelVolume.weight, t / total);
+                yield return null;
+                t -= Time.deltaTime;
+            }
+        }
+    }
+    
+    public void OnTunnelEnter()
+    {
+        StartCoroutine(FadeIn());
+        IEnumerator FadeIn()
+        {
+            float t = 0;
+            float total = 2;
+            while (t < total)
+            {
+                TunnelVolume.weight = Mathf.Max( TunnelVolume.weight, t / total);
+                yield return null;
+                t += Time.deltaTime;
+            }
         }
     }
 

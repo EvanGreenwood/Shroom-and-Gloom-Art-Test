@@ -282,8 +282,14 @@ public class WorldManagerService : MonoService
         return false;
     }
 
+    private TunnelGenerator _active;
     public void CullForTunnel(TunnelGenerator active)
     {
+        if (_active != null && _active != active)
+        {
+            _active.OnTunnelExit();
+        }
+        _active = active;
         foreach (TunnelGenerator tunnel in _tunnels)
         {
             bool isActive = active == tunnel || active.BackJoin != null && tunnel == active.BackJoin.InInTunnel;
@@ -308,6 +314,7 @@ public class WorldManagerService : MonoService
             
             tunnel.gameObject.SetActive(isActive);
         }
+        _active.OnTunnelEnter();
     }
 
     public Vector3 GetDirectionAt(Vector3 worldPos, float lookaheadDst)
