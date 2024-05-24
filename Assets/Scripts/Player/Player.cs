@@ -3,6 +3,8 @@ using UnityEngine;
 using MathBad;
 using System.Collections.Generic;
 using UnityEngine.Rendering.PostProcessing;
+using UnityEngine.Splines;
+
 #endregion
 
 public class Player : MonoService
@@ -24,6 +26,7 @@ public class Player : MonoService
     }
 
     private Service<WorldManagerService> _world;
+    private SplineContainer _overrideSpline;
 
     void Start()
     {
@@ -66,7 +69,14 @@ public class Player : MonoService
     {
         if(_fwdInput > 0)
         {
-            if(Tunnel.GetNormDistanceFromPoint(transform.position) > 0.99f)
+            if (_movement.HasOverrideSpline())
+            {
+                if (_movement.AtEndOfOverrideSpline())
+                {
+                    _movement.SetOverrideSpline(null);
+                }
+            }
+            else if(Tunnel.GetNormDistanceFromPoint(transform.position) > 0.99f)
             {
                 TunnelGenerator current = Tunnel;
                 if(_world.Value.TryGetTunnel(transform.position, out current, _tunnelStack.ToArray()))
@@ -95,5 +105,11 @@ public class Player : MonoService
     {
         _tunnelStack.Add(newTunnel);
         _movement.SetTunnel(Tunnel);
+    }
+
+    public void SetOverrideSpline(SplineContainer doorSpine)
+    {
+        _overrideSpline = doorSpine;
+        _movement.SetOverrideSpline(_overrideSpline);
     }
 }

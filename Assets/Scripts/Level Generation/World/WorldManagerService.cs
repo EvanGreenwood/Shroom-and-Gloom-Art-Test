@@ -116,7 +116,7 @@ public class WorldManagerService : MonoService
             TunnelGenerator tunnelInstance = Instantiate(TunnelPrefab, pathRoot.transform);
             tunnelInstance.TunnelIndex = tunnelIndex;
             
-            Debug.Log($"Setting tunnel index for {settings.name}: {tunnelInstance.TunnelIndex}");
+            //Debug.Log($"Setting tunnel index for {settings.name}: {tunnelInstance.TunnelIndex}");
             
             tunnelInstance.transform.position = Vector3.zero;
             tunnelInstance.transform.rotation = Quaternion.identity;

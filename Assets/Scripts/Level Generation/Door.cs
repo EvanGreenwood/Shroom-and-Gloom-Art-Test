@@ -1,9 +1,7 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.Splines;
 
 public class Door : MonoBehaviour, IPointerClickHandler
 {
@@ -14,8 +12,7 @@ public class Door : MonoBehaviour, IPointerClickHandler
 
     public Door[] Friends;
     
-    public Transform EntryWaypoint;
-    public Transform ExitWaypoint;
+    public SplineContainer DoorSpine;
 
     private TunnelGenerator _maskingTunnel;
     
@@ -81,11 +78,7 @@ public class Door : MonoBehaviour, IPointerClickHandler
         Gizmos.DrawLine(transform.position, transform.position+transform.forward*5);
         Gizmos.DrawLine(transform.position+transform.forward*5, transform.position+transform.forward*4 + -transform.right);
         Gizmos.DrawLine(transform.position+transform.forward*5, transform.position+transform.forward*4 + transform.right);
-
-        Gizmos.color = Color.blue;
-        float offset = 0.05f;
-        Gizmos.DrawLine(EntryWaypoint.transform.position + -transform.right * offset, ExitWaypoint.transform.position + -transform.right * offset);
-        Gizmos.DrawLine(EntryWaypoint.transform.position + transform.right * offset, ExitWaypoint.transform.position + transform.right * offset);
+        
         Gizmos.color = c;
     }
 
@@ -97,7 +90,8 @@ public class Door : MonoBehaviour, IPointerClickHandler
             return;
         }
         _opened = true;
-        
+
+        ServiceLocator.Get<Player>().SetOverrideSpline(DoorSpine);
         DoorMask.gameObject.SetActive(true);
 
         Animation.ResetTrigger(Close);
