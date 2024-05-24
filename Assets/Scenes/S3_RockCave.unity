@@ -438,75 +438,10 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1618399540182981667, guid: 3a18a561d72904fb188c7be7914fee2d, type: 3}
   m_PrefabInstance: {fileID: 468196393}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &840588626
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1758886926}
-    m_Modifications:
-    - target: {fileID: 4027642427086616131, guid: 92dce337d855559418d7863a57494c35, type: 3}
-      propertyPath: m_Name
-      value: RockCaveLighting
-      objectReference: {fileID: 0}
-    - target: {fileID: 7100617192313778322, guid: 92dce337d855559418d7863a57494c35, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7100617192313778322, guid: 92dce337d855559418d7863a57494c35, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7100617192313778322, guid: 92dce337d855559418d7863a57494c35, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7100617192313778322, guid: 92dce337d855559418d7863a57494c35, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7100617192313778322, guid: 92dce337d855559418d7863a57494c35, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7100617192313778322, guid: 92dce337d855559418d7863a57494c35, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7100617192313778322, guid: 92dce337d855559418d7863a57494c35, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7100617192313778322, guid: 92dce337d855559418d7863a57494c35, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7100617192313778322, guid: 92dce337d855559418d7863a57494c35, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7100617192313778322, guid: 92dce337d855559418d7863a57494c35, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8091508631448698378, guid: 92dce337d855559418d7863a57494c35, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -4.72
-      objectReference: {fileID: 0}
-    - target: {fileID: 8091508631448698378, guid: 92dce337d855559418d7863a57494c35, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.6
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 92dce337d855559418d7863a57494c35, type: 3}
---- !u!4 &840588627 stripped
+--- !u!4 &813410909 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7100617192313778322, guid: 92dce337d855559418d7863a57494c35, type: 3}
-  m_PrefabInstance: {fileID: 840588626}
+  m_PrefabInstance: {fileID: 1892801197}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &966788750
 PrefabInstance:
@@ -747,7 +682,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 468196394}
-  - {fileID: 840588627}
+  - {fileID: 813410909}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1758886927
@@ -769,6 +704,92 @@ MonoBehaviour:
   TunnelJoinPrefab: {fileID: 0}
   _areYouTakingCareOfYourself: 0
   _greatJobYouGotThis: 0
+--- !u!1001 &1892801197
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1758886926}
+    m_Modifications:
+    - target: {fileID: 1099692861966185156, guid: 92dce337d855559418d7863a57494c35, type: 3}
+      propertyPath: m_Range
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2063918812606570570, guid: 92dce337d855559418d7863a57494c35, type: 3}
+      propertyPath: m_Range
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2390286291410260088, guid: 92dce337d855559418d7863a57494c35, type: 3}
+      propertyPath: m_Range
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 2962422489805541234, guid: 92dce337d855559418d7863a57494c35, type: 3}
+      propertyPath: m_Range
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4027642427086616131, guid: 92dce337d855559418d7863a57494c35, type: 3}
+      propertyPath: m_Name
+      value: RockCaveLighting
+      objectReference: {fileID: 0}
+    - target: {fileID: 4255565880356644922, guid: 92dce337d855559418d7863a57494c35, type: 3}
+      propertyPath: _flareAlpha
+      value: 0.34
+      objectReference: {fileID: 0}
+    - target: {fileID: 4479479552829543081, guid: 92dce337d855559418d7863a57494c35, type: 3}
+      propertyPath: m_Range
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5932567940869197681, guid: 92dce337d855559418d7863a57494c35, type: 3}
+      propertyPath: m_Range
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7100617192313778322, guid: 92dce337d855559418d7863a57494c35, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7100617192313778322, guid: 92dce337d855559418d7863a57494c35, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7100617192313778322, guid: 92dce337d855559418d7863a57494c35, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7100617192313778322, guid: 92dce337d855559418d7863a57494c35, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7100617192313778322, guid: 92dce337d855559418d7863a57494c35, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7100617192313778322, guid: 92dce337d855559418d7863a57494c35, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7100617192313778322, guid: 92dce337d855559418d7863a57494c35, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7100617192313778322, guid: 92dce337d855559418d7863a57494c35, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7100617192313778322, guid: 92dce337d855559418d7863a57494c35, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7100617192313778322, guid: 92dce337d855559418d7863a57494c35, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects:
+    - {fileID: 6029773003026333703, guid: 92dce337d855559418d7863a57494c35, type: 3}
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 92dce337d855559418d7863a57494c35, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

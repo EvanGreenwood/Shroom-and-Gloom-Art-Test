@@ -90,28 +90,28 @@ MonoBehaviour:
     value: 1
   g_pixel:
     overrideState: 0
-    value: 1
+    value: 0
   g_color:
     overrideState: 0
-    value: 1
+    value: 0
   g_palette:
     overrideState: 0
     value: 1
   g_crt:
     overrideState: 0
-    value: 1
+    value: 0
   g_noise:
     overrideState: 0
-    value: 1
+    value: 0
   g_jitter:
     overrideState: 0
-    value: 1
+    value: 0
   g_signal:
     overrideState: 0
     value: 1
   g_feedback:
     overrideState: 0
-    value: 1
+    value: 0
   g_extra:
     overrideState: 0
     value: 0
@@ -460,16 +460,16 @@ MonoBehaviour:
     value: 0
   saturation:
     overrideState: 1
-    value: -19
+    value: 6
   brightness:
     overrideState: 0
     value: 0
   postExposure:
     overrideState: 1
-    value: 1
+    value: -0.2
   contrast:
     overrideState: 1
-    value: 20
+    value: 15
   mixerRedOutRedIn:
     overrideState: 0
     value: 100
