@@ -518,7 +518,11 @@ public partial class TunnelGenerator : MonoBehaviour
        {
            TunnelVolume.profile = GenerationSettings.SplineVolume.Settings.PostProcessingProfile;
            TunnelVolume.weight = 0;
-           TunnelVolume.transform.SetParent(null);
+
+           if (Application.isPlaying)
+           {
+               TunnelVolume.transform.SetParent(null);
+           }
        }
 
         if (Application.isPlaying)

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1400878947339728258}
   - component: {fileID: 717079983591251126}
   - component: {fileID: 3467065784027115342}
+  - component: {fileID: 8997118729083438806}
   m_Layer: 0
   m_Name: Spore Frond 1 Glowing
   m_TagString: Untagged
@@ -53,7 +54,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2fb9db9b28b72164981848a1a9166ea8, type: 2}
+  - {fileID: 2100000, guid: 30e16db51640dd44ca5d96b5d1712f06, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -100,3 +101,33 @@ MonoBehaviour:
   _speed: 1.4
   _amount: 3
   _offsetFrameYM: 0
+--- !u!114 &8997118729083438806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7873198937741219095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e0b62a04908b49b0b71406c4cb81f53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _scope: 1
+  _autoRenderers:
+  - {fileID: 717079983591251126}
+  _manualRenderers: []
+  _maskClipValue: 0.6
+  _normalMip: 2
+  _emissionColor: {r: 0, g: 0.6792453, b: 0.5087681, a: 0.9843137}
+  _emissionUsesTunnelWave: 0
+  _useFog: 0
+  _fogIntensity: 0.227
+  _replaceLineColor: 0
+  _lineReplaceRange: 0.3
+  _lineReplaceFuzziness: 0.3
+  _lineColorToReplace: {r: 0, g: 0, b: 0, a: 1}
+  _lineColorAfterReplace: {r: 0.041251317, g: 0.05118256, b: 0.08490565, a: 1}
+  _lineColorVsHSVBlend: 1
+  _lineHSVOffset: {x: 0, y: 0, z: -0.45}
+  _defaultsSet: 1

@@ -243,8 +243,8 @@ Node;AmplifyShaderEditor.VertexColorNode;411;-4496,-1040;Inherit;False;0;5;COLOR
 Node;AmplifyShaderEditor.CommentaryNode;52;-4256,-576;Inherit;False;1726.913;467.74;Applies fog based on camera depth;16;134;37;41;368;367;28;30;36;14;13;63;51;35;42;29;418;Apply Fog;1,1,1,1;0;0
 Node;AmplifyShaderEditor.RGBToHSVNode;410;-4272,-992;Inherit;False;1;0;FLOAT3;0,0,0;False;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3
 Node;AmplifyShaderEditor.CommentaryNode;50;-5040,-1712;Inherit;False;868;563;Comment;4;1;45;3;2;Tex And Vertex Color;1,1,1,1;0;0
-Node;AmplifyShaderEditor.RangedFloatNode;29;-4240,-256;Inherit;False;Global;FogStart;FogStart;2;0;Create;True;0;0;0;False;0;False;1.5;0;0;0;0;1;FLOAT;0
-Node;AmplifyShaderEditor.RangedFloatNode;28;-4240,-336;Inherit;False;Global;FogDistance;FogDistance;2;0;Create;True;0;0;0;False;0;False;20;0;0;0;0;1;FLOAT;0
+Node;AmplifyShaderEditor.RangedFloatNode;29;-4240,-256;Inherit;False;Global;FogStart;FogStart;2;0;Create;True;0;0;0;False;0;False;1.5;15;0;0;0;1;FLOAT;0
+Node;AmplifyShaderEditor.RangedFloatNode;28;-4240,-336;Inherit;False;Global;FogDistance;FogDistance;2;0;Create;True;0;0;0;False;0;False;20;50;0;0;0;1;FLOAT;0
 Node;AmplifyShaderEditor.RangedFloatNode;412;-3984,-1088;Inherit;False;Property;_LineHueOffset;LineHueOffset;15;0;Create;True;0;0;0;False;0;False;0;0;0;0;0;1;FLOAT;0
 Node;AmplifyShaderEditor.RangedFloatNode;419;-4000,-848;Inherit;False;Property;_LineSaturationOffset;LineSaturationOffset;16;0;Create;True;0;0;0;False;0;False;0;0;0;0;0;1;FLOAT;0
 Node;AmplifyShaderEditor.WireNode;423;-4016,-768;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0
@@ -272,7 +272,7 @@ Node;AmplifyShaderEditor.FunctionNode;388;-2624,-1216;Inherit;False;Replace Colo
 Node;AmplifyShaderEditor.OneMinusNode;42;-3232,-336;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.StaticSwitch;424;-2368,-1360;Inherit;False;Property;_ReplaceLineColor;ReplaceLineColor;19;0;Create;True;0;0;0;False;0;False;1;1;1;True;;Toggle;2;Key0;Key1;Create;True;True;All;9;1;COLOR;0,0,0,0;False;0;COLOR;0,0,0,0;False;2;COLOR;0,0,0,0;False;3;COLOR;0,0,0,0;False;4;COLOR;0,0,0,0;False;5;COLOR;0,0,0,0;False;6;COLOR;0,0,0,0;False;7;COLOR;0,0,0,0;False;8;COLOR;0,0,0,0;False;1;COLOR;0
 Node;AmplifyShaderEditor.FunctionNode;35;-3088,-336;Inherit;False;Square;-1;;104;fea980a1f68019543b2cd91d506986e8;0;1;2;FLOAT;0;False;1;FLOAT;0
-Node;AmplifyShaderEditor.ColorNode;14;-3984,-528;Inherit;False;Global;FogColor;FogColor;2;0;Create;True;0;0;0;False;0;False;0.1887822,0.1643645,0.509434,1;0,0,0,0;True;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
+Node;AmplifyShaderEditor.ColorNode;14;-3984,-528;Inherit;False;Global;FogColor;FogColor;2;0;Create;True;0;0;0;False;0;False;0.1887822,0.1643645,0.509434,1;0,0,0,1;True;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.RegisterLocalVarNode;415;-2032,-1216;Inherit;False;BaseColor;-1;True;1;0;COLOR;0,0,0,0;False;1;COLOR;0
 Node;AmplifyShaderEditor.OneMinusNode;51;-2944,-336;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.FunctionNode;36;-3648,-480;Inherit;False;Square;-1;;105;fea980a1f68019543b2cd91d506986e8;0;1;2;COLOR;0,0,0,0;False;1;COLOR;0
@@ -300,12 +300,12 @@ Node;AmplifyShaderEditor.IntNode;461;-2624,-2992;Inherit;False;Global;_UseDoorMa
 Node;AmplifyShaderEditor.RegisterLocalVarNode;350;-1424,-736;Inherit;False;Diffuse;-1;True;1;0;COLOR;0,0,0,0;False;1;COLOR;0
 Node;AmplifyShaderEditor.RangedFloatNode;306;-3760,-1760;Inherit;False;Property;_NormalMip;NormalMip;4;0;Create;True;0;0;0;False;0;False;0;2;0;9;0;1;FLOAT;0
 Node;AmplifyShaderEditor.ColorNode;376;-4704,-2464;Inherit;False;Property;_EmissionColor;EmissionColor;8;0;Create;True;0;0;0;False;0;False;0,0,0,0;0,1,0.7490196,1;True;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
-Node;AmplifyShaderEditor.SamplerNode;375;-4816,-2736;Inherit;True;Property;_Emission;Emission;7;0;Create;True;0;0;0;False;0;False;-1;None;None;True;0;False;black;Auto;False;Object;-1;Auto;Texture2D;8;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;6;FLOAT;0;False;7;SAMPLERSTATE;;False;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.RangedFloatNode;387;-4496,-3200;Inherit;False;Constant;_Float11;Float 11;17;0;Create;True;0;0;0;False;0;False;1;0;0;0;0;1;FLOAT;0
 Node;AmplifyShaderEditor.RangedFloatNode;425;-4528,-2832;Inherit;False;Property;_EmissionUsesTunnelWave;EmissionUsesTunnelWave;17;0;Create;True;0;0;0;False;0;False;0;1;0;0;0;1;FLOAT;0
 Node;AmplifyShaderEditor.ClampOpNode;385;-4400,-2976;Inherit;False;3;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;1;False;1;FLOAT;0
 Node;AmplifyShaderEditor.StaticSwitch;454;-2608,-3104;Inherit;False;Property;_UseIfDoorMask;Use If Door Mask;22;0;Create;True;0;0;0;False;0;False;0;1;1;True;;Toggle;2;Key0;Key1;Create;True;True;All;9;1;FLOAT;0;False;0;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;4;FLOAT;0;False;5;FLOAT;0;False;6;FLOAT;0;False;7;FLOAT;0;False;8;FLOAT;0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.OneMinusNode;463;-2384,-2992;Inherit;False;1;0;INT;0;False;1;INT;0
+Node;AmplifyShaderEditor.SamplerNode;375;-4816,-2736;Inherit;True;Property;_Emission;Emission;7;0;Create;True;0;0;0;False;0;False;-1;None;None;True;0;False;black;Auto;False;Object;-1;Auto;Texture2D;8;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;6;FLOAT;0;False;7;SAMPLERSTATE;;False;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.SamplerNode;178;-3424,-1872;Inherit;True;Property;_Normal;Normal;6;1;[Normal];Create;True;0;0;0;False;0;False;178;None;None;True;0;False;bump;Auto;True;Object;-1;MipLevel;Texture2D;8;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;6;FLOAT;0;False;7;SAMPLERSTATE;;False;5;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.SimpleMultiplyOpNode;377;-4480,-2736;Inherit;False;2;2;0;COLOR;0,0,0,0;False;1;COLOR;0,0,0,0;False;1;COLOR;0
 Node;AmplifyShaderEditor.LerpOp;426;-4176,-3104;Inherit;False;3;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;1;FLOAT;0
@@ -317,9 +317,9 @@ Node;AmplifyShaderEditor.NormalizeNode;374;-3120,-1824;Inherit;False;False;1;0;F
 Node;AmplifyShaderEditor.ClipNode;428;-2048,-3120;Inherit;False;3;0;COLOR;0,0,0,0;False;1;FLOAT;0;False;2;FLOAT;0;False;1;COLOR;0
 Node;AmplifyShaderEditor.CommentaryNode;173;-5232,208;Inherit;False;2228;819; Attempt to add some dynamisim to fog. Not good enough;29;156;158;160;152;162;163;164;165;155;157;159;151;128;130;129;62;136;61;138;64;140;65;171;137;142;172;135;170;169;Noisy Fog (needs work bad atm);1,1,1,1;0;0
 Node;AmplifyShaderEditor.RegisterLocalVarNode;45;-4656,-1456;Inherit;False;MainTexAlpha;-1;True;1;0;FLOAT;0;False;1;FLOAT;0
-Node;AmplifyShaderEditor.RegisterLocalVarNode;390;-4000,-2640;Inherit;False;Emission;-1;True;1;0;COLOR;0,0,0,0;False;1;COLOR;0
 Node;AmplifyShaderEditor.RegisterLocalVarNode;347;-3008,-1696;Inherit;False;NormalSample;-1;True;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0
 Node;AmplifyShaderEditor.RegisterLocalVarNode;458;-1872,-3120;Inherit;False;MaskedDiffuse;-1;True;1;0;COLOR;0,0,0,0;False;1;COLOR;0
+Node;AmplifyShaderEditor.RegisterLocalVarNode;390;-4000,-2640;Inherit;False;Emission;-1;True;1;0;COLOR;0,0,0,0;False;1;COLOR;0
 Node;AmplifyShaderEditor.RangedFloatNode;160;-5184,912;Inherit;False;Constant;_Float6;Float 0;2;0;Create;True;0;0;0;False;0;False;1;0;0;0;0;1;FLOAT;0
 Node;AmplifyShaderEditor.RangedFloatNode;165;-5184,832;Inherit;False;Constant;_Float10;Float 0;2;0;Create;True;0;0;0;False;0;False;0.2;0;0;0;0;1;FLOAT;0
 Node;AmplifyShaderEditor.RangedFloatNode;156;-5152,560;Inherit;False;Constant;_Float4;Float 0;2;0;Create;True;0;0;0;False;0;False;0.2;0;0;0;0;1;FLOAT;0
@@ -429,9 +429,9 @@ WireConnection;428;0;371;0
 WireConnection;428;1;462;0
 WireConnection;428;2;437;0
 WireConnection;45;0;1;4
-WireConnection;390;0;384;0
 WireConnection;347;0;374;0
 WireConnection;458;0;428;0
+WireConnection;390;0;384;0
 WireConnection;159;21;165;0
 WireConnection;159;20;160;0
 WireConnection;155;21;163;0
@@ -467,4 +467,4 @@ WireConnection;0;1;372;0
 WireConnection;0;2;391;0
 WireConnection;0;10;46;0
 ASEEND*/
-//CHKSM=E18468AFAA3015EA211953B9519937FD55BBCE5F
+//CHKSM=6B582D9398A116D1CEA1D8E2462A04FCD9DDC0AA

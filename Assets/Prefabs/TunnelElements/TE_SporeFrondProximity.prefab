@@ -68,6 +68,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 30e16db51640dd44ca5d96b5d1712f06, type: 2}
+    - target: {fileID: 5788288063153729517, guid: 4ae065efecdee4410a65eb42d0754d2f, type: 3}
+      propertyPath: ProximityRadius
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 7092329696028056695, guid: 4ae065efecdee4410a65eb42d0754d2f, type: 3}
       propertyPath: m_Name
       value: TE_SporeFrondProximity
