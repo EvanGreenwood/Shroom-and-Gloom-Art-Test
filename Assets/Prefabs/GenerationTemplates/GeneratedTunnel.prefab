@@ -371,6 +371,10 @@ PrefabInstance:
       value: TunnelVolume
       objectReference: {fileID: 0}
     - target: {fileID: 4673570920943119310, guid: 07bdc291a2e6240aea52dba01d6ae79e, type: 3}
+      propertyPath: blendDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4673570920943119310, guid: 07bdc291a2e6240aea52dba01d6ae79e, type: 3}
       propertyPath: sharedProfile
       value: 
       objectReference: {fileID: 11400000, guid: 7b70203f6d3c7445da63188c6fea918a, type: 2}
