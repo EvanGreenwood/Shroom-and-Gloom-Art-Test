@@ -10,9 +10,7 @@ public class Door : MonoBehaviour, IPointerClickHandler
     public Animator Animation;
     private static readonly int Open = Animator.StringToHash("Open");
     public DoorMask DoorMask;
-
     
-
     public Transform EntryWaypoint;
     public Transform ExitWaypoint;
 
@@ -21,7 +19,6 @@ public class Door : MonoBehaviour, IPointerClickHandler
     private List<Color> _baseDoorColors = new List<Color>();
     
     [SerializeField] private List<SpriteRenderer> _toColor;
-    
     
     public void SetSpriteColors(Color color)
     {

@@ -69,15 +69,15 @@ MonoBehaviour:
     Width: 1
     HeightOffset:
       _min: 0
-      _max: 0
-    VerticalLoopLength: 0
-    VerticalLoopIncrement: 0
+      _max: 0.1
+    VerticalLoopLength: 1
+    VerticalLoopIncrement: 1
     MinMaxAngle:
-      _min: 0
-      _max: 0
+      _min: -1
+      _max: 1
     MinMaxPosition:
-      _min: 0
-      _max: 0
+      _min: -0.1
+      _max: 0.1
     RandomRotation: 0
     RandomFlipY: 0
   FlatWallPrefab: {fileID: 0}
