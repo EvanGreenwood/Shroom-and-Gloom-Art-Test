@@ -300,19 +300,19 @@ MonoBehaviour:
     overrideState: 1
     value: 1
   feedbackOn:
-    overrideState: 1
-    value: 1
+    overrideState: 0
+    value: 0
   feedbackThresh:
-    overrideState: 1
+    overrideState: 0
     value: 1
   feedbackAmount:
-    overrideState: 1
+    overrideState: 0
     value: 2
   feedbackFade:
-    overrideState: 1
+    overrideState: 0
     value: 0.941
   feedbackColor:
-    overrideState: 1
+    overrideState: 0
     value: {r: 1, g: 0.5, b: 0, a: 1}
   feedbackDebugOn:
     overrideState: 0
