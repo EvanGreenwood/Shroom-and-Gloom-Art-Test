@@ -822,11 +822,11 @@ public partial class TunnelGenerator : MonoBehaviour
                 GetTunnelPositionAndDirection(distanceM, out Vector3 currentPosition, out Vector3 currentDirection, out Quaternion currentRotation, out Vector3 up, out perpendicular);
 
                 // 
-                Vector3 spawnPos = currentPosition + perpendicular * (RNG.FloatSign() * floorData.RandomXPosition);
+                Vector3 spawnPos = currentPosition + perpendicular * (RNG.FloatSign() * floorData.RandomXPosition) + perpendicular* floorData.MinMaxPosition.ChooseRandom() * (Random.Range(0,2)* 2 -1);
                 SpriteRenderer floor = SpawnTunnelElement(floorData.FloorPrefabs.ChooseRandom(), spawnPos, currentRotation, currentDirection, flip, distanceM);
                 elementParent.TakeChild(floor);
 
-                floor.transform.position += perpendicular * floorData.MinMaxPosition.ChooseRandom();
+                
                 floor.transform.Rotate(floorData.XRotation, 0, floorData.MinMaxAngle.ChooseRandom());
 
                 floor.color = ColorGradient.Evaluate(distanceM);
@@ -967,7 +967,7 @@ public partial class TunnelGenerator : MonoBehaviour
                 // 
                 Vector3 spawnPos = currentPosition + perpendicular * (RNG.FloatSign() * floorData.RandomXPosition);
 
-                Color particleColor = ColorGradient.Evaluate(distanceM);
+                Color particleColor = ColorGradient.Evaluate(distanceM +0.2f);
 
                 
                

@@ -10,26 +10,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 50d28d391025841c192a919a7297e73e, type: 3}
-  m_Name: D3 Rock
+  m_Name: D3 Rock Alternate
   m_EditorClassIdentifier: 
-  _guid: 7f9d805cfee874ffaaec5f739f82f890
+  _guid: 752b5244372ea4c43a3783ba72a41df0
   ColorGradient:
     serializedVersion: 2
     key0: {r: 0.9433962, g: 0.67153335, b: 0.6274475, a: 1}
     key1: {r: 0.8679245, g: 0.7480293, b: 0.36436453, a: 1}
-    key2: {r: 0.66847634, g: 0.6981132, b: 0.6750623, a: 0}
-    key3: {r: 0.6464489, g: 0.68285435, b: 0.6886792, a: 0}
-    key4: {r: 0.6415094, g: 0.6415094, b: 0.6415094, a: 0}
-    key5: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 0}
-    key6: {r: 0.6886792, g: 0.6835218, b: 0.6659398, a: 0}
+    key2: {r: 0.52420795, g: 0.7169812, b: 0.5739559, a: 0}
+    key3: {r: 0.63554645, g: 0.6641387, b: 0.6981132, a: 0}
+    key4: {r: 0.7203598, g: 0.6784888, b: 0.745283, a: 0}
+    key5: {r: 0.6886792, g: 0.6835218, b: 0.6659398, a: 0}
+    key6: {r: 0.6886792, g: 0.6634132, b: 0.65944284, a: 0}
     key7: {r: 0.6886792, g: 0.6634132, b: 0.65944284, a: 0}
     ctime0: 7171
-    ctime1: 17728
-    ctime2: 26343
-    ctime3: 33465
+    ctime1: 17131
+    ctime2: 24650
+    ctime3: 30825
     ctime4: 38644
-    ctime5: 43126
-    ctime6: 48753
+    ctime5: 50247
+    ctime6: 57966
     ctime7: 57966
     atime0: 0
     atime1: 65535
@@ -41,7 +41,7 @@ MonoBehaviour:
     atime7: 0
     m_Mode: 0
     m_ColorSpace: 0
-    m_NumColorKeys: 8
+    m_NumColorKeys: 7
     m_NumAlphaKeys: 2
   BaseTunnelWidth: 1
   LumpyWidth: 0.5
@@ -122,17 +122,10 @@ MonoBehaviour:
   - Name: floor stuff
     Disabled: 0
     FloorPrefabs:
-    - {fileID: 717079983591251126, guid: 434590aba23b14fb4a0bf28f668e251e, type: 3}
-    - {fileID: 717079983591251126, guid: 42941959cb6b14f2cbd6612b9596cc4b, type: 3}
-    - {fileID: 717079983591251126, guid: 968320cd9182248ab96b606efa728089, type: 3}
-    - {fileID: 717079983591251126, guid: d017fd4ed379c423f8bed15ccc56dcaf, type: 3}
-    - {fileID: 717079983591251126, guid: f8584c1d3d0a44edab1fba2023f9b334, type: 3}
     - {fileID: 717079983591251126, guid: 2a3afa4b6b50e47469d04b6092baf26b, type: 3}
     - {fileID: 717079983591251126, guid: fe351638a0ce2414b858167381062a55, type: 3}
-    - {fileID: 717079983591251126, guid: 4f63fe734c92240b0946cd183817ece5, type: 3}
     - {fileID: 717079983591251126, guid: 2e2ae7f8d17dd447f8c5967cfdb61235, type: 3}
     - {fileID: 717079983591251126, guid: 0c189e1f5f1224ba6ae09a6d5f6573c8, type: 3}
-    - {fileID: 717079983591251126, guid: 16841725ae5df4bae8cca748b0a3e4d9, type: 3}
     ZOffset: 0.11
     Spacing: 1
     RandomXPosition: 0.2
@@ -141,7 +134,7 @@ MonoBehaviour:
       _max: 1
     XRotation: 0
     MinMaxPosition:
-      _min: 1
+      _min: 1.5
       _max: 3
     RandomFlipX: 1
   FlatFloorPrefab: {fileID: 0}

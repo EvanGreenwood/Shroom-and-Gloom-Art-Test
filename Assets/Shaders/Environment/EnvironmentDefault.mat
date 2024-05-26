@@ -12,6 +12,7 @@ Material:
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
+  - _REPLACELINECOLOR_ON
   - _USEFOG_ON
   - _USEIFDOORMASK_ON
   m_InvalidKeywords:
@@ -71,12 +72,12 @@ Material:
     - _IsSceneView: 1
     - _LineColorBlend: 1
     - _LineColorHueBlend: 1
-    - _LineColorVsHSVBlend: 1
+    - _LineColorVsHSVBlend: 0.847
     - _LineHueOffset: 0
-    - _LineReplaceFuzziness: 0.3
-    - _LineReplaceRange: 0.3
-    - _LineSaturationOffset: 0
-    - _LineValueOffset: -0.45
+    - _LineReplaceFuzziness: 0.1
+    - _LineReplaceRange: 0.15
+    - _LineSaturationOffset: 0.35
+    - _LineValueOffset: -0.04
     - _Lit: 1
     - _NoiseDist: 0.4
     - _NoiseFrequency: 0.5
@@ -84,7 +85,7 @@ Material:
     - _NoisyFog: 0
     - _NormalMip: 2
     - _RampOffset: -0.5
-    - _ReplaceLineColor: 0
+    - _ReplaceLineColor: 1
     - _ScreenSpaceScale: 24
     - _Shininess: 0.1
     - _TunnelDistance: 0
@@ -96,9 +97,9 @@ Material:
     - _YScaleScreenSpace: 90
     - __dirty: 0
     m_Colors:
-    - _EmissionColor: {r: 0, g: 1, b: 0.7490196, a: 1}
-    - _PostReplaceLineColor: {r: 0.04125134, g: 0.051182576, b: 0.08490568, a: 1}
-    - _PreReplaceLineColor: {r: 0, g: 0, b: 0, a: 1}
+    - _EmissionColor: {r: 0.044054832, g: 0.20754719, b: 0.16651382, a: 1}
+    - _PostReplaceLineColor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
+    - _PreReplaceLineColor: {r: 0.46, g: 0.46, b: 0.46, a: 1}
     - _SpecularColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 1}
     - _TerminatorLineColor: {r: 0, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []

@@ -15,7 +15,7 @@ public class PlayerView : MonoBehaviour
     [SerializeField] PostProcessVolume _depthVolume;
 
     [Header("Clamp")]
-    [SerializeField] Vector2 _angleOffset;
+    [SerializeField] float _xAngleOffset = 0; 
     [SerializeField] float _maxXAngle = 35;
     [SerializeField] float _maxYAngle = 35;
 
@@ -76,7 +76,7 @@ public class PlayerView : MonoBehaviour
             return;
 
         float halfWidth = SCREEN.size.x * 0.5f, halfHeight = SCREEN.size.y * 0.5f;
-        float pitch = (mousePos.y - halfHeight) / -halfHeight * _maxXAngle;
+        float pitch = (mousePos.y - halfHeight) / -halfHeight * _maxXAngle + _xAngleOffset;
         float yaw = (mousePos.x - halfWidth) / halfWidth * _maxYAngle;
 
         transform.localEulerAngles = new Vector3(pitch, yaw, 0);

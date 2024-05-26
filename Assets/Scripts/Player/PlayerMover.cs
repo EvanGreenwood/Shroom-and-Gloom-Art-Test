@@ -60,11 +60,15 @@ public class PlayerMover : MonoBehaviour
         
         _isMoving = _fwdInput.Abs() > 0;
 
-        if(_isMoving)
+        if (_isMoving)
         {
-            if(_tunnel == null)
+            if (_tunnel == null)
                 transform.Translate(transform.forward * (Time.deltaTime * _currentSpeed * _fwdInput));
             else Move();
+        }
+        else
+        {
+            FaceForward();
         }
 
         BobHead();
@@ -128,6 +132,7 @@ public class PlayerMover : MonoBehaviour
         Vector3 towardsLookahead = (lookaheadPoint - currentPosition).normalized;
         
         Vector3 newForward = Vector3.RotateTowards(transform.forward, towardsLookahead, Time.deltaTime * 0.25f, 0);
+       newForward = Vector3.Lerp(newForward, towardsLookahead, Time.deltaTime * 1f );
         transform.rotation = Quaternion.LookRotation(newForward, currentUp);
         currentDirection = _fwdInput * currentDirection;
 
@@ -148,7 +153,22 @@ public class PlayerMover : MonoBehaviour
             transform.position = Vector3.MoveTowards(transform.position, currentPosition + currentDirection, Time.deltaTime * _currentSpeed);
         }
     }
+    void FaceForward()
+    {
+        float t = GetClosestPositionAndDirection(transform.position, out Vector3 currentPosition, out Vector3 currentDirection, out Vector3 currentUp);
+        _currentUp = currentUp;
+        _view.SetUp(_currentUp);
+        // 
 
+        Vector3 lookaheadPoint = GetLookaheadPoint(t, _directionLookaheadDistance);
+        Vector3 towardsLookahead = (lookaheadPoint - currentPosition).normalized;
+
+        Vector3 newForward = Vector3.RotateTowards(transform.forward, towardsLookahead, Time.deltaTime * 0.25f, 0);
+        newForward = Vector3.Lerp(newForward, towardsLookahead, Time.deltaTime * 1f);
+        transform.rotation = Quaternion.LookRotation(newForward, currentUp);
+       
+          
+    }
     void BobHead()
     {
         if(_isMoving)

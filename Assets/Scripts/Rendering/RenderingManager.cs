@@ -91,7 +91,7 @@ public class RenderingManager : MonoService
             Camera[] sceneCameras = SceneView.GetAllSceneCameras();
             activeCameras.AddRange(sceneCameras);
         }
-        #endif
+#endif
 
         foreach (Camera cam in activeCameras)
         {
@@ -99,7 +99,7 @@ public class RenderingManager : MonoService
             {
                 continue;
             }
-            
+
             if (cam.TryGetComponent(out DoorMaskEnabledCamera existing))
             {
                 if (!ActiveCameras.Contains(existing))
@@ -109,8 +109,12 @@ public class RenderingManager : MonoService
                 continue;
             }
 
-            DoorMaskEnabledCamera maskEnabledCam = cam.AddComponent<DoorMaskEnabledCamera>();
-            ActiveCameras.Add(maskEnabledCam);
+
+            if (!cam.GetComponent<DoesNotDoorMaskCamera>())
+            {
+                DoorMaskEnabledCamera maskEnabledCam = cam.AddComponent<DoorMaskEnabledCamera>();
+                ActiveCameras.Add(maskEnabledCam);
+            }
         }
 
         //Ensure if a camera gets destroyed or whatever and doesnt unsubscribe, we still remove it.

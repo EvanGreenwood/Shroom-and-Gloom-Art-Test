@@ -61,13 +61,21 @@ public class SceneManager : MonoService
         Data.sceneIntro.Play();
         _music.Init(Data.sceneMusic);
 
-        SceneTransition.inst.Transition(() =>
-                                        {
-                                            _player.Value.CanMove = true;
-                                            _music.Play();
-                                        },
-                                        _sceneIntroLeadDelay, false, false, _sceneIntroFadeTime,
-                                        Data.title, Data.description,
-                                        Data.titleColor);
+        if (SceneTransition.inst != null && SceneTransition.inst.gameObject.activeSelf)
+        {
+            SceneTransition.inst.Transition(() =>
+                                            {
+                                                _player.Value.CanMove = true;
+                                                _music.Play();
+                                            },
+                                            _sceneIntroLeadDelay, false, false, _sceneIntroFadeTime,
+                                            Data.title, Data.description,
+                                            Data.titleColor);
+        }
+        else
+        {
+            _player.Value.CanMove = true;
+            _music.Play();
+        }
     }
 }
