@@ -12,13 +12,15 @@ Material:
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
-  - _REPLACELINECOLOR_ON
+  - _FANCYCOLORSHADING_ON
+  - _LINEFADEWITHFOG_ON
   - _USEFOG_ON
   - _USEIFDOORMASK_ON
   m_InvalidKeywords:
   - _EMISSIONWAVEBASEDONTUNNEL_ON
   - _ISSCENEVIEW_ON
   - _LIT_ON
+  - _REPLACELINECOLOR_ON
   - _USEMATCAP_ON
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
@@ -26,7 +28,7 @@ Material:
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
-  m_LockedProperties: 
+  m_LockedProperties: _Emission
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -65,14 +67,18 @@ Material:
     m_Ints: []
     m_Floats:
     - _Cutoff: 0.6
+    - _DebugHighlightLowlight: 0
     - _DisplayNormals: 0
     - _EmissionUsesTunnelWave: 0
     - _EmissionWaveBasedOnTunnel: 1
+    - _FancyColorShading: 1
     - _FogIntensityCoefficient: 0.227
     - _IsSceneView: 1
     - _LineColorBlend: 1
     - _LineColorHueBlend: 1
     - _LineColorVsHSVBlend: 0.847
+    - _LineFade: 0.131
+    - _LineFadeWithFog: 1
     - _LineHueOffset: 0
     - _LineReplaceFuzziness: 0.1
     - _LineReplaceRange: 0.15
@@ -98,8 +104,11 @@ Material:
     - __dirty: 0
     m_Colors:
     - _EmissionColor: {r: 0.044054832, g: 0.20754719, b: 0.16651382, a: 1}
+    - _HighlightHSVOffset2: {r: 0, g: 0, b: 0, a: 0}
+    - _LineHSVOffset: {r: 0, g: 0, b: 0, a: 0}
     - _PostReplaceLineColor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
     - _PreReplaceLineColor: {r: 0.46, g: 0.46, b: 0.46, a: 1}
+    - _ShadowHSVOffset: {r: 0, g: 0, b: -0.2, a: 0}
     - _SpecularColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 1}
     - _TerminatorLineColor: {r: 0, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []
