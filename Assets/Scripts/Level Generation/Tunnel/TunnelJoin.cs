@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
+using Framework;
 
 [ExecuteAlways]
 public class TunnelJoin : MonoBehaviour
@@ -30,7 +31,7 @@ public class TunnelJoin : MonoBehaviour
 
             foreach (Door door in doors)
             {
-                door.SetSpriteColors(_inTunnel.ColorGradient.Evaluate(1));
+                door.SetSpriteColors(_inTunnel.ColorGradient.Evaluate(1).WithClampedSaturationWithValue(_inTunnel.GenerationSettings.ColorSaturationValue));
             }
         }
     }

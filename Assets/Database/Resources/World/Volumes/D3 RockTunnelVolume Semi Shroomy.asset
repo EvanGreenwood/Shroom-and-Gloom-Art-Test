@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b83d476c5904c8697ff73e5d8173433, type: 3}
+  m_Name: D3 RockTunnelVolume Semi Shroomy
+  m_EditorClassIdentifier: 
+  _guid: 173f1030d9c10ce43b043db1a7a0759b
+  Settings:
+    FogColor: {r: 0, g: 0, b: 0, a: 1}
+    FogStart: 3
+    FogDistance: 30
+    BackgroundColor: {r: 0, g: 0, b: 0, a: 0}
+    PostProcessingProfile: {fileID: 11400000, guid: b8ba7ba0213c4df489c143422aaf041f, type: 2}
+    Radius: 5
+    MaxRadiusPixels: 55
+    Intensity: 1
+    BaseColor: {r: 0, g: 0, b: 0, a: 1}
+    ColorBleedingSaturation: 3
+    TransitionInTime: 3

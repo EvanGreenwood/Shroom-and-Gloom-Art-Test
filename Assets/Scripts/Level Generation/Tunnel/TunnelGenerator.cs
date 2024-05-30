@@ -294,7 +294,7 @@ public partial class TunnelGenerator : MonoBehaviour
             element = sprite.AddComponent<TunnelElement>();
         }
 
-        element.SetColor(ColorGradient.Evaluate(normalizedDistance));
+        element.SetColor(ColorGradient.Evaluate(normalizedDistance).WithClampedSaturationWithValue(GenerationSettings.ColorSaturationValue));
 
         TunnelContext context = new TunnelContext()
                                 {
@@ -618,7 +618,7 @@ public partial class TunnelGenerator : MonoBehaviour
 
                     wall.transform.Rotate(0, 0, wallData.MinMaxAngle.GetValue(indexM) * sign + RNG.FloatSign() * wallData.RandomRotation);
                     //
-                    wall.color = ColorGradient.Evaluate(distanceM);
+                    wall.color = ColorGradient.Evaluate(distanceM).WithClampedSaturationWithValue(GenerationSettings.ColorSaturationValue);
 
                     if(side == TunnelSide.Right)
                     {
@@ -675,7 +675,7 @@ public partial class TunnelGenerator : MonoBehaviour
                 flatsParent.TakeChild(flatWall);
 
                 flatWall.transform.localRotation *= Quaternion.Euler(0, 90, 90);
-                flatWall.color = ColorGradient.Evaluate(dist);
+                flatWall.color = ColorGradient.Evaluate(dist).WithClampedSaturationWithValue(GenerationSettings.ColorSaturationValue);
 
                 // Floor flat planes need to be aligned exactly to avoid clipping with large tunnel height change 
                 // So we need to rotate them towards the last plane, rather than just sample the current curve.
@@ -722,7 +722,7 @@ public partial class TunnelGenerator : MonoBehaviour
                                                                                  currentRotation, currentDirection, false, distanceM);
                                 elementParent.TakeChild(surroundLump);
                                 surroundLump.transform.Rotate(0, 0, -currentAngleIncrement + 90);
-                                surroundLump.color = ColorGradient.Evaluate(distanceM);
+                                surroundLump.color = ColorGradient.Evaluate(distanceM).WithClampedSaturationWithValue(GenerationSettings.ColorSaturationValue); 
                                 //
                                 if(surroundData.RandomFlipX) surroundLump.flipX = Random.value > 0.5f;
                                 if(surroundData.RandomFlipY) surroundLump.flipY = Random.value > 0.5f;
@@ -756,7 +756,7 @@ public partial class TunnelGenerator : MonoBehaviour
                                                                                  currentRotation, currentDirection, circleOffset.x > 0, distanceM);
                                 elementParent.TakeChild(surroundLump);
                                 surroundLump.transform.Rotate(0, 0, -currentAngleIncrement + 90 + surroundData.RandomRotation * (-1 + Random.value * 2));
-                                surroundLump.color = ColorGradient.Evaluate(distanceM);
+                                surroundLump.color = ColorGradient.Evaluate(distanceM).WithClampedSaturationWithValue(GenerationSettings.ColorSaturationValue); 
                                 //
                                 if(surroundData.RandomFlipX) surroundLump.flipX = Random.value > 0.5f;
                                 if(surroundData.RandomFlipY) surroundLump.flipY = Random.value > 0.5f;
@@ -782,9 +782,9 @@ public partial class TunnelGenerator : MonoBehaviour
                             SpriteRenderer surroundLump = SpawnTunnelElement(surroundData.SurroundPrefabs.ChooseRandom(), spawnPos, currentRotation, currentDirection, circleOffset.x > 0, distanceM);
                             elementParent.TakeChild(surroundLump);
                             surroundLump.transform.Rotate(0, 0, -currentAngleIncrement + 90 + surroundData.RandomRotation * (-1 + Random.value * 2));
-                            surroundLump.color = ColorGradient.Evaluate(distanceM);
+                            surroundLump.color = ColorGradient.Evaluate(distanceM).WithClampedSaturationWithValue(GenerationSettings.ColorSaturationValue);
                             //
-                            if(surroundData.RandomFlipX) surroundLump.flipX = Random.value > 0.5f;
+                            if (surroundData.RandomFlipX) surroundLump.flipX = Random.value > 0.5f;
                             if(surroundData.RandomFlipY) surroundLump.flipY = Random.value > 0.5f;
                             //
                         }
@@ -829,7 +829,7 @@ public partial class TunnelGenerator : MonoBehaviour
                 
                 floor.transform.Rotate(floorData.XRotation, 0, floorData.MinMaxAngle.ChooseRandom());
 
-                floor.color = ColorGradient.Evaluate(distanceM);
+                floor.color = ColorGradient.Evaluate(distanceM).WithClampedSaturationWithValue(GenerationSettings.ColorSaturationValue);
                 floor.flipX = flip;
             }
         }
@@ -861,7 +861,7 @@ public partial class TunnelGenerator : MonoBehaviour
 
             flatFloor.transform.localRotation *= Quaternion.Euler(90, 0, 0);
 
-            flatFloor.color = ColorGradient.Evaluate(dist);
+            flatFloor.color = ColorGradient.Evaluate(dist).WithClampedSaturationWithValue(GenerationSettings.ColorSaturationValue);
 
             // Floor flat planes need to be aligned exactly to avoid clipping with large tunnel height change 
             // So we need to rotate them towards the last plane, rather than just sample the current curve.
@@ -897,7 +897,7 @@ public partial class TunnelGenerator : MonoBehaviour
                 ceiling.transform.position += perpendicular * ceilingData.MinMaxPosition.ChooseRandom();
                 ceiling.transform.Rotate(ceilingData.XRotation, 0, ceilingData.MinMaxAngle.ChooseRandom());
                 //
-                ceiling.color = ColorGradient.Evaluate(distanceM);
+                ceiling.color = ColorGradient.Evaluate(distanceM).WithClampedSaturationWithValue(GenerationSettings.ColorSaturationValue);
                 ceiling.flipX = flip;
             }
         }
@@ -928,7 +928,7 @@ public partial class TunnelGenerator : MonoBehaviour
 
             flatCeiling.transform.localRotation *= Quaternion.Euler(90, 0, 0);
 
-            flatCeiling.color = ColorGradient.Evaluate(dist);
+            flatCeiling.color = ColorGradient.Evaluate(dist).WithClampedSaturationWithValue(GenerationSettings.ColorSaturationValue);
 
             // Floor flat planes need to be aligned exactly to avoid clipping with large tunnel height change 
             // So we need to rotate them towards the last plane, rather than just sample the current curve.
@@ -967,7 +967,7 @@ public partial class TunnelGenerator : MonoBehaviour
                 // 
                 Vector3 spawnPos = currentPosition + perpendicular * (RNG.FloatSign() * floorData.RandomXPosition);
 
-                Color particleColor = ColorGradient.Evaluate(distanceM +0.2f);
+                Color particleColor = ColorGradient.Evaluate(distanceM  ).WithClampedSaturationWithValue(GenerationSettings.ColorSaturationValue);
 
                 
                
@@ -1138,7 +1138,7 @@ public partial class TunnelGenerator : MonoBehaviour
     {
         #if UNITY_EDITOR
         Color c = Handles.color;
-        Handles.color =  ColorGradient.Evaluate(0.5f);
+        Handles.color =  ColorGradient.Evaluate(0.5f).WithClampedSaturationWithValue(GenerationSettings.ColorSaturationValue);
         Spline.Evaluate(0.5f, out float3 position, out float3 tangent, out float3 upVector);
         Handles.Label(position, InWorldContext?gameObject.name:UseSOData?GenerationSettings.name:gameObject.name);
         Handles.color = c;

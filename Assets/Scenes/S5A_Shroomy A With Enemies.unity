@@ -3133,9 +3133,85 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3044806977495628172, guid: b8615e7857b13e745a38cd8799f2911c, type: 3}
+      propertyPath: m_Color.b
+      value: 0.8161476
+      objectReference: {fileID: 0}
+    - target: {fileID: 3044806977495628172, guid: b8615e7857b13e745a38cd8799f2911c, type: 3}
+      propertyPath: m_Color.g
+      value: 0.8679245
+      objectReference: {fileID: 0}
+    - target: {fileID: 3044806977495628172, guid: b8615e7857b13e745a38cd8799f2911c, type: 3}
+      propertyPath: m_Color.r
+      value: 0.6918832
+      objectReference: {fileID: 0}
+    - target: {fileID: 3503903914039744662, guid: b8615e7857b13e745a38cd8799f2911c, type: 3}
+      propertyPath: _color.b
+      value: 0.5882353
+      objectReference: {fileID: 0}
+    - target: {fileID: 3503903914039744662, guid: b8615e7857b13e745a38cd8799f2911c, type: 3}
+      propertyPath: _color.g
+      value: 0.8971754
+      objectReference: {fileID: 0}
+    - target: {fileID: 3503903914039744662, guid: b8615e7857b13e745a38cd8799f2911c, type: 3}
+      propertyPath: _color.r
+      value: 0.8980392
+      objectReference: {fileID: 0}
     - target: {fileID: 5899935217594274292, guid: b8615e7857b13e745a38cd8799f2911c, type: 3}
       propertyPath: m_Name
       value: ShroomyLighting
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950850291107656831, guid: b8615e7857b13e745a38cd8799f2911c, type: 3}
+      propertyPath: m_Color.b
+      value: 0.7948861
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950850291107656831, guid: b8615e7857b13e745a38cd8799f2911c, type: 3}
+      propertyPath: m_Color.g
+      value: 0.8207547
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950850291107656831, guid: b8615e7857b13e745a38cd8799f2911c, type: 3}
+      propertyPath: m_Color.r
+      value: 0.63105196
+      objectReference: {fileID: 0}
+    - target: {fileID: 6950850291107656831, guid: b8615e7857b13e745a38cd8799f2911c, type: 3}
+      propertyPath: m_Intensity
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7075420555055391486, guid: b8615e7857b13e745a38cd8799f2911c, type: 3}
+      propertyPath: _color.b
+      value: 0.6350374
+      objectReference: {fileID: 0}
+    - target: {fileID: 7075420555055391486, guid: b8615e7857b13e745a38cd8799f2911c, type: 3}
+      propertyPath: _color.g
+      value: 0.7735849
+      objectReference: {fileID: 0}
+    - target: {fileID: 7075420555055391486, guid: b8615e7857b13e745a38cd8799f2911c, type: 3}
+      propertyPath: _color.r
+      value: 0.52910286
+      objectReference: {fileID: 0}
+    - target: {fileID: 7889420773678954559, guid: b8615e7857b13e745a38cd8799f2911c, type: 3}
+      propertyPath: _color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7889420773678954559, guid: b8615e7857b13e745a38cd8799f2911c, type: 3}
+      propertyPath: _color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7889420773678954559, guid: b8615e7857b13e745a38cd8799f2911c, type: 3}
+      propertyPath: _color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9188850113320339747, guid: b8615e7857b13e745a38cd8799f2911c, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9188850113320339747, guid: b8615e7857b13e745a38cd8799f2911c, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9188850113320339747, guid: b8615e7857b13e745a38cd8799f2911c, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

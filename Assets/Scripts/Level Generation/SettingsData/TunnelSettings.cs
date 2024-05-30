@@ -12,8 +12,8 @@ using UnityEngine.Serialization;
 
 public partial class TunnelSettings : ScriptableEnum
 {
-    public Gradient ColorGradient;
-
+    public Gradient ColorGradient;     
+    public Vector2 ColorSaturationValue = new Vector2(0.2f, 0.8f);
     [Header("Size")]
     public float BaseTunnelWidth = 1f;
     public float LumpyWidth = 0.5f;

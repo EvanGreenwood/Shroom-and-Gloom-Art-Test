@@ -7,12 +7,11 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: EnvironmentDefault
+  m_Name: EnvironmentUI
   m_Shader: {fileID: 4800000, guid: e867afa9bad2d8543a5e6bb95a5f0181, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
-  - _FANCYCOLORSHADING_ON
   - _LINEFADEWITHFOG_ON
   - _USEFOG_ON
   - _USEIFDOORMASK_ON
@@ -71,7 +70,7 @@ Material:
     - _DisplayNormals: 0
     - _EmissionUsesTunnelWave: 0
     - _EmissionWaveBasedOnTunnel: 1
-    - _FancyColorShading: 1
+    - _FancyColorShading: 0
     - _FogIntensityCoefficient: 0.227
     - _IsSceneView: 1
     - _LineColorBlend: 1
@@ -105,10 +104,10 @@ Material:
     m_Colors:
     - _EmissionColor: {r: 0.044054832, g: 0.20754719, b: 0.16651382, a: 1}
     - _HighlightHSVOffset2: {r: 0, g: 0, b: 0, a: 0}
-    - _LineHSVOffset: {r: 0, g: 1, b: -0.3, a: 0}
+    - _LineHSVOffset: {r: 0, g: 0, b: 0, a: 0}
     - _PostReplaceLineColor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
     - _PreReplaceLineColor: {r: 0.46, g: 0.46, b: 0.46, a: 1}
-    - _ShadowHSVOffset: {r: 0, g: 0.1, b: -0.1, a: 0}
+    - _ShadowHSVOffset: {r: 0, g: 0, b: 0, a: 0}
     - _SpecularColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 1}
     - _TerminatorLineColor: {r: 0, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []

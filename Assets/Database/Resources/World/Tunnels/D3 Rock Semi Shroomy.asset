@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 50d28d391025841c192a919a7297e73e, type: 3}
-  m_Name: D3 Rock Alternate
+  m_Name: D3 Rock Semi Shroomy
   m_EditorClassIdentifier: 
-  _guid: 752b5244372ea4c43a3783ba72a41df0
+  _guid: 6a38076c5b165de45946b49bb50c6b68
   ColorGradient:
     serializedVersion: 2
     key0: {r: 0.8679245, g: 0.55923814, b: 0.51174796, a: 1}
@@ -170,7 +170,7 @@ MonoBehaviour:
   FlatCeilingPrefab: {fileID: 0}
   FlatCeilingSpacing: 1
   FlatCeilingOffset: 1
-  SplineVolume: {fileID: 11400000, guid: 299b66eec72664f149d907088da26d28, type: 2}
+  SplineVolume: {fileID: 11400000, guid: 173f1030d9c10ce43b043db1a7a0759b, type: 2}
   SceneData:
     LightData: []
     PrefabData: []

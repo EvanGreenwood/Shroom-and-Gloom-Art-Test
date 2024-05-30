@@ -141,6 +141,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 182820386374825050, guid: 3a18a561d72904fb188c7be7914fee2d, type: 3}
+      propertyPath: UseSOData
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 182820386374825050, guid: 3a18a561d72904fb188c7be7914fee2d, type: 3}
       propertyPath: GenerationSettings
       value: 
       objectReference: {fileID: 11400000, guid: 7f9d805cfee874ffaaec5f739f82f890, type: 2}
@@ -25779,6 +25783,42 @@ PrefabInstance:
       propertyPath: m_Name
       value: RockTunnelLighting
       objectReference: {fileID: 0}
+    - target: {fileID: 3760364303163390110, guid: 7cce76eee8f749344bacc7c0afb1557a, type: 3}
+      propertyPath: m_Color.b
+      value: 0.5568628
+      objectReference: {fileID: 0}
+    - target: {fileID: 3760364303163390110, guid: 7cce76eee8f749344bacc7c0afb1557a, type: 3}
+      propertyPath: m_Color.g
+      value: 0.6431373
+      objectReference: {fileID: 0}
+    - target: {fileID: 3760364303163390110, guid: 7cce76eee8f749344bacc7c0afb1557a, type: 3}
+      propertyPath: m_Color.r
+      value: 0.8392157
+      objectReference: {fileID: 0}
+    - target: {fileID: 4143537314111360990, guid: 7cce76eee8f749344bacc7c0afb1557a, type: 3}
+      propertyPath: m_Color.b
+      value: 0.50980395
+      objectReference: {fileID: 0}
+    - target: {fileID: 4143537314111360990, guid: 7cce76eee8f749344bacc7c0afb1557a, type: 3}
+      propertyPath: m_Color.g
+      value: 0.69803923
+      objectReference: {fileID: 0}
+    - target: {fileID: 4143537314111360990, guid: 7cce76eee8f749344bacc7c0afb1557a, type: 3}
+      propertyPath: m_Color.r
+      value: 0.654902
+      objectReference: {fileID: 0}
+    - target: {fileID: 6171505535943240975, guid: 7cce76eee8f749344bacc7c0afb1557a, type: 3}
+      propertyPath: _color.b
+      value: 0.50980395
+      objectReference: {fileID: 0}
+    - target: {fileID: 6171505535943240975, guid: 7cce76eee8f749344bacc7c0afb1557a, type: 3}
+      propertyPath: _color.g
+      value: 0.69803923
+      objectReference: {fileID: 0}
+    - target: {fileID: 6171505535943240975, guid: 7cce76eee8f749344bacc7c0afb1557a, type: 3}
+      propertyPath: _color.r
+      value: 0.654934
+      objectReference: {fileID: 0}
     - target: {fileID: 6255511015134446209, guid: 7cce76eee8f749344bacc7c0afb1557a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -25818,6 +25858,18 @@ PrefabInstance:
     - target: {fileID: 6255511015134446209, guid: 7cce76eee8f749344bacc7c0afb1557a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6834221553230760552, guid: 7cce76eee8f749344bacc7c0afb1557a, type: 3}
+      propertyPath: _color.b
+      value: 0.5584282
+      objectReference: {fileID: 0}
+    - target: {fileID: 6834221553230760552, guid: 7cce76eee8f749344bacc7c0afb1557a, type: 3}
+      propertyPath: _color.g
+      value: 0.6443797
+      objectReference: {fileID: 0}
+    - target: {fileID: 6834221553230760552, guid: 7cce76eee8f749344bacc7c0afb1557a, type: 3}
+      propertyPath: _color.r
+      value: 0.8396226
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

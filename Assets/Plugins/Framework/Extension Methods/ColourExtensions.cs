@@ -257,7 +257,13 @@ namespace Framework
             hsv.V = value;
             return hsv.ToRGB();
         }
-
+        public static Color WithClampedSaturationWithValue(this Color c, Vector2 sv)
+        {
+            HSVColour hsv = new HSVColour(c);
+            hsv.S = Mathf.Min(hsv.S ,sv.x);
+            hsv.V = sv.y;
+            return hsv.ToRGB();
+        }
         /// <summary>
         /// Returns this colour, but with a different alpha value.
         /// </summary>

@@ -15,22 +15,22 @@ MonoBehaviour:
   _guid: 696d1d69f71c24e0ca8eea9eda6dee88
   ColorGradient:
     serializedVersion: 2
-    key0: {r: 0.6981132, g: 0.535298, b: 0.50448555, a: 1}
+    key0: {r: 0.5931827, g: 0.6672565, b: 0.8113208, a: 1}
     key1: {r: 0.59716547, g: 0.7132075, b: 0.44541824, a: 1}
     key2: {r: 0.5397144, g: 0.7290569, b: 0.51479673, a: 0}
     key3: {r: 0.5882353, g: 0.77254903, b: 0.7137255, a: 0}
     key4: {r: 0.7627777, g: 0.5882353, b: 0.77254903, a: 0}
     key5: {r: 0.5137255, g: 0.5992844, b: 0.7372549, a: 0}
-    key6: {r: 0.6747628, g: 0.7433963, b: 0.5091563, a: 0}
-    key7: {r: 0.8862745, g: 0.6039216, b: 0.5647059, a: 0}
-    ctime0: 4626
+    key6: {r: 0.56694716, g: 0.6415094, b: 0.39035243, a: 0}
+    key7: {r: 0.7264151, g: 0.5044657, b: 0.4762816, a: 0}
+    ctime0: 4482
     ctime1: 22330
     ctime2: 27389
     ctime3: 31772
     ctime4: 42405
     ctime5: 49344
     ctime6: 57054
-    ctime7: 65535
+    ctime7: 65386
     atime0: 0
     atime1: 65535
     atime2: 0
@@ -43,6 +43,7 @@ MonoBehaviour:
     m_ColorSpace: 0
     m_NumColorKeys: 8
     m_NumAlphaKeys: 2
+  ColorSaturationValue: {x: 0.2, y: 0.7}
   BaseTunnelWidth: 1.25
   LumpyWidth: 0.5
   ClearingWidth: 2.7

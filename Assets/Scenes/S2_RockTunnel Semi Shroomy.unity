@@ -850,7 +850,7 @@ PrefabInstance:
     - target: {fileID: 182820386374825050, guid: 3a18a561d72904fb188c7be7914fee2d, type: 3}
       propertyPath: GenerationSettings
       value: 
-      objectReference: {fileID: 11400000, guid: 752b5244372ea4c43a3783ba72a41df0, type: 2}
+      objectReference: {fileID: 11400000, guid: 6a38076c5b165de45946b49bb50c6b68, type: 2}
     - target: {fileID: 182820386374825050, guid: 3a18a561d72904fb188c7be7914fee2d, type: 3}
       propertyPath: _elementParents.Array.size
       value: 10

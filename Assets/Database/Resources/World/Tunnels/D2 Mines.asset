@@ -43,6 +43,7 @@ MonoBehaviour:
     m_ColorSpace: 0
     m_NumColorKeys: 4
     m_NumAlphaKeys: 2
+  ColorSaturationValue: {x: 0.2, y: 0.7}
   BaseTunnelWidth: 2
   LumpyWidth: 0.5
   ClearingWidth: 5.5
