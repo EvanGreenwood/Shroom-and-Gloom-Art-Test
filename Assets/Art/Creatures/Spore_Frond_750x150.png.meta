@@ -110,589 +110,757 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Spore_Frond_Idle_01
+      name: Spore_Frond_750x150_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1350
+        width: 750
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41f5b46ca059043e5b2e6ba3e5fdfbd6
+      internalID: -1215442439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spore_Frond_750x150_1
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 1350
+        width: 750
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dca936b0b4184048a5d6e554e81951d
+      internalID: -371145463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spore_Frond_750x150_2
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1350
+        width: 750
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 696212294ea67454db0efb9a77d3ae6d
+      internalID: 1538576308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spore_Frond_750x150_3
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 1350
+        width: 750
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abab73402ff2e4af7905b9e24d50952a
+      internalID: -1693916289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spore_Frond_750x150_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1200
+        width: 750
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b7ed6ffa67494b0fb75f4f2ac55fe8b
+      internalID: -534826618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spore_Frond_750x150_5
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 1200
+        width: 750
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5164066224fd749cf957e709b604ecb6
+      internalID: 2014151139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spore_Frond_750x150_6
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1200
+        width: 750
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9d939614f8524a418fdceb2f756053a
+      internalID: -1109919831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spore_Frond_750x150_7
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 1200
+        width: 750
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88adbf04b36524e60a853786acff8eed
+      internalID: 1730748641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spore_Frond_750x150_8
       rect:
         serializedVersion: 2
         x: 0
         y: 1050
         width: 750
         height: 150
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 007f4c198cf7e4dda92d48a98469103c
-      internalID: 360229442
+      spriteID: 03e8cb55fdfaa4067970b1c84ee8f3d6
+      internalID: 92988800
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spore_Frond_Idle_02
+      name: Spore_Frond_750x150_9
       rect:
         serializedVersion: 2
-        x: 752
+        x: 750
         y: 1050
         width: 750
         height: 150
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b8f95bb94c8a947feb6241ae142d4f38
-      internalID: 1722576892
+      spriteID: fc0985ed493d24e1bb556a226da7c83f
+      internalID: 413288070
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spore_Frond_Idle_03
-      rect:
-        serializedVersion: 2
-        x: 1502
-        y: 1050
-        width: 750
-        height: 150
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: aacf48ef51f3f4f47b9d2552be753db6
-      internalID: 1948148135
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Spore_Frond_Idle_04
-      rect:
-        serializedVersion: 2
-        x: 2250
-        y: 1050
-        width: 750
-        height: 150
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e4b3fe3d8ce2b4f469f825cbb460f028
-      internalID: -413961029
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Spore_Frond_Idle_05
+      name: Spore_Frond_750x150_10
       rect:
         serializedVersion: 2
         x: 0
         y: 900
         width: 750
         height: 150
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f3aac9b583f3d4a778607d099764facd
-      internalID: 853240593
+      spriteID: 587c0411882214018be9ebe33704f75a
+      internalID: -1235284902
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spore_Frond_Idle_06
+      name: Spore_Frond_750x150_11
       rect:
         serializedVersion: 2
         x: 750
         y: 900
         width: 750
         height: 150
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e2ebefd3451f443489102c481dbcd01d
-      internalID: 537236555
+      spriteID: 9203a276dc83d45fc99885b16c609d0c
+      internalID: -1006152366
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spore_Frond_Idle_07
+      name: Spore_Frond_750x150_12
       rect:
         serializedVersion: 2
         x: 1500
         y: 900
         width: 750
         height: 150
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a54d155c2b121406caa20faab059d8a6
-      internalID: -70447465
+      spriteID: 8b6997f98b1e14e258a61778db7f21b0
+      internalID: 346704284
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spore_Frond_Idle_08
+      name: Spore_Frond_750x150_13
       rect:
         serializedVersion: 2
         x: 2250
         y: 900
         width: 750
         height: 150
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 52d1fbcf648d1447d8d29695db31c5a4
-      internalID: -1252948029
+      spriteID: ca93d538ba7c6423e91254c6b58f1a9a
+      internalID: 551464042
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spore_Frond_Contract_01
+      name: Spore_Frond_750x150_14
       rect:
         serializedVersion: 2
         x: 0
         y: 750
         width: 750
         height: 150
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 04107a7640fa748d8a5be135807d47fc
-      internalID: -429941468
+      spriteID: 5cebbe51c716c4dac9abe751597aca7e
+      internalID: 1943329300
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spore_Frond_Contract_02
+      name: Spore_Frond_750x150_15
       rect:
         serializedVersion: 2
         x: 750
         y: 750
         width: 750
         height: 150
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 88b5a2fbbc85c4b6c99fb7f97e43f434
-      internalID: 1683777912
+      spriteID: 71f1324698d0c4eb797515fc60b6a57a
+      internalID: 799716047
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spore_Frond_Contract_03
+      name: Spore_Frond_750x150_16
       rect:
         serializedVersion: 2
         x: 1500
         y: 750
         width: 750
         height: 150
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 32bb47a6e8e684ccf8b16b0f650a7119
-      internalID: -2028576092
+      spriteID: d99fd6a0b05bc4413b6ba60863b6090c
+      internalID: 1534678419
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spore_Frond_Contract_04
+      name: Spore_Frond_750x150_17
       rect:
         serializedVersion: 2
         x: 2250
         y: 750
         width: 750
         height: 150
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e026bf7cafe14dd5bd99b2b59be95a6
-      internalID: -669248
+      spriteID: 9c07d5fa7bec344d385d9b9b4615ce76
+      internalID: 1719011105
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spore_Frond_Contract_05
+      name: Spore_Frond_750x150_18
       rect:
         serializedVersion: 2
         x: 0
         y: 600
         width: 750
         height: 150
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6e05dbd02417a4e069b502ff60bc4d99
-      internalID: 445898340
+      spriteID: 9c6b0fd9d1e294912955e114cab693e6
+      internalID: -204714498
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spore_Frond_Contract_06
+      name: Spore_Frond_750x150_19
       rect:
         serializedVersion: 2
         x: 750
         y: 600
         width: 750
         height: 150
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c572879c136d0461ab81182c7da6b3b6
-      internalID: -1300226384
+      spriteID: 3ebfb49d67107424a92002c7f072b8ce
+      internalID: 226814708
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spore_Frond_Contract_Idle_01
+      name: Spore_Frond_750x150_20
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 600
+        width: 750
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ee9f3965b64442108ecbdf4cdbb1a76
+      internalID: -797733927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spore_Frond_750x150_21
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 600
+        width: 750
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaaf63b90a0a246ebbfe5c38609093dc
+      internalID: 1544900615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spore_Frond_750x150_22
       rect:
         serializedVersion: 2
         x: 0
         y: 450
         width: 750
         height: 150
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e7542555390444fab8c4f05bfe4e18c
-      internalID: 192531617
+      spriteID: 3bcfa6b6810ef463a81f393cef26ef8d
+      internalID: 537506507
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spore_Frond_Contract_Idle_02
+      name: Spore_Frond_750x150_23
       rect:
         serializedVersion: 2
         x: 750
         y: 450
         width: 750
         height: 150
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a9e050fb2fb3e461eafd5e9d3daefecf
-      internalID: -746578331
+      spriteID: da233e7791c6a49c49e7b0386ee20692
+      internalID: 319353426
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spore_Frond_Contract_Idle_03
+      name: Spore_Frond_750x150_24
       rect:
         serializedVersion: 2
         x: 1500
         y: 450
         width: 750
         height: 150
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9370d5b2cf5ac4a25a20e4c1144d0cd4
-      internalID: -2027420639
+      spriteID: d4f3abe8516ab465f85c9bbc24d2250d
+      internalID: -2044010971
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spore_Frond_Contract_Idle_04
+      name: Spore_Frond_750x150_25
       rect:
         serializedVersion: 2
         x: 2250
         y: 450
         width: 750
         height: 150
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dbb0d3fb4832b49bebef9af744c665fa
-      internalID: 487160031
+      spriteID: 05b2a79bd5fdc4b71bb4f00e7243461f
+      internalID: -1743476001
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spore_Frond_Contract_Idle_05
+      name: Spore_Frond_750x150_26
       rect:
         serializedVersion: 2
         x: 0
         y: 300
         width: 750
         height: 150
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0db0f20de23ca415899bc47aa322650b
-      internalID: 1082644252
+      spriteID: 566c3fe27352b402b97ed5404c143535
+      internalID: 161522181
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spore_Frond_Contract_Idle_06
+      name: Spore_Frond_750x150_27
       rect:
         serializedVersion: 2
         x: 750
         y: 300
         width: 750
         height: 150
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4dc05c92ac27c4ad58e6372a4f590e80
-      internalID: -1565614621
+      spriteID: d3f61013febfc4c398b094c3224214e6
+      internalID: -1604674647
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spore_Frond_Contract_Idle_07
-      rect:
-        serializedVersion: 2
-        x: 1500
-        y: 298
-        width: 750
-        height: 150
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e8ba3a80fea2247fcb9af802e549a48a
-      internalID: 1037535291
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Spore_Frond_Contract_Idle_08
-      rect:
-        serializedVersion: 2
-        x: 2250
-        y: 300
-        width: 750
-        height: 150
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d2be51106e81a4d8586d3f1022bfc9f8
-      internalID: -1153715444
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Spore_Frond_Expand_01
+      name: Spore_Frond_750x150_28
       rect:
         serializedVersion: 2
         x: 0
         y: 150
         width: 750
         height: 150
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d9198ef0a7aef4585bae761d3a75c6fb
-      internalID: 1214763081
+      spriteID: d32220872677c42628e33ad496bb55c6
+      internalID: -694060944
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spore_Frond_Expand_02
+      name: Spore_Frond_750x150_29
       rect:
         serializedVersion: 2
         x: 750
         y: 150
         width: 750
         height: 150
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f517d19bfcfd4475ab7cacfd82bc3cf
-      internalID: -414545097
+      spriteID: c7c51594d8f1641eaba0525bdee4ff29
+      internalID: -272946714
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spore_Frond_Expand_03
+      name: Spore_Frond_750x150_30
       rect:
         serializedVersion: 2
         x: 1500
         y: 150
         width: 750
         height: 150
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 03cb1b3265086498ba5412b5dafa1d02
-      internalID: -1735357524
+      spriteID: a8723308473b345e282d618f04333b8a
+      internalID: -143128308
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spore_Frond_Expand_04
+      name: Spore_Frond_750x150_31
       rect:
         serializedVersion: 2
         x: 2250
         y: 150
         width: 750
         height: 150
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 377ee5556d2734c63823d7b93044e9fe
-      internalID: 968946997
+      spriteID: 9456b88c486484582ae61b228095a76e
+      internalID: -952342309
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spore_Frond_Expand_05
+      name: Spore_Frond_750x150_32
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 750
         height: 150
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9cbb06896f27e4531bafa7c98bfeb700
-      internalID: -1497342490
+      spriteID: 62937af0f29df4108b235dc78201de93
+      internalID: 1016601305
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spore_Frond_Expand_06
+      name: Spore_Frond_750x150_33
       rect:
         serializedVersion: 2
         x: 750
         y: 0
         width: 750
         height: 150
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 58a50bfb586f54c19ba04c6c1d3aef1d
-      internalID: 1405727160
+      spriteID: f044aaf1600a94bbcbf4c8dcbbe72cd4
+      internalID: 606308514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spore_Frond_750x150_34
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 0
+        width: 750
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89682fe6ebe2a4b4f9a554b552cc15f8
+      internalID: -1718675912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spore_Frond_750x150_35
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 0
+        width: 750
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0186e6dc4a05e479eb7278528e58c0dd
+      internalID: 245185146
       vertices: []
       indices: 
       edges: []
@@ -708,34 +876,42 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Spore_Frond_Contract_01: -429941468
-      Spore_Frond_Contract_02: 1683777912
-      Spore_Frond_Contract_03: -2028576092
-      Spore_Frond_Contract_04: -669248
-      Spore_Frond_Contract_05: 445898340
-      Spore_Frond_Contract_06: -1300226384
-      Spore_Frond_Contract_Idle_01: 192531617
-      Spore_Frond_Contract_Idle_02: -746578331
-      Spore_Frond_Contract_Idle_03: -2027420639
-      Spore_Frond_Contract_Idle_04: 487160031
-      Spore_Frond_Contract_Idle_05: 1082644252
-      Spore_Frond_Contract_Idle_06: -1565614621
-      Spore_Frond_Contract_Idle_07: 1037535291
-      Spore_Frond_Contract_Idle_08: -1153715444
-      Spore_Frond_Expand_01: 1214763081
-      Spore_Frond_Expand_02: -414545097
-      Spore_Frond_Expand_03: -1735357524
-      Spore_Frond_Expand_04: 968946997
-      Spore_Frond_Expand_05: -1497342490
-      Spore_Frond_Expand_06: 1405727160
-      Spore_Frond_Idle_01: 360229442
-      Spore_Frond_Idle_02: 1722576892
-      Spore_Frond_Idle_03: 1948148135
-      Spore_Frond_Idle_04: -413961029
-      Spore_Frond_Idle_05: 853240593
-      Spore_Frond_Idle_06: 537236555
-      Spore_Frond_Idle_07: -70447465
-      Spore_Frond_Idle_08: -1252948029
+      Spore_Frond_750x150_0: -1215442439
+      Spore_Frond_750x150_1: -371145463
+      Spore_Frond_750x150_10: -1235284902
+      Spore_Frond_750x150_11: -1006152366
+      Spore_Frond_750x150_12: 346704284
+      Spore_Frond_750x150_13: 551464042
+      Spore_Frond_750x150_14: 1943329300
+      Spore_Frond_750x150_15: 799716047
+      Spore_Frond_750x150_16: 1534678419
+      Spore_Frond_750x150_17: 1719011105
+      Spore_Frond_750x150_18: -204714498
+      Spore_Frond_750x150_19: 226814708
+      Spore_Frond_750x150_2: 1538576308
+      Spore_Frond_750x150_20: -797733927
+      Spore_Frond_750x150_21: 1544900615
+      Spore_Frond_750x150_22: 537506507
+      Spore_Frond_750x150_23: 319353426
+      Spore_Frond_750x150_24: -2044010971
+      Spore_Frond_750x150_25: -1743476001
+      Spore_Frond_750x150_26: 161522181
+      Spore_Frond_750x150_27: -1604674647
+      Spore_Frond_750x150_28: -694060944
+      Spore_Frond_750x150_29: -272946714
+      Spore_Frond_750x150_3: -1693916289
+      Spore_Frond_750x150_30: -143128308
+      Spore_Frond_750x150_31: -952342309
+      Spore_Frond_750x150_32: 1016601305
+      Spore_Frond_750x150_33: 606308514
+      Spore_Frond_750x150_34: -1718675912
+      Spore_Frond_750x150_35: 245185146
+      Spore_Frond_750x150_4: -534826618
+      Spore_Frond_750x150_5: 2014151139
+      Spore_Frond_750x150_6: -1109919831
+      Spore_Frond_750x150_7: 1730748641
+      Spore_Frond_750x150_8: 92988800
+      Spore_Frond_750x150_9: 413288070
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
