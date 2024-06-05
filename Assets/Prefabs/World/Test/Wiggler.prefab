@@ -165,11 +165,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _animClips:
-  - {fileID: 7400000, guid: 4ce087890bd424f25b8cf573a2483ede, type: 2}
-  - {fileID: 7400000, guid: 3ffa424dd606d48219204894d0c35ffc, type: 2}
-  - {fileID: 7400000, guid: f1e584a4fd3474c1e8cd8cd3ea620c74, type: 2}
-  - {fileID: 7400000, guid: f8f8c66f1fe5643d99b13fded5a135b3, type: 2}
-  - {fileID: 7400000, guid: a0262d452a2724738b57f48e478b698a, type: 2}
+  - {fileID: 7400000, guid: 4f6af50e7edb24dabb31ceea1dc63d5d, type: 2}
+  - {fileID: 7400000, guid: 94bbb48caa6fd43928eedb98248392b0, type: 2}
+  - {fileID: 7400000, guid: 98700730be60f4cd99721cbd23585890, type: 2}
+  - {fileID: 7400000, guid: 5cd4b7ff1b576440886ca836da9dadbd, type: 2}
+  - {fileID: 7400000, guid: 7b3557da84d7e486ca8b0a3eca7646e9, type: 2}
+  - {fileID: 7400000, guid: 957ec5b020d2d4aaa96cb041bec10dbe, type: 2}
+  - {fileID: 7400000, guid: 92988a84a0e2a475f8ef717bfcc709fc, type: 2}
 --- !u!114 &8804245298530427162
 MonoBehaviour:
   m_ObjectHideFlags: 0

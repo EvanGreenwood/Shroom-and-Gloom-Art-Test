@@ -1,0 +1,567 @@
+fileFormatVersion: 2
+guid: 00c61744474514f4cb018682ec161e11
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 400
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Big Wiggler 01_Spritesheet 220x540_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2160
+        width: 220
+        height: 540
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02e11d86fd9f74fa28898f0fe2eace45
+      internalID: 1163052819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Wiggler 01_Spritesheet 220x540_1
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 2160
+        width: 220
+        height: 540
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 446bed56899fd4a14ac2552549deefd0
+      internalID: 2145089260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Wiggler 01_Spritesheet 220x540_2
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 2160
+        width: 220
+        height: 540
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97a19b688ca76475f9402380915af60a
+      internalID: -1016201849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Wiggler 01_Spritesheet 220x540_3
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 2160
+        width: 220
+        height: 540
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 050043068f36c49d196246b28fbb391e
+      internalID: -23360003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Wiggler 01_Spritesheet 220x540_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1620
+        width: 220
+        height: 540
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82acb7c89f2e24a4c9ec6526171d08a6
+      internalID: 397554012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Wiggler 01_Spritesheet 220x540_5
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 1620
+        width: 220
+        height: 540
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 294edf3bced8f4b869b35c18fa2cb0c4
+      internalID: -1270973481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Wiggler 01_Spritesheet 220x540_6
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 1620
+        width: 220
+        height: 540
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78b9a0e1728824e7d8abe8de29521e45
+      internalID: -722714401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Wiggler 01_Spritesheet 220x540_7
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 1620
+        width: 220
+        height: 540
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b93289af2f21f422582a5b0cfa490ad3
+      internalID: -549082125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Wiggler 01_Spritesheet 220x540_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1080
+        width: 220
+        height: 540
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc3579c11d546444d9a2c26f3e18bc76
+      internalID: 1890652642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Wiggler 01_Spritesheet 220x540_9
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 1080
+        width: 220
+        height: 540
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99f1d7ec28aa74915a7a80cbf4170219
+      internalID: 276098153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Wiggler 01_Spritesheet 220x540_10
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 1080
+        width: 220
+        height: 540
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e485dc35aa2b4827bbc7395a6907428
+      internalID: -1079237582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Wiggler 01_Spritesheet 220x540_11
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 1080
+        width: 220
+        height: 540
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e8a52ce8ceae47d4860a686d0b27fab
+      internalID: -1450407419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Wiggler 01_Spritesheet 220x540_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 540
+        width: 220
+        height: 540
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b34d75caeb8534ae0bf003e5ccb50e87
+      internalID: -1319836011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Wiggler 01_Spritesheet 220x540_13
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 540
+        width: 220
+        height: 540
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cac6ba11905fc47e0afcf78a3996ce0e
+      internalID: -387099698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Wiggler 01_Spritesheet 220x540_14
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 540
+        width: 220
+        height: 540
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95b63373cb6ab4342af3b5505013cb63
+      internalID: 752538910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Wiggler 01_Spritesheet 220x540_15
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 540
+        width: 220
+        height: 540
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ed650ff5989a4f3389ba7e13366b3cd
+      internalID: 1849322305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Wiggler 01_Spritesheet 220x540_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 220
+        height: 540
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59aeda63328fb4fda9b5d6421975c391
+      internalID: 1844978241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Wiggler 01_Spritesheet 220x540_17
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 0
+        width: 220
+        height: 540
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ba9223f6e1cd4881828a30b34c9204a
+      internalID: -115299633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Wiggler 01_Spritesheet 220x540_18
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 0
+        width: 220
+        height: 540
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 530bdcc2fdf194ef3890e54ab4364954
+      internalID: 141544794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Wiggler 01_Spritesheet 220x540_19
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 0
+        width: 220
+        height: 540
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a3cc010555164c25815f4d8f169b807
+      internalID: 1062353586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 1537655665
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Big Wiggler 01_Spritesheet 220x540_0: 1163052819
+      Big Wiggler 01_Spritesheet 220x540_1: 2145089260
+      Big Wiggler 01_Spritesheet 220x540_10: -1079237582
+      Big Wiggler 01_Spritesheet 220x540_11: -1450407419
+      Big Wiggler 01_Spritesheet 220x540_12: -1319836011
+      Big Wiggler 01_Spritesheet 220x540_13: -387099698
+      Big Wiggler 01_Spritesheet 220x540_14: 752538910
+      Big Wiggler 01_Spritesheet 220x540_15: 1849322305
+      Big Wiggler 01_Spritesheet 220x540_16: 1844978241
+      Big Wiggler 01_Spritesheet 220x540_17: -115299633
+      Big Wiggler 01_Spritesheet 220x540_18: 141544794
+      Big Wiggler 01_Spritesheet 220x540_19: 1062353586
+      Big Wiggler 01_Spritesheet 220x540_2: -1016201849
+      Big Wiggler 01_Spritesheet 220x540_3: -23360003
+      Big Wiggler 01_Spritesheet 220x540_4: 397554012
+      Big Wiggler 01_Spritesheet 220x540_5: -1270973481
+      Big Wiggler 01_Spritesheet 220x540_6: -722714401
+      Big Wiggler 01_Spritesheet 220x540_7: -549082125
+      Big Wiggler 01_Spritesheet 220x540_8: 1890652642
+      Big Wiggler 01_Spritesheet 220x540_9: 276098153
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
