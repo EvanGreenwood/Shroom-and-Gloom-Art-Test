@@ -1,4 +1,5 @@
 using Framework;
+using NaughtyAttributes;
 using PowerTools;
 using System;
 using System.Collections;
@@ -11,11 +12,8 @@ public class ProximityAnimation : ProximityTrigger
     [Header("Animations")]
     public AnimationClip BeginIdle;
     public AnimationClip BeginToEnd;
-    public AnimationClip EndToBegin;
+    [ShowIf("CanReturnToBeginning")] public AnimationClip EndToBegin;
     public AnimationClip EndIdle;
-
-    //[Range(0,1)]
-    //public float DisableChance;
 
     private SpriteAnim _anim;
 
@@ -46,6 +44,7 @@ public class ProximityAnimation : ProximityTrigger
     {
         //Debug.Log("EXIT");
         //TODO: if proximity enter and exit is called quickly animation will jump
+        
         _anim.Play(EndToBegin);
         _currentTransition = CoroutineUtils.StartCoroutine(WaitTillCurrentAnimationComplete(() =>
         {
