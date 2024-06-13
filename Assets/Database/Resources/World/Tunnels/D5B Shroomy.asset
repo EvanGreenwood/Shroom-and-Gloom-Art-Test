@@ -60,6 +60,8 @@ MonoBehaviour:
     SurroundPrefabs:
     - {fileID: 1508189691331659514, guid: abe2161f17e3d435691c2653789f0661, type: 3}
     - {fileID: 1508189691331659514, guid: 0917d2fd94e9947378c1cb66b0e8de3b, type: 3}
+    - {fileID: 1508189691331659514, guid: 3ca3e5df121534701a14bed0fb0a0bd1, type: 3}
+    - {fileID: 1508189691331659514, guid: 91cff5d64b1414a8e871e1726c8df98e, type: 3}
     ZOffset: 0
     Spacing: 0.5
     RadiusOffset: 2

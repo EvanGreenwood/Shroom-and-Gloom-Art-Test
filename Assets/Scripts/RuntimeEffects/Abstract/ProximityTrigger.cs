@@ -6,6 +6,11 @@ using UnityEngine;
 
 public abstract class ProximityTrigger : MonoBehaviour
 {
+    [Header("Settings")]
+    public bool CanReturnToBeginning = true;
+
+    private bool _hasOpened;
+    
     private SphereCollider _collider;
 
     public LayerMask ValidTriggerSources;
@@ -21,15 +26,17 @@ public abstract class ProximityTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (ValidTriggerSources.Contains(other.gameObject.layer))
+        bool canOpen = !(_hasOpened && !CanReturnToBeginning);
+        if (canOpen && ValidTriggerSources.Contains(other.gameObject.layer))
         {
+            _hasOpened = true;
             ProximityEnter(other.gameObject);
         }
     }
     
     private void OnTriggerExit(Collider other)
     {
-        if (ValidTriggerSources.Contains(other.gameObject.layer))
+        if (CanReturnToBeginning && ValidTriggerSources.Contains(other.gameObject.layer))
         {
             ProximityExit(other.gameObject);
         }
