@@ -10,9 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1400878947339728258}
   - component: {fileID: 717079983591251126}
-  - component: {fileID: 3467065784027115342}
+  - component: {fileID: -6326658844294600344}
+  - component: {fileID: 1488327108872660975}
   m_Layer: 0
-  m_Name: Moss 1
+  m_Name: Ruins StickThorns 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -74,18 +75,18 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 1c6aab02ffc46466eae5cb498119850c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8679372cf51374985b879fba789f7cd5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 10.24, y: 10.24}
+  m_Size: {x: 4.3, y: 3.4}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
---- !u!114 &3467065784027115342
+--- !u!114 &-6326658844294600344
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -94,9 +95,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 7873198937741219095}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 544e04e238fb0394187af33b199b5cee, type: 3}
+  m_Script: {fileID: 11500000, guid: 1c47c4c75a538c442919e38114b9d485, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 1.4
-  _amount: 3
-  _offsetFrameYM: 0
+  _distance: 1
+  _speed: 1.5
+  _triggerThreshold: 0.9
+--- !u!114 &1488327108872660975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7873198937741219095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52063f0c791109049a6a18e56e7ae724, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _angle:
+    _min: -25
+    _max: 25

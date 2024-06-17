@@ -11,6 +11,9 @@ GameObject:
   - component: {fileID: 1400878947339728258}
   - component: {fileID: 717079983591251126}
   - component: {fileID: 3467065784027115342}
+  - component: {fileID: 3618061429194014796}
+  - component: {fileID: 5340573749403419512}
+  - component: {fileID: -5268384034876412452}
   m_Layer: 0
   m_Name: Moss 4
   m_TagString: Untagged
@@ -100,3 +103,57 @@ MonoBehaviour:
   _speed: 1.4
   _amount: 3
   _offsetFrameYM: 0
+--- !u!95 &3618061429194014796
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7873198937741219095}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &5340573749403419512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7873198937741219095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89a8ca009b14008429f621808bba2086, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_defaultAnim: {fileID: 0}
+--- !u!114 &-5268384034876412452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7873198937741219095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01c645945ddc34f93acc1c352e9f840e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ValidTriggerSources:
+    serializedVersion: 2
+    m_Bits: 1024
+  ProximityRadius: 3
+  BeginIdle: {fileID: 7400000, guid: 439a210eae1904a10ab38dcb80aac6e4, type: 2}
+  BeginToEnd: {fileID: 7400000, guid: 9450d3fd612a440cc87b3db33130c73a, type: 2}
+  EndToBegin: {fileID: 7400000, guid: 9450d3fd612a440cc87b3db33130c73a, type: 2}
+  EndIdle: {fileID: 7400000, guid: 439a210eae1904a10ab38dcb80aac6e4, type: 2}

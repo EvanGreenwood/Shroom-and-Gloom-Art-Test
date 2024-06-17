@@ -11,8 +11,11 @@ GameObject:
   - component: {fileID: 1400878947339728258}
   - component: {fileID: 717079983591251126}
   - component: {fileID: 3467065784027115342}
+  - component: {fileID: 4606383741773473936}
+  - component: {fileID: 4846926144560413717}
+  - component: {fileID: 3271006539443228745}
   m_Layer: 0
-  m_Name: Moss 3
+  m_Name: Moss 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -74,7 +77,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: db898ed0148254244a05c0a236cbf23f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1c6aab02ffc46466eae5cb498119850c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -100,3 +103,57 @@ MonoBehaviour:
   _speed: 1.4
   _amount: 3
   _offsetFrameYM: 0
+--- !u!95 &4606383741773473936
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7873198937741219095}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &4846926144560413717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7873198937741219095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89a8ca009b14008429f621808bba2086, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_defaultAnim: {fileID: 0}
+--- !u!114 &3271006539443228745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7873198937741219095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01c645945ddc34f93acc1c352e9f840e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ValidTriggerSources:
+    serializedVersion: 2
+    m_Bits: 1024
+  ProximityRadius: 3
+  BeginIdle: {fileID: 7400000, guid: e60eb225a77b9401287c2ed8619ca78d, type: 2}
+  BeginToEnd: {fileID: 7400000, guid: 73d63670863a14f2fac3c52325b214c9, type: 2}
+  EndToBegin: {fileID: 7400000, guid: 73d63670863a14f2fac3c52325b214c9, type: 2}
+  EndIdle: {fileID: 7400000, guid: e60eb225a77b9401287c2ed8619ca78d, type: 2}

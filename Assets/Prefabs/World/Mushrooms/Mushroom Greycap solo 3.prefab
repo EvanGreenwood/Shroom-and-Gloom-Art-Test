@@ -11,8 +11,12 @@ GameObject:
   - component: {fileID: 1400878947339728258}
   - component: {fileID: 717079983591251126}
   - component: {fileID: 3467065784027115342}
+  - component: {fileID: 2180628470300133924}
+  - component: {fileID: 7196591659028773008}
+  - component: {fileID: 8632941913224005470}
+  - component: {fileID: 5828910428298688466}
   m_Layer: 0
-  m_Name: Moss 2
+  m_Name: Mushroom Greycap solo 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 7873198937741219095}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.93, y: 2.64, z: 4}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -74,7 +78,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 7778cdf14fb3d4d738a5d8d32f761f67, type: 3}
+  m_Sprite: {fileID: 1044274058, guid: babe56f0183714be796bcc08891425a8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -97,6 +101,78 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 544e04e238fb0394187af33b199b5cee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 1.4
+  _speed: 0.3
   _amount: 3
   _offsetFrameYM: 0
+--- !u!114 &2180628470300133924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7873198937741219095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed234be4642fbcc429e82a2f4799649a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _axis:
+    _x:
+      _value: 1
+    _y:
+      _value: 0
+--- !u!95 &7196591659028773008
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7873198937741219095}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &8632941913224005470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7873198937741219095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89a8ca009b14008429f621808bba2086, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_defaultAnim: {fileID: 0}
+--- !u!114 &5828910428298688466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7873198937741219095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01c645945ddc34f93acc1c352e9f840e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CanReturnToBeginning: 0
+  ValidTriggerSources:
+    serializedVersion: 2
+    m_Bits: 1024
+  ProximityRadius: 6
+  BeginIdle: {fileID: 7400000, guid: ccbc707e5f07c446095ce1557e238819, type: 2}
+  BeginToEnd: {fileID: 7400000, guid: 0fbd697becf86454389529385884fa28, type: 2}
+  EndToBegin: {fileID: 7400000, guid: 0fad79167bee84df79647c8661a9576d, type: 2}
+  EndIdle: {fileID: 7400000, guid: 0fad79167bee84df79647c8661a9576d, type: 2}

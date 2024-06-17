@@ -1,0 +1,1161 @@
+fileFormatVersion: 2
+guid: 4b984c21075c741dfafea027b68a7b4d
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Mid Wiggler 02_Sprite sheet_150x200_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1400
+        width: 150
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 769c41e2f5bb1440880ed3d743605517
+      internalID: -1371227816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mid Wiggler 02_Sprite sheet_150x200_1
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 1400
+        width: 150
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 439d7fb1524a04efe95258a1a85e1fb3
+      internalID: -1018861955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mid Wiggler 02_Sprite sheet_150x200_2
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 1400
+        width: 150
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2a3ee2f4cbec40cca5d2b4624a0f61f
+      internalID: 52643558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mid Wiggler 02_Sprite sheet_150x200_3
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 1400
+        width: 150
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64f23da7efb234a409b3b12b57db8721
+      internalID: -1640997163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mid Wiggler 02_Sprite sheet_150x200_4
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1400
+        width: 150
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00fea10349970480b816cb3e24f4c055
+      internalID: -1672021503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mid Wiggler 02_Sprite sheet_150x200_5
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 1400
+        width: 150
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 902d3b44e4a1a44febc93d7ad3e24d00
+      internalID: -2092839696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mid Wiggler 02_Sprite sheet_150x200_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1200
+        width: 150
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a13ea880f7ca43ce97fa67deea8d548
+      internalID: 906037280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mid Wiggler 02_Sprite sheet_150x200_7
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 1200
+        width: 150
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9c69c7fbb69f4d15baf210c653e553d
+      internalID: -630282352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mid Wiggler 02_Sprite sheet_150x200_8
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 1200
+        width: 150
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f98dbc68a4afc42ba9c7dd8824855e6c
+      internalID: -74686383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mid Wiggler 02_Sprite sheet_150x200_9
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 1200
+        width: 150
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e1159c073dad4f559ebaff51cb01bb5
+      internalID: 1985729447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mid Wiggler 02_Sprite sheet_150x200_10
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1200
+        width: 150
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6efbd8f9e6e51427586cdc71b5adb9bb
+      internalID: 1459911002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mid Wiggler 02_Sprite sheet_150x200_11
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 1200
+        width: 150
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02ad9324b1bdb47ee8e54da73c0bed44
+      internalID: 1636875006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mid Wiggler 02_Sprite sheet_150x200_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1000
+        width: 150
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c2c859fa8e00445f80dd40c1a087933
+      internalID: -245222995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mid Wiggler 02_Sprite sheet_150x200_13
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 1000
+        width: 150
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c5e413256efc4eb1a86caab67a842a4
+      internalID: -649838498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mid Wiggler 02_Sprite sheet_150x200_14
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 1000
+        width: 150
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 921ff8d37ba3d4ae588ba532440ae755
+      internalID: 1729410039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mid Wiggler 02_Sprite sheet_150x200_15
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 1000
+        width: 150
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c785965ca387c4f2bb90dd6e503ea8a3
+      internalID: -212779772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mid Wiggler 02_Sprite sheet_150x200_16
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1000
+        width: 150
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32d5f2841da494bd9822098fb86bf913
+      internalID: -374496224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mid Wiggler 02_Sprite sheet_150x200_17
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 1000
+        width: 150
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67f549020df0f4d32a616b6ec7bde60e
+      internalID: 239630872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mid Wiggler 02_Sprite sheet_150x200_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 800
+        width: 150
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 812adec8b394e4ecdbe0bf4f710b451b
+      internalID: 8639557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mid Wiggler 02_Sprite sheet_150x200_19
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 800
+        width: 150
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cab06225a32644f309d45611a444ac16
+      internalID: 1850129548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mid Wiggler 02_Sprite sheet_150x200_20
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 800
+        width: 150
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb8e372148cd54f26b03fc9a9e73981a
+      internalID: 272639151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mid Wiggler 02_Sprite sheet_150x200_21
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 800
+        width: 150
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f08e6199fcd9e4083adb283d4f7cd2cd
+      internalID: 1949080007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mid Wiggler 02_Sprite sheet_150x200_22
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 800
+        width: 150
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a7d1970c0f1f4d1391aed8dfbaaedc5
+      internalID: 1087624417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mid Wiggler 02_Sprite sheet_150x200_23
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 800
+        width: 150
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba8dc7eacc10c4468a5191cdab72ffda
+      internalID: -111040551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mid Wiggler 02_Sprite sheet_150x200_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 600
+        width: 150
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06ca62afb5254436ca8afe57a25875a5
+      internalID: -1803947363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mid Wiggler 02_Sprite sheet_150x200_25
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 600
+        width: 150
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88bb96f6da9e544a2864078961899392
+      internalID: -1856236495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mid Wiggler 02_Sprite sheet_150x200_26
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 600
+        width: 150
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc4d48a53d6794d2eaad9260e6f63aa7
+      internalID: 328358247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mid Wiggler 02_Sprite sheet_150x200_27
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 600
+        width: 150
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b3a12a8f335546d087d45ae7a14b595
+      internalID: -2037662515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mid Wiggler 02_Sprite sheet_150x200_28
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 600
+        width: 150
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95aa86a7fe8ab4461b45027006121558
+      internalID: 1364026327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mid Wiggler 02_Sprite sheet_150x200_29
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 600
+        width: 150
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2897da8fc781f41b9a3f3575322aa208
+      internalID: 1616856568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mid Wiggler 02_Sprite sheet_150x200_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 400
+        width: 150
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6934287ce810e4a7ea8bb8d1c0ac6830
+      internalID: 153242474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mid Wiggler 02_Sprite sheet_150x200_31
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 400
+        width: 150
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e52e97a99eeae4cc79b9b95ba651cea9
+      internalID: -1258968946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mid Wiggler 02_Sprite sheet_150x200_32
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 400
+        width: 150
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 129e3b5218ddf41a5b313619d0e0991b
+      internalID: -925680648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mid Wiggler 02_Sprite sheet_150x200_33
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 400
+        width: 150
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a4adbf2f59894650a0e0925a99f58cf
+      internalID: 398494882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mid Wiggler 02_Sprite sheet_150x200_34
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 400
+        width: 150
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2aa305c3b81ae45ebae17e737aabd799
+      internalID: -1832664711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mid Wiggler 02_Sprite sheet_150x200_35
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 400
+        width: 150
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a03d51d57b30d4d62af80472a04d36b3
+      internalID: -738075651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mid Wiggler 02_Sprite sheet_150x200_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 200
+        width: 150
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7517aec88168a4c66ac62ce46790cca6
+      internalID: -1977988789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mid Wiggler 02_Sprite sheet_150x200_37
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 200
+        width: 150
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 565f01be8f6394e87ac17bc1d425430f
+      internalID: 102260343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mid Wiggler 02_Sprite sheet_150x200_38
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 200
+        width: 150
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8eb524f6cc624316a7cfd075ff945f4
+      internalID: -758368434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mid Wiggler 02_Sprite sheet_150x200_39
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 200
+        width: 150
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46741734107a145dba2868261d6e3e72
+      internalID: -228709853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mid Wiggler 02_Sprite sheet_150x200_40
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 200
+        width: 150
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54ebdb56aac16498e995578c38e20f1b
+      internalID: -600494082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mid Wiggler 02_Sprite sheet_150x200_41
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 200
+        width: 150
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7621f6da2c943474a9eec78b52075e31
+      internalID: 1955332758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mid Wiggler 02_Sprite sheet_150x200_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 150
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cbba42b844e8411185c59760adffdc8
+      internalID: -926333216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mid Wiggler 02_Sprite sheet_150x200_43
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 0
+        width: 150
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f55c1f8666b6f4b5dad027e6982e8d21
+      internalID: 1732475749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mid Wiggler 02_Sprite sheet_150x200_44
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 150
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21eed0e55dc0c453a962cc5b6af72af7
+      internalID: -1624828877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mid Wiggler 02_Sprite sheet_150x200_45
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 0
+        width: 150
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c16e32b523f854fe38356cccc32c13e3
+      internalID: 1567438141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mid Wiggler 02_Sprite sheet_150x200_46
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 0
+        width: 150
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79d0e92aa513a4622b6df15898139176
+      internalID: 755704138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 1537655665
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Mid Wiggler 02_Sprite sheet_150x200_0: -1371227816
+      Mid Wiggler 02_Sprite sheet_150x200_1: -1018861955
+      Mid Wiggler 02_Sprite sheet_150x200_10: 1459911002
+      Mid Wiggler 02_Sprite sheet_150x200_11: 1636875006
+      Mid Wiggler 02_Sprite sheet_150x200_12: -245222995
+      Mid Wiggler 02_Sprite sheet_150x200_13: -649838498
+      Mid Wiggler 02_Sprite sheet_150x200_14: 1729410039
+      Mid Wiggler 02_Sprite sheet_150x200_15: -212779772
+      Mid Wiggler 02_Sprite sheet_150x200_16: -374496224
+      Mid Wiggler 02_Sprite sheet_150x200_17: 239630872
+      Mid Wiggler 02_Sprite sheet_150x200_18: 8639557
+      Mid Wiggler 02_Sprite sheet_150x200_19: 1850129548
+      Mid Wiggler 02_Sprite sheet_150x200_2: 52643558
+      Mid Wiggler 02_Sprite sheet_150x200_20: 272639151
+      Mid Wiggler 02_Sprite sheet_150x200_21: 1949080007
+      Mid Wiggler 02_Sprite sheet_150x200_22: 1087624417
+      Mid Wiggler 02_Sprite sheet_150x200_23: -111040551
+      Mid Wiggler 02_Sprite sheet_150x200_24: -1803947363
+      Mid Wiggler 02_Sprite sheet_150x200_25: -1856236495
+      Mid Wiggler 02_Sprite sheet_150x200_26: 328358247
+      Mid Wiggler 02_Sprite sheet_150x200_27: -2037662515
+      Mid Wiggler 02_Sprite sheet_150x200_28: 1364026327
+      Mid Wiggler 02_Sprite sheet_150x200_29: 1616856568
+      Mid Wiggler 02_Sprite sheet_150x200_3: -1640997163
+      Mid Wiggler 02_Sprite sheet_150x200_30: 153242474
+      Mid Wiggler 02_Sprite sheet_150x200_31: -1258968946
+      Mid Wiggler 02_Sprite sheet_150x200_32: -925680648
+      Mid Wiggler 02_Sprite sheet_150x200_33: 398494882
+      Mid Wiggler 02_Sprite sheet_150x200_34: -1832664711
+      Mid Wiggler 02_Sprite sheet_150x200_35: -738075651
+      Mid Wiggler 02_Sprite sheet_150x200_36: -1977988789
+      Mid Wiggler 02_Sprite sheet_150x200_37: 102260343
+      Mid Wiggler 02_Sprite sheet_150x200_38: -758368434
+      Mid Wiggler 02_Sprite sheet_150x200_39: -228709853
+      Mid Wiggler 02_Sprite sheet_150x200_4: -1672021503
+      Mid Wiggler 02_Sprite sheet_150x200_40: -600494082
+      Mid Wiggler 02_Sprite sheet_150x200_41: 1955332758
+      Mid Wiggler 02_Sprite sheet_150x200_42: -926333216
+      Mid Wiggler 02_Sprite sheet_150x200_43: 1732475749
+      Mid Wiggler 02_Sprite sheet_150x200_44: -1624828877
+      Mid Wiggler 02_Sprite sheet_150x200_45: 1567438141
+      Mid Wiggler 02_Sprite sheet_150x200_46: 755704138
+      Mid Wiggler 02_Sprite sheet_150x200_5: -2092839696
+      Mid Wiggler 02_Sprite sheet_150x200_6: 906037280
+      Mid Wiggler 02_Sprite sheet_150x200_7: -630282352
+      Mid Wiggler 02_Sprite sheet_150x200_8: -74686383
+      Mid Wiggler 02_Sprite sheet_150x200_9: 1985729447
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

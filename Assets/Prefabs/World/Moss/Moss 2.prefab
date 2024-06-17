@@ -10,10 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1400878947339728258}
   - component: {fileID: 717079983591251126}
-  - component: {fileID: -6326658844294600344}
-  - component: {fileID: 2698152621033861934}
+  - component: {fileID: 3467065784027115342}
+  - component: {fileID: 4362152569686082286}
+  - component: {fileID: 3426457288762744106}
+  - component: {fileID: -1136815486682933489}
   m_Layer: 0
-  m_Name: Ruins StickThorns 1
+  m_Name: Moss 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -75,18 +77,18 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -190682323, guid: eb87e6da81da6ee4287950c2327f08fa, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7778cdf14fb3d4d738a5d8d32f761f67, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 4.3, y: 3.4}
+  m_Size: {x: 10.24, y: 10.24}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
---- !u!114 &-6326658844294600344
+--- !u!114 &3467065784027115342
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -95,13 +97,34 @@ MonoBehaviour:
   m_GameObject: {fileID: 7873198937741219095}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c47c4c75a538c442919e38114b9d485, type: 3}
+  m_Script: {fileID: 11500000, guid: 544e04e238fb0394187af33b199b5cee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _distance: 1
-  _speed: 1.5
-  _triggerThreshold: 0.9
---- !u!114 &2698152621033861934
+  _speed: 1.4
+  _amount: 3
+  _offsetFrameYM: 0
+--- !u!95 &4362152569686082286
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7873198937741219095}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &3426457288762744106
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -110,9 +133,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 7873198937741219095}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 52063f0c791109049a6a18e56e7ae724, type: 3}
+  m_Script: {fileID: 11500000, guid: 89a8ca009b14008429f621808bba2086, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _angle:
-    _min: -25
-    _max: 25
+  m_defaultAnim: {fileID: 0}
+--- !u!114 &-1136815486682933489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7873198937741219095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01c645945ddc34f93acc1c352e9f840e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ValidTriggerSources:
+    serializedVersion: 2
+    m_Bits: 1024
+  ProximityRadius: 3
+  BeginIdle: {fileID: 7400000, guid: 5f6ce723aa2c14cc783d2d91e97e6103, type: 2}
+  BeginToEnd: {fileID: 7400000, guid: 09667569bcc4a49bb8469cf1087e75a3, type: 2}
+  EndToBegin: {fileID: 7400000, guid: 09667569bcc4a49bb8469cf1087e75a3, type: 2}
+  EndIdle: {fileID: 7400000, guid: 5f6ce723aa2c14cc783d2d91e97e6103, type: 2}
