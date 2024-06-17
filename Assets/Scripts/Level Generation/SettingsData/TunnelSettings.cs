@@ -17,6 +17,7 @@ public partial class TunnelSettings : ScriptableEnum
     [Header("Size")]
     public float BaseTunnelWidth = 1f;
     public float LumpyWidth = 0.5f;
+    public float LumpyFrequency = 0.66f;
     public float ClearingWidth = 1f;
     public float ClearingDepth = 2.33f;
     

@@ -105,6 +105,8 @@ public partial class TunnelGenerator : MonoBehaviour
         public float ParticleSpawnDistance => UseSOData ? GenerationSettings.ParticleSpawnDistance : Old_ParticleSpawnDistance;
         public float BaseTunnelWidth => UseSOData ? GenerationSettings.BaseTunnelWidth : Old_BaseTunnelWidth;
         public float LumpyWidth => UseSOData ? GenerationSettings.LumpyWidth : Old_LumpyWidth;
+
+        public float LumpyFrequency => UseSOData ? GenerationSettings.LumpyFrequency : 0.66f;
         public float ClearingWidth => UseSOData ? GenerationSettings.ClearingWidth : Old_ClearingWidth;
         public float ClearingDepth => UseSOData ? GenerationSettings.ClearingDepth : Old_ClearingDepth;
         public TunnelWallData[] WallElements => UseSOData ? GenerationSettings.WallElements : Old_WallElements;
@@ -253,7 +255,7 @@ public partial class TunnelGenerator : MonoBehaviour
         float proximityToMiddle = Mathf.Abs(0.5f - t) * _tunnelLength;
 
         float clearingM = Mathf.Clamp01((ClearingDepth - proximityToMiddle) / ClearingDepth);
-        return BaseTunnelWidth + (1 + Mathf.Sin(t * _tunnelLength * 0.66f)) / 2f * LumpyWidth + clearingM * ClearingWidth;
+        return BaseTunnelWidth + (1 + Mathf.Sin(t * _tunnelLength * LumpyFrequency)) / 2f * LumpyWidth + clearingM * ClearingWidth;
     }
 
     Transform GetGenerationRoot()

@@ -1,0 +1,316 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50d28d391025841c192a919a7297e73e, type: 3}
+  m_Name: D3 Mossy
+  m_EditorClassIdentifier: 
+  _guid: b9d2afe1e1f78b9458d690fa88731448
+  ColorGradient:
+    serializedVersion: 2
+    key0: {r: 0.56863886, g: 0.8679245, b: 0.51174796, a: 1}
+    key1: {r: 0.36470592, g: 0.8666667, b: 0.6352844, a: 1}
+    key2: {r: 0.56174606, g: 0.7372549, b: 0.49019608, a: 0}
+    key3: {r: 0.85310775, g: 0.8584906, b: 0.41709685, a: 0}
+    key4: {r: 0.9223302, g: 0.9433962, b: 0.3693485, a: 0}
+    key5: {r: 0.34117648, g: 0.74509805, b: 0.38587737, a: 0}
+    key6: {r: 0.3764706, g: 0.74509805, b: 0.7353678, a: 0}
+    key7: {r: 0.3764706, g: 0.74509805, b: 0.7353678, a: 0}
+    ctime0: 4133
+    ctime1: 14691
+    ctime2: 21762
+    ctime3: 30726
+    ctime4: 35706
+    ctime5: 45217
+    ctime6: 56970
+    ctime7: 56970
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_ColorSpace: 0
+    m_NumColorKeys: 7
+    m_NumAlphaKeys: 2
+  ColorSaturationValue: {x: 0.3, y: 0.7}
+  BaseTunnelWidth: 1
+  LumpyWidth: 0.7
+  LumpyFrequency: 2
+  ClearingWidth: 1.2
+  ClearingDepth: 4
+  Particles: {fileID: 2402285776899386762, guid: 8e61f67cd760b423db14eb998271668d, type: 3}
+  ParticleSpawnDistance: 4
+  WallElements: []
+  FlatWallPrefab: {fileID: 0}
+  FlatWallSpacing: 1
+  FlatWallOffset: 1
+  SurroundElements:
+  - Name: Moss Walls Left
+    Disabled: 0
+    SurroundPrefabs:
+    - {fileID: 717079983591251126, guid: 834b154b5393fe5469e3a741b63a8b35, type: 3}
+    ZOffset: 0
+    Spacing: 0.2
+    RadiusOffset: 1.3
+    CenterHeight: 1.7
+    Pattern: 1
+    AngleRange:
+      _min: 35
+      _max: 160
+    AngleIncrement: 45
+    RandomRotation: 3
+    RandomFlipY: 1
+    RandomFlipX: 0
+  - Name: Moss Walls Right
+    Disabled: 0
+    SurroundPrefabs:
+    - {fileID: 717079983591251126, guid: 834b154b5393fe5469e3a741b63a8b35, type: 3}
+    ZOffset: 0
+    Spacing: 0.2
+    RadiusOffset: 1.3
+    CenterHeight: 1.7
+    Pattern: 1
+    AngleRange:
+      _min: 200
+      _max: 325
+    AngleIncrement: 45
+    RandomRotation: 3
+    RandomFlipY: 1
+    RandomFlipX: 0
+  - Name: Moss Fronds
+    Disabled: 0
+    SurroundPrefabs:
+    - {fileID: 717079983591251126, guid: 7c5ca920031e8ff43af3790253664560, type: 3}
+    ZOffset: 0
+    Spacing: 0.5
+    RadiusOffset: 2
+    CenterHeight: 2.2
+    Pattern: 1
+    AngleRange:
+      _min: 20
+      _max: 60
+    AngleIncrement: 12
+    RandomRotation: 10
+    RandomFlipY: 1
+    RandomFlipX: 0
+  - Name: Moss Fronds
+    Disabled: 0
+    SurroundPrefabs:
+    - {fileID: 717079983591251126, guid: 7c5ca920031e8ff43af3790253664560, type: 3}
+    ZOffset: 0
+    Spacing: 0.5
+    RadiusOffset: 2
+    CenterHeight: 2.2
+    Pattern: 1
+    AngleRange:
+      _min: 300
+      _max: 340
+    AngleIncrement: 12
+    RandomRotation: 10
+    RandomFlipY: 1
+    RandomFlipX: 0
+  FloorElements:
+  - Name: Floor
+    Disabled: 0
+    FloorPrefabs:
+    - {fileID: 717079983591251126, guid: d30a5199178c74edea9e16ed711674da, type: 3}
+    ZOffset: 0.08
+    Spacing: 0.5
+    RandomXPosition: 0.5
+    MinMaxAngle:
+      _min: -1
+      _max: 1
+    XRotation: 0
+    MinMaxPosition:
+      _min: -0.05
+      _max: 0.05
+    RandomFlipX: 1
+  FlatFloorPrefab: {fileID: 0}
+  FlatFloorSpacing: 1
+  FlatFloorOffset: -1
+  CeilingElements:
+  - Name: Moss Ceiling
+    Disabled: 0
+    CeilingPrefabs:
+    - {fileID: 717079983591251126, guid: 61b2e65ef50d6c6458b33cac22c6145f, type: 3}
+    Height: 4.2
+    ZOffset: 0
+    Spacing: 0.25
+    RandomXPosition: 2
+    MinMaxAngle:
+      _min: 0
+      _max: 0
+    XRotation: 0
+    MinMaxPosition:
+      _min: -4
+      _max: 4
+    RandomFlipX: 1
+  - Name: Moss Dangles
+    Disabled: 0
+    CeilingPrefabs:
+    - {fileID: 717079983591251126, guid: d58301ed01b3e2544a93c90513021686, type: 3}
+    Height: 3.5
+    ZOffset: 0.01
+    Spacing: 0.25
+    RandomXPosition: 0.6
+    MinMaxAngle:
+      _min: 0
+      _max: 0
+    XRotation: 0
+    MinMaxPosition:
+      _min: 1.2
+      _max: 3
+    RandomFlipX: 1
+  - Name: Moss Dangles
+    Disabled: 0
+    CeilingPrefabs:
+    - {fileID: 717079983591251126, guid: d58301ed01b3e2544a93c90513021686, type: 3}
+    Height: 3.5
+    ZOffset: 0.01
+    Spacing: 0.25
+    RandomXPosition: 0.6
+    MinMaxAngle:
+      _min: 0
+      _max: 0
+    XRotation: 0
+    MinMaxPosition:
+      _min: -3
+      _max: -1.2
+    RandomFlipX: 1
+  - Name: Moss Dangles
+    Disabled: 0
+    CeilingPrefabs:
+    - {fileID: 717079983591251126, guid: d58301ed01b3e2544a93c90513021686, type: 3}
+    Height: 4.7
+    ZOffset: 0.01
+    Spacing: 0.2
+    RandomXPosition: 1
+    MinMaxAngle:
+      _min: 0
+      _max: 0
+    XRotation: 0
+    MinMaxPosition:
+      _min: -1
+      _max: 1
+    RandomFlipX: 1
+  FlatCeilingPrefab: {fileID: 0}
+  FlatCeilingSpacing: 1
+  FlatCeilingOffset: 1
+  SplineVolume: {fileID: 11400000, guid: 173f1030d9c10ce43b043db1a7a0759b, type: 2}
+  SceneData:
+    LightData: []
+    PrefabData: []
+    Spline:
+      m_EditModeType: 1
+      m_Knots:
+      - Position:
+          x: 0
+          y: 0
+          z: 0
+        TangentIn:
+          x: 0
+          y: 0
+          z: -2.7346375
+        TangentOut:
+          x: 0
+          y: 0
+          z: 2.7346375
+        Rotation:
+          value:
+            x: 0
+            y: 0
+            z: 0
+            w: 1
+      - Position:
+          x: 0.6
+          y: -2
+          z: 13.45
+        TangentIn:
+          x: 0
+          y: 0
+          z: -3.1018825
+        TangentOut:
+          x: 0
+          y: 0
+          z: 3.1018825
+        Rotation:
+          value:
+            x: 0
+            y: 0
+            z: 0
+            w: 1
+      - Position:
+          x: 0.6
+          y: -2
+          z: 15.45
+        TangentIn:
+          x: 0
+          y: 0
+          z: -2
+        TangentOut:
+          x: 0
+          y: 0
+          z: 2
+        Rotation:
+          value:
+            x: 0
+            y: 0
+            z: 0
+            w: 1
+      - Position:
+          x: 0.6
+          y: -2
+          z: 17.45
+        TangentIn:
+          x: 0
+          y: 0
+          z: -2.1480007
+        TangentOut:
+          x: 0
+          y: 0
+          z: 2.1480007
+        Rotation:
+          value:
+            x: 0
+            y: 0
+            z: 0
+            w: 1
+      - Position:
+          x: -1.16
+          y: -4
+          z: 31.65
+        TangentIn:
+          x: 0
+          y: 0
+          z: -2.7306168
+        TangentOut:
+          x: 0
+          y: 0
+          z: 2.7306168
+        Rotation:
+          value:
+            x: 0
+            y: 0
+            z: 0
+            w: 1
+      m_MetaData: []
+      m_Closed: 0
+      m_IntData:
+        m_Data: []
+      m_FloatData:
+        m_Data: []
+      m_Float4Data:
+        m_Data: []
+      m_ObjectData:
+        m_Data: []
