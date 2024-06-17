@@ -88,10 +88,17 @@ MonoBehaviour:
     RandomRotation: 3
     RandomFlipY: 1
     RandomFlipX: 0
-  - Name: Moss Fronds
+  - Name: Moss Fronds Left
     Disabled: 0
     SurroundPrefabs:
     - {fileID: 717079983591251126, guid: 7c5ca920031e8ff43af3790253664560, type: 3}
+    - {fileID: 717079983591251126, guid: 7c5ca920031e8ff43af3790253664560, type: 3}
+    - {fileID: 717079983591251126, guid: 7c5ca920031e8ff43af3790253664560, type: 3}
+    - {fileID: 717079983591251126, guid: 7c5ca920031e8ff43af3790253664560, type: 3}
+    - {fileID: 717079983591251126, guid: 7c5ca920031e8ff43af3790253664560, type: 3}
+    - {fileID: 717079983591251126, guid: 7c5ca920031e8ff43af3790253664560, type: 3}
+    - {fileID: 717079983591251126, guid: 7c5ca920031e8ff43af3790253664560, type: 3}
+    - {fileID: 717079983591251126, guid: f25643e2d6620d1488c33b0a5d5518fc, type: 3}
     ZOffset: 0
     Spacing: 0.5
     RadiusOffset: 2
@@ -104,10 +111,17 @@ MonoBehaviour:
     RandomRotation: 10
     RandomFlipY: 1
     RandomFlipX: 0
-  - Name: Moss Fronds
+  - Name: Moss Fronds Right
     Disabled: 0
     SurroundPrefabs:
     - {fileID: 717079983591251126, guid: 7c5ca920031e8ff43af3790253664560, type: 3}
+    - {fileID: 717079983591251126, guid: 7c5ca920031e8ff43af3790253664560, type: 3}
+    - {fileID: 717079983591251126, guid: 7c5ca920031e8ff43af3790253664560, type: 3}
+    - {fileID: 717079983591251126, guid: 7c5ca920031e8ff43af3790253664560, type: 3}
+    - {fileID: 717079983591251126, guid: 7c5ca920031e8ff43af3790253664560, type: 3}
+    - {fileID: 717079983591251126, guid: 7c5ca920031e8ff43af3790253664560, type: 3}
+    - {fileID: 717079983591251126, guid: 7c5ca920031e8ff43af3790253664560, type: 3}
+    - {fileID: 717079983591251126, guid: f25643e2d6620d1488c33b0a5d5518fc, type: 3}
     ZOffset: 0
     Spacing: 0.5
     RadiusOffset: 2
