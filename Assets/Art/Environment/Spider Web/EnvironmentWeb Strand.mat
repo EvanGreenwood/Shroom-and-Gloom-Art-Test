@@ -1,0 +1,114 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: EnvironmentWeb Strand
+  m_Shader: {fileID: 4800000, guid: e867afa9bad2d8543a5e6bb95a5f0181, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords:
+  - _FANCYCOLORSHADING_ON
+  - _LINEFADEWITHFOG_ON
+  - _USEFOG_ON
+  - _USEIFDOORMASK_ON
+  m_InvalidKeywords:
+  - _EMISSIONWAVEBASEDONTUNNEL_ON
+  - _ISSCENEVIEW_ON
+  - _LIT_ON
+  - _REPLACELINECOLOR_ON
+  - _USEMATCAP_ON
+  m_LightmapFlags: 0
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: _Emission
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _Emission:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Height:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Matcap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Normal:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Ramp:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ScreenSpaceTexture:
+        m_Texture: {fileID: 2800000, guid: 9993a1a42987ac94eb11c9570c676311, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Cutoff: 0.6
+    - _DebugHighlightLowlight: 0
+    - _DisplayNormals: 0
+    - _EmissionUsesTunnelWave: 0
+    - _EmissionWaveBasedOnTunnel: 1
+    - _FancyColorShading: 1
+    - _FogIntensityCoefficient: 0.227
+    - _IsSceneView: 1
+    - _LineColorBlend: 1
+    - _LineColorHueBlend: 1
+    - _LineColorVsHSVBlend: 0.847
+    - _LineFade: 0.24
+    - _LineFadeWithFog: 1
+    - _LineHueOffset: 0
+    - _LineReplaceFuzziness: 0.1
+    - _LineReplaceRange: 0.15
+    - _LineSaturationOffset: 0.35
+    - _LineValueOffset: -0.04
+    - _Lit: 1
+    - _NoiseDist: 0.4
+    - _NoiseFrequency: 0.5
+    - _NoiseScale: 4
+    - _NoisyFog: 0
+    - _NormalMip: 2
+    - _RampOffset: -0.5
+    - _ReplaceLineColor: 1
+    - _ScreenSpaceScale: 24
+    - _Shininess: 0.1
+    - _TunnelDistance: 0
+    - _TunnelIndex: 0
+    - _UseFog: 1
+    - _UseIfDoorMask: 1
+    - _UseMatcap: 1
+    - _XScaleScreenSpace: 2
+    - _YScaleScreenSpace: 90
+    - __dirty: 0
+    m_Colors:
+    - _EmissionColor: {r: 0.044054832, g: 0.20754719, b: 0.16651382, a: 1}
+    - _HighlightHSVOffset2: {r: 0, g: 0, b: 0, a: 0}
+    - _LineHSVOffset: {r: 0, g: 1, b: -0.3, a: 0}
+    - _PostReplaceLineColor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
+    - _PreReplaceLineColor: {r: 0.46, g: 0.46, b: 0.46, a: 1}
+    - _ShadowHSVOffset: {r: 0, g: 0.1, b: -0.1, a: 0}
+    - _SpecularColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 1}
+    - _TerminatorLineColor: {r: 0, g: 0, b: 0, a: 1}
+  m_BuildTextureStacks: []

@@ -105,7 +105,7 @@ MonoBehaviour:
     value: 0
   g_jitter:
     overrideState: 0
-    value: 1
+    value: 0
   g_signal:
     overrideState: 0
     value: 1
@@ -301,13 +301,13 @@ MonoBehaviour:
     value: 1.5
   feedbackOn:
     overrideState: 0
-    value: 0
+    value: 1
   feedbackThresh:
     overrideState: 0
     value: 0.1
   feedbackAmount:
     overrideState: 0
-    value: 2
+    value: 3
   feedbackFade:
     overrideState: 0
     value: 0.82

@@ -12,13 +12,16 @@ Material:
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
-  - _EMISSIONWAVEBASEDONTUNNEL_ON
-  - _NOISYFOG_ON
-  - _REPLACELINECOLOR_ON
+  - _DEBUGHIGHLIGHTLOWLIGHT_ON
+  - _FANCYCOLORSHADING_ON
   - _USEFOG_ON
+  - _USEIFDOORMASK_ON
   m_InvalidKeywords:
   - _ALPHATEST_ON
+  - _EMISSIONWAVEBASEDONTUNNEL_ON
   - _GLOSSYREFLECTIONS_OFF
+  - _NOISYFOG_ON
+  - _REPLACELINECOLOR_ON
   - _SPECULARHIGHLIGHTS_OFF
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -88,6 +91,7 @@ Material:
     - _ColorMode: 0
     - _Cull: 2
     - _Cutoff: 0.5
+    - _DebugHighlightLowlight: 1
     - _DetailNormalMapScale: 1
     - _DistortionBlend: 0.5
     - _DistortionEnabled: 0
@@ -95,7 +99,9 @@ Material:
     - _DistortionStrengthScaled: 0
     - _DstBlend: 0
     - _EmissionEnabled: 0
+    - _EmissionUsesTunnelWave: 0
     - _EmissionWaveBasedOnTunnel: 1
+    - _FancyColorShading: 1
     - _FlipbookMode: 0
     - _FogIntensityCoefficient: 1
     - _GlossMapScale: 1
@@ -103,6 +109,8 @@ Material:
     - _GlossyReflections: 0
     - _LightingEnabled: 0
     - _LineColorVsHSVBlend: 1
+    - _LineFade: 0
+    - _LineFadeWithFog: 0
     - _LineHueOffset: 0
     - _LineReplaceFuzziness: 0
     - _LineReplaceRange: 0
@@ -122,8 +130,10 @@ Material:
     - _SpecularHighlights: 0
     - _SrcBlend: 1
     - _TunnelDistance: 0
+    - _TunnelIndex: 0
     - _UVSec: 0
     - _UseFog: 1
+    - _UseIfDoorMask: 1
     - _ZWrite: 1
     - __dirty: 0
     m_Colors:
@@ -131,7 +141,10 @@ Material:
     - _Color: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 1}
     - _ColorAddSubDiff: {r: 0, g: 0, b: 0, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _HighlightHSVOffset2: {r: 0, g: 0, b: 0, a: 0}
+    - _LineHSVOffset: {r: 0, g: 0, b: 0, a: 0}
     - _PostReplaceLineColor: {r: 0, g: 0, b: 0, a: 1}
     - _PreReplaceLineColor: {r: 0, g: 0, b: 0, a: 1}
+    - _ShadowHSVOffset: {r: 0, g: 0, b: 0, a: 0}
     - _SoftParticleFadeParams: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []

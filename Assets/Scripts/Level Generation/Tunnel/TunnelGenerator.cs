@@ -892,15 +892,18 @@ public partial class TunnelGenerator : MonoBehaviour
                 //
                 GetTunnelPositionAndDirection(distanceM, out Vector3 currentPosition, out Vector3 currentDirection, out Quaternion currentRotation, out Vector3 up, out perpendicular);
                 // 
-                Vector3 spawnPos = currentPosition + up * ceilingData.Height + perpendicular * (RNG.FloatSign() * ceilingData.RandomXPosition);
-                SpriteRenderer ceiling = SpawnTunnelElement(ceilingData.CeilingPrefabs.ChooseRandom(), spawnPos, currentRotation, currentDirection, flip, distanceM);
-                elementParent.TakeChild(ceiling);
+                if (Mathf.Abs(0.5f - distanceM ) * _tunnelLength > 3)
+                {
+                    Vector3 spawnPos = currentPosition + up * ceilingData.Height + perpendicular * (RNG.FloatSign() * ceilingData.RandomXPosition);
+                    SpriteRenderer ceiling = SpawnTunnelElement(ceilingData.CeilingPrefabs.ChooseRandom(), spawnPos, currentRotation, currentDirection, flip, distanceM);
+                    elementParent.TakeChild(ceiling);
 
-                ceiling.transform.position += perpendicular * ceilingData.MinMaxPosition.ChooseRandom();
-                ceiling.transform.Rotate(ceilingData.XRotation, 0, ceilingData.MinMaxAngle.ChooseRandom());
-                //
-                ceiling.color = ColorGradient.Evaluate(distanceM).WithClampedSaturationWithValue(GenerationSettings.ColorSaturationValue);
-                ceiling.flipX = flip;
+                    ceiling.transform.position += perpendicular * ceilingData.MinMaxPosition.ChooseRandom();
+                    ceiling.transform.Rotate(ceilingData.XRotation, 0, ceilingData.MinMaxAngle.ChooseRandom());
+                    //
+                    ceiling.color = ColorGradient.Evaluate(distanceM).WithClampedSaturationWithValue(GenerationSettings.ColorSaturationValue);
+                    ceiling.flipX = flip;
+                }
             }
         }
 
@@ -971,25 +974,27 @@ public partial class TunnelGenerator : MonoBehaviour
 
                 Color particleColor = ColorGradient.Evaluate(distanceM  ).WithClampedSaturationWithValue(GenerationSettings.ColorSaturationValue);
 
-                
-               
-                var templateMain = _templateInstance.main;
-                
-                templateMain.startColor = particleColor;
 
-                ParticleSystem particles = SpawnParticleSystem(_templateInstance, spawnPos, currentRotation);
-                particleParent.TakeChild(particles);
+                if (Mathf.Abs(0.5f - distanceM) * _tunnelLength > 2)
+                {
+                    var templateMain = _templateInstance.main;
 
-                //floor.transform.localPosition = floor.transform.localPosition.PlusY(floorData.minMaxPosition.ChooseRandom());
-                //floor.transform.Rotate(floorData.xRotation, 0, floorData.minMaxAngle.ChooseRandom());
+                    templateMain.startColor = particleColor;
 
-                var main = particles.main;
-                main.startColor = new ParticleSystem.MinMaxGradient(particleColor);
-                var colorOverLifetime = particles.colorOverLifetime;
-                ParticleSystem.MinMaxGradient gradient = colorOverLifetime.color;
-                gradient.colorMax = particleColor;
-                gradient.colorMin = particleColor;
-                colorOverLifetime.color = gradient;
+                    ParticleSystem particles = SpawnParticleSystem(_templateInstance, spawnPos, currentRotation);
+                    particleParent.TakeChild(particles);
+
+                    //floor.transform.localPosition = floor.transform.localPosition.PlusY(floorData.minMaxPosition.ChooseRandom());
+                    //floor.transform.Rotate(floorData.xRotation, 0, floorData.minMaxAngle.ChooseRandom());
+
+                    var main = particles.main;
+                    main.startColor = new ParticleSystem.MinMaxGradient(particleColor);
+                    var colorOverLifetime = particles.colorOverLifetime;
+                    ParticleSystem.MinMaxGradient gradient = colorOverLifetime.color;
+                    gradient.colorMax = particleColor;
+                    gradient.colorMin = particleColor;
+                    colorOverLifetime.color = gradient;
+                }
             }
         }
         

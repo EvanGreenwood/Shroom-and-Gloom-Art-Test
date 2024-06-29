@@ -10,27 +10,27 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 50d28d391025841c192a919a7297e73e, type: 3}
-  m_Name: D3 Mossy
+  m_Name: D3 Meaty
   m_EditorClassIdentifier: 
-  _guid: b9d2afe1e1f78b9458d690fa88731448
+  _guid: 222fcafd106e07045b53870398bf236a
   ColorGradient:
     serializedVersion: 2
-    key0: {r: 0.59139466, g: 0.50980395, b: 0.8666667, a: 1}
-    key1: {r: 0.42680666, g: 0.36470592, b: 0.8666667, a: 1}
-    key2: {r: 0.49019608, g: 0.5063958, b: 0.7372549, a: 0}
-    key3: {r: 0.41568628, g: 0.5218206, b: 0.85882354, a: 0}
-    key4: {r: 0.9223302, g: 0.9433962, b: 0.3693485, a: 0}
-    key5: {r: 0.34117648, g: 0.74509805, b: 0.38587737, a: 0}
+    key0: {r: 0.3764706, g: 0.74509805, b: 0.7353678, a: 1}
+    key1: {r: 0.49019608, g: 0.5063958, b: 0.7372549, a: 1}
+    key2: {r: 0.74875176, g: 0.5764706, b: 0.7882353, a: 0}
+    key3: {r: 0.5411765, g: 0.5437482, b: 0.69803923, a: 0}
+    key4: {r: 0.3764706, g: 0.4023471, b: 0.74509805, a: 0}
+    key5: {r: 0.74509805, g: 0.44821006, b: 0.3764706, a: 0}
     key6: {r: 0.3764706, g: 0.74509805, b: 0.7353678, a: 0}
     key7: {r: 0.3764706, g: 0.74509805, b: 0.7353678, a: 0}
-    ctime0: 3984
-    ctime1: 14691
-    ctime2: 21762
-    ctime3: 30726
-    ctime4: 35706
-    ctime5: 45217
-    ctime6: 56970
-    ctime7: 56970
+    ctime0: 1494
+    ctime1: 24640
+    ctime2: 31612
+    ctime3: 44958
+    ctime4: 56790
+    ctime5: 60017
+    ctime6: 60017
+    ctime7: 60017
     atime0: 0
     atime1: 65535
     atime2: 0
@@ -41,13 +41,13 @@ MonoBehaviour:
     atime7: 0
     m_Mode: 0
     m_ColorSpace: 0
-    m_NumColorKeys: 7
+    m_NumColorKeys: 5
     m_NumAlphaKeys: 2
   ColorSaturationValue: {x: 0.3, y: 0.7}
   BaseTunnelWidth: 1
   LumpyWidth: 0.7
   LumpyFrequency: 2
-  ClearingWidth: 1.2
+  ClearingWidth: 2.3
   ClearingDepth: 4
   Particles: {fileID: 2402285776899386762, guid: 8e61f67cd760b423db14eb998271668d, type: 3}
   ParticleSpawnDistance: 4
@@ -56,82 +56,20 @@ MonoBehaviour:
   FlatWallSpacing: 1
   FlatWallOffset: 1
   SurroundElements:
-  - Name: Moss Walls Left
+  - Name: Meat Walls
     Disabled: 0
     SurroundPrefabs:
-    - {fileID: 717079983591251126, guid: 834b154b5393fe5469e3a741b63a8b35, type: 3}
+    - {fileID: 717079983591251126, guid: 2fadf5ce0ef2c9f4893132f5f32d3387, type: 3}
     ZOffset: 0
     Spacing: 0.2
-    RadiusOffset: 1.3
-    CenterHeight: 1.7
+    RadiusOffset: 1.4
+    CenterHeight: 2.2
     Pattern: 1
     AngleRange:
       _min: 35
-      _max: 160
-    AngleIncrement: 45
+      _max: 330
+    AngleIncrement: 30
     RandomRotation: 3
-    RandomFlipY: 1
-    RandomFlipX: 0
-  - Name: Moss Walls Right
-    Disabled: 0
-    SurroundPrefabs:
-    - {fileID: 717079983591251126, guid: 834b154b5393fe5469e3a741b63a8b35, type: 3}
-    ZOffset: 0
-    Spacing: 0.2
-    RadiusOffset: 1.3
-    CenterHeight: 1.7
-    Pattern: 1
-    AngleRange:
-      _min: 200
-      _max: 325
-    AngleIncrement: 45
-    RandomRotation: 3
-    RandomFlipY: 1
-    RandomFlipX: 0
-  - Name: Moss Fronds Left
-    Disabled: 0
-    SurroundPrefabs:
-    - {fileID: 717079983591251126, guid: 7c5ca920031e8ff43af3790253664560, type: 3}
-    - {fileID: 717079983591251126, guid: 7c5ca920031e8ff43af3790253664560, type: 3}
-    - {fileID: 717079983591251126, guid: 7c5ca920031e8ff43af3790253664560, type: 3}
-    - {fileID: 717079983591251126, guid: 7c5ca920031e8ff43af3790253664560, type: 3}
-    - {fileID: 717079983591251126, guid: 7c5ca920031e8ff43af3790253664560, type: 3}
-    - {fileID: 717079983591251126, guid: 7c5ca920031e8ff43af3790253664560, type: 3}
-    - {fileID: 717079983591251126, guid: 7c5ca920031e8ff43af3790253664560, type: 3}
-    - {fileID: 717079983591251126, guid: f25643e2d6620d1488c33b0a5d5518fc, type: 3}
-    ZOffset: 0
-    Spacing: 0.5
-    RadiusOffset: 2
-    CenterHeight: 2.2
-    Pattern: 1
-    AngleRange:
-      _min: 20
-      _max: 60
-    AngleIncrement: 12
-    RandomRotation: 10
-    RandomFlipY: 1
-    RandomFlipX: 0
-  - Name: Moss Fronds Right
-    Disabled: 0
-    SurroundPrefabs:
-    - {fileID: 717079983591251126, guid: 7c5ca920031e8ff43af3790253664560, type: 3}
-    - {fileID: 717079983591251126, guid: 7c5ca920031e8ff43af3790253664560, type: 3}
-    - {fileID: 717079983591251126, guid: 7c5ca920031e8ff43af3790253664560, type: 3}
-    - {fileID: 717079983591251126, guid: 7c5ca920031e8ff43af3790253664560, type: 3}
-    - {fileID: 717079983591251126, guid: 7c5ca920031e8ff43af3790253664560, type: 3}
-    - {fileID: 717079983591251126, guid: 7c5ca920031e8ff43af3790253664560, type: 3}
-    - {fileID: 717079983591251126, guid: 7c5ca920031e8ff43af3790253664560, type: 3}
-    - {fileID: 717079983591251126, guid: f25643e2d6620d1488c33b0a5d5518fc, type: 3}
-    ZOffset: 0
-    Spacing: 0.5
-    RadiusOffset: 2
-    CenterHeight: 2.2
-    Pattern: 1
-    AngleRange:
-      _min: 300
-      _max: 340
-    AngleIncrement: 12
-    RandomRotation: 10
     RandomFlipY: 1
     RandomFlipX: 0
   FloorElements:
@@ -154,29 +92,13 @@ MonoBehaviour:
   FlatFloorSpacing: 1
   FlatFloorOffset: -1
   CeilingElements:
-  - Name: Moss Ceiling
-    Disabled: 0
-    CeilingPrefabs:
-    - {fileID: 717079983591251126, guid: 61b2e65ef50d6c6458b33cac22c6145f, type: 3}
-    Height: 4.2
-    ZOffset: 0
-    Spacing: 0.25
-    RandomXPosition: 2
-    MinMaxAngle:
-      _min: 0
-      _max: 0
-    XRotation: 0
-    MinMaxPosition:
-      _min: -4
-      _max: 4
-    RandomFlipX: 1
   - Name: Moss Dangles
     Disabled: 0
     CeilingPrefabs:
     - {fileID: 717079983591251126, guid: d58301ed01b3e2544a93c90513021686, type: 3}
-    Height: 3.5
+    Height: 4
     ZOffset: 0.01
-    Spacing: 0.25
+    Spacing: 0.6
     RandomXPosition: 0.6
     MinMaxAngle:
       _min: 0
@@ -190,9 +112,9 @@ MonoBehaviour:
     Disabled: 0
     CeilingPrefabs:
     - {fileID: 717079983591251126, guid: d58301ed01b3e2544a93c90513021686, type: 3}
-    Height: 3.5
-    ZOffset: 0.01
-    Spacing: 0.25
+    Height: 4
+    ZOffset: 0.21
+    Spacing: 0.6
     RandomXPosition: 0.6
     MinMaxAngle:
       _min: 0
@@ -206,9 +128,9 @@ MonoBehaviour:
     Disabled: 0
     CeilingPrefabs:
     - {fileID: 717079983591251126, guid: d58301ed01b3e2544a93c90513021686, type: 3}
-    Height: 4.7
-    ZOffset: 0.01
-    Spacing: 0.2
+    Height: 5
+    ZOffset: 0.41
+    Spacing: 0.6
     RandomXPosition: 1
     MinMaxAngle:
       _min: 0
